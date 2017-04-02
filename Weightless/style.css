@@ -11,6 +11,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+    color: white;
 }
 .menu {
     float: left;
@@ -23,19 +24,42 @@ header {
 }
 .timer {
     width: 286px;
-    align-content: center;
+    margin: auto;    
+}
+.timer_text {
+    width: auto;
+    margin: auto;
+}
+.timer_viewer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;    
 }
 .timer_numb {
     width: 25%;
+margin: auto;
 }
 .timer_collect {
     width: 25%;
+    margin: auto;
 }
 .time_viewer {
+    width: 410px;
+    height: 125px;
+
+    margin: auto;
+}
+.time_viewer p {
     display: inline-block;
 }
 .i_want {
+    width: 243px;
+    height: 48px;
+    border-radius: 22px;
+    border: none;
     float: right;
     background-color: #6eb43f;
     margin: 25px;
+    color: white;
 }
