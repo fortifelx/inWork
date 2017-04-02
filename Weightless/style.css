@@ -48,7 +48,7 @@ header {
 }
 .timer_numb {
     width: 25%;
-margin: auto;
+    margin: auto;
 }
 .timer_collect {
     width: 25%;
@@ -57,7 +57,6 @@ margin: auto;
 .time_viewer {
     width: 410px;
     height: 125px;
-
     margin: auto;
 }
 .time_viewer p {
@@ -93,7 +92,6 @@ margin: auto;
     margin: 0 auto 150px auto;
 }
 .top_text_days, .top_text_effective {
-    margin: 0;
     font-weight: bold;
     font-size: 18px;
     margin: 0 5%;
@@ -110,12 +108,10 @@ margin: auto;
 }
 .top_text_weight {
     font-size: 150px;
-    margin: 0;
     font-weight: bold;
 }
 .top_text_less {
     font-size: 150px;
-    margin: 0;
 }
 .call_me {
     width: 760px;
@@ -149,3 +145,48 @@ margin: auto;
 }
 
 /*    I N F O    S P A N   */
+
+.span {
+   position: relative;
+}
+.span_recomend {
+    width: 56%;
+    position: absolute;
+    top: -140px;
+    left: -105px;
+    text-align: right;
+    transform: rotate(3deg);
+    padding:65px 25px 50px 0;
+    font-weight: bold;
+    background-color: white;
+}
+.span_first_block {
+    transform: rotate(7deg);
+    width: 57%;
+    height: 130px;
+    background-color: white;
+    position: absolute;
+    right: -200px;
+    bottom: -70px;
+}
+.span_second_block {
+    transform: rotate(353deg);
+    width: 57%;
+    height: 130px;
+    background-color: white;
+    position: absolute;
+    left: -200px;
+    bottom: -70px;
+}
+
+.span_result {
+    width: 55%;
+    position: absolute;
+    top: -140px;
+    right: -105px;
+    text-align: left;
+    transform: rotate(357deg);
+    padding: 65px 0 50px 25px;
+    font-weight: bold;
+    background-color: white;
+}
