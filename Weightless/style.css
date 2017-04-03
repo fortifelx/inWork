@@ -400,8 +400,152 @@ clip-path: polygon(73% 5%, 84% 44%, 100% 97%, 7% 100%, 0 60%, 5% 0);
     color: white;
     width: 50%;
 }
-    
-    
+
+/*    S T A R S      */
+
+.stars {
+    background-color: white;
+    padding: 45px 0;
+}
+
+.stars_wrapper {
+    max-width: 1200px;
+    margin: auto;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.stars_header {
+    font-size: 24px;
+    width: 300px;
+    margin: auto;
+}
+
+.star_article {
+    width: 310px;
+    margin: 30px;
+
+}
+
+.star_article_img {
+    height: 320px;
+    margin: auto;
+    display: block;
+-webkit-clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
+clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
+}
+
+.star_article_header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+.star_article_who {
+    text-align: center;
+    margin: 5px;
+}
+.star_article_text {
+    text-align: left;
+    line-height: 22px;
+}
+
+/*----  O R D E R  ------*/
+
+.order {
+    width: 100%;
+    background-color: #6eb43f; 
+    padding: 45px 0;
+}  
+.order_header {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    width: 700px;
+    margin: 0 auto 45px auto;
+}
+.order_program_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding: 25px 15%;
+}
+.order_program_stage {
+    margin: 15px;
+}
+.order_stage_header {
+    color: #354242;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.order_stage_text {
+    color: white;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.order_old_price {
+    display: inline;
+    color: red;
+    font-weight: bold;
+}
+.order_stage_price {
+    display: inline;
+    color: white;
+    font-weight: bold
+}
+.order_subtext {
+    color: white;
+    font-size: 10px;
+}
+.order_button {
+    width: 245px;
+    margin-left: 15%;
+    padding: 15px 0;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+}
+.order_via_privat {
+    width: 700px;
+    margin: auto;
+}
+.privat_card {
+    float: left;
+    margin-right: 40px;
+    -webkit-box-shadow: -5px 10px 11px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: -5px 10px 11px 0px rgba(0,0,0,0.5);
+    box-shadow: -5px 10px 11px 0px rgba(0,0,0,0.5);
+}
+.privat_header {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.privat_text {
+    color: white;
+    line-height: 22px;
+}
+.privat_button {
+    display: block;
+    margin: 25px 0 0 340px;
+    color: white;
+    background-color: #354242;
+    width: 215px;
+    padding: 14px 0;
+    text-align: center;
+    border-radius: 25px;
+}
+
+/*        F R I E N D S        */
+
+
     
     
     
