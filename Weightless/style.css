@@ -318,7 +318,7 @@ header {
 
 .succes  {
    width: 100%;
-    padding-top: 45px;
+    padding: 45px 0;
    background-color: white;
 }
 .succes_header {
@@ -383,6 +383,22 @@ clip-path: polygon(73% 5%, 84% 44%, 100% 97%, 7% 100%, 0 60%, 5% 0);
     background-color: #6eb43f;
     border-radius: 22px;
     border: none;
+}
+
+.second_span {
+    background-color: #6eb43f;
+    width: 100%;
+    padding: 40px 0 40px 25%;
+    line-height: 30px;
+}
+.second_span_header {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+.second_span_text {
+    color: white;
+    width: 50%;
 }
     
     
