@@ -513,7 +513,7 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
 }
 .order_via_privat {
     width: 700px;
-    margin: auto;
+    margin: 75px auto 0 auto;
 }
 .privat_card {
     float: left;
@@ -545,8 +545,40 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
 
 /*        F R I E N D S        */
 
-
-    
+.friends {
+    width: 100%;
+    background-color: #ebebeb;
+}
+.friends_header {
+    width: 100%;
+    margin-bottom: 45px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.networks_wrapper {
+    display: flex;
+    width: 550px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.network {
+    text-align: center;
+}
+.friends_amount {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 100px;
+    width: auto;
+    border: 2px solid #ffffff;
+}
+.google_map {
+    width: 100%;
+    height: 660px;
+}    
     
     
     
