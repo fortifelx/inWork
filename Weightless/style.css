@@ -688,9 +688,35 @@ clip-path: polygon(73% 5%, 84% 44%, 100% 97%, 7% 100%, 0 60%, 5% 0);
 
 /*    S T A R S      */
 
+.stars_block {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+.stars_block li:nth-child(1) {
+    width: 80%;
+    height: 85px;
+    margin: -20px -20px 0 -520px;
+    transform: rotate(355deg);
+    background-color: #6eb43f;
+}
+.stars_block li:nth-child(2) {
+    width: 80%;
+    height: 85px;
+    margin: -60px -20px 0 -450px;
+    transform: rotate(3deg);
+    background-color: #6eb43f;
+}
+
+
+
+
+
 .stars {
+    position: relative;
     background-color: white;
-    padding: 45px 0;
+    padding:  0 0 45px 0;
 }
 
 .stars_wrapper {
@@ -705,9 +731,14 @@ clip-path: polygon(73% 5%, 84% 44%, 100% 97%, 7% 100%, 0 60%, 5% 0);
 }
 
 .stars_header {
-    font-size: 24px;
-    width: 300px;
-    margin: auto;
+    width: 100%;
+    margin: 25px;
+    text-align: center;
+    font-family: PFDitalicbold;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+    color: #354242;
 }
 
 .star_article {
@@ -725,18 +756,53 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
 }
 
 .star_article_header {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
     margin: 20px 0;
+    text-align: center;
+    font-family: PFDitalicbold;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    color: #354242;
 }
 .star_article_who {
     text-align: center;
-    margin: 5px;
+    margin: 15px;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #acacac;
 }
 .star_article_text {
     text-align: left;
     line-height: 22px;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-style: italic;
+    color: #354242;
+}
+
+
+.star_block_wrapper {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 130px;
+    width: 100%;
+    overflow: hidden;
+}
+.star_block_wrapper li:nth-child(1) {
+    width: 80%;
+    height: 155px;
+    margin: 100px 0 0 0;
+    transform: rotate(3deg);
+    background-color: #6eb43f;
+}
+.star_block_wrapper li:nth-child(2) {
+    width: 80%;
+    height: 195px;
+    margin: 100px -180px 0 -50px;
+    transform: rotate(357deg);
+    background-color: #6eb43f;
 }
 
 /*----  O R D E R  ------*/
