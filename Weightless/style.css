@@ -484,21 +484,33 @@ header {
     width: 100%;
     background-color: #6eb43f;
     justify-content: center;
+    align-items: baseline;
 } 
 .progress_article {
-    width: 20%;
-    margin: 25px;
+    width: 15%;
+    text-align: center;
     color: white;
 }
+.progress_article:nth-child(2) {
+    width: 23%;
+    margin: 0 70px;
+}
 .progress_article img {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .progress_article_header {
+    text-align:  left;
     margin-bottom: 10px;
-    font-size: 26px;
+    font-family: PFDitalicbold;
+    font-size:   30px;
     font-weight: bold;
+    font-style:  italic;
 }
-
+.progress_article_text {
+    text-align: left;
+    font-size:  16px;
+    font-family:PFD;
+}
 .succes  {
    width: 100%;
     padding: 45px 0;
