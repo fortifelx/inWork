@@ -273,7 +273,8 @@ header {
 
 .span_recomend {
     display: block;
-    padding: 15px 2%;
+    padding: 15px 1%;
+    margin-left: 3%;
     width: 45%;
     text-align: right;
     transform: rotate(3deg);
@@ -329,18 +330,36 @@ header {
 }
 
 .reason_header {
-    font-size: 36px;
+    font-family: PFDitalicbold;
+    font-size: 60px;
     font-weight: bold;
+    font-style: italic;
     color: white;
-    margin: 15px 0 0 15%;
+    margin: 35px 0 65px 8%;
 }
 .reason_list {
     width: 50%;
     margin: 25px auto 50px auto;
+    padding: 25px;
     color: white;
+    background-image: url(img/list_border.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .reason_list li {
-    margin: 10px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: lighter;
+    position: relative;
+    margin: 28px;
+    padding-left: 35px;
+}
+.reason_list li:before {
+    content: url(img/list_mark.png);
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
 .reason_block_wrapper {
     display: flex;
@@ -353,54 +372,98 @@ header {
     height: 85px;
     margin: 50px 0 0 -300px;
     transform: rotate(3deg);
-    background-color: white;
+    background-color: #fafafa;
 }
 .reason_block_wrapper li:nth-child(2) {
     width: 80%;
     height: 85px;
     margin: 50px -30px 0 -20px;
     transform: rotate(357deg);
-    background-color: white;
+    background-color: #fafafa;
 }
 
 /*    H O W   I T    W O R K S     */
-
+.how {
+    position: relative;
+    width: 100%;
+    padding-top: 120px;
+    background-color: #fafafa;
+}
 .how_header {
-    width: 500px;
+    width:100%;
     margin: 0 auto 60px auto;
-    font-size: 36px;
+    text-align: center;
+    font-family: PFDitalicbold;
     font-weight: bold;
+    font-style: italic;
+    color: #354242;
+    font-size: 60px;
 }
 
 .how_first_article {
-    width: 25%;
+    width: 455px;
     margin: 25px 0 0 15%;
     float: left;
     font-size: 16px;
 }
 .how_second_article {
-    width: 25%;
-    margin: 25px 15% 0 0;
+    width: 455px;
+    margin: 25px 14% 0 0;
     float: right;
     font-size: 16px;
 }
 .how_first_number, .how_second_number {
     font-size: 200px;
+    font-family: PFDitalicbold;
     font-weight: bold;
+    font-style: italic;
+    color: #354242;
     color: #e6f2f2;
 }
 .how_first_header, .how_second_header {
     margin-top: -160px;
-    font-size: 40px;
+    font-size: 50px;
+    font-family: PFDitalicbold;
     font-weight: bold;
+    font-style: italic;
     color: #354242;
     line-height: 140px;
 }
 .how_first_text, .how_second_text {
+    color: #4f5b5b;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 16px;
     line-height: 35px;
     height: auto;
     min-height: 250px;
+    
 } 
+
+
+.how_block_wrapper {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 130px;
+    width: 100%;
+    overflow: hidden;
+}
+.how_block_wrapper li:nth-child(1) {
+    width: 80%;
+    height: 155px;
+    margin: 30px 0 0 0;
+    transform: rotate(3deg);
+    background-color: #6eb43f;
+}
+.how_block_wrapper li:nth-child(2) {
+    width: 80%;
+    height: 195px;
+    margin: 30px -180px 0 -50px;
+    transform: rotate(357deg);
+    background-color: #6eb43f;
+}
+
 .clearfix { 
     zoom: 1; 
 }
@@ -410,6 +473,10 @@ header {
 .clearfix:after { 
     clear: both; 
 }
+
+
+/*     P R O G R E S      */
+
 
 .progress {
     display:flex;
