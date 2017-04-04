@@ -813,53 +813,87 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
     padding: 45px 0;
 }  
 .order_header {
-    font-size: 26px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 45px 0;
+    font-family: PFDitalicbold;
     font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
     color: white;
-    width: 700px;
-    margin: 0 auto 45px auto;
+
 }
 .order_program_wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: space-around;
+    width: 65%;
     padding: 25px 15%;
 }
 .order_program_stage {
-    margin: 15px;
+    margin: 15px 55px;
+    position: relative;
+}
+.order_program_stage:after {
+    content: url(img/arrow.png);
+    display: block;
+    position: absolute;
+    right: -55px;
+    top: 55px;
+}
+.order_program_stage:last-child:after {
+    display: none;
 }
 .order_stage_header {
-    color: #354242;
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-family: PFDitalicbold;
     font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+    color: #354242;
+    margin-bottom: 26px;
 }
 .order_stage_text {
     color: white;
-    line-height: 22px;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 25px;
     margin-bottom: 10px;
 }
 .order_old_price {
     display: inline;
-    color: red;
+    font-family: PFDitalicbold;
     font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+    text-decoration: line-through;
+    color: red;
 }
 .order_stage_price {
     display: inline;
+    font-family: PFDitalicbold;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
     color: white;
-    font-weight: bold
 }
 .order_subtext {
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 25px;
     color: white;
-    font-size: 10px;
 }
 .order_button {
     width: 245px;
-    margin-left: 15%;
+    margin-left:calc( 15% + 55px);
     padding: 15px 0;
     background-color: white;
     text-align: center;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 14px;
+    color: #354242;
     border-radius: 25px;
 }
 .order_via_privat {
@@ -868,19 +902,25 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
 }
 .privat_card {
     float: left;
+    margin-top: 10px;
     margin-right: 40px;
     -webkit-box-shadow: -5px 10px 11px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: -5px 10px 11px 0px rgba(0,0,0,0.5);
     box-shadow: -5px 10px 11px 0px rgba(0,0,0,0.5);
 }
 .privat_header {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
     margin-bottom: 25px;
+    font-family: PFDitalicbold;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+    color: white;
 }
 .privat_text {
     color: white;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 14px;
     line-height: 22px;
 }
 .privat_button {
@@ -891,6 +931,9 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
     width: 215px;
     padding: 14px 0;
     text-align: center;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 14px;
     border-radius: 25px;
 }
 
