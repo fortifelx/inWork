@@ -1,8 +1,29 @@
+@font-face {
+    font-family: PFD;
+    src: url('fonts/PFDregular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: PFD;
+    src: url('fonts/PFDbold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: PFDbolder;
+    src: url('fonts/PFDbolder.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
 body {
     width: 100%;
     height: 100%; 
     background-color: lightgray;
-    font-family: arial;
     }
 .wrapper {
     width: 100%;
@@ -10,51 +31,28 @@ body {
 }
 header {
     width: 100%;
+    padding-top: 25px;
     position: fixed;
     top: 0;
     color: white;
 }
 .menu {
     float: left;
-    margin: 15px;
+    margin: 23px 47px;
 
 }
 .logo {
     float: left;
-    margin: 15px;
-}
-.timer {
-    width: 286px;
-    margin: auto;    
+    margin-top: -13px;
 }
 .timer_text {
-    width: auto;
-    margin: auto;
-}
-.timer_viewer {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-between;    
-}
-.first_step {
-    background-color: #6eb43f;
-}
-.first_step_price {
-    background-color: #6eb43f;
-}
-.first_step_discount, .first_step_discount_size {
-    background-color: #f44336;
-}
-.timer_numb {
-    width: 25%;
-    margin: auto;
-}
-.timer_collect {
-    width: 25%;
-    margin: auto;
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
 }
 .time_viewer {
+    font-family: Roboto;
+    font-size: 14px;
     width: 410px;
     height: 125px;
     margin: auto;
@@ -62,14 +60,73 @@ header {
 .time_viewer p {
     display: inline-block;
 }
-.i_want {
+.timer_viewer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.first_step {
+    background-color: #6eb43f;
+    padding: 5px 10px;
+}
+.first_step_price {
+    font-weight: bold;
+    background-color: #6eb43f;
+    padding: 5px 10px 5px 0;
+}
+.first_step_discount {
+    margin-left: -7px;
+    padding: 5px 10px;
+    background-color: #f44336
+}
+.first_step_discount_size {
+    font-weight: bold;
+    padding: 5px 10px 5px 0;
+    background-color: #f44336;
+}
+.timer {
+    width: 286px;
+    margin: auto;    
+}
+.timer_numb {
+    position: relative;
+    width: 25%;
+    margin: 5px auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.timer_numb:after {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    content: '/';
+    font-size: 16px;
+    font-weight: normal;
+}
+.timer_numb:nth-child(4):after {
+    display: none;
+}
+.timer_collect {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+.i_want_button {
+    display: block;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    line-height: 48px;
     width: 243px;
     height: 48px;
     border-radius: 22px;
-    border: none;
     float: right;
     background-color: #6eb43f;
-    margin: 25px;
+    margin: 5px 60px;
     color: white;
 }
 
@@ -87,61 +144,90 @@ header {
 }
 .top_text {
     width: 760px;
+    font-family: PFD;
     color: white;
-    transform: rotate(350deg);
+    transform: rotate(355deg);
     margin: 0 auto 150px auto;
 }
 .top_text_days, .top_text_effective {
     font-weight: bold;
-    font-size: 18px;
-    margin: 0 5%;
+    font-size: 30px;
 }
 .top_text_days {
     float: left;
+    margin-left: 60px;
     text-align: right;
-    width: 25%;
+    width: 27%;
 }
 .top_text_effective {
     float: right;
     text-align: left;
-    width: 50%;
+    width: 55%;
 }
 .top_text_weight {
-    font-size: 150px;
-    font-weight: bold;
+    font-size: 215px;
+    font-family: PFDbolder;
 }
 .top_text_less {
-    font-size: 150px;
+    text-align: center;
+    font-size: 215px;
 }
 .call_me {
     width: 760px;
     margin: 0 auto;
 }
 .call_me_text {
-    color: white;
+    color: #f4f5f4;
     width: 600px;
     margin: 10px auto;
+    font-family: Roboto;
+    font-weight: light;
+    font-size: 24px;
 }
 .call_me_form {
+    width: 900px;
+    font-family: Roboto;
 }
 .call_me_form input, .call_me_button {
     width: 250px;
     height: 50px;
+    margin-right: 20px;
+}
+.call_me_name:focus, .call_me_number:focus {
+    color: black;
+    font-size: 18px;
+    outline: 2px solid #6eb43f;
 }
 
 .call_me_name {
-    
+    background-image: url(img/user.png);
+
+}
+.call_me_number {
+    background-image: url(img/phone.png);
 }
 
-.call_me_number {
-    
+.call_me_number, .call_me_name {
+    color: #b2b2b2;
+    font-size: 14px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 35px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
 }
 
 .call_me_button {
     color: white;
+    font-family: Roboto;
+    font-style: italic;
     background-color: #6eb43f;
     border-radius: 25px;
     border: none;
+    background-image: url(img/white_phone.png);
+    background-repeat: no-repeat;
+    background-position: 35px 15px;
 }
 
 /*    I N F O    S P A N   */
