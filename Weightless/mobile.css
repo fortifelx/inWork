@@ -1,0 +1,74 @@
+@media screen and (max-width: 700px) {
+.logo, .menu, .top_text_days, .top_text_effective, .call_me_text, .blowballs, .top_triangle_wrapper, .span, .reason_block, .blowballs2, .reason_span, .reason_block_wrapper, .how_block_wrapper, .succes_block, .blowball3, .succes_block_wrapper, .stars_block, .star_block_wrapper, .friends_block  {
+       display: none; 
+    }
+    .top {
+        background-image: url(img/top_mob_background.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 660px;
+    }
+    .top_text {
+        margin-top: -70px;
+        width: 300px;
+        text-align: center;
+    }
+    .top_text_weight, .top_text_less {
+        font-size: 72px;
+    }
+    .i_want_button {
+        margin: 335px 0 100px 0;
+    }
+    .first_step_discount {
+        margin-bottom: 15px;
+    }
+    .time_viewer {
+        width: 270px;
+        text-align: center;
+    }
+    .timer_viewer {
+         color: #673ab7;
+    }
+    .timer_text {
+        color: #673ab7;
+    }
+    .timer_numb:after {
+        display: none;
+    }
+    .call_me {
+        margin-top: 380px;
+        width: 270px;
+    }
+    .call_me_form {
+        width: 100%;
+    }
+    
+    .call_me_form input {
+        border: 1px solid #6eb43f;
+        margin: 5px;
+    }
+    .call_me_button {
+        margin-top: 10px;
+    }
+    .reason {
+        padding-top: 30px;
+    }
+    .reason_header {
+        text-align: center;
+        font-size: 24px;
+    }
+    .reason_list {
+        background-image: none;
+        width: 90%;
+        padding: 10px;
+    }
+    .reason_list li {
+        font-size: 16px;
+        width: auto;
+        margin: 20px 0;
+    }
+    
+    .how_header {
+        font-size: 24px;
+    }
+}
