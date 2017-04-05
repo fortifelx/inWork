@@ -48,11 +48,13 @@ header {
     position: absolute;
 }
 .menu {
+    cursor: pointer;
     float: left;
     margin: 23px 47px;
 
 }
 .logo {
+    cursor: pointer;
     float: left;
     margin-top: -13px;
 }
@@ -126,6 +128,7 @@ header {
 }
 
 .i_want_button {
+    cursor: pointer;
     display: block;
     font-family: Roboto;
     font-style: italic;
@@ -265,6 +268,10 @@ header {
 }
 
 .call_me_button {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
     color: white;
     font-family: Roboto;
     font-style: italic;
@@ -273,7 +280,7 @@ header {
     border: none;
     background-image: url(img/white_phone.png);
     background-repeat: no-repeat;
-    background-position: 35px 15px;
+    background-position: 30px 15px;
 }
 .top_triangle_wrapper {
     display: flex;
@@ -698,6 +705,7 @@ clip-path: polygon(73% 5%, 84% 44%, 100% 97%, 7% 100%, 0 60%, 5% 0);
 }
 
 .show_more {
+    cursor: pointer;
     color: white;
     display: block;
     text-align: center;
@@ -970,6 +978,7 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
     color: white;
 }
 .order_button {
+    cursor: pointer;
     width: 245px;
     margin-left:calc( 15% + 55px);
     padding: 15px 0;
@@ -1009,6 +1018,7 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
     line-height: 22px;
 }
 .privat_button {
+    cursor: pointer;
     display: block;
     margin: 25px 0 0 340px;
     color: white;
