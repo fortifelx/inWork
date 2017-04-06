@@ -2,6 +2,9 @@
 .logo, .menu, .top_text_days, .top_text_effective, .call_me_text, .blowballs, .top_triangle_wrapper, .span, .reason_block, .blowballs2, .reason_span, .reason_block_wrapper, .how_block_wrapper, .succes_block, .blowball3, .succes_block_wrapper, .stars_block, .star_block_wrapper, .friends_block  {
        display: none; 
     }
+    header {
+     
+    }
     .top {
         background-image: url(img/top_mob_background.jpg);
         background-size: contain;
@@ -17,7 +20,11 @@
         font-size: 72px;
     }
     .i_want_button {
-        margin: 335px 0 100px 0;
+        float: none;
+        font-size: 14px;
+        font-family: PFD;
+        font-style: italic;
+        margin: 335px auto 100px auto;
     }
     .first_step_discount {
         margin-bottom: 15px;
@@ -48,6 +55,9 @@
         margin: 5px;
     }
     .call_me_button {
+        font-size: 14px;
+        font-family: PFD;
+        font-style: italic;
         margin-top: 10px;
     }
     .reason {
@@ -56,19 +66,48 @@
     .reason_header {
         text-align: center;
         font-size: 24px;
+        margin: 0;
     }
     .reason_list {
         background-image: none;
         width: 90%;
-        padding: 10px;
+        padding: 0 10px 10px 10px;
     }
     .reason_list li {
         font-size: 16px;
         width: auto;
         margin: 20px 0;
     }
-    
+    .how {
+        padding-top: 0;
+    }
     .how_header {
         font-size: 24px;
+        margin-bottom: 0;
+    }
+    .how_first_article, .how_second_article {
+        margin: 0;
+        width: 100%;
+        float: none;
+        padding-left:5%;
+    }
+    .how_first_number, .how_second_number {
+        color:  #daead2;
+        width: 90%;
+        text-align: right;
+    }
+    .how_first_header, .how_second_header {
+        margin-top: -170px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .how_first_text, .how_second_text {
+        font-size: 14px;
+        line-height: 18px;
+        width: 80%;
+        min-height: auto;
+    }
+    .how_first_img, how_second_img {
+        width: 80%;
     }
 }

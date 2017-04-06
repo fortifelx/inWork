@@ -17,6 +17,12 @@
     font-style: normal;
 }
 @font-face {
+    font-family: PFD;
+    src: url('fonts/PFDitalic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
     font-family: PFDitalicbold;
     src: url('fonts/PFDbolditalic.ttf');
     font-weight: bold;
