@@ -833,6 +833,9 @@ clip-path: polygon(73% 5%, 84% 44%, 100% 97%, 7% 100%, 0 60%, 5% 0);
     width: 75%;
     padding: 40px 0 40px 25%;
 }
+.second_span_header span {
+        display: none;
+    }
 .second_span_header {
     position: relative;
     font-size: 30px;

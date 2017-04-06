@@ -218,4 +218,40 @@
         font-weight: bold;
         margin: 3px 0 0 10px;
     }
+    .show_more {
+        font-family: PFD;
+        font-style: italic;
+        font-size: 14px;
+    }
+    .second_span {
+        width: 100%;
+        padding:70px 10px 10px 10px;
+    }
+    .second_span_header {
+        width: 250px;
+        font-family: PFD;
+        font-style: italic;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: normal;
+        margin: 0;
+    }
+    .second_span_header span {
+        display: block;
+    }
+    .second_span_header:before {
+        font-size: 320px;
+        font-family: PFDitalicbold;
+        font-weight: bold;
+        font-style: italic;
+        top: 70px;
+        right: -7px;
+        left: auto;
+    }
+    .second_span_text {
+        width: 95%;
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
