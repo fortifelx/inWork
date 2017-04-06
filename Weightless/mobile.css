@@ -110,4 +110,112 @@
     .how_first_img, how_second_img {
         width: 80%;
     }
+    
+    .progress {
+        padding: 20px 0;
+        flex-direction: column;
+    }
+    .progress_article_header {
+        font-size: 24px;
+        margin: 5px 0;
+    }
+    .progress_article {
+        padding: 0;
+        width: 90% !important;
+        margin: 0 !important;
+    }
+    .progress_article img {
+        float: left;
+        width: 55px;
+        margin:  0 20px 97px 10px;
+    }
+    .progress_article:last-child .progress_article_header {
+        margin: 10px 0;
+    }
+    .progress_article:last-child img {
+        width: auto;
+        height: 60px;
+    }
+    .succes {
+        padding-bottom: 30px;
+    }
+    .succes_header {
+        display: none;
+    }
+    .succes_mob_header {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        display: block;
+        font-size: 24px;
+        font-family: PFDitalicbold;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .succes_history {
+        display: flex;
+        flex-direction: column-reverse !important;
+        margin: 0;
+        width: 100%;
+    }
+    .succes_history_wrapper {
+        width: 100%;
+        margin:12px 0 20px 0 !important;
+    }
+    .succes_img img {
+        width: 160px;
+    }
+    .succes_second_img {
+        margin-left: -50px;
+    }
+    .succes_history_header {
+        font-size: 18px;
+        text-align: center !important;
+        width: 100%;
+    }
+    .succes_text {
+        font-size: 14px;
+        line-height: 16px;
+        font-style: italic;
+        text-align: center !important;
+        padding: 0 10px;
+    }
+    .before_after li {
+        font-size: 12px;
+        font-family: Roboto;
+        font-weight: bold;
+        height: 20px;
+        padding: 0;
+    }
+    .before_after li p {
+        margin-top: -2px;
+    }
+    .before_after li:first-child {
+        width: 40px;
+        left: 50px;
+        top: 155px;
+    }
+    .before_after li:last-child {
+        width: 60px;
+        top: 160px;
+        right: 50px;
+    }
+    .succes_img_block1 {
+        text-align: center !important;
+        top: 114px;
+        right: -10px;
+        left: auto !important;
+        width: 110px;
+        height: 34px;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 3px !important;
+        font-family: Roboto !important;
+        font-weight: lighter;
+    }
+    .succes_img_block1 p {
+        font-family: Roboto;
+        font-weight: bold;
+        margin: 3px 0 0 10px;
+    }
 }

@@ -674,6 +674,9 @@ header {
     font-style: italic;
     color: #354242;
 }
+.succes_mob_header {
+    display: none;
+}
 .succes_wrapper {
     display: flex;
     width: 100%;
