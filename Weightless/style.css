@@ -833,6 +833,9 @@ clip-path: polygon(73% 5%, 84% 44%, 100% 97%, 7% 100%, 0 60%, 5% 0);
     width: 75%;
     padding: 40px 0 40px 25%;
 }
+.dout {
+    display: none;
+}
 .second_span_header span {
         display: none;
     }
@@ -997,6 +1000,10 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
     margin: 100px -180px 0 -50px;
     transform: rotate(357deg);
     background-color: #6eb43f;
+}
+
+.stars_button {
+        display: none;
 }
 
 /*----  O R D E R  ------*/
