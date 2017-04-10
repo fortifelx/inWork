@@ -363,6 +363,34 @@
     .privat_button {
         margin: 25px auto 0 auto;
     }
+    .friends {
+        background-color: white;
+        padding-top: 47px;
+    }
+    .friends_header {
+        font-size: 24px;
+        color: black;
+        line-height: 26px;
+    }
+    .network {
+        margin: 10px;
+    }
+    .networks_wrapper {
+        width: 90%;
+        margin: 15px 0;
+        justify-content: space-around;
+        padding: 0 5%;
+        align-items: stretch;
+    }
+    .friends_amount {
+        font-size: 18px;
+        min-width: auto;
+        margin: 5px 0;
+        
+    }
+    .network_ico {
+        transform: scale(0.7);
+    }
     
     
     
