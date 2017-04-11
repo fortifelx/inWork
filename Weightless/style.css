@@ -1393,8 +1393,11 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
     cursor: pointer;
     font-size: 26px;
     font-family: PFDitalicbold;
-    color: #354242;
+    color: #9aa0a0;
     margin: 20px 60px;
+}
+.map_kyiv_header {
+    color: #354242;
 }
 .map_kyiv_header {
     float: left;

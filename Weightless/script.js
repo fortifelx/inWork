@@ -63,3 +63,28 @@
     
     
 })();
+
+( function() {
+    var kyiv = document.querySelector('.map_kyiv_header');
+    var dnipro = document.querySelector('.map_dnipro_header');
+    var kyivText = document.querySelector('.map_kyiv_text');
+    var dniproText = document.querySelector('.map_dnipro_text');
+    
+    kyiv.addEventListener('click', showKyiv, false);
+    dnipro.addEventListener('click', showDnipro, false);
+    
+    function showKyiv() {
+        kyiv.style.color = '#354242';
+        dnipro.style.color = '#9aa0a0';
+        Velocity(kyivText, { opacity: 1}, 1000);
+        Velocity(dniproText, { opacity: 0}, 1000);
+    }
+     function showDnipro() {
+        dnipro.style.color = '#354242';
+        kyiv.style.color = '#9aa0a0';
+        Velocity(dniproText, { opacity: 1}, 1000);
+        Velocity(kyivText, { opacity: 0}, 1000);
+    }
+    
+    
+})();
