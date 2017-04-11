@@ -49,6 +49,7 @@ header {
 }
 .menu {
     height: 100%;
+    width: auto;
 }
 .menu img{
     cursor: pointer;
@@ -60,6 +61,7 @@ header {
     position: absolute;
     display: block;
     top: 0;
+    left: -400px;
     width: 400px;
     text-align: center;
     height: calc(100% - 50px);
@@ -79,6 +81,8 @@ header {
     color: #5c9437;
 }
 .close_menu {
+    cursor: pointer;
+    display: block;
     font-family: Roboto;
     font-weight: lighter;
     font-size: 16px;
