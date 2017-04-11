@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px) and (max-device-width: 700px) {
+@media screen and (max-width: 700px) {
 .logo, .menu, .top_text_days, .top_text_effective, .call_me_text, .blowballs, .top_triangle_wrapper, .span, .reason_block, .blowballs2, .reason_span, .reason_block_wrapper, .how_block_wrapper, .succes_block, .blowball3, .succes_block_wrapper, .stars_block, .star_block_wrapper, .friends_block  {
        display: none; 
     }
