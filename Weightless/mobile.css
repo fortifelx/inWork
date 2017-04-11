@@ -42,6 +42,9 @@
     .timer_numb:after {
         display: none;
     }
+    .i_want_window  .call_me_form {
+        margin: 0;
+    }
     .call_me {
         margin-top: 380px;
         width: 270px;

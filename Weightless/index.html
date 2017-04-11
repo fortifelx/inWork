@@ -19,7 +19,7 @@
       <div class="logo">
           <img src="img/logo.png" alt="logo">
       </div>
-      <div class="i_want_button">Я ХОЧУ ПОХУДЕТЬ!</div>
+      <div class="i_want_button" id="iwant">Я ХОЧУ ПОХУДЕТЬ!</div>
       
       <div class="time_viewer">
         <p class="first_step">
@@ -51,14 +51,27 @@
     </header>
     
     <article class="top">
+     <div class="i_want_window">
+         <div class="call_me_form">
+               <img src="img/close.png" alt="" class="close_window">
+               <p class="i_want_inst">
+                 Опишите свои потребности и наш менеджер сяжется с вами, чтобы ответить на все ваши вопросы
+                </p>
+                <input type="text" class="call_me_name" placeholder="Введите ваше имя">
+                <input type="text" class="call_me_number"
+                placeholder="ведите ваш телефон">
+                <textarea placeholder="Введите текст коментария ..." class="i_want_text_area"></textarea>
+                <div class="i_want_button">Я ХОЧУ ПОХУДЕТЬ!</div>
+         </div>
+     </div>
       <ul class="menu_list">
              <img src="img/close.png" alt="" class="close_menu">
-              <li>7 ПРИЧИН ВЫБРАТЬ WEIGHTLESS</li>
-              <li>КАК ЭТО РАБОТАЕТ</li>
-              <li>СЧАСТЛИВЫЕ ИСТОРИИ</li>
-              <li>ЗВЕЗДНЫЕ ИСТОРИИ</li>
-              <li>СКОЛЬКО СТОИТ ВАША КРАСОТА</li>
-              <li>СВЯЖИТЕСЬ С НАМИ</li>
+              <a href="#reason">7 ПРИЧИН ВЫБРАТЬ WEIGHTLESS</a>
+              <a href="#how">КАК ЭТО РАБОТАЕТ</a>
+              <a href="#succes">СЧАСТЛИВЫЕ ИСТОРИИ</a>
+              <a href="#stars">ЗВЕЗДНЫЕ ИСТОРИИ</a>
+              <a href="#order">СКОЛЬКО СТОИТ ВАША КРАСОТА</a>
+              <a href="#callus">СВЯЖИТЕСЬ С НАМИ</a>
           </ul>
        <ul class="blowballs">
            <li></li>
@@ -103,7 +116,7 @@
             </p>
         </div>
     </article>
-    <article class="reason">
+    <article class="reason" id="reason">
             <ul class="reason_block">
                 <li></li>
                 <li></li>
@@ -136,7 +149,7 @@
             <li></li>
         </ul>
     </article> 
-    <article class="how">
+    <article class="how" id="how">
        <p class="how_header">
            КАК ЭТО РАБОТАЕТ
        </p>
@@ -188,7 +201,7 @@
             <p class="progress_article_text">Програмы в Израиле, США, Японии и Франции. Абсолютно успешно и</p>
         </section>
     </article>
-    <article class="succes">
+    <article class="succes" id="succes">
        <ul class="succes_block">
                <li></li>
                <li></li>
@@ -196,7 +209,7 @@
         <div class="blowball3">
             
         </div>
-        <p class="succes_header">
+        <p class="succes_header" id="succes">
             5 ЛЕТ УСПЕХА! 5000 СЧАСТЛИВЫХ ИСТОРИЙ
         </p>
         <p class="succes_mob_header">СЧАСТЛИВЫЕ ИСТОРИИ</p>
@@ -268,7 +281,7 @@
         Жители северных провинций Китая в неурожайный год крепили за ушной раковиной сырые твердые рисинки.<br> Стимулируя эти точки, они избавлялись от чуства голода, что помогало пережить им длинную холодную зиму, без достаточных запасов еды.   
         </p>
     </div>
-    <article class="stars">
+    <article class="stars" id="stars">
         <ul class="stars_block">
             <li></li>
             <li></li>
@@ -336,7 +349,7 @@
             <li></li>
         </ul>
     </article>
-    <article class="order">
+    <article class="order" id="order">
         <p class="order_header">СКОЛЬКО СТОИТ ВАША КРАСОТА?</p>
         <div class="order_program_wrapper">
             <section class="order_program_stage">
@@ -371,7 +384,7 @@
                 </div>
             </div>
     </article>
-    <article class="friends">
+    <article class="friends" id="callus">
        <ul class="friends_block">
            <li></li>
            <li></li>
@@ -401,7 +414,8 @@
           </div>
            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40655.501492474395!2d30.521566!3d50.441681!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceff6efe6ab5%3A0xf92d4e0b82f14d34!2z0LLRg9C70LjRhtGPINCR0LDRgdC10LnQvdCwLCAyLCDQmtC40ZfQsiwg0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sua!4v1491812557493" width="100%" height="750" frameborder="0" style="border:0" allowfullscreen></iframe>
         </article>
-    </article>
+        </article>
+        <div class="clearfix"></div>
       </div>
       <script src="velocity.js"></script>
       <script src="script.js"></script>
