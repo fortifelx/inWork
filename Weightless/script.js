@@ -23,6 +23,7 @@
     
     function stopDefault() {
         event.preventDefault();
+        hideMenu();
         var el = event.target;
         var id = el.getAttribute('href');
         var target = document.querySelector(id);

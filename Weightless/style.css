@@ -1366,7 +1366,7 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
 .google_map {
     position: relative;
     width: 100%;
-    height: 660px;
+    height: 700px;
 }
 .map_block {
     width: 100%;
@@ -1378,8 +1378,9 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
     clip-path: polygon(39% 0, 100% 0, 100% 38%, 100% 100%, 50% 97%, 0 100%, 0 62%, 0 0);
 }
 .map_legend {
-    width: 520px;
-    height: 420px;
+    width: 470px;
+    height: 380px;
+    padding: 50px;
     background-color: white;
     position: absolute;
     top: calc( 10% + 110px);
@@ -1387,8 +1388,55 @@ clip-path: polygon(9% 0, 91% 0, 100% 50%, 91% 100%, 58% 92%, 10% 100%, 0 66%);
     -webkit-clip-path: polygon(39% 5%, 94% 0, 100% 38%, 95% 100%, 66% 94%, 9% 100%, 0 62%, 6% 0);
     clip-path: polygon(39% 5%, 94% 0, 100% 38%, 95% 100%, 66% 94%, 9% 100%, 0 62%, 6% 0);
 }
+.map_kyiv_header, .map_dnipro_header {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 26px;
+    font-family: PFDitalicbold;
+    color: #354242;
+    margin: 20px 60px;
+}
+.map_kyiv_header {
+    float: left;
+    margin: 20px 0 0 70px;
+}
+.map_dnipro_header {
+    float: right;
+    margin: 20px 70px 0 0;
+}
+.map_kyiv_text, .map_dnipro_text {
+    width: 180px;
+}
+.map_kyiv_text {
+   margin: 150px 0 0 105px; 
+}
 
+.map_dnipro_text {
+    opacity: 0;
+    margin: -130px 0 0 105px;
+}
+.map_kyiv_text p, .map_dnipro_text p {
+    position: relative;
+    margin: 15px 0;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 25px;
+    color: #354242;
+}
 
+.map_kyiv_text p:before, .map_dnipro_text p:before {
+    display: block;
+    position: absolute;
+    left: -35px;
+}
+.map_number:before {
+    content: url(img/black_phone.png);
+}
+.map_adress:before {
+    content: url(img/map_ico.png);
+    top: 25px;
+}
 
 
     
