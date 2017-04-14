@@ -1,3 +1,54 @@
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Bold.ttf);
+    font-style: normal;
+    font-weight: bolder;
+}
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Italic.ttf);
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-BoldItalic.ttf);
+    font-style: bolder;
+    font-weight: italic;
+}
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Black.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-BlackItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Light.ttf);
+    font-style: normal;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-LightItalic.ttf);
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
+
 .wrapper {
     width: 1280px;
     margin: auto;
