@@ -8,7 +8,7 @@
     font-family: Lato;
     src: url(fonts/Lato-Bold.ttf);
     font-style: normal;
-    font-weight: bolder;
+    font-weight: bold;
 }
 @font-face {
     font-family: Lato;
@@ -26,13 +26,13 @@
     font-family: Lato;
     src: url(fonts/Lato-Black.ttf);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
 }
 @font-face {
     font-family: Lato;
     src: url(fonts/Lato-BlackItalic.ttf);
     font-style: italic;
-    font-weight: bold;
+    font-weight: 900;
 }
 @font-face {
     font-family: Lato;
@@ -46,11 +46,112 @@
     font-style: italic;
     font-weight: lighter;
 }
-
-
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Medium.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+b {
+    font-weight: 900;
+}
+body {
+    font-family: Lato;
+}
 
 .wrapper {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background-image: url(img/background_saved_for_web.jpg);
+}
+
+.header_wrapper {
+    position: relative;
     width: 1280px;
     margin: auto;
-    background-image: url(img/background_saved_for_web.jpg);
+    padding-bottom: 160px;
+}
+.first_decor {
+    position: absolute;
+    width: 1100px;
+    left: 810px;
+    top: -650px;
+}
+.second_decor {
+    position: absolute;
+    width: 1000px;
+    right: 1150px;
+    top: 510px;
+}
+
+.logo {
+    margin: 15px 0 0 160px;
+    width: 90px;
+    height: 70px;
+}
+.header_numbers {
+    position: relative;
+    z-index: 1;
+    margin: 35px 160px 0 0;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    color: #fefefe;
+}
+.header_text {
+    position: relative;
+    z-index: 1;
+    margin: 90px 0 0 160px;
+    color: #ffffff;
+}
+.header_text p:first-child {
+    font-weight: 700;
+    font-size: 86px;
+}
+.header_text p:last-child {
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.consul_button {
+    display: block;
+    width: 320px;
+    height: 60px;
+    margin: 60px 0 0 160px;
+    background-color: #e2185b;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    
 }
