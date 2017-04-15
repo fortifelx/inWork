@@ -226,6 +226,124 @@ header {
     height: 85px;
 }
 
+.our_works {
+    width: 100%;
+    overflow: hidden;
+}
+.our_works_wrapper {
+    width: 1280px;
+    margin: auto;
+}
+.first_mockup_info {
+    width: 200%;
+    padding-bottom: 120px;
+    background-color: #3853a4;
+}
+.our_works_header {
+    margin: 0 0 0 160px;
+    padding-top: 95px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+}
+.first_mockup_img {
+    width: 490px;
+    float: right;
+    margin-right: calc(50% + 160px);
+}
+.first_mockup_text {
+    margin: 185px 0 0 160px;
+    width: 200px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.first_mockup_button {
+    margin: 50px 0 10px 160px;
+    width: 280px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    color: #fff;
+    background-color: #e2185b;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+}
+.second_mockup_info {
+    width: 200%;
+    padding:60px 0 15px 0;
+    background-color: #e2185b;
+}
+.second_mockup_img {
+    width: 655px;
+    height: 520px;
+    float: left;
+    margin-left: 55px;
+}
+.second_mockup_wrapper {
+    float: left;
+    margin: 100px 0 0 75px;
+}
+.second_mockup_text {
+    width: 200px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.second_mockup_button {
+    margin-top: 50px;
+    width: 280px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    color: #fff;
+    background-color: #3853a4;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+}
+.third_mockup_info {
+    width: 200%;
+    padding: 60px 0 180px 0;
+    background-color: #3853a4;
+}
+.third_mockup_img {
+    width: 820px;
+    height: 540px;
+    float: right;
+    margin-right: calc(50% + 10px);
+}
+.third_mockup_text {
+    margin: 220px 0 0 160px;
+    width: 200px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.third_mockup_button {
+    margin: 50px 0 10px 160px;
+    width: 280px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    color: #fff;
+    background-color: #e2185b;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+}
+
+
 
 
 
