@@ -13,7 +13,7 @@
             <div class="header_wrapper">
                <object data="svg/decor1.svg" type="image/svg+xml" class="first_decor"></object>
                <object data="svg/decor1.svg" type="image/svg+xml" class="second_decor"></object>
-                <object data="svg/logosvg.svg" type="image/svg+xml" class="logo"></object>
+               <div class="logo_wrapper"> <object data="svg/logosvg.svg" type="image/svg+xml" class="logo"></object></div>
                 <div class="header_numbers">
                     <p class="header_number">+380 63 482 06 79</p>
                     <p class="header_number">+380 96 317 96 16</p>
@@ -28,8 +28,12 @@
             </div>
          </header>
          <article class="who_we">
+            <div class="who_we_wrapper">
+            <object data="svg/decor3.svg" type="image/svg+xml" class="who_we_decor"></object>
              <section class="who_we_slider">
-                 <div class="slide_viewer"></div>
+                 <div class="slide_viewer">
+                     <img src="img/image_1_sfv.jpg" alt="">
+                 </div>
                  <div class="slide_subtext">
                      <p class="slide_number"><b>01</b>/02</p>
                      <p class="slide_header">КТО МЫ?</p>
@@ -37,25 +41,28 @@
                      Разрабатываем бренды, котрые выделяются среди конкурентов.</p>
                  </div>
              </section>
+             <div class="clearfix"></div>
              <section class="you_need">
                  <p class="you_need_header">ВАМ НЕЖЕН САЙТ, ЕСЛИ ВЫ ХОТИТЕ:</p>
                  <ul class="you_need_list">
                      <li>
-                         <img src="" alt="">
+                         <object data="svg/product.svg" type="image/svg+xml" class="you_need_svg"></object>
                          <p class="you_need_text">
                              Раскрыть весь потенциал продукта
                          </p>
                      </li>
                      <li>
-                         <img src="" alt="">
+                         <object data="svg/task.svg" type="image/svg+xml" class="you_need_svg"></object>
                          <p class="you_need_text">решить поставленные задачи</p>
                      </li>
                      <li>
-                         <img src="" alt="">
+                         <object data="svg/tasks.svg" type="image/svg+xml" class="you_need_svg"></object>
                          <p class="you_need_text">Продавать и презентовать лучше</p>
                      </li>
                  </ul>
+                 
              </section>
+             </div>
          </article>
      </div>
       <script src="velocity.js"></script>

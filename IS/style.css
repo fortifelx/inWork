@@ -66,6 +66,7 @@ body {
 header {
     width: 100%;
     background-image: url(img/background_saved_for_web.jpg);
+    overflow: hidden;
 }
 
 .header_wrapper {
@@ -86,9 +87,13 @@ header {
     right: 1150px;
     top: 510px;
 }
-
-.logo {
+.logo_wrapper {
+    cursor: pointer;
     margin: 15px 0 0 160px;
+    width: 90px;
+    height: 70px;
+}
+.logo {
     width: 90px;
     height: 70px;
 }
@@ -102,6 +107,7 @@ header {
     color: #fefefe;
 }
 .header_text {
+    cursor: default;
     position: relative;
     z-index: 1;
     margin: 90px 0 0 160px;
@@ -117,6 +123,7 @@ header {
     font-size: 20px;
 }
 .consul_button {
+    cursor: pointer;
     display: block;
     width: 320px;
     height: 60px;
@@ -131,6 +138,92 @@ header {
     -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
     -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
     box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+}
+.who_we {
+    width: 100%;
+    overflow: hidden;
+}
+.who_we_slider {
+    margin-top: 150px;
+    width: 100%;
+}
+.who_we_wrapper {
+    position: relative;
+    width: 1280px;
+    margin: auto;
+}
+.who_we_decor {
+    position: absolute;
+    width: 1100px;
+    left: 390px;
+    top: 85px;
+}
+.who_we_slider {
+    position: relative;
+    z-index: 1;
+}
+.slide_viewer {
+    float: left;
+    margin: 0 0 0 160px;
+}
+.slide_viewer img {
+    width: 570px;
+    height: 400px;
+}
+.slide_subtext {
+    width: 310px;
+    float: left;
+    margin: 40px 0 0 60px;
+    color: #616168;
+}
+.slide_header {
+    margin: 40px 0;    
+    font-size: 40px;
+    font-weight: 900;
+}
+.slide_number b {
+    font-size: 40px;
+    font-weight: 900;
+}
+.slide_number {
+    font-size: 20px;
+}
+.slide_text {
+    font-size: 20px;
+    line-height: 24px;
+}
+.you_need {
+    width: 200%;
+    padding: 100px 0 180px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 165px;
+    background-color: rgba( 255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.6);
+}
+.you_need_header {
+    width: 390px;
+    margin-left: 160px;
+    font-size: 40px;
+    font-weight: 900;
+}
+.you_need_list {
+    width: calc(50% - 320px);
+    margin: 100px 160px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.you_need_list li {
+    margin: 0 5px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 300px;
+}
+.you_need_svg {
+    margin-bottom: 35px;
+    width: 85px;
+    height: 85px;
 }
 
 
@@ -154,4 +247,13 @@ header {
 
 footer {
     
+}
+.clearfix { 
+    zoom: 1; 
+}
+.clearfix:before, .clearfix:after {
+    content: "\0020"; display: block; height: 0; visibility: hidden; 
+}
+.clearfix:after { 
+    clear: both; 
 }
