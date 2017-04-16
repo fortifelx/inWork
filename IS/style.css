@@ -61,6 +61,7 @@ body {
 
 .wrapper {
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -441,7 +442,82 @@ header {
     color: #616168;
 }
 
+.price {
+    width: 100%;
+    background-color: #3853a4;
+}
+.price_wrapper {
+    width: 1280px;
+    margin: auto;
+    padding: 95px 0 50px 0;
+}
+.price_wrapper ul {
+    margin: 60px 0 0 160px;
+    font-size: 0;
+}
+.price_header {
+    cursor: default;
+    margin-left: 160px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+}
+.price_table_header {
+    cursor: pointer;
+    display: inline-block;
+    width: 270px;
+    margin-right: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.price_table_header p {
+    display: inline;
+    padding-bottom: 10px;
+    opacity: 0.5;
+}
+.price_table_header:hover p {
+    border-bottom: 3px solid #fff;
+}
 
+.price_table_header:first-child p {
+    opacity: 1;
+    border-bottom: 3px solid #fff;
+}
+
+.price_table {
+    margin:60px 0 0 160px;
+    color: #fff;
+}
+.price_table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.price_table tr:last-child, .price_table tr:first-child, .price_table tr:nth-child(2) {
+    border: none;
+}
+.price_table th {
+    font-size: 24px;
+    font-weight: bold;
+    height: 36px;
+}
+.price_table td {
+    font-size: 18px;
+    line-height: 36px;
+}
+.price_table tr td {
+    width: 235px;
+    text-align: center;
+}
+.price_table tr td:first-child {
+    text-align: left;
+}
+
+.price_button {
+    margin: 70px 185px 0 0;
+    float: right;
+}
 
 
 
