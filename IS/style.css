@@ -256,14 +256,20 @@ header {
     width: 100%;
     overflow: hidden;
 }
-.our_works_wrapper {
-    width: 1280px;
-    margin: auto;
+.mockup_wrapper {
+    width: 100%;
+    background-color: #3853a4;
+}
+.mockup_wrapper:first-child {
+    padding: 0 0 120px 0;
+}
+.mockup_wrapper:nth-child(even) {
+    background-color: #e2185b;
+    padding: 60px 0 20px 0;
 }
 .first_mockup_info {
-    width: 200%;
-    padding-bottom: 120px;
-    background-color: #3853a4;
+    width: 1280px;
+    margin: auto;
 }
 .our_works_header {
     cursor: default;
@@ -276,7 +282,7 @@ header {
 .first_mockup_img {
     width: 490px;
     float: right;
-    margin-right: calc(50% + 160px);
+    margin-right: 160px;
 }
 .first_mockup_text {
     margin: 185px 0 0 160px;
@@ -302,9 +308,8 @@ header {
     box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
 }
 .second_mockup_info {
-    width: 200%;
-    padding:60px 0 15px 0;
-    background-color: #e2185b;
+    width: 1280px;
+    margin: auto;
 }
 .second_mockup_img {
     width: 655px;
@@ -339,15 +344,14 @@ header {
     box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
 }
 .third_mockup_info {
-    width: 200%;
+    width: 1280px;
+    margin: auto;
     padding: 60px 0 180px 0;
-    background-color: #3853a4;
 }
 .third_mockup_img {
-    width: 820px;
-    height: 540px;
+    width: 810px;
+    height: 525px;
     float: right;
-    margin-right: calc(50% + 10px);
 }
 .third_mockup_text {
     margin: 220px 0 0 160px;
