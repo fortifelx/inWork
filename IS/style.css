@@ -63,6 +63,12 @@ body {
     width: 100%;
 }
 
+
+
+/*        H E A D E R         */
+
+
+
 header {
     width: 100%;
     background-image: url(img/background_saved_for_web.jpg);
@@ -88,6 +94,7 @@ header {
     top: 510px;
 }
 .logo_wrapper {
+    display: inline-block;
     cursor: pointer;
     margin: 15px 0 0 160px;
     width: 90px;
@@ -139,6 +146,12 @@ header {
     -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
     box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
 }
+
+
+/*    W H O     W E    article #2    */
+
+
+
 .who_we {
     width: 100%;
     overflow: hidden;
@@ -192,6 +205,12 @@ header {
     font-size: 20px;
     line-height: 24px;
 }
+
+
+/*   Y O U    N E E D    article #3    */
+
+
+
 .you_need {
     width: 200%;
     padding: 100px 0 180px 0;
@@ -202,6 +221,7 @@ header {
     color: rgba(0, 0, 0, 0.6);
 }
 .you_need_header {
+    cursor: default;
     width: 390px;
     margin-left: 160px;
     font-size: 40px;
@@ -226,6 +246,11 @@ header {
     height: 85px;
 }
 
+
+/*    P O R T F O L I O     article #4    */
+
+
+
 .our_works {
     width: 100%;
     overflow: hidden;
@@ -240,6 +265,7 @@ header {
     background-color: #3853a4;
 }
 .our_works_header {
+    cursor: default;
     margin: 0 0 0 160px;
     padding-top: 95px;
     font-size: 40px;
@@ -260,6 +286,7 @@ header {
     color: #fff;
 }
 .first_mockup_button {
+    cursor: pointer;
     margin: 50px 0 10px 160px;
     width: 280px;
     height: 60px;
@@ -296,6 +323,7 @@ header {
     color: #fff;
 }
 .second_mockup_button {
+    cursor: pointer;
     margin-top: 50px;
     width: 280px;
     height: 60px;
@@ -329,6 +357,7 @@ header {
     color: #fff;
 }
 .third_mockup_button {
+    cursor: pointer;
     margin: 50px 0 10px 160px;
     width: 280px;
     height: 60px;
@@ -344,6 +373,73 @@ header {
 }
 
 
+
+/*    R E C O M E N D A T I O N     article #5 */
+
+
+.recomend {
+    width: 100%;
+    background-color: #fff:
+}
+.recomend_wrapper {
+    padding: 150px 0 140px 0;
+    width: 1280px;
+    margin: auto;
+}
+.recomend_header {
+    cursor: default;
+    margin-left: 160px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #616168;
+}
+.recomend_viewer {
+    position: relative;
+    margin: 100px 0 0 160px;
+    width: calc(100% - 320px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.recomend_left_arrow {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 75px;
+}
+.recomend_right_arrow {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 75px;
+}
+.recomend_slide {
+    width: 960px;
+}
+.recomend_slide img {
+    width: 190px;
+    height: 190px;
+    border-radius: 85px;
+    float: left;
+    margin-left: 60px;
+}
+.recomend_slide_header {
+    margin-left: 305px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #3853a4;
+}
+.recomend_slide_text {
+    width: 560px;
+    float: left;
+    margin: 25px 0 0 55px;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+    color: #616168;
+}
 
 
 
