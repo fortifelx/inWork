@@ -136,6 +136,9 @@ header {
     margin-top: 50px;
     font-size: 20px;
 }
+.header_text span {
+    display: block;
+}
 .consul_button {
     cursor: pointer;
     display: block;

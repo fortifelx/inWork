@@ -1,0 +1,58 @@
+@media handheld and (max-width: 900px), screen and (max-width: 935px) {
+    header {
+        background-position: center;
+        background-size: cover;
+    }
+    .header_wrapper {
+        width: 280px;
+        padding-bottom: 40px;
+    }
+    .logo_wrapper {
+        width: 60px;
+        height: 47px;
+        margin: 20px 0 0 0;
+    }
+    .logo {
+        width: 60px;
+        height: 47px;
+    }
+    .header_numbers {
+        margin: 30px 0 0 0;
+        font-size: 18px;
+    }
+    .header_text p:first-child {
+        font-size: 40px;
+        line-height: 44px;
+        margin: 50px 0 0 0;
+        font-weight: 900;
+    }
+    .header_text p:last-child {
+        width: 238px;
+        margin: 12px 0 0 0;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+    .header_text span {
+        display: inline;
+    }
+    .consul_button {
+        width: 280px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 30px 0 0 0;
+    }
+    .first_decor {
+        width: 500px;
+        left: 230px;
+        top: -137px;
+    }
+    .second_decor {
+        width: 500px;
+        right: 240px;
+        top: 220px;
+        transform: rotate(90deg);
+    }
+}
