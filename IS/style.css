@@ -202,6 +202,14 @@ header {
     margin: 40px 0 0 60px;
     color: #616168;
 }
+.slide_subtext img {
+    cursor: pointer;
+    float: right;
+    width: 35px;
+    height: 25px;
+    margin-right: 160px;
+    margin-top: 6px;
+}
 .slide_header {
     margin: 40px 0;    
     font-size: 40px;
@@ -210,14 +218,19 @@ header {
 .slide_number b {
     font-size: 40px;
     font-weight: 900;
+    margin-right: 10px;
 }
 .slide_number {
     font-size: 20px;
+    font-weight: 700;
 }
 .slide_text {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
+}
+.slide_text span {
+    display: block;
 }
 
 
