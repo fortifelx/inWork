@@ -8,7 +8,7 @@
     font-family: Lato;
     src: url(fonts/Lato-Bold.ttf);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
 }
 @font-face {
     font-family: Lato;
@@ -19,7 +19,7 @@
 @font-face {
     font-family: Lato;
     src: url(fonts/Lato-BoldItalic.ttf);
-    font-style: bolder;
+    font-style: 600;
     font-weight: italic;
 }
 @font-face {
@@ -109,7 +109,7 @@ header {
     position: relative;
     z-index: 1;
     margin: 35px 160px 0 0;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
     float: right;
     color: #fefefe;
@@ -126,7 +126,7 @@ header {
     font-size: 86px;
 }
 .header_text p:last-child {
-    font-weight: bold;
+    font-weight: 600;
     margin-top: 50px;
     font-size: 20px;
 }
@@ -138,7 +138,7 @@ header {
     margin: 60px 0 0 160px;
     background-color: #e2185b;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     color: #ffffff;
     text-align: center;
     line-height: 60px;
@@ -238,7 +238,7 @@ header {
 .you_need_list li {
     margin: 0 5px;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     width: 300px;
 }
 .you_need_svg {
@@ -289,7 +289,7 @@ header {
     width: 200px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: #fff;
 }
 .first_mockup_button {
@@ -325,7 +325,7 @@ header {
     width: 200px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: #fff;
 }
 .second_mockup_button {
@@ -358,7 +358,7 @@ header {
     width: 200px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: #fff;
 }
 .third_mockup_button {
@@ -433,7 +433,7 @@ header {
     margin-left: 305px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: #3853a4;
 }
 .recomend_slide_text {
@@ -472,7 +472,7 @@ header {
     width: 270px;
     margin-right: 60px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     color: #fff;
 }
 .price_table_header p {
@@ -503,7 +503,7 @@ header {
 }
 .price_table th {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     height: 36px;
 }
 .price_table td {
@@ -531,7 +531,7 @@ header {
     width: 100%;
     position: relative;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 .our_team_wrapper {
     width: 1280px;
@@ -571,13 +571,13 @@ header {
     margin-top: 25px;
     line-height: 24px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     color: #3853a4;
 }
 .teammate_post {
     font-size: 16px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: #3853a4;
 }
 .teammate_text {
@@ -595,7 +595,7 @@ header {
     position: relative;
     margin: 0 0 0 45px;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     color: #e2185b;
 }
 .teammate_email:before {
@@ -615,15 +615,62 @@ header {
     height: 30px;
     margin: 0 0 -9px 27px;
 }
-.third_decor {
-    position: absolute;
-    width: 555px;
-    height: 1085px;
+
+
+/*      R E S U L T     */
+
+
+.result {
+    width: 100%;
+    background-color: #e2185b;
+    padding: 120px 0 145px 0;
+}
+.result_wrapper {
+    position: relative;
+    width: 1280px;
+    margin: auto;
+}
+.result_header {
+    margin-left: 160px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+}
+.result_list {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 90px 0 0 160px;
+    width: calc(100% - 320px);
+}
+.result_list_punct {
+    width: 210px;
+    margin-right: 40px;
+}
+.result_list_punct:last-child {
+    margin: 0;
 }
 
-
-
-
+.result_ico {
+    color: white;
+    width: 80px;
+    height: 80px;
+}
+.result_text {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+.third_decor {
+    position: absolute;
+    width: 1150px;
+    top: -775px;
+    left: 730px;
+}
 
 
 
