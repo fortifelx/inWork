@@ -1,7 +1,7 @@
 function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 50.451721, lng: 30.599135},
-          zoom: 16,
+          center: {lat: 50.446000, lng: 30.599999},
+          zoom: 15,
           styles: [
            {
         "featureType": "all",
@@ -13,8 +13,16 @@ function initMap() {
             {
                 "gamma": 0.5
             }
+        ],
+    },
+        {
+            featureType: 'poi.business',
+        stylers: [
+            {
+                visibility: 'off'
+            }
         ]
-    }
+        }
 ]
         });
     var image = 'img/marker.png';
