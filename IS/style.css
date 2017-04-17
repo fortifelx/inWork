@@ -384,7 +384,7 @@ header {
 
 .recomend {
     width: 100%;
-    background-color: #fff:
+    background-color: #fff;
 }
 .recomend_wrapper {
     padding: 150px 0 140px 0;
@@ -524,6 +524,102 @@ header {
 }
 
 
+/*    O U R     T E A M      */
+
+
+.our_team {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.our_team_wrapper {
+    width: 1280px;
+    margin: auto;
+    padding: 150px 0 150px 0;
+}
+.team_header {
+    margin-left: 160px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #616168;
+}
+.team_wrapper {
+    margin: 95px 0 0 160px;
+    display: flex;
+    width: calc(100% - 320px);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.teammate {
+    position: relative;
+    margin: 0 20px 0 0;
+    width: 300px;
+    height: 375px;
+}
+.team_wrapper:last-child .teammate {
+     height: 330px;
+}
+.teammate_img {
+    width: 160px;
+    height: 160px;
+}
+.teammate_name {
+    margin-top: 25px;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3853a4;
+}
+.teammate_post {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #3853a4;
+}
+.teammate_text {
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: italic;
+    color: #000;
+}
+.team_contact_wrapper {
+    position: absolute;
+    bottom: 0;
+    }
+.teammate_email {
+    display: inline;
+    position: relative;
+    margin: 0 0 0 45px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e2185b;
+}
+.teammate_email:before {
+    cursor: pointer;
+    content: url(img/email.png);
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    left: -45px;
+}
+.teammate_facebook {
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 -9px 27px;
+}
+.third_decor {
+    position: absolute;
+    width: 555px;
+    height: 1085px;
+}
 
 
 
