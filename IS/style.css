@@ -497,6 +497,9 @@ header {
     width: 100%;
     background-color: #3853a4;
 }
+.price_menu {
+    display: none;
+}
 .price_wrapper {
     width: 940px;
     margin: auto;
@@ -525,6 +528,7 @@ header {
     margin: 0;
 }
 .price_table_header p {
+    text-transform: uppercase;
     display: inline;
     padding-bottom: 10px;
     opacity: 0.5;

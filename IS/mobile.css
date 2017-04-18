@@ -271,6 +271,81 @@
     
     
     
+    /*     P R I C E    */
+    
+    .price {
+        background-color: #fff;
+    }
+    
+    .price_wrapper {
+        padding: 30px 0 0 0;
+        width: 280px;
+        margin-right: auto;
+    }
+    .price_header {
+        margin: 0 0 0 20px;
+        font-size: 20px;
+        color: #616168;
+    }
+    
+    .price_table_header {
+        position: relative;
+        cursor: default;
+        margin: 0 0 0 0;
+        font-size: 16px;
+        color: #3853a4;
+        height: 210px;
+    }
+    .price_table_header:first-child {
+        height: 260px;
+    }
+    .price_table_header p {
+        text-transform: none;
+        opacity: 1;
+        line-height: 40px;
+    }
+    .price_wrapper ul{
+        margin: 35px 0 0 0;
+    }
+    .price_menu {
+        overflow: hidden;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        width: 260px;
+        margin: 10px 0 0 0;
+        padding-left: 20px;
+        height: 42px;
+        line-height: 42px;
+        border: 1px solid #3652a5;
+        font-size: 16px;
+        font-weight: 700;
+        color: #626168;
+    }
+    .price_menu:after {
+        position: absolute;
+        content: url(img/d_arrow.png);
+        top: 0;
+        right: 20px;
+    }
+    .price_menu:hover {
+        height: 100px;
+    }
+    
+    
+    .price_table {
+        display: none;
+    }
+    .price_button {
+        display: none;
+    }
+    .tab_button {
+        display: block;
+        width: 275px;
+        margin: 0;
+        float: none;
+        margin:5px 0 0 -18px;
+    }
     
     
     
