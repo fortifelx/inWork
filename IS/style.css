@@ -178,10 +178,10 @@ header {
     width: 940px;
     margin: auto;
 }
-.who_we_decor {
-    position: absolute;
+.who_we_decor svg {
     width: 1100px;
-    left: 220px;
+    position: absolute;
+    left: 210px;
     top: 85px;
 }
 .who_we_slider {
