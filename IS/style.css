@@ -282,6 +282,13 @@ header {
     width: 100%;
     overflow: hidden;
 }
+.our_works_viewer {
+    position: relative;
+}
+.works_arrow {
+    display: none;
+    position: absolute;
+}
 .mockup_wrapper {
     width: 100%;
     background-color: #3853a4;
@@ -299,7 +306,6 @@ header {
 }
 .our_works_header {
     cursor: default;
-    margin: 0 0 0 0;
     padding-top: 95px;
     font-size: 40px;
     font-weight: 900;
@@ -308,7 +314,6 @@ header {
 .first_mockup_img {
     width: 490px;
     float: right;
-    margin-right: 0;
 }
 .first_mockup_text {
     margin: 185px 0 0 0;
@@ -480,6 +485,9 @@ header {
     font-style: italic;
     font-weight: 800;
     color: #616168;
+}
+.recomend_slide_text span {
+    display: block;
 }
 
 /*   P R I C E    T A B L E   */
