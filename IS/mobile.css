@@ -348,6 +348,89 @@
     }
     
     
+    /*     T E A M     */
     
-        
+    
+    .our_team_wrapper {
+        width: 280px;
+        margin: auto;
+        padding: 20px 0 140px 0;
+        overflow: hidden;
+    }
+    .team_viewer {
+        margin-top: 35px;
+        width: 3000px;
+    }
+    .team_header {
+        margin: 0;
+        font-size: 20px;
+    } 
+    .team_wrapper {
+        width: 1000px;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+    .teammate {
+        width: 280px;
+        float: left;
+        height: 355px;
+    }
+    .team_wrapper:last-child .teammate {
+     height: 355px;
+}
+    .teammate_name {
+        margin: 20px 0 0 0;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .teammate_post {
+        line-height: 18px;
+    }
+    .teammate_text {
+        margin: 15px 0 0 0;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .teammate_email:before {
+        width: 23px;
+        height: 23px;
+        top: 0;
+    }
+    .teammate_facebook {
+        width: 23px;
+        height: 23px;
+        margin: 0 0 -8px 27px;
+    }
+    .team_left_arrow {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 460px;
+        left: 165px;
+    }
+    .team_right_arrow {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 460px;
+        left: 95px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
