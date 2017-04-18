@@ -718,7 +718,6 @@ header {
 }
 
 .result_ico {
-    color: white;
     width: 80px;
     height: 80px;
 }
@@ -728,6 +727,9 @@ header {
     line-height: 24px;
     font-weight: 600;
     color: #fff;
+}
+.result_text span {
+    display: block;
 }
 .third_decor {
     position: absolute;

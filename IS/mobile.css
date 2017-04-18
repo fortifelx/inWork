@@ -354,7 +354,7 @@
     .our_team_wrapper {
         width: 280px;
         margin: auto;
-        padding: 20px 0 140px 0;
+        padding: 20px 0 70px 0;
         overflow: hidden;
     }
     .team_viewer {
@@ -417,6 +417,49 @@
         left: 95px;
     }
     
+    
+    /*     R E S U L T    */
+
+    .result {
+        margin-top: 70px;
+        padding: 80px 0 100px 0;
+    }
+    .result_wrapper {
+        width: 280px;
+        margin: auto;
+    }
+    .result_header {
+        font-size: 20px;
+    }
+    .result_list {
+        flex-direction: column;
+        margin:50px 0 0 0;
+    }
+    .result_list_punct {
+        width: 280px;
+        height: 40px;
+        margin: 0 0 30px 0;
+    }
+    .result_ico {
+        width: 35px;
+        height: 35px;
+        float: left;
+    }
+    .result_text {
+        margin: 7px 0 0 45px;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        width: 220px;
+    }
+    .result_text span {
+        display: inline;
+    }
+    .third_decor {
+        width: 750px;
+        left: 210px;
+        top: -570px;
+    }
     
     
     
