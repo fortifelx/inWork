@@ -1,34 +1,23 @@
-function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 50.446000, lng: 30.599999},
-          zoom: 15,
-          styles: [
-           {
-        "featureType": "all",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "gamma": 0.5
-            }
-        ],
-    },
-        {
-            featureType: 'poi.business',
-        stylers: [
-            {
-                visibility: 'off'
-            }
-        ]
+    ( function() {
+    
+    var site = document.querySelector('body');
+    var consulButtons = document.querySelectorAll('.consul_button');
+        for (i = 0; i < consulButtons.length; i++) {
+            consulButtons[i].addEventListener('click', goToConsulWindow, false);
         }
-]
+    function goToConsulWindow() {
+        event.preventDefault();
+        var el = event.target;
+        var id = el.getAttribute('href');
+        var target = document.querySelector(id);
+        if(target) {Velocity( target, "scroll", {
+            container: site,
+            duration: 1500
         });
-    var image = 'img/marker.png';
-    var beachMarker = new google.maps.Marker({
-    position: {lat: 50.451846, lng: 30.598572},
-    map: map,
-    icon: image
-  });
-      };
+       }
+    }
+
+})();
+
+    
+    

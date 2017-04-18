@@ -178,10 +178,10 @@ header {
     width: 940px;
     margin: auto;
 }
-.who_we_decor svg {
+.who_we_decor {
     width: 1100px;
     position: absolute;
-    left: 210px;
+    left: 220px;
     top: 85px;
 }
 .who_we_slider {
@@ -573,7 +573,7 @@ header {
 
 .price_button {
     margin: 70px 185px 0 0;
-    float: right;
+    float: none;
 }
 
 
