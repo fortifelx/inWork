@@ -782,6 +782,9 @@ footer {
     font-weight: 600;
     color: #e2185b;
 }
+.brif_text span {
+    display: block;
+}
 .call_us input, .brif_question {
     color: #d3d3d3;
     border: none;

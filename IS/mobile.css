@@ -463,6 +463,79 @@
     
     
     
+    /*   B R I F F   */ 
+    
+    
+    .brif {
+        background-color: rgba(0, 0, 0, 0);
+        top: 0;
+        margin: auto;
+        width: 320px;
+        padding: 0;
+    }
+    .brif_header {
+        width: 280px;
+        font-size: 20px;
+        padding: 80px 20px 30px 20px;
+        background-color: #fff;
+        margin: auto;
+    }
+    .call_us {
+        background-color: #fff;
+        width: 280px;
+        margin: 0 auto 0 auto;
+        float: none;
+        padding: 0 20px 90px 20px;
+    }
+    .brif_text {
+        font-size: 16px;
+        line-height: 18px;
+        width: 280px;
+}
+    .brif_text i {
+        font-style: normal;
+        font-weight: 700;
+        color: black;
+    }
+    .brif_text span {
+        display: inline;
+    }
+    .call_us input, .brif_question {
+        display: block;
+        width: 277px;
+        height: 28px;
+        margin-top: 25px;
+        font-size: 16px;
+    }
+    .brif_mark {
+        display: none;
+    }
+    .brif_button {
+        float: none;
+    }
+    .brif_contact {
+        background-color: #fff;
+        width: 200px;
+        float: left;
+        margin: 0 0 0 0;
+        padding: 20px 10px 20px 20px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .brif_number:before {
+        left: -10px;
+    }
+    .brif_download:before {
+        content: url(img/min_PDF_ico.png);
+        left: -15px;
+    }
+    .footer_fix {
+        display: none;
+    }
+    .map {
+        margin-left: -106%;
+        height: 190%;
+    }
     
     
     
