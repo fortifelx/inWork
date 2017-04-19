@@ -333,12 +333,6 @@
         top: 0;
         right: 20px;
     }
-/*
-    .price_menu:hover {
-        height: 100px;
-    }
-*/
-    
     
     .price_table {
         display: none;
@@ -366,26 +360,27 @@
     }
     .team_viewer {
         margin-top: 35px;
-        width: 3000px;
+        width: 280px;
     }
     .team_header {
         margin: 0;
         font-size: 20px;
     } 
     .team_wrapper {
-        width: 1000px;
+        width: 100000px;
         margin: 0;
         padding: 0;
         float: left;
     }
     .teammate {
+        margin: 0;
         width: 280px;
         float: left;
-        height: 360px;
+        height: 360px !important;
     }
-    .team_wrapper:last-child .teammate {
-     height: 360px;
-}
+    .teammate:nth-child(n+4) {
+        margin-top: 0;
+    }
     .teammate_name {
         margin: 20px 0 0 0;
         font-size: 16px;
@@ -395,19 +390,21 @@
         line-height: 18px;
     }
     .teammate_text {
+        width: 280px;
         margin: 15px 0 0 0;
         font-size: 16px;
         line-height: 18px;
+        color: #626168;
     }
     .teammate_email:before {
         width: 23px;
         height: 23px;
-        top: 0;
+        top: 6px;
     }
     .teammate_facebook {
         width: 23px;
         height: 23px;
-        margin: 0 0 -8px 27px;
+        margin: 0 0 1px 0;
     }
     .team_left_arrow {
         cursor: pointer;

@@ -84,11 +84,9 @@ function showEmail() {
     function showText() {
         var el = event.target;
         if (el.offsetWidth > 50) {
-            console.log('test2');
             Velocity( el, {width: '0px'}, 300);
         }
         if (el.offsetWidth < 80) {
-            console.log('test1');
             Velocity(el, {width: '145px'}, 300);
         }
     }
@@ -98,6 +96,8 @@ function showEmail() {
 
 };
         showEmail();
+        
+        
 })();
 
 (function(){
@@ -180,14 +180,24 @@ function showEmail() {
         var viewer = document.querySelector(sliderViewer);
         var slider = document.querySelector(sliderName);
         var slides = slider.querySelectorAll(slide);
-        var lt = viewer.querySelector(leftArrow);
-        var gt = viewer.querySelector(rightArrow);
-        var step = slides[0].offsetWidth;
+        var lt = document.querySelector(leftArrow);
+        var gt = document.querySelector(rightArrow);
+        
         var status = 0;
         var counter = visibleElements;
         var correction = visibleElements;
-        
+        function watchDog() {
+            function backToNull() {
+                console.log('TUTA!');
+                slider.style.marginLeft = 0;
+                status = 0;
+                counter = visibleElements;
+                    }
+            window.addEventListener('resize' , backToNull);
+        }
+        watchDog();
         function scrollLeft() {
+            var step = slider.querySelectorAll(slide)[0].offsetWidth;
             var edge = slides.length*step - correction*step;
             if (counter <= correction) {
                 counter = slides.length;
@@ -201,6 +211,7 @@ function showEmail() {
         };
         
         function scrollRight() {
+            var step = slider.querySelectorAll(slide)[0].offsetWidth;
             var edge = slides.length*step;
             if (counter >= slides.length) {
                 counter = correction;
@@ -218,5 +229,6 @@ function showEmail() {
     
     };
     makeSlider('.recomend_viewer', '.recomend_slider_wrapper', '.recomend_slide', 600, 1, '.recomend_right_arrow', '.recomend_left_arrow');
-    makeSlider('.our_works_viewer', '.our_works_slider','.mockup_slide', 600, 1, '.works_right_arrow', '.works_left_arrow' );
+    makeSlider('.our_works_viewer', '.our_works_slider', '.mockup_slide', 600, 1, '.works_right_arrow', '.works_left_arrow' );
+    makeSlider('.team_viewer', '.team_wrapper', '.teammate', 600, 1, '.team_left_arrow', '.team_right_arrow');
 })();  
