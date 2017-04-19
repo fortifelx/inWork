@@ -197,4 +197,5 @@ function showEmail() {
     
     };
     makeSlider('.recomend_viewer', '.recomend_slider_wrapper', '.recomend_slide', 600, 1, '.recomend_right_arrow', '.recomend_left_arrow');
+    makeSlider('.our_works_viewer', '.our_works_slider','.mockup_slide', 600, 1, '.works_right_arrow', '.works_left_arrow' );
 })();  
