@@ -692,7 +692,7 @@ header {
 .teammate_email:before {
     cursor: pointer;
     content: '';
-    background-image: url(img/email.png);
+    background-image: url(svg/mail.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -704,6 +704,7 @@ header {
     left: 0;
 }
 .teammate_facebook {
+    background-image: url(svg/facebook.svg);
     cursor: pointer;
     display: inline-block;
     width: 30px;
@@ -911,11 +912,15 @@ footer {
     color: #e2185b;
 }
 .brif_download:before {
+    content: '';
     cursor: pointer;
-    content: url(img/pdf_ico.png);
     position: absolute;
     display: block;
+    width: 17px;
+    height: 20px;
+    top: 1px;
     left: -20px;
+    background-image: url(svg/download.svg);
 }
 .call_us input:focus, .brif_question:focus {
     color: #626168;
