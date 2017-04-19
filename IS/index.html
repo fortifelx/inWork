@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Ukrainian Digital Agency</title>
         <link rel="stylesheet" href="reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="mobile.css">
     </head>
@@ -42,7 +43,9 @@
                      </ul>
                  </div>
                  <div class="slide_subtext">
-                     <img src="img/arrow.png" alt="стрелка вправо">
+                    <div class="who_we_arrow">
+                    </div>
+<!--                     <img class="who_we_arrow" src="img/arrow.png" alt="стрелка вправо">-->
                      <p class="slide_number"><b>01</b>/02</p>
                      <div class="slide_subtext_wrapper">
                      <p class="slide_header">КТО МЫ?</p>
@@ -220,83 +223,95 @@
                      <th>900 $</th>
                      <th>1200 $</th>
                  </tr>
-                     <tr>
+                     <tr class="table_concept">
                          <td>Разработка концепта</td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
+                     <tr class="table_prototype">
                          <td>Создание прототипа</td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
+                     <tr class="table_design" >
                          <td>Уникальный дизайн</td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
+                     <tr class="table_adaptive" >
                          <td>Адаптивная верстка</td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
+                     <tr class="table_test">
                          <td>Тестирование сайта</td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
+                     <tr class="table_test">
+                         <td>SEO оптимизация</td>
+                         <td></td>
+                         <td><img src="img/ok_sighn.png" alt="OK"></td>
+                         <td><img src="img/ok_sighn.png" alt="OK"></td>
+                     </tr>
+                     <tr class="table_test">
+                         <td>Рекламная фото-видео сьемка</td>
+                         <td></td>
+                         <td><img src="img/ok_sighn.png" alt="OK"></td>
+                         <td><img src="img/ok_sighn.png" alt="OK"></td>
+                     </tr>
+                     <tr class="table_content">
+                         <td>Написание контента</td>
+                         <td></td>
+                         <td><img src="img/ok_sighn.png" alt="OK"></td>
+                         <td><img src="img/ok_sighn.png" alt="OK"></td>
+                     </tr>
+                     <tr class="table_fair" >
                          <td>Анализ вашего рынка</td>
                          <td></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
+                     <tr class="table_logo">
                          <td>Разработка логотипа</td>
                          <td></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
-                         <td>Настройка</td>
+                     <tr class="table_google" >
+                         <td>Настройка Google AdWords</td>
                          <td></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
+                     <tr class="table_yandex" >
                          <td>Настройка Яндекс.Директ</td>
                          <td></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
+                     <tr class="table_analitic">
                          <td>Настройка аналитики</td>
                          <td></td>
                          <td></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
+                     <tr class="table_market" >
                          <td>Настройка ремаркетинга</td>
                          <td></td>
                          <td></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
                      </tr>
-                     <tr>
+                     <tr class="table_landing">
                          <td>Настройка мульти-лендинга</td>
                          <td></td>
                          <td></td>
                          <td><img src="img/ok_sighn.png" alt="OK"></td>
-                     </tr>
-                      <tr>
-                         <td>Написание контента</td>
-                         <td></td>
-                         <td></td>
-                         <td></td>
                      </tr>
              </table>
              <div href='#brif' class="consul_button price_button">Получить консультацию</div>
@@ -435,6 +450,7 @@
      </div>
       <script src="velocity.js"></script>
       <script src="script.js"></script>
+      <script src="table.js"></script>
       <script src="map.js"></script>
        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFqf-2fE2Mu8mXnO2xlrkCo5x2OgDuJ9w&callback=initMap"
     async defer></script>

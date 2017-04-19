@@ -16,46 +16,6 @@
         });
        }
     }
-function changeTable() {
-    var wrapper = document.querySelector('.price_wrapper');
-    var headers = document.querySelectorAll('.price_table_header p');
-    var price = document.querySelector('.site_price');
-    var site = document.querySelector('.site_form');
-    var sites = [ '<th></th><th>Basic</th><th>Standart</th><th>Premium</th>', '<th></th><th></th><th>Standart</th><th>Premium</th>',  '<th></th><th></th><th>Standart</th><th>Premium</th>'        
-    ];
-    var prices = [ '<th></th><th>600$</th><th>900$</th><th>1200$</th>', '<th></th><th></th><th>2300$</th><th>3000$</th>',  '<th></th><th></th><th>3000$</th><th>3900$</th>'        
-    ];
-    
-    function activeHeader() {
-        if(wrapper.offsetWidth < 935) return;
-        var el = event.target;
-        for(i = 0; i < headers.length; i++) {
-            headers[i].style.opacity = '0.5';
-            headers[i].style.borderBottom = '0';
-        }
-        el.style.opacity = '1';
-        el.style.borderBottom = '3px solid #fff';
-    }
-    function changeText() {
-        if(wrapper.offsetWidth < 935) return;
-        var el = event.target;
-        console.log(el);
-        for(i = 0; i < headers.length; i++) {
-            if(el == headers[i]) {
-                price.innerHTML = prices[i];
-                site.innerHTML = sites[i];
-            }
-        }
-    }
-    for(i = 0; i < headers.length; i++) {
-        headers[i].addEventListener('click', activeHeader);
-    }
-    for(i = 0; i < headers.length; i++) {
-        headers[i].addEventListener('click', changeText);
-    }
-};
-
-        changeTable();
         
         var lastEl;
 function showPrice() {
@@ -170,9 +130,9 @@ function showEmail() {
         gt.addEventListener('click', changeText);
     };
     
-    makeSlider('.slide_viewer', '.slider_wrapper', 'li', 600, 1, '.slide_subtext img');
+    makeSlider('.slide_viewer', '.slider_wrapper', 'li', 600, 1, '.who_we_arrow');
     
-    textSlider('.slide_text', '.slide_subtext img');
+    textSlider('.slide_text', '.who_we_arrow');
     
 })();  
 (function(){
@@ -188,7 +148,6 @@ function showEmail() {
         var correction = visibleElements;
         function watchDog() {
             function backToNull() {
-                console.log('TUTA!');
                 slider.style.marginLeft = 0;
                 status = 0;
                 counter = visibleElements;

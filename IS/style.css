@@ -1,68 +1,36 @@
 @font-face {
-    font-family: Lato;
+    font-family: lato;
     src: url(fonts/Lato-Medium.ttf);
+    font-weight: 500;
     font-style: normal;
-    font-weight: normal;
 }
 @font-face {
-    font-family: Lato;
-    src: url(fonts/Lato-Bold.ttf);
-    font-style: normal;
-    font-weight: 600;
-}
-@font-face {
-    font-family: Lato;
-    src: url(fonts/Lato-Italic.ttf);
+    font-family: lato;
+    src: url(fonts/Lato-MediumItalic.ttf);
+    font-weight: 500;
     font-style: italic;
-    font-weight: normal;
 }
 @font-face {
-    font-family: Lato;
-    src: url(fonts/Lato-BoldItalic.ttf);
-    font-style: 600;
-    font-weight: italic;
-}
-@font-face {
-    font-family: Lato;
-    src: url(fonts/Lato-Black.ttf);
-    font-style: normal;
-    font-weight: 900;
-}
-@font-face {
-    font-family: Lato;
-    src: url(fonts/Lato-BlackItalic.ttf);
-    font-style: italic;
-    font-weight: 900;
-}
-@font-face {
-    font-family: Lato;
-    src: url(fonts/Lato-SemiboldItalic.ttf);
-    font-style: italic;
+    font-family: lato;
+    src: url(fonts/Lato-Heavy.ttf);
     font-weight: 800;
-}
-@font-face {
-    font-family: Lato;
-    src: url(fonts/Lato-Light.ttf);
     font-style: normal;
-    font-weight: lighter;
 }
 @font-face {
-    font-family: Lato;
-    src: url(fonts/Lato-LightItalic.ttf);
+    font-family: lato;
+    src: url(fonts/Lato-HeavyItalic.ttf);
+    font-weight: 800;
     font-style: italic;
-    font-weight: lighter;
 }
-@font-face {
-    font-family: Lato;
-    src: url(fonts/Lato-Medium.ttf);
-    font-style: normal;
-    font-weight: 700;
-}
+
+
+
 b {
-    font-weight: 900;
+    font-weight: 800;
+    display: inline;
 }
 body {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
 }
 
 .wrapper {
@@ -78,7 +46,9 @@ body {
 
 header {
     width: 100%;
+    height: 100vh;
     background-image: url(img/background_saved_for_web.jpg);
+    background-size: cover;
     overflow: hidden;
 }
 
@@ -115,7 +85,7 @@ header {
     position: relative;
     z-index: 1;
     margin: 35px 0 0 0;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     float: right;
     color: #fefefe;
@@ -128,11 +98,11 @@ header {
     color: #ffffff;
 }
 .header_text p:first-child {
-    font-weight: 700;
     font-size: 86px;
+    line-height: 97px;
 }
 .header_text p:last-child {
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 50px;
     font-size: 20px;
 }
@@ -147,14 +117,14 @@ header {
     margin: 60px 0 0 0;
     background-color: #e2185b;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     color: #ffffff;
     text-align: center;
     line-height: 60px;
     border-radius: 5px;
-    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
-    box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
+    box-shadow:         -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
 }
 .consul_button:hover {
     background-color: #ff1f69;
@@ -216,7 +186,9 @@ header {
     margin: 40px 0 0 60px;
     color: #616168;
 }
-.slide_subtext img {
+.who_we_arrow {
+    background-image: url(svg/arrow1x.svg);
+    display: block;
     cursor: pointer;
     float: right;
     width: 35px;
@@ -227,21 +199,21 @@ header {
 .slide_header {
     margin: 40px 0;    
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
 }
 .slide_number b {
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
     margin-right: 10px;
 }
 .slide_number {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
 }
 .slide_text {
     font-size: 20px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 500;
 }
 .slide_text:last-child {
     position: absolute;
@@ -271,7 +243,7 @@ header {
     width: 390px;
     margin-left: 0;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
 }
 .you_need_list {
     width: 50%;
@@ -283,7 +255,7 @@ header {
 .you_need_list li {
     margin: 0 5px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     width: 300px;
 }
 .you_need_svg {
@@ -327,7 +299,7 @@ header {
     cursor: default;
     padding-top: 95px;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
     color: #fff;
 }
 .first_mockup_img {
@@ -339,7 +311,7 @@ header {
     width: 200px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
 }
 .first_mockup_button {
@@ -350,14 +322,15 @@ header {
     width: 280px;
     height: 60px;
     font-size: 20px;
+    font-weight: 700;
     line-height: 60px;
     color: #fff;
     background-color: #e2185b;
     text-align: center;
     border-radius: 5px;
-    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
-    box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
+    box-shadow:         -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
 }
 .first_mockup_button:hover {
     background-color: #ff1f69;
@@ -383,7 +356,7 @@ header {
     width: 200px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
 }
 .second_mockup_button {
@@ -394,14 +367,15 @@ header {
     width: 280px;
     height: 60px;
     font-size: 20px;
+    font-weight: 700;
     line-height: 60px;
     color: #fff;
     background-color: #3853a4;
     text-align: center;
     border-radius: 5px;
-    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
-    box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+   -webkit-box-shadow: -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
+    box-shadow:         -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
 }
 .second_mockup_button:hover {
     background-color: #5378e7;
@@ -425,7 +399,7 @@ header {
     width: 200px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
 }
 .third_mockup_button {
@@ -436,14 +410,15 @@ header {
     width: 280px;
     height: 60px;
     font-size: 20px;
+    font-weight: 700;
     line-height: 60px;
     color: #fff;
     background-color: #e2185b;
     text-align: center;
     border-radius: 5px;
-    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
-    box-shadow: 1px 0px 5px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
+    box-shadow:         -1px 1px 6px 2px rgba(0, 0, 0, 0.5);
 }
 .third_mockup_button:hover {
     background-color: #ff1f69;
@@ -469,7 +444,7 @@ header {
     cursor: default;
     margin-left: 0;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
     color: #616168;
 }
 .recomend_viewer {
@@ -513,7 +488,7 @@ header {
     margin-left: 305px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 700;
     color: #3853a4;
 }
 .recomend_slide_text {
@@ -523,7 +498,7 @@ header {
     font-size: 20px;
     line-height: 24px;
     font-style: italic;
-    font-weight: 800;
+    font-weight: 500;
     color: #616168;
 }
 .recomend_slide_text span {
@@ -552,7 +527,7 @@ header {
 .price_header {
     cursor: default;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
     color: #fff;
 }
 .price_table_header {
@@ -561,7 +536,7 @@ header {
     width: 270px;
     margin-right: 60px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
 }
 .price_table_header:last-child {
@@ -596,7 +571,7 @@ header {
 }
 .price_table th {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     height: 36px;
 }
 .price_table td {
@@ -604,15 +579,17 @@ header {
     line-height: 36px;
 }
 .price_table tr td {
-    width: 235px;
+    font-weight: 500;
+    width: 230px;
     text-align: center;
 }
 .price_table tr td:first-child {
     text-align: left;
+    width: 260px;
 }
 
 .price_button {
-    margin: 70px 185px 0 0;
+    margin: 70px 0 0 0;
     float: right;
 }
 
@@ -638,7 +615,7 @@ header {
 .team_header {
     margin-left: 160px;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
     color: #616168;
 }
 .team_wrapper {
@@ -672,13 +649,13 @@ header {
     margin-top: 20px;
     line-height: 24px;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     color: #3853a4;
 }
 .teammate_post {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 700;
     color: #3853a4;
 }
 .teammate_text {
@@ -686,7 +663,7 @@ header {
     font-size: 16px;
     line-height: 20px;
     font-style: italic;
-    font-weight: 800;
+    font-weight: 500;
     color: #000;
 }
 .team_contact_wrapper {
@@ -750,7 +727,7 @@ header {
 }
 .result_header {
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
     color: #fff;
 }
 .result_list {
@@ -778,7 +755,7 @@ header {
     margin-top: 40px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
 }
 .result_text span {
@@ -817,7 +794,7 @@ footer {
 .brif_header {
     margin-left: 160px;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
     color: #616168;
 }
 .call_us {
@@ -826,13 +803,13 @@ footer {
     margin: 45px 0 0 160px;
 }
 .brif_text {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 24px;
 }
 .brif_text i {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     color: #e2185b;
 }
 .brif_text span {
@@ -842,25 +819,52 @@ footer {
     color: #d3d3d3;
     border: none;
     border-bottom: 1px solid #3853a4;
-    width: 310px;
+    width: 320px;
     height: 35px;
     margin-top: 25px;
     font-size: 20px;
     line-height: 24px;
+    font-weight: 500;
+}
+.brif_question {
+    padding: 0;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500; 
+}
+.brif_question::-webkit-input-placeholder {
+    padding: 0;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500; 
 }
 .call_us ::-webkit-input-placeholder { /* Chrome */
   color: #d3d3d3;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
 }
 .call_us :-ms-input-placeholder { /* IE 10+ */
   color: #d3d3d3;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
 }
 .call_us ::-moz-placeholder { /* Firefox 19+ */
   color: #d3d3d3;
   opacity: 1;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
 }
 .call_us :-moz-placeholder { /* Firefox 4 - 18 */
   color: #d3d3d3;
   opacity: 1;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
 }
 .textarea_wrapper {
     position: relative;
@@ -869,7 +873,7 @@ footer {
     cursor: default;
     position: absolute;
     bottom: -20px;
-    right: -70px;
+    right: -82px;
     display: block;
     color: #626168;
     font-style: italic;
@@ -883,11 +887,11 @@ footer {
     float: right;
     margin: 45px 50px 0 0;
     font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
+    line-height: 26px;
+    font-weight: 500;
 }
 .brif_email {
-    font-weight: 600;
+    font-weight: 700;
     color: #e2185b;
     margin: 30px 0 0 0;
 }
@@ -903,7 +907,7 @@ footer {
 .brif_download {
     cursor: pointer;
     position: relative;
-    font-weight: 600;
+    font-weight: 700;
     color: #e2185b;
 }
 .brif_download:before {
