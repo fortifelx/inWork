@@ -301,7 +301,7 @@ header {
 .our_works_viewer {
     position: relative;
 }
-.works_arrow {
+.works_arrows {
     display: none;
     position: absolute;
 }
@@ -460,7 +460,6 @@ header {
     width: 100%;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
 }
 
 .recomend_left_arrow {
@@ -468,12 +467,19 @@ header {
     position: absolute;
     left: 0;
     top: 75px;
+    background-color: white;
 }
 .recomend_right_arrow {
     cursor: pointer;
     position: absolute;
     right: 0;
     top: 75px;
+    background-color: white;
+}
+.recomend_slider_wrapper {
+    display: flex;
+    width: 100000px;
+    flex-direction: row;
 }
 .recomend_slide {
     width: 940px;

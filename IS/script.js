@@ -136,5 +136,6 @@
     gt.addEventListener('click', scrollRight);
     
     };
+    makeSlider('.recomend_viewer', '.recomend_slider_wrapper', '.recomend_slide', 600, 1, '.recomend_right_arrow', '.recomend_left_arrow');
 })();  
     
