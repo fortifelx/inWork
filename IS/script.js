@@ -32,9 +32,34 @@ function changeHeader() {
     for(i = 0; i < headers.length; i++) {
         headers[i].addEventListener('click', activeHeader);
     }
-}
+};
 
         changeHeader();
+        
+        
+function showEmail() {
+    console.log('start');
+    var emails = document.querySelectorAll('.teammate_email');
+    console.log(emails);
+
+    function showText() {
+        console.log('text start');
+        var el = event.target;
+        if (el.offsetWidth > 50) {
+            console.log('test2');
+            Velocity( el, {width: '0px'}, 300);
+        }
+        if (el.offsetWidth < 80) {
+            console.log('test1');
+            Velocity(el, {width: '145px'}, 300);
+        }
+    }
+    for(var i = 0; i < emails.length; i++) {
+        emails[i].addEventListener('click', showText);
+    }
+
+};
+        showEmail();
 })();
 
 (function(){
