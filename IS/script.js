@@ -16,9 +16,16 @@
         });
        }
     }
-function changeHeader() {
+function changeTable() {
     var wrapper = document.querySelector('.price_wrapper');
     var headers = document.querySelectorAll('.price_table_header p');
+    var price = document.querySelector('.site_price');
+    var site = document.querySelector('.site_form');
+    var sites = [ '<th></th><th>Basic</th><th>Standart</th><th>Premium</th>', '<th></th><th></th><th>Standart</th><th>Premium</th>',  '<th></th><th></th><th>Standart</th><th>Premium</th>'        
+    ];
+    var prices = [ '<th></th><th>600$</th><th>900$</th><th>1200$</th>', '<th></th><th></th><th>2300$</th><th>3000$</th>',  '<th></th><th></th><th>3000$</th><th>3900$</th>'        
+    ];
+    
     function activeHeader() {
         if(wrapper.offsetWidth < 935) return;
         var el = event.target;
@@ -29,21 +36,31 @@ function changeHeader() {
         el.style.opacity = '1';
         el.style.borderBottom = '3px solid #fff';
     }
+    function changeText() {
+        if(wrapper.offsetWidth < 935) return;
+        var el = event.target;
+        console.log(el);
+        for(i = 0; i < headers.length; i++) {
+            if(el == headers[i]) {
+                price.innerHTML = prices[i];
+                site.innerHTML = sites[i];
+            }
+        }
+    }
     for(i = 0; i < headers.length; i++) {
         headers[i].addEventListener('click', activeHeader);
     }
+    for(i = 0; i < headers.length; i++) {
+        headers[i].addEventListener('click', changeText);
+    }
 };
 
-        changeHeader();
+        changeTable();
         
         
 function showEmail() {
-    console.log('start');
     var emails = document.querySelectorAll('.teammate_email');
-    console.log(emails);
-
     function showText() {
-        console.log('text start');
         var el = event.target;
         if (el.offsetWidth > 50) {
             console.log('test2');
