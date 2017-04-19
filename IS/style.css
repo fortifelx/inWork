@@ -159,6 +159,9 @@ header {
 .consul_button:hover {
     background-color: #ff1f69;
 }
+.consul_button:active {
+    background-color:#b71249;
+}
 
 
 /*    W H O     W E    article #2    */
@@ -340,6 +343,8 @@ header {
     color: #fff;
 }
 .first_mockup_button {
+    display: block;
+    text-decoration: none;
     cursor: pointer;
     margin: 50px 0 10px 0;
     width: 280px;
@@ -356,6 +361,9 @@ header {
 }
 .first_mockup_button:hover {
     background-color: #ff1f69;
+}
+.first_mockup_button:active {
+    background-color:#b71249;
 }
 .second_mockup_info {
     width: 940px;
@@ -379,6 +387,8 @@ header {
     color: #fff;
 }
 .second_mockup_button {
+    display: block;
+    text-decoration: none;
     cursor: pointer;
     margin-top: 50px;
     width: 280px;
@@ -395,6 +405,9 @@ header {
 }
 .second_mockup_button:hover {
     background-color: #5378e7;
+}
+.second_mockup_button:active {
+    background-color: #243771;
 }
 .third_mockup_info {
     width: 940px;
@@ -416,6 +429,8 @@ header {
     color: #fff;
 }
 .third_mockup_button {
+    display: block;
+    text-decoration: none;
     cursor: pointer;
     margin: 50px 0 10px 0;
     width: 280px;
@@ -432,6 +447,9 @@ header {
 }
 .third_mockup_button:hover {
     background-color: #ff1f69;
+}
+.third_mockup_button:active {
+    background-color:#b71249;
 }
 
 
@@ -556,7 +574,7 @@ header {
     opacity: 0.5;
 }
 .price_table_header:hover p {
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #fff !important;
 }
 
 .price_table_header:first-child p {
@@ -595,7 +613,7 @@ header {
 
 .price_button {
     margin: 70px 185px 0 0;
-    float: none;
+    float: right;
 }
 
 

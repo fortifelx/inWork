@@ -16,7 +16,25 @@
         });
        }
     }
+function changeHeader() {
+    var wrapper = document.querySelector('.price_wrapper');
+    var headers = document.querySelectorAll('.price_table_header p');
+    function activeHeader() {
+        if(wrapper.offsetWidth < 935) return;
+        var el = event.target;
+        for(i = 0; i < headers.length; i++) {
+            headers[i].style.opacity = '0.5';
+            headers[i].style.borderBottom = '0';
+        }
+        el.style.opacity = '1';
+        el.style.borderBottom = '3px solid #fff';
+    }
+    for(i = 0; i < headers.length; i++) {
+        headers[i].addEventListener('click', activeHeader);
+    }
+}
 
+        changeHeader();
 })();
 
 (function(){
@@ -138,4 +156,3 @@
     };
     makeSlider('.recomend_viewer', '.recomend_slider_wrapper', '.recomend_slide', 600, 1, '.recomend_right_arrow', '.recomend_left_arrow');
 })();  
-    

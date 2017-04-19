@@ -1,4 +1,4 @@
-@media handheld and (max-width: 900px), screen and (max-width: 935px) {
+@media handheld and (max-width: 935px), screen and (max-width: 935px) {
     header {
         background-position: center;
         background-size: cover;
@@ -66,6 +66,7 @@
     }
     .slide_viewer {
         width: 100%;
+        height: 200px;
         float: none;
     }
     .slide_viewer img  {    
@@ -74,6 +75,7 @@
     }
     .slide_subtext_wrapper {
         width: 200%;
+        height: 130px;
         position: relative;
         z-index: 1;
         background-color: rgba( 255, 255, 255, 0.7);
@@ -95,13 +97,16 @@
         line-height: 18px;
         margin: 20px 0 0 0;
     }
+    .slide_text:last-child {
+        top: 20px;
+    }
     .slide_text span {
         display: inline;
     }
     
     .you_need {
         margin: 0;
-        padding: 65px 0 60px 0;
+        padding: 35px 0 60px 0;
     }
     .you_need_header {
         width: 200px;
