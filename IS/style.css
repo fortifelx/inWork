@@ -189,14 +189,25 @@ header {
     z-index: 1;
 }
 .slide_viewer {
+    overflow: hidden;
+    width: 570px;
+    height: 400px;
     float: left;
-    margin: 0 0 0 0;
 }
-.slide_viewer img {
+.slider_wrapper {
+    width: 100000px;
+}
+.slider_wrapper li {
+    display: inline-block;
+    width: 600px;
+    height: 400px;
+}
+.slider_wrapper img {
     width: 570px;
     height: 400px;
 }
 .slide_subtext {
+    position: relative;
     width: 310px;
     float: left;
     margin: 40px 0 0 60px;
@@ -228,6 +239,11 @@ header {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
+}
+.slide_text:last-child {
+    position: absolute;
+    top: 160px;
+    opacity: 0;
 }
 .slide_text span {
     display: block;
