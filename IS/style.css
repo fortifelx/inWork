@@ -55,8 +55,8 @@ header {
 .header_wrapper {
     position: relative;
     width: 940px;
+    height: 100%;
     margin: auto;
-    padding-bottom: 160px;
 }
 .first_decor {
     position: absolute;
@@ -91,19 +91,23 @@ header {
     color: #fefefe;
 }
 .header_text {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
     cursor: default;
     position: relative;
     z-index: 1;
-    margin: 90px 0 0 0;
+    height: calc(100% - 90px);
     color: #ffffff;
 }
 .header_text p:first-child {
     font-size: 86px;
     line-height: 97px;
 }
-.header_text p:last-child {
+.header_text p:nth-child(2) {
     font-weight: 500;
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 20px;
 }
 .header_text span {
@@ -114,7 +118,7 @@ header {
     display: block;
     width: 320px;
     height: 60px;
-    margin: 60px 0 0 0;
+    margin: 25px 0 0 0;
     background-color: #e2185b;
     font-size: 20px;
     font-weight: 700;
@@ -187,7 +191,6 @@ header {
     color: #616168;
 }
 .who_we_arrow {
-    background-image: url(svg/arrow1x.svg);
     display: block;
     cursor: pointer;
     float: right;
@@ -613,7 +616,6 @@ header {
     display: none;
 }
 .team_header {
-    margin-left: 160px;
     font-size: 40px;
     font-weight: 800;
     color: #616168;
