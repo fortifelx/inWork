@@ -26,22 +26,27 @@ function changeTable() {
         if(wrapper.offsetWidth < 935) return;
         var el = event.target;
         for(var i = 0; i < headers.length; i++) {
-            if(el == headers[i]) 
-        {
+            if(el == headers[i]) {
+                
                 price.innerHTML = prices[i];
                 site.innerHTML = sites[i];
+                                
                 if(el == headers[1] || el == headers[2]) 
                 {
                 for(var i = 0; i < secondColum.length; i++) {
+                    Velocity(tableRow[i+2], { rotateY: '90deg'}, 0);
                     secondColum[i].remove();
                     tableRow[tableRow.length - 1].remove();
+                    Velocity(tableRow[i+2], { rotateY: '0deg'}, 800);
                 }
             }
                 if(el == headers[0]) {
                 for(var i = 0; i < secondColum.length; i++) {
-                      tableRow[i+2].insertBefore(secondColum[i], thirdColumn[i]);
+                    Velocity(tableRow[i+2], { rotateY: '90deg'}, 0);
+                    tableRow[i+2].insertBefore(secondColum[i], thirdColumn[i]);
                     table.insertBefore(tableRow[tableRow.length - 1], null);
-                     tableRow[tableRow.length - 2].style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
+                    tableRow[tableRow.length - 2].style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
+                    Velocity(tableRow[i+2], { rotateY: '0deg'}, 800);
                 }
                 
             }

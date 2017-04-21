@@ -19,9 +19,10 @@
         
         var lastEl;
 function showPrice() {
-    var price = document.querySelectorAll('.price_menu'); //42px
-    function showButton() {
+    var price = document.querySelectorAll('.price_menu'); function showButton() {
         el = event.target;
+        var puncts = el.querySelectorAll('li');
+        var elHeight = puncts.length*43+100;
         if(lastEl == el) {
             Velocity( el, {height: '42px'}, 300);
             lastEl = undefined;
@@ -31,7 +32,7 @@ function showPrice() {
         Velocity( lastEl, {height: '42px'}, 300);
         }
         lastEl = el;
-        Velocity( el, {height: '100px'}, 300);
+        Velocity( el, {height: elHeight}, 300);
     }
     for(i = 0; i < price.length; i++) {
         price[i].addEventListener('click', showButton);
@@ -40,14 +41,16 @@ function showPrice() {
         showPrice();
         
 function showEmail() {
-    var emails = document.querySelectorAll('.teammate_email');
+    var emails = document.querySelectorAll('.teammate_email_ico');
+    
     function showText() {
-        var el = event.target;
+        var teammate = event.target;
+        var el = teammate.nextElementSibling;
         if (el.offsetWidth > 50) {
             Velocity( el, {width: '0px'}, 300);
         }
         if (el.offsetWidth < 80) {
-            Velocity(el, {width: '145px'}, 300);
+            Velocity(el, {width: '185px'}, 300);
         }
     }
     for(var i = 0; i < emails.length; i++) {

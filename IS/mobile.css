@@ -303,10 +303,10 @@
         margin: 0 0 0 0;
         font-size: 16px;
         color: #3853a4;
-        height: 210px;
+        height: 190px;
     }
     .price_table_header:first-child {
-        height: 260px;
+        height: 240px;
     }
     .price_table_header p {
         text-transform: none;
@@ -315,6 +315,24 @@
     }
     .price_wrapper ul{
         margin: 35px 0 0 0;
+    }
+    .price_menu .price_service {
+        margin: 0;
+        margin-left: -20px;
+        width: 280px;
+
+    }
+    .price_menu .price_service li {
+        color: #626168; 
+        padding-left: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        width: 260px;
+        text-align: center;
+        border-bottom: 1px solid #626168;
+    }
+    .price_service li:last-child{
+        border-bottom: none;
     }
     .price_menu {
         overflow: hidden;
@@ -347,9 +365,14 @@
     .tab_button {
         display: block;
         width: 275px;
-        margin: 0;
         float: none;
+        line-height: 50px;
+        font-weight: 700;
         margin:5px 0 0 -18px;
+        background-color: #A03472;
+    }
+    .tab_button:hover {
+        background-color: #DE4C8A;
     }
     
     
@@ -400,10 +423,10 @@
         line-height: 18px;
         color: #626168;
     }
-    .teammate_email:before {
+    .teammate_email_ico {
         width: 23px;
         height: 23px;
-        top: 6px;
+        margin-top: 6px;
     }
     .teammate_facebook {
         width: 23px;
