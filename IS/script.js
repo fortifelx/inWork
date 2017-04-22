@@ -1,26 +1,44 @@
-    ( function() {
+( function() {
     
     var site = document.querySelector('body');
+    var mozsite = document.querySelector('html');
     var consulButtons = document.querySelectorAll('.consul_button');
         for (i = 0; i < consulButtons.length; i++) {
             consulButtons[i].addEventListener('click', goToConsulWindow, false);
+            consulButtons[i].addEventListener('click', goToConsulBlock, false);
         }
-    function goToConsulWindow() {
-        event.preventDefault();
-        var el = event.target;
+    function goToConsulWindow(e) {
+        var el = e.target;
+        e.preventDefault();
         var id = el.getAttribute('href');
+        console.log(id);
         var target = document.querySelector(id);
+        console.log(target);
         if(target) {Velocity( target, "scroll", {
             container: site,
             duration: 1500
         });
-       }
+        }
+    }
+    function goToConsulBlock(e) {
+        var el = e.target;
+        e.preventDefault();
+        var id = el.getAttribute('href');
+        console.log(id);
+        var target = document.querySelector(id);
+        console.log(target);
+        if(target) {Velocity( target, "scroll", {
+            container: mozsite,
+            duration: 1500
+        });
+        }
     }
         
         var lastEl;
 function showPrice() {
-    var price = document.querySelectorAll('.price_menu'); function showButton() {
-        el = event.target;
+    var price = document.querySelectorAll('.price_menu');
+    function showButton(e) {
+        el = e.target;
         var puncts = el.querySelectorAll('li');
         var elHeight = puncts.length*43+100;
         if(lastEl == el) {
@@ -39,12 +57,12 @@ function showPrice() {
     }
 }  
         showPrice();
-        
+
 function showEmail() {
     var emails = document.querySelectorAll('.teammate_email_ico');
     
-    function showText() {
-        var teammate = event.target;
+    function showText(e) {
+        var teammate = e.target;
         var el = teammate.nextElementSibling;
         if (el.offsetWidth > 50) {
             Velocity( el, {width: '0px'}, 300);

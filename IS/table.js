@@ -12,7 +12,7 @@ function changeTable() {
     var prices = [ '<th></th><th>600$</th><th>900$</th><th>1200$</th>', '<th></th><th>2300$</th><th>3000$</th>',  '<th></th><th>3000$</th><th>3900$</th>'        
     ];
     
-    function activeHeader() {
+    function activeHeader(event) {
         if(wrapper.offsetWidth < 935) return;
         var el = event.target;
         for(var i = 0; i < headers.length; i++) {
@@ -22,7 +22,7 @@ function changeTable() {
         el.style.opacity = '1';
         el.style.borderBottom = '3px solid #fff';
     }
-    function changeText() {
+    function changeText(event) {
         if(wrapper.offsetWidth < 935) return;
         var el = event.target;
         for(var i = 0; i < headers.length; i++) {
