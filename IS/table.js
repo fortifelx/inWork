@@ -1,3 +1,19 @@
+(function (arr) {
+    arr.forEach(function (item) {
+        if (item.hasOwnProperty('remove')) {
+            return;
+        }
+        Object.defineProperty(item, 'remove', {
+            configurable: true,
+            enumerable: true,
+            writable: true,
+            value: function remove() {
+                this.parentNode.removeChild(this);
+            }
+        });
+    });
+})([Element.prototype, CharacterData.prototype, DocumentType.prototype]);
+
 function changeTable() {
     var wrapper = document.querySelector('.price_wrapper');
     var headers = document.querySelectorAll('.price_table_header p');
@@ -36,7 +52,9 @@ function changeTable() {
                 for(var i = 0; i < secondColum.length; i++) {
                     Velocity(tableRow[i+2], { rotateY: '90deg'}, 0);
                     secondColum[i].remove();
-                    tableRow[tableRow.length - 1].remove();
+                    tableRow[tableRow.length - 1].style.opacity = 0;
+                    tableRow[tableRow.length - 2].style.borderBottom = '1px solid rgba(255, 255, 255, 0)';
+                    //tableRow[tableRow.length - 1].remove();
                     Velocity(tableRow[i+2], { rotateY: '0deg'}, 800);
                 }
             }
@@ -44,7 +62,8 @@ function changeTable() {
                 for(var i = 0; i < secondColum.length; i++) {
                     Velocity(tableRow[i+2], { rotateY: '90deg'}, 0);
                     tableRow[i+2].insertBefore(secondColum[i], thirdColumn[i]);
-                    table.insertBefore(tableRow[tableRow.length - 1], null);
+                    tableRow[tableRow.length - 1].style.opacity = 1;
+                    //table.insertBefore(tableRow[tableRow.length - 1], null);
                     tableRow[tableRow.length - 2].style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
                     Velocity(tableRow[i+2], { rotateY: '0deg'}, 800);
                 }
