@@ -119,4 +119,11 @@ header {
 }
 .menu_wrapper li {
     display: inline-block;
+    font-size:14px;
+    font-weight: lighter;
+    color: #000;
+}
+.menu_wrapper li:hover {
+    color: #669933;
+    font-weight: bold;
 }
