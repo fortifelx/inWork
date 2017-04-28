@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans';
+    position: relative;
 }
 header {
     width:100%;
@@ -157,4 +158,103 @@ header {
     color: #669933;
     font-weight: bold;
 
+}  /*   <---------------- H E A D E R      E N D ! */
+
+/*     M A I N    P A G E     */
+
+
+.wrapper {
+    width: 940px;
+    margin:0 auto;
+    min-height: 100px;
+}
+
+
+
+/*   F O O T E R   */
+
+
+footer {
+    position: relative;
+    width:100%;
+    min-height: 200px;
+    border-top: 4px solid #e5e5e5;
+    outline: 4px solid #669a30;
+}
+.outline_fix {
+    position: absolute;
+    display: block;
+    bottom:-4px;
+    width:100%;
+    height:4px;
+    background-color: white;
+}
+.footer_wrapper {
+    position: relative;
+    width:940px;
+    margin: 0 auto;
+}
+.logo_footer {
+    cursor: pointer;
+    float: left;
+    margin-top: 65px;
+}
+.search_footer {
+    float: right;
+    display: inline-block;
+    text-align: center;
+    width: 240px;
+    margin-top: 39px;
+}
+.search_footer .search_button {
+    margin: 15px auto 0 auto;
+}
+
+.search_button:hover {
+    background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
+.calculator {
+    cursor: pointer;
+    position: relative;
+    float: left;
+    margin: 13px 0 0 60px;
+    line-height: 31px;
+    font-size: 14px;
+    color: #669933;
+    font-weight: bold;
+}
+.footer_number {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: -55px;
+    height:20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #669933;
+    font-weight: bold;
+}
+
+.menu_footer {
+    display: inline-block;
+    height: 80px;
+    width: 265px;
+    position: relative;
+    margin: 30px auto 0 145px;
+}
+.menu_footer li {
+    width: 130px;
+    cursor: pointer;
+    display: inline-block;
+    font-size:12px;
+    line-height: 24px;
+    color: #669933;
+}
+.menu_footer li:hover {
+    font-weight: bold;
+
+}
+.copyright {
+    margin-top:37px;
+    font-size: 11px;
+    color: #559449;
 }
