@@ -56,18 +56,18 @@ header {
 }
 .money_name {
     padding-right: 10px;
-    z-index: 10;
+    z-index: 1;
     position: absolute;
     display: block;
-    margin: 19px 0 0 30px;
-    left: 630px;
+    margin: 19px 0 0 0;
+    left: 660px;
     height: 20px;
     overflow: hidden;
     line-height:20px;
     font-size:14px;
     font-weight: bold;
     color: #669933;
-    backgroud-color: rgba( 255, 255, 255, 0.5);
+    background-color: rgba( 255, 255, 255, 0.7);
 }
 .money_name li {
     position: relative;
@@ -83,11 +83,33 @@ header {
     height:93px;
 }
 .contact_numbers {
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 19px;
+    height:20px;
+    padding-right:15px;
     position: absolute;
+    right: 65px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #669933;
+    font-weight: bold;
+    background-color: rgba( 255, 255, 255, 0.7);
 
+}
+.contact_numbers li:first-child:after {
+    content: url("../img/d_arrow_green.png");
+    display: inline-block;
+    position: absolute;
+    top:8px;
+    right:0;
+}
+.contact_numbers:hover {
+    height:93px;
 }
 .basket {
     float: right;
+    margin-top: 18px;
 }
 .menu_wrapper {
     position: relative;
