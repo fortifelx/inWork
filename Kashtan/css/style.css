@@ -3,6 +3,10 @@ body {
 }
 header {
     width:100%;
+    padding-bottom: 25px;
+    -webkit-box-shadow: 0px 2px 7px 2px rgba(220,220,220,1);
+    -moz-box-shadow: 0px 2px 7px 2px rgba(220,220,220,1);
+    box-shadow: 0px 2px 7px 2px rgba(220,220,220,1);
 }
 .main_header_wrapper {
     position: relative;
@@ -130,7 +134,7 @@ header {
     padding-top: 25px;
     clear: both;
     width: 940px;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
 }
 .menu_wrapper li {
     cursor: pointer;
