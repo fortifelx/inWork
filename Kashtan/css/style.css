@@ -1,4 +1,33 @@
 header {
+    width:100%;
+}
+.main_header_wrapper {
     width:940px;
     margin: 0 auto;
+}
+.logo {
+    float: left;
+}
+.search_wrapper {
+    float: left;
+}
+.calculator {
+    float: left;
+}
+.money_name {
+    float: left;
+}
+.contact_numbers {
+    float: left;
+}
+.basket {
+    float: right;
+}
+.menu_wrapper {
+    clear: both;
+    width: 940px;
+    margin: 0 auto;
+}
+.menu_wrapper li {
+    display: inline-block;
 }
