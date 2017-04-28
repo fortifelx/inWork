@@ -10,6 +10,7 @@ header {
     margin: 0 auto;
 }
 .logo {
+    cursor: pointer;
     float: left;
     margin-top: 10px;
 }
@@ -26,6 +27,7 @@ header {
     border-radius: 15px;
 }
 .search_button {
+    cursor: pointer;
     display: inline-block;
     width: 100px;
     height: 31px;
@@ -38,7 +40,11 @@ header {
     border-radius: 15px;
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
+.search_button:hover {
+    background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
 .calculator {
+    cursor: pointer;
     position: relative;
     float: left;
     margin: 13px 0 0 60px;
@@ -55,6 +61,7 @@ header {
     left: -20px;
 }
 .money_name {
+    cursor: pointer;
     padding-right: 10px;
     z-index: 1;
     position: absolute;
@@ -83,6 +90,7 @@ header {
     height:93px;
 }
 .contact_numbers {
+    cursor: pointer;
     z-index: 1;
     overflow: hidden;
     margin-top: 19px;
@@ -108,22 +116,41 @@ header {
     height:93px;
 }
 .basket {
+    cursor: pointer;
     float: right;
     margin-top: 18px;
 }
 .menu_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0;
+    text-align: center;
     position: relative;
+    padding-top: 25px;
     clear: both;
     width: 940px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 .menu_wrapper li {
+    cursor: pointer;
+    white-space: nowrap;
+    width: 75px;
     display: inline-block;
     font-size:14px;
-    font-weight: lighter;
     color: #000;
+}
+.menu_wrapper li:nth-child(2) {
+    flex-basis: 100px;
+}
+.menu_wrapper li:nth-child(9) {
+    flex-basis: 140px;
+}
+.menu_wrapper li:nth-child(8) {
+    flex-basis: 40px;
 }
 .menu_wrapper li:hover {
     color: #669933;
     font-weight: bold;
+
 }
