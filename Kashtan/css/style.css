@@ -176,6 +176,23 @@ header {
     border: 3px solid #559548;
     border-radius: 3px;
 }
+.category_list li {
+    cursor: pointer;
+    font-size: 12px;
+    color: #7f7f7f;
+    padding: 12px 0;
+    margin: 0 0 0 15px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.category_list li:kast-child {
+    border: 0 solid black;
+}
+.category_list li:hover {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .top_slider {
     margin: 15px 0 0 0;
     float: right;
@@ -214,7 +231,39 @@ header {
     font-size: 12px;
 }
 .new_goods_more {
+    margin-top: -10px;
+    display: inline-block;
+    text-align: left;
+    width: 85px;
+    overflow: hidden;
+    height:29px;
+    line-height: 29px;
+    position: relative;
     font-size: 10px;
+    color: #559449;
+}
+.new_goods_more:after {
+    content: '>';
+    color: #559449;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    border: 2px solid #559449;
+    line-height: 25px;
+    height:25px;
+    width:25px;
+    text-align: center;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+.new_good:hover .new_goods_more:after {
+    line-height: 29px;
+    height:29px;
+    width:29px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 
 

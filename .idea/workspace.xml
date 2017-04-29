@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76f5c5dc-632a-41e6-b709-574d0a8652cb" name="Default" comment="some commit from phpstorm">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/css/style.css" afterPath="$PROJECT_DIR$/Kashtan/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/index.html" afterPath="$PROJECT_DIR$/Kashtan/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,8 +39,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="186" column="16" lean-forward="false" selection-start-line="186" selection-start-column="16" selection-end-line="186" selection-end-column="16" />
+            <state relative-caret-position="156">
+              <caret line="179" column="19" lean-forward="false" selection-start-line="179" selection-start-column="19" selection-end-line="179" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -309,7 +307,7 @@
       <workItem from="1492844725170" duration="1312000" />
       <workItem from="1492939539777" duration="9222000" />
       <workItem from="1493375286375" duration="17927000" />
-      <workItem from="1493449833886" duration="5238000" />
+      <workItem from="1493449833886" duration="7141000" />
     </task>
     <task id="LOCAL-00001" summary="make script better for firefox">
       <created>1492844881761</created>
@@ -329,7 +327,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36539000" />
+    <option name="totallyTimeSpent" value="38442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,8 +497,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="186" column="16" lean-forward="false" selection-start-line="186" selection-start-column="16" selection-end-line="186" selection-end-column="16" />
+        <state relative-caret-position="156">
+          <caret line="179" column="19" lean-forward="false" selection-start-line="179" selection-start-column="19" selection-end-line="179" selection-end-column="19" />
           <folding />
         </state>
       </provider>
