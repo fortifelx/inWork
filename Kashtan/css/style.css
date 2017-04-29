@@ -231,6 +231,7 @@ header {
     font-size: 12px;
 }
 .new_goods_more {
+    cursor: pointer;
     margin-top: -10px;
     display: inline-block;
     text-align: left;
@@ -331,19 +332,42 @@ header {
     justify-content: space-between;
 }
 .category li {
+    cursor: pointer;
+    padding: 15px 0;
     text-align: center;
     display: inline-block;
     width: 160px;
-    height: 130px;
+    height: 100px;
     border: 1px solid #9ac092;
     margin-bottom: 20px;
     border-radius: 10px;
     font-size: 12px;
     font-weight: bold;
+    color: #aeaeae;
 }
-.categoty a {
+.category img {
+}
+.category li p {
+    cursor: pointer;
     display: block;
+    font-weight: 400;
+    font-size: 12px;
+    color: #a7a7a7;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
 }
+.category li:hover p {
+    color: #6adf53;
+    text-decoration: none;
+    font-weight: bold;
+}
+.category li:hover {
+    border:none;
+    width:162px;
+    color: #6adf53;
+    background-image: url(../img/sky.jpg);
+}
+
 /*   F O O T E R   */
 
 
