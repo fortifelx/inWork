@@ -27,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Kashtan/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="112" column="93" lean-forward="false" selection-start-line="112" selection-start-column="93" selection-end-line="112" selection-end-column="93" />
+            <state relative-caret-position="748">
+              <caret line="142" column="53" lean-forward="false" selection-start-line="142" selection-start-column="53" selection-end-line="142" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="296" column="19" lean-forward="false" selection-start-line="296" selection-start-column="12" selection-end-line="296" selection-end-column="19" />
+            <state relative-caret-position="640">
+              <caret line="344" column="19" lean-forward="false" selection-start-line="344" selection-start-column="19" selection-end-line="344" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -104,8 +104,8 @@
         <option value="$PROJECT_DIR$/IS/mobile.css" />
         <option value="$PROJECT_DIR$/IS/style.css" />
         <option value="$PROJECT_DIR$/IS/table.js" />
-        <option value="$PROJECT_DIR$/Kashtan/index.html" />
         <option value="$PROJECT_DIR$/Kashtan/css/style.css" />
+        <option value="$PROJECT_DIR$/Kashtan/index.html" />
       </list>
     </option>
   </component>
@@ -308,7 +308,7 @@
       <workItem from="1492844725170" duration="1312000" />
       <workItem from="1492939539777" duration="9222000" />
       <workItem from="1493375286375" duration="17927000" />
-      <workItem from="1493449833886" duration="9356000" />
+      <workItem from="1493449833886" duration="12868000" />
     </task>
     <task id="LOCAL-00001" summary="make script better for firefox">
       <created>1492844881761</created>
@@ -328,7 +328,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40657000" />
+    <option name="totallyTimeSpent" value="44169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -488,18 +488,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/index.html">
+    <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="112" column="93" lean-forward="false" selection-start-line="112" selection-start-column="93" selection-end-line="112" selection-end-column="93" />
+        <state relative-caret-position="640">
+          <caret line="344" column="19" lean-forward="false" selection-start-line="344" selection-start-column="19" selection-end-line="344" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
+    <entry file="file://$PROJECT_DIR$/Kashtan/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="296" column="19" lean-forward="false" selection-start-line="296" selection-start-column="12" selection-end-line="296" selection-end-column="19" />
+        <state relative-caret-position="748">
+          <caret line="142" column="53" lean-forward="false" selection-start-line="142" selection-start-column="53" selection-end-line="142" selection-end-column="53" />
           <folding />
         </state>
       </provider>
