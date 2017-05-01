@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76f5c5dc-632a-41e6-b709-574d0a8652cb" name="Default" comment="some commit from phpstorm">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Kashtan/catalog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/aboutus.html" afterPath="$PROJECT_DIR$/Kashtan/aboutus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/catalog.html" afterPath="$PROJECT_DIR$/Kashtan/catalog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/css/style.css" afterPath="$PROJECT_DIR$/Kashtan/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +40,8 @@
       <file leaf-file-name="catalog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kashtan/catalog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="82" column="39" lean-forward="false" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+            <state relative-caret-position="265">
+              <caret line="100" column="53" lean-forward="false" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -52,8 +50,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="563" column="16" lean-forward="false" selection-start-line="563" selection-start-column="16" selection-end-line="563" selection-end-column="16" />
+            <state relative-caret-position="528">
+              <caret line="456" column="56" lean-forward="false" selection-start-line="456" selection-start-column="56" selection-end-line="456" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -305,7 +303,7 @@
       <workItem from="1492939539777" duration="9222000" />
       <workItem from="1493375286375" duration="17927000" />
       <workItem from="1493449833886" duration="19677000" />
-      <workItem from="1493622801763" duration="10024000" />
+      <workItem from="1493622801763" duration="11534000" />
     </task>
     <task id="LOCAL-00001" summary="make script better for firefox">
       <created>1492844881761</created>
@@ -325,7 +323,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61002000" />
+    <option name="totallyTimeSpent" value="62512000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,16 +545,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kashtan/catalog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="82" column="39" lean-forward="false" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+        <state relative-caret-position="265">
+          <caret line="100" column="53" lean-forward="false" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="563" column="16" lean-forward="false" selection-start-line="563" selection-start-column="16" selection-end-line="563" selection-end-column="16" />
+        <state relative-caret-position="528">
+          <caret line="456" column="56" lean-forward="false" selection-start-line="456" selection-start-column="56" selection-end-line="456" selection-end-column="56" />
           <folding />
         </state>
       </provider>
