@@ -672,7 +672,7 @@ header {
 
 /*          - - -   N E W S   P A G E    - - - */
 
-.news_page {
+.news_page, .articals_page {
     padding: 30px 0 0 0;
     width: 670px;
     float: left;
@@ -680,10 +680,11 @@ header {
 .news_page .header {
     font-size: 24px;
 }
+
 .news_popular_page .header {
     font-size: 24px;
 }
-.news_popular_page {
+.news_popular_page, .articals_popular_page {
     padding-top: 30px;
     width: 240px;
     float: right;
@@ -694,6 +695,9 @@ header {
 }
 .news_popular_page .news_article{
     margin: 15px 0 40px 0;
+}
+.articals_popular_page .news_article {
+    margin: 20px 0 40px 0;
 }
 .news_article img {
     float: right;
