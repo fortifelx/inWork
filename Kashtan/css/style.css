@@ -670,7 +670,7 @@ header {
 }
 
 
-/*          - - -   N E W S   P A G E    - - - */
+/*          - - -   N E W S and A R T I C A L S   P A G E    - - - */
 
 .news_page, .articals_page {
     padding: 30px 0 0 0;
@@ -769,6 +769,111 @@ header {
 .show_more_news:hover {
     color: #559449;
 }
+
+/*   - - -   C O O P E R A T I O N    P A G E    - - -   */
+
+.coop_header {
+    margin-top: 40px;
+}
+
+.coop_ticket {
+    margin-top: 45px;
+    padding-bottom: 100px;
+}
+.coop_ticket_text {
+    width: 100%;
+    color: #7f7f7f;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.coop_ticket input {
+    padding-left: 13px;
+    margin: 0 20px 10px 0;
+    width: 220px;
+    height: 30px;
+    border-radius: 15px;
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid #b7b7b7;
+    box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.15);
+}
+.coop_ticket input:focus {
+    border: 1px solid #559449;
+}
+.coop_ticket p {
+    display: inline-block;
+}
+.coop_ticket select {
+    position: relative;
+    padding-left: 13px;
+    margin: 0 20px -5px 0;
+    width: 220px;
+    height: 32px;
+    border-radius: 15px;
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid #b7b7b7;
+    box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.15);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.coop_ticket select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+.coop_ticket option {
+    padding: 5px 0;
+}
+.select {
+     position: relative;
+}
+.select:after {
+    pointer-events: none;
+    position: absolute;
+    content: url(../img/d_arrow.png);
+    display: block;
+    right: 35px;
+    top: 5px;
+}
+.coop_ticket textarea {
+    width: 480px;
+    height: 145px;
+    padding: 12px 0 0 13px;
+    border-radius: 15px;
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid #b7b7b7;
+    box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.15);
+    font-family: 'Open Sans', sans-serif;
+}
+.coop_ticket textarea:focus {
+    border: 1px solid #559449;
+}
+.coop_button {
+    float: right;
+    margin-right: 290px;
+    cursor: pointer;
+    border-radius: 15px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 130px;
+    height: 30px;
+    color: #fffefe;
+    font-size: 14px;
+    font-weight: 300;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
+    background-color: #559449;
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
+.coop_button:hover {
+    background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
+
 
 /*   F O O T E R   */
 

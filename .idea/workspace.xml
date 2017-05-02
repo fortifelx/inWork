@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76f5c5dc-632a-41e6-b709-574d0a8652cb" name="Default" comment="some commit from phpstorm">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Kashtan/articls.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Kashtan/cooparation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/css/style.css" afterPath="$PROJECT_DIR$/Kashtan/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/news.html" afterPath="$PROJECT_DIR$/Kashtan/news.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,21 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="articls.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Kashtan/articls.html">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="98" column="52" lean-forward="false" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+            <state relative-caret-position="595">
+              <caret line="833" column="24" lean-forward="false" selection-start-line="833" selection-start-column="24" selection-end-line="833" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
+      <file leaf-file-name="cooparation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kashtan/cooparation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="734" column="23" lean-forward="false" selection-start-line="734" selection-start-column="23" selection-end-line="734" selection-end-column="23" />
+            <state relative-caret-position="528">
+              <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -110,8 +109,9 @@
         <option value="$PROJECT_DIR$/Kashtan/aboutus.html" />
         <option value="$PROJECT_DIR$/Kashtan/catalog.html" />
         <option value="$PROJECT_DIR$/Kashtan/news.html" />
-        <option value="$PROJECT_DIR$/Kashtan/css/style.css" />
         <option value="$PROJECT_DIR$/Kashtan/articls.html" />
+        <option value="$PROJECT_DIR$/Kashtan/cooparation.html" />
+        <option value="$PROJECT_DIR$/Kashtan/css/style.css" />
       </list>
     </option>
   </component>
@@ -300,7 +300,7 @@
       <workItem from="1493622801763" duration="12133000" />
       <workItem from="1493645834555" duration="3195000" />
       <workItem from="1493710987565" duration="4646000" />
-      <workItem from="1493719758999" duration="1426000" />
+      <workItem from="1493719758999" duration="8015000" />
     </task>
     <task id="LOCAL-00001" summary="make script better for firefox">
       <created>1492844881761</created>
@@ -320,7 +320,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72378000" />
+    <option name="totallyTimeSpent" value="78967000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -618,18 +618,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
+    <entry file="file://$PROJECT_DIR$/Kashtan/articls.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="734" column="23" lean-forward="false" selection-start-line="734" selection-start-column="23" selection-end-line="734" selection-end-column="23" />
+        <state relative-caret-position="295">
+          <caret line="82" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/articls.html">
+    <entry file="file://$PROJECT_DIR$/Kashtan/cooparation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="98" column="52" lean-forward="false" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+        <state relative-caret-position="528">
+          <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="833" column="24" lean-forward="false" selection-start-line="833" selection-start-column="24" selection-end-line="833" selection-end-column="24" />
           <folding />
         </state>
       </provider>
