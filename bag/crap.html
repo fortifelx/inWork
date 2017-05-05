@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C U T !</title>
+    <style>
+        .wrapper {
+            width: 100%;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            align-content: center;
+        }
+        .img_wrapper {
+            position: relative;
+            width: auto;
+            height: auto;
+        }
+        .img_size {
+            visibility: hidden;
+            position: static !important;
+        }
+        .img_wrapper img {
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        .img_shadow {
+            position: relative;
+            z-index: 2;
+            background-color: rgba( 0, 0, 0, 0.6);
+        }
+        .img_circle {
+            margin-top: -200px;
+            margin-left: 300px;
+            width: 10%;
+            height: 15%;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: black;
+        }
+        .img_circle img {
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="img_wrapper">
+            <img src="zelensky.jpg" alt="Зеленский">
+            <div class="img_shadow">
+                <img class="img_size" src="zelensky.jpg" alt="Зеленский">
+            </div>
+            <div class="img_circle">
+                <img src="zelensky.jpg" alt="Зеленский">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
