@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span class="start">&nbsp;</span>
+<div id="show_compare_products_div" style="background:white;
+    border: 1 solid green;
+    display: block;
+    height: auto;
+    left: 161.5px;
+    opacity: 1;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: auto;
+    z-index: 121;display:none;"></div>
+<div style="width:800px;margin: 0 auto;">
+    <script type="text/javascript">
+function calcite()
+{
+	var size = window.document.form1.size.value
+	var fps = window.document.form1.fps.value
+	var time = window.document.form1.time.value
+	var nrofcams = window.document.form1.nrofcams.value
+	var hours = window.document.form1.hours.value
+
+	if ((size != "") && (fps != ""))
+	{
+		if (time != "")
+		{
+			var result = eval(size * fps * time * nrofcams * 60 * 60 * hours * 1.048576)
+			window.document.form1.space.value = Math.round (result)
+			unit()
+			window.document.form1.space.style.border="1px solid red";
+		}
+	}
+}
+
+function unit()
+{
+	var space = window.document.form1.space
+	var length = space.value.length
+	if (space.value.indexOf("B") != -1)
+	{
+		space.value = window.document.form1.space.value.substring(0, length-2)
+		length -= 2
+	}
+	if (length > 9)
+		{
+		var last = space.value.substring(length-9, length)
+		space.value = space.value.substring(0,length-9) + "." + last.charAt(0) + " ТБ"
+	}
+	   else if (length > 6)
+	{
+		var last = space.value.substring(length-6, length)
+		while (last.charAt(last.length - 1) == "0")
+				last = last.substring(0, last.length-1)
+		if (last.length != 0)
+			space.value = space.value.substring(0,length-6) + "." + last.charAt(0) + " ГБ"
+		else
+			space.value = space.value.substring(0,length-6) + " ГБ"
+	}
+		else if (length > 3)
+	{
+		var last = space.value.substring(length-3, length)
+		while (last.charAt(last.length - 1) == "0")
+				last = last.substring(0, last.length-1)
+		if (last.length != 0)
+			space.value = space.value.substring(0,length-3) + "." + last.charAt(0) + " МБ"
+		else
+			space.value = space.value.substring(0,length-3) + " МБ"
+	}
+	else
+		space.value += " КБ"
+}
+
+function InitCompression()
+{
+  var form = window.document.form1
+  var resList = form.conf_Image_Resolution
+  var comprList = form.conf_Image_Compression
+
+  if (resList.selectedIndex == 0) {
+
+    comprList.options[0].text = "1 (минимальная)"
+    comprList.options[1].text = "2"
+    comprList.options[2].text = "3"
+    comprList.options[3].text = "4"
+    comprList.options[4].text = "5 (максимальная)"
+   } else if (resList.selectedIndex == 1) {
+    comprList.options[0].text = "1 (минимальная)"
+    comprList.options[1].text = "2"
+    comprList.options[2].text = "3"
+    comprList.options[3].text = "4"
+    comprList.options[4].text = "5 (максимальная)"
+  } else if (resList.selectedIndex == 2) {
+    comprList.options[0].text = "1 (минимальная)"
+    comprList.options[1].text = "2"
+    comprList.options[2].text = "3"
+    comprList.options[3].text = "4"
+    comprList.options[4].text = "5 (максимальная)"
+  }
+}
+
+function InitResolution()
+{
+  var form = window.document.form1
+  var resList = form.conf_Image_Resolution
+  var comprList = form.conf_Image_Compression
+
+  if (comprList.selectedIndex == 0) {
+    resList.options[0].text = "704x576"
+    resList.options[1].text = "704x288"
+    resList.options[2].text = "352x288"
+  } else if (comprList.selectedIndex == 1) {
+    resList.options[0].text = "704x576"
+    resList.options[1].text = "704x288"
+    resList.options[2].text = "352x288"
+  } else if (comprList.selectedIndex == 2) {
+    resList.options[0].text = "704x576"
+    resList.options[1].text = "704x288"
+    resList.options[2].text = "352x288"
+  } else if (comprList.selectedIndex == 3) {
+    resList.options[0].text = "704x576"
+    resList.options[1].text = "704x288"
+    resList.options[2].text = "352x288"
+  } else if (comprList.selectedIndex == 4) {
+    resList.options[0].text = "704x576"
+    resList.options[1].text = "704x288"
+    resList.options[2].text = "352x288"
+  }
+}
+
+
+function InitSize()
+{
+  var form = window.document.form1
+  var resList = form.conf_Image_Resolution
+  var comprList = form.conf_Image_Compression
+  var size = form.size
+  var color_frame = form.color
+
+ if(color_frame.selectedIndex == 0) {
+  if (comprList.selectedIndex == 0) {
+    if (resList.selectedIndex == 0) size.value = "27.9"
+    else if (resList.selectedIndex == 1) size.value = "16.9"
+    else if (resList.selectedIndex == 2) size.value = "13.0"
+  }
+  else if (comprList.selectedIndex == 1) {
+    if (resList.selectedIndex == 0) size.value = "10.5"
+    else if (resList.selectedIndex == 1) size.value = "6.2"
+    else if (resList.selectedIndex == 2) size.value = "5.4"
+  }
+  else if (comprList.selectedIndex == 2) {
+    if (resList.selectedIndex == 0) size.value = "9.4"
+    else if (resList.selectedIndex == 1) size.value = "5.4"
+    else if (resList.selectedIndex == 2) size.value = "4.6"
+  }
+  else if (comprList.selectedIndex == 3) {
+    if (resList.selectedIndex == 0) size.value = "6.7"
+    else if (resList.selectedIndex == 1) size.value = "3.8"
+    else if (resList.selectedIndex == 2) size.value = "3.6"
+  }
+  else if (comprList.selectedIndex == 4) {
+    if (resList.selectedIndex == 0) size.value = "6.4"
+    else if (resList.selectedIndex == 1) size.value = "3.7"
+    else if (resList.selectedIndex == 2) size.value = "3.5"
+  }
+  }
+
+ if(color_frame.selectedIndex == 1) {
+  if (comprList.selectedIndex == 0) {
+    if (resList.selectedIndex == 0) size.value = "25.9"
+    else if (resList.selectedIndex == 1) size.value = "16.1"
+    else if (resList.selectedIndex == 2) size.value = "11.9"
+  }
+  else if (comprList.selectedIndex == 1) {
+    if (resList.selectedIndex == 0) size.value = "8.9"
+    else if (resList.selectedIndex == 1) size.value = "5.3"
+    else if (resList.selectedIndex == 2) size.value = "4.5"
+  }
+  else if (comprList.selectedIndex == 2) {
+    if (resList.selectedIndex == 0) size.value = "7.8"
+    else if (resList.selectedIndex == 1) size.value = "4.5"
+    else if (resList.selectedIndex == 2) size.value = "3.6"
+  }
+  else if (comprList.selectedIndex == 3) {
+    if (resList.selectedIndex == 0) size.value = "5.5"
+    else if (resList.selectedIndex == 1) size.value = "3.0"
+    else if (resList.selectedIndex == 2) size.value = "2.9"
+  }
+  else if (comprList.selectedIndex == 4) {
+    if (resList.selectedIndex == 0) size.value = "5.1"
+    else if (resList.selectedIndex == 1) size.value = "3.2"
+    else if (resList.selectedIndex == 2) size.value = "2.7"
+  }
+ }
+
+}
+
+
+function InitCompressionAndResolution()
+{
+  InitCompression()
+  InitResolution()
+  InitSize()
+}
+
+function CompressionChange()
+{
+  InitResolution()
+  InitSize()
+}
+
+function ColorChange()
+{
+  InitSize()
+}
+
+function ResolutionChange()
+{
+  InitCompression()
+  InitSize()
+}
+</script>
+    <center><h1>Калькулятор расчета емкости жесткого диска</h1></center>
+    <br>
+    <center>
+        <form name="form1">
+            <table id="calcTable">
+                <tbody><tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" colspan="2" class="heading-center">Настройка картинки</td>
+                </tr>
+
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Тип камеры:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+
+
+
+
+                        <select style="font-size:13px;" data-bind="options: cameraTypes,
+                       optionsText: 'itemName',
+                       value: selectedCameraType,
+                       optionsCaption: 'Тип камеры...'"><option value="">Тип камеры...</option><option value="">IP камеры</option><option value="">Аналоговые камеры</option><option value="">AHD камеры</option></select>
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Качество съемки:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+
+
+
+
+                        <select style="font-size:13px;" data-bind="options: videoQuality,
+                       optionsText: 'itemName',
+                       value: selectedVideoQuality,
+                       optionsCaption: 'Качество съемки...'"><option value="">Качество съемки...</option><option value="">Самое низкое</option><option value="">Низкое</option><option value="">Нормальное</option><option value="">Хорошее</option><option value="">Лучшее</option><option value="">Наилучшее</option></select>
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Формат видео:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+
+
+
+
+                        <select style="font-size:13px;" data-bind=" options: videoFormat,
+                       optionsText: 'itemName',
+                       value: selectedFormat,
+                       optionsCaption: 'Видео формат...'"><option value="">Видео формат...</option><option value="">CIF</option><option value="">HD1</option><option value="">D1</option><option value="">960h</option></select>
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Кадров в секунду:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+
+
+
+
+                        <select style="font-size:13px;" data-bind="options: videoFrames,
+                       optionsText: 'itemName',
+                       value: selectedVideoFrames,
+                       optionsCaption: 'Кадров/с...'"><option value="">Кадров/с...</option><option value="">25</option><option value="">24</option><option value="">23</option><option value="">22</option><option value="">21</option><option value="">20</option><option value="">19</option><option value="">18</option><option value="">17</option><option value="">16</option><option value="">15</option><option value="">14</option><option value="">13</option><option value="">12</option><option value="">11</option><option value="">10</option><option value="">9</option><option value="">8</option><option value="">7</option><option value="">6</option><option value="">5</option><option value="">4</option><option value="">3</option><option value="">2</option><option value="">1</option></select>
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Интенсивность работы:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+
+
+
+
+                        <select style="font-size:13px;" data-bind=" options: videoIntensity,
+                       optionsText: 'itemName',
+                       value: selectedVideoIntensity,
+                       optionsCaption: 'Интенсивность видео...'"><option value="">Интенсивность видео...</option><option value="">30%</option><option value="">40%</option><option value="">50%</option><option value="">60%</option><option value="">70%</option><option value="">80%</option><option value="">90%</option><option value="">100%</option></select>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Количество камер:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+
+
+
+
+                        <input data-bind="value: selectedCamerasNumber">
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Архив(дни):</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+
+
+
+
+                        <input data-bind="value: selectedDays">
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Требуемое место на жестком диске:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list"><span data-bind="text: videoSpace">4.03</span> Гб</td>
+                </tr>
+
+                <script type="text/javascript">
+
+                    var SelectItem = function(name, value) {
+                        this.itemName = name;
+                        this.itemValue = value;
+                    };
+
+                    var viewModel = {
+                        videoSpace: ko.observable(),
+                        videoFrames: ko.observableArray([
+                            new SelectItem("25", 25),
+                            new SelectItem("24", 24),
+                            new SelectItem("23", 23),
+                            new SelectItem("22", 22),
+                            new SelectItem("21", 21),
+                            new SelectItem("20", 20),
+                            new SelectItem("19", 19),
+                            new SelectItem("18", 18),
+                            new SelectItem("17", 17),
+                            new SelectItem("16", 16),
+                            new SelectItem("15", 15),
+                            new SelectItem("14", 14),
+                            new SelectItem("13", 13),
+                            new SelectItem("12", 12),
+                            new SelectItem("11", 11),
+                            new SelectItem("10", 10),
+                            new SelectItem("9", 9),
+                            new SelectItem("8", 8),
+                            new SelectItem("7", 7),
+                            new SelectItem("6", 6),
+                            new SelectItem("5", 5),
+                            new SelectItem("4", 4),
+                            new SelectItem("3", 3),
+                            new SelectItem("2", 2),
+                            new SelectItem("1", 1)]
+                        ),
+                        selectedVideoFrames: ko.observable(),
+                        selectedCamerasNumber: ko.observable(),
+                        selectedDays: ko.observable(),
+
+                        cameraTypes: ko.observableArray([
+                            new SelectItem("IP камеры", 0),
+                            new SelectItem("Аналоговые камеры", 1),
+                            new SelectItem("AHD камеры", 2)]),
+                        selectedCameraType: ko.observable(),
+
+                        videoQuality: ko.observableArray([
+                            new SelectItem("Самое низкое", 1),
+                            new SelectItem("Низкое", 2),
+                            new SelectItem("Нормальное", 4),
+                            new SelectItem("Хорошее", 6),
+                            new SelectItem("Лучшее", 8),
+                            new SelectItem("Наилучшее", 11)]),
+                        selectedVideoQuality: ko.observable(),
+
+                        videoIntensity: ko.observableArray([
+                            new SelectItem("30%", 3),
+                            new SelectItem("40%", 4),
+                            new SelectItem("50%", 5),
+                            new SelectItem("60%", 6),
+                            new SelectItem("70%", 7),
+                            new SelectItem("80%", 8),
+                            new SelectItem("90%", 9),
+                            new SelectItem("100%", 10)]),
+                        selectedVideoIntensity: ko.observable(),
+
+                        videoFormats: [[
+                            new SelectItem("CIF", 1),
+                            new SelectItem("D1", 6),
+                            new SelectItem("720p", 10),
+                            new SelectItem("960p", 10),
+                            new SelectItem("1080p", 11),
+                            new SelectItem("3M", 15),
+                            new SelectItem("5M", 14)
+                        ],
+                            [
+                                new SelectItem("CIF", 1),
+                                new SelectItem("HD1", 4),
+                                new SelectItem("D1", 6),
+                                new SelectItem("960h", 10)],
+                            [
+                                new SelectItem("CIF", 1),
+                                new SelectItem("D1", 6),
+                                new SelectItem("960h", 8),
+                                new SelectItem("720p", 10)]],
+
+                        selectedFormat: ko.observable(),
+
+                        videoFormat: ko.observableArray([])
+
+
+
+                    };
+
+                    viewModel.selectedCameraType.subscribe(function(newValue) {
+                        viewModel.videoFormat(viewModel.videoFormats[newValue.itemValue]);
+                    });
+
+                    ko.applyBindings(viewModel, document.getElementById("calcTable"));
+
+                    function calcStorage() {
+
+
+
+                        viewModel.videoSpace(Math.round((viewModel.selectedVideoFrames() ? viewModel.selectedVideoFrames().itemValue : 0) *
+                                (viewModel.selectedCamerasNumber() ? viewModel.selectedCamerasNumber() : 0) *
+                                (viewModel.selectedDays() ? viewModel.selectedDays() : 0)  *
+                                (viewModel.selectedFormat() ? viewModel.selectedFormat().itemValue : 0) *
+                                (viewModel.selectedVideoQuality() ? viewModel.selectedVideoQuality().itemValue : 0) *
+                                (viewModel.selectedVideoIntensity() ? viewModel.selectedVideoIntensity().itemValue : 0) * 0.004 * 100 ) / 100 );
+                    }
+
+                </script>
+
+
+                </tbody></table>
+            <p style="text-align:center;">
+                <input style="font-size:13px;padding:2px;" onclick="calcStorage()" value="Расчет" type="button">
+            </p>
+        </form>
+    </center>
+
+    <br><br>
+    <b>Краткая инструкция:</b>
+    <p>Данная утилита предназначена для расчета необходимой емкости жесткого диска под Вашу систему видеонаблюдения. Для того, чтобы рассчитать размер архива, необходимо выполнить следующие действия:</p>
+    <div style="padding-left: 20px;">
+        <p>1. Выбрать "Тип камеры"<br>
+            2. Выбрать "Качество съемки"<br>
+            3. Выбрать "Формат видео"<br>
+            4. Выбрать "Кадров в секунду"<br>
+            5. Выбрать "Интенсивность работы"<br>
+            6. Ввести "Количество камер"<br>
+            7. Ввести "Архив(дни)"</p>
+    </div>
+    <p>После ввода всех параметров, нажмите "Расчет".</p>
+    <p>При изменении "Тип камеры" следует перевыбрать "Формат видео".</p>
+
+
+</div>
+<span class="finish"></span>
+</body>
+</html>

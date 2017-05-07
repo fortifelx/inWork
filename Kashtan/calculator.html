@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Каштан</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href='css/reset.css'>
+    <link rel="stylesheet" href='css/style.css'>
+    <link rel="stylesheet" href='css/mobile.css'>
+</head>
+<body>
+<header>
+    <div class="main_header_wrapper">
+        <div class="logo">
+            <img src="img/logo.png" alt="логотип">
+        </div>
+        <form action="" class="search_wrapper">
+            <input type="text" placeholder="Что вы ищете?" class="search">
+            <div class="search_button">Искать</div>
+        </form>
+        <p class="calculator">калькулятор</p>
+        <ul class="money_name">
+            <li>usd</li>
+            <li>euro</li>
+            <li>гривня</li>
+        </ul>
+        <ul class="contact_numbers">
+            <li>+38 (044) 111-33-33</li>
+            <li>+38 (044) 111-33-34</li>
+            <li>+38 (044) 111-33-35</li>
+        </ul>
+        <div class="basket">
+            <img src="img/basket_green.png" alt="корзина">
+        </div>
+    </div>
+    <ul class="menu_wrapper">
+        <li>ГЛАВНАЯ</li>
+        <li>О КОМПАНИИ</li>
+        <li>КАТАЛОГ</li>
+        <li>НОВОСТИ</li>
+        <li>СТАТЬИ</li>
+        <li>КАК КУПИТЬ</li>
+        <li>ФОРУМ</li>
+        <li>FAQ</li>
+        <li>СОТРУДНИЧЕСТВО</li>
+        <li>КОНТАКТЫ</li>
+    </ul>
+</header>
+
+
+<!-- <-!-!-!-!-!-  H E A D E R      E N D -->
+
+<div class="wrapper calc_wrapper">
+    <p class="header calc_header">Калькуляторы</p>
+    <p class="calc_name">Расчет емкости жесткого диска</p>
+    <div class="calculators">
+            <table id="calcTable">
+                <tbody>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" colspan="2" class="heading-center">Настройка картинки</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Тип камеры:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                        <select style="font-size:13px;" data-bind="options: cameraTypes,
+                       optionsText: 'itemName',
+                       value: selectedCameraType,
+                       optionsCaption: 'Тип камеры...'"><option value="">Тип камеры...</option><option value="">IP камеры</option><option value="">Аналоговые камеры</option><option value="">AHD камеры</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Качество съемки:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                        <select style="font-size:13px;" data-bind="options: videoQuality,
+                       optionsText: 'itemName',
+                       value: selectedVideoQuality,
+                       optionsCaption: 'Качество съемки...'"><option value="">Качество съемки...</option><option value="">Самое низкое</option><option value="">Низкое</option><option value="">Нормальное</option><option value="">Хорошее</option><option value="">Лучшее</option><option value="">Наилучшее</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Формат видео:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                        <select style="font-size:13px;" data-bind=" options: videoFormat,
+                       optionsText: 'itemName',
+                       value: selectedFormat,
+                       optionsCaption: 'Видео формат...'"><option value="">Видео формат...</option><option value="">CIF</option><option value="">HD1</option><option value="">D1</option><option value="">960h</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Кадров в секунду:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                        <select style="font-size:13px;" data-bind="options: videoFrames,
+                       optionsText: 'itemName',
+                       value: selectedVideoFrames,
+                       optionsCaption: 'Кадров/с...'"><option value="">Кадров/с...</option><option value="">25</option><option value="">24</option><option value="">23</option><option value="">22</option><option value="">21</option><option value="">20</option><option value="">19</option><option value="">18</option><option value="">17</option><option value="">16</option><option value="">15</option><option value="">14</option><option value="">13</option><option value="">12</option><option value="">11</option><option value="">10</option><option value="">9</option><option value="">8</option><option value="">7</option><option value="">6</option><option value="">5</option><option value="">4</option><option value="">3</option><option value="">2</option><option value="">1</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Интенсивность работы:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                        <select style="font-size:13px;" data-bind=" options: videoIntensity,
+                       optionsText: 'itemName',
+                       value: selectedVideoIntensity,
+                       optionsCaption: 'Интенсивность видео...'"><option value="">Интенсивность видео...</option><option value="">30%</option><option value="">40%</option><option value="">50%</option><option value="">60%</option><option value="">70%</option><option value="">80%</option><option value="">90%</option><option value="">100%</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Количество камер:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                        <input data-bind="value: selectedCamerasNumber">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Архив(дни):</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                        <input data-bind="value: selectedDays">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Требуемое место на жестком диске:</td>
+                    <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list"><span data-bind="text: videoSpace"></span> Гб</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input onclick="calcStorage()" value="Расчет" type="button"></td>
+                </tr>
+                </tbody></table>
+
+    </div>
+    <div class="calc_info">
+        <p class="calc_info_header">Краткая инструкция</p>
+        <p class="calc_info_text">
+            Данная утилита предназначена для расчета необходимой емкости жесткого диска под вашу систему видеонаблюдения. Для того, чтобы рассчитать размер архива, необходимо выполнить следующие действия:
+           </p>
+        <ol>
+            <li>Выбрать "Тип камеры"</li>
+            <li>Выбрать "Качество съемки"</li>
+            <li>Выбрать "Формат видео"</li>
+            <li>Выбрать "Кадров в секунду"</li>
+            <li>Выбрать "Интенсивность работы"</li>
+            <li>Выбрать "Количество камер"</li>
+            <li>Выбрать "Архив (дни)"</li>
+        </ol>
+        <p class="calc_info_text">
+            После ввода всех параметров нажмите "Расчет" <br>
+            При изменении "Тип камеры" стоит перевыбрать "Формат видео"
+        </p>
+    </div>
+    <p class="calc_name">Расчет фокусного расстояния объекстива</p>
+    <div class="calculators">
+        <table>
+        <tbody>
+        <tr>
+            <td> Формат матрицы (CCD, Film, etc.): </td>
+            <td>
+                <select name="ccdSize" onchange="calculateLength()">
+                    <option value="3.2">1/4"</option><option value="4.8">1/3"</option>
+                    <option value="6.4">1/2"</option><option value="8.8">2/3"</option>
+                    <option value="12.8">1"</option><option value="36">35мм</option>
+                    <option value="-1">Другое</option>
+                </select>
+                <input name="CustomSize" size="6" value="10" onchange="calculateLength()" disabled="" type="text"> мм
+            </td>
+        </tr>
+        <tr>
+            <td>Расстояние до объекта:</td>
+            <td><input name="Distance" size="6" value="10" onchange="calculateLength()" type="text">
+                <select style="font-size:13px;" name="selectd" onchange="calculateLength()">
+                    <option value="1000">метры</option><option value="1">миллиметры</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Ширина поля обзора:</td>
+            <td><input name="Dim" size="6" value="10" onchange="calculateLength()" type="text">
+                <select style="font-size:13px;" name="selectdim" onchange="calculateLength()">
+                    <option value="1000">метры</option><option value="1">миллиметры</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input name="Calculate" value="Вычислить" onclick="calculateLength()" type="button"></td>
+        </tr>
+        <tr>
+            <td>Фокусное расстояние объектива:</td>
+            <td><input name="maxlength" size="12" readonly="" disabled="" type="text"></td>
+        </tr>
+        <tr>
+            <td>Угол обзора по горизонтали (FOV):</td>
+            <td><input name="minangle" size="7" readonly="" disabled="" type="text"></td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="calc_info">
+        <p class="calc_info_header">Краткая инструкция</p>
+        <p class="calc_info_text">
+            Данная утилита предназначена для расчета необходимых параметров видеокамеры под вашу систему наблюдения. Для того, чтобы рассчитать получаемое от видеокамеры изображение, необходимо выполнить следующие действия:
+        </p>
+        <ol>
+            <li>Выбрать формат матрицы</li>
+            <li>Ввести растояние до обьектива</li>
+            <li>Ввести ширину поля обзора</li>
+            <img src="img/calc_info_img.jpg" alt="">
+        </ol>
+        <p class="calc_info_text">
+            После ввода всех параметров нажмите "Расчет" в результате чего будут получены фокусное растояние обьектива и угол обзора по горизонтали (FOV).
+        </p>
+    </div>
+    <p class="calc_name">Расчет системы видеонаблюдения</p>
+    <div class="calculators">
+        <table><tbody>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" colspan="2" class="heading-center">Параметры системы</td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Объект:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <select onchange="selectObject()" name="selectedObject" style="font-size:13px;"><option value="man">Человек</option><option value="number">Номерной знак</option><option value="dollar">Денежная купюра</option></select>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Ширина объекта:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" value="0.5" readonly="readonly" size="3" name="oH" type="textbox"> м
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Высота объекта:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" value="1.8" readonly="readonly" size="3" name="oV" type="textbox"> м
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Расстояние до объекта:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" value="10" size="3" name="S" type="textbox"> м
+            </td>
+        </tr>
+        <tr style="display:none;">
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Размер матрицы по горизонтали:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" value="3.2" size="3" name="bH" type="textbox"> мм
+            </td>
+        </tr>
+        <tr style="display:none;">
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Размер матрицы по вертикали:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" value="2.1" size="3" name="bV" type="textbox"> мм
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Размер матрицы:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <select onchange="calculateLength()" name="ccdSize" style="font-size:13px;"><option value="3.2">1/4"</option><option value="4.8">1/3"</option><option value="6.4">1/2"</option><option value="8.8">2/3"</option><option value="12.8">1"</option><option value="36">35мм</option></select>
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Фокусное расстояние объектива:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" value="3.6" size="3" name="f" type="textbox"> мм
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Диагональ монитора:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" value="17" size="3" name="mD" type="textbox"> дюймов
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><p style="text-align:center;">
+                <input style="font-size:13px;padding:2px;" onclick="calc();" value="Расчет" type="button">
+            </p></td></tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" colspan="2" class="heading-center">Расчетные параметры системы</td>
+        </tr>
+        <tr style="display:none;">
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Масштаб объекта:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" readonly="readonly" value="" size="6" name="M" type="textbox">
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Размер монитора по горизонтали:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" readonly="readonly" value="" size="3" name="mH" type="textbox"> см
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Размер монитора по вертикали:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" readonly="readonly" value="" size="3" name="mV" type="textbox"> см
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Ширина объекта на мониторе:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" readonly="readonly" value="" size="3" name="omH" type="textbox"> см
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Высота объекта на мониторе:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" readonly="readonly" value="" size="3" name="omV" type="textbox"> см
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Угол обзора по горизонтали:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" readonly="readonly" value="" size="3" name="qH" type="textbox"> грд
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Угол обзора по вертикали:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" readonly="readonly" value="" size="3" name="qV" type="textbox"> грд
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Поле зрения по горизонтали:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" readonly="readonly" value="" size="3" name="pH" type="textbox"> м
+            </td>
+        </tr>
+        <tr>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;background-color:#EEEEEE;font-size:9pt;color:#000;" class="param">Поле зрения по вертикали:</td>
+            <td style="border:1px solid #DDDDDD;padding:5px 10px;font-size:9pt;color:#000;" class="list">
+                <input style="font-size:13px;" readonly="readonly" value="" size="3" name="pV" type="textbox"> м
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+    <div class="calc_info">
+        <p class="calc_info_header">Краткая инструкция</p>
+        <p class="calc_info_text">
+            Данная утилита предназначена для расчета необходимых параметров видеокамеры под вашу систему наблюдения.
+        </p>
+        <ol>
+            <li>Ввести расстояние до объекта.</li>
+            <li>Выбрать размер матрицы.</li>
+            <li>Ввести фокусное расстояние объектива.</li>
+            <li>Ввести диагональ монитора.</li>
+        </ol>
+        <p class="calc_info_text">
+            После ввода всех параметров нажмите "Расчет" в результате чего будут получены параметры системы.
+        </p>
+    </div>
+    <p class="calc_name">Расчет стоимости домофонной системы</p>
+    <div class="calculators">
+        <table><tbody>
+        <tr>
+            <td><b>Выберите тип домофона:</b></td>
+            <td>
+                <select id="intercom" name="data[type]" onchange="toggleNumIntercoms();">
+                    <option value="a">Аудио</option>
+                    <option value="v">Видео</option>
+                    <option value="av">Видео+Аудио</option>
+                </select>
+            </td>
+        </tr>
+        <tr id="intercom_params" style="display: none;">
+            <td><b>Введите количество видео и аудиодомофонов:</b></td>
+            <td>
+                видео <input id="v_num" name="data[video]" size="6" type="text"> шт. &nbsp; аудио <input id="a_num" name="data[audio]" size="6" type="text"> шт.
+            </td>
+        </tr>
+        <tr>
+            <td><b>Необходима замена двери:</b></td>
+            <td>
+                <select name="data[door]" id="door" onchange="hidedoor();">
+                    <option value="y">Да</option>
+                    <option value="n" selected="selected">Нет</option>
+                </select>
+            </td>
+        </tr>
+        <tr id="door_params" style="display: none;">
+            <td><b>Введите размер новой двери:</b></td>
+            <td>
+                высота <input name="data[height]" size="6" type="text"> м &nbsp; ширина <input name="data[width]" size="6" type="text"> м
+            </td>
+        </tr>
+        <tr>
+            <td><b>Количество квартир:</b></td>
+            <td>
+                <input id="f_num" name="data[flats_num]" size="6" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td><b>Количество ключей на квартиру:</b></td>
+            <td>
+                <input name="data[keys_num]" size="6" type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Количество этажей:</b></td>
+            <td>
+                <input name="data[floors_num]" size="6" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td><b>Высота потолков:</b></td>
+            <td>
+                <input name="data[floor_height]" size="6" type="text"> м
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div style="padding-left:60px;padding-top:20px;"><input onclick="submitCalcForm();" value="Рассчитать" type="button"></div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+    <div class="calc_info">
+        <p class="calc_info_header">Краткая инструкция</p>
+        <p class="calc_info_text">
+            Данная утилита предназначена для расчета стоимости домофонной системы.
+        </p>
+        <ol>
+            <li>Выбрать тип домофона</li>
+            <li>Выбрать потребуется ли замена двери при установке домофонной системы</li>
+            <li>Ввести количество квартир в подьезде и количество ключей на одну квартиру</li>
+            <li>Ввести количество этажей и высоту потолков</li>
+        </ol>
+        <p class="calc_info_text">
+            После ввода всех параметров нажмите "Расчет" в результате чего будут получены даные по стоимости.
+        </p>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+
+<!-- <-!-!-!-!-!-  F O O T E R   S T A R T -->
+
+<footer>
+    <div class="footer_wrapper">
+        <div class="logo_footer">
+            <img src="img/logo.png" alt="логотип">
+        </div>
+        <ul class="menu_footer">
+            <li>ГЛАВНАЯ</li>
+            <li>СТАТЬИ</li>
+            <li>О КОМПАНИИ</li>
+            <li>КАК КУПИТЬ</li>
+            <li>КАТАЛОГ</li>
+            <li>ФОРУМ</li>
+            <li>НОВОСТИ</li>
+            <li>FAQ</li>
+        </ul>
+        <form action="" class="search_footer">
+            <input type="text" placeholder="Что вы ищете?" class="search">
+            <div class="search_button">Искать</div>
+        </form>
+        <p class="footer_number">
+            +38 (044) 111-33-33
+        </p>
+        <p class="copyright">
+            ТОВ Каштан 2017, все права защищены
+        </p>
+
+
+    </div>
+</footer>
+<div class="outline_fix"></div>
+<script src="js/velocity.js"></script>
+<script src="js/script.js"></script>
+<script src="js/calc.js"></script>
+</body>
+</html>
