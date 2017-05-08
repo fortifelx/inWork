@@ -1674,6 +1674,90 @@ header {
     width: 400px;
     float: right;
 }
+
+
+/*   D E L I V E R Y    &    P A Y    */
+
+.delivery_page_header {
+    margin-top: 50px;
+}
+.pay_header, .service_header, .delivery_header {
+    margin-top: 25px;
+    width: 100%;
+    color: #559449;
+    font-size: 16px;
+    font-weight: 300;
+}
+.pay {
+    float: right;
+}
+.delivery {
+    float: right;
+}
+.delivery img {
+    display: block;
+    margin: 0 auto;
+}
+.delivery_list {
+    text-align: center;
+    margin: 10px 0;
+}
+.delivery a {
+    font-weight: 700;
+    color: #559449;
+    margin: 0 10px;
+}
+.service {
+    float: left;
+    width: 460px;
+}
+.pay_text, .delivery_text, .service_text {
+    width: 460px;
+    color: #7f7f7f;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.pay_text p, .delivery_text p, .service_text p {
+}
+h6 {
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+b {
+    font-weight: 600;
+    font-size: 12px;
+}
+.pay ol, .service ol, .delivery ol {
+    list-style-type: decimal;
+}
+.pay ol li, .service ol li, .delivery ol li {
+    margin-left: 12px;
+    margin-bottom: 5px;
+}
+.pay ul, .service ul, .delivery ul {
+    list-style-type: disc;
+}
+.pay ul li, .service ul li, .delivery ul li {
+    margin-left: 12px;
+    margin-bottom: 5px;
+}
+.download_form {
+    cursor: pointer;
+    display: block;
+    margin: 20px 0 60px 155px;
+    font-weight: 700;
+    color: #559449;
+    text-decoration: underline;
+}
+.service_expert_call {
+    margin: 100px auto;
+    float: none;
+}
+
 /*   F O O T E R   */
 
 
