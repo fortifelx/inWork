@@ -210,17 +210,26 @@ header {
 }
 
 .sub_menu {
+    cursor: default;
     position: absolute;
     display: none;
     z-index: 2;
     left: 180px;
-    top: 0;
+    top: -3px;
     width: 449px;
     height: 369px;
     box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     border: 1px solid #559449;
     background-color: #ffffff;
+}
+.close_sub_menu {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    font-size: 26px;
+    font-weight: 500;
 }
 .sub_menu img {
     float: right;
@@ -238,6 +247,7 @@ header {
     height: 200px;
 }
 .sub_menu p {
+    cursor: pointer;
     border: none;
     display: block;
     width: 160px;
@@ -259,6 +269,7 @@ header {
     color: #5aa94c;
 }
 .all_category {
+    cursor: pointer;
     text-align: center;
     display: inline-block;
     width: 160px;
@@ -273,6 +284,7 @@ header {
 }
 
 .this_category {
+    cursor: pointer;
     text-align: center;
     display: inline-block;
     width: 255px;
@@ -287,8 +299,44 @@ header {
 }
 
 .top_slider {
+    position: relative;
     margin: 15px 0 0 0;
     float: right;
+    width: 740px;
+    height: 210px;
+    overflow: hidden;
+}
+.circle_wrapper {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.circle_wrapper div {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    width:  10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.circle_wrapper div:first-child {
+    background-color: white;
+}
+.circle_wrapper div:hover {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #559449;
+}
+.top_slider_wrapper {
+    position: relative;
+    font-size: 0;
+    width: 10000px;
+}
+.top_slider_wrapper img{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .new_goods {
     width: 730px;
