@@ -30,6 +30,10 @@ header {
     padding: 0 15px;
     border: 1px solid #b8b8b8;
     border-radius: 15px;
+    outline: none;
+}
+.search:focus {
+    border: 1px solid #559449;
 }
 .search_button {
     cursor: pointer;
@@ -70,7 +74,7 @@ header {
 }
 .money_name {
     cursor: pointer;
-    padding-right: 10px;
+    padding-right: 15px;
     z-index: 1;
     position: absolute;
     display: block;
@@ -92,7 +96,7 @@ header {
     display: inline-block;
     position: absolute;
     bottom: 3px;
-    right:10px;
+    right:-13px;
 }
 .money_name:hover {
     height:63px;
@@ -508,6 +512,7 @@ header {
 .about_shop_text {
     margin-top: 20px;
     font-size: 12px;
+    line-height: 18px;
     color: #848484;
 }
 
@@ -622,6 +627,7 @@ header {
     margin-top: 10px;
     color: #7f7f7f;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
     height: 75px;
     overflow: hidden;
@@ -667,6 +673,7 @@ header {
     margin-top: 25px;
     color: #7f7f7f;
     font-size: 12px;
+    line-height: 18px;
 }
 
 
@@ -725,11 +732,11 @@ header {
     font-weight: 300;
 }
 .news_text {
-    text-align: justify;
     height: 72px;
     margin-top: 15px;
     color: #333333;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
     overflow: hidden;
     text-overflow: clip;
@@ -848,6 +855,7 @@ header {
     font-weight: 300;
     border: 1px solid #b7b7b7;
     box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.15);
+    outline: none;
 }
 .coop_ticket input:focus {
     border: 1px solid #559449;
@@ -899,6 +907,7 @@ header {
     border: 1px solid #b7b7b7;
     box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.15);
     font-family: 'Open Sans', sans-serif;
+    outline: none;
 }
 .coop_ticket textarea:focus {
     border: 1px solid #559449;
@@ -938,6 +947,7 @@ header {
 .contacts_header {
     color: #559449;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 300;
     width: 100%;
 }
@@ -945,6 +955,7 @@ header {
     margin-top: 10px;
     color: #7f7f7f;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
 }
 
@@ -961,6 +972,7 @@ header {
     width: 100%;
     color: #559449;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 300;
 }
 .contact_ticket {
@@ -982,6 +994,7 @@ header {
     color: #7f7f7f;
     font-size: 14px;
     font-weight: 300;
+    outline: none;
 }
 .contact_ticket input:first-child {
     width: calc(100% - 17px);
@@ -1004,8 +1017,12 @@ header {
     font-size: 14px;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
+    outline: none;
 }
-.contact_ticket:focus {
+.contact_ticket textarea:focus {
+    border: 1px solid #559449;
+}
+.contact_ticket input:focus {
     border: 1px solid #559449;
 }
 
@@ -1039,6 +1056,7 @@ header {
 .contact_info {
     color: #559449;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 700;
     line-height: 20px;
 }
@@ -1056,6 +1074,7 @@ header {
     padding: 50px 0 50px 0;
     color: #559449;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 300;
 }
 .calculators {
@@ -1085,6 +1104,7 @@ header {
     border: none;
     background-color: #559449;
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+    outline: none;
 }
 .calculators input[type='button']:hover {
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
@@ -1102,7 +1122,7 @@ header {
 .calc_info_text {
     color: #7f7f7f;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 18px;
     font-weight: 300;
 }
 .calc_info ol {
@@ -1112,7 +1132,7 @@ header {
 .calc_info li {
     color: #7f7f7f;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 18px;
     font-weight: 300;
 }
 
@@ -1181,6 +1201,7 @@ header {
     color: #559449;
     margin: 15px 0 5px 0;
     font-size: 12px;
+    line-height: 18px;
 }
 .goods_page_item img {
     width: 71px;
@@ -1300,6 +1321,7 @@ header {
     display: block;
     color: #7f7f7f;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
 }
 .card_number_text {
@@ -1309,6 +1331,7 @@ header {
     margin-top: 25px;
     color: #7f7f7f;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 700;
 }
 .card_number {
@@ -1319,6 +1342,7 @@ header {
     position: relative;
     color: #7f7f7f;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 300;
 }
 .card_number:before {
@@ -1353,6 +1377,7 @@ header {
     margin-bottom: 25px;
     color: #559449;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
 }
 .card_buy_button {
@@ -1406,6 +1431,7 @@ header {
     width: 100%;
     color: #7f7f7f;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
 }
 .client_grade {
@@ -1431,6 +1457,7 @@ header {
     margin-top: 20px;
     color: #7f7f7f;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 700;
 }
 .card_method_wrapper {
@@ -1490,6 +1517,7 @@ header {
     border-top: none;
     color: #7f7f7f;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
 }
 .card_about_text:nth-child(1) {
@@ -1503,6 +1531,7 @@ header {
 .card_add_header {
     color: #559449;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 300;
     line-height: 20px;
     margin-bottom: 25px;
@@ -1519,6 +1548,7 @@ header {
     height: 12px;
     color: #5db14d;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
     padding: 12px 0;
     text-decoration: underline;
@@ -1542,6 +1572,7 @@ header {
 .expert_call_header {
     color: #559449;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 300;
 }
 .expert_call input {
@@ -1555,7 +1586,9 @@ header {
     border: 1px solid #b7b7b7;
     color: #7f7f7f;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
+    outline: none;
 }
 .expert_call_button {
     cursor: pointer;
@@ -1655,6 +1688,7 @@ header {
 .customer_name {
     color: #559449;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 300;
     padding-top: 7px;
 }
@@ -1662,6 +1696,7 @@ header {
     margin-top: 10px;
     color: #7f7f7f;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
     max-height: 150px;
     overflow: hidden;
@@ -1686,6 +1721,7 @@ header {
     width: 100%;
     color: #559449;
     font-size: 16px;
+    line-height: 20px;
     font-weight: 300;
 }
 .pay {
