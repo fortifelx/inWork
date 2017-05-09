@@ -27,43 +27,50 @@
 
 
 })();
-
-( function() {
-
+(function(){
+    // var viewer = document.getElementById('topSlider');
+    var slider = document.querySelector('.top_slider_wrapper');
     var slides = document.querySelectorAll('.top_slider_wrapper img');
-    var circls = document.querySelector('.circle_wrapper');
-    for (var i = 0; i < slides.length; i++) {
-        var div = document.createElement('div');
-        circls.appendChild(div);
-        slides[i].style.opacity = 0;
-    }
-    slides[0].style.opacity = 1;
-    var circl = document.querySelectorAll('.circle_wrapper div');
-
-    var position = 0;
-    var prevPosition = slides.length - 1;
-
-    function makeSlider() {
-        console.log('start');
-        Velocity( slides[position], { opacity: 1}, 1000);
-        circl[position].style.backgroundColor = 'white';
-        if (position == slides.length - 1) {
-            position = 0;
-            prevPosition = slides.length - 1;
+    var roundsBox = document.querySelector('.circle_wrapper');
+    var n = 0;
+    for (var i = 0; i < slides.length; i++ ) {
+        var round = document.createElement('div');
+        round.value = i;
+        roundsBox.appendChild(round);
+    };
+    var status = true;
+    var rounds = document.querySelectorAll('.circle_wrapper div');
+    function showSlide(ev) {
+        if (ev.target === roundsBox) return;
+        for (var i = 0; i < rounds.length; i++) {
+            rounds[i].style.backgroundColor = 'transparent';
         }
-        circl[prevPosition].style.backgroundColor = 'transparent';
-        Velocity( slides[prevPosition], {opacity: 1}, 500);
-        prevPosition = position;
-        position = position+1;
-       // console.log('end');
-    }
+        var goal = ev.target;
+        n = goal.value;
+        goal.style.backgroundColor = 'white';
+        var roundValue = -(goal.value * 740)+'px';
+        Velocity( slider, {'margin-left': roundValue}, 1000);
+    } ;
+    function demonstration(time) {
+        rounds = document.querySelectorAll('.circle_wrapper div');
+        if (n === slides.length) {
+            n= 0;
+        };
+        var el = rounds[n];
+        for (var i =0; i < rounds.length;i ++) {
+            rounds[i].style.backgroundColor = 'transparent';
+        };
+        el.style.backgroundColor = 'white';
+        var value = -(el.value * 740)+'px';
+        Velocity( slider, {'margin-left': value}, time);
+        n++;
+        if (status === false) return;
+        status = false;
+        setTimeout(function() {demonstration(time)}, 5000);
+        status = true;
+    };
 
-    setInterval(makeSlider, 2000);
-
-
-
-
-
-
+    roundsBox.addEventListener('click', showSlide);
+    demonstration(1000);
 
 })();

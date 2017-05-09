@@ -329,14 +329,12 @@ header {
     border: 2px solid #559449;
 }
 .top_slider_wrapper {
-    position: relative;
     font-size: 0;
     width: 10000px;
 }
 .top_slider_wrapper img{
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 740px;
+    display: inline-block;
 }
 .new_goods {
     width: 730px;
