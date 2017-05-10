@@ -51,8 +51,10 @@ header {
     -moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .search_button:hover {
+    background-image: -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .calculator {
@@ -130,8 +132,15 @@ header {
     margin-top: 18px;
 }
 .menu_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     font-size: 0;
     text-align: center;
@@ -406,6 +415,7 @@ header {
     padding: 2px 1.7px;
     border: none;
     color: white;
+    background-image: url("../img/r_arrow_white.png"), -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: url("../img/r_arrow_white.png"), linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.19);
 }
@@ -455,12 +465,14 @@ header {
 }
 .article_button:hover {
     font-weight: bold;
+    background-image: -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     color: white;
     border: none;
     height: 22px;
 }
 .article_button:active {
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .category_wrapper {
@@ -475,9 +487,17 @@ header {
 }
 .category {
     margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .category li {
@@ -543,6 +563,7 @@ header {
     border-radius: 18px;
 }
 .discount_button:hover {
+    background-image: -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     border: none;
     color: white;
@@ -550,6 +571,7 @@ header {
     height: 40px;
 }
 .discount_button:active {
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     border: none;
     color: white;
@@ -609,9 +631,15 @@ header {
     text-decoration: underline;
 }
 .product_img_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     text-align: center;
     width:100%;
@@ -786,12 +814,15 @@ header {
     font-weight: 300;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     background-color: #559449;
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .popular_product_button:hover {
+    background-image: -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .popular_product_button:active {
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 
@@ -907,9 +938,11 @@ header {
     border: none;
     width: 82px;
     height: 27px;
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .news_button:active {
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .show_more_news {
@@ -1078,12 +1111,15 @@ select {
     font-weight: 300;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     background-color: #559449;
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .coop_button:hover {
+    background-image: -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .coop_button:active {
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 
@@ -1208,12 +1244,15 @@ select {
     font-weight: 300;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     background-color: #559449;
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .contacts_button:hover {
+    background-image: -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .contacts_button:active {
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .contacts_info {
@@ -1286,12 +1325,15 @@ select {
     border: none;
     background-color: #559449;
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     outline: none;
 }
 .calculators input[type='button']:hover {
+    background-image: -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .calculators iput[tyle='button']:active {
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .calc_info {
@@ -1428,6 +1470,7 @@ select {
     padding: 2px 1.7px;
     border: none;
     color: white;
+    background-image: url("../img/r_arrow_white.png"), -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: url("../img/r_arrow_white.png"), linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.19);
 }
@@ -1586,12 +1629,15 @@ select {
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     background-color: #559449;
     border-radius: 15px;
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .card_buy_button:hover {
+    background-image: -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .card_buy_button:active {
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .card_sub_info {
@@ -1660,8 +1706,15 @@ select {
     width: calc(100% - 20px);
     margin-top: 20px;
     padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 
 }
@@ -1810,7 +1863,7 @@ select {
 }
 .expert_call input {
     text-align: center;
-    line-height: 30px;
+    padding: 0 15px;
     margin-top: 10px;
     width: 160px;
     height: 30px;
@@ -1819,9 +1872,11 @@ select {
     border: 1px solid #b7b7b7;
     color: #7f7f7f;
     font-size: 12px;
-    line-height: 18px;
     font-weight: 300;
     outline: none;
+}
+.expert_call input:focus {
+    border: 1px solid #559449;
 }
 .expert_call_button {
     cursor: pointer;
@@ -1836,12 +1891,15 @@ select {
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     background-color: #559449;
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .expert_call_button:hover {
+    background-image: -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .expert_call_button:active {
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 
@@ -2077,9 +2135,11 @@ footer {
 }
 
 .search_button:hover {
+    background-image: -webkit-linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
 .search_button:active {
+    background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .footer_number {
