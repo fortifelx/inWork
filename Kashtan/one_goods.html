@@ -75,7 +75,7 @@
                 <p class="warranty">Гарантия до 12 месяцев</p>
                 <p class="card_number_text">Количество</p>
                 <p class="card_number">0</p>
-                <label class="card_we_have"><input type="checkbox">Есть в наличии</label>
+                <label><input type="checkbox" class="checkbox" checked><span class="custom_checkbox"></span><p class="card_we_have">Есть в наличии</p></label>
                 <div class="card_buy_button">В корзину</div>
                 <div class="card_buy_button">Купить в 1 клик</div>
             </div>
@@ -97,15 +97,15 @@
             </div>
             <p class="card_choose_method">Доставка</p>
             <div class="card_method_wrapper">
-                <label class="choose_method"><input type="checkbox">Курьер</label>
-                <label class="choose_method"><input type="checkbox">Новая почта</label>
-                <label class="choose_method"><input type="checkbox">Самовывоз</label>
+                <label><input name="delivery_type" type="radio" class="checkbox"><span class="custom_checkbox"></span><p class="choose_method">Курьер</p></label>
+                <label><input name="delivery_type" type="radio" class="checkbox"><span class="custom_checkbox"></span><p class="choose_method">Новая почта</p></label>
+                <label><input name="delivery_type" type="radio" class="checkbox"><span class="custom_checkbox"></span><p class="choose_method">Самовывоз</p></label>
             </div>
             <p class="card_choose_method">Оплата</p>
             <div class="card_method_wrapper">
-                <label class="choose_method"><input type="checkbox">Наличные</label>
-                <label class="choose_method"><input type="checkbox">Картой</label>
-                <label class="choose_method"><input type="checkbox">Приват 24</label>
+                <label><input name="pay_type" type="radio" class="checkbox"><span class="custom_checkbox"></span><p class="choose_method">Наличные</p></label>
+                <label><input name="pay_type" type="radio" class="checkbox"><span class="custom_checkbox"></span><p class="choose_method">Картой</p></label>
+                <label><input name="pay_type" type="radio" class="checkbox"><span class="custom_checkbox"></span><p class="choose_method">Приват 24</p></label>
             </div>
         </div>
     </div>

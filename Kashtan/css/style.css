@@ -1656,6 +1656,42 @@ select {
     justify-content: space-between;
 
 }
+.checkbox {
+    display: none;
+}
+
+.custom_checkbox {
+    cursor: pointer;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #559449;
+    border-radius: 1px;
+    margin-right: 3px;
+}
+
+.custom_checkbox,
+.choose_method {
+    display: inline-block;
+    vertical-align: middle;
+}
+.card_we_have,
+.choose_method {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox:checked + .custom_checkbox::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #559449;
+    border-radius: 2px;
+}
 .choose_method {
     cursor: pointer;
     color: #7f7f7f;
