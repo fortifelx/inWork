@@ -121,6 +121,22 @@ function showSlider() {
 ( function() {
 
 
+    var calculators = document.querySelectorAll('.calc_name');
+    var work = false;
+    if (calculators != null) {
+        if (work === true) return;
+        makeCalc();
+        work = true;
+    };
+    document.addEventListener("DOMNodeInserted", makeCalc);
+
+ function makeCalc() {
+     if( calculators === null || work === true) {
+         work = false;
+         return;
+     };
+     work = true;
+
     var calc = document.querySelectorAll('.calc_name');
     var lastTr;
 
@@ -141,8 +157,6 @@ function showSlider() {
 
         var firstHeight = el.firstElementChild.nextElementSibling.offsetHeight;
         var secondHeight = el.lastElementChild.offsetHeight;
-        console.log('table = ' + firstHeight);
-        console.log('text = ' + secondHeight);
 
         if (firstHeight > secondHeight) elHeight = firstHeight + 55;
         if (firstHeight < secondHeight) elHeight = secondHeight + 55;
@@ -158,6 +172,7 @@ function showSlider() {
     for (var i = 0; i < calc.length; i++) {
         calc[i].addEventListener('click', showCalc, false);
     }
+ }
 
 
 })();
