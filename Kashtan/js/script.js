@@ -216,3 +216,50 @@ function showSlider() {
 
 
 })();
+( function() {
+
+
+    var infoHeaders = document.querySelectorAll('.popular_header');
+    var work = false;
+    if (infoHeaders != null) {
+        if (work === true) return;
+        makeInfo();
+        work = true;
+    };
+    document.addEventListener("DOMNodeInserted", makeInfo);
+
+    function makeInfo() {
+        if( infoHeaders === null || work === true) {
+            work = false;
+            return;
+        };
+        work = true;
+
+        var heads = document.querySelectorAll('.popular_header');
+        var textOne = document.querySelector('.sale_wrapper');
+        var textTwo = document.querySelector('.popular_wrapper');
+
+        function showInfo(ev) {
+            var tr = ev.target;
+            if ( tr === heads[0]) {
+                heads[1].style.color = "#cccccc";
+                heads[0].style.color = "#559449";
+                textOne.style.display = "none";
+                textTwo.style.display = "block";
+            }
+            if ( tr === heads[1]) {
+                heads[0].style.color = "#cccccc";
+                heads[1].style.color = "#559449";
+                textOne.style.display = "block";
+                textTwo.style.display = "none";
+            }
+
+        }
+
+        for (var i = 0; i < heads.length; i++) {
+            heads[i].addEventListener('click', showInfo, false);
+        }
+    }
+
+
+})();

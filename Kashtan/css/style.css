@@ -593,7 +593,7 @@ header {
     color: #559449;
     margin-right: 35px;
 }
-.popular_header:last-child {
+.popular_header:nth-child(2) {
     color: #cccccc;
 }
 .popular_header:hover {
