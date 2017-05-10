@@ -1058,6 +1058,7 @@ select {
     box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.15);
     font-family: 'Open Sans', sans-serif;
     outline: none;
+    overflow: hidden;
 }
 .coop_ticket textarea:focus {
     border: 1px solid #559449;
@@ -1149,12 +1150,23 @@ select {
     font-weight: 300;
     outline: none;
 }
+.contact_ticket p {
+    display: inline;
+}
+.contact_ticket p input {
+    width: 200px !important;
+}
 .contact_ticket input:first-child {
     width: calc(100% - 17px);
     margin: 25px 0 0 0;
 }
-.contact_ticket input:nth-child(3) {
+.email {
     float: right;
+    margin-top: 10px !important;
+}
+.tel {
+    float: left;
+    margin-top: 10px !important;
 }
 .contact_ticket textarea {
     margin-top: 10px;
@@ -1171,6 +1183,7 @@ select {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
     outline: none;
+    overflow: hidden;
 }
 .contact_ticket textarea:focus {
     border: 1px solid #559449;
@@ -1329,7 +1342,7 @@ select {
     -moz-appearance: none;
     appearance: none;
 }
-.goods_page_select::-ms-expand { /* for IE 11 */
+.goods_page_select select::-ms-expand { /* for IE 11 */
     display: none;
 }
 .goods_page_select {
@@ -1523,10 +1536,6 @@ select {
     color: #7f7f7f;
     font-size: 16px;
     font-weight: 300;
-}
-.card_number:hover {
-    font-weight: 700;
-    font-size: 20px;
 }
 .card_number:before {
     cursor: pointer;
@@ -2015,6 +2024,12 @@ b {
     font-weight: 700;
     color: #559449;
     text-decoration: underline;
+}
+.download_form:hover {
+    color: #4fc139;
+}
+.download_form:active {
+    color: #5aa94c;
 }
 .service_expert_call {
     margin: 100px auto;
