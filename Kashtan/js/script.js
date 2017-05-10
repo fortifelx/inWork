@@ -175,7 +175,7 @@ function showSlider() {
 ( function() {
 
 
-    var infoHeaders = document.querySelectorAll('.calc_name');
+    var infoHeaders = document.querySelectorAll('.card_about_header');
     var work = false;
     if (calculators != null) {
         if (work === true) return;
@@ -185,7 +185,7 @@ function showSlider() {
     document.addEventListener("DOMNodeInserted", makeCalc);
 
     function makeInfo() {
-        if( calculators === null || work === true) {
+        if( infoHeaders === null || work === true) {
             work = false;
             return;
         };

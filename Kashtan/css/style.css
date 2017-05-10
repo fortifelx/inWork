@@ -1293,7 +1293,7 @@ select {
     text-decoration: underline;
 }
 .calculators_wrapper {
-    width: 920px;
+    width: 940px;
     padding-top: 0;
     height: 0;
     overflow: hidden;
@@ -1305,7 +1305,7 @@ select {
 }
 .calculators {
     overflow: hidden;
-    width: 460px;
+    width: 455px;
     float: left;
 }
 .calculators tr td {
@@ -1343,7 +1343,7 @@ select {
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .calc_info {
-    width: 460px;
+    width: 455px;
     float: right;
 
 }
