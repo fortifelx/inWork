@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
+    overflow-y: scroll;
 }
 header {
     width:100%;
@@ -1271,9 +1272,12 @@ select {
 /*       - - -    C A L C U L A T O R S    - - -    */
 .calc_wrapper {
     padding-bottom: 120px;
+    width: 940px;
+    overflow: hidden;
 }
 .calc_header {
     margin-top: 75px;
+    width: calc(100% + 5px);
 }
 .calc_name {
     cursor: pointer;
@@ -1289,17 +1293,19 @@ select {
     text-decoration: underline;
 }
 .calculators_wrapper {
+    width: 920px;
     padding-top: 0;
     height: 0;
     overflow: hidden;
 }
 .anim_fix {
     height: 50px;
-    width: 100%;
+    width: 90%;
     display: block;
 }
 .calculators {
-    width: 470px;
+    overflow: hidden;
+    width: 460px;
     float: left;
 }
 .calculators tr td {
@@ -1337,7 +1343,7 @@ select {
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .calc_info {
-    width: 470px;
+    width: 460px;
     float: right;
 
 }

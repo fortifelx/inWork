@@ -98,7 +98,6 @@ function showSlider() {
         if (money.offsetHeight < 63) {
             Velocity( money, { height : '63px'}, 600);
         }
-
     };
     function chooseMoney(ev) {
         var el = ev.target;
@@ -164,15 +163,67 @@ function showSlider() {
         if (el.offsetHeight < elHeight) {
         Velocity( el, { height : elHeight}, 1000);
         }
-
-
-
     }
 
     for (var i = 0; i < calc.length; i++) {
         calc[i].addEventListener('click', showCalc, false);
     }
  }
+
+
+})();
+( function() {
+
+
+    var infoHeaders = document.querySelectorAll('.calc_name');
+    var work = false;
+    if (calculators != null) {
+        if (work === true) return;
+        makeCalc();
+        work = true;
+    };
+    document.addEventListener("DOMNodeInserted", makeCalc);
+
+    function makeInfo() {
+        if( calculators === null || work === true) {
+            work = false;
+            return;
+        };
+        work = true;
+
+        var calc = document.querySelectorAll('.calc_name');
+        var lastTr;
+
+        function showInfo(ev) {
+            var tr = ev.target;
+            if (tr === lastTr) {
+                var el = lastTr.nextElementSibling;
+                Velocity( el, { height : '0'}, 1000);
+                lastTr = false;
+                return;
+            }
+            if(lastTr) {
+                var el = lastTr.nextElementSibling;
+                Velocity( el, { height : '0'}, 1000);
+            };
+            lastTr = tr;
+            var el = tr.nextElementSibling;
+
+            var firstHeight = el.firstElementChild.nextElementSibling.offsetHeight;
+            var secondHeight = el.lastElementChild.offsetHeight;
+
+            if (firstHeight > secondHeight) elHeight = firstHeight + 55;
+            if (firstHeight < secondHeight) elHeight = secondHeight + 55;
+
+            if (el.offsetHeight < elHeight) {
+                Velocity( el, { height : elHeight}, 1000);
+            }
+        }
+
+        for (var i = 0; i < calc.length; i++) {
+            calc[i].addEventListener('click', showCalc, false);
+        }
+    }
 
 
 })();
