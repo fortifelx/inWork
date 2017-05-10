@@ -28,7 +28,6 @@
 
 })();
 (function(){
-    // var viewer = document.getElementById('topSlider');
     var slider = document.querySelector('.top_slider_wrapper');
     var slides = document.querySelectorAll('.top_slider_wrapper img');
     var roundsBox = document.querySelector('.circle_wrapper');
@@ -74,27 +73,3 @@
     demonstration(1000);
 
 })();
-// ( function(){
-//     var status = false;
-//
-//     function showLink( item, target, time, width, minWidth) {
-//         var el = document.querySelectorAll(item);
-//         var n = document.querySelectorAll(target);
-//         function showText() {
-//             var tr = this.querySelector(target);
-//             Velocity( tr, { width : width }, time);
-//         }
-//         function hideText () {
-//             var tr = this.querySelector(target);
-//             Velocity( tr, { width : minWidth }, time);
-//         }
-//         for (var i = 0; i < el.length; i++) {
-//             el[i].addEventListener('mouseenter', showText);
-//             el[i].addEventListener('mouseleave', hideText);
-//         }
-//
-//     }
-//     showLink('.new_good', '.new_goods_more', 600, '55px', '0');
-//
-//
-// })();
