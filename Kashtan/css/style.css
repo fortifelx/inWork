@@ -1776,6 +1776,7 @@ select {
 }
 
 .card_about_header {
+    margin-left: -1px;
     cursor: pointer;
     padding: 0 15px;
     display: inline-block;
@@ -1795,10 +1796,11 @@ select {
     border-left: 1px solid #7f7f7f;
     border-bottom: none;
     color: #559449;
+    margin-left: 0;
 }
 .card_about_header:nth-child(4) {
     margin-bottom: -21px;
-    width: 215px;
+    width: 218px;
     border: none;
     line-height: 50px;
     border-bottom: 1px solid #7f7f7f;
