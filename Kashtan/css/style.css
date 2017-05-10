@@ -983,6 +983,9 @@ header {
 .networks_ico li:nth-child(3) {
     background-position: -42px 0;
 }
+.networks_ico li:hover {
+    background-image: url(../img/sprite.png);
+}
 .one_news .news_article {
     height: auto;
 }
