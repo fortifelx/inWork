@@ -177,12 +177,12 @@ function showSlider() {
 
     var infoHeaders = document.querySelectorAll('.card_about_header');
     var work = false;
-    if (calculators != null) {
+    if (infoHeaders != null) {
         if (work === true) return;
-        makeCalc();
+        makeInfo();
         work = true;
     };
-    document.addEventListener("DOMNodeInserted", makeCalc);
+    document.addEventListener("DOMNodeInserted", makeInfo);
 
     function makeInfo() {
         if( infoHeaders === null || work === true) {
@@ -191,37 +191,26 @@ function showSlider() {
         };
         work = true;
 
-        var calc = document.querySelectorAll('.calc_name');
-        var lastTr;
+        var heads = document.querySelectorAll('.card_about_header');
+        var texts = document.querySelectorAll('.card_about_text');
 
         function showInfo(ev) {
             var tr = ev.target;
-            if (tr === lastTr) {
-                var el = lastTr.nextElementSibling;
-                Velocity( el, { height : '0'}, 1000);
-                lastTr = false;
-                return;
-            }
-            if(lastTr) {
-                var el = lastTr.nextElementSibling;
-                Velocity( el, { height : '0'}, 1000);
-            };
-            lastTr = tr;
-            var el = tr.nextElementSibling;
 
-            var firstHeight = el.firstElementChild.nextElementSibling.offsetHeight;
-            var secondHeight = el.lastElementChild.offsetHeight;
-
-            if (firstHeight > secondHeight) elHeight = firstHeight + 55;
-            if (firstHeight < secondHeight) elHeight = secondHeight + 55;
-
-            if (el.offsetHeight < elHeight) {
-                Velocity( el, { height : elHeight}, 1000);
+            for(var i = 0; i < heads.length - 1; i++) {
+                texts[i].style.display = 'none';
+                heads[i].style.borderBottom = '1px solid #7f7f7f';
+                heads[i].style.color = '#7f7f7f';
+                if (heads[i] === tr) {
+                    heads[i].style.borderBottom = 'none';
+                    heads[i].style.color = '#559449';
+                    texts[i].style.display = 'block';
+                }
             }
         }
 
-        for (var i = 0; i < calc.length; i++) {
-            calc[i].addEventListener('click', showCalc, false);
+        for (var i = 0; i < heads.length - 1; i++) {
+            heads[i].addEventListener('click', showInfo, false);
         }
     }
 

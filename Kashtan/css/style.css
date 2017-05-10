@@ -1793,6 +1793,8 @@ select {
 }
 .card_about_header:first-child {
     border-left: 1px solid #7f7f7f;
+    border-bottom: none;
+    color: #559449;
 }
 .card_about_header:nth-child(4) {
     margin-bottom: -21px;
@@ -1825,7 +1827,6 @@ select {
     font-size: 16px;
     line-height: 20px;
     font-weight: 300;
-    line-height: 20px;
     margin-bottom: 25px;
 }
 .card_add_info img {
