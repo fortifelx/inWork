@@ -29,6 +29,22 @@
 })();
 (function(){
     var slider = document.querySelector('.top_slider_wrapper');
+    var work = false;
+    if (slider != null) {
+        if (work === true) return;
+        showSlider();
+        work = true;
+    };
+    document.addEventListener("DOMNodeInserted", showSlider)
+
+
+function showSlider() {
+        if( slider === null || work === true) {
+            work = false;
+            return;
+        };
+        work = true;
+    slider = document.querySelector('.top_slider_wrapper');
     var slides = document.querySelectorAll('.top_slider_wrapper img');
     var roundsBox = document.querySelector('.circle_wrapper');
     var n = 0;
@@ -68,8 +84,37 @@
         setTimeout(function() {demonstration(time)}, 5000);
         status = true;
     };
-
     roundsBox.addEventListener('click', showSlide);
     demonstration(1000);
+
+}
+})();
+( function(){
+    var money = document.querySelector('.money_name');
+    var moneyName = document.querySelectorAll('.money_name li');
+
+    function showList() {
+        money = document.querySelector('.money_name');
+        if (money.offsetHeight < 63) {
+            Velocity( money, { height : '63px'}, 600);
+        }
+
+    };
+    function chooseMoney(ev) {
+        var el = ev.target;
+        moneyName = document.querySelectorAll('.money_name li');
+        money = document.querySelector('.money_name');
+        if(money.offsetHeight > 20) {
+            Velocity(money, {height: '20px'}, 600);
+        }
+        if( el === moneyName[0]) return;
+        money.removeChild(el);
+        money.insertBefore(el, moneyName[0]);
+    }
+    money.addEventListener('click', showList, false);
+    for( var i = 0; i < moneyName.length; i++) {
+        moneyName[i].addEventListener('click', chooseMoney, false);
+    };
+
 
 })();

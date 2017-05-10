@@ -98,9 +98,6 @@ header {
     bottom: 3px;
     right:-13px;
 }
-.money_name:hover {
-    height:63px;
-}
 .contact_numbers {
     cursor: pointer;
     z-index: 1;
