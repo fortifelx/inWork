@@ -460,7 +460,9 @@ header {
     border: none;
     height: 22px;
 }
-
+.article_button:active {
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
+}
 .category_wrapper {
     float: right;
     width: 680px;
@@ -542,6 +544,13 @@ header {
 }
 .discount_button:hover {
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
+    border: none;
+    color: white;
+    width: 139px;
+    height: 40px;
+}
+.discount_button:active {
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     border: none;
     color: white;
     width: 139px;
@@ -659,6 +668,7 @@ header {
     float: left;
     color: #7f7f7f;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 300;
 }
 .about_company_wrapper img {
@@ -667,7 +677,9 @@ header {
     height: 260px;
 }
 .diploma_wrapper {
+    clear: both;
     padding-bottom: 90px;
+    padding-top: 20px;
 }
 .diploma_header {
     margin-bottom: 35px;
@@ -778,6 +790,9 @@ header {
 }
 .popular_product_button:hover {
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
+.popular_product_button:active {
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 
 .last_news_wrapper {
@@ -893,6 +908,9 @@ header {
     width: 82px;
     height: 27px;
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
+.news_button:active {
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .show_more_news {
     cursor: pointer;
@@ -1017,6 +1035,9 @@ header {
 .select {
      position: relative;
 }
+select {
+    outline: none;
+}
 .select:after {
     pointer-events: none;
     position: absolute;
@@ -1060,6 +1081,9 @@ header {
 }
 .coop_button:hover {
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
+.coop_button:active {
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 
 /*    - - -   C O N T A C T     P A G E   - - -      */
@@ -1176,6 +1200,9 @@ header {
 .contacts_button:hover {
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
 }
+.contacts_button:active {
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
+}
 .contacts_info {
     float: right;
     margin: 80px 160px 0 0;
@@ -1250,6 +1277,9 @@ header {
 }
 .calculators input[type='button']:hover {
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
+.calculators iput[tyle='button']:active {
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .calc_info {
     width: 470px;
@@ -1488,11 +1518,15 @@ header {
     text-align: center;
     display: block;
     margin-top: 10px;
+    height: 20px;
     position: relative;
     color: #7f7f7f;
     font-size: 16px;
-    line-height: 20px;
     font-weight: 300;
+}
+.card_number:hover {
+    font-weight: 700;
+    font-size: 20px;
 }
 .card_number:before {
     cursor: pointer;
@@ -1521,6 +1555,7 @@ header {
     color: #559449;
 }
 .card_we_have {
+    cursor: pointer;
     display: block;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -1546,6 +1581,9 @@ header {
 }
 .card_buy_button:hover {
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
+.card_buy_button:active {
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .card_sub_info {
     width: 310px;
@@ -1619,6 +1657,7 @@ header {
 
 }
 .choose_method {
+    cursor: pointer;
     color: #7f7f7f;
     font-size: 14px;
     font-weight: 300;
@@ -1756,6 +1795,9 @@ header {
 }
 .expert_call_button:hover {
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
+.expert_call_button:active {
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 
 .video_header {
@@ -1985,6 +2027,9 @@ footer {
 
 .search_button:hover {
     background-image: linear-gradient(78deg, rgba(115, 255, 88, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
+}
+.search_button:active {
+    background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
 .footer_number {
     margin-top: 75px;
