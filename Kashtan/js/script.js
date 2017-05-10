@@ -118,3 +118,46 @@ function showSlider() {
 
 
 })();
+( function() {
+
+
+    var calc = document.querySelectorAll('.calc_name');
+    var lastTr;
+
+    function showCalc(ev) {
+        var tr = ev.target;
+        if (tr === lastTr) {
+            var el = lastTr.nextElementSibling;
+            Velocity( el, { height : '0'}, 1000);
+            lastTr = false;
+            return;
+        }
+        if(lastTr) {
+            var el = lastTr.nextElementSibling;
+            Velocity( el, { height : '0'}, 1000);
+        };
+        lastTr = tr;
+        var el = tr.nextElementSibling;
+
+        var firstHeight = el.firstElementChild.nextElementSibling.offsetHeight;
+        var secondHeight = el.lastElementChild.offsetHeight;
+        console.log('table = ' + firstHeight);
+        console.log('text = ' + secondHeight);
+
+        if (firstHeight > secondHeight) elHeight = firstHeight + 55;
+        if (firstHeight < secondHeight) elHeight = secondHeight + 55;
+
+        if (el.offsetHeight < elHeight) {
+        Velocity( el, { height : elHeight}, 1000);
+        }
+
+
+
+    }
+
+    for (var i = 0; i < calc.length; i++) {
+        calc[i].addEventListener('click', showCalc, false);
+    }
+
+
+})();

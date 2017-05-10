@@ -1197,14 +1197,27 @@ header {
     margin-top: 75px;
 }
 .calc_name {
+    cursor: pointer;
     clear: both;
-    display: block;
-    width: 100%;
-    padding: 50px 0 50px 0;
+    display: inline-block;
+    margin: 50px 0 0 0;
     color: #559449;
     font-size: 16px;
     line-height: 20px;
     font-weight: 300;
+}
+.calc_name:hover {
+    text-decoration: underline;
+}
+.calculators_wrapper {
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
+.anim_fix {
+    height: 50px;
+    width: 100%;
+    display: block;
 }
 .calculators {
     width: 470px;
@@ -1241,6 +1254,7 @@ header {
 .calc_info {
     width: 470px;
     float: right;
+
 }
 .calc_info_header {
     color: #7f7f7f;
