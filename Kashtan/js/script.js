@@ -255,56 +255,80 @@ function showSlider() {
     }
 })();
 ( function(){
-    makeSlider('.img_slider_wrapper', '.slide', 600, 3, '.right_arrow', '.left_arrow' );
+    var sliders = document.querySelectorAll('.img_slider_wrapper');
+    var work = false;
+    if (sliders != null) {
+        if (work === true) return;
+        makeSlider();
+        work = true;
+    };
+    document.addEventListener("DOMNodeInserted", makeSlider);
 
-    function makeSlider(sliderName, slide, scrollTime, visibleElements, rightArrow, leftArrow ) {
-        var slider = document.querySelector(sliderName);
-        var slides = slider.querySelectorAll(slide);
-        var lt = document.querySelector(leftArrow);
-        var gt = document.querySelector(rightArrow);
+    function makeSlider() {
+        if( sliders === null)  {
+            work = false;
+            return;
+        };
+        if (work === true) return;
+        work = true;
+        var slider = document.querySelector('.img_slider_wrapper');
+        var slides = slider.querySelectorAll('.slide');
+        var lt = document.querySelector('.left_arrow');
+        var gt = document.querySelector('.right_arrow');
 
         var status = 0;
-        var counter = visibleElements;
-        var correction = visibleElements;
+        var counter = 3;
+        var correction = 3;
         function watchDog() {
             function backToNull() {
                 slider.style.marginLeft = 0;
                 status = 0;
-                counter = visibleElements;
+                counter = 3;
             }
             window.addEventListener('resize' , backToNull);
         }
         watchDog();
         function scrollLeft() {
-            var step = slider.querySelectorAll(slide)[counter].offsetWidth;
+            var step = slider.querySelectorAll('.slide')[0].offsetWidth;
             var edge = slides.length*step - correction*step;
             if (counter <= correction) {
                 counter = slides.length;
-                Velocity( slider, {"margin-left": -edge}, scrollTime*2);
+                Velocity( slider, {"margin-left": -edge}, 600*2);
                 status = -edge;
                 return;
             };
-            Velocity( slider, {'margin-left': status + step}, scrollTime);
+            Velocity( slider, {'margin-left': status + step}, 600);
             counter--;
             status = status + step;
         };
 
         function scrollRight() {
-            var step = slider.querySelectorAll(slide)[0].offsetWidth;
+            var step = slider.querySelectorAll('.slide')[0].offsetWidth;
             var edge = slides.length*step;
             if (counter >= slides.length) {
                 counter = correction;
-                Velocity( slider, {"margin-left": 0}, scrollTime*3);
+                Velocity( slider, {"margin-left": 0}, 600*2);
                 status = 0;
                 return;
             };
-            Velocity( slider, {'margin-left': status - step}, scrollTime);
+            Velocity( slider, {'margin-left': status - step}, 600);
             counter++;
             status = status - step;
         };
 
         lt.addEventListener('click', scrollLeft);
         gt.addEventListener('click', scrollRight);
+
+        function showSlide(ev) {
+            var tr = document.querySelector('.card_main_img');
+            var oldEl = tr.querySelector('img');
+            var newEl = this.querySelector('img');
+            var main = newEl.cloneNode(true);
+            tr.replaceChild( main, oldEl);
+        }
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].addEventListener('click', showSlide);
+        }
 
     };
 
