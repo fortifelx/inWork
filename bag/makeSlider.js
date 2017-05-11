@@ -18,7 +18,7 @@ function makeSlider(sliderViewer,sliderName, slide, scrollTime, visibleElements,
         }
         watchDog();
         function scrollLeft() {
-            var step = slider.querySelectorAll(slide)[0].offsetWidth;
+            var step = slider.querySelectorAll(slide)[counter].offsetWidth;
             var edge = slides.length*step - correction*step;
             if (counter <= correction) {
                 counter = slides.length;

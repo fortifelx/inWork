@@ -217,8 +217,6 @@ function showSlider() {
 
 })();
 ( function() {
-
-
     var infoHeaders = document.querySelectorAll('.popular_header');
     var work = false;
     if (infoHeaders != null) {
@@ -227,18 +225,15 @@ function showSlider() {
         work = true;
     };
     document.addEventListener("DOMNodeInserted", makeInfo);
-
     function makeInfo() {
         if( infoHeaders === null || work === true) {
             work = false;
             return;
         };
         work = true;
-
         var heads = document.querySelectorAll('.popular_header');
         var textOne = document.querySelector('.sale_wrapper');
         var textTwo = document.querySelector('.popular_wrapper');
-
         function showInfo(ev) {
             var tr = ev.target;
             if ( tr === heads[0]) {
@@ -253,13 +248,65 @@ function showSlider() {
                 textOne.style.display = "block";
                 textTwo.style.display = "none";
             }
-
         }
-
         for (var i = 0; i < heads.length; i++) {
             heads[i].addEventListener('click', showInfo, false);
         }
     }
+})();
+( function(){
+    makeSlider('.img_slider_wrapper', '.slide', 600, 3, '.right_arrow', '.left_arrow' );
+
+    function makeSlider(sliderName, slide, scrollTime, visibleElements, rightArrow, leftArrow ) {
+        var slider = document.querySelector(sliderName);
+        var slides = slider.querySelectorAll(slide);
+        var lt = document.querySelector(leftArrow);
+        var gt = document.querySelector(rightArrow);
+
+        var status = 0;
+        var counter = visibleElements;
+        var correction = visibleElements;
+        function watchDog() {
+            function backToNull() {
+                slider.style.marginLeft = 0;
+                status = 0;
+                counter = visibleElements;
+            }
+            window.addEventListener('resize' , backToNull);
+        }
+        watchDog();
+        function scrollLeft() {
+            var step = slider.querySelectorAll(slide)[counter].offsetWidth;
+            var edge = slides.length*step - correction*step;
+            if (counter <= correction) {
+                counter = slides.length;
+                Velocity( slider, {"margin-left": -edge}, scrollTime*2);
+                status = -edge;
+                return;
+            };
+            Velocity( slider, {'margin-left': status + step}, scrollTime);
+            counter--;
+            status = status + step;
+        };
+
+        function scrollRight() {
+            var step = slider.querySelectorAll(slide)[0].offsetWidth;
+            var edge = slides.length*step;
+            if (counter >= slides.length) {
+                counter = correction;
+                Velocity( slider, {"margin-left": 0}, scrollTime*3);
+                status = 0;
+                return;
+            };
+            Velocity( slider, {'margin-left': status - step}, scrollTime);
+            counter++;
+            status = status - step;
+        };
+
+        lt.addEventListener('click', scrollLeft);
+        gt.addEventListener('click', scrollRight);
+
+    };
 
 
 })();

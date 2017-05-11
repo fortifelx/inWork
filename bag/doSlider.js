@@ -4,7 +4,6 @@ function doSlider(sliderViewer,sliderName, slide, scrollTime, visibleElements, r
         var slids = slider.querySelectorAll(slide);
         var slides = [];
         for(var i = 0; i < slids.length; i++) {
-
             slides.push(slids[i]);
         };
         var lt = document.querySelector(leftArrow);
@@ -22,8 +21,7 @@ function doSlider(sliderViewer,sliderName, slide, scrollTime, visibleElements, r
         watchDog();
         
         function scrollRight() {
-            var slideSize = slider.querySelectorAll(slide)[0].offsetWidth;
-            var slideWidth = slideSize+"px";
+            var slideSize = slider.querySelectorAll(slide)[counter].offsetWidth;
             if (counter === slides.length-1) {
                 var lastSlide = slider.lastElementChild;
                 var firstSlide = slider.firstElementChild;
@@ -31,11 +29,11 @@ function doSlider(sliderViewer,sliderName, slide, scrollTime, visibleElements, r
                 slides.push(firstEl);
                 slider.insertBefore(firstSlide, null);
                 firstSlide.style.marginLeft = 0;
-                Velocity(lastSlide, { "margin-left": -slideSize }, 600);
+                Velocity(lastSlide, { "margin-left": -slideSize }, scrollTime);
                 counter = slides.length-1;
                 return;
             }
-            Velocity(slides[counter], { "margin-left": -slideSize }, 600);
+            Velocity(slides[counter], { "margin-left": -slideSize }, scrollTime);
             counter++;
         }
         function scrollLeft() {
@@ -49,10 +47,10 @@ function doSlider(sliderViewer,sliderName, slide, scrollTime, visibleElements, r
                 slider.insertBefore(lastSlide, firstSlide);
                 lastSlide.style.marginLeft = slideWidth;
                 counter = 0;
-                Velocity(lastSlide, {"margin-left": 0}, 600);
+                Velocity(lastSlide, {"margin-left": 0}, scrollTime);
                 return;
             }
-            Velocity(slides[counter-1], { "margin-left": 0 }, 600);
+            Velocity(slides[counter-1], { "margin-left": 0 }, scrollTime);
             counter--;
         }
         gt.addEventListener('click', scrollRight);
