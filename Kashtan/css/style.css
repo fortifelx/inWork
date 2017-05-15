@@ -1572,6 +1572,7 @@ select {
 }
 .card_main_img img {
     height: 100%;
+    cursor: pointer;
 }
 .img_slider_viewer {
     margin: 0 auto;
@@ -1591,6 +1592,58 @@ select {
 .slide img {
     width: 100%;
 }
+.card_img_close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: none;
+    font-size: 34px;
+    font-weight: 700;
+    color: #5aa94c;
+    cursor: pointer;
+}
+
+/* ---- make big   --- */
+.card_img_big {   /* ------ .card_img-wrapper     */
+    z-index: 10;
+    position: fixed;
+    width: 910px;
+    height: 480px;
+    margin: 0 auto;
+    background-color: rgba( 255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #559449;
+}
+.card_img_big .card_img_close {
+    display: block;
+}
+
+.card_img_big .card_main_img img {    /* .card_main_img img   */
+    height: 380px !important;
+}
+.card_img_big .card_main_img {      /* .card_main_img    */
+    width: 90%;
+    margin: 5px auto;
+    height: 380px !important;
+}
+
+.card_img_big .left_arrow {     /* .left_arrow */
+    border-width: 45px 21px 45px 0;
+    bottom: 15px;
+    left: 300px;
+
+}
+.card_img_big .right_arrow {     /* .right_arrow   */
+    border-width: 45px 0 45px 21px;
+    right: 300px;
+    bottom: 15px;
+}
+/* ---- make big end   --- */
+
+
+
+
 .card_price {
     display: inline-block;
     margin-top: 20px;

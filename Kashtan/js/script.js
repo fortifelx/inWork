@@ -338,3 +338,33 @@ function showSlider() {
 
 
 })();
+( function() {
+    var goodsImg = document.querySelector('.card_img_wrapper');
+    var work = false;
+    if (goodsImg != null) {
+        if (work === true) return;
+        showImg();
+        work = true;
+    };
+    document.addEventListener("DOMNodeInserted", showImg);
+    function showImg() {
+        if( goodsImg === null)  {
+            work = false;
+            return;
+        };
+        if (work === true) return;
+        work = true;
+        var img = document.querySelector('.card_img_wrapper img');
+        var close;
+        function makeBig() {
+            goodsImg.classList.add('card_img_big');
+            close = document.querySelector('.card_img_close');
+            close.addEventListener('click', makeSmall);
+        }
+        function makeSmall() {
+            goodsImg.classList.remove('card_img_big');
+        }
+        img.addEventListener('click', makeBig);
+    }
+
+})();

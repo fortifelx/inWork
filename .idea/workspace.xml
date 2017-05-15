@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/css/style.css" afterPath="$PROJECT_DIR$/Kashtan/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/js/script.js" afterPath="$PROJECT_DIR$/Kashtan/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/one_goods.html" afterPath="$PROJECT_DIR$/Kashtan/one_goods.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +32,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="1501" column="45" lean-forward="false" selection-start-line="1501" selection-start-column="45" selection-end-line="1501" selection-end-column="45" />
+            <state relative-caret-position="391">
+              <caret line="1618" column="19" lean-forward="false" selection-start-line="1618" selection-start-column="19" selection-end-line="1618" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -41,8 +42,8 @@
       <file leaf-file-name="one_goods.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kashtan/one_goods.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="68" column="62" lean-forward="false" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+            <state relative-caret-position="594">
+              <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -51,8 +52,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Kashtan/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="311" column="23" lean-forward="true" selection-start-line="311" selection-start-column="23" selection-end-line="311" selection-end-column="23" />
+            <state relative-caret-position="538">
+              <caret line="360" column="59" lean-forward="false" selection-start-line="360" selection-start-column="59" selection-end-line="360" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -373,7 +374,7 @@
       <workItem from="1494165080693" duration="8514000" />
       <workItem from="1494222488733" duration="80000" />
       <workItem from="1494480617577" duration="5085000" />
-      <workItem from="1494874153363" duration="2407000" />
+      <workItem from="1494874153363" duration="5761000" />
     </task>
     <task id="LOCAL-00001" summary="make script better for firefox">
       <created>1492844881761</created>
@@ -393,7 +394,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133917000" />
+    <option name="totallyTimeSpent" value="137271000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -798,26 +799,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
+    <entry file="file://$PROJECT_DIR$/Kashtan/one_goods.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="1501" column="45" lean-forward="false" selection-start-line="1501" selection-start-column="45" selection-end-line="1501" selection-end-column="45" />
+        <state relative-caret-position="594">
+          <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/one_goods.html">
+    <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="68" column="62" lean-forward="false" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+        <state relative-caret-position="391">
+          <caret line="1618" column="19" lean-forward="false" selection-start-line="1618" selection-start-column="19" selection-end-line="1618" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kashtan/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="311" column="23" lean-forward="true" selection-start-line="311" selection-start-column="23" selection-end-line="311" selection-end-column="23" />
+        <state relative-caret-position="538">
+          <caret line="360" column="59" lean-forward="false" selection-start-line="360" selection-start-column="59" selection-end-line="360" selection-end-column="59" />
           <folding />
         </state>
       </provider>
