@@ -2,6 +2,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     overflow-y: scroll;
+    background-image: url("../img/bg1.png");
+    background-size: 25%;
 }
 header {
     width:100%;
@@ -9,6 +11,7 @@ header {
     -webkit-box-shadow: 0 2px 7px 2px rgba(220,220,220,1);
     -moz-box-shadow: 0 2px 7px 2px rgba(220,220,220,1);
     box-shadow: 0 2px 7px 2px rgba(220,220,220,1);
+    background-color: white;
 }
 .main_header_wrapper {
     position: relative;
@@ -198,6 +201,7 @@ header {
     float: left;
     border: 3px solid #559548;
     border-radius: 3px;
+    background-color: white;
 }
 .category_list li {
     cursor: pointer;
@@ -367,6 +371,7 @@ header {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
+    background-color: white;
 }
 .new_good:hover {
     width: 131px;
@@ -514,6 +519,7 @@ header {
     font-size: 12px;
     font-weight: bold;
     color: #aeaeae;
+    background-color: white;
 }
 .category img {
 }
@@ -622,6 +628,7 @@ header {
     -webkit-box-shadow: -1px 3px 9px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: -1px 3px 9px rgba(0, 0, 0, 0.35);
     box-shadow: -1px 3px 9px rgba(0, 0, 0, 0.35);
+    background-color: white;
 }
 .product:hover .product_ico_wrapper {
     opacity: 1;
@@ -1424,6 +1431,7 @@ select {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    background-color: white;
 }
 .goods_page_item:hover {
     width: 154px;
@@ -1491,7 +1499,7 @@ select {
     margin-top: 80px;
     padding-top: 0;
     padding-bottom: 90px;
-    background-color: white;
+    background-color: rgba( 255, 255, 255, 0);
     box-shadow: none;
 }
 
@@ -2152,6 +2160,7 @@ footer {
     min-height: 200px;
     border-top: 4px solid #e5e5e5;
     outline: 4px solid #669a30;
+    background-color: white;
 }
 .outline_fix {
     position: absolute;

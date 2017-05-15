@@ -324,7 +324,11 @@ function showSlider() {
             var oldEl = tr.querySelector('img');
             var newEl = this.querySelector('img');
             var main = newEl.cloneNode(true);
+            main.style.opacity = 0;
+            main.style.height = '80%';
             tr.replaceChild( main, oldEl);
+            Velocity( main, { opacity: 1, height: '100%'}, 300);
+            // Velocity( main, { }, 400);
         }
         for (var i = 0; i < slides.length; i++) {
             slides[i].addEventListener('click', showSlide);
