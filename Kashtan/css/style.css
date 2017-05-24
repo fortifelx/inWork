@@ -6,6 +6,9 @@ body {
     background-size: 25%;
 }
 header {
+    position: fixed;
+    z-index: 20;
+    top:0;
     width:100%;
     padding-bottom: 25px;
     -webkit-box-shadow: 0 2px 7px 2px rgba(220,220,220,1);
@@ -65,7 +68,7 @@ header {
     cursor: pointer;
     position: relative;
     float: left;
-    margin: 13px 0 0 60px;
+    margin: 13px 0 0 47px;
     line-height: 31px;
     font-size: 14px;
     color: #669933;
@@ -85,7 +88,7 @@ header {
     position: absolute;
     display: block;
     margin: 19px 0 0 0;
-    left: 660px;
+    left: 650px;
     height: 20px;
     overflow: hidden;
     line-height:20px;
@@ -100,9 +103,10 @@ header {
 .money_name li:first-child:after {
     content: url("../img/d_arrow_green.png");
     display: inline-block;
-    position: absolute;
-    bottom: 3px;
-    right:-13px;
+    margin:0 0 0 5px;
+    /*position: absolute;*/
+    /*bottom: 3px;*/
+    /*right:-13px;*/
 }
 .contact_numbers {
     cursor: pointer;
@@ -112,7 +116,7 @@ header {
     height:20px;
     padding-right:15px;
     position: absolute;
-    right: 65px;
+    right: 35px;
     line-height: 20px;
     font-size: 14px;
     color: #669933;
@@ -123,9 +127,7 @@ header {
 .contact_numbers li:first-child:after {
     content: url("../img/d_arrow_green.png");
     display: inline-block;
-    position: absolute;
-    top: -3px;
-    right:0;
+    margin:0 0 0 5px;
 }
 .contact_numbers:hover {
     height:63px;
@@ -190,20 +192,44 @@ header {
 
 .wrapper {
     width: 940px;
-    margin:0 auto;
+    margin: 125px auto 0 auto;
     min-height: 100px;
 }
 .category_list {
     position: relative;
-    width: 160px;
+    width: 155px;
+    padding: 3px 10px 3px 3px;
     height: 315px;
     margin-top: 15px;
     float: left;
-    border: 3px solid #559548;
-    border-radius: 3px;
+    border: 1px solid #559449;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     background-color: white;
 }
+/*.category_list:after {*/
+    /*content: '';*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*width: 20px;*/
+    /*top: 0;*/
+    /*height: 315px;*/
+    /*left: 160px;*/
+/*}*/
+/*.category_list:hover {*/
+    /*padding: 1px 8px 1px 1px;*/
+    /*border: 3px solid #559449;*/
+    /*-webkit-box-shadow: -1px 3px 9px rgba(0, 0, 0, 0.35);*/
+    /*-moz-box-shadow: -1px 3px 9px rgba(0, 0, 0, 0.35);*/
+    /*box-shadow: -1px 3px 9px rgba(0, 0, 0, 0.35);*/
+/*}*/
+/*.category_list:hover .sub_menu {*/
+    /*top: -2px;*/
+    /*left: 178px;*/
+/*}*/
 .category_list li {
+    width: 140px;
     cursor: pointer;
     font-size: 12px;
     color: #7f7f7f;
@@ -226,7 +252,7 @@ header {
     display: none;
     z-index: 2;
     left: 180px;
-    top: -3px;
+    top: 0;
     width: 449px;
     height: 369px;
     box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.15);
