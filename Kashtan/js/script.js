@@ -3,6 +3,7 @@
     var menuItems = document.querySelectorAll('.category_list li');
     var subMenus = document.querySelectorAll('.sub_menu');
     var closeMenu = document.querySelectorAll('.close_sub_menu');
+    var status = true;
     function showSubMenu(ev) {
         var el = this.querySelector('.sub_menu');
         closeSubMenu(ev);
@@ -11,18 +12,26 @@
         }
         if (el === null) return;
         el.style.display = 'block';
+        Velocity(el, {'opacity': 1}, 300);
     };
     function closeSubMenu(ev) {
         var tr = ev.target;
         var cb = tr.querySelector('.close_sub_menu');
+        var nowEl = tr.querySelector('.sub_menu');
+        for (var i = 0; i < subMenus.length; i++) {
+            if(subMenus[i] != nowEl || status === true) {
+                status = false;
+                subMenus[i].style.display = 'none';
+                subMenus[i].style.opacity = '0';
+            }
+        }
+        if (tr === menuItems[menuItems.length - 1] ) return;
         cb.addEventListener('click', function () {
             for (var i = 0; i < subMenus.length; i++) {
                 subMenus[i].style.display = 'none';
+                subMenus[i].style.opacity = '0';
             }
         }, false);
-        for (var i = 0; i < subMenus.length; i++) {
-            subMenus[i].style.display = 'none';
-        }
     };
     function clickDog(el, func) {
         for (var i = 0; i < el.length; i++) {
