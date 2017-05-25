@@ -502,6 +502,7 @@ header {
 }
 .news_header {
     font-size: 20px;
+    line-height: 20px;
     font-weight: bold;
     color: #559449;
 }
@@ -1037,10 +1038,10 @@ header {
 .news_popular_page .news_header {
     white-space: pre-wrap;
     text-overflow: clip;
-    height: 36px;
+    height: 40px;
 }
 .news_date {
-    margin-top: 5px;
+    margin-top: 2px;
     color: #999999;
     font-size: 12px;
     font-weight: 400;
