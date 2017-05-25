@@ -52,7 +52,7 @@ header {
     text-align: center;
     color: #fff;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 15px;
     -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
@@ -350,7 +350,7 @@ header {
     color: #000000;
     font-size: 12px;
     text-decoration: underline;
-    font-weight: 300;
+    font-weight: 400;
 }
 .all_category:hover {
     font-weight: 700;
@@ -790,7 +790,7 @@ header {
     color:  #2e2e2e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .about_company_wrapper img {
     float: right;
@@ -917,12 +917,12 @@ header {
 .popular_product_name {
     color: #559449;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .popular_product_info {
     margin-top: 20px;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     color: #559449;
 }
 .popular_product_text {
@@ -930,7 +930,7 @@ header {
     color:  #2e2e2e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
     height: 75px;
     overflow: hidden;
 }
@@ -944,7 +944,7 @@ header {
     border-radius: 15px;
     color: #fffefe;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     background-color: #559449;
     background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
@@ -1037,7 +1037,7 @@ header {
     margin-top: 5px;
     color: #999999;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .news_text {
     height: 72px;
@@ -1045,7 +1045,7 @@ header {
     color: #2e2e2e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
     overflow: hidden;
     text-overflow: clip;
 }
@@ -1059,7 +1059,7 @@ header {
     border: 1px solid #559449;
     color: #559449;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 12px;
 }
 .news_popular_page .news_button {
@@ -1160,7 +1160,7 @@ header {
     width: 100%;
     color:  #2e2e2e;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 .coop_ticket input {
@@ -1171,7 +1171,7 @@ header {
     border-radius: 15px;
     color:  #2e2e2e;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     border: 1px solid #b7b7b7;
     box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.15);
     outline: none;
@@ -1191,7 +1191,7 @@ header {
     border-radius: 15px;
     color:  #2e2e2e;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     border: 1px solid #b7b7b7;
     box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.15);
     -webkit-appearance: none;
@@ -1225,7 +1225,7 @@ select {
     border-radius: 15px;
     color:  #2e2e2e;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     border: 1px solid #b7b7b7;
     box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.15);
     font-family: 'Open Sans', sans-serif;
@@ -1261,7 +1261,7 @@ select {
     height: 30px;
     color: #fffefe;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     background-color: #559449;
     background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
@@ -1291,7 +1291,7 @@ select {
     color: #559449;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
     width: 100%;
 }
 .contacts_text {
@@ -1299,7 +1299,7 @@ select {
     color:  #2e2e2e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .map {
@@ -1316,7 +1316,7 @@ select {
     color: #559449;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .contact_ticket {
     font-size: 0;
@@ -1336,7 +1336,7 @@ select {
     background-color: #ffffff;
     color:  #2e2e2e;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     outline: none;
 }
 .contact_ticket p {
@@ -1369,7 +1369,7 @@ select {
     background-color: #ffffff;
     color:  #2e2e2e;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     outline: none;
     overflow: hidden;
@@ -1394,7 +1394,7 @@ select {
     height: 30px;
     color: #fffefe;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     background-color: #559449;
     background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
@@ -1439,7 +1439,7 @@ select {
     color: #559449;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .calc_name:hover {
     text-decoration: underline;
@@ -1479,7 +1479,7 @@ select {
     height: 30px;
     color: #fffefe;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     border: none;
     background-color: #559449;
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(115, 255, 88, 0.86) 100%);
@@ -1509,7 +1509,7 @@ select {
     color:  #2e2e2e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .calc_info ol {
     margin: 10px 0 10px 12px;
@@ -1519,7 +1519,7 @@ select {
     color:  #2e2e2e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /*       - - -      G O O D S     P A G E     - - -     */
@@ -1536,7 +1536,7 @@ select {
     border-radius: 6px;
     color: #559449;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     border: 1px solid #559449;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1805,7 +1805,7 @@ select {
     color:  #2e2e2e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .card_number_text {
     margin-right: 45px;
@@ -1826,7 +1826,7 @@ select {
     position: relative;
     color:  #2e2e2e;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .card_number:before {
     cursor: pointer;
@@ -1862,7 +1862,7 @@ select {
     color: #559449;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .card_buy_button {
     margin-bottom: 10px;
@@ -1873,7 +1873,7 @@ select {
     text-align: center;
     line-height: 29px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     background-color: #559449;
     border-radius: 15px;
@@ -1922,7 +1922,7 @@ select {
     color:  #2e2e2e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .client_grade {
     font-size: 0;
@@ -2006,7 +2006,7 @@ select {
     cursor: pointer;
     color:  #2e2e2e;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .card_about {
     position: relative;
@@ -2024,7 +2024,7 @@ select {
     display: inline-block;
     color:  #2e2e2e;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 50px;
     text-align: center;
     height: 50px;
@@ -2042,7 +2042,7 @@ select {
 }
 .card_about_header:nth-child(4) {
     margin-bottom: -21px;
-    width: 218px;
+    width: 202px;
     border: none;
     line-height: 50px;
     border-bottom: 1px solid #7f7f7f;
@@ -2056,7 +2056,7 @@ select {
     color:  #2e2e2e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .card_about_text:nth-child(1) {
     display: block;
@@ -2070,7 +2070,7 @@ select {
     color: #559449;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 25px;
 }
 .card_add_info img {
@@ -2086,7 +2086,7 @@ select {
     color: #5db14d;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
     padding: 12px 0;
     text-decoration: underline;
 }
@@ -2096,7 +2096,7 @@ select {
     height: 31px;
     color:  #2e2e2e;
     font-size: 10px;
-    font-weight: 300;
+    font-weight: 400;
     overflow: hidden;
 }
 
@@ -2110,7 +2110,7 @@ select {
     color: #559449;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .expert_call input {
     text-align: center;
@@ -2123,7 +2123,7 @@ select {
     border: 1px solid #b7b7b7;
     color:  #2e2e2e;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     outline: none;
 }
 .expert_call input:focus {
@@ -2138,7 +2138,7 @@ select {
     height: 31px;
     color: #fffefe;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     background-color: #559449;
@@ -2234,7 +2234,7 @@ select {
     color: #559449;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
     padding-top: 7px;
 }
 .customer_comment_text {
@@ -2242,7 +2242,7 @@ select {
     color:  #2e2e2e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
     max-height: 150px;
     overflow: hidden;
 }
@@ -2267,7 +2267,7 @@ select {
     color: #559449;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .pay {
     float: right;
