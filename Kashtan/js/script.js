@@ -388,8 +388,12 @@ function showSlider() {
 
 })();
 ( function() {
-    var diploms = document.querySelectorAll('.diploma_img_wrapper div');
+    var diploms = document.querySelectorAll('.diploma_img_wrapper img');
+    var close = document.querySelector('.diploma_close');
+    var img = document.querySelector('.diploma_block img');
+    var viewBlock = document.querySelector('.diploma_block');
     var work = false;
+    var status = true;
     var el;
     if (diploms != null) {
         if (work === true) return;
@@ -404,16 +408,17 @@ function showSlider() {
         };
         if (work === true) return;
         work = true;
-        var close;
         function makeBig(ev) {
-            el = ev.target.parentElement;
-            if (ev.target.classList.contains("diploma_close")) return;
-            el.classList.add('diploma_block');
-            close = document.querySelector('.diploma_close');
+            el = ev.target;
+            img.src = el.src;
+            viewBlock.style.display = 'block';
+            viewBlock.style.opacity = '0';
+            Velocity( viewBlock, { opacity: '1'}, 300);
             close.addEventListener('click', makeSmall);
         }
         function makeSmall() {
-            el.classList.remove("diploma_block");
+            viewBlock.style.display = 'none';
+            viewBlock.style.opacity = '0';
         }
         for (var i = 0; i < diploms.length; i++) {
             diploms[i].addEventListener('click', makeBig);

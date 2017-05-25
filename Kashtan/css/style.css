@@ -777,6 +777,10 @@ header {
 
 /*     - - -  A B O U T    C O M P A N Y  - - -   */
 
+.ab_wrapper {
+    position: relative;
+}
+
 .about_company_wrapper {
     padding: 60px 0 100px 0;
     height: 300px;
@@ -812,17 +816,19 @@ header {
     height: auto;
     line-height: 85px;
 }
-.diploma_img_wrapper div {
+.diploma_img_wrapper img {
     display: inline;
-    margin-right: 13px;
+    margin-right: 10px;
     width: 145px;
     height: 145px;
     cursor: pointer;
 }
 .diploma_block {
+    display: none;
+    opacity: 0;
     z-index: 10;
-    position: absolute;
-    top: 140px;
+    position: fixed;
+    top: 160px;
     width: 910px !important;
     height: auto !important;
     margin: 0 auto;
@@ -838,7 +844,7 @@ header {
     z-index: 11;
     position: absolute;
     display: none;
-    top: -10px;
+    top: 15px;
     right: 15px;
     font-size: 34px;
     font-weight: 700;
