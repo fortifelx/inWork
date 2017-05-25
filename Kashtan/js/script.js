@@ -1,3 +1,32 @@
+( function(){
+    var money = document.querySelector('.money_name');
+    var moneyName = document.querySelectorAll('.money_name li');
+
+    function showList() {
+        money = document.querySelector('.money_name');
+        if (money.offsetHeight < 63) {
+            Velocity( money, { height : '63px'}, 600);
+        }
+    };
+    function chooseMoney(ev) {
+        var el = ev.target;
+        moneyName = document.querySelectorAll('.money_name li');
+        money = document.querySelector('.money_name');
+        if(money.offsetHeight > 20) {
+            Velocity(money, {height: '20px'}, 600);
+        }
+        if( el === moneyName[0]) return;
+        money.removeChild(el);
+        money.insertBefore(el, moneyName[0]);
+    }
+    money.addEventListener('click', showList, false);
+    for( var i = 0; i < moneyName.length; i++) {
+        moneyName[i].addEventListener('click', chooseMoney, false);
+    };
+
+
+})();
+
 (   function(){
 
     var menuItems = document.querySelectorAll('.category_list li');
@@ -56,7 +85,6 @@
 
 function showSlider() {
         if( slider === null || work === true) {
-            work = false;
             return;
         };
         work = true;
@@ -105,34 +133,7 @@ function showSlider() {
 
 }
 })();
-( function(){
-    var money = document.querySelector('.money_name');
-    var moneyName = document.querySelectorAll('.money_name li');
 
-    function showList() {
-        money = document.querySelector('.money_name');
-        if (money.offsetHeight < 63) {
-            Velocity( money, { height : '63px'}, 600);
-        }
-    };
-    function chooseMoney(ev) {
-        var el = ev.target;
-        moneyName = document.querySelectorAll('.money_name li');
-        money = document.querySelector('.money_name');
-        if(money.offsetHeight > 20) {
-            Velocity(money, {height: '20px'}, 600);
-        }
-        if( el === moneyName[0]) return;
-        money.removeChild(el);
-        money.insertBefore(el, moneyName[0]);
-    }
-    money.addEventListener('click', showList, false);
-    for( var i = 0; i < moneyName.length; i++) {
-        moneyName[i].addEventListener('click', chooseMoney, false);
-    };
-
-
-})();
 ( function() {
 
 
@@ -147,7 +148,6 @@ function showSlider() {
 
  function makeCalc() {
      if( calculators === null || work === true) {
-         work = false;
          return;
      };
      work = true;
@@ -202,7 +202,6 @@ function showSlider() {
 
     function makeInfo() {
         if( infoHeaders === null || work === true) {
-            work = false;
             return;
         };
         work = true;
@@ -274,7 +273,6 @@ function showSlider() {
     var sliders = document.querySelector('.img_slider_wrapper');
     var work = false;
     if (sliders) {
-        console.log('stA')
         if (work === true) return;
         makeSlider();
         work = true;
@@ -287,7 +285,6 @@ function showSlider() {
             work = false;
             return;
         };
-        console.log('st2');
         if (work === true) return;
         work = true;
         var slider = document.querySelector('.img_slider_wrapper');
@@ -393,7 +390,6 @@ function showSlider() {
     var img = document.querySelector('.diploma_block img');
     var viewBlock = document.querySelector('.diploma_block');
     var work = false;
-    var status = true;
     var el;
     if (diploms != null) {
         if (work === true) return;
