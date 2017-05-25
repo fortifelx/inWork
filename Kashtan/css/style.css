@@ -428,7 +428,7 @@ header {
     display: inline-block;
     width:135px;
     height: 105px;
-    margin: 5px 0 0 5px;
+    margin: 5px 35px 0 5px;
     padding: 10px 0;
     border: 1px solid #559449;
     -webkit-border-radius: 15px;
@@ -2297,7 +2297,7 @@ select {
     color:  black;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: 15px;
 }
 .pay_text p, .delivery_text p, .service_text p {
