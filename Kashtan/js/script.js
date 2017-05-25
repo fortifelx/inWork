@@ -387,3 +387,38 @@ function showSlider() {
     }
 
 })();
+( function() {
+    var diploms = document.querySelectorAll('.diploma_img_wrapper div');
+    var work = false;
+    var el;
+    if (diploms != null) {
+        if (work === true) return;
+        showDiploma();
+        work = true;
+    };
+    document.addEventListener("DOMNodeInserted", showDiploma);
+    function showDiploma() {
+        if( diploms === null)  {
+            work = false;
+            return;
+        };
+        if (work === true) return;
+        work = true;
+        var close;
+        function makeBig(ev) {
+            el = ev.target.parentElement;
+            if (ev.target.classList.contains("diploma_close")) return;
+            el.classList.add('diploma_block');
+            close = document.querySelector('.diploma_close');
+            close.addEventListener('click', makeSmall);
+        }
+        function makeSmall() {
+            el.classList.remove("diploma_block");
+        }
+        for (var i = 0; i < diploms.length; i++) {
+            diploms[i].addEventListener('click', makeBig);
+        }
+
+    }
+
+})();
