@@ -2294,10 +2294,10 @@ select {
 }
 .pay_text, .delivery_text, .service_text {
     width: 460px;
-    color:  black;
+    color:  #3e3e3e;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 15px;
 }
 .pay_text p, .delivery_text p, .service_text p {
