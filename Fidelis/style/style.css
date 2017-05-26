@@ -1,0 +1,66 @@
+
+/*   - - - L E G E N D main style   - - -   */
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 100px;
+    min-height: calc(100vh - 395px);
+}
+h1 {
+    color: #00293f;
+    font-size: 36px;
+    font-weight: 700;
+}
+footer h1 {
+    color: #ffffff;
+}
+h5 {
+    color: #00293f;
+    font-size: 18px;
+    font-weight: 400;
+}
+p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+}
+footer p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+header p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+header a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+b {
+    font-weight: 700;
+}
+.tf_color {
+    color: #00293f;
+}
+.bg_color {
+    background-color: #00293f;
+}
+.opacity {
+    opacity: 0.4;
+}
+.button p {
+    color: #fff;
+}
+.button:hover {
+    background-color: #004f79;
+}
+
+/*    - - -
