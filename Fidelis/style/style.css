@@ -148,6 +148,7 @@ header .lang {
     display: inline-block;
 }
 .serv {
+    position: relative;
     cursor: pointer;
     display: inline-block;
     overflow: hidden;
@@ -163,11 +164,15 @@ header .lang {
     margin-top: 55px;
 }
 .serv_img {
-    margin-top: 30px;
+    position: absolute;
+    bottom: 28px;
+    left: 94px;
     display: inline-block;
     width: 29px;
     height: 29px;
     background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .serv:hover {
     background-color: #00293f;
