@@ -152,9 +152,9 @@ header .lang {
     cursor: pointer;
     display: inline-block;
     overflow: hidden;
-    width: 173px;
-    height: 154px;
-    padding: 20px;
+    width: 177px;
+    height: 158px;
+    padding: 18px;
     border: 3px solid #00293f;
     transition: background-color 1s;
     text-align: center;
@@ -184,6 +184,39 @@ header .lang {
     color: #fff;
 }
 
+/*  - - -    I N D U S T R I    - - -   */
+
+.choose_industri {
+    width: 100%;
+    margin: 65px 0 120px 0;
+    overflow: hidden;
+}
+.ind {
+    cursor: pointer;
+    width: 460px;
+    float: left;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+.ind:nth-child(even) {
+    float: right;
+}
+.img_ind {
+    width: 2200px;
+    height: 310px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.img_ind img {
+    display: inline-block;
+    float: left;
+    height:310px;
+    transition: margin-left 1.5s;
+}
+.ind:hover .img_ind img:nth-child(1){
+    margin-left: -1200px;
+}
+
 
 /*   - - -   F O O T E R   - - -    */
 
@@ -207,6 +240,7 @@ footer .soc_ico img {
     width: 39px;
     height: 39px;
     margin-left: 5px;
+    cursor: pointer;
 }
 footer .copyright {
     font-size: 18px;
