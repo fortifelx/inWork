@@ -28,6 +28,9 @@
 body, div, p, .wrapper, h1, h5, section, article, header, footer {
     font-family: 'Lato', sans-serif;
 }
+a {
+    text-decoration: none;
+}
 .wrapper {
     width: 940px;
     margin: 0 auto;
@@ -211,10 +214,18 @@ header .lang {
     display: inline-block;
     float: left;
     height:310px;
-    transition: margin-left 1.5s;
+    transition: margin-left 1.5s, opacity 1.2s;
+}
+.img_ind img:nth-child(2) {
+    margin-left: -200px;
+    opacity: 0;
 }
 .ind:hover .img_ind img:nth-child(1){
-    margin-left: -1200px;
+    margin-left: -800px;
+    opacity: 0;
+}
+.ind:hover .img_ind img:nth-child(2) {
+    opacity: 1;
 }
 
 
