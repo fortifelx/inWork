@@ -229,6 +229,50 @@ header .lang {
 }
 
 
+/*   - - -  A R T I C L E  - - -   */
+
+.articls p, .articls li {
+    color: #00293f;
+}
+.articl {
+    overflow: hidden;
+}
+.articl img {
+    margin: 57px 0 50px 0;
+}
+.articl p {
+    line-height: 22px;
+}
+.articls ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.articls li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.articls li span {
+    display: inline-block;
+    width: 18px;
+}
+
+.expert {
+    overflow: hidden;
+    margin: 120px 0 0 0;
+}
+.expert img {
+    float: left;
+    margin:0 60px 100px 0;
+    height: 380px;
+}
+.articls h1 {
+    margin-bottom: 20px;
+}
+.articls div {
+    margin-bottom: 30px;
+}
+
 /*   - - -   F O O T E R   - - -    */
 
 
