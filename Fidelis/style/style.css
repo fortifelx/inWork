@@ -218,6 +218,9 @@ header .lang {
     margin-bottom: 80px;
     overflow: hidden;
 }
+.ind h5:hover {
+    text-decoration: underline;
+}
 .ind:nth-child(even) {
     float: right;
 }

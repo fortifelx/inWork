@@ -3,9 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="76f5c5dc-632a-41e6-b709-574d0a8652cb" name="Default" comment="some commit from phpstorm">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/aboutus.html" afterPath="$PROJECT_DIR$/Kashtan/aboutus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/articls.html" afterPath="$PROJECT_DIR$/Kashtan/articls.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/calculator.html" afterPath="$PROJECT_DIR$/Kashtan/calculator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/catalog.html" afterPath="$PROJECT_DIR$/Kashtan/catalog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/contact.html" afterPath="$PROJECT_DIR$/Kashtan/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/cooparation.html" afterPath="$PROJECT_DIR$/Kashtan/cooparation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/css/style.css" afterPath="$PROJECT_DIR$/Kashtan/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/js/script.js" afterPath="$PROJECT_DIR$/Kashtan/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/delivery.html" afterPath="$PROJECT_DIR$/Kashtan/delivery.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/goods.html" afterPath="$PROJECT_DIR$/Kashtan/goods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/index.html" afterPath="$PROJECT_DIR$/Kashtan/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/news.html" afterPath="$PROJECT_DIR$/Kashtan/news.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/one_goods.html" afterPath="$PROJECT_DIR$/Kashtan/one_goods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/one_news.html" afterPath="$PROJECT_DIR$/Kashtan/one_news.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,32 +38,12 @@
     <favorites_list name="JB" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://C:/xampp/htdocs/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="1618" column="19" lean-forward="false" selection-start-line="1618" selection-start-column="19" selection-end-line="1618" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="one_goods.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kashtan/one_goods.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Kashtan/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="360" column="59" lean-forward="false" selection-start-line="360" selection-start-column="59" selection-end-line="360" selection-end-column="59" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,26 +111,26 @@
         <option value="$PROJECT_DIR$/IS/mobile.css" />
         <option value="$PROJECT_DIR$/IS/style.css" />
         <option value="$PROJECT_DIR$/IS/table.js" />
-        <option value="$PROJECT_DIR$/Kashtan/index.html" />
-        <option value="$PROJECT_DIR$/Kashtan/aboutus.html" />
-        <option value="$PROJECT_DIR$/Kashtan/catalog.html" />
-        <option value="$PROJECT_DIR$/Kashtan/news.html" />
-        <option value="$PROJECT_DIR$/Kashtan/articls.html" />
-        <option value="$PROJECT_DIR$/Kashtan/cooparation.html" />
         <option value="$PROJECT_DIR$/Kashtan/js/contact.html" />
-        <option value="$PROJECT_DIR$/Kashtan/contact.html" />
-        <option value="$PROJECT_DIR$/Kashtan/delivery.html" />
         <option value="$PROJECT_DIR$/bag/crap.html" />
-        <option value="$PROJECT_DIR$/Kashtan/goods.html" />
-        <option value="$PROJECT_DIR$/Kashtan/one_news.html" />
         <option value="$PROJECT_DIR$/Kashtan/test.html" />
         <option value="$PROJECT_DIR$/Kashtan/js/calc.js" />
-        <option value="$PROJECT_DIR$/Kashtan/calculator.html" />
         <option value="$PROJECT_DIR$/bag/doSlider.js" />
         <option value="$PROJECT_DIR$/bag/makeSlider.js" />
-        <option value="$PROJECT_DIR$/Kashtan/one_goods.html" />
-        <option value="$PROJECT_DIR$/Kashtan/css/style.css" />
         <option value="$PROJECT_DIR$/Kashtan/js/script.js" />
+        <option value="$PROJECT_DIR$/Kashtan/css/style.css" />
+        <option value="$PROJECT_DIR$/Kashtan/aboutus.html" />
+        <option value="$PROJECT_DIR$/Kashtan/articls.html" />
+        <option value="$PROJECT_DIR$/Kashtan/calculator.html" />
+        <option value="$PROJECT_DIR$/Kashtan/catalog.html" />
+        <option value="$PROJECT_DIR$/Kashtan/contact.html" />
+        <option value="$PROJECT_DIR$/Kashtan/cooparation.html" />
+        <option value="$PROJECT_DIR$/Kashtan/delivery.html" />
+        <option value="$PROJECT_DIR$/Kashtan/goods.html" />
+        <option value="$PROJECT_DIR$/Kashtan/index.html" />
+        <option value="$PROJECT_DIR$/Kashtan/news.html" />
+        <option value="$PROJECT_DIR$/Kashtan/one_goods.html" />
+        <option value="$PROJECT_DIR$/Kashtan/one_news.html" />
       </list>
     </option>
   </component>
@@ -176,6 +166,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,55 +179,8 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JB" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kashtan" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JB" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kashtan" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JB" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bag" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,7 +318,10 @@
       <workItem from="1494165080693" duration="8514000" />
       <workItem from="1494222488733" duration="80000" />
       <workItem from="1494480617577" duration="5085000" />
-      <workItem from="1494874153363" duration="5761000" />
+      <workItem from="1494874153363" duration="5867000" />
+      <workItem from="1494912216213" duration="249000" />
+      <workItem from="1494918073412" duration="2312000" />
+      <workItem from="1495002570086" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="make script better for firefox">
       <created>1492844881761</created>
@@ -394,7 +341,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137271000" />
+    <option name="totallyTimeSpent" value="140619000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,9 +354,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16381419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="530" y="109" width="420" height="916" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1693154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="530" y="109" width="420" height="916" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -466,18 +412,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Kashtan/delivery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3234">
-          <caret line="147" column="16" lean-forward="false" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -499,7 +437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15290">
           <caret line="695" column="14" lean-forward="false" selection-start-line="695" selection-start-column="14" selection-end-line="695" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,7 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13530">
           <caret line="615" column="18" lean-forward="false" selection-start-line="615" selection-start-column="18" selection-end-line="615" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -550,7 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10032">
           <caret line="456" column="56" lean-forward="false" selection-start-line="456" selection-start-column="56" selection-end-line="456" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8470">
           <caret line="385" column="19" lean-forward="false" selection-start-line="385" selection-start-column="19" selection-end-line="385" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -580,7 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4158">
           <caret line="189" column="27" lean-forward="false" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,28 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
           <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/aboutus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1342">
-          <caret line="61" column="53" lean-forward="true" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/articls.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="82" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/delivery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3234">
-          <caret line="147" column="16" lean-forward="false" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -698,37 +609,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="68" column="40" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/cooparation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="66" column="21" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="66" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kashtan/img/d_arrow_green.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/one_news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="114" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="157" selection-end-column="7" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Weightless/index.html">
@@ -753,13 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/calculator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="426" column="32" lean-forward="false" selection-start-line="426" selection-start-column="32" selection-end-line="426" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bag/doSlider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -767,58 +643,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/goods.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="149" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="213" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/catalog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="109" column="16" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bag/makeSlider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/one_goods.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="1618" column="19" lean-forward="false" selection-start-line="1618" selection-start-column="19" selection-end-line="1618" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kashtan/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
+        <state relative-caret-position="7920">
           <caret line="360" column="59" lean-forward="false" selection-start-line="360" selection-start-column="59" selection-end-line="360" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="115" column="12" lean-forward="false" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/cooparation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/aboutus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/one_goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/one_news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/delivery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/articls.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kashtan/calculator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
