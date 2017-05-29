@@ -31,6 +31,11 @@ body, div, p, .wrapper, h1, h5, section, article, header, footer {
 a {
     text-decoration: none;
 }
+.news article a {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+}
 .wrapper {
     width: 940px;
     margin: 0 auto;
@@ -350,14 +355,28 @@ header .lang {
 .news article {
     display: inline-block;
     width: 300px;
+    overflow: hidden;
+    height: 370px;
+}
+.news article a:hover {
+    text-decoration: underline;
 }
 .news_img {
     width: 300px;
     height: 230px;
     margin-bottom: 30px;
     background-image: url("../img/news2.jpg");
+    background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
+    transition: background-size 1s;
+}
+.news article:hover .news_img {
+    background-size: 120%;
+}
+.date {
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 
