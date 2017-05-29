@@ -411,7 +411,14 @@ header .lang {
 .news .button {
     margin: 0 auto 120px auto;
 }
+/*   - - -   C O N T A C T  - - -   */
 
+.map {
+    display: block;
+    width: 939px;
+    height: 500px;
+    margin-bottom: 90px;
+}
 
 /*   - - -   F O O T E R   - - -    */
 
