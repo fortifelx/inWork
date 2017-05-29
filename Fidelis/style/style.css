@@ -97,11 +97,23 @@ b {
 .opacity {
     opacity: 0.4;
 }
+.button {
+    cursor: pointer;
+    text-align: center;
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 6px;
+    background-color: #00293f;
+}
 .button p {
     color: #fff;
 }
 .button:hover {
     background-color: #004f79;
+}
+.button:active {
+    background-color: #00293f;
 }
 
 /*    - - -   H E A D E R   - - -  */
@@ -341,7 +353,7 @@ header .lang {
 
 .news_wrapper {
     overflow: hidden;
-    margin-top: 55px;
+    margin: 55px 0 20px 0;
     text-align: justify;
 }
 .news_wrapper:after {
@@ -357,6 +369,14 @@ header .lang {
     width: 300px;
     overflow: hidden;
     height: 370px;
+}
+.news article:first-child {
+    width: 100%;
+    height: 520px;
+}
+.news article:first-child .news_img {
+    background-image: url("../img/news1.jpg");
+    height: 400px;
 }
 .news article a:hover {
     text-decoration: underline;
@@ -377,6 +397,9 @@ header .lang {
 .date {
     font-size: 16px;
     margin-top: 5px;
+}
+.news .button {
+    margin: 0 auto 120px auto;
 }
 
 
