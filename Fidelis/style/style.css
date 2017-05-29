@@ -313,11 +313,13 @@ header .lang {
 .aboutus section:nth-child(2) p {
     display: block;
     width: 480px;
+    line-height: 22px;
 }
 .aboutus section:nth-child(3) p {
     display: block;
     width: 545px;
     float: right;
+    line-height: 22px;
 }
 .aboutus section:nth-child(3) img {
     display: block;
