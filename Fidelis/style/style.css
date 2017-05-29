@@ -307,7 +307,31 @@ header .lang {
     background-color: #004f79;
 }
 
-
+.our_team {
+    margin: 45px 0 120px 0;
+    text-align: justify;
+}
+.our_team div {
+    display: inline-block;
+}
+.our_team:after {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
+}
+.our_team p {
+    margin-top: 12px;
+    color: inherit;
+}
+.our_team a {
+    display: block;
+    margin-top: 12px;
+    text-decoration: underline;
+    color: inherit;
+}
 
 /*   - - -   F O O T E R   - - -    */
 
