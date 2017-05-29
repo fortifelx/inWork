@@ -273,6 +273,42 @@ header .lang {
     margin-bottom: 30px;
 }
 
+/*   - - -   A B O U T   U S   - - -   */
+
+.aboutus section:nth-child(2) {
+    margin: 50px 0 0 0;
+    overflow: hidden;
+}
+.aboutus section:nth-child(3) {
+    margin: 100px 0 100px 0;
+    overflow: hidden;
+}
+.aboutus section:nth-child(2) img {
+    display: block;
+    float: right;
+    width: 400px;
+    height: 260px;
+    background-color: #004f79;
+}
+.aboutus section:nth-child(2) p {
+    display: block;
+    width: 480px;
+}
+.aboutus section:nth-child(3) p {
+    display: block;
+    width: 545px;
+    float: right;
+}
+.aboutus section:nth-child(3) img {
+    display: block;
+    float: left;
+    width: 320px;
+    height: 230px;
+    background-color: #004f79;
+}
+
+
+
 /*   - - -   F O O T E R   - - -    */
 
 
