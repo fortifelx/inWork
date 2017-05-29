@@ -355,6 +355,7 @@ header .lang {
     overflow: hidden;
     margin: 55px 0 20px 0;
     text-align: justify;
+    height: 900px;
 }
 .news_wrapper:after {
     width: 100%;
@@ -369,14 +370,6 @@ header .lang {
     width: 300px;
     overflow: hidden;
     height: 370px;
-}
-.news article:first-child {
-    width: 100%;
-    height: 520px;
-}
-.news article:first-child .news_img {
-    background-image: url("../img/news1.jpg");
-    height: 400px;
 }
 .news article a:hover {
     text-decoration: underline;
@@ -393,6 +386,16 @@ header .lang {
 }
 .news article:hover .news_img {
     background-size: 120%;
+}
+.news article:first-child {
+    width: 100%;
+    height: 540px;
+}
+.news article:first-child .news_img {
+    background-image: url("../img/news1.jpg");
+    height: 400px;
+    width: 939px;
+    background-size: cover;
 }
 .date {
     font-size: 16px;
