@@ -2,6 +2,7 @@ function initMap() {
     var map = new google.maps.Map(document.querySelector('.map'), {
         center: {lat: 50.447727, lng: 30.506669},
         zoom: 15,
+        scrollwheel: false,
         styles: [
             {
                 "featureType": "water",
