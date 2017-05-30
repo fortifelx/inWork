@@ -2,15 +2,16 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     overflow-y: scroll;
-    background-image: url("../img/bg1.png");
+    background-image: url("../img/bg2.png");
     background-size: 25%;
+    background-color: rgba( 255, 255, 255, 1);
 }
 header {
     position: fixed;
     z-index: 20;
     top:0;
     width:100%;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     -webkit-box-shadow: 0 2px 7px 2px rgba(220,220,220,1);
     -moz-box-shadow: 0 2px 7px 2px rgba(220,220,220,1);
     box-shadow: 0 2px 7px 2px rgba(220,220,220,1);
@@ -151,7 +152,7 @@ header {
     font-size: 0;
     text-align: center;
     position: relative;
-    padding-top: 25px;
+    padding-top: 15px;
     clear: both;
     width: 940px;
     margin: 30px auto 0 auto;
@@ -324,7 +325,7 @@ header {
     padding-top: 10px;
     height: 20px;
     margin: 0 0 2px 35px;
-    color: #b5b5b5;
+    color: #2e2e2e;
     font-size: 12px;
     font-weight: 400;
 
@@ -336,6 +337,9 @@ header {
     border-radius: 13px 14px 14px 13px;
     border: 1px solid #559449;
     color: #5aa94c;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-bottom: 2px;
 }
 .ATENTION:hover {
     padding-top: 2px;
@@ -428,8 +432,8 @@ header {
     display: inline-block;
     width:135px;
     height: 105px;
-    margin: 5px 35px 0 5px;
-    padding: 10px 0;
+    margin: 5px 5px 0 5px;
+    padding: 10px 14px;
     border: 1px solid #559449;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -1282,6 +1286,10 @@ select {
     background-image: -webkit-linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
     background-image: linear-gradient(78deg, rgba(85, 148, 73, 0.86) 0%, rgba(85, 148, 73, 0.86) 100%);
 }
+.thumb_text {
+    color: #7f7f7f;
+    padding: 10px 15px;
+}
 
 /*    - - -   C O N T A C T     P A G E   - - -      */
 
@@ -1575,6 +1583,7 @@ select {
     display: block;
     width: 138px;
     height: 138px;
+    padding: 14px;
     margin: 10px 30px;
     border: 1px solid #559449;
     -webkit-border-radius: 20px;
@@ -2277,10 +2286,10 @@ select {
     font-weight: 400;
 }
 .pay {
-    float: right;
+    float: left;
 }
 .delivery {
-    float: right;
+    float: left;
 }
 .delivery img {
     display: block;
@@ -2296,7 +2305,7 @@ select {
     margin: 0 10px;
 }
 .service {
-    float: left;
+    float: right;
     width: 460px;
 }
 .pay_text, .delivery_text, .service_text {
@@ -2351,6 +2360,9 @@ b {
 .service_expert_call {
     margin: 100px auto;
     float: none;
+}
+.service_expert_call .expert_call_header {
+    margin-left: 15px;
 }
 
 /*   F O O T E R   */
