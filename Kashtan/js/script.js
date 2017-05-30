@@ -80,58 +80,69 @@
         showSlider();
         work = true;
     };
-    document.addEventListener("DOMNodeInserted", showSlider)
+    document.addEventListener("DOMNodeInserted", showSlider);
 
 
 function showSlider() {
+        console.log('start');
         if( slider === null || work === true) {
             return;
         };
         work = true;
     slider = document.querySelector('.top_slider_wrapper');
-    var slides = document.querySelectorAll('.top_slider_wrapper img');
+    var slids = document.querySelectorAll('.top_slider_wrapper img');
+    var slides = [];
+    for(var i = 0; i < slids.length; i++) {
+        slides.push(slids[i]);
+        if (i > 0) {
+            slids[i].style.marginLeft = slids[i].offsetWidth + 'px';
+        }
+    };
+    var counter = 0;
     var roundsBox = document.querySelector('.circle_wrapper');
     var n = 0;
-    for (var i = 0; i < slides.length; i++ ) {
+    for (var i = 0; i < slids.length; i++ ) {
         var round = document.createElement('div');
         round.value = i;
         roundsBox.appendChild(round);
     };
     var status = true;
     var rounds = document.querySelectorAll('.circle_wrapper div');
+    var disks = [];
+    for(var i = 0; i < rounds.length; i++) {
+        disks.push(rounds[i]);
+    };
+
     function showSlide(ev) {
         if (ev.target === roundsBox) return;
-        for (var i = 0; i < rounds.length; i++) {
-            rounds[i].style.backgroundColor = 'transparent';
-        }
-        var goal = ev.target;
-        n = goal.value;
-        goal.style.backgroundColor = 'white';
-        var roundValue = -(goal.value * 740)+'px';
-        Velocity( slider, {'margin-left': roundValue}, 1000);
-    } ;
-    function demonstration(time) {
-        rounds = document.querySelectorAll('.circle_wrapper div');
-        if (n === slides.length) {
-            n= 0;
-        };
-        var el = rounds[n];
-        for (var i =0; i < rounds.length;i ++) {
-            rounds[i].style.backgroundColor = 'transparent';
-        };
-        el.style.backgroundColor = 'white';
-        var value = -(el.value * 740)+'px';
-        Velocity( slider, {'margin-left': value}, time);
-        n++;
-        if (status === false) return;
-        status = false;
-        setTimeout(function() {demonstration(time)}, 5000);
-        status = true;
-    };
-    roundsBox.addEventListener('click', showSlide);
-    demonstration(1000);
+            for (var i = 0; i < rounds.length; i++) {
+                rounds[i].style.backgroundColor = 'transparent';
+            };
+            var goal = ev.target;
+            n = goal.value;
+            goal.style.backgroundColor = 'white';
+            if(n < counter) {
+                console.log('left');
+                var beforeEl = slides[counter].offsetWidth + "px";
+                slides[n].style.marginLeft = - slides[n].offsetWidth + "px";
+                Velocity( slides[n], { "margin-left" : 0 }, 1000);
+                Velocity( slides[counter], {"margin-left" : beforeEl }, 1000)
 
-}
+            };
+            if (n > counter){
+                console.log('right');
+                var beforeEl = - slides[counter].offsetWidth + "px";
+                slides[n].style.marginLeft = slides[n].offsetWidth + "px";
+                Velocity( slides[n], { "margin-left" : 0 }, 1000);
+                Velocity( slides[counter], {"margin-left" : beforeEl }, 1000)
+            };
+            counter = n;
+
+    };
+
+    roundsBox.addEventListener('click', showSlide);
+
+};
 })();
 
 ( function() {

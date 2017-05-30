@@ -1,6 +1,8 @@
+var slider;
+
 function doSlider(sliderViewer,sliderName, slide, scrollTime, visibleElements, rightArrow, leftArrow ) {
         var viewer = document.querySelector(sliderViewer);
-        var slider = document.querySelector(sliderName);
+        slider = document.querySelector(sliderName);
         var slids = slider.querySelectorAll(slide);
         var slides = [];
         for(var i = 0; i < slids.length; i++) {

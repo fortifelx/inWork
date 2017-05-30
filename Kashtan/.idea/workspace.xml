@@ -238,7 +238,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -347,12 +347,12 @@
       <workItem from="1495692282037" duration="20511000" />
       <workItem from="1495712971251" duration="1294000" />
       <workItem from="1495795135567" duration="66000" />
-      <workItem from="1496176699856" duration="2974000" />
+      <workItem from="1496176699856" duration="3024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104469000" />
+    <option name="totallyTimeSpent" value="104519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

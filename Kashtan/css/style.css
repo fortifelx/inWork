@@ -387,6 +387,7 @@ header {
     position: absolute;
     bottom: 15px;
     left: 15px;
+    z-index: 1;
 }
 .circle_wrapper div {
     cursor: pointer;
@@ -407,12 +408,16 @@ header {
 }
 .top_slider_wrapper {
     font-size: 0;
-    width: 10000px;
+    width: 740px;
+    position: relative;
 }
 .top_slider_wrapper img{
     width: 740px;
     height: 240px;
     display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .new_goods {
     width: 730px;
