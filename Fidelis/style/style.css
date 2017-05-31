@@ -54,6 +54,15 @@ h1 {
     font-size: 36px;
     font-weight: 700;
 }
+.mob_header {
+    display: none;
+}
+h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    display: none;
+}
 footer h1 {
     color: #ffffff;
     width: 100%;
@@ -290,6 +299,9 @@ header li:hover a:after {
     width: 100%;
     text-align: justify;
 }
+.services .button {
+    display: none;
+}
 .choose_serv:after {
     width: 100%;
     height: 0;
@@ -334,6 +346,9 @@ header li:hover a:after {
 }
 .serv:hover h5 {
     color: #fff;
+}
+.brand + .button {
+    display: none;
 }
 
 /*  - - -    I N D U S T R I    - - -   */

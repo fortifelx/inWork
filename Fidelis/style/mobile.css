@@ -1,0 +1,109 @@
+@media handheld and (max-width: 935px), screen and (max-width: 935px) {
+    .wrapper, .fh_wrapper {
+        width: 240px;
+        position: relative;
+    }
+    .wrapper {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    header .logo {
+        display: none;
+    }
+    header {
+        text-align: center;
+        padding-bottom: 155px;
+
+    }
+    header .main_menu {
+        position: absolute;
+        float: left;
+        width: 200px;
+        height: 0;
+        margin: 40px 0 0 0;
+        overflow: hidden;
+        padding: 0;
+        top: 0;
+        left: 0;
+        padding-top: 25px;
+    }
+    header .main_menu:before {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        content: url("../img/gamburger.png");
+        display: block;
+    }
+    header .main_menu li {
+        display: block;
+    }
+    header .phone {
+        display: none;
+    }
+    .mob_header {
+        display: block;
+        text-align: center;
+       padding-bottom: 155px;
+    }
+    h2 {
+        display: block;
+        margin: 40px 0 30px 0;
+    }
+    .mob_header p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    .main_page .top_slider {
+        display: none;
+    }
+    .slider {
+        height: 570px;
+    }
+    .choose_serv {
+        margin-top: 35px;
+        height: 660px;
+        overflow: hidden;
+        margin-bottom: 65px;
+    }
+    .choose_serv a {
+        margin: 10px 0;
+    }
+    .choose_serv .serv {
+        width: 196px;
+    }
+    .services .button {
+        display: block;
+        color: #ffffff;
+        width: 240px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .industri {
+        margin-top: 80px;
+        height: 600px;
+    }
+    .industri img {
+        display: none !important;
+    }
+    .industri + h1 {
+        width: 255px;
+    }
+    .brand {
+        margin-top: 25px;
+        height: 265px;
+        overflow: hidden;
+        margin-bottom: 70px;
+    }
+    .brand img {
+        width: 240px;
+    }
+    .brand + .button {
+        display: block;
+        color: #ffffff;
+        width: 240px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
