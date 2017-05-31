@@ -84,7 +84,6 @@
 
 
 function showSlider() {
-        console.log('start');
         if( slider === null || work === true) {
             return;
         };
@@ -108,39 +107,75 @@ function showSlider() {
     };
     var status = true;
     var rounds = document.querySelectorAll('.circle_wrapper div');
-    var disks = [];
-    for(var i = 0; i < rounds.length; i++) {
-        disks.push(rounds[i]);
-    };
 
     function showSlide(ev) {
-        if (ev.target === roundsBox) return;
-            for (var i = 0; i < rounds.length; i++) {
+        if (status === false) return;
+        status = false;
+
+        for (var i = 0; i < rounds.length; i++) {
                 rounds[i].style.backgroundColor = 'transparent';
-            };
-            var goal = ev.target;
+        };
+            var goal;
+            if (ev === undefined && counter < rounds.length) {
+                goal = rounds[counter + 1];
+            }
+        if (ev === undefined && counter === rounds.length - 1) {
+            goal = rounds[0];
+        }
+        if (ev) {
+            goal = ev.target;
+            if (ev.target === roundsBox) return;
+        }
+
             n = goal.value;
             goal.style.backgroundColor = 'white';
-            if(n < counter) {
-                console.log('left');
+
+        if ( counter === rounds.length - 1) {
+            console.log('first');
+            var beforeEl = - slides[counter].offsetWidth + "px";
+            slides[0].style.marginLeft = slides[0].offsetWidth + "px";
+            Velocity( slides[0], { "margin-left" : 0 }, 1000);
+            Velocity( slides[counter], {"margin-left" : beforeEl }, 1000);
+            n = 0;
+        }
+            if(n < counter && counter !== rounds.length - 1) {
+                console.log('second');
                 var beforeEl = slides[counter].offsetWidth + "px";
                 slides[n].style.marginLeft = - slides[n].offsetWidth + "px";
                 Velocity( slides[n], { "margin-left" : 0 }, 1000);
-                Velocity( slides[counter], {"margin-left" : beforeEl }, 1000)
-
+                Velocity( slides[counter], {"margin-left" : beforeEl }, 1000);
             };
-            if (n > counter){
-                console.log('right');
-                var beforeEl = - slides[counter].offsetWidth + "px";
-                slides[n].style.marginLeft = slides[n].offsetWidth + "px";
-                Velocity( slides[n], { "margin-left" : 0 }, 1000);
-                Velocity( slides[counter], {"margin-left" : beforeEl }, 1000)
+            if (n > counter && counter !== rounds.length - 1){
+                console.log('third');
+                    var beforeEl = - slides[counter].offsetWidth + "px";
+                    slides[n].style.marginLeft = slides[n].offsetWidth + "px";
+                    Velocity( slides[n], { "margin-left" : 0 }, 1000);
+                    Velocity( slides[counter], {"margin-left" : beforeEl }, 1000);
+                    // if ( n === rounds.length - 1) {
+                    //     console.log('start');
+                    //     var beforeEl = - slides[counter].offsetWidth + "px";
+                    //     slides[0].style.marginLeft = slides[0].offsetWidth + "px";
+                    //     Velocity( slides[0], { "margin-left" : 0 }, 1000);
+                    //     Velocity( slides[n], {"margin-left" : beforeEl }, 1000);
+                    //     n = 0;
+                    // }
+
             };
             counter = n;
+            function changeStatus() {
+                status = true;
+            };
+            setTimeout( changeStatus , 1000);
 
+    };
+    function demo() {
+      if(status === true) {
+          showSlide();
+      }
     };
 
     roundsBox.addEventListener('click', showSlide);
+    setInterval( demo, 3000);
 
 };
 })();
