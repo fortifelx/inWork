@@ -395,6 +395,10 @@ header li:hover a:after {
     opacity: 1;
 }
 
+.choose_industri + .button {
+    display: none;
+}
+
 
 /*   - - -  A R T I C L E  - - -   */
 
@@ -594,4 +598,11 @@ footer .copyright {
     width:180px;
     margin: 90px auto 0 auto;
     padding-bottom: 15px;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
