@@ -147,11 +147,27 @@ header .main_menu li{
 
 header .phone {
     float: right;
-    margin: 45px 35px 0 0;
+    margin: 45px 23px 0 0;
 }
 header .lang {
+    position: relative;
     float: right;
     margin-top: 50px;
+    padding-left: 12px;
+    height: 20px;
+    overflow: hidden;
+    transition: height 1s;
+}
+header .lang:hover {
+    height: 40px;
+}
+header .lang p {
+    cursor: pointer;
+}
+header .lang p:first-child:before {
+    content: url("../img/darrow.png");
+    position: absolute;
+    left: 0;
 }
 header li {
     position: relative;
