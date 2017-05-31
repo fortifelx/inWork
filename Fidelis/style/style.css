@@ -87,9 +87,6 @@ header a {
     font-weight: 400;
     text-decoration: none;
 }
-header a:hover {
-    text-decoration: underline;
-}
 b {
     font-weight: 700;
 }
@@ -156,6 +153,28 @@ header .lang {
     float: right;
     margin-top: 50px;
 }
+header li {
+    position: relative;
+}
+header li a {
+    transition: all 1s;
+}
+
+header li a:after {
+    content: "";
+    width: 0;
+    max-width: 100%;
+    display: none;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+header li:hover a:after {
+    display: block;
+    width: 150px;
+}
 /*   - - -   M A I N   P A G E  - - -   */
 
 .slider {
@@ -180,10 +199,14 @@ header .lang {
     margin-bottom: 21px;
 }
 .sub_articl p {
+    cursor: pointer;
     max-width: 100%;
     height: 44px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.sub_articl p:hover {
+    text-decoration: underline;
 }
 .sub_articl img {
     margin-bottom: 15px;
@@ -290,7 +313,8 @@ header .lang {
     background-color: #00293f;
 }
 .serv:hover .serv_img {
-    background-image: url("../img/arrow-hover.png");
+    background-image: url("../img/hoverarrow.svg");
+    background-size: 80%;
 }
 .serv:hover h5 {
     color: #fff;
