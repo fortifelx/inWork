@@ -229,6 +229,50 @@
         display: none;
     }
 
+    .aboutus {
+        position: relative;
+        height: 860px;
+        overflow: hidden;
+    }
+    .aboutus section {
+        margin-top: 25px !important;
+    }
+    .aboutus h1:first-child {
+        position: absolute;
+        left: 0;
+        top: 180px;
+        width: 100%;
+    }
+
+    .aboutus section:nth-child(2) img {
+        height: 155px;
+        width: 240px;
+        margin-bottom: 85px;
+    }
+    .aboutus section:nth-child(3) img {
+        height: 155px;
+        width: 240px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .aboutus p {
+        width: 100% !important;
+    }
+    .our_team div {
+        margin-bottom: 20px;
+    }
+    .our_team {
+        margin-bottom: 10px;
+    }
+    .aboutus + .button {
+        display: block;
+        color: #ffffff;
+        width: 240px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
     footer {
         position: relative;
     }

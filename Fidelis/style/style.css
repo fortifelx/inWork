@@ -453,7 +453,9 @@ header li:hover a:after {
 }
 
 /*   - - -   A B O U T   U S   - - -   */
-
+.aboutus + .button {
+    display: none;
+}
 .aboutus section:nth-child(2) {
     margin: 50px 0 0 0;
     overflow: hidden;
