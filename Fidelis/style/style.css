@@ -398,6 +398,9 @@ header li:hover a:after {
 .choose_industri + .button {
     display: none;
 }
+.articl + .button {
+    display: none;
+}
 
 
 /*   - - -  A R T I C L E  - - -   */
