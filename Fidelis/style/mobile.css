@@ -198,6 +198,36 @@
         position: absolute;
         top: 175px;
     }
+    .news_wrapper {
+        text-align: left;
+        height: 550px;
+    }
+    .news .button {
+        width: 240px;
+        margin-bottom: 0;
+    }
+    .news h1:first-child {
+        display: none;
+    }
+    .news h1:nth-child(2) {
+        display: block;
+    }
+    .news article:first-child, .news article {
+        width: 240px;
+        height: auto;
+    }
+    article {
+        margin-bottom: 20px;
+    }
+    article .news_img {
+        height: 100px !important;
+        margin-bottom: 15px;
+        background-size: 100% !important;
+        width: auto !important;
+    }
+    .date {
+        display: none;
+    }
 
     footer {
         position: relative;

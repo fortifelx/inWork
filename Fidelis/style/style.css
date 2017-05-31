@@ -113,12 +113,13 @@ b {
     text-align: center;
     width: 260px;
     height: 50px;
-    line-height: 50px;
+
     border-radius: 6px;
     background-color: #00293f;
 }
 .button p {
     color: #fff;
+    line-height: 50px;
 }
 .button:hover {
     background-color: #004f79;
@@ -405,6 +406,10 @@ header li:hover a:after {
 
 /*   - - -  A R T I C L E  - - -   */
 
+
+.news h1:nth-child(2) {
+    display: none;
+}
 .articls p, .articls li {
     color: #00293f;
 }
