@@ -293,7 +293,9 @@ header li:hover a:after {
 }
 
     /*   - - -   S E R V I C E S   - - -   */
-
+.mob_fix {
+    display: none;
+}
 .choose_serv {
     margin: 50px 0 125px 0;
     width: 100%;

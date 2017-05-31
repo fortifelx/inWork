@@ -10,11 +10,6 @@
     header .logo {
         display: none;
     }
-    header {
-        text-align: center;
-        padding-bottom: 155px;
-
-    }
     header .main_menu {
         position: absolute;
         float: left;
@@ -42,9 +37,10 @@
         display: none;
     }
     .mob_header {
-        display: block;
-        text-align: center;
+       display: block;
+       text-align: center;
        padding-bottom: 155px;
+        padding-top: 155px;
     }
     h2 {
         display: block;
@@ -72,6 +68,9 @@
     }
     .choose_serv .serv {
         width: 196px;
+    }
+    .serv_img {
+        left: 105px;
     }
     .services .button {
         display: block;
@@ -106,6 +105,23 @@
         font-size: 18px;
         font-weight: 700;
     }
+
+
+
+    .mob_fix + header {
+        background-color: white;
+        height: 70px;
+    }
+    .mob_fix + header .main_menu:before {
+        content: url("../img/gamburger_blue.png");
+    }
+    .mob_fix + header .lang p {
+        color: #00293f;
+    }
+    .mob_fix + header .lang p:first-child:before {
+        content: url("../img/darrow_blue.png");
+    }
+
     footer {
         position: relative;
     }
