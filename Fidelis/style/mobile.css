@@ -106,4 +106,23 @@
         font-size: 18px;
         font-weight: 700;
     }
+    footer {
+        position: relative;
+    }
+    footer .soc_ico {
+        width: 100px;
+        position: absolute;
+        left:0;
+        top: 310px;
+    }
+    footer .phone {
+        float: left;
+        margin-left: -10px;
+        margin-top: 40px;
+        margin-bottom: 180px;
+    }
+    footer .copyright {
+        width:auto;
+        margin: 0;
+    }
 }
