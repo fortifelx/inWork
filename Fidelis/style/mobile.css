@@ -273,6 +273,13 @@
         line-height: 50px;
     }
 
+    .mob_contact + .wrapper {
+        display: none;
+    }
+    .mob_contact{
+        height: 120px;
+    }
+
     footer {
         position: relative;
     }
