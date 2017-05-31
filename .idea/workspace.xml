@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76f5c5dc-632a-41e6-b709-574d0a8652cb" name="Default" comment="some commit from phpstorm">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Kashtan/js/script.js" afterPath="$PROJECT_DIR$/Kashtan/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Kashtan/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="137" column="36" lean-forward="false" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+            <state relative-caret-position="230">
+              <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -407,7 +406,7 @@
       <workItem from="1494918073412" duration="2312000" />
       <workItem from="1495002570086" duration="681000" />
       <workItem from="1496179729433" duration="9439000" />
-      <workItem from="1496208605101" duration="2320000" />
+      <workItem from="1496208605101" duration="3428000" />
     </task>
     <task id="LOCAL-00001" summary="make script better for firefox">
       <created>1492844881761</created>
@@ -427,7 +426,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152378000" />
+    <option name="totallyTimeSpent" value="153486000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,8 +839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kashtan/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="137" column="36" lean-forward="false" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+        <state relative-caret-position="230">
+          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding />
         </state>
       </provider>
