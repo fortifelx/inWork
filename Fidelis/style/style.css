@@ -251,7 +251,7 @@ header li:hover a:after {
     margin-top: 80px;
     float: right;
 }
-.industri a img {
+.main_ind img {
     width: 560px;
     height: 390px;
     opacity: 0;
@@ -260,9 +260,7 @@ header li:hover a:after {
     right: 0;
     transition: opacity 1s;
 }
-.industri li:nth-child(1) img {
-    opacity: 1;
-}
+
 .industri li p:hover+img {
     opacity: 1;
 }
