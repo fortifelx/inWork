@@ -208,12 +208,56 @@ header li:hover a:after {
     width: 100%;
     overflow: hidden;
 }
+.circle_wrapper {
+    clear: both;
+    height: 16px;
+    width: 640px;
+    text-align: center;
+    padding-top: 20px;
+}
+.circle_wrapper div {
+    cursor: pointer;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 8px;
+    border: 1px solid #004f79;
+    margin-right: 20px;
+}
 .top_slider {
     width: 640px;
     height: 515px;
     float: left;
     overflow: hidden;
-    background-color: grey;
+}
+.top_slider_wrapper {
+    width: 10000px;
+    position: relative;
+}
+.top_slider .sub_articl {
+    display: inline-block;
+    position: absolute;
+    width: 640px;
+    height: 515px;
+}
+.top_slider .sub_articl img {
+    width: 100%;
+    height: 100%;
+}
+.top_slider .sub_articl b {
+    display: block;
+    padding-left: 5px;
+}
+.top_slider .sub_articl a p{
+    position: absolute;
+    height: auto;
+    bottom: 25px;
+    left: 30px;
+    width: 520px;
+    color: #00293f;
+    font-size: 36px;
+    line-height: 44px;
+    border-radius: 18px;
 }
 .sub_slider {
     float: right;
