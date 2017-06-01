@@ -118,7 +118,6 @@
     var slider = document.querySelector('.sub_slider');
     var work = false;
     if (slider !== null) {
-        console.log('here');
         if (work === true) return;
         setInterval( demo, 10000);
         work = true;
@@ -128,11 +127,9 @@
     var status = true;
 
     function changeArticl() {
-        console.log('here2');
         if( slider === null || work === false) {
             return;
         };
-        console.log('here3');
         work = true;
         if (slider.hasChildNodes()) {
             slider = document.querySelector('.sub_slider');
