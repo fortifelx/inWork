@@ -257,7 +257,6 @@ header li:hover a:after {
     color: #00293f;
     font-size: 36px;
     line-height: 44px;
-    border-radius: 18px;
 }
 .sub_slider {
     float: right;
@@ -292,7 +291,7 @@ header li:hover a:after {
     float: left;
 }
 .industri ul li {
-    margin-bottom: 48px;
+    margin-bottom: 45px;
 }
 .industri_img {
     margin-top: 80px;
@@ -306,10 +305,6 @@ header li:hover a:after {
     top:100px;
     right: 0;
     transition: opacity 1s;
-}
-
-.industri li p:hover+img {
-    opacity: 1;
 }
 
 .brand {

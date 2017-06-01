@@ -122,8 +122,6 @@
         setInterval( demo, 10000);
         work = true;
     };
-    var slides = slider.querySelectorAll('.sub_articl');
-    var lastChild = slides.length - 1;
     var status = true;
 
     function changeArticl() {
@@ -134,7 +132,6 @@
         if (slider.hasChildNodes()) {
             slider = document.querySelector('.sub_slider');
             var slide = slider.lastElementChild;
-            console.log(slide);
             slider.insertBefore(slider.removeChild(slide), slider.childNodes[0]);
             slide.style.marginTop = - slide.offsetHeight;
             slide.style.opacity = 0;
@@ -148,3 +145,86 @@
     };
 
 })();
+( function () {
+    var slides = document.querySelectorAll('.main_ind');
+    var work = false;
+    if (slides !== null) {
+        if (work === true) return;
+        // setInterval( demo, 10000);
+        work = true;
+    };
+    slides[6].style.display = "none";
+    var firstImg = slides[0].querySelector('img');
+    for(var i = 0; i < slides.length; i++) {
+        var img = slides[i].querySelector('img');
+        var par = slides[i].parentNode;
+        par.addEventListener('mouseover', show);
+        img.style.display = 'none';
+    }
+    firstImg.style.display = 'block';
+    firstImg.style.opacity = '1';
+    function show() {
+        for(var i = 0; i < slides.length; i++) {
+            var img = slides[i].querySelector('img');
+            Velocity( img, { 'opacity' : '0'}, 40);
+            img.style.zIndex = 0;
+            setTimeout( function(){ img.style.display = 'none';}, 40);
+        }
+        var el = this.querySelector('img');
+        el.style.display = 'block';
+        el.style.opacity = '0';
+        el.style.zIndex = 3;
+        Velocity(el , { 'opacity' : '1'}, 100);
+    }
+
+})();
+// ( function () {
+//     var slider = document.querySelector('.industri ul');
+//     var work = false;
+//     if (slider !== null) {
+//         if (work === true) return;
+//         setInterval( demo, 5000);
+//         work = true;
+//     };
+//     var tr = slider.firstElementChild.querySelector('img');
+//     tr.style.opacity = 1;
+//     var status = true;
+//     var counter = 0;
+//     function changeInd(ev) {
+//         if( slider === null || work === false) {
+//             return;
+//         };
+//         work = true;
+//         if (ev !==undefined) {
+//             var el = ev.currentTarget;
+//             for(var i = 0; i < slider.childElementCount; i++) {
+//                 if(el === slider.children[i]) counter = i;
+//             }
+//             for(var i = 0; i < slider.childElementCount; i++) {
+//                 var lastEl = slider.children[i].querySelector('img');
+//                 Velocity(lastEl, {'opacity' : '0'}, 300);
+//             }
+//             var elImg = el.querySelector('img');
+//             Velocity(elImg, {'opacity' : '1'}, 300);
+//
+//         } else {
+//             counter++;
+//             var el = slider.children[counter];
+//             for(var i = 0; i < slider.childElementCount; i++) {
+//                 var lastEl = slider.children[i].querySelector('img');
+//                 Velocity(lastEl, {'opacity' : '0'}, 300);
+//             }
+//             var elImg = el.querySelector('img');
+//             Velocity(elImg, {'opacity' : '1'}, 300);
+//         }
+//     }
+//     for(var i = 0; i < slider.childElementCount; i++) {
+//         slider.children[i].addEventListener('mouseover', changeInd);
+//     }
+//     function demo() {
+//         if(status === true) {
+//             changeInd();
+//         }
+//     };
+//
+// })();
