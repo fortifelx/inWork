@@ -11,8 +11,17 @@
         background-color: white;
         height: 85px;
     }
-    .mob_fix + header .main_menu:before {
-        content: url("../img/gamburger_blue.png");
+    .mob_fix + header .gamb_open {
+        background-image: url("../img/gamburger_blue.png");
+    }
+    .mob_fix + header .gamb_close {
+        background-image: url("../img/close_blue.png");
+    }
+    .mob_fix + header .main_menu {
+        background-color: #fff;
+    }
+    .mob_fix + header a {
+        color: #00293f;
     }
     .mob_fix + header .lang p {
         color: #00293f;
@@ -26,6 +35,7 @@
     }
     header .main_menu {
         position: absolute;
+        z-index: 1;
         float: left;
         width: 200px;
         height: 0;
@@ -35,17 +45,34 @@
         top: 0;
         left: 0;
         padding-top: 25px;
+        background-color: #00293f;
     }
-    header .main_menu:before {
+    header li a:after {
+        max-width: 0;
+    }
+    .gamb {
+        display: block;
+        z-index: 2;
+        width: 24px;
+        height: 20px;
         cursor: pointer;
         position: absolute;
-        top: 10px;
+        top: 55px;
         left: 0;
-        content: url("../img/gamburger.png");
-        display: block;
+        background-repeat: no-repeat;
+    }
+    .gamb_open {
+        background-image: url("../img/gamburger.png");
+    }
+    .gamb_close {
+        background-image: url("../img/close_white.png");
+        background-size: cover;
+        background-position-y: 100%;
     }
     header .main_menu li {
         display: block;
+        margin: 20px;
+        width: auto;
     }
     header .phone {
         display: none;
