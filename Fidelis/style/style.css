@@ -262,7 +262,7 @@ header li:hover a:after {
 .sub_slider {
     float: right;
     width: 240px;
-    height: 515px;
+    height: 525px;
     overflow: hidden;
 }
 .sub_articl {
@@ -278,8 +278,10 @@ header li:hover a:after {
 .sub_articl p:hover {
     text-decoration: underline;
 }
-.sub_articl img {
+.sub_slider .sub_articl img {
     margin-bottom: 15px;
+    width: 100%;
+    max-height: 100px;
 }
 .industri {
     overflow: hidden;

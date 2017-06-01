@@ -33,7 +33,6 @@
         var slides = [];
         for(var i = 0; i < 3; i++) {
             slides[i] = slids[i].cloneNode(true);
-            console.log(slides[i]);
             slider.appendChild(slides[i]);
             if (i > 0) {
                 slides[i].style.marginLeft = slides[i].offsetWidth + 'px';
@@ -71,17 +70,13 @@
             }
             n = goal.value;
             goal.style.backgroundColor = "#004f79";
-            console.log( n + " and " + counter);
             if ( counter === slNumb - 1) {
-
                 if (n > 0) {
-                    console.log('first 1');
                     var beforeEl = slides[counter].offsetWidth + "px";
                     slides[n].style.marginLeft = - slides[n].offsetWidth + "px";
                     Velocity( slides[n], { "margin-left" : 0 }, 1000);
                     Velocity( slides[counter], {"margin-left" : beforeEl }, 1000);
                 } else {
-                    console.log('first 2');
                     var beforeEl = - slides[counter].offsetWidth + "px";
                     slides[0].style.marginLeft = slides[0].offsetWidth + "px";
                     Velocity( slides[0], { "margin-left" : 0 }, 1000);
@@ -90,14 +85,12 @@
                 }
             }
             if(n < counter && counter !== slNumb - 1) {
-                console.log('second 1');
                 var beforeEl = slides[counter].offsetWidth + "px";
                 slides[n].style.marginLeft = - slides[n].offsetWidth + "px";
                 Velocity( slides[n], { "margin-left" : 0 }, 1000);
                 Velocity( slides[counter], {"margin-left" : beforeEl }, 1000);
             };
             if (n > counter && counter !== slNumb - 1){
-                console.log('third 1');
                 var beforeEl = - slides[counter].offsetWidth + "px";
                 slides[n].style.marginLeft = slides[n].offsetWidth + "px";
                 Velocity( slides[n], { "margin-left" : 0 }, 1000);
@@ -120,4 +113,41 @@
         setInterval( demo, 6000);
 
     };
+})();
+( function () {
+    var slider = document.querySelector('.sub_slider');
+    var work = false;
+    if (slider !== null) {
+        console.log('here');
+        if (work === true) return;
+        setInterval( demo, 10000);
+        work = true;
+    };
+    var slides = slider.querySelectorAll('.sub_articl');
+    var lastChild = slides.length - 1;
+    var status = true;
+
+    function changeArticl() {
+        console.log('here2');
+        if( slider === null || work === false) {
+            return;
+        };
+        console.log('here3');
+        work = true;
+        if (slider.hasChildNodes()) {
+            slider = document.querySelector('.sub_slider');
+            var slide = slider.lastElementChild;
+            console.log(slide);
+            slider.insertBefore(slider.removeChild(slide), slider.childNodes[0]);
+            slide.style.marginTop = - slide.offsetHeight;
+            slide.style.opacity = 0;
+            Velocity( slide, { 'margin-top' : '0', 'opacity' : '1'},700);
+        }
+    }
+    function demo() {
+        if(status === true) {
+            changeArticl();
+        }
+    };
+
 })();
