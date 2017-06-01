@@ -113,7 +113,7 @@ b {
     text-align: center;
     width: 260px;
     height: 50px;
-
+    line-height: 50px;
     border-radius: 6px;
     background-color: #00293f;
 }
@@ -311,7 +311,7 @@ header li:hover a:after {
     text-align: justify;
     margin: 85px 0 160px 0;
 }
-.brand:after {
+.brand_viewer:after {
     width: 100%;
     height: 0;
     visibility: hidden;
@@ -344,7 +344,7 @@ header li:hover a:after {
 .services .button {
     display: none;
 }
-.choose_serv:after {
+.choose_serv_viewer:after {
     width: 100%;
     height: 0;
     visibility: hidden;
@@ -400,19 +400,31 @@ header li:hover a:after {
     margin: 65px 0 120px 0;
     overflow: hidden;
 }
+.choose_industri_viewer {
+    text-align: justify;
+}
+.choose_industri_viewer:after {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
+}
 .ind {
+    display: inline-block;
     cursor: pointer;
     width: 460px;
-    float: left;
+    /*float: left;*/
     margin-bottom: 80px;
     overflow: hidden;
 }
 .ind h5:hover {
     text-decoration: underline;
 }
-.ind:nth-child(even) {
-    float: right;
-}
+/*.ind:nth-child(even) {*/
+    /*float: right;*/
+/*}*/
 .img_ind {
     width: 2200px;
     height: 310px;
@@ -563,8 +575,12 @@ header li:hover a:after {
     margin: 55px 0 20px 0;
     text-align: justify;
     height: 900px;
+    transition: height 1s;
 }
-.news_wrapper:after {
+.change_height {
+    height: auto;
+}
+.news_viewer:after {
     width: 100%;
     height: 0;
     visibility: hidden;

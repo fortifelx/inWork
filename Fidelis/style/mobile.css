@@ -95,7 +95,6 @@
     }
     .industri {
         margin-top: 80px;
-        height: 600px;
     }
     .main_ind img {
         display: none !important;
@@ -123,13 +122,12 @@
     .mob_industri {
         margin-top: 0 !important;
         overflow: hidden;
-        height: 765px;
     }
 
     .choose_industri {
         margin-top: 25px;
         margin-bottom: 40px;
-        height:  612px;
+        height:  615px;
         overflow: hidden;
     }
     .ind {
