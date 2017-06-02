@@ -161,7 +161,7 @@ function showSlider() {
             function changeStatus() {
                 status = true;
             };
-            setTimeout( changeStatus , 1050);
+            setTimeout( changeStatus , 1000);
 
     };
     function demo() {
@@ -171,7 +171,7 @@ function showSlider() {
     };
 
     roundsBox.addEventListener('click', showSlide);
-    setInterval( demo, 6000);
+    setInterval( demo, 7000);
 
 };
 })();
@@ -412,7 +412,7 @@ function showSlider() {
         };
         if (work === true) return;
         work = true;
-        var img = document.querySelector('.card_img_wrapper img');
+        var img = document.querySelector('.card_main_img');
         var close;
         function makeBig() {
             goodsImg.classList.add('card_img_big');
