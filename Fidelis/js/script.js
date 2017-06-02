@@ -45,8 +45,6 @@
         var n = 0;
         for (var i = 0; i < slides.length; i++ ) {
             var round = document.createElement('div');
-            var vround = document.createElement('span');
-            round.appendChild(vround);
             round.value = i;
             roundsBox.appendChild(round);
         };
@@ -73,7 +71,6 @@
                 };
             }
             n = goal.value;
-            console.log(goal);
             goal.style.backgroundColor = "#00293f";
             if ( counter === slNumb - 1) {
                 if (n > 0) {
