@@ -222,7 +222,7 @@ header li:hover a:after {
     line-height: 11px;
     text-align: center;
     border-radius: 9px;
-    border: 2px solid #004f79;
+    border: 2px solid #00293f;
     /*background-image: url("../img/pagination.svg");*/
     margin-right: 20px;
 }
