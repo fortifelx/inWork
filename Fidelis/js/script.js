@@ -50,7 +50,7 @@
         };
         var status = true;
         var rounds = document.querySelectorAll('.circle_wrapper div');
-        rounds[0].style.backgroundColor = '#004f79';
+        rounds[0].style.backgroundColor = '#00293f';
         function showSlide(ev) {
             if (status === false) return;
             status = false;

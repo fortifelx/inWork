@@ -262,10 +262,10 @@ header li:hover a:after {
     display: block;
     width: 100%;
     height: 100px;
-    background-color: rgba( 255, 255, 255, 0.5);
-    -webkit-box-shadow: -4px -14px 94px 19px rgba(255,255,255, 0.6);
-    -moz-box-shadow: -4px -14px 94px 19px rgba(255,255,255,0.6);
-    box-shadow: -4px -14px 94px 19px rgba(255,255,255,0.6);
+    background-color: rgba( 255, 255, 255, 0.65);
+    -webkit-box-shadow: -4px -5px 92px 25px rgba(255,255,255,0.77);
+    -moz-box-shadow: -4px -5px 92px 25px rgba(255,255,255,0.77);
+    box-shadow: -4px -5px 92px 25px rgba(255,255,255,0.77);
 }
 .top_slider .sub_articl a p{
     height: auto;
