@@ -12,6 +12,8 @@
         langName[i].addEventListener('click', chooseMoney, false);
     };
 })();
+
+
 (function(){
     var slider = document.querySelector('.top_slider_wrapper');
     var work = false;
@@ -43,6 +45,8 @@
         var n = 0;
         for (var i = 0; i < slides.length; i++ ) {
             var round = document.createElement('div');
+            var vround = document.createElement('span');
+            round.appendChild(vround);
             round.value = i;
             roundsBox.appendChild(round);
         };
@@ -69,7 +73,8 @@
                 };
             }
             n = goal.value;
-            goal.style.backgroundColor = "#004f79";
+            console.log(goal);
+            goal.style.backgroundColor = "#00293f";
             if ( counter === slNumb - 1) {
                 if (n > 0) {
                     var beforeEl = slides[counter].offsetWidth + "px";

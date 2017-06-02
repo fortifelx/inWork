@@ -152,7 +152,6 @@ header .main_menu li{
     overflow: hidden;
     content: '';
     display: inline-block;
-
 }
 .gamb {
     display: none;
@@ -218,11 +217,20 @@ header li:hover a:after {
 .circle_wrapper div {
     cursor: pointer;
     display: inline-block;
-    width: 14px;
-    height: 14px;
-    border-radius: 8px;
-    border: 1px solid #004f79;
+    width: 11px;
+    height: 11px;
+    line-height: 11px;
+    text-align: center;
+    border-radius: 9px;
+    border: 2px solid #004f79;
+    /*background-image: url("../img/pagination.svg");*/
     margin-right: 20px;
+}
+.circle_wrapper span {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
 }
 .top_slider {
     width: 640px;
@@ -292,6 +300,25 @@ header li:hover a:after {
 }
 .industri ul li {
     margin-bottom: 45px;
+}
+.industri li b {
+    display: inline-block;
+    position: relative;
+}
+.industri li b:after {
+    content: "";
+    width: 0;
+    max-width: 100%;
+    display: none;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+.industri li:hover b:after {
+    display: block;
+    width: 100%;
 }
 .industri_img {
     margin-top: 80px;
