@@ -384,7 +384,10 @@ header li:hover a:after {
 }
 .serv:hover .serv_img {
     background-image: url("../img/hoverarrow.svg");
-    background-size: 80%;
+    background-size: 53%;
+    bottom: 28px;
+    left: 94px;
+    background-position: center;
 }
 .serv:hover h5 {
     color: #fff;
