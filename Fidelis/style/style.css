@@ -632,6 +632,7 @@ header li:hover a:after {
     width: 300px;
     overflow: hidden;
     height: 370px;
+    text-align: left !important;
 }
 .news article a:hover {
     text-decoration: underline;
