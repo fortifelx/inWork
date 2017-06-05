@@ -88,11 +88,11 @@ header {
     z-index: 1;
     position: absolute;
     display: block;
-    margin: 19px 0 0 0;
+    margin: 22px 0 0 0;
     left: 650px;
-    height: 20px;
+    height: 16px;
     overflow: hidden;
-    line-height:20px;
+    line-height:16px;
     font-size:14px;
     font-weight: bold;
     color: #669933;
@@ -380,7 +380,7 @@ header {
     margin: 15px 0 0 0;
     float: right;
     width: 740px;
-    height: 250px;
+    height: 325px;
     overflow: hidden;
 }
 .circle_wrapper {
@@ -413,31 +413,40 @@ header {
 }
 .top_slider_wrapper img{
     width: 740px;
-    height: 240px;
+    height: 325px;
     display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
 }
 .new_goods {
-    width: 730px;
+    width: 740px;
     height: 155px;
-    float: left;
-    margin: 15px 0 0 25px;
+    float: right;
+    margin: 15px 0 0 0;
+    text-align: justify;
+}
+.new_goods:after {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
 }
 .new_goods_header {
     width:100%;
     font-size: 20px;
     font-weight: bold;
     color: #559449;
-    margin:0 0 15px 5px;
+    margin:0 0 15px 0;
 }
 .new_good {
     text-align: center;
     display: inline-block;
     width:135px;
     height: 105px;
-    margin: 5px 5px 0 5px;
+    margin-top: 5px;
     padding: 10px 14px;
     border: 1px solid #559449;
     -webkit-border-radius: 15px;
@@ -503,10 +512,10 @@ header {
 }
 
 .news_wrapper {
-    margin-top: 30px;
+    margin-top: 55px;
     float: left;
-    width: 210px;
-    height: 390px;
+    width: 195px;
+    height: 500px;
     overflow: hidden;
 }
 .news_header {
@@ -556,8 +565,8 @@ header {
 }
 .category_wrapper {
     float: right;
-    width: 680px;
-    margin: 30px 0 0 0;
+    width: 740px;
+    margin: 30px 0 25px 0;
 }
 .category_header {
     font-size: 20px;
@@ -585,7 +594,7 @@ header {
     text-align: center;
     display: inline-block;
     width: 160px;
-    height: 100px;
+    height: 115px;
     border: 1px solid #9ac092;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -614,6 +623,7 @@ header {
     width:162px;
     color: #6adf53;
     background-image: url(../img/sky.jpg);
+    background-size: cover;
 }
 
 .discount_wrapper {
@@ -897,9 +907,9 @@ header {
     float: none;
 }
 .catalog_page .category_wrapper li{
-    padding-top: 30px;
+    padding: 30px 0 0 0;
     width: 220px;
-    height: 130px;
+    height: 145px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1344,6 +1354,16 @@ select {
     display: inline-block;
     padding-bottom: 25px;
 }
+.contact_ticket .capcha {
+     float: left;
+     margin: 0;
+     width: 320px;
+ }
+.contact_ticket .capcha input {
+    margin-top: 22px;
+    float: right;
+    height: 28px;
+}
 .contact_ticket input {
     display: inline-block;
     margin-top: 10px;
@@ -1403,7 +1423,7 @@ select {
 
 
 .contacts_button {
-    margin-top: 15px;
+    margin-top: 23px;
     float: right;
     cursor: pointer;
     border-radius: 15px;
@@ -1439,7 +1459,6 @@ select {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
-    line-height: 20px;
 }
 /*       - - -    C A L C U L A T O R S    - - -    */
 .calc_wrapper {

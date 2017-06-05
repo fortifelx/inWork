@@ -4,16 +4,16 @@
 
     function showList() {
         money = document.querySelector('.money_name');
-        if (money.offsetHeight < 63) {
-            Velocity( money, { height : '63px'}, 600);
+        if (money.offsetHeight < 48) {
+            Velocity( money, { height : '48px'}, 600);
         }
     };
     function chooseMoney(ev) {
         var el = ev.target;
         moneyName = document.querySelectorAll('.money_name li');
         money = document.querySelector('.money_name');
-        if(money.offsetHeight > 20) {
-            Velocity(money, {height: '20px'}, 600);
+        if(money.offsetHeight > 16) {
+            Velocity(money, {height: '16px'}, 600);
         }
         if( el === moneyName[0]) return;
         money.removeChild(el);
