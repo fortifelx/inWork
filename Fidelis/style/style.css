@@ -333,9 +333,8 @@ header li:hover a:after {
     margin-top: 80px;
     float: right;
 }
-.main_ind img {
-    width: 560px;
-    height: 390px;
+.main_ind div {
+    width: 520px;
     opacity: 0;
     position: absolute;
     top:100px;
@@ -401,6 +400,13 @@ header li:hover a:after {
     text-align: center;
     margin: 17px 0;
 }
+.main_indu {
+    padding: 46px;
+    margin: 26px 0;
+}
+.main_indu .serv_img {
+    left: 117px;
+}
 .serv h5 {
     margin-top: 55px;
 }
@@ -424,6 +430,9 @@ header li:hover a:after {
     bottom: 28px;
     left: 94px;
     background-position: center;
+}
+.main_indu:hover .serv_img {
+    left: 117px;
 }
 .serv:hover h5 {
     color: #fff;
@@ -461,9 +470,6 @@ header li:hover a:after {
 .ind h5:hover {
     text-decoration: underline;
 }
-/*.ind:nth-child(even) {*/
-    /*float: right;*/
-/*}*/
 .img_ind {
     width: 2200px;
     height: 310px;
