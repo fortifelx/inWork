@@ -358,16 +358,11 @@ header li:hover a:after {
     padding: 10px 0;
 }
 .brand a img {
-    width: 420px;
     display: inline;
 }
 .brand a:nth-child(6) {
     padding: 0 0 22px 0;
 }
-.brand a:nth-child(3) {
-    padding: 0 0 32px 0;
-}
-
     /*   - - -   S E R V I C E S   - - -   */
 .mob_fix {
     display: none;
