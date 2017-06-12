@@ -688,7 +688,9 @@ footer h1 {
     padding: 33px 0;
 }
 footer .adress {
-    width: 240px;
+    max-width: 280px;
+    min-width: 240px;
+    width: 100%;
     float: left;
 }
 footer .soc_ico {
@@ -706,6 +708,7 @@ footer .soc_ico img {
     cursor: pointer;
 }
 footer .copyright {
+    clear: both;
     font-size: 18px;
     width:180px;
     margin: 90px auto 0 auto;
