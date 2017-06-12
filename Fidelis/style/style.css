@@ -304,11 +304,11 @@ header li:hover a:after {
     position: relative;
 }
 .industri ul {
-    margin: 80px 0 185px 0;
+    margin: 80px 0 155px 0;
     float: left;
 }
 .industri ul li {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 .industri li b {
     display: inline-block;
@@ -334,7 +334,7 @@ header li:hover a:after {
     float: right;
 }
 .main_serv_img {
-    width: 540px;
+    width: 520px;
     float: right;
     margin-top: 80px;
 }
