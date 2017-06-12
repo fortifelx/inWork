@@ -224,7 +224,8 @@
         font-size: 16px;
     }
     .expert img {
-        margin-bottom: 40px;
+        margin:0 0 40px 0;
+        height: 325px !important;
     }
     .articl {
         position: relative;
