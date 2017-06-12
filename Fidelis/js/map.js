@@ -1,6 +1,6 @@
 function initMap() {
     var map = new google.maps.Map(document.querySelector('.map'), {
-        center: {lat: 50.447727, lng: 30.506669},
+        center: {lat: 50.390221, lng: 30.476839},
         zoom: 15,
         scrollwheel: false,
         styles: [
@@ -110,7 +110,7 @@ function initMap() {
     });
     var image = "img/marker.png";
     var beachMarker = new google.maps.Marker({
-        position: {lat: 50.447727, lng: 30.506669},
+        position: {lat: 50.390221, lng: 30.476839},
         map: map,
         icon: image
     });
