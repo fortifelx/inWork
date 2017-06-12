@@ -110,8 +110,11 @@
     .choose_serv .serv {
         width: 196px;
     }
-    .serv_img {
-        left: 105px;
+    .main_indu .serv_img {
+        left: 102px;
+    }
+    .main_indu:hover .serv_img {
+        left: 102px;
     }
     .services .button {
         display: block;
@@ -123,8 +126,14 @@
     .industri {
         margin-top: 80px;
     }
-    .main_ind img {
-        display: none !important;
+    .industri ul {
+        margin-bottom: 80px;
+    }
+    .main_serv_img {
+        display: none;
+    }
+    .main_indu {
+        padding: 19px;
     }
     .industri + h1 {
         width: 255px;
@@ -136,8 +145,15 @@
         margin-bottom: 70px;
     }
     .brand img {
-        width: 240px;
+        width: 240px !important;
     }
+    .brand a {
+        margin: 5px 0;
+    }
+    .brand a:nth-child(3) {
+        padding: 10px 0 10px 0;
+    }
+
     .brand + .button {
         display: block;
         color: #ffffff;
