@@ -585,6 +585,12 @@ header li:hover a:after {
     background-color: #004f79;
 }
 
+.aboutus section:nth-child(3) .sub_text {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 21px;
+}
+
 .our_team {
     margin: 45px 0 120px 0;
     text-align: justify;
@@ -610,6 +616,7 @@ header li:hover a:after {
     text-decoration: underline;
     color: inherit;
 }
+
 /*   - - -   N E W S       - - -    */
 
 .news_wrapper {
