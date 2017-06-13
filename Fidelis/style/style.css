@@ -339,7 +339,25 @@ header li:hover a:after {
     right: 0;
     transition: opacity 1s;
 }
-
+.services .main_indu {
+    padding: 46px;
+    margin: 26px 0;
+}
+.services .main_indu .serv_img {
+    left: 117px;
+}
+.services .main_indu:hover .serv_img {
+    left: 117px;
+}
+.choose_serv_viewer:after {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
+    text-align: justify;
+}
 .brand {
     text-align: justify;
     margin: 85px 0 160px 0;
@@ -376,6 +394,12 @@ header li:hover a:after {
 }
 .services .button {
     display: none;
+}
+.services + h1 {
+    padding-top: 60px;
+}
+.choose_serv_viewer {
+    text-align: justify;
 }
 .choose_serv_viewer:after {
     width: 100%;

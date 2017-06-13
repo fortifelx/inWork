@@ -147,42 +147,42 @@
     };
 
 })();
-( function () {
-    var slides = document.querySelectorAll('.main_ind');
-    var work = false;
-    if (slides[0] !== undefined) {
-        if (work === true) return;
-        work = true;
-    };
-    if( slides[0] === undefined || work === false) {
-        return;
-    };
-    work = true;
-    slides[6].style.display = "none";
-    var firstImg = slides[0].querySelector('img');
-    for(var i = 0; i < slides.length; i++) {
-        var img = slides[i].querySelector('img');
-        var par = slides[i].parentNode;
-        par.addEventListener('mouseover', show);
-        img.style.display = 'none';
-    }
-    firstImg.style.display = 'block';
-    firstImg.style.opacity = '1';
-    function show() {
-        for(var i = 0; i < slides.length; i++) {
-            var img = slides[i].querySelector('img');
-            Velocity( img, { 'opacity' : '0'}, 40);
-            img.style.zIndex = 0;
-            setTimeout( function(){ img.style.display = 'none';}, 40);
-        }
-        var el = this.querySelector('img');
-        el.style.display = 'block';
-        el.style.opacity = '0';
-        el.style.zIndex = 3;
-        Velocity(el , { 'opacity' : '1'}, 100);
-    }
-
-})();
+// ( function () {
+//     var slides = document.querySelectorAll('.main_ind');
+//     var work = false;
+//     if (slides[0] !== undefined) {
+//         if (work === true) return;
+//         work = true;
+//     };
+//     if( slides[0] === undefined || work === false) {
+//         return;
+//     };
+//     work = true;
+//     slides[6].style.display = "none";
+//     var firstImg = slides[0].querySelector('img');
+//     for(var i = 0; i < slides.length; i++) {
+//         var img = slides[i].querySelector('img');
+//         var par = slides[i].parentNode;
+//         par.addEventListener('mouseover', show);
+//         img.style.display = 'none';
+//     }
+//     firstImg.style.display = 'block';
+//     firstImg.style.opacity = '1';
+//     function show() {
+//         for(var i = 0; i < slides.length; i++) {
+//             var img = slides[i].querySelector('img');
+//             Velocity( img, { 'opacity' : '0'}, 40);
+//             img.style.zIndex = 0;
+//             setTimeout( function(){ img.style.display = 'none';}, 40);
+//         }
+//         var el = this.querySelector('img');
+//         el.style.display = 'block';
+//         el.style.opacity = '0';
+//         el.style.zIndex = 3;
+//         Velocity(el , { 'opacity' : '1'}, 100);
+//     }
+//
+// })();
 
 ( function () {
     var buttons = document.querySelectorAll('.button');
