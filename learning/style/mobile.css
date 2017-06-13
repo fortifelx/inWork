@@ -1,0 +1,16 @@
+@media handheld and (max-width: 935px), screen and (max-width: 935px) {
+    html {
+        font-size: 8px;
+    }
+
+}
+@media handheld and (max-width: 460px), screen and (max-width: 460px) {
+    html {
+        font-size: 6px;
+    }
+}
+@media handheld and (max-width: 320px), screen and (max-width: 320px) {
+    html {
+        font-size: 4px;
+    }
+}
