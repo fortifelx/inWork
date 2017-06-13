@@ -31,10 +31,12 @@ html {
 h1, h2, h3, h4, h5, h6, p, div, input, section, article, span, b, u, i, a, s, ul, li {
     font-family: Gotha, serif;
     color: #2d2c2c;
+    letter-spacing: 0.05rem;
 }
 h1 {
     font-size: 7.5rem;
     font-weight: 700;
+    line-height: 8.34rem;
     text-transform: uppercase;
 }
 h3 {
@@ -81,10 +83,10 @@ section p {
 .main {
     width: 100%;
     overflow: hidden;
-    /*background-image: url("../img/mainnobgpng1920.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 73vw;*/
-    /*background-position: 100% -25%;*/
+    background-image: url("../img/mainnobgpng1920.png");
+    background-repeat: no-repeat;
+    background-size: 73vw;
+    background-position: 100% -25%;
 }
 .main article {
     width: 80%;
