@@ -43,10 +43,12 @@ h3 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 7.5rem;
+    text-transform: uppercase;
 }
 h4 {
     font-size: 4rem;
     font-weight: 700;
+    line-height: 5rem;
 }
 p {
     font-size: 3rem;
@@ -72,6 +74,14 @@ section p {
     font-size: 2.5rem;
     line-height: 3.34rem;
 }
+article {
+    width: 80%;
+    max-width: 940px;
+    min-width: 240px;
+    margin: 0 auto;
+    height: 100vh;
+    max-height: 100%;
+}
 
 /*     M A I N     S E C T I O N     */
 
@@ -83,43 +93,41 @@ section p {
 .main {
     width: 100%;
     overflow: hidden;
-    background-image: url("../img/mainnobgpng1920.png");
-    background-repeat: no-repeat;
-    background-size: 73vw;
-    background-position: 100% -25%;
 }
 .main article {
-    width: 80%;
-    max-width: 940px;
-    min-width: 240px;
-    margin: 0 auto;
-    height: 100vh;
-    max-height: 100%;
+    position: relative;
+}
+.main img {
+    position: absolute;
+    height: 150%;
+    right: -10%;
+    bottom: -90%;
+
 }
 .main p {
+    position: relative;
+    z-index: 1;
     width: 75%;
     margin-top: 10%;
 }
 .main h1 {
+    position: relative;
+    z-index: 1;
     padding-top: 32%;
     width: 60%;
 }
 .start{
+    text-align: center;
     width: 100%;
     background-color: white;
 }
-.start article {
-    text-align: center;
-    width: 80%;
-    max-width: 940px;
-    min-width: 240px;
-    margin: 0 auto;
-    height: 80vh;
-    padding: 10vh 0;
+.start h3 {
+    padding-top:  12%;
 }
 .start h4 {
-    margin-top:  4vw;
+    text-transform: uppercase;
+    margin-top: 3%;
 }
 .start p {
-    margin-top: 8vw;
+    margin-top: 20%;
 }
