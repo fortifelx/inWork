@@ -1,6 +1,3 @@
-
-/*   - - - L E G E N D main style   - - -   */
-
 @font-face {
     font-family: Lato;
     src: url(../fonts/lato/Lato-Medium.ttf);
@@ -304,11 +301,11 @@ header li:hover a:after {
     position: relative;
 }
 .industri ul {
-    margin: 80px 0 155px 0;
+    margin: 80px 0 185px 0;
     float: left;
 }
 .industri ul li {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 .industri li b {
     display: inline-block;
@@ -333,10 +330,14 @@ header li:hover a:after {
     margin-top: 80px;
     float: right;
 }
-.main_serv_img {
-    width: 520px;
-    float: right;
-    margin-top: 80px;
+.main_ind img {
+    width: 560px;
+    height: 390px;
+    opacity: 0;
+    position: absolute;
+    top:100px;
+    right: 0;
+    transition: opacity 1s;
 }
 
 .brand {
@@ -360,10 +361,11 @@ header li:hover a:after {
 .brand a img {
     display: inline;
 }
-.brand a:nth-child(6) {
+.brand a:nth-child(6){
     padding: 0 0 22px 0;
 }
-    /*   - - -   S E R V I C E S   - - -   */
+
+/*   - - -   S E R V I C E S   - - -   */
 .mob_fix {
     display: none;
 }
@@ -396,13 +398,6 @@ header li:hover a:after {
     text-align: center;
     margin: 17px 0;
 }
-.main_indu {
-    padding: 46px;
-    margin: 26px 0;
-}
-.main_indu .serv_img {
-    left: 117px;
-}
 .serv h5 {
     margin-top: 55px;
 }
@@ -423,10 +418,9 @@ header li:hover a:after {
 .serv:hover .serv_img {
     background-image: url("../img/hoverarrow.svg");
     background-size: 53%;
+    bottom: 28px;
+    left: 94px;
     background-position: center;
-}
-.main_indu:hover .serv_img {
-    left: 117px;
 }
 .serv:hover h5 {
     color: #fff;
@@ -457,12 +451,16 @@ header li:hover a:after {
     display: inline-block;
     cursor: pointer;
     width: 460px;
+    /*float: left;*/
     margin-bottom: 80px;
     overflow: hidden;
 }
 .ind h5:hover {
     text-decoration: underline;
 }
+/*.ind:nth-child(even) {*/
+/*float: right;*/
+/*}*/
 .img_ind {
     width: 2200px;
     height: 310px;
@@ -576,14 +574,9 @@ header li:hover a:after {
 .aboutus section:nth-child(3) img {
     display: block;
     float: left;
-    height: 240px;
+    width: 320px;
+    height: 230px;
     background-color: #004f79;
-}
-
-.aboutus section:nth-child(3) .sub_text {
-    margin-top: 10px;
-    width: 100%;
-    font-size: 21px;
 }
 
 .our_team {
@@ -611,7 +604,6 @@ header li:hover a:after {
     text-decoration: underline;
     color: inherit;
 }
-
 /*   - - -   N E W S       - - -    */
 
 .news_wrapper {
@@ -688,9 +680,7 @@ footer h1 {
     padding: 33px 0;
 }
 footer .adress {
-    max-width: 280px;
-    min-width: 240px;
-    width: 100%;
+    width: 240px;
     float: left;
 }
 footer .soc_ico {
@@ -708,7 +698,6 @@ footer .soc_ico img {
     cursor: pointer;
 }
 footer .copyright {
-    clear: both;
     font-size: 18px;
     width:180px;
     margin: 90px auto 0 auto;

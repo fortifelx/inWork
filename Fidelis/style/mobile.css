@@ -78,9 +78,9 @@
         display: none;
     }
     .mob_header {
-       display: block;
-       text-align: center;
-       padding-bottom: 155px;
+        display: block;
+        text-align: center;
+        padding-bottom: 155px;
         padding-top: 155px;
     }
     h2 {
@@ -110,11 +110,8 @@
     .choose_serv .serv {
         width: 196px;
     }
-    .main_indu .serv_img {
-        left: 102px;
-    }
-    .main_indu:hover .serv_img {
-        left: 102px;
+    .serv_img {
+        left: 105px;
     }
     .services .button {
         display: block;
@@ -127,13 +124,10 @@
         margin-top: 80px;
     }
     .industri ul {
-        margin-bottom: 80px;
+        margin-bottom: 125px;
     }
-    .main_serv_img {
-        display: none;
-    }
-    .main_indu {
-        padding: 19px;
+    .main_ind img {
+        display: none !important;
     }
     .industri + h1 {
         width: 255px;
@@ -145,15 +139,8 @@
         margin-bottom: 70px;
     }
     .brand img {
-        width: 240px !important;
+        width: 240px;
     }
-    .brand a {
-        margin: 5px 0;
-    }
-    .brand a:nth-child(3) {
-        padding: 10px 0 10px 0;
-    }
-
     .brand + .button {
         display: block;
         color: #ffffff;
@@ -224,8 +211,8 @@
         font-size: 16px;
     }
     .expert img {
-        margin:0 0 40px 0;
-        height: 325px !important;
+        margin-bottom: 40px;
+        height: 325px;
     }
     .articl {
         position: relative;
@@ -338,6 +325,7 @@
         margin-bottom: 180px;
     }
     footer .copyright {
+        clear: both;
         width:auto;
         margin: 0;
     }
