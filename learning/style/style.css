@@ -91,15 +91,15 @@ section p {
     max-width: 940px;
     min-width: 240px;
     margin: 0 auto;
-    height: 70vh;
-    max-height: 60vw;
-    padding: 15vh 0;
+    height: 100vh;
+    max-height: 100%;
 }
 .main p {
-    margin-top: 8vw;
     width: 75%;
+    margin-top: 10%;
 }
 .main h1 {
+    padding-top: 32%;
     width: 60%;
 }
 .start{

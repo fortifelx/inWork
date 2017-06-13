@@ -2,15 +2,30 @@
     html {
         font-size: 8px;
     }
+    article {
+        max-height: 90vw !important;
+    }
 
+}
+@media handheld and (max-width: 640px), screen and (max-width: 640px) {
+    article {
+        max-height: 105vw !important;
+    }
 }
 @media handheld and (max-width: 460px), screen and (max-width: 460px) {
     html {
         font-size: 6px;
     }
+    article {
+        max-height: 120vw !important;
+    }
+
 }
 @media handheld and (max-width: 320px), screen and (max-width: 320px) {
     html {
         font-size: 4px;
+    }
+    article {
+        max-height: 110vw !important;
     }
 }
