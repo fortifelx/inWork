@@ -104,6 +104,32 @@
         overflow: hidden;
         margin-bottom: 65px;
     }
+    .choose_indu {
+        height: 640px;
+        overflow: hidden;
+    }
+    .services .main_indu {
+        margin: 10px 0;
+        padding: 18px;
+    }
+    .services .main_indu .serv_img {
+        position: absolute;
+        bottom: 28px;
+        left: 94px;
+        display: inline-block;
+        width: 29px;
+        height: 29px;
+        background-image: url("../img/arrow.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .services .main_indu:hover .serv_img {
+        background-image: url("../img/hoverarrow.svg");
+        background-size: 53%;
+        bottom: 28px;
+        left: 94px;
+        background-position: center;
+    }
     .choose_serv a {
         margin: 10px 0;
     }
@@ -120,6 +146,9 @@
         font-size: 18px;
         font-weight: 700;
     }
+    .services + .services {
+        margin-top: 50px;
+     }
     .industri {
         margin-top: 80px;
     }
