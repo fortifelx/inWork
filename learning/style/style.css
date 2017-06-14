@@ -44,6 +44,7 @@ h3 {
     font-weight: 700;
     line-height: 7.5rem;
     text-transform: uppercase;
+    color: #c63232;
 }
 h4 {
     font-size: 4rem;
@@ -58,19 +59,25 @@ p {
 b {
     font-weight: 700;
 }
-u {
-    text-decoration: none;
+h1 span {
     color: #c63232;
 }
+p span {
+      color: #c63232;
+    font-weight: 700;
+  }
 s {
     text-decoration: none;
     color: #ffffff;
+}
+a {
+    text-decoration: none;
 }
 section p {
     font-size: 1.5rem;
     line-height: 2rem;
 }
-.create_site p {
+.create_site p, .our_case p {
     font-size: 2.5rem;
     line-height: 3.34rem;
 }
@@ -187,24 +194,19 @@ article {
 }
 .left_pagination {
     float: left;
-    width: 20px;
-    margin: 5% 7% 0 0;
+    width: 22px;
+    margin: 5% 7% 0 -10%;
     height: 95%;
 }
-.left_pagination:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 100%;
-}
-.left_pagination li:first-child {
+
+.create_site .left_pagination li:first-child {
     background-color: white;
 }
 .left_pagination li:nth-child(odd) {
     display: block;
-    border: 1px solid white;
-    width: 19px;
-    height: 19px;
+    border: 2px solid white;
+    width: 18px;
+    height: 18px;
     border-radius: 10px;
     margin: 0 auto;
 }
@@ -219,18 +221,21 @@ article {
     background-color: white;
 }
 .about_site p {
-    padding-top: 9%;
+    padding-top: 8%;
     width: 68%;
 }
 .pseudo_site {
-    padding-top: 8%;
+    padding-top: 12%;
     width: 100%;
     text-align: center;
     background-color: #c63232;
 }
+.pseudo_site_menu + .pseudo_site {
+    padding-top: 7%;
+}
 .pseudo_site p {
     margin: 5% auto 0 auto;
-    padding-bottom: 10%;
+    padding-bottom: 8%;
     padding-top: 0;
     font-weight: 700;
 }
@@ -268,4 +273,37 @@ article {
 }
 .pseudo_site_menu li {
     margin-right: 1.2%;
+}
+.our_case {
+    position: relative;
+    overflow: hidden;
+}
+.our_case img{
+    height: 27%;
+    position: absolute;
+    right: -10%;
+    bottom:-7%;
+}
+.our_case h3 {
+    margin-top: 10%;
+    width: 110%;
+}
+.our_case p {
+    margin-top: 4%;
+    font-weight: 700;
+}
+.our_case li:nth-child(3) {
+    background-color: white;
+}
+.our_case a {
+    width:100%;
+    text-align: center;
+}
+.our_case a p {
+    margin-top: 17%;
+}
+.our_case a p:before {
+    content: url("../img/d_arrow_red.png");
+    display: inline-block;
+    margin-right: 1.5%;
 }
