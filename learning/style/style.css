@@ -70,7 +70,7 @@ section p {
     font-size: 1.5rem;
     line-height: 2rem;
 }
-.greate_site p {
+.create_site p {
     font-size: 2.5rem;
     line-height: 3.34rem;
 }
@@ -128,16 +128,23 @@ article {
 }
 .shadow {
     position: absolute;
-    width: 100%;
+    width: 120%;
     height: 100%;
     top:0;
-    left: 0;
+    left: -10%;
     -webkit-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);
     -moz-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);
     box-shadow: inset 0px 0px 52px 45px rgba(255,255,255, 1);
 }
+.astronaut {
+    position: absolute;
+    height: 80%;
+    bottom: 4%;
+    left: 65%;
+}
 .start_wrapper {
-    margin-top: -130px;
+    margin-top: -1180px;
+    padding-bottom: 35%;
 }
 .start h3 {
     padding-top:  12%;
@@ -148,4 +155,69 @@ article {
 }
 .start p {
     margin-top: 20%;
+}
+.start p + h3{
+    margin-top: 3%;
+    text-align: left;
+}
+.start h3 + ol {
+    text-align: left;
+    width: 75%;
+    margin-top: 13%;
+}
+.start ol p {
+    margin-top: 10%;
+}
+.create_site {
+    position: relative;
+    overflow: hidden;
+}
+.create_site img{
+    height: 33%;
+    position: absolute;
+    right: -10%;
+    bottom:-7%;
+}
+.create_site h3 {
+    margin-top: 13%;
+}
+.create_site p {
+    margin-top: 7%;
+    font-weight: 700;
+}
+.left_pagination {
+    float: left;
+    width: 20px;
+    margin: 5% 7% 0 0;
+    height: 95%;
+}
+.left_pagination:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 100%;
+}
+.left_pagination li:first-child {
+    background-color: white;
+}
+.left_pagination li:nth-child(odd) {
+    display: block;
+    border: 1px solid white;
+    width: 19px;
+    height: 19px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.left_pagination li:nth-child(even) {
+    display: block;
+    height: 220px;
+    width: 2px;
+    background-color: white;
+    margin: 0 auto;
+}
+.about_site {
+    background-color: white;
+}
+.about_site p {
+    width: 68%;
 }
