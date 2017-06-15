@@ -437,8 +437,12 @@ header li:hover a:after {
     height: 158px;
     padding: 18px;
     border: 3px solid #00293f;
+    transition: background-color 1s;
     text-align: center;
     margin: 17px 0;
+}
+.serv:hover {
+    background-color: #00293f;
 }
 .serv h5 {
     margin-top: 55px;
