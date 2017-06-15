@@ -311,3 +311,48 @@ article {
     display: inline-block;
     margin-right: 1.5%;
 }
+
+.our_result {
+    background-color: white;
+}
+.our_result article {
+    position: relative;
+}
+.r_slider_arrow {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    left: 105%;
+    top: 35%;
+    height: 7%;
+}
+.result_slider_viewer {
+    position: relative;
+    padding-top: 20%;
+    width: 100%;
+    height: 48%;
+    overflow: hidden;
+}
+.result_slide h3 {
+    text-transform: none;
+    width: 45%;
+}
+.result_slide p {
+    width: 45%;
+    margin-top: 3%;
+}
+.result_slide {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    display: block;
+    left: 100%;
+}
+.result_slide:first-child {
+    left: 0;
+}
+.result_slide img {
+    float: right;
+    width: 52%;
+}
+
