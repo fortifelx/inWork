@@ -349,6 +349,24 @@ header li:hover a:after {
 .services .main_indu:hover .serv_img {
     left: 117px;
 }
+.ilu_indu {
+    z-index: 1;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 255, 255, 255, 0.6);
+    transition: background-color 0.15s;
+}
+.ilu_indu + img {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .choose_serv_viewer:after {
     width: 100%;
     height: 0;
@@ -419,15 +437,17 @@ header li:hover a:after {
     height: 158px;
     padding: 18px;
     border: 3px solid #00293f;
-    transition: background-color 1s;
     text-align: center;
     margin: 17px 0;
 }
 .serv h5 {
     margin-top: 55px;
+    position: relative;
+    z-index: 2;
 }
 .serv_img {
     position: absolute;
+    z-index: 2;
     bottom: 28px;
     left: 94px;
     display: inline-block;
@@ -437,8 +457,8 @@ header li:hover a:after {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.serv:hover {
-    background-color: #00293f;
+.serv:hover .ilu_indu {
+    background-color: rgba( 0, 41, 63, 0.5);
 }
 .serv:hover .serv_img {
     background-image: url("../img/hoverarrow.svg");
