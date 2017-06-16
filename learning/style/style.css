@@ -107,29 +107,32 @@ article {
 .main {
     width: 100%;
     overflow: hidden;
+    transition: height 1s;
 }
 .main article {
     position: relative;
     height: 100vh;
     max-height: 100%;
 }
+.main_wrapper {
+    position: fixed;
+}
 .main img {
     position: absolute;
-    height: 150%;
-    right: -10%;
-    bottom: -90%;
-
+    height: 160%;
+    right: 2%;
+    top: 40%;
 }
 .main p {
     position: relative;
     z-index: 1;
-    width: 75%;
+    width: 65%;
     margin-top: 10%;
 }
 .main h1 {
     position: relative;
     z-index: 1;
-    padding-top: 32%;
+    padding-top: 22%;
     width: 60%;
 }
 .start {
@@ -496,4 +499,8 @@ article {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 700;
+    margin-top: 1rem;
+}
+.author a {
+    text-decoration: underline;
 }
