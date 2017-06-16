@@ -52,7 +52,7 @@ window.onload = function(){
             //We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
             //Every particle has its own density which can be used to make the downward movement different for each flake
             //Lets make it more random by adding in the radius
-            var speed = 5;
+            var speed = 0.1;
             p.y += Math.cos(angle+p.d) + speed + p.r/2;
             p.x += Math.sin(angle) * 2;
 
