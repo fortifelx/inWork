@@ -132,15 +132,15 @@ article {
 }
 .main img {
     position: absolute;
-    height: 160%;
+    height: 180%;
     right: 2%;
-    top: 40%;
+    top: 50%;
 }
 .main p {
     position: relative;
     z-index: 1;
     width: 65%;
-    margin-top: 10%;
+    margin-top: 7rem;
 }
 .main h1 {
     position: relative;
