@@ -155,21 +155,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
+            <state relative-caret-position="-1139">
               <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="canvas.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="canvas.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/canvas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+            <state relative-caret-position="308">
+              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -211,8 +211,8 @@
         <option value="$PROJECT_DIR$/style/mobile.css" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/canvas.js" />
         <option value="$PROJECT_DIR$/style/style.css" />
+        <option value="$PROJECT_DIR$/js/canvas.js" />
       </list>
     </option>
   </component>
@@ -423,12 +423,12 @@
       <workItem from="1497502914513" duration="5480000" />
       <workItem from="1497520934786" duration="4881000" />
       <workItem from="1497588997990" duration="9896000" />
-      <workItem from="1497599878197" duration="9750000" />
+      <workItem from="1497599878197" duration="10663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61986000" />
+    <option name="totallyTimeSpent" value="62899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -1614,18 +1614,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/canvas.js">
+    <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        <state relative-caret-position="-1139">
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/style.css">
+    <entry file="file://$PROJECT_DIR$/js/canvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="308">
+          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding />
         </state>
       </provider>
