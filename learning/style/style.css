@@ -83,7 +83,7 @@ section p {
     line-height: 3.34rem;
 }
 article {
-    width: 80%;
+    width: 90%;
     max-width: 940px;
     min-width: 240px;
     margin: 0 auto;
@@ -439,11 +439,13 @@ article {
     padding-bottom: 11%;
 }
 .second_stage p {
+    position: relative;
     padding-top: 3%;
     font-weight: 700;
     margin-bottom: 16%;
 }
 .second_stage section p {
+    position: relative;
     width: 80%;
     font-size: 1.5rem;
     line-height: 2rem;
