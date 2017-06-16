@@ -148,9 +148,9 @@ function drawStars(){
         initializeStars();
     }
     if(warp==0)
-    {c.fillStyle = "rgba(0,10,20,1)";
+    {c.fillStyle = "rgba(30,30,30,1)";
         c.fillRect(0,0, canvas.width, canvas.height);}
-    c.fillStyle = "rgba(209, 255, 255, "+radius+")";
+    c.fillStyle = "rgba(255, 255, 255, "+radius+")";
     for(i = 0; i < numStars; i++){
         star = stars[i];
 
