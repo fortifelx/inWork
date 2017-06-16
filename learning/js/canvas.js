@@ -16,7 +16,7 @@ window.onload = function(){
         particles.push({
             x: Math.random()*W, //x-coordinate
             y: Math.random()*H, //y-coordinate   ZMINA H -> -H
-            r: Math.random()*2.5+1, //radius
+            r: Math.random()*1.5+1, //radius
             d: Math.random()*mp //density
         })
 
@@ -52,7 +52,8 @@ window.onload = function(){
             //We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
             //Every particle has its own density which can be used to make the downward movement different for each flake
             //Lets make it more random by adding in the radius
-            p.y += Math.cos(angle+p.d) + 1 + p.r/2;
+            var speed = 5;
+            p.y += Math.cos(angle+p.d) + speed + p.r/2;
             p.x += Math.sin(angle) * 2;
 
             //Sending flakes back from the top when it exits
