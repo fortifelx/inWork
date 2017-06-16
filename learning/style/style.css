@@ -25,6 +25,12 @@
     font-weight: 700;
     font-style: italic;
 }
+@font-face {
+    font-family: Gotha;
+    src: url(../fonts/GothaProBla.otf);
+    font-weight: 900;
+    font-style: normal;
+}
 html {
     font-size: 12px;
 }
@@ -34,8 +40,8 @@ h1, h2, h3, h4, h5, h6, p, div, input, section, article, span, b, u, i, a, s, ul
     letter-spacing: 0.05rem;
 }
 h1 {
-    font-size: 7.5rem;
-    font-weight: 700;
+    font-size: 8rem;
+    font-weight: 900;
     line-height: 8.34rem;
     text-transform: uppercase;
     color: #ffffff;
