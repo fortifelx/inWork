@@ -148,9 +148,9 @@ article {
     height: 100%;
     top:0;
     left: -10%;
-    -webkit-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);
-    -moz-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);
-    box-shadow: inset 0px 0px 52px 45px rgba(255,255,255, 1);
+    /*-webkit-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);*/
+    /*-moz-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);*/
+    /*box-shadow: inset 0px 0px 52px 45px rgba(255,255,255, 1);*/
 }
 .astronaut {
     position: absolute;
@@ -289,21 +289,21 @@ article {
     margin-right: 1.2%;
 }
 .our_case {
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 .our_case article {
     padding-bottom: 4%;
 }
 .our_case img{
-    height: 27%;
+    width: 25%;
     position: absolute;
     right: -10%;
-    bottom:-7%;
+    bottom:-5%;
 }
 .our_case h3 {
     margin-top: 10%;
-    width: 110%;
+    width: 100%;
 }
 .our_case p {
     margin-top: 4%;
@@ -426,6 +426,9 @@ article {
 .first_stage, .second_stage {
     background-color: white;
 }
+.first_stage article {
+    padding-bottom: 8%;
+}
 .first_stage p {
     font-weight: 700;
     padding-top: 12%;
@@ -438,12 +441,14 @@ article {
 .second_stage p {
     padding-top: 3%;
     font-weight: 700;
+    margin-bottom: 16%;
 }
 .second_stage section p {
     width: 80%;
-    margin-top: 16%;
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-bottom: 4rem;
+    padding-top: 0;
 }
 .second_stage img {
     position: absolute;
@@ -465,9 +470,28 @@ article {
 .you_need {
     background-color: white;
 }
+.you_need article {
+    padding-top: 5%;
+    padding-bottom: 9%;
+}
 .you_need p {
     font-weight: 700;
 }
 .about_us {
     background-color: white;
+}
+.about_us article {
+    padding-bottom: 20%;
+}
+.author {
+    margin-top: 8%;
+    width: 37%;
+}
+.author img {
+    width: 100%;
+}
+.author p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
 }

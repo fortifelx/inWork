@@ -7,21 +7,36 @@
     }
 
 }
-@media handheld and (max-width: 640px), screen and (max-width: 640px) {
+@media handheld and (max-width: 645px), screen and (max-width: 645px) {
     .main article {
         max-height: 105vw !important;
     }
+    .our_case h3 {
+        font-size: 5.5rem;
+    }
 }
-@media handheld and (max-width: 460px), screen and (max-width: 460px) {
+@media handheld and (max-width: 465px), screen and (max-width: 465px) {
+    .left_pagination li:nth-child(odd) {
+        border: 1px solid white;
+    }
+    .left_pagination li:nth-child(even) {
+        width: 1px;
+    }
+    .left_pagination {
+        width: 1.6rem;
+    }
     html {
         font-size: 6px;
     }
     .main article {
         max-height: 120vw !important;
     }
+    .our_case h3 {
+        font-size: 4.8rem;
+    }
 
 }
-@media handheld and (max-width: 320px), screen and (max-width: 320px) {
+@media handheld and (max-width: 332px), screen and (max-width: 332px) {
     html {
         font-size: 4px;
     }
