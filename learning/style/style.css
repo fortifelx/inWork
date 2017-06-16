@@ -108,7 +108,7 @@ article {
 .wrapper {
     width: 100%;
     overflow: hidden;
-    background-color: black;
+    background-color: #2d2c2c;
 }
 .stars {
     position: fixed;
@@ -120,6 +120,7 @@ article {
     width: 100%;
     overflow: hidden;
     transition: height 1s;
+    background-color: rgba(45,44,44, 0.8);
 }
 .main article {
     position: relative;
@@ -201,6 +202,7 @@ article {
 .create_site {
     position: relative;
     overflow: hidden;
+    background-color: rgba(45,44,44, 0.5);
 }
 .create_site article {
     padding-bottom: 8%;
