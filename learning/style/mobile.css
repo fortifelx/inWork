@@ -2,13 +2,13 @@
     html {
         font-size: 8px;
     }
-    article {
+    .main article {
         max-height: 90vw !important;
     }
 
 }
 @media handheld and (max-width: 640px), screen and (max-width: 640px) {
-    article {
+    .main article {
         max-height: 105vw !important;
     }
 }
@@ -16,7 +16,7 @@
     html {
         font-size: 6px;
     }
-    article {
+    .main article {
         max-height: 120vw !important;
     }
 
@@ -25,7 +25,7 @@
     html {
         font-size: 4px;
     }
-    article {
+    .main article {
         max-height: 110vw !important;
     }
 }

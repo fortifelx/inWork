@@ -38,6 +38,7 @@ h1 {
     font-weight: 700;
     line-height: 8.34rem;
     text-transform: uppercase;
+    color: #ffffff;
 }
 h3 {
     font-size: 6rem;
@@ -51,7 +52,7 @@ h4 {
     font-weight: 700;
     line-height: 5rem;
 }
-p, pre {
+p {
     font-size: 3rem;
     font-weight: 400;
     line-height: 4rem;
@@ -63,13 +64,9 @@ h1 span {
     color: #c63232;
 }
 p span {
-      color: #c63232;
+    color: #c63232;
     font-weight: 700;
   }
-s {
-    text-decoration: none;
-    color: #ffffff;
-}
 a {
     text-decoration: none;
 }
@@ -90,8 +87,14 @@ article {
     max-width: 940px;
     min-width: 240px;
     margin: 0 auto;
-    height: 100vh;
-    max-height: 100%;
+    /*height: 100vh;*/
+    /*max-height: 100%;*/
+}
+.white {
+    color: #ffffff;
+}
+.red {
+    color: #c63232;
 }
 
 /*     M A I N     S E C T I O N     */
@@ -107,6 +110,8 @@ article {
 }
 .main article {
     position: relative;
+    height: 100vh;
+    max-height: 100%;
 }
 .main img {
     position: absolute;
@@ -149,12 +154,11 @@ article {
 }
 .astronaut {
     position: absolute;
-    height: 80%;
-    bottom: 4%;
-    left: 65%;
+    height: 35%;
+    bottom: 7%;
+    left: 60%;
 }
 .start_wrapper {
-    margin-top: -1180px;
     padding-bottom: 35%;
 }
 .start h3 {
@@ -183,11 +187,14 @@ article {
     position: relative;
     overflow: hidden;
 }
+.create_site article {
+    padding-bottom: 8%;
+}
 .create_site img{
     height: 33%;
     position: absolute;
-    right: -10%;
-    bottom:-7%;
+    right: -7%;
+    bottom:-9%;
 }
 .create_site h3 {
     margin-top: 13%;
@@ -233,6 +240,9 @@ article {
     width: 100%;
     text-align: center;
     background-color: #c63232;
+}
+.about_site article {
+    padding-bottom: 9%;
 }
 .pseudo_site_menu + .pseudo_site {
     padding-top: 7%;
@@ -282,6 +292,9 @@ article {
     position: relative;
     overflow: hidden;
 }
+.our_case article {
+    padding-bottom: 4%;
+}
 .our_case img{
     height: 27%;
     position: absolute;
@@ -317,6 +330,7 @@ article {
 }
 .our_result article {
     position: relative;
+    padding-bottom: 15%;
 }
 .r_slider_arrow {
     position: absolute;
@@ -329,14 +343,14 @@ article {
 .shuttle {
     width: 50%;
     position: absolute;
-    right: -25%;
-    bottom: 4%;
+    right: -28%;
+    bottom: 12%;
 }
 .result_slider_viewer {
     position: relative;
     padding-top: 10%;
     width: 100%;
-    height: 48%;
+    height: 30rem;
     overflow: hidden;
 }
 .result_slide h3 {
@@ -373,25 +387,28 @@ article {
     margin: 3% auto 0 auto;
 }
 .our_sale {
-    position: relative;
     overflow: hidden;
+}
+.our_sale article {
+    position: relative;
+    padding-bottom: 30%;
 }
 .our_sale img:nth-child(1){
     height: 60%;
     position: absolute;
-    right: -10%;
+    right: -30%;
     bottom:0;
 }
 .our_sale img:nth-child(2){
     height: 60%;
     position: absolute;
-    right: 8%;
-    bottom:-13%;
+    right: -5%;
+    bottom:-16%;
 }
 .our_sale img:nth-child(3){
     height: 60%;
     position: absolute;
-    right: 25%;
+    right: 22%;
     bottom:-29%;
 }
 .our_sale h3 {
@@ -413,15 +430,26 @@ article {
     font-weight: 700;
     padding-top: 12%;
 }
+
+.second_stage article {
+    position: relative;
+    padding-bottom: 11%;
+}
 .second_stage p {
     padding-top: 3%;
     font-weight: 700;
 }
 .second_stage section p {
     width: 80%;
-    margin-top: 22%;
+    margin-top: 16%;
     font-size: 1.5rem;
     line-height: 2rem;
+}
+.second_stage img {
+    position: absolute;
+    height: 57%;
+    right: -17%;
+    bottom: 10%;
 }
 .attention {
     background-color: #c63232;
@@ -432,7 +460,6 @@ article {
 }
 .attention article {
     padding-top: 4vw;
-    max-height: 15vw !important;
     padding-bottom: 7vw;
 }
 .you_need {
@@ -440,4 +467,7 @@ article {
 }
 .you_need p {
     font-weight: 700;
+}
+.about_us {
+    background-color: white;
 }
