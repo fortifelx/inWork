@@ -104,6 +104,12 @@ article {
     overflow: hidden;
     background-color: black;
 }
+.stars {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
 .main {
     width: 100%;
     overflow: hidden;
@@ -233,6 +239,7 @@ article {
 }
 .about_site {
     background-color: white;
+    position: relative;
 }
 .about_site p {
     padding-top: 8%;
@@ -428,6 +435,7 @@ article {
 }
 .first_stage, .second_stage {
     background-color: white;
+    position: relative;
 }
 .first_stage article {
     padding-bottom: 8%;
@@ -463,6 +471,7 @@ article {
 }
 .attention {
     background-color: #c63232;
+    position: relative;
 }
 .attention p {
     font-weight: 700;
@@ -473,6 +482,7 @@ article {
     padding-bottom: 7vw;
 }
 .you_need {
+    position: relative;
     background-color: white;
 }
 .you_need article {
@@ -483,6 +493,7 @@ article {
     font-weight: 700;
 }
 .about_us {
+    position: relative;
     background-color: white;
 }
 .about_us article {
