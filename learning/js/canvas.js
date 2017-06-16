@@ -160,10 +160,13 @@ function drawStars(){
         pixelY += centerY;
         pixelRadius = 1 * (focalLength / star.z);
 
-        c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
-        c.fillStyle = "rgba(209, 255, 255, "+star.o+")";
-        //c.fill();
+        //c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
+        c.beginPath();
+        c.arc(pixelX, pixelY, pixelRadius, 0, Math.PI*2, true)// STARS!
+        c.fillStyle = "rgba(255, 255, 255, "+star.o+")";
+        c.fill();
     }
+
 }
 
 // document.getElementById('warp').addEventListener("click",function(e){
