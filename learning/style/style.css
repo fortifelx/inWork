@@ -407,7 +407,7 @@ article {
     margin-right: 5%;
     -ms-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: height 1s;
+    transition: height 1s, filter 2s;
 }
 .result_slide img:hover {
     -ms-filter: none;
