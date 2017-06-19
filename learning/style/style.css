@@ -543,3 +543,13 @@ article {
 .author a {
     text-decoration: underline;
 }
+.twitter-share-button {
+    color: #c63232;
+    width: 238px;
+    height: 56px;
+    border-radius: 4px;
+    border: 2px solid #c63232;
+}
+.twitter-share-button:hover {
+    color: #ffffff;
+}
