@@ -412,7 +412,7 @@ article {
 .result_slide img:hover {
     -ms-filter: none;
     filter: none;
-    height: 100%;
+    height: 95%;
 }
 .shuttle + section {
     text-align: center;
