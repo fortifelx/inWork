@@ -543,13 +543,17 @@ article {
 .author a {
     text-decoration: underline;
 }
-.soc_button .twitter_button {
+.soc_button a {
+    display: inline-block;
+    text-align: center;
     color: #c63232;
+    font-size: 1.5rem;
+    font-weight: 700;
     width: 238px;
-    height: 56px;
+    line-height: 3.5rem;
     border-radius: 4px;
     border: 2px solid #c63232;
 }
-.twitter-share-button:hover {
+.soc_button div:hover {
     color: #ffffff;
 }
