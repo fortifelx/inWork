@@ -97,10 +97,9 @@
         for(var i = 0; i < slids.length; i++) {
             slides.push(slids[i]);
         };
-        slides[0].style.left = '0';
         var lt = document.querySelector(leftArrow);
         // var gt = document.querySelector(rightArrow);
-        var counter = 1;
+        var counter = 0;
         function watchDog() {
             function backToNull() {
                 for( var i = 0;i <slides.length; i++) {
@@ -145,6 +144,7 @@
             Velocity(slides[counter-1], { "margin-left": 0 }, scrollTime);
             counter--;
         }
+        scrollRight();
         lt.addEventListener('click', scrollRight);
         //gt.addEventListener('click', scrollLeft);
 
