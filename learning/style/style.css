@@ -132,9 +132,9 @@ article {
 }
 .main img {
     position: absolute;
-    height: 180%;
-    right: 2%;
-    top: 50%;
+    height: 105%;
+    right: 6%;
+    top: 45%;
 }
 .main p {
     position: relative;
@@ -153,6 +153,7 @@ article {
     width: 100%;
     background-color: white;
     position: relative;
+    height: 115vh;
 }
 .start article {
     overflow: hidden;
@@ -164,9 +165,9 @@ article {
     height: 100%;
     top:0;
     left: -10%;
-    /*-webkit-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);*/
-    /*-moz-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);*/
-    /*box-shadow: inset 0px 0px 52px 45px rgba(255,255,255, 1);*/
+    -webkit-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);
+    -moz-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 52px 45px rgba(255,255,255, 1);
 }
 .astronaut {
     position: absolute;

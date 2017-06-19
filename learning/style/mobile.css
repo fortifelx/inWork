@@ -2,21 +2,24 @@
     html {
         font-size: 8px;
     }
-    .main article {
-        max-height: 90vw !important;
-    }
+    /*.main article {*/
+        /*max-height: 90vw !important;*/
+    /*}*/
     .main p {
         width: 60%;
     }
     .start_wrapper li {
         width: 80%;
     }
+    .main img {
+        right: 2%;
+    }
 
 }
 @media handheld and (max-width: 680px), screen and (max-width: 680px) {
-    .main article {
-        max-height: 115vw !important;
-    }
+    /*.main article {*/
+        /*max-height: 115vw !important;*/
+    /*}*/
     .our_case h3 {
         font-size: 5.5rem;
     }
@@ -25,6 +28,9 @@
     }
     .second_stage section p:nth-child(3) {
         width: 55%;
+    }
+    .main img {
+        right: 0;
     }
 }
 @media handheld and (max-width: 480px), screen and (max-width: 480px) {
@@ -40,11 +46,14 @@
     html {
         font-size: 6px;
     }
-    .main article {
-        max-height: 120vw !important;
-    }
+    /*.main article {*/
+        /*max-height: 120vw !important;*/
+    /*}*/
     .our_case h3 {
         font-size: 4.8rem;
+    }
+    .main img {
+        right: 2%;
     }
 
 }
@@ -52,7 +61,7 @@
     html {
         font-size: 4px;
     }
-    .main article {
-        max-height: 110vw !important;
-    }
+    /*.main article {*/
+        /*max-height: 110vw !important;*/
+    /*}*/
 }
