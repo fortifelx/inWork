@@ -26,7 +26,6 @@
                             var perc = start.offsetHeight * scrolled / 100000;
                             astronaut.style.bottom = 'none';
                             var correction = scrolled - h - stopAstro;
-                            console.log(correction);
                             astronaut.style.top = topAstro - 0.8*correction +  'px';
 
                         }
