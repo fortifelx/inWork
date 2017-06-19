@@ -72,8 +72,8 @@
                 var plTop = 100;
                 var plLeft = 100;
                 var perc = start.offsetHeight * scrolled / 100000 - 115;
-                planetTwo.style.left = plLeft - 1.1*perc + '%';
-                planetTwo.style.top = plTop - 1.1*perc + -10 + '%';
+                planetTwo.style.left = plLeft - 0.9*perc + '%';
+                planetTwo.style.top = plTop - 0.9*perc + -10 + '%';
                 }
                 if (scrolled > saleCood*0.65 && scrolled < scrolled + saleCood) {
                 var firsOp = [1.6, 2.1, 2.4];
