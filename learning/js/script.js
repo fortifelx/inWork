@@ -34,11 +34,11 @@
                 if(scrolled > h) {
                         tr.style.display = 'none';
                         var perc =   scrolled*100/wrapper.offsetHeight -5;  // start.offsetHeight * scrolled / 1000000;
-                        var stopAstro = start.offsetHeight - (start.offsetHeight * 0.50);
-                        if (scrolled < h + stopAstro) {
+                        var stopAstro = start.offsetHeight/2;
+                        if (scrolled < cood) {
                             astronaut.style.right = 6 * perc/2.5 - 25 + '%';
                         }
-                        if (scrolled > h + stopAstro) {
+                        if (scrolled > cood - stopAstro ) {
                             var perc =   scrolled*100/wrapper.offsetHeight -5;  // start.offsetHeight * scrolled / 100000;
                             astronaut.style.bottom = 'none';
                             var correction = scrolled - h - stopAstro;
