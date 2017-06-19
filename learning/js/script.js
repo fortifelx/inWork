@@ -51,8 +51,8 @@
             if(scrolled > startPos) {
                     var viewer = document.querySelector('.start');
                     var tr = viewer.querySelector('.start_wrapper');
-                    var length =
-            }
+                    var length;
+            };
         }
 
 
