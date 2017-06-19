@@ -543,7 +543,7 @@ article {
 .author a {
     text-decoration: underline;
 }
-.twitter-share-button {
+.soc_button .twitter_button {
     color: #c63232;
     width: 238px;
     height: 56px;
