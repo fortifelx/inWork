@@ -367,7 +367,7 @@ article {
     position: absolute;
     display: block;
     cursor: pointer;
-    left: 105%;
+    left: 100%;
     top: 27%;
     height: 7%;
 }
@@ -398,13 +398,14 @@ article {
     height: inherit;
     display: block;
     left: 100%;
+    background-color: white;
 }
-.result_slide:first-child {
-    left: 0;
-}
+/*.result_slide:first-child {*/
+    /*left: 0;*/
+/*}*/
 .result_slide img {
     float: right;
-    width: 52%;
+    height: 100%;
 }
 .shuttle + section {
     text-align: center;

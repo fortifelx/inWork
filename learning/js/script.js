@@ -88,52 +88,65 @@
 
     }
 )();
-(function () {
-    var keys = {37: 1, 38: 1, 39: 1, 40: 1, 32: 1, 34: 1, 33: 1};
-    function preventDefault(e) {
-        e = e || window.event;
-        if (e.preventDefault)
-            e.preventDefault();
-        e.returnValue = false;
-    }
-
-    function preventDefaultForScrollKeys(e) {
-        if( e === undefined) return;
-        if (keys[e.keyCode]) {
-
-            preventDefault(e);
-            return false;
+( function(){
+        doSlider('.result_slider_viewer', '.result_slide', 600, '.r_slider_arrow');
+    function doSlider(sliderName, slide, scrollTime, leftArrow ) {
+        slider = document.querySelector(sliderName);
+        var slids = slider.querySelectorAll(slide);
+        var slides = [];
+        for(var i = 0; i < slids.length; i++) {
+            slides.push(slids[i]);
+        };
+        slides[0].style.left = '0';
+        var lt = document.querySelector(leftArrow);
+        // var gt = document.querySelector(rightArrow);
+        var counter = 1;
+        function watchDog() {
+            function backToNull() {
+                for( var i = 0;i <slides.length; i++) {
+                    slides[i].style.marginLeft = 0;
+                }
+                counter = 0;
+            }
+            window.addEventListener('resize' , backToNull);
         }
-    }
-    function disableScroll() {
-        console.log('here');
-        if (window.addEventListener) // older FF
-            window.addEventListener('DOMMouseScroll', preventDefault, false);
-        window.onwheel = preventDefault; // modern standard
-        window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-        window.ontouchmove  = preventDefault; // mobile
-        document.onkeydown  = preventDefaultForScrollKeys;
-    }
+        watchDog();
 
-    function enableScroll() {
-        if (window.removeEventListener)
-            window.removeEventListener('DOMMouseScroll', preventDefault, false);
-        window.onmousewheel = document.onmousewheel = null;
-        window.onwheel = null;
-        window.ontouchmove = null;
-        document.onkeydown = null;
-    }
-        function showText(e) {
-            var startPos = document.querySelector('.main').offsetHeight;
-            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-            if(scrolled > startPos) {
-                    var viewer = document.querySelector('.start');
-                    var tr = viewer.querySelector('.start_wrapper');
-                    var length = scrolled - startPos;
-            };
+        function scrollRight() {
+            var slideSize = slider.querySelectorAll(slide)[counter].offsetWidth;
+            if (counter === slides.length-1) {
+                var lastSlide = slider.lastElementChild;
+                var firstSlide = slider.firstElementChild;
+                var firstEl = slides.shift();
+                slides.push(firstEl);
+                slider.insertBefore(firstSlide, null);
+                firstSlide.style.marginLeft = 0;
+                Velocity(lastSlide, { "margin-left": -slideSize }, scrollTime);
+                counter = slides.length-1;
+                return;
+            }
+            Velocity(slides[counter], { "margin-left": -slideSize }, scrollTime);
+            counter++;
         }
+        function scrollLeft() {
+            var slideSize = slider.querySelectorAll(slide)[0].offsetWidth;
+            var slideWidth = "-"+slideSize+"px";
+            if (counter === 0) {
+                var lastSlide = slider.lastElementChild;
+                var firstSlide = slider.firstElementChild;
+                var firstEl = slides.pop();
+                slides.unshift(firstEl);
+                slider.insertBefore(lastSlide, firstSlide);
+                lastSlide.style.marginLeft = slideWidth;
+                counter = 0;
+                Velocity(lastSlide, {"margin-left": 0}, scrollTime);
+                return;
+            }
+            Velocity(slides[counter-1], { "margin-left": 0 }, scrollTime);
+            counter--;
+        }
+        lt.addEventListener('click', scrollRight);
+        //gt.addEventListener('click', scrollLeft);
 
-
-    // disableScroll();
-    // preventDefaultForScrollKeys();
+    }
 })();
