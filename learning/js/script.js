@@ -77,7 +77,7 @@
                 planetTwo.style.left = plLeft - 0.9*perc + '%';
                 planetTwo.style.top = plTop - 0.9*perc + -10 + '%';
                 }
-                if (scrolled > saleCood && scrolled < scrolled + saleCood) {
+                if (scrolled > saleCood- (ourSale.offsetHeight*0.9) && scrolled < scrolled + saleCood) {
                 // var firsOp = [1.6, 2.1, 2.4];
                 // var perc = scrolled*130/wrapper.offsetHeight-50;
                 // for (var i = 0; i < firsOp.length; i++) {
