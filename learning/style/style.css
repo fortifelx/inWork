@@ -367,6 +367,15 @@ article {
     top: 27%;
     height: 7%;
 }
+.l_slider_arrow {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    right: 100%;
+    top: 27%;
+    height: 7%;
+    transform: rotate(180deg);
+}
 .shuttle {
     width: 50%;
     position: absolute;
@@ -383,10 +392,12 @@ article {
 .result_slide h3 {
     text-transform: none;
     width: 45%;
+    margin-left: 2%;
 }
 .result_slide p {
     width: 45%;
     margin-top: 3%;
+    margin-left: 2%;
 }
 .result_slide {
     cursor: pointer;

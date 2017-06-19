@@ -84,8 +84,8 @@
     }
 )();
 ( function(){
-        doSlider('.result_slider_viewer', '.result_slide', 600, '.r_slider_arrow');
-    function doSlider(sliderName, slide, scrollTime, leftArrow ) {
+        doSlider('.result_slider_viewer', '.result_slide', 600, '.r_slider_arrow', '.l_slider_arrow');
+    function doSlider(sliderName, slide, scrollTime, leftArrow, rightArrow) {
         slider = document.querySelector(sliderName);
         var slids = slider.querySelectorAll(slide);
         var slides = [];
@@ -93,7 +93,7 @@
             slides.push(slids[i]);
         };
         var lt = document.querySelector(leftArrow);
-        // var gt = document.querySelector(rightArrow);
+        var gt = document.querySelector(rightArrow);
         var counter = 0;
         function watchDog() {
             function backToNull() {
@@ -112,10 +112,10 @@
             if (counter === slides.length-1) {
                 var lastSlide = slider.lastElementChild;
                 var firstSlide = slider.firstElementChild;
-                var firstEl = slides.shift();
-                slides.push(firstEl);
-                slider.insertBefore(firstSlide, null);
-                firstSlide.style.marginLeft = 0;
+                // var firstEl = slides.shift();
+                // slides.push(firstEl);
+                // slider.insertBefore(firstSlide, null);
+                firstSlide.style.left = 0;
                 Velocity(lastSlide, { "margin-left": -slideSize }, scrollTime);
                 counter = slides.length-1;
                 return;
@@ -126,23 +126,25 @@
         function scrollLeft() {
             var slideSize = slider.querySelectorAll(slide)[0].offsetWidth;
             var slideWidth = "-"+slideSize+"px";
-            if (counter === 0) {
+            var supSlideWidth = "-"+2*slideSize+"px";
+            if (counter === 1) {
                 var lastSlide = slider.lastElementChild;
                 var firstSlide = slider.firstElementChild;
                 var firstEl = slides.pop();
                 slides.unshift(firstEl);
-                slider.insertBefore(lastSlide, firstSlide);
-                lastSlide.style.marginLeft = slideWidth;
-                counter = 0;
-                Velocity(lastSlide, {"margin-left": 0}, scrollTime);
+                slider.insertBefore(firstEl, firstSlide);
+                firstEl.style.marginLeft = slideWidth;
+                counter = 1;
+                console.log('first6');
+                Velocity(firstEl, {"margin-left": slideWidth+ 'px'}, scrollTime);
                 return;
             }
-            Velocity(slides[counter-1], { "margin-left": 0 }, scrollTime);
+            Velocity(slides[counter-1], { "margin-left": -slideWidth }, scrollTime);
             counter--;
         }
         scrollRight();
         lt.addEventListener('click', scrollRight);
-        //gt.addEventListener('click', scrollLeft);
+        gt.addEventListener('click', scrollLeft);
 
     }
 })();
