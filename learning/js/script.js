@@ -6,12 +6,11 @@
         var astronaut = document.querySelector('.astronaut');
         var topAstro = astronaut.offsetTop;
         var planetOne = document.querySelector('.create_site img');
+        var planetTwo = document.querySelector('.our_case img');
         var createSite = document.querySelector('.create_site');
+        var ourCase = document.querySelector('.our_case');
         var cood;
-        function getCoords(elem) { // кроме IE8-
-            var box = elem.getBoundingClientRect();
-                cood = box.top + pageYOffset;
-        }
+        var caseCood;
         window.onscroll = function() {
                 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
                 // var pr = document.querySelector('.start');
@@ -20,11 +19,12 @@
             // var h3 = st[0].querySelector('h3');
             // h3.style.paddingTop = '8%';
             // p.style.marginTop = '10%';
-            function getCoords(elem) { // кроме IE8-
+            function getCoords(elem) {
                 var box = elem.getBoundingClientRect();
-                cood = box.top + pageYOffset;
+                return box.top + pageYOffset;
             }
-            getCoords(createSite);
+            cood = getCoords(createSite);
+            caseCood = getCoords(ourCase);
 
                 if(scrolled > h) {
                         tr.style.display = 'none';
@@ -63,6 +63,14 @@
                         planetOne.style.top = plTop - 1.1*perc + -10 + '%';
 
                 }
+                if (scrolled > caseCood && scrolled < scrolled + caseCood) {
+                var plTop = 100;
+                var plLeft = 100;
+                var perc = start.offsetHeight * scrolled / 100000 - 115;
+                planetTwo.style.left = plLeft - 1.1*perc + '%';
+                planetTwo.style.top = plTop - 1.1*perc + -10 + '%';
+
+            }
        }
 
     }

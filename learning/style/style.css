@@ -328,8 +328,8 @@ article {
 .our_case img{
     width: 25%;
     position: absolute;
-    right: -10%;
-    bottom:-5%;
+    left: 100%;
+    top:100%;
 }
 .our_case h3 {
     margin-top: 10%;
