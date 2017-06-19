@@ -19,12 +19,6 @@
         if(status > 10) tr.style.display = 'none';
         window.onscroll = function() {
                 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-                // var pr = document.querySelector('.start');
-            // var st = pr.querySelectorAll('.start_wrapper');
-            // var p = st[0].querySelector('p');
-            // var h3 = st[0].querySelector('h3');
-            // h3.style.paddingTop = '8%';
-            // p.style.marginTop = '10%';
             function getCoords(elem) {
                 var box = elem.getBoundingClientRect();
                 return box.top + pageYOffset;
@@ -32,7 +26,6 @@
             cood = getCoords(createSite);
             caseCood = getCoords(ourCase);
             saleCood = getCoords(ourSale);
-
                 if(scrolled > h) {
                         tr.style.display = 'none';
                         var perc =   scrolled*100/wrapper.offsetHeight -5;  // start.offsetHeight * scrolled / 1000000;
@@ -41,33 +34,23 @@
                             astronaut.style.right = 6 * perc/2.5 - 25 + '%';
                         }
                         if (scrolled > cood - stopAstro ) {
-                            var perc =   scrolled*100/wrapper.offsetHeight -5;  // start.offsetHeight * scrolled / 100000;
+
                             astronaut.style.bottom = 'none';
                             var correction = scrolled - h - stopAstro;
                             astronaut.style.top = topAstro - 0.8*correction +  'px';
 
                         }
-                        // st[0].style.position = 'fixed';
-                        // st[0].style.zIndex = 0;
-                        // st[0].style.top = 0;
-                        // st[0].style.width = st[1].offsetWidth + 'px';
-                        // st[1].style.marginTop = st[0].offsetHeight + 'px';
                 }
                 if(scrolled < h) {
                     tr.style.display = 'block';
                     astronaut.style.right = '-25%';
-                    // st[0].style.position = 'relative';
-                    // st[0].style.zIndex = 0;
-                    // st[0].style.top = h;
-                    // st[0].style.width = st[1].offsetWidth + 'px';
-                    // st[1].style.marginTop = st[0].offsetHeight + 'px';
                 }
-                if (scrolled > cood && scrolled < scrolled + cood) {
+                if (scrolled > cood - (createSite.offsetHeight*0.7) && scrolled < scrolled + cood) {
                         var plTop = 100;
                         var plLeft = 100;
-                        var perc = start.offsetHeight * scrolled / 100000 - 65;
-                        planetOne.style.left = plLeft - 1.1*perc + '%';
-                        planetOne.style.top = plTop - 1.1*perc + -10 + '%';
+                        var perc = scrolled*100/wrapper.offsetHeight - 15;
+                        planetOne.style.left = plLeft - 1.8*perc + '%';
+                        planetOne.style.top = plTop - 1.9*perc + -10 + '%';
 
                 }
                 if (scrolled > caseCood && scrolled < scrolled + caseCood) {
@@ -78,11 +61,6 @@
                 planetTwo.style.top = plTop - 0.9*perc + -10 + '%';
                 }
                 if (scrolled > saleCood- (ourSale.offsetHeight*0.9) && scrolled < scrolled + saleCood) {
-                // var firsOp = [1.6, 2.1, 2.4];
-                // var perc = scrolled*130/wrapper.offsetHeight-50;
-                // for (var i = 0; i < firsOp.length; i++) {
-                //         astronauts[i].style.opacity = perc/100*firsOp[i] + 0.2;
-                // }
                     function showAstroOne() {
                         Velocity( astronauts[2], { opacity: '1'}, 400);
                     }
@@ -95,8 +73,20 @@
                     setTimeout(showAstroOne, 100);
                     setTimeout(showAstroTwo, 500);
                     setTimeout(showAstroThird, 900);
-
-
+                }
+            if (scrolled < saleCood -(ourSale.offsetHeight*0.87) && scrolled < scrolled + saleCood) {
+                function showAstrOne() {
+                    Velocity( astronauts[2], { opacity: '0'}, 0);
+                }
+                function showAstrTwo() {
+                    Velocity( astronauts[1], { opacity: '0'}, 0);
+                }
+                function showAstrThird() {
+                    Velocity( astronauts[0], { opacity: '0'}, 0);
+                }
+                showAstrOne();
+                showAstrTwo();
+                showAstrThird();
             }
        }
 
@@ -120,6 +110,7 @@
                     slides[i].style.marginLeft = 0;
                 }
                 counter = 0;
+                scrollRight();
             }
             window.addEventListener('resize' , backToNull);
         }
