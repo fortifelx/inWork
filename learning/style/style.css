@@ -153,7 +153,7 @@ article {
     width: 100%;
     background-color: white;
     position: relative;
-    height: 115vh;
+    /*height: 115vh;*/
 }
 .start article {
     overflow: hidden;
@@ -165,28 +165,38 @@ article {
     height: 100%;
     top:0;
     left: -10%;
-    -webkit-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);
-    -moz-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);
-    box-shadow: inset 0px 0px 52px 45px rgba(255,255,255, 1);
+    /*-webkit-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);*/
+    /*-moz-box-shadow: inset 0px 0px 52px 45px rgba(255,255,255,1);*/
+    /*box-shadow: inset 0px 0px 52px 45px rgba(255,255,255, 1);*/
 }
 .astronaut {
-    position: absolute;
-    height: 35%;
-    bottom: 7%;
-    left: 60%;
+    position: fixed;
+    z-index: 1;
+    width:25%;
+    bottom: 10%;
+    right: -25%;
+}
+.start article {
+    overflow: visible;
 }
 .start_wrapper {
+    position: relative;
     padding-bottom: 35%;
+    background-color: white;
 }
 .start h3 {
-    padding-top:  12%;
+    padding-top:  10%;
+    position: relative;
+    z-index: 2;
 }
 .start h4 {
     text-transform: uppercase;
     margin-top: 3%;
 }
 .start p {
-    margin-top: 20%;
+    margin: 20% auto 0 auto;
+    position: relative;
+    z-index: 2;
 }
 .start p + h3{
     margin-top: 3%;

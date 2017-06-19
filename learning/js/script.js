@@ -1,12 +1,45 @@
 (function () {
         var main = document.querySelector('.main');
         var tr = document.querySelector('.main_wrapper');
+        var start = document.querySelector('.start');
         var h = main.offsetHeight;
         window.onscroll = function() {
                 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-                if(scrolled > h) tr.style.display = 'none';
-                if(scrolled < h) tr.style.display = 'block';
-        }
+                // var pr = document.querySelector('.start');
+            // var st = pr.querySelectorAll('.start_wrapper');
+            // var p = st[0].querySelector('p');
+            // var h3 = st[0].querySelector('h3');
+            // h3.style.paddingTop = '8%';
+            // p.style.marginTop = '10%';
+                   var astronaut = document.querySelector('.astronaut');
+                if(scrolled > h) {
+                        tr.style.display = 'none';
+                        var perc = start.offsetHeight * scrolled / 1000000;
+                        var stopAstro = start.offsetHeight - (start.offsetHeight * 0.55);
+                        if (scrolled < h + stopAstro) {
+                            astronaut.style.right = 6 * perc - 25 + '%';
+                        }
+                        if (scrolled > h + stopAstro) {
+                            var perc = start.offsetHeight * scrolled / 100000;
+
+                            //astronaut.style.bottom = perc -25 + '%';
+                        }
+                        // st[0].style.position = 'fixed';
+                        // st[0].style.zIndex = 0;
+                        // st[0].style.top = 0;
+                        // st[0].style.width = st[1].offsetWidth + 'px';
+                        // st[1].style.marginTop = st[0].offsetHeight + 'px';
+                }
+                if(scrolled < h) {
+                    tr.style.display = 'block';
+                    astronaut.style.right = '-25%';
+                    // st[0].style.position = 'relative';
+                    // st[0].style.zIndex = 0;
+                    // st[0].style.top = h;
+                    // st[0].style.width = st[1].offsetWidth + 'px';
+                    // st[1].style.marginTop = st[0].offsetHeight + 'px';
+                }
+       }
 
     }
 )();
@@ -51,7 +84,7 @@
             if(scrolled > startPos) {
                     var viewer = document.querySelector('.start');
                     var tr = viewer.querySelector('.start_wrapper');
-                    var length;
+                    var length = scrolled - startPos;
             };
         }
 
