@@ -84,17 +84,17 @@
                 //         astronauts[i].style.opacity = perc/100*firsOp[i] + 0.2;
                 // }
                     function showAstroOne() {
-                        Velocity( astronauts[2], { opacity: '1'}, 8000);
+                        Velocity( astronauts[2], { opacity: '1'}, 600);
                     }
                     function showAstroTwo() {
-                        Velocity( astronauts[1], { opacity: '1'}, 8000);
+                        Velocity( astronauts[1], { opacity: '1'}, 600);
                     }
                     function showAstroThird() {
-                        Velocity( astronauts[0], { opacity: '1'}, 8000);
+                        Velocity( astronauts[0], { opacity: '1'}, 600);
                     }
                     setTimeout(showAstroOne, 3000);
-                    setTimeout(showAstroTwo, 6000);
-                    setTimeout(showAstroThird, 12000);
+                    setTimeout(showAstroTwo, 3600);
+                    setTimeout(showAstroThird, 4200);
 
 
             }
