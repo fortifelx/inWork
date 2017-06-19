@@ -96,6 +96,10 @@ var warp = 0;
 var centerX, centerY;
 var correction = 2;    //MINE!
 if (window.innerWidth < 1280) correction = 4;
+var speedcorrection = 1;
+var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+var main = document.querySelector('.main').offsetHeight;
+if( scrolled > main) speedcorrection = 0.05;
 var stars = [], star;
 var i;
 
@@ -130,7 +134,11 @@ function initializeStars(){
 function moveStars(){
     for(i = 0; i < numStars; i++){
         star = stars[i];
-        star.z--;  // - SPEED
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        var main = document.querySelector('.main').offsetHeight;
+        if( scrolled > main) speedcorrection = 0.05;
+        if( scrolled < main) speedcorrection = 1;
+        star.z = star.z - speedcorrection;  // - SPEED
 
         if(star.z <= 0){
             star.z = Math.random() * canvas.width;

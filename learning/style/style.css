@@ -344,6 +344,7 @@ article {
 }
 
 .our_result {
+    position: relative;
     background-color: white;
 }
 .our_result article {
