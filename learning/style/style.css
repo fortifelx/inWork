@@ -520,6 +520,7 @@ article {
     position: relative;
     background-color: white;
     overflow: hidden;
+    padding-bottom: 10rem;
 }
 .about_us article {
     padding-bottom: 20%;
