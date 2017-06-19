@@ -424,21 +424,20 @@ article {
     position: relative;
     padding-bottom: 30%;
 }
-.our_sale img:nth-child(1){
+.our_sale img {
     height: 60%;
     position: absolute;
+    opacity: 0;
+}
+.our_sale img:nth-child(1){
     right: -30%;
     bottom:0;
 }
 .our_sale img:nth-child(2){
-    height: 60%;
-    position: absolute;
     right: -5%;
     bottom:-16%;
 }
 .our_sale img:nth-child(3){
-    height: 60%;
-    position: absolute;
     right: 22%;
     bottom:-29%;
 }

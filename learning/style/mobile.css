@@ -32,6 +32,9 @@
     .main img {
         right: 0;
     }
+    .astronaut {
+        display: none;
+    }
 }
 @media handheld and (max-width: 480px), screen and (max-width: 480px) {
     .left_pagination li:nth-child(odd) {

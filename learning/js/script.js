@@ -9,8 +9,12 @@
         var planetTwo = document.querySelector('.our_case img');
         var createSite = document.querySelector('.create_site');
         var ourCase = document.querySelector('.our_case');
+        var ourSale = document.querySelector('.our_sale');
+        var astronauts = document.querySelectorAll('.our_sale img');
+        var wrapper = document.querySelector('.wrapper');
         var cood;
         var caseCood;
+        var saleCood;
         window.onscroll = function() {
                 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
                 // var pr = document.querySelector('.start');
@@ -25,16 +29,17 @@
             }
             cood = getCoords(createSite);
             caseCood = getCoords(ourCase);
+            saleCood = getCoords(ourSale);
 
                 if(scrolled > h) {
                         tr.style.display = 'none';
-                        var perc = start.offsetHeight * scrolled / 1000000;
+                        var perc =   scrolled*100/wrapper.offsetHeight -5;  // start.offsetHeight * scrolled / 1000000;
                         var stopAstro = start.offsetHeight - (start.offsetHeight * 0.50);
                         if (scrolled < h + stopAstro) {
-                            astronaut.style.right = 6 * perc - 25 + '%';
+                            astronaut.style.right = 6 * perc/2.5 - 25 + '%';
                         }
                         if (scrolled > h + stopAstro) {
-                            var perc = start.offsetHeight * scrolled / 100000;
+                            var perc =   scrolled*100/wrapper.offsetHeight -5;  // start.offsetHeight * scrolled / 100000;
                             astronaut.style.bottom = 'none';
                             var correction = scrolled - h - stopAstro;
                             astronaut.style.top = topAstro - 0.8*correction +  'px';
@@ -69,6 +74,14 @@
                 var perc = start.offsetHeight * scrolled / 100000 - 115;
                 planetTwo.style.left = plLeft - 1.1*perc + '%';
                 planetTwo.style.top = plTop - 1.1*perc + -10 + '%';
+                }
+                if (scrolled > saleCood*0.65 && scrolled < scrolled + saleCood) {
+                var firsOp = [1.6, 2.1, 2.4];
+                var perc = scrolled*130/wrapper.offsetHeight-50;
+                for (var i = 0; i < firsOp.length; i++) {
+                        astronauts[i].style.opacity = perc/100*firsOp[i] + 0.2;
+                }
+
 
             }
        }
