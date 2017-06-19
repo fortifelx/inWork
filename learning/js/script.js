@@ -15,6 +15,8 @@
         var cood;
         var caseCood;
         var saleCood;
+        var status = window.pageYOffset || document.documentElement.scrollTop;
+        if(status > 10) tr.style.display = 'none';
         window.onscroll = function() {
                 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
                 // var pr = document.querySelector('.start');
@@ -75,12 +77,24 @@
                 planetTwo.style.left = plLeft - 0.9*perc + '%';
                 planetTwo.style.top = plTop - 0.9*perc + -10 + '%';
                 }
-                if (scrolled > saleCood*0.65 && scrolled < scrolled + saleCood) {
-                var firsOp = [1.6, 2.1, 2.4];
-                var perc = scrolled*130/wrapper.offsetHeight-50;
-                for (var i = 0; i < firsOp.length; i++) {
-                        astronauts[i].style.opacity = perc/100*firsOp[i] + 0.2;
-                }
+                if (scrolled > saleCood && scrolled < scrolled + saleCood) {
+                // var firsOp = [1.6, 2.1, 2.4];
+                // var perc = scrolled*130/wrapper.offsetHeight-50;
+                // for (var i = 0; i < firsOp.length; i++) {
+                //         astronauts[i].style.opacity = perc/100*firsOp[i] + 0.2;
+                // }
+                    function showAstroOne() {
+                        Velocity( astronauts[2], { opacity: '1'}, 8000);
+                    }
+                    function showAstroTwo() {
+                        Velocity( astronauts[1], { opacity: '1'}, 8000);
+                    }
+                    function showAstroThird() {
+                        Velocity( astronauts[0], { opacity: '1'}, 8000);
+                    }
+                    setTimeout(showAstroOne, 3000);
+                    setTimeout(showAstroTwo, 6000);
+                    setTimeout(showAstroThird, 12000);
 
 
             }
