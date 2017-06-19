@@ -3,6 +3,9 @@
         var tr = document.querySelector('.main_wrapper');
         var start = document.querySelector('.start');
         var h = main.offsetHeight;
+        var astronaut = document.querySelector('.astronaut');
+        var topAstro = astronaut.offsetTop;
+
         window.onscroll = function() {
                 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
                 // var pr = document.querySelector('.start');
@@ -11,18 +14,21 @@
             // var h3 = st[0].querySelector('h3');
             // h3.style.paddingTop = '8%';
             // p.style.marginTop = '10%';
-                   var astronaut = document.querySelector('.astronaut');
+
                 if(scrolled > h) {
                         tr.style.display = 'none';
                         var perc = start.offsetHeight * scrolled / 1000000;
-                        var stopAstro = start.offsetHeight - (start.offsetHeight * 0.55);
+                        var stopAstro = start.offsetHeight - (start.offsetHeight * 0.50);
                         if (scrolled < h + stopAstro) {
                             astronaut.style.right = 6 * perc - 25 + '%';
                         }
                         if (scrolled > h + stopAstro) {
                             var perc = start.offsetHeight * scrolled / 100000;
+                            astronaut.style.bottom = 'none';
+                            var correction = scrolled - h - stopAstro;
+                            console.log(correction);
+                            astronaut.style.top = topAstro - 0.8*correction +  'px';
 
-                            //astronaut.style.bottom = perc -25 + '%';
                         }
                         // st[0].style.position = 'fixed';
                         // st[0].style.zIndex = 0;
