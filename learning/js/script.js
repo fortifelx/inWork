@@ -92,9 +92,9 @@
                     function showAstroThird() {
                         Velocity( astronauts[0], { opacity: '1'}, 600);
                     }
-                    setTimeout(showAstroOne, 1500);
-                    setTimeout(showAstroTwo, 2100);
-                    setTimeout(showAstroThird, 2700);
+                    setTimeout(showAstroOne, 600);
+                    setTimeout(showAstroTwo, 1200);
+                    setTimeout(showAstroThird, 1800);
 
 
             }
