@@ -519,27 +519,35 @@ article {
 .about_us {
     position: relative;
     background-color: white;
+    overflow: hidden;
 }
 .about_us article {
     padding-bottom: 20%;
 }
 .author {
-    margin-top: 8%;
-    width: 37%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 8rem;
+    width: 24rem;
+    float: left;
 }
 .author img {
+    display: block;
+    cursor: pointer;
     width: 100%;
+    transition: opacity 1.23s;
 }
-.author p {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-    margin-top: 1rem;
+.author img:nth-child(2) {
+    position: absolute;
+    top: -1.4%;
+    right: -2.9%;
+    opacity: 0;
 }
-.author a {
-    text-decoration: underline;
+.author img:nth-child(2):hover {
+    opacity: 1;
 }
 .soc_button {
+    display: block;
     width: 100%;
     height: 4rem;
 }
@@ -550,12 +558,49 @@ article {
     color: #c63232;
     font-size: 1.5rem;
     font-weight: 700;
-    width: 238px;
+    width: 20rem;
     line-height: 3.5rem;
     border-radius: 4px;
     border: 2px solid #c63232;
     margin: 3% 3% 3% 0;
 }
-.soc_button div:hover {
+.soc_button a:hover {
     color: #ffffff;
+    background-color: #c63232;
+}
+.soc_button + p {
+    float: left;
+    font-size: 2rem;
+    width: 100%;
+}
+.author + p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin-left: 28rem;
+    margin-top: 15.5rem;
+}
+.about_author {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    margin-left: 28rem;
+}
+.about_author + a {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    color: #c63232;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    margin-left: 4rem;
+}
+.about_author + a:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c63232;
 }

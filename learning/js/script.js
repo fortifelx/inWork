@@ -75,18 +75,9 @@
                     setTimeout(showAstroThird, 900);
                 }
             if (scrolled < saleCood -(ourSale.offsetHeight*0.87) && scrolled < scrolled + saleCood) {
-                function showAstrOne() {
-                    Velocity( astronauts[2], { opacity: '0'}, 0);
+                for (var i = 0; i < astronauts.length; i++) {
+                        astronauts[i].style.opacity = 0;
                 }
-                function showAstrTwo() {
-                    Velocity( astronauts[1], { opacity: '0'}, 0);
-                }
-                function showAstrThird() {
-                    Velocity( astronauts[0], { opacity: '0'}, 0);
-                }
-                showAstrOne();
-                showAstrTwo();
-                showAstrThird();
             }
        }
 
