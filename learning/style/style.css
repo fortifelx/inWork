@@ -261,24 +261,26 @@ article {
     padding-top: 8%;
     width: 68%;
 }
-.one_site. .two_site {
+.one_site, .two_site {
     position: relative;
     width: 100%;
 }
 .pseudo_site {
     position: absolute;
     padding-top: 12%;
-    width: inherit;
+    width: 100%;
     text-align: center;
     background-color: #c63232;
+    top: 4rem;
 }
 .pseudo_site:nth-child(2) {
     position: static;
+    width: 100%;
 }
 .about_site article {
     padding-bottom: 9%;
 }
-.pseudo_site_menu + .pseudo_site {
+.two_site .pseudo_site {
     padding-top: 7%;
 }
 .pseudo_site p {
@@ -307,6 +309,7 @@ article {
 }
 .about_site li {
     display: inline-block;
+    cursor: pointer;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
@@ -316,6 +319,7 @@ article {
     line-height: 4rem;
     background-color: #2d2c2c;
 }
+
 .pseudo_site_menu {
     text-align: left !important;
 }

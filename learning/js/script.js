@@ -29,13 +29,13 @@
                 if(scrolled > h) {
                         tr.style.display = 'none';
                         var perc =   scrolled*100/wrapper.offsetHeight -5;  // start.offsetHeight * scrolled / 1000000;
-                        var stopAstro = start.offsetHeight/2;
+                        var stopAstro = start.offsetHeight/2.1;
                         if (scrolled < cood && scrolled < cood - stopAstro) {
                             astronaut.style.right = 6 * perc/2.5 - 25 + '%';
                         }
                         if (scrolled > cood - stopAstro) {
                              var correction = scrolled - h - stopAstro;
-                            astronaut.style.top = topAstro - correction +  'px';
+                            astronaut.style.top = topAstro - 1.1*correction +  'px';
                         }
                 }
                 if(scrolled < h) {
