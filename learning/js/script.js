@@ -159,33 +159,31 @@
     }
 })();
 ( function () {
-    function makeInfo() {
-        if( infoHeaders === null || work === true) {
-            return;
-        };
-        work = true;
-
-        var heads = document.querySelectorAll('.card_about_header');
-        var texts = document.querySelectorAll('.card_about_text');
+    function makeInfo(headers, blocks) {
+        var heads = document.querySelectorAll(headers);
+        var texts = document.querySelectorAll(blocks);
 
         function showInfo(ev) {
             var tr = ev.target;
 
-            for(var i = 0; i < heads.length - 1; i++) {
+            for(var i = 0; i < heads.length; i++) {
                 texts[i].style.display = 'none';
-                heads[i].style.borderBottom = '1px solid #7f7f7f';
-                heads[i].style.color = '#7f7f7f';
+                texts[i].style.position = 'absolute';
+                heads[i].style.background = 'rgb(45,44,44)';
                 if (heads[i] === tr) {
-                    heads[i].style.borderBottom = 'none';
-                    heads[i].style.color = '#559449';
+                    console.log(heads[i]);
+                    heads[i].style.background = 'rgb(198,50,50)';
                     texts[i].style.display = 'block';
+                    texts[i].style.position = 'static';
                 }
             }
         }
 
-        for (var i = 0; i < heads.length - 1; i++) {
+        for (var i = 0; i < heads.length; i++) {
             heads[i].addEventListener('click', showInfo, false);
         }
-    }
+    };
+    makeInfo('.one_site li', '.one_site .pseudo_site');
+    makeInfo('.two_site li', '.two_site .pseudo_site');
 
 })();
