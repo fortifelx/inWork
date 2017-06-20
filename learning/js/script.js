@@ -30,15 +30,12 @@
                         tr.style.display = 'none';
                         var perc =   scrolled*100/wrapper.offsetHeight -5;  // start.offsetHeight * scrolled / 1000000;
                         var stopAstro = start.offsetHeight/2;
-                        if (scrolled < cood) {
+                        if (scrolled < cood && scrolled < cood - stopAstro) {
                             astronaut.style.right = 6 * perc/2.5 - 25 + '%';
                         }
-                        if (scrolled > cood - stopAstro ) {
-
-                            astronaut.style.bottom = 'none';
-                            var correction = scrolled - h - stopAstro;
-                            astronaut.style.top = topAstro - 0.8*correction +  'px';
-
+                        if (scrolled > cood - stopAstro) {
+                             var correction = scrolled - h - stopAstro;
+                            astronaut.style.top = topAstro - correction +  'px';
                         }
                 }
                 if(scrolled < h) {
@@ -145,69 +142,6 @@
         gt.addEventListener('click', scrollRight);
     }
     makeSlider();
-    //     doSlider('.result_slider_viewer', '.result_slide', 600, '.r_slider_arrow', '.l_slider_arrow');
-    // function doSlider(sliderName, slide, scrollTime, leftArrow, rightArrow) {
-    //     slider = document.querySelector(sliderName);
-    //     var slids = slider.querySelectorAll(slide);
-    //     var slides = [];
-    //     for(var i = 0; i < slids.length; i++) {
-    //         slides.push(slids[i]);
-    //     };
-    //     var lt = document.querySelector(leftArrow);
-    //     var gt = document.querySelector(rightArrow);
-    //     var counter = 0;
-    //     function watchDog() {
-    //         function backToNull() {
-    //             for( var i = 0;i <slides.length; i++) {
-    //                 slides[i].style.marginLeft = 0;
-    //             }
-    //             counter = 0;
-    //             scrollRight();
-    //         }
-    //         window.addEventListener('resize' , backToNull);
-    //     }
-    //     watchDog();
-    //
-    //     function scrollRight() {
-    //         var slideSize = slider.querySelectorAll(slide)[counter].offsetWidth;
-    //         if (counter === slides.length-1) {
-    //             var lastSlide = slider.lastElementChild;
-    //             var firstSlide = slider.firstElementChild;
-    //             var firstEl = slides.shift();
-    //             slides.push(firstEl);
-    //             slider.insertBefore(firstSlide, null);
-    //             firstSlide.style.left = 0;
-    //             Velocity(lastSlide, { "margin-left": -slideSize }, scrollTime);
-    //             counter = slides.length-1;
-    //             return;
-    //         }
-    //         Velocity(slides[counter], { "margin-left": -slideSize }, scrollTime);
-    //         counter++;
-    //     }
-    //     function scrollLeft() {
-    //         var slideSize = slider.querySelectorAll(slide)[0].offsetWidth;
-    //         var slideWidth = "-"+slideSize+"px";
-    //         var supSlideWidth = "-"+2*slideSize+"px";
-    //         if (counter === 1) {
-    //             var lastSlide = slider.lastElementChild;
-    //             var firstSlide = slider.firstElementChild;
-    //             var firstEl = slides.pop();
-    //             slides.unshift(firstEl);
-    //             slider.insertBefore(firstEl, firstSlide);
-    //             firstEl.style.marginLeft = slideWidth;
-    //             counter = 1;
-    //             console.log('first6');
-    //             Velocity(firstEl, {"margin-left": slideWidth+ 'px'}, scrollTime);
-    //             return;
-    //         }
-    //         Velocity(slides[counter-1], { "margin-left": -slideWidth }, scrollTime);
-    //         counter--;
-    //     }
-    //     scrollRight();
-    //     lt.addEventListener('click', scrollRight);
-    //     gt.addEventListener('click', scrollLeft);
-    //
-    // }
 })();
 ( function() {
     var site = document.querySelector('body');
