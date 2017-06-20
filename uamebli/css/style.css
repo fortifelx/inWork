@@ -1,61 +1,144 @@
 @font-face {
-    font-family: Lato;
-    src: url(../fonts/Lato-Regular.ttf);
+    font-family: Proba;
+    src: url(../fonts/Proba-Pro-Regular.otf);
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: Lato;
-    src: url(../fonts/Lato-Bold.ttf);
+    font-family: Proba;
+    src: url(../fonts/Proba-Pro-SemiBold.otf);
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
-    font-family: Lato;
-    src: url(../fonts/Lato-Black.ttf);
+    font-family: Proba;
+    src: url(../fonts/Proba-Pro-Bold.otf);
     font-weight: 900;
     font-style: normal;
 }
 @font-face {
-    font-family: Lato;
-    src: url(../fonts/Lato-Italic.ttf);
+    font-family: Proba;
+    src: url(../fonts/Proba-Pro-Italic.otf);
     font-weight: 400;
     font-style: italic;
 }
 @font-face {
-    font-family: Lato;
-    src: url(../fonts/Lato-BoldItalic.ttf);
+    font-family: Proba;
+    src: url(../fonts/Proba-Pro-SemiBold-Italic.otf);
     font-weight: 700;
     font-style: italic;
 }
 @font-face {
-    font-family: Lato;
-    src: url(../fonts/Lato-BlackItalic.ttf);
+    font-family: Proba;
+    src: url(../fonts/Proba-Pro-Bold-Italic.otf);
     font-weight: 900;
     font-style: italic;
 }
 html {
-    font-size:10px;
-    font-family: 'Lato';
+    font-size: 10px;
+    font-family: 'Proba', serif;
 }
-
-h1 {
-    font-size: 7.2rem;
-    font-weight: 900;
-    line-height: 7.2rem;
+p, article, li, div, aside, section, a, h1, h2, h3, h4, h5, h6 {
+    color: #4a4644;
+}
+h3 {
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 5rem;
 }
 h5 {
-    font-size: 4.8rem;
-    font-weight: 900;
-    line-height: 7.2rem;
+    font-size: 3.8rem;
+    font-weight: 400;
+    line-height: 5rem;
 }
 h6 {
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 4.2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.6rem;
 }
-p {
+p, li, a {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.button {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+a {
+    text-decoration: none;
+}
+b {
+    font-weight: 700;
+}
+body {
+    background-color: #f4f4f4;
+}
+.wrapper {
+    width: 128rem;
+    padding: 3.4rem 5rem;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+aside {
+    float: left;
+    width: 13rem;
+    margin: 8rem 0 0 6rem;
+}
+article {
+    width: 98rem;
+    padding: 0 10rem;
+}
+section.header {
+    width: 98rem;
+    float: right;
+    height: 3.6rem;
+    text-align: right;
+}
 
+div.logo {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+
+
+
+
+section.header a {
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 3.6rem;
+    margin-right: 3.2rem;
+}
+section.header .number {
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 3.6rem;
+    margin-right: 3.8rem;
+}
+.cart {
+    display: inline-block;
+    position: relative;
+    width: 3.3rem;
+    height: 2.6rem;
+    text-align: center;
+}
+.cart img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.cart .goodsIn {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 3.6rem;
+    font-weight: 700;
+    color: white;
 }
 
 
