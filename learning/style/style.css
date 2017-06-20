@@ -355,6 +355,10 @@ article {
     position: relative;
     background-color: white;
 }
+.result_slider_wrapper {
+    width: 100%;
+    overflow: hidden;
+}
 .our_result article {
     position: relative;
     padding-bottom: 15%;
@@ -383,11 +387,11 @@ article {
     bottom: 12%;
 }
 .result_slider_viewer {
-    position: relative;
     padding-top: 10%;
-    width: 100%;
+    width: 10000%;
     height: 45rem;
     overflow: hidden;
+    font-size: 0;
 }
 .result_slide h3 {
     text-transform: none;
@@ -400,12 +404,11 @@ article {
     margin-left: 2%;
 }
 .result_slide {
+    overflow: hidden;
+    display: inline-block;
     cursor: pointer;
-    position: absolute;
-    width: 100%;
-    height: inherit;
-    display: block;
-    left: 100%;
+    width: 1%;
+    height: 45rem;
     background-color: white;
 }
 .result_slide img {
