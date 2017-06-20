@@ -209,3 +209,18 @@
     //
     // }
 })();
+( function() {
+    var site = document.querySelector('body');
+   document.querySelector('.result').addEventListener('click', stopDefault, false);
+    function stopDefault(event) {
+        event.preventDefault();
+        var el = event.target;
+        var target = document.querySelector('.shuttle');
+        if(target) {Velocity( target, "scroll", {
+            container: site,
+            duration: 200
+        });
+        }
+
+    }
+})();

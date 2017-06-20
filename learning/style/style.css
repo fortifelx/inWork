@@ -349,6 +349,7 @@ article {
     content: url("../img/d_arrow_red.png");
     display: inline-block;
     margin-right: 1.5%;
+    width: 8%;
 }
 
 .our_result {
