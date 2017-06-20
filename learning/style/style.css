@@ -261,11 +261,19 @@ article {
     padding-top: 8%;
     width: 68%;
 }
-.pseudo_site {
-    padding-top: 12%;
+.one_site. .two_site {
+    position: relative;
     width: 100%;
+}
+.pseudo_site {
+    position: absolute;
+    padding-top: 12%;
+    width: inherit;
     text-align: center;
     background-color: #c63232;
+}
+.pseudo_site:nth-child(2) {
+    position: static;
 }
 .about_site article {
     padding-bottom: 9%;
@@ -423,7 +431,7 @@ article {
 .result_slide img:hover {
     -ms-filter: none;
     filter: none;
-    height: 95%;
+    height: 90%;
 }
 .shuttle + section {
     text-align: center;
@@ -597,15 +605,15 @@ article {
     font-size: 2rem;
     line-height: 2.5rem;
     font-weight: 700;
-    margin-left: 28rem;
-    margin-top: 15.5rem;
+    margin-left: 21rem;
+    margin-top: 16rem;
 }
 .about_author {
     font-size: 1.5rem;
     margin-top: 2rem;
     line-height: 2.2rem;
     font-weight: 700;
-    margin-left: 28rem;
+    margin-left: 21rem;
 }
 .about_author a {
     display: inline-block;

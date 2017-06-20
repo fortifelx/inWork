@@ -158,3 +158,34 @@
 
     }
 })();
+( function () {
+    function makeInfo() {
+        if( infoHeaders === null || work === true) {
+            return;
+        };
+        work = true;
+
+        var heads = document.querySelectorAll('.card_about_header');
+        var texts = document.querySelectorAll('.card_about_text');
+
+        function showInfo(ev) {
+            var tr = ev.target;
+
+            for(var i = 0; i < heads.length - 1; i++) {
+                texts[i].style.display = 'none';
+                heads[i].style.borderBottom = '1px solid #7f7f7f';
+                heads[i].style.color = '#7f7f7f';
+                if (heads[i] === tr) {
+                    heads[i].style.borderBottom = 'none';
+                    heads[i].style.color = '#559449';
+                    texts[i].style.display = 'block';
+                }
+            }
+        }
+
+        for (var i = 0; i < heads.length - 1; i++) {
+            heads[i].addEventListener('click', showInfo, false);
+        }
+    }
+
+})();
