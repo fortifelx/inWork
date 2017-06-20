@@ -121,7 +121,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunDashboard">
@@ -217,12 +217,12 @@
       <updated>1497939009152</updated>
       <workItem from="1497939010582" duration="5000" />
       <workItem from="1497939303202" duration="92000" />
-      <workItem from="1497939634211" duration="1981000" />
+      <workItem from="1497939634211" duration="2026000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2078000" />
+    <option name="totallyTimeSpent" value="2123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
