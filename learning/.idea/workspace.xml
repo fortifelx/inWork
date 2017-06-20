@@ -181,10 +181,10 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="108" column="46" lean-forward="false" selection-start-line="108" selection-start-column="46" selection-end-line="108" selection-end-column="46" />
+            <state relative-caret-position="582">
+              <caret line="138" column="44" lean-forward="false" selection-start-line="138" selection-start-column="44" selection-end-line="138" selection-end-column="44" />
               <folding>
-                <element signature="e#6195#6296#0" expanded="false" />
+                <element signature="e#6192#6293#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -402,12 +402,12 @@
       <workItem from="1497588997990" duration="9896000" />
       <workItem from="1497599878197" duration="16546000" />
       <workItem from="1497847833228" duration="50155000" />
-      <workItem from="1497928379727" duration="3001000" />
+      <workItem from="1497928379727" duration="3175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121938000" />
+    <option name="totallyTimeSpent" value="122112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -643,7 +643,7 @@
         <state relative-caret-position="2574">
           <caret line="117" column="34" lean-forward="false" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="34" />
           <folding>
-            <element signature="e#6195#6296#0" expanded="false" />
+            <element signature="e#6192#6293#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -803,7 +803,7 @@
         <state relative-caret-position="154">
           <caret line="7" column="58" lean-forward="false" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
           <folding>
-            <element signature="e#6195#6296#0" expanded="false" />
+            <element signature="e#6192#6293#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1968,10 +1968,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="108" column="46" lean-forward="false" selection-start-line="108" selection-start-column="46" selection-end-line="108" selection-end-column="46" />
+        <state relative-caret-position="582">
+          <caret line="138" column="44" lean-forward="false" selection-start-line="138" selection-start-column="44" selection-end-line="138" selection-end-column="44" />
           <folding>
-            <element signature="e#6195#6296#0" expanded="false" />
+            <element signature="e#6192#6293#0" expanded="false" />
           </folding>
         </state>
       </provider>

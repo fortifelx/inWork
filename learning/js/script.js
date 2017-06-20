@@ -117,7 +117,7 @@
             Velocity(slider, {'margin-left': status + step}, 600);
             counter--;
             status = status + step;
-            if(counter >= slides.length-1) {
+            if(counter <= correction) {
                 lt.style.display = 'none';
             }
         };
@@ -136,7 +136,7 @@
             Velocity(slider, {'margin-left': status - step}, 600);
             counter++;
             status = status - step;
-            if (counter >= slides.length-1) {
+            if (counter >= slides.length - 1) {
                 gt.style.display = 'none';
             }
         };
