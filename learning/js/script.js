@@ -55,7 +55,7 @@
                 var plLeft = 100;
                 var perc = start.offsetHeight * scrolled / 100000 - 115;
                 planetTwo.style.left = plLeft - 0.9*perc + '%';
-                planetTwo.style.top = plTop - 0.9*perc + -10 + '%';
+                planetTwo.style.top = plTop - 0.7*perc + -10 + '%';
                 }
                 if (scrolled > saleCood- (ourSale.offsetHeight*0.9) && scrolled < scrolled + saleCood) {
                     function showAstroOne() {
