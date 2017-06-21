@@ -93,7 +93,7 @@ article {
 }
 section.header {
     position: fixed;
-    width: 128rem;
+    width: 100%;
     float: right;
     height: 3.6rem;
     text-align: right;
@@ -397,7 +397,7 @@ section.header .number {
 }
 .discount_news {
     width: 78rem;
-    padding: 0 10rem 3rem 0;
+    padding: 0 10rem 3rem 10rem;
     float: right;
 }
 .discount_news h5 {
@@ -452,7 +452,7 @@ section.header .number {
 }
 .unique_item {
     width: 78rem;
-    padding: 0 10rem 11rem 0;
+    padding: 0 10rem 9rem 10rem;
     float: right;
 }
 .unique_item h5 {
@@ -507,4 +507,15 @@ section.header .number {
     border-bottom: 2px solid #999999;
     outline: none;
     margin-bottom: 2rem;
+}
+
+footer {
+    width: 100%;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);
+    background-color: #d3c4bd;
+}
+.footer {
+    width: 78rem;
+    padding: 0 10rem 0 10rem;
+    float: right;
 }
