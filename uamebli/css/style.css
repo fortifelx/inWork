@@ -92,10 +92,15 @@ article {
     float: right;
 }
 section.header {
-    width: 98rem;
+    position: fixed;
+    width: 128rem;
     float: right;
     height: 3.6rem;
     text-align: right;
+    background-color: #f8f8f8;
+    z-index: 2;
+    top:0;
+    padding-top: 3.4rem;
 }
 
 div.logo {
@@ -126,7 +131,7 @@ aside li a {
     /*position: fixed;  !*        ATTENTION *!*/
     top: 0;
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     height: 100vh;
 }
 
@@ -135,6 +140,7 @@ section.header a {
     text-transform: uppercase;
     line-height: 3.6rem;
     margin-right: 3.2rem;
+
 }
 section.header .number {
     display: inline-block;
