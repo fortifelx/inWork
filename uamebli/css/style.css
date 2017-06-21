@@ -80,6 +80,9 @@ b {
     margin: 0 auto;
 }
 aside {
+    position: fixed;
+    /*z-index: 1; !* ATTENTION *!*/
+    /*top: 0;*/
     float: left;
     width: 13rem;
     margin: 8rem 0 0 6rem;
@@ -120,6 +123,8 @@ aside li a:hover {
 
 
 .top_wrapper {
+    /*position: fixed;  !*        ATTENTION *!*/
+    top: 0;
     width: 100%;
     background-color: #f4f4f4;
     height: 100vh;
@@ -241,5 +246,101 @@ section.header .number {
     margin-top: 32.7rem;
     background-color: #bab69e;
 }
+
+
+.cat_wrapper {
+    /*margin-top: 100vh; !*        ATTENTION *!*/
+    clear: both;
+    width: 100%;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    padding-top:7rem;
+    padding-bottom: 5rem;
+    /*position: relative; !*        ATTENTION *!*/
+}
+.catalog {
+    text-align: justify;
+    width: 78rem;
+    padding: 0 10rem;
+    height: calc( 34rem * 3 + 7rem);
+    overflow: hidden;
+}
+.catalog:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+}
+.catalog h5 {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.catalog section {
+    display: inline-block;
+    line-height: 38rem;
+    text-align: center;
+    position: relative;
+    width: 38rem;
+    height: 32rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    margin-top: 2rem;
+}
+.catalog section:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.catalog section:nth-child(3n+4) {
+    width: 100%;
+}
+.catalog section a {
+    position: absolute;
+    top: 27.2rem;
+    left: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    z-index: 1;
+    line-height: 2.5rem;
+}
+.catalog section img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height:100%;
+}
+.show_all_button {
+    clear: both;
+    float: right;
+    width: 78rem;
+    padding: 0 10rem;
+    text-align: center;
+    height: 15px;
+    margin-top: 5.5rem;
+
+}
+.show_all_button p {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: #baa69e;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    text-transform: uppercase;
+}
+.show_all_button p:after {
+    position: absolute;
+    top:2.8rem;
+    content: '';
+    display: block;
+    width: 100%;
+    height:0;
+    border: 1px dashed #baa69e;
+}
+.show_all_button p:hover:after {
+    border: 1px solid #baa69e;
+}
+
 
 
