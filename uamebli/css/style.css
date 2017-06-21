@@ -129,10 +129,10 @@ aside li a {
 
 .top_wrapper {
     /*position: fixed;  !*        ATTENTION *!*/
-    top: 0;
+    /*top: 0;*/
     width: 100%;
     background-color: #f8f8f8;
-    height: 100vh;
+    height: 72rem;
 }
 
 section.header a {
@@ -267,7 +267,6 @@ section.header .number {
     background-color: #f8f8f8;
     overflow: hidden;
     padding-top:7rem;
-    padding-bottom: 5rem;
     /*position: relative; !*        ATTENTION *!*/
 }
 .catalog {
@@ -353,6 +352,41 @@ section.header .number {
 /*.show_all_button p:hover:after {*/
     /*border: 1px solid #baa69e;*/
 /*}*/
-
-
-
+.add_wrapper {
+    clear: both;
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 72rem;
+}
+.option_wrapper {
+    text-align: justify;
+    width: 78rem;
+    padding: 0 10rem;
+    overflow: hidden;
+    float: right;
+}
+.option_wrapper:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+}
+.option {
+     display: inline-block;
+     width: 36rem;
+     height: 27rem;
+     margin-top: 2rem;
+    text-align: left;
+ }
+.option h6 {
+    margin:2rem 0;
+}
+.option p {
+    line-height: 2rem;
+}
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
