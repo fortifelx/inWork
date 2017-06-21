@@ -196,54 +196,60 @@ section.header .number {
     height:6rem;
 }
 .top_slider h3 {
-    width: 100%;
-    text-align: center;
+    width: calc(100% - 6rem);
+    margin-left: 6rem;
     margin-bottom: 2.8rem;
+}
+.slide {
+    width: 80rem;
 }
 .pres_photo {
     position: relative;
     width: 100%;
 }
 .pres_photo img {
-    position: absolute;
-    top:0;
-    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
 }
 .price {
     display: inline-block;
-    position: relative;
+    position: absolute;
     z-index: 1;
     font-weight: 700;
     font-size: 3.6rem;
     line-height: 3.6rem;
-    margin-left: 6rem;
+    left: 6rem;
 }
 .old_price {
+    position: absolute;
     font-size: 2.4rem;
-    line-height: 3.6rem;
+    left: 24rem;
+    top: 1rem;
+    line-height: 2.4rem;
     display: inline-block;
-    position: relative;
     z-index: 1;
     text-decoration: line-through;
-    margin-left: 3rem;
 }
 .top_slider .button {
+    display: inline-block;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    bottom: 4rem;
+    left: 31rem;
     z-index: 1;
     width: 18rem;
+
     text-align: center;
     height: 5rem;
     line-height: 5rem;
     text-transform: uppercase;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
     background-color: #baa69e;
-    margin: 33rem auto 0 auto;
     transition: all 0.2s;
 }
 .top_slider .button:hover {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-    margin-top: 32.7rem;
     background-color: #bab69e;
 }
 
