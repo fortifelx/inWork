@@ -409,6 +409,8 @@ section.header .number {
     float: left;
     line-height: 2rem;
     margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #4a4644;
 }
 .client_mail {
     width: 39rem;
@@ -416,6 +418,7 @@ section.header .number {
     margin-top: 2rem;
 }
 .client_mail .button {
+    cursor: pointer;
     margin-left: 2rem;
     text-align: center;
     display: inline-block;
@@ -430,4 +433,16 @@ section.header .number {
 }
 .client_mail input {
     width: 18rem;
+    border: none;
+    background-color: #e2e2e2;
+    opacity: 0.5;
+    color: #4a4644;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #999999;
+    outline: none;
+}
+.client_mail input:hover {
 }
