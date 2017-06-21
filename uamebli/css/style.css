@@ -390,3 +390,36 @@ section.header .number {
     display: table;
     clear: both;
 }
+
+.discount_news_wrapper {
+    background-color: #e2e2e2;
+    width: 100%;
+}
+.discount_news {
+    width: 98rem;
+    padding: 0 10rem;
+    float: left;
+}
+.discount_news h5 {
+    margin-top: 6rem;
+}
+.discount_news p {
+    width: 37rem;
+    float: left;
+}
+.client_mail {
+    width: 38rem;
+    float: left;
+}
+.client_mail .button {
+    text-align: center;
+    display: inline-block;
+    width: 17.6rem;
+    height: 5rem;
+    line-height: 5rem;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    background-color: #999999;
+    opacity: 0.8;
+    font-weight: 700;
+    text-transform: uppercase;
+}
