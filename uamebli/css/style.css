@@ -76,7 +76,7 @@ b {
 }
 .wrapper {
     width: 118rem;
-    padding: 3.4rem 5rem;
+    padding: 0 5rem;
     margin: 0 auto;
 }
 aside {
@@ -133,6 +133,7 @@ aside li a {
     width: 100%;
     background-color: #f8f8f8;
     height: 72rem;
+    padding-top: 3.4rem;
 }
 
 section.header a {
@@ -326,7 +327,6 @@ section.header .number {
     width: 78rem;
     padding: 0 10rem;
     text-align: center;
-    height: 15px;
     margin-top: 5.5rem;
 
 }
@@ -356,12 +356,11 @@ section.header .number {
     clear: both;
     width: 100%;
     background-color: #f8f8f8;
-    height: 72rem;
 }
 .option_wrapper {
     text-align: justify;
     width: 78rem;
-    padding: 0 10rem;
+    padding: 5.5rem 10rem 0 10rem;
     overflow: hidden;
     float: right;
 }
@@ -373,11 +372,12 @@ section.header .number {
     opacity: 0;
 }
 .option {
+    overflow: hidden;
      display: inline-block;
      width: 36rem;
      height: 27rem;
      margin-top: 2rem;
-    text-align: left;
+     text-align: left;
  }
 .option h6 {
     margin:2rem 0;
@@ -397,7 +397,7 @@ section.header .number {
 }
 .discount_news {
     width: 78rem;
-    padding: 0 10rem;
+    padding: 0 10rem 3rem 0;
     float: right;
 }
 .discount_news h5 {
@@ -452,7 +452,7 @@ section.header .number {
 }
 .unique_item {
     width: 78rem;
-    padding: 0 10rem;
+    padding: 0 10rem 11rem 0;
     float: right;
 }
 .unique_item h5 {
