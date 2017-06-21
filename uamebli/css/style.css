@@ -432,17 +432,79 @@ section.header .number {
     text-transform: uppercase;
 }
 .client_mail input {
+    position: relative;
+    top: 0.5rem;
     width: 18rem;
     border: none;
     background-color: #e2e2e2;
     opacity: 0.5;
     color: #4a4644;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
-    line-height: 5rem;
+    line-height: 4rem;
     text-transform: uppercase;
     border-bottom: 2px solid #999999;
     outline: none;
 }
-.client_mail input:hover {
+.unique_item_wrapper {
+    background-color: #f8f8f8;
+    width: 100%;
+}
+.unique_item {
+    width: 78rem;
+    padding: 0 10rem;
+    float: right;
+}
+.unique_item h5 {
+    margin-top: 10rem;
+    line-height: 4rem;
+    width: 100%;
+}
+.unique_item h6 {
+    margin-top: 4rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.unique_item p {
+    width: 38rem;
+    float: right;
+    line-height: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    color: #4a4644;
+}
+.client_name {
+    text-align: left;
+    width: 31rem;
+    float: left;
+    margin-top: 2rem;
+}
+.client_name .button {
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: 30rem;
+    height: 5rem;
+    line-height: 5rem;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    background-color: #baa69e;
+    opacity: 0.8;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+.client_name input {
+    display: block;
+    width: 30rem;
+    border: none;
+    background-color: #f8f8f8;
+    opacity: 0.5;
+    color: #4a4644;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #999999;
+    outline: none;
+    margin-bottom: 2rem;
 }
