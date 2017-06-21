@@ -114,11 +114,11 @@ aside li {
 aside li a {
     font-weight: 700;
 }
-aside li a:hover {
-    font-weight: 900;
-    padding-left: 2px;
-    padding-bottom: 2px;
-}
+/*aside li a:hover {*/
+    /*font-weight: 900;*/
+    /*padding-left: 2px;*/
+    /*padding-bottom: 2px;*/
+/*}*/
 
 
 
@@ -192,9 +192,9 @@ section.header .number {
     z-index: 1;
     transition: height 0.5s;
 }
-.nav_right:hover, .nav_left:hover {
-    height:6rem;
-}
+/*.nav_right:hover, .nav_left:hover {*/
+    /*height:6rem;*/
+/*}*/
 .top_slider h3 {
     width: calc(100% - 6rem);
     margin-left: 6rem;
@@ -248,10 +248,10 @@ section.header .number {
     background-color: #baa69e;
     transition: all 0.2s;
 }
-.top_slider .button:hover {
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-    background-color: #bab69e;
-}
+/*.top_slider .button:hover {*/
+    /*box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);*/
+    /*background-color: #bab69e;*/
+/*}*/
 
 
 .cat_wrapper {
@@ -344,9 +344,9 @@ section.header .number {
     height:0;
     border: 1px dashed #baa69e;
 }
-.show_all_button p:hover:after {
-    border: 1px solid #baa69e;
-}
+/*.show_all_button p:hover:after {*/
+    /*border: 1px solid #baa69e;*/
+/*}*/
 
 
 
