@@ -562,3 +562,6 @@ footer .f_adress {
     display: block;
     margin-bottom: 1.5rem;
 }
+.footer section a:first-child, .footer section p:first-child {
+    font-weight: 700;
+}
