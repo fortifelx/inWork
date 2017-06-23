@@ -437,13 +437,27 @@ section.header .number {
 }
 
 .discount_news_wrapper {
+    position: relative;
     width: 100%;
+    background-image: url("../img/mailer.jpg");
+}
+.discount_news_wrapper:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
     background-color: rgba(157,190,223, 0.9);
 }
 .discount_news {
+    position: relative;
+    z-index: 1;
     width: 78rem;
     padding: 0 10rem 3rem 10rem;
     float: right;
+
 }
 .discount_news h5 {
     margin-top: 6rem;
@@ -561,13 +575,13 @@ section.header .number {
     outline: none;
     margin-bottom: 2rem;
 }
-.client_mail input::-moz-placeholder {
+.client_name input::-moz-placeholder {
     color: rgba(97, 105, 118, 0.5);
 }
-.client_mail input::-webkit-input-placeholder {
+.client_name input::-webkit-input-placeholder {
     color: rgba(97, 105, 118, 0.5);
 }
-.client_mail input::placeholder {
+.client_name input::placeholder {
     color: rgba(97, 105, 118, 0.5);
 }
 
