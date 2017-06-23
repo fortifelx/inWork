@@ -39,7 +39,7 @@ html {
     font-family: 'Proba', serif;
 }
 p, article, li, div, aside, section, a, h1, h2, h3, h4, h5, h6 {
-    color: #4a4644;
+    color: rgb(97, 105, 118);
 }
 h3 {
     font-size: 4.8rem;
@@ -81,7 +81,7 @@ b {
 }
 aside {
     position: fixed;
-    /*z-index: 1; !* ATTENTION *!*/
+    z-index: 1; /* ATTENTION */
     /*top: 0;*/
     float: left;
     width: 13rem;
@@ -97,7 +97,7 @@ section.header {
     float: right;
     height: 3.6rem;
     text-align: right;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     z-index: 2;
     top:0;
     padding-top: 3.4rem;
@@ -112,12 +112,16 @@ aside ul {
     margin-top: 2rem;
     margin-bottom: 4.4rem;
 }
+aside a {
+    color: rgb(157, 190, 223);
+}
 aside li {
     text-transform: uppercase;
     margin-bottom: 2.3rem;
 }
 aside li a {
     font-weight: 700;
+    color: rgb(206, 143, 90);
 }
 /*aside li a:hover {*/
     /*font-weight: 900;*/
@@ -131,7 +135,7 @@ aside li a {
     /*position: fixed;  !*        ATTENTION *!*/
     /*top: 0;*/
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     height: 72rem;
     padding-top: 3.4rem;
 }
@@ -209,11 +213,11 @@ section.header .number {
     margin-left: 2rem;
     width: 10px;
     height: 10px;
-    border: 2px solid #baa69e;
+    border: 2px solid rgb(206, 143, 90);
     border-radius: 10px;
 }
 .nav_rounds div:nth-child(3) {
-    background-color:#baa69e ;
+    background-color: rgb(206, 143, 90);
 }
 
 /*.nav_right:hover, .nav_left:hover {*/
@@ -268,7 +272,7 @@ section.header .number {
     line-height: 5rem;
     text-transform: uppercase;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
-    background-color: #baa69e;
+    background-color: rgb(206, 143, 90);
     transition: all 0.2s;
 }
 /*.top_slider .button:hover {*/
@@ -281,7 +285,7 @@ section.header .number {
     /*margin-top: 100vh; !*        ATTENTION *!*/
     clear: both;
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     overflow: hidden;
     padding-top:7rem;
     /*position: relative; !*        ATTENTION *!*/
@@ -350,11 +354,11 @@ section.header .number {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    color: #baa69e;
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 3.6rem;
     text-transform: uppercase;
+    color: rgb(206, 143, 90);
 }
 .show_all_button p:after {
     position: absolute;
@@ -363,7 +367,7 @@ section.header .number {
     display: block;
     width: 100%;
     height:0;
-    border: 1px dashed #baa69e;
+    border: 1px dashed rgb(206, 143, 90);
 }
 /*.show_all_button p:hover:after {*/
     /*border: 1px solid #baa69e;*/
@@ -371,7 +375,7 @@ section.header .number {
 .add_wrapper {
     clear: both;
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 .option_wrapper {
     text-align: justify;
@@ -408,8 +412,8 @@ section.header .number {
 }
 
 .discount_news_wrapper {
-    background-color: #e2e2e2;
     width: 100%;
+    background-color: rgba(157,190,223, 0.9);
 }
 .discount_news {
     width: 78rem;
@@ -419,6 +423,7 @@ section.header .number {
 .discount_news h5 {
     margin-top: 6rem;
     line-height: 4.2rem;
+    color: rgb(255, 255, 255);
 }
 .discount_news p {
     width: 37rem;
@@ -426,7 +431,7 @@ section.header .number {
     line-height: 2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    color: #4a4644;
+    color: rgb(255, 255, 255);;
 }
 .client_mail {
     width: 39rem;
@@ -442,7 +447,7 @@ section.header .number {
     height: 5rem;
     line-height: 5rem;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
-    background-color: #999999;
+    background-color: #ce8f5a;
     opacity: 0.8;
     font-weight: 700;
     text-transform: uppercase;
@@ -452,18 +457,26 @@ section.header .number {
     top: 0.5rem;
     width: 18rem;
     border: none;
-    background-color: #e2e2e2;
-    opacity: 0.5;
-    color: #4a4644;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 4rem;
     text-transform: uppercase;
-    border-bottom: 2px solid #999999;
+    border-bottom: 2px solid #ce8f5a;
     outline: none;
 }
+.client_mail input::-moz-placeholder {
+     color: rgba(255, 255, 255, 0.5);
+}
+.client_mail input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.client_mail input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
 .unique_item_wrapper {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     width: 100%;
 }
 .unique_item {
@@ -487,7 +500,6 @@ section.header .number {
     line-height: 2rem;
     margin-top: 3.5rem;
     margin-bottom: 3rem;
-    color: #4a4644;
 }
 .client_name {
     text-align: left;
@@ -503,7 +515,7 @@ section.header .number {
     height: 5rem;
     line-height: 5rem;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
-    background-color: #baa69e;
+    background-color: rgb(206, 143, 90);
     opacity: 0.8;
     font-weight: 700;
     text-transform: uppercase;
@@ -513,22 +525,31 @@ section.header .number {
     display: block;
     width: 30rem;
     border: none;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     opacity: 0.5;
-    color: #4a4644;
+    color: rgb(97, 105, 118);
     font-size: 16px;
     font-weight: 700;
     line-height: 4rem;
     text-transform: uppercase;
-    border-bottom: 2px solid #999999;
+    border-bottom: 2px solid rgb(206, 143, 90);
     outline: none;
     margin-bottom: 2rem;
+}
+.client_mail input::-moz-placeholder {
+    color: rgba(97, 105, 118, 0.5);
+}
+.client_mail input::-webkit-input-placeholder {
+    color: rgba(97, 105, 118, 0.5);
+}
+.client_mail input::placeholder {
+    color: rgba(97, 105, 118, 0.5);
 }
 
 footer {
     width: 100%;
     box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);
-    background-color: #d3c4bd;
+    background-color: rgba(157,190,223, 0.2);
     padding: 3.6rem 0 5.5rem 0;
 }
 .footer {
