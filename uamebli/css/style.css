@@ -194,7 +194,7 @@ section.header .number {
     height: 5rem;
     top: 31rem;
     left: 12rem;
-    z-index: 1;
+    z-index: 3;
     transition: height 0.5s;
 }
 .nav_right {
@@ -203,7 +203,7 @@ section.header .number {
     height: 5rem;
     top: 31rem;
     right: 2rem;
-    z-index: 1;
+    z-index: 3;
     transition: height 0.5s;
 }
 .nav_rounds {
@@ -213,8 +213,9 @@ section.header .number {
     margin-top: 54.5rem;
 }
 .nav_rounds div {
+    cursor: pointer;
     position: relative;
-    z-index: 1;
+    z-index: 3;
     display: inline-block;
     margin-right: 2rem;
     width: 10px;
@@ -225,18 +226,10 @@ section.header .number {
 .nav_rounds div:first-child {
     margin-left: 2rem;
 }
-.nav_rounds div:nth-child(3) {
-    background-color: rgb(206, 143, 90);
-}
 
 /*.nav_right:hover, .nav_left:hover {*/
     /*height:6rem;*/
 /*}*/
-.top_slider h3 {
-    width: calc(100% - 6rem);
-    margin-left: 6rem;
-    margin-bottom: 2.8rem;
-}
 .slide {
     top:6.6rem;
     left:10rem;
@@ -260,7 +253,9 @@ section.header .number {
     max-height: 100%;
     margin: 0 auto;
 }
-.slide h3 {
+.slide_wrapper h3 {
+    width: 100%;
+    text-align: center;
     color: #ffffff;
     position: relative;
     z-index: 1;
