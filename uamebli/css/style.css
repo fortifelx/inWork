@@ -85,7 +85,8 @@ aside {
     /*top: 0;*/
     float: left;
     width: 13rem;
-    margin: 8rem 0 0 6rem;
+    margin: 0 0 0 6rem;
+    top: 10rem;
 }
 article {
     width: 98rem;
@@ -599,6 +600,7 @@ footer {
     float: right;
     text-align: justify;
     vertical-align: top;
+    overflow: hidden;
 }
 .footer:after {
     content: '';

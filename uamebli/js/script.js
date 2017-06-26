@@ -131,3 +131,23 @@
 
     };
 })();
+( function () {
+    window.onscroll = function() {
+        var footer = document.querySelector('footer');
+        var aside = document.querySelector('aside');
+        var unique = document.querySelector('.unique_item_wrapper');
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        function getCoords(elem) {
+            var box = elem.getBoundingClientRect();
+            return box.top + pageYOffset;
+        }
+        var ftUnique = getCoords(unique);
+        if (scrolled < ftUnique) {
+            aside.style.top = 10 + 'rem';
+        }
+        if (scrolled > ftUnique) {
+            var correction = scrolled - ftUnique;
+            aside.style.top = -correction + 'px';
+        }
+    }
+})();
