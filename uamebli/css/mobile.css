@@ -87,4 +87,12 @@
     .footer .f_catalog {
         display: none;
     }
+    .wrapper p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .wrapper a {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
 }

@@ -87,8 +87,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5197">
-              <caret line="364" column="0" lean-forward="false" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="22" />
+            <state relative-caret-position="7678">
+              <caret line="379" column="8" lean-forward="false" selection-start-line="379" selection-start-column="4" selection-end-line="379" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -97,8 +97,8 @@
       <file leaf-file-name="mobile.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="23" />
+            <state relative-caret-position="793">
+              <caret line="95" column="28" lean-forward="false" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -132,6 +132,7 @@
       <find>footer</find>
       <find>aside</find>
       <find>cata</find>
+      <find>font</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -308,12 +309,12 @@
       <workItem from="1498106141524" duration="3241000" />
       <workItem from="1498192745598" duration="15518000" />
       <workItem from="1498448219998" duration="1879000" />
-      <workItem from="1498450141322" duration="7586000" />
+      <workItem from="1498450141322" duration="7856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67272000" />
+    <option name="totallyTimeSpent" value="67542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -1044,16 +1045,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5197">
-          <caret line="364" column="0" lean-forward="false" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="22" />
+        <state relative-caret-position="7678">
+          <caret line="379" column="8" lean-forward="false" selection-start-line="379" selection-start-column="4" selection-end-line="379" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="23" />
+        <state relative-caret-position="793">
+          <caret line="95" column="28" lean-forward="false" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
           <folding />
         </state>
       </provider>
