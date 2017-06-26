@@ -423,6 +423,8 @@ section.header .number {
  }
 .option img {
     float: left;
+    height: auto;
+    max-height: 9rem;
 }
 .option h6 {
     margin:9rem 0 2rem 0;

@@ -1,0 +1,26 @@
+@media handheld and (max-width: 1300px), screen and (max-width: 1300px) {
+    html {
+        font-size: 8px;
+    }
+}
+@media handheld and (max-width: 1000px), screen and (max-width: 1000px) {
+    html {
+        font-size: 7px;
+    }
+
+}
+@media handheld and (max-width: 900px), screen and (max-width: 900px) {
+    html {
+        font-size: 6.3px;
+    }
+}
+@media handheld and (max-width: 900px), screen and (max-width: 900px) {
+    html {
+        font-size: 5px;
+    }
+}
+@media handheld and (max-width: 650px), screen and (max-width: 650px) {
+    html {
+        font-size: 5px;
+    }
+}
