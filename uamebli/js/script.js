@@ -143,7 +143,7 @@
         }
         var ftUnique = getCoords(unique);
         if (scrolled < ftUnique) {
-            aside.style.top = 10 + 'rem';
+            aside.style.top = 14 + 'rem';
         }
         if (scrolled > ftUnique) {
             var correction = scrolled - ftUnique;
