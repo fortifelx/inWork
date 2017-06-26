@@ -88,11 +88,14 @@
         display: none;
     }
     .wrapper p {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
     .wrapper a {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .wrapper h6 {
+        font-size: 2.5rem;
     }
 }
