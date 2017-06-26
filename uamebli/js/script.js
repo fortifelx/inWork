@@ -137,6 +137,7 @@
         var aside = document.querySelector('aside');
         var unique = document.querySelector('.unique_item_wrapper');
         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        var asideHeight = aside.offsetHeight;
         function getCoords(elem) {
             var box = elem.getBoundingClientRect();
             return box.top + pageYOffset;
@@ -147,7 +148,7 @@
         }
         if (scrolled > ftUnique) {
             var correction = scrolled - ftUnique;
-            aside.style.top = -correction + 'px';
+            aside.style.top = -correction + + asideHeight/5 + 'px';
         }
     }
 })();
