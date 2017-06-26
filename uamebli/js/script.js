@@ -60,11 +60,9 @@
                 };
                 if (ev.target === gt && counter === rounds.length - 1) {
                     goal = rounds[0];
-                    console.log(goal);
                 }
                 if (ev.target === gt && counter !== rounds.length - 1) {
                     goal = rounds[counter + 1];
-                    console.log(goal);
                 }
                 if (ev.target === lt && counter === 0) {
                     goal = rounds[rounds.length - 1];
@@ -79,11 +77,8 @@
                 if (n > 0) {
                     slides[counter].style.zIndex = '1';
                     slides[n].style.zIndex = '2';
-                    // Velocity (slides[n], {'box-shadow' : 'inset 10px 10px 100px 33px rgba(255,255,255,1);'}, time/2);
-                    // Velocity (slides[n], {'box-shadow' : 'inset 10px 10px 0px 33px rgba(255,255,255,0);'}, time/2);
                     Velocity( slides[n], { "opacity" : '1' }, time);
                     Velocity( slides[counter], {"opacity" : '0' }, time);
-                    console.log('first');
                     setTimeout(function () {
                         slides[counter].style.zIndex = '0';
                     }, 1000);
@@ -91,11 +86,8 @@
                 } else {
                     slides[counter].style.zIndex = '1';
                     slides[0].style.zIndex = '2';
-                    // Velocity (slides[0], {'box-shadow' : 'inset 10px 10px 100px 33px rgba(255,255,255,1);'}, time/2);
-                    // Velocity (slides[0], {'box-shadow' : 'inset 10px 10px 0px 33px rgba(255,255,255,0);'}, time/2);
                     Velocity( slides[0], { "opacity" : '1' }, time);
                     Velocity( slides[counter], {"opacity" : '0' }, time);
-                    console.log('second');
                     setTimeout(function () {
                         slides[counter].style.zIndex = '0';
                     }, 1000);
@@ -105,11 +97,8 @@
             if(n < counter && counter !== slNumb - 1) {
                 slides[counter].style.zIndex = '1';
                 slides[n].style.zIndex = '2';
-                // Velocity (slides[n], {'box-shadow' : 'inset 10px 10px 100px 33px rgba(255,255,255,1);'}, time/2);
-                // Velocity (slides[n], {'box-shadow' : 'inset 10px 10px 0px 33px rgba(255,255,255,0);'}, time/2);
                 Velocity( slides[n], { "opacity" : '1' }, time);
                 Velocity( slides[counter], {"opacity" : '0' }, time);
-                console.log('third');
                 setTimeout(function () {
                     slides[counter].style.zIndex = '0';
                 }, 1000);
@@ -117,11 +106,8 @@
             if (n > counter && counter !== slNumb - 1){
                 slides[counter].style.zIndex = '1';
                 slides[n].style.zIndex = '2';
-                // Velocity (slides[n], {'box-shadow' : 'inset 10px 10px 100px 33px rgba(255,255,255,1);'}, time/2);
-                // Velocity (slides[n], {'box-shadow' : 'inset 10px 10px 0px 33px rgba(255,255,255,0);'}, time/2);
                 Velocity( slides[n], { "opacity" : '1' }, time);
                 Velocity( slides[counter], {"opacity" : '0' }, time);
-                console.log('forth');
                 setTimeout(function () {
                     slides[counter].style.zIndex = '0';
                 }, 1000);
