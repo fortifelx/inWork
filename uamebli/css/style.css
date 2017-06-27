@@ -105,6 +105,7 @@ section.header {
 }
 
 div.logo {
+    text-align: left    ;
     font-size: 3.2rem;
     font-weight: 700;
     float: left;
