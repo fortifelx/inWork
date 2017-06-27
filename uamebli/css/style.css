@@ -113,29 +113,29 @@ div.logo {
     line-height: 2.6rem;
     margin-left: 6rem;
 }
-.logo span {
-    font-size: 1.6rem;
-    display: block;
-    line-height: 2rem;
-}
-.logo span:first-child {
-    /*margin-top: 1.3rem;*/
-}
-.logo span:after {
-    content: '';
-    display: block;
-    width: 1rem;
-    height: 0;
-    border: 1px solid rgb(97, 105, 118);
-    margin-left: 0;
-    opacity: 0;
-    transition: width 1s, margin-left 1s;
-}
-.logo:hover span:after {
-    /*margin-left: calc(100% - 6rem);*/
-    opacity: 1;
-    width:100%;
-}
+/*.logo span {*/
+    /*font-size: 1.6rem;*/
+    /*display: block;*/
+    /*line-height: 2rem;*/
+/*}*/
+/*.logo span:first-child {*/
+    /*!*margin-top: 1.3rem;*!*/
+/*}*/
+/*.logo span:after {*/
+    /*content: '';*/
+    /*display: block;*/
+    /*width: 1rem;*/
+    /*height: 0;*/
+    /*border: 1px solid rgb(97, 105, 118);*/
+    /*margin-left: 0;*/
+    /*opacity: 0;*/
+    /*transition: width 1s, margin-left 1s;*/
+/*}*/
+/*.logo:hover span:after {*/
+    /*!*margin-left: calc(100% - 6rem);*!*/
+    /*opacity: 1;*/
+    /*width:100%;*/
+/*}*/
 .logo:hover span:hover:after {
     margin-left: 100%;
     opacity: 1;
