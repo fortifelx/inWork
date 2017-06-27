@@ -113,6 +113,7 @@ div.logo {
 }
 .logo span {
     font-size: 1.6rem;
+    display: block;
 }
 aside ul {
     margin-top: 2rem;
