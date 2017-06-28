@@ -684,7 +684,7 @@ header li:hover a:after {
     text-decoration: underline;
 }
 .news_img {
-    width: 300px;
+    width: auto;
     height: 230px;
     margin-bottom: 30px;
     background-image: url("../img/news2.jpg");
