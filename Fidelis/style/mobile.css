@@ -282,9 +282,12 @@
     }
     article .news_img {
         height: 100px !important;
-        margin-bottom: 15px;
         background-size: 100% !important;
         width: auto !important;
+    }
+    .news_img_wrapper {
+        height: 100px !important;
+        margin-bottom: 15px;
     }
     .date {
         display: none;

@@ -686,25 +686,32 @@ header li:hover a:after {
 .news_img {
     width: auto;
     height: 230px;
-    margin-bottom: 30px;
     background-image: url("../img/news2.jpg");
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
-    transition: background-size 1s;
+    transition: all 1s;
+}
+.news_img_wrapper {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 .news article:hover .news_img {
-    background-size: 120%;
+    transform: scale(1.2);
 }
 .news article:first-child {
     width: 100%;
     height: 540px;
 }
+.news article:first-child .news_img_wrapper {
+    height: 400px;
+    margin-bottom: 30px;
+}
 .news article:first-child .news_img {
-    background-image: url("../img/news1.jpg");
     height: 400px;
     width: 939px;
-    background-size: cover;
 }
 .date {
     font-size: 16px;
