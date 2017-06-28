@@ -686,7 +686,6 @@ header li:hover a:after {
 .news_img {
     width: auto;
     height: 230px;
-    background-image: url("../img/news2.jpg");
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
