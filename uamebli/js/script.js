@@ -17,6 +17,32 @@
         }
     };
     hMenu.addEventListener( 'click', showMenu, true);
+})();
+
+( function () {
+    mAside = document.querySelector('aside');
+    showPoint = document.querySelector('.cat_wrapper');
+    var status = true;
+    mAside.style.opacity = 0;
+    window.onscroll = function() {
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        function getCoords(elem) {
+            var box = elem.getBoundingClientRect();
+            return box.top + pageYOffset;
+        }
+        var cood = getCoords(showPoint);
+        if (scrolled > cood - 100) {
+            if(status === false) return;
+            status = false;
+            Velocity( mAside, { 'opacity' : 1}, 600);
+            setTimeout(function () {
+                status = true;
+            }, 600);
+        }
+        if (scrolled < cood - 150) {
+            mAside.style.opacity = 0;
+        }
+    }
 
 })();
 
