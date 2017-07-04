@@ -5,7 +5,7 @@
     list.style.height = 0;
     var status = true;
     function showMenu() {
-        if(status === true) {
+            if(status === true) {
             Velocity(list, {'height' : mHeight}, 600);
             status = false;
             return;
