@@ -64,6 +64,7 @@ p, li, a {
     font-size: 1.6rem;
     font-weight: 900;
     color: #ffffff;
+    letter-spacing: 0.04em;
 }
 a {
     text-decoration: none;
