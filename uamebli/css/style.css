@@ -133,6 +133,7 @@ aside li a {
     margin-top: 9rem;
     height: calc(100vh - 11rem);
     max-height: calc(100vw/2);
+    min-height: calc(100vw/2);
 }
 .main_slide h3 {
     position: absolute;
@@ -683,6 +684,9 @@ footer {
     vertical-align: top;
     overflow: hidden;
 }
+footer .wrapper {
+    position: relative;
+}
 .footer:after {
     content: '';
     display: inline-block;
@@ -709,4 +713,12 @@ footer .f_adress {
 }
 .footer section a:first-child, .footer section p:first-child {
     font-weight: 700;
+}
+.is_agency {
+    position: absolute;
+    bottom: 1rem;
+    right: 11rem;
+}
+.is_agency span {
+    color: #ce8f5a;
 }

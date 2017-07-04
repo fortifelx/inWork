@@ -23,7 +23,7 @@
     var mAside = document.querySelector('aside');
     var showPoint = document.querySelector('.cat_wrapper');
     var unique = document.querySelector('.unique_item_wrapper');
-    var asideHeight = aside.offsetHeight;
+    var asideHeight = mAside.offsetHeight;
     var status = true;
     mAside.style.opacity = 0;
     window.onscroll = function() {
@@ -46,11 +46,11 @@
             mAside.style.opacity = 0;
         }
         if (scrolled < ftUnique) {
-            aside.style.top = 14 + 'rem';
+            mAside.style.top = 14 + 'rem';
         }
         if (scrolled > ftUnique) {
             var correction = scrolled - ftUnique;
-            aside.style.top = -correction + + asideHeight/5 + 'px';
+            mAside.style.top = -correction + + asideHeight/5 + 'px';
         }
     }
 
