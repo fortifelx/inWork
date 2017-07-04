@@ -19,8 +19,11 @@
 // })();
 
 ( function () {
-    mAside = document.querySelector('aside');
-    showPoint = document.querySelector('.cat_wrapper');
+    var footer = document.querySelector('footer');
+    var mAside = document.querySelector('aside');
+    var showPoint = document.querySelector('.cat_wrapper');
+    var unique = document.querySelector('.unique_item_wrapper');
+    var asideHeight = aside.offsetHeight;
     var status = true;
     mAside.style.opacity = 0;
     window.onscroll = function() {
@@ -30,6 +33,7 @@
             return box.top + pageYOffset;
         }
         var cood = getCoords(showPoint);
+        var ftUnique = getCoords(unique);
         if (scrolled > cood - 100) {
             if(status === false) return;
             status = false;
@@ -41,10 +45,37 @@
         if (scrolled < cood - 150) {
             mAside.style.opacity = 0;
         }
+        if (scrolled < ftUnique) {
+            aside.style.top = 14 + 'rem';
+        }
+        if (scrolled > ftUnique) {
+            var correction = scrolled - ftUnique;
+            aside.style.top = -correction + + asideHeight/5 + 'px';
+        }
     }
 
 })();
-
+// ( function () {
+//     window.onscroll = function() {
+//         var footer = document.querySelector('footer');
+//         var aside = document.querySelector('aside');
+//         var unique = document.querySelector('.unique_item_wrapper');
+//         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+//         var asideHeight = aside.offsetHeight;
+//         function getCoords(elem) {
+//             var box = elem.getBoundingClientRect();
+//             return box.top + pageYOffset;
+//         }
+//         var ftUnique = getCoords(unique);
+//         if (scrolled < ftUnique) {
+//             aside.style.top = 14 + 'rem';
+//         }
+//         if (scrolled > ftUnique) {
+//             var correction = scrolled - ftUnique;
+//             aside.style.top = -correction + + asideHeight/5 + 'px';
+//         }
+//     }
+// })();
 
 
 
@@ -183,24 +214,4 @@
 //
 //     };
 // })();
-// ( function () {
-//     window.onscroll = function() {
-//         var footer = document.querySelector('footer');
-//         var aside = document.querySelector('aside');
-//         var unique = document.querySelector('.unique_item_wrapper');
-//         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-//         var asideHeight = aside.offsetHeight;
-//         function getCoords(elem) {
-//             var box = elem.getBoundingClientRect();
-//             return box.top + pageYOffset;
-//         }
-//         var ftUnique = getCoords(unique);
-//         if (scrolled < ftUnique) {
-//             aside.style.top = 14 + 'rem';
-//         }
-//         if (scrolled > ftUnique) {
-//             var correction = scrolled - ftUnique;
-//             aside.style.top = -correction + + asideHeight/5 + 'px';
-//         }
-//     }
-// })();
+
