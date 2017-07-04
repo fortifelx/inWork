@@ -130,7 +130,7 @@ aside li a {
 }
 .main_slide img {
     width: 100%;
-    margin-top: 9rem;
+    margin-top: calc(1% + 2.6rem);
     height: calc(100vh - 11rem);
     max-height: calc(100vw/2);
     min-height: calc(100vw/2);
@@ -167,7 +167,8 @@ section.header {
     background-color: #ffffff;
     z-index: 3;
     top:0;
-    padding: 5rem 0 3rem 0;
+    padding-top: calc( 1% + 1rem);
+    padding-bottom: 1rem;
 }
 a.logo {
     cursor: pointer;
@@ -206,7 +207,7 @@ section.header a {
     background-color: white;
     text-align: left;
     width: calc( 100% + 5rem);
-    padding-top: 3rem;
+    padding-top: 1.3rem;
     margin-left: -3rem;
     overflow: hidden;
     height: 0;
@@ -604,6 +605,9 @@ section.header .number {
     background-color: #ffffff;
     width: 100%;
 }
+.unique_item_wrapper .wrapper {
+    position: relative;
+}
 .unique_item {
     width: 78rem;
     padding: 0 10rem 9rem 10rem;
@@ -671,6 +675,8 @@ section.header .number {
 }
 
 footer {
+    position: relative;
+    z-index: 4;
     width: 100%;
     /*box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);*/
     background-color: rgba(157,190,223, 0.2);

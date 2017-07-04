@@ -47,10 +47,12 @@
         }
         if (scrolled < ftUnique) {
             mAside.style.top = 14 + 'rem';
+            // mAside.style.position = 'fixed';
         }
         if (scrolled > ftUnique) {
             var correction = scrolled - ftUnique;
-            mAside.style.top = -correction + + asideHeight/5 + 'px';
+            mAside.style.top = asideHeight/6 -correction + 'px';
+            // mAside.style.position = 'absolute';
         }
     }
 
