@@ -124,17 +124,24 @@ aside li a {
 .main_slide {
     position: relative;
     min-width: 100%;
-    width: auto;
+    width: 100%;
+    height: 100vh;
+    margin-top: calc(1% + 2.6rem);
     z-index: 2;
     text-align: center;
+    background-image: url("../img/mainimagenoslide.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
-.main_slide img {
-    width: 100%;
-    margin-top: calc(1% + 2.6rem);
-    height: calc(100vh - 11rem);
-    max-height: calc(100vw/2);
-    min-height: calc(100vw/2);
-}
+/*.main_slide img {*/
+    /*width: 100%;*/
+    /*margin-top: calc(1% + 2.6rem);*/
+    /*height: calc(100vh - 11rem);*/
+    /*max-height: calc(100vw/2);*/
+    /*min-height: calc(100vw/2);*/
+/*}*/
 .main_slide h3 {
     position: absolute;
     font-weight: 700;
