@@ -125,8 +125,8 @@ aside li a {
     position: relative;
     min-width: 100%;
     width: 100%;
-    height: 100vh;
-    margin-top: calc(1% + 2.6rem);
+    height: calc(100vh - 6.6rem);
+    margin-top: calc(1% + 4.6rem);
     z-index: 2;
     text-align: center;
     background-image: url("../img/mainimagenoslide.jpg");
@@ -241,9 +241,9 @@ section.header a {
     display: inline-block;
     position: absolute;
     top: -0.1rem;
-    margin-left: 0.5rem;
+    padding-left: 0.5rem;
     width: 0.5rem;
-    height: 0.5rem;
+    height: 1rem;
 }
 section.header .number {
     display: inline-block;
