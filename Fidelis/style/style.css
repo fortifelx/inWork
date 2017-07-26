@@ -777,6 +777,13 @@ footer .phone {
     width:200px;
     margin: 0 auto;
 }
+footer .phone img {
+    margin: 10px 10px 0 0;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    cursor: pointer; 
+}
 footer .soc_ico img {
     width: 39px;
     height: 39px;
