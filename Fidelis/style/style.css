@@ -211,13 +211,14 @@ header li:hover a:after {
 }
 .circle_wrapper {
     position: absolute;
-    bottom: 5%;
+    bottom: 10px;
     z-index: 1;
     clear: both;
     height: 16px;
-    width: 100%;
+    width: calc(80% - 20px);
     text-align: center;
     padding-top: 20px;
+    
 }
 .circle_wrapper div {
     cursor: pointer;
@@ -260,28 +261,19 @@ header li:hover a:after {
     width: 100%;
     height: 100%;
 }
-.top_slider .sub_articl b {
-    display: block;
-    padding-left: 5px;
-}
-.top_slider a {
+.top_slider p {
     position: absolute;
     bottom: 0;
+    line-height: 34px;
+    font-size: 28px;
     display: block;
-    width: 100%;
+    width: calc(80% - 60px);
     height: 100px;
+    padding: 20px 40px 40px 20px;
     background-color: rgba( 255, 255, 255, 0.65);
     -webkit-box-shadow: -4px -5px 92px 25px rgba(255,255,255,0.77);
     -moz-box-shadow: -4px -5px 92px 25px rgba(255,255,255,0.77);
     box-shadow: -4px -5px 92px 25px rgba(255,255,255,0.77);
-}
-.top_slider .sub_articl a p{
-    height: auto;
-    margin-left: 30px;
-    width: 520px;
-    color: #00293f;
-    font-size: 36px;
-    line-height: 44px;
 }
 .sub_slider {
     float: right;
@@ -294,14 +286,9 @@ header li:hover a:after {
     margin-bottom: 21px;
 }
 .sub_articl p {
-    cursor: pointer;
     max-width: 100%;
-    height: 44px;
+    height: auto;
     overflow: hidden;
-    text-overflow: ellipsis;
-}
-.sub_articl p:hover {
-    text-decoration: underline;
 }
 .sub_slider .sub_articl img {
     margin-bottom: 15px;
