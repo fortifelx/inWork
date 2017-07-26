@@ -255,6 +255,37 @@
     };
 
 })();
+( function () {
+    var slider = document.querySelector('.sub_slider');
+    var work = false;
+    if (slider !== null) {
+        if (work === true) return;
+        setInterval( demo, 10000);
+        work = true;
+    };
+    var status = true;
+
+    function changeArticl() {
+        if( slider === null || work === false) {
+            return;
+        };
+        work = true;
+        if (slider.hasChildNodes()) {
+            slider = document.querySelector('.sub_slider');
+            var slide = slider.lastElementChild;
+            slider.insertBefore(slider.removeChild(slide), slider.childNodes[0]);
+            slide.style.marginTop = - slide.offsetHeight;
+            slide.style.opacity = 0;
+            Velocity( slide, { 'margin-top' : '0', 'opacity' : '1'},700);
+        }
+    }
+    function demo() {
+        if(status === true) {
+            changeArticl();
+        }
+    };
+
+})();
 // ( function () {
 //     var slides = document.querySelectorAll('.main_ind');
 //     var work = false;
