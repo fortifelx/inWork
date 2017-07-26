@@ -265,19 +265,8 @@
     };
     var status = true;
 
-    function changeArticl() {
-        if( slider === null || work === false) {
-            return;
-        };
-        work = true;
-        if (slider.hasChildNodes()) {
-            slider = document.querySelector('.sub_slider');
-            var slide = slider.lastElementChild;
-            slider.insertBefore(slider.removeChild(slide), slider.childNodes[0]);
-            slide.style.marginTop = - slide.offsetHeight;
-            slide.style.opacity = 0;
-            Velocity( slide, { 'margin-top' : '0', 'opacity' : '1'},700);
-        }
+    function moveLeft() {
+
     }
     function demo() {
         if(status === true) {
@@ -378,3 +367,103 @@
     }
     gamb.addEventListener('click', show);
 })();
+//(function(){
+//    var slider = document.querySelector('.brand');
+//    var work = false;
+//    if (slider !== null) {
+//        if (work === true) return;
+//        showSlider();
+//        work = true;
+//    };
+//    document.addEventListener("DOMNodeInserted", showSlider);
+//    var slNumb = 3;
+//
+//    function showSlider() {
+//        if( slider === null || work === true) {
+//            return;
+//        };
+//        work = true;
+//        slider = document.querySelector('.brand_viewer');
+////        var slids = document.querySelectorAll('.sub_articl');
+////        var slides = [];
+////        for(var i = 0; i < 3; i++) {
+////            slides[i] = slids[i].cloneNode(true);
+////            slider.appendChild(slides[i]);
+////            if (i > 0) {
+////                slides[i].style.marginLeft = slides[i].offsetWidth + 'px';
+////            }
+////        };
+//        var slides = document.querySelectorAll('.brand_viewer img');
+//        for(var i = 0; i < slides.length; i++) {
+//            if (i > 0) {
+//                slides[i].style.marginLeft = slides[i].offsetWidth + 'px';
+//            }
+//        };
+//        var counter = 0;
+//        var n = 0;
+//        var status = true;
+//        function showSlide(ev) {
+//            if (status === false) return;
+//            status = false;
+//            for (var i = 0; i < rounds.length; i++) {
+//                rounds[i].style.backgroundColor = 'transparent';
+//            };
+//            var goal;
+//            if (ev === undefined && counter < rounds.length) {
+//                goal = rounds[counter + 1];
+//            }
+//            if (ev === undefined && counter === rounds.length - 1) {
+//                goal = rounds[0];
+//            }
+//            if (ev) {
+//                goal = ev.target;
+//                if (ev.target === roundsBox) {
+//                    goal = rounds[n];
+//                };
+//            }
+//            n = goal.value;
+//            goal.style.backgroundColor = "#00293f";
+//            if ( counter === slNumb - 1) {
+//                if (n > 0) {
+//                    var beforeEl = slides[counter].offsetWidth + "px";
+//                    slides[n].style.marginLeft = - slides[n].offsetWidth + "px";
+//                    Velocity( slides[n], { "margin-left" : 0 }, 1000);
+//                    Velocity( slides[counter], {"margin-left" : beforeEl }, 1000);
+//                } else {
+//                    var beforeEl = - slides[counter].offsetWidth + "px";
+//                    slides[0].style.marginLeft = slides[0].offsetWidth + "px";
+//                    Velocity( slides[0], { "margin-left" : 0 }, 1000);
+//                    Velocity( slides[counter], {"margin-left" : beforeEl }, 1000);
+//                    n = 0;
+//                }
+//            }
+//            if(n < counter && counter !== slNumb - 1) {
+//                var beforeEl = slides[counter].offsetWidth + "px";
+//                slides[n].style.marginLeft = - slides[n].offsetWidth + "px";
+//                Velocity( slides[n], { "margin-left" : 0 }, 1000);
+//                Velocity( slides[counter], {"margin-left" : beforeEl }, 1000);
+//            };
+//            if (n > counter && counter !== slNumb - 1){
+//                var beforeEl = - slides[counter].offsetWidth + "px";
+//                slides[n].style.marginLeft = slides[n].offsetWidth + "px";
+//                Velocity( slides[n], { "margin-left" : 0 }, 1000);
+//                Velocity( slides[counter], {"margin-left" : beforeEl }, 1000);
+//            };
+//            counter = n;
+//            function changeStatus() {
+//                status = true;
+//            };
+//            setTimeout( changeStatus , 1050);
+//
+//        };
+//        function demo() {
+//            if(status === true) {
+//                showSlide();
+//            }
+//        };
+//
+//        roundsBox.addEventListener('click', showSlide);
+//        setInterval( demo, 5000);
+//
+//    };
+//})();

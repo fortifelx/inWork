@@ -395,6 +395,7 @@ header li:hover a:after {
 }
 .brand a img {
     display: inline;
+    width: 140px;
 }
 .brand a:nth-child(6){
     padding: 0 0 22px 0;
