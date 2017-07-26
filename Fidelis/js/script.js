@@ -362,6 +362,7 @@
     var counter;
     var correction;
     var viewer;
+    var slidesLength;
     function showSlider() {
         if( slider === null || work === true) {
             return;
@@ -370,7 +371,7 @@
         var newSlide;
         viewer = document.querySelector('.brand_viewer');
         var slides = viewer.querySelectorAll('a');
-        var slidesLength = slides.length;
+        slidesLength = slides.length;
         counter = slides.length;
                 var firstSlide = slides[0];
         for(var i = 0; i < slidesLength; i++) {
@@ -386,13 +387,30 @@
     };
     function moveLeft(ev) {
         counter--; 
+        console.log(counter);
         var position = -correction*counter + 'px';
          Velocity( viewer, { "marginLeft" : position }, 600);
+        if(counter === 0) {
+            setTimeout( function(){
+                console.log('start');
+            counter = slidesLength;
+            viewer.style.marginLeft = -correction*counter + 'px';
+            }, 600);
+            
+        }
     }
     function moveRight(ev) {
         counter++; 
         var position = -correction*counter + 'px';
          Velocity( viewer, { "marginLeft" : position }, 600);
+            if(counter === 2*slidesLength) {
+            setTimeout( function(){
+            console.log('start2');
+            counter = slidesLength;
+            viewer.style.marginLeft = -correction*counter + 'px';
+            }, 600);
+            
+        }
     }
     la.addEventListener('click', moveLeft);
     ra.addEventListener('click', moveRight);
