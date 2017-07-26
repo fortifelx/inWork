@@ -211,7 +211,7 @@ header li:hover a:after {
 }
 .circle_wrapper {
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     z-index: 1;
     clear: both;
     height: 16px;
@@ -269,7 +269,7 @@ header li:hover a:after {
     display: block;
     width: calc(80% - 60px);
     height: 100px;
-    padding: 20px 40px 40px 20px;
+    padding: 20px 40px 60px 20px;
     background-color: rgba( 255, 255, 255, 0.65);
     -webkit-box-shadow: -4px -5px 92px 25px rgba(255,255,255,0.77);
     -moz-box-shadow: -4px -5px 92px 25px rgba(255,255,255,0.77);
