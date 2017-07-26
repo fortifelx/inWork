@@ -204,14 +204,18 @@ header li:hover a:after {
 /*   - - -   M A I N   P A G E  - - -   */
 
 .slider {
-    height: 615px;
-    width: 100%;
+    height: calc(100vh - 170px);
+    width: calc(100% - 40px);
     overflow: hidden;
+    padding: 20px;
 }
 .circle_wrapper {
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
     clear: both;
     height: 16px;
-    width: 640px;
+    width: 100%;
     text-align: center;
     padding-top: 20px;
 }
@@ -224,7 +228,6 @@ header li:hover a:after {
     text-align: center;
     border-radius: 9px;
     border: 2px solid #00293f;
-    /*background-image: url("../img/pagination.svg");*/
     margin-right: 20px;
 }
 .circle_wrapper span {
@@ -234,20 +237,24 @@ header li:hover a:after {
     border-radius: 9px;
 }
 .top_slider {
-    width: 640px;
-    height: 515px;
+    width: 80%;
+    height: 100%;
     float: left;
     overflow: hidden;
 }
 .top_slider_wrapper {
     width: 10000px;
     position: relative;
+    height: 100%;
 }
 .top_slider .sub_articl {
     display: inline-block;
     position: absolute;
-    width: 640px;
-    height: 515px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .top_slider .sub_articl img {
     width: 100%;
@@ -278,7 +285,8 @@ header li:hover a:after {
 }
 .sub_slider {
     float: right;
-    width: 240px;
+    width: calc(20% - 40px);
+    padding: 0 20px;
     height: 525px;
     overflow: hidden;
 }

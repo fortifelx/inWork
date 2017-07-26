@@ -23,7 +23,6 @@
         work = true;
     };
     document.addEventListener("DOMNodeInserted", showSlider);
-    var slNumb = 3;
 
     function showSlider() {
         if( slider === null || work === true) {
@@ -31,16 +30,17 @@
         };
         work = true;
         slider = document.querySelector('.top_slider_wrapper');
-        var slids = document.querySelectorAll('.sub_articl');
-        var slides = [];
-        for(var i = 0; i < 3; i++) {
-            slides[i] = slids[i].cloneNode(true);
-            slider.appendChild(slides[i]);
+        var container = document.querySelector('.slider');
+        var stWidth = container.offsetWidth;
+        var slides = slider.querySelectorAll('.sub_articl');
+        for(var i = 0; i < slides.length; i++) {
+            slides[i].style.width = stWidth +'px';
             if (i > 0) {
                 slides[i].style.marginLeft = slides[i].offsetWidth + 'px';
             }
         };
         var counter = 0;
+        var slNumb = slides.length;
         var roundsBox = document.querySelector('.circle_wrapper');
         var n = 0;
         for (var i = 0; i < slides.length; i++ ) {
