@@ -279,7 +279,7 @@ header li:hover a:after {
     float: right;
     width: calc(20% - 40px);
     padding: 0 20px;
-    height: 525px;
+    height: 100%;
     overflow: hidden;
 }
 .sub_articl {
