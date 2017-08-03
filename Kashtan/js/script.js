@@ -26,9 +26,7 @@
 
 
 })();
-
 (   function(){
-
     var menuItems = document.querySelectorAll('.category_list li');
     var subMenus = document.querySelectorAll('.sub_menu');
     var closeMenu = document.querySelectorAll('.close_sub_menu');
@@ -68,9 +66,6 @@
         }
     }
     clickDog(menuItems, showSubMenu);
-
-
-
 })();
 (function(){
     var slider = document.querySelector('.top_slider_wrapper');
