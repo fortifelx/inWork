@@ -749,15 +749,16 @@ header {
 }
 .product_ico_wrapper {
     opacity: 0;
+    width: 100%;
 }
 .product_ico_wrapper p {
     cursor: pointer;
     display: inline-block;
     position: relative;
+    float: right;
+    margin-right: 15px;
 }
-.product_ico_wrapper p:first-child {
-    margin-right: 55px;
-}
+
 
 
 .product_ico_wrapper p:after {
