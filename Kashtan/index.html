@@ -53,6 +53,36 @@
 
 
 <div class="wrapper">
+[[pdoMenu?
+	&parents=`3`
+	&level=`2`
+	&showHidden =`1`
+	&parentClass=`sub_menu`
+	&includeTVs=`catImage`
+	&outerClass=`category_list`
+	&tplParentRow=`@INLINE <div class="sub_menu"><a class="sub_menu_header" href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>
+	<span class="close_sub_menu">x</span><img src="[[+catImage]]" alt="">
+	<ul>
+	<a>([[+children]])</a>
+	</ul>
+	<a href="katalog.html" class="all_category">Все категории</a>
+	<a href="[[+link]]" class="this_category">[[+menutitle]]</a>
+	[[+wrapper]]</div></li>`
+	&tpl=`@INLINE <li><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>`
+]]
+@INLINE <li><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>
+@INLINE <div class="sub_menu"><a class="sub_menu_header" href="[[+link]]" [[+attributes]]>[[+menutitle]]
+    </a><span class="close_sub_menu">x</span><img src="[[+catImage]]" alt="">
+     <ul>
+                <a>([[+children]])</a>
+     </ul>
+            <a href="katalog.html" class="all_category">Все категории</a>
+            <a href="[[+link]]" class="this_category">[[+menutitle]]</a>
+     [[+wrapper]]
+     </div>
+    </li>
+
+
     <ul class="category_list">
         <li>Видеокамеры
         <div class="sub_menu">
@@ -260,7 +290,6 @@
                 <p class="product_header">ASV-MF05pl</p>
                 <p class="product_category">Категория 1</p>
                 <div class="product_ico_wrapper">
-                    <p data-title="сравнить"><img src="img/libra.png" alt="сравнить"></p>
                     <p data-title="купить"><img src="img/basket_green.png" alt="купить"></p>
                 </div>
             </div>
@@ -269,7 +298,6 @@
                 <p class="product_header">Proximity брелок</p>
                 <p class="product_category">Категория 2</p>
                 <div class="product_ico_wrapper">
-                    <p data-title="сравнить"><img src="img/libra.png" alt="сравнить"></p>
                     <p data-title="купить"><img src="img/basket_green.png" alt="купить"></p>
                 </div>
             </div>
@@ -278,7 +306,6 @@
                 <p class="product_header">Кнопка GB-602D</p>
                 <p class="product_category">Категория 3</p>
                 <div class="product_ico_wrapper">
-                    <p data-title="сравнить"><img src="img/libra.png" alt="сравнить"></p>
                     <p data-title="купить"><img src="img/basket_green.png" alt="купить"></p>
                 </div>
             </div>
@@ -287,7 +314,6 @@
                 <p class="product_header">К-120W-12V</p>
                 <p class="product_category">Категория 4</p>
                 <div class="product_ico_wrapper">
-                    <p data-title="сравнить"><img src="img/libra.png" alt="сравнить"></p>
                     <p data-title="купить"><img src="img/basket_green.png" alt="купить"></p>
                 </div>
             </div>
@@ -298,7 +324,6 @@
                 <p class="product_header">К-120W-12V</p>
                 <p class="product_category">Категория 4</p>
                 <div class="product_ico_wrapper">
-                    <p data-title="сравнить"><img src="img/libra.png" alt="сравнить"></p>
                     <p data-title="купить"><img src="img/basket_green.png" alt="купить"></p>
                 </div>
             </div>
@@ -307,7 +332,6 @@
                 <p class="product_header">Proximity брелок</p>
                 <p class="product_category">Категория 2</p>
                 <div class="product_ico_wrapper">
-                    <p data-title="сравнить"><img src="img/libra.png" alt="сравнить"></p>
                     <p data-title="купить"><img src="img/basket_green.png" alt="купить"></p>
                 </div>
             </div>
@@ -316,7 +340,7 @@
                 <p class="product_header">ASV-MF05pl</p>
                 <p class="product_category">Категория 1</p>
                 <div class="product_ico_wrapper">
-                    <p data-title="сравнить"><img src="img/libra.png" alt="сравнить"></p>
+  <!--                  <p data-title="сравнить"><img src="img/libra.png" alt="сравнить"></p> -->
                     <p data-title="купить"><img src="img/basket_green.png" alt="купить"></p>
                 </div>
             </div>
@@ -325,8 +349,7 @@
                 <p class="product_header">Кнопка GB-602D</p>
                 <p class="product_category">Категория 3</p>
                 <div class="product_ico_wrapper">
-                    <p data-title="сравнить"><img src="img/libra.png" alt="сравнить"></p>
-                    <p data-title="купить"><img src="img/basket_green.png" alt="купить"></p>
+                     <p data-title="купить"><img src="img/basket_green.png" alt="купить"></p>
                 </div>
             </div>
         </div>

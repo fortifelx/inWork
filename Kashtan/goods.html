@@ -52,6 +52,15 @@
 <!-- <-!-!-!-!-!-  H E A D E R      E N D -->
 
 <div class="wrapper">
+    [[pdoPage?
+  &tpl=`categoryItem`
+  &sortdir=`ASC` 
+  &tvPrefix=``
+    &includeTVs=`mixdb`
+    &parents=`[[+id]]`
+    &pageLimit=`20`
+   ]]
+   [[+page.nav]]
     <p class="goods_page_select">
         <select size="1" name="" id="">
             <option selected disabled>Сортировать по</option>
