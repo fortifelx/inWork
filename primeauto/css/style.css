@@ -1,0 +1,320 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-MediumItalic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+body, div, p, .wrapper, h1, h5, section, article, header, footer {
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    font-size: 10px;                    /*********   ATTENTION     ************/
+}
+a {
+    text-decoration: none;              /*********   ATTENTION     ************/
+}
+
+
+/* * * *        FONTS STYLE   * * * */
+
+
+b {
+    font-weight: 900;
+}
+h1 {
+    font-size: 36px;
+}
+a,p {
+    font-size: 16px;
+}
+p.small {
+    font-size: 14px;
+}
+.big {
+    font-size: 18px;
+}
+.red {
+    color: rgb(196, 50, 21);
+}
+.sub-red {
+    color: rgb(172, 26, 26);
+}
+.black {
+    color: rgb(0, 0, 0);
+}
+.sub-white {
+    color: rgb(255, 242, 239);
+}
+.white {
+    color: rgb(255, 255, 255);
+}
+
+
+
+/******    H E A D E R    *******/
+
+
+header, footer, .wrapper {
+    width: calc(100rem - 3rem);
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+nav {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+    line-height: 6rem;
+}
+.burger {
+    position: relative;
+    display: inline-block;
+    margin: 0 1.5rem;
+    bottom: 1.9rem;
+}
+.burger img {
+    display: inline-block;
+    width: 4rem;
+    height: 1.6rem;
+}
+.logo {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+.logo img {
+    width: 5.3rem;
+    height: 5.3rem;
+}
+.main-menu {
+    text-align: justify;
+    display: inline-block;
+    width: 32.2rem;
+    padding: 0 2rem;
+    line-height: 6rem;
+    margin-top: 1rem;
+}
+.main-menu:after {
+    content: ".";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    visibility: none;
+    overflow: hidden;
+}
+.main-menu li {
+    display: inline-block;
+}
+.main-menu li a {
+    padding: 0.5rem;
+    line-height: 16px;
+}
+.header-search {
+    display: inline-block;
+    float: right;
+    margin: 2.2rem 2rem;
+    position: relative;
+    width: 36rem;
+}
+.header-search img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.header-search input[type="text"] {
+    box-sizing: border-box;
+    width: 36rem;
+    border: 2px solid rgb(0, 0, 0);
+    height: 4rem;
+    padding: 0 3rem 0 1rem;
+    outline: none;
+}
+.header-search input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    opacity: 0.5;
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 4rem;
+}
+.header-search input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+    opacity: 0.5;
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 4rem;
+}
+.header-search input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+    opacity: 0.5;
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 4rem;
+}
+.header-search input[type="text"]:-moz-placeholder { /* Firefox 18- */
+    opacity: 0.5;
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 4rem;
+}
+.header-search input[type="text"]:placeholder {
+    opacity: 0.5;
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 4rem;
+}
+.header-search button {
+    position: absolute;
+    display: block;
+    border: 0;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    right: 1rem;
+    bottom: 1.2rem;
+    z-index: 1;
+}
+.header-search button img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.basket {
+    float: right;
+    margin: 3.5rem 1.5rem 0 0;
+}
+.basket img {
+    width: 2rem;
+    height: 1.5rem;
+}
+.catalog {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+    text-align: justify;
+}
+.catalog:after {
+    content: ".";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    visibility: none;
+    overflow: hidden;
+}
+.catalog li {
+    display: inline-block;
+}
+.catalog-show-more-button {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 2rem;
+    text-decoration: underline;
+}
+
+.catalog-search {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+    text-align: justify;
+}
+.catalog-search select {
+    color: rgb(255, 242, 239);
+    box-sizing: border-box;
+    height: 6rem;
+    width: 20rem;
+    background-color: rgb(172, 26, 26);
+    border: 2px solid rgb(172, 26, 26);
+}
+.catalog-search option {
+    box-sizing: border-box;
+    height: 6rem;
+    width: 20rem;
+    color: rgb(172, 26, 26);
+    background-color: white;
+    border: 2px solid rgb(172, 26, 26);
+}
+.catalog-search:after {
+    content: ".";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    visibility: none;
+    overflow: hidden;
+}
+.catalog-search input[type="text"] {
+    box-sizing: border-box;
+    width: 10.6rem;
+    height: 6rem;
+    padding: 0  0 0 2.5rem;
+    border: 2px solid rgb(172, 26, 26);
+    margin-left: 6rem;
+}
+
+.catalog-search input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    width: 100%;
+    opacity: 0.5;
+    color: rgb(172, 26, 26);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 6rem;
+}
+.catalog-search input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+    width: 100%;
+    opacity: 0.5;
+    color: rgb(172, 26, 26);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 6rem;
+}
+.catalog-search input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+    width: 100%;
+    opacity: 0.5;
+    color: rgb(172, 26, 26);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 6rem;
+}
+.catalog-search input[type="text"]:-moz-placeholder { /* Firefox 18- */
+    width: 100%;
+    opacity: 0.5;
+    color: rgb(172, 26, 26);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 6rem;
+}
+.catalog-search input[type="text"]:placeholder {
+    width: 100%;
+    opacity: 0.5;
+    color: rgb(172, 26, 26);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 6rem;
+}
