@@ -48,7 +48,7 @@ b {
 h1 {
     font-size: 36px;
 }
-a,p {
+a,p,button,input,div,select,option {
     font-size: 16px;
 }
 p.small {
@@ -85,13 +85,13 @@ header, footer, .wrapper {
 }
 nav {
     width: calc(100% - 3rem);
-    padding: 0 1.5rem;
-    line-height: 6rem;
+    padding: 1rem 1.5rem 0 1.5rem;
+    line-height: 5rem;
 }
 .burger {
     position: relative;
     display: inline-block;
-    margin: 0 1.5rem;
+    margin: 0  1.5rem 0 0;
     bottom: 1.9rem;
 }
 .burger img {
@@ -102,6 +102,7 @@ nav {
 .logo {
     display: inline-block;
     margin: 0 0.5rem;
+    margin-top: -0.5rem;
 }
 .logo img {
     width: 5.3rem;
@@ -112,8 +113,8 @@ nav {
     display: inline-block;
     width: 32.2rem;
     padding: 0 2rem;
-    line-height: 6rem;
-    margin-top: 1rem;
+    line-height: 5rem;
+    margin-top: 1.5rem;
 }
 .main-menu:after {
     content: ".";
@@ -133,7 +134,7 @@ nav {
 .header-search {
     display: inline-block;
     float: right;
-    margin: 2.2rem 2rem;
+    margin: 1.7rem 2rem;
     position: relative;
     width: 36rem;
 }
@@ -153,7 +154,6 @@ nav {
     opacity: 0.5;
     color: rgb(0, 0, 0);
     font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
     line-height: 4rem;
 }
@@ -161,7 +161,6 @@ nav {
     opacity: 0.5;
     color: rgb(0, 0, 0);
     font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
     line-height: 4rem;
 }
@@ -169,7 +168,6 @@ nav {
     opacity: 0.5;
     color: rgb(0, 0, 0);
     font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
     line-height: 4rem;
 }
@@ -177,7 +175,6 @@ nav {
     opacity: 0.5;
     color: rgb(0, 0, 0);
     font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
     line-height: 4rem;
 }
@@ -185,7 +182,6 @@ nav {
     opacity: 0.5;
     color: rgb(0, 0, 0);
     font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
     line-height: 4rem;
 }
@@ -205,7 +201,7 @@ nav {
 }
 .basket {
     float: right;
-    margin: 3.5rem 1.5rem 0 0;
+    margin: 3rem 1.5rem 0 0;
 }
 .basket img {
     width: 2rem;
@@ -215,6 +211,7 @@ nav {
     width: calc(100% - 3rem);
     padding: 0 1.5rem;
     text-align: justify;
+    margin-bottom: 2rem;
 }
 .catalog:after {
     content: ".";
@@ -230,7 +227,6 @@ nav {
 .catalog-show-more-button {
     cursor: pointer;
     display: inline-block;
-    font-size: 16px;
     padding-right: 2rem;
     text-decoration: underline;
 }
@@ -256,7 +252,11 @@ nav {
     background-color: white;
     border: 2px solid rgb(172, 26, 26);
 }
-.catalog-search:after {
+.catalog-search form {
+        overflow: hidden;
+    text-align: justify;
+}
+.catalog-search form:after {
     content: ".";
     display: inline-block;
     width: 100%;
@@ -264,13 +264,30 @@ nav {
     visibility: none;
     overflow: hidden;
 }
+.catalog-search button {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 9rem;
+    height: 6rem;
+    background-color: rgb(172, 26, 26);
+    border: 2px solid rgb(172, 26, 26);
+    position: relative;
+    overflow: hidden;
+    top: 1px;
+}
+.catalog-search button:hover {
+    background-color: rgb(255, 242, 239);;
+    border: 2px solid rgb(172, 26, 26);
+    color: rgb(172, 26, 26);
+}
 .catalog-search input[type="text"] {
     box-sizing: border-box;
-    width: 10.6rem;
+    width: 16rem;
     height: 6rem;
-    padding: 0  0 0 2.5rem;
+    padding: 0 0 0 2.5rem;
     border: 2px solid rgb(172, 26, 26);
-    margin-left: 6rem;
+    margin-left: 4rem;
 }
 
 .catalog-search input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -278,7 +295,6 @@ nav {
     opacity: 0.5;
     color: rgb(172, 26, 26);
     font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
     line-height: 6rem;
 }
@@ -287,7 +303,6 @@ nav {
     opacity: 0.5;
     color: rgb(172, 26, 26);
     font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
     line-height: 6rem;
 }
@@ -296,7 +311,6 @@ nav {
     opacity: 0.5;
     color: rgb(172, 26, 26);
     font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
     line-height: 6rem;
 }
@@ -305,7 +319,6 @@ nav {
     opacity: 0.5;
     color: rgb(172, 26, 26);
     font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
     line-height: 6rem;
 }
@@ -314,7 +327,6 @@ nav {
     opacity: 0.5;
     color: rgb(172, 26, 26);
     font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
     line-height: 6rem;
 }
