@@ -602,6 +602,7 @@ nav {
     font-size: 1.8rem;
 }
 .contacts-form button {
+    cursor: pointer;
     box-sizing: border-box;
     margin-top: 2rem;
     width: 100%;
@@ -699,6 +700,7 @@ footer {
     line-height: 4rem;
 }
 .footer-search button {
+    cursor: pointer;
     position: absolute;
     display: block;
     border: 0;
