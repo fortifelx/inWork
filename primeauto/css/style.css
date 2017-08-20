@@ -847,6 +847,10 @@ footer {
     margin-bottom: 2rem;
 }
 .filter span {
+    margin-bottom: 1rem;
+}
+.filter label {
+    cursor: pointer;
     display: block;
     margin-bottom: 1rem;
 }
@@ -866,7 +870,19 @@ footer {
     display: inline-block;
     font-size: 1.2rem;
 }
-
+.filter-color .custom-checkbox {
+    box-sizing: border-box;
+    width: 3rem;
+    height: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+.filter-color label {
+    cursor: pointer;
+    width: 3rem;
+    display: inline-block;
+    margin-right: 2rem;
+}
 .goods {
     width: 68.5rem;
     float: right;
@@ -944,4 +960,52 @@ footer {
 .goods-show-more:hover {
     background-color: rgb(172, 26, 26);
     color: rgb(255, 242, 239);
+}
+.checkbox {
+    display: none;
+}
+.filter .custom-checkbox {
+    position: relative; 
+    display: inline-block;    
+    width: 1.4rem;            
+    height: 1.4rem;            
+    border: 2px solid rgb(0, 0, 0);
+}
+ 
+.custom-checkbox,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.filter .checkbox:checked + .custom-checkbox::before {
+    content: "";             
+    display: block;          
+    position: absolute;    
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #413548;    
+    border-radius: 2px;
+}
+.filter-color .checkbox:checked + .custom-checkbox {
+    border: 3px solid rgb(172, 26, 26);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.one-goods-checkbox {
+    display: none;
+}
+.one-goods-checkbox:checked + .one-goods-complect {
+    border: 2px solid rgb(172, 26, 26);
 }
