@@ -715,3 +715,69 @@ footer {
     width: 1.6rem;
     height: 1.6rem;
 }
+
+
+
+/****     ABOUT US       * * * * * * */
+
+.intro-block, .about-block {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+    overflow: hidden;
+}
+.intro-block {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+.intro-block img {
+    width: 46rem;
+    float: left;
+    max-height: 25.5rem;
+}
+.about-block img {
+    float: right;
+    width: 46rem;
+    max-height: 25.5rem;
+}
+.intro-block p {
+    width: 46rem;
+    float: right;
+}
+.about-block p {
+    width: 46rem;
+    float: left;
+}
+.our-team {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+    margin-top: 10rem;
+    text-align: justify;
+    margin-bottom: 20rem;
+}
+.our-team:after {
+    content: ".";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    visibility: none;
+    overflow: hidden;
+}
+.our-team h1 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 4.5rem;
+}
+.partner {
+    display: inline-block;
+    width: 22rem;
+    vertical-align: top;
+}
+.partner img {
+    width: 100%;
+    max-height: 28rem;
+    margin-bottom: 2rem;
+}
+.partner p, .partner a {
+    line-height: 2.2rem;
+    color: rgb( 0, 0, 0);
+}
