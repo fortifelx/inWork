@@ -535,7 +535,7 @@ nav {
     height: 8rem;
 }
 .main-brand-wrapper {
-    width: 600rem;
+    width: 1000rem;
     text-align: left;
     font-size: 0;
     line-height: 8rem;
@@ -557,6 +557,7 @@ nav {
     line-height: 8rem;
 }
 .contacts-container {
+    clear: both;
     padding-bottom: 10rem;
     width: calc(100% - 3rem);
     padding: 0 1.5rem 10rem 1.5rem;
@@ -780,4 +781,167 @@ footer {
 .partner p, .partner a {
     line-height: 2.2rem;
     color: rgb( 0, 0, 0);
+}
+
+
+/*****        G O O D S       * * * * * */
+
+.goods-slider {
+    margin-top: 2rem;
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+    margin-bottom: 10rem;
+}
+.goods-slider-viewer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 40rem;
+}
+.goods-slider-rounds {
+    width: 100%;
+    position: absolute;
+    height: 1.5rem;
+    text-align: center;  
+    bottom: 2rem; 
+}
+.goods-slider-rounds div {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 1.5rem;
+    width: 1.5rem;
+    height:1.5rem;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 242, 239);
+    border-radius: 1.5rem;
+}
+.goods-slider-rounds div:nth-child(3) {
+    background-color: rgb(255, 242, 239);
+}
+.goods-slider-wrapper {
+    width: 10000rem;
+    height: 40rem;
+    font-size: 0;
+}
+.goods-slider-wrapper img {
+    width: 94rem;
+    height: 40rem;
+    display: inline-block;
+}
+.goods-list {
+    overflow: hidden;
+}
+.goods-filter {
+    width: 18.5rem;
+    padding-left: 1.5rem;
+    overflow: hidden;
+    float: left;
+}
+.filter, .filter-color {
+    width: 100%;
+    padding-bottom: 4rem;
+}
+.filter p {
+    font-size: 1.8rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.filter span {
+    display: block;
+    margin-bottom: 1rem;
+}
+.filter-color p {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    width: 100%;
+}
+.filter-color input {
+    width: 3rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+.filter-color span {
+    width: 3rem;
+    margin-right: 1rem;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.goods {
+    width: 68.5rem;
+    float: right;
+    padding-right: 1.5rem;
+    overflow: hidden;
+}
+.goods-list-type {
+    width: 100%;
+    height: 2.6rem;
+}
+.goods-list-type img {
+    cursor: pointer;
+    float: right;
+    width: 3.6rem;
+    height: 2.6rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.goods-product {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 16rem;
+    margin-bottom: 5rem;
+}
+.goods-product img {
+    height: 16rem;
+    margin-right: 2rem;
+    float: left;
+}
+.goods-product button {
+    cursor: pointer;
+    width: 22rem;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(172, 26, 26);
+    background-color: rgb(172, 26, 26);
+    outline: none;
+    font-size: 1.8rem;
+}
+.goods-product button:hover {
+    background-color: rgb(255, 242, 239);
+    color: rgb(172, 26, 26);
+}
+.goods-product-name {
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+}
+.goods-product-brand {
+    margin-bottom: 1.6rem;
+}
+.goods-product-price {
+    font-size: 2.4rem;
+}
+.goods-product .filter-color {
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+}
+.goods-show-more {
+    display: block;
+    margin: 10rem auto;
+    cursor: pointer;
+    width: 22rem;
+    height: 5rem;
+    box-sizing: border-box;
+    border: 2px solid rgb(172, 26, 26);
+    background-color: rgb(255, 252, 249);
+    color: rgb(172, 26, 26);
+    outline: none;
+    font-size: 1.8rem;
+}
+.goods-show-more:hover {
+    background-color: rgb(172, 26, 26);
+    color: rgb(255, 242, 239);
 }
