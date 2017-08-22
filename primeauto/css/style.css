@@ -1143,3 +1143,121 @@ footer {
     height: 1rem;
     content: url(../img/d_arrow.png);
 }
+.cart-item {
+    overflow: hidden;
+    clear: both;
+    margin: 5rem 0;
+    padding-left: 1.5rem;
+}
+.cart-item table {
+    width: 54rem;
+}
+.cart-item-image {
+    width: 14rem;
+    float: left;
+    margin-right: 2rem;
+}
+.cart-item caption {
+    text-align: left;
+    font-size: 1.8rem;
+}
+.cart-item th {
+    font-size: 1.4rem;
+    padding: 1.5rem 0;
+    text-align: left;
+}
+.cart-item tr {
+    font-size: 1.4rem;
+    text-align: left;
+
+}
+.cart-item td{
+        vertical-align: top;
+}
+.cart-item td:nth-child(3),
+.cart-item th:nth-child(3) {
+    padding-left: 5.5rem;
+}
+.cart-item td:nth-child(1),
+.cart-item th:nth-child(1) {
+    width: 40%;
+}
+.cart-item-info img {
+    float: left;
+    margin-right: 0.5rem;
+}
+.cart-item-info p {
+    line-height: 1.8rem;
+}
+.color {
+    box-sizing: border-box;
+    width: 3rem;
+    height: 2rem;
+    border-radius: 2px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.color + p {
+    font-size: 1rem;
+    text-align: center;
+}
+.cart-summary {
+    width: calc(100% - 4rem);
+    text-align: right;
+    padding-right: 4rem;
+}
+.order-list {
+    width: 60rem;
+    margin: 9rem auto;
+}
+.order-list label,
+.order-list p {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+}
+.order-list label {
+    margin: 2rem 5rem 2rem 0;
+    line-height: 1.8rem;
+}
+.order-list input {
+    display: none;
+}
+.custom-radio {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid rgb(172, 26, 26);
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+}
+.order-list input:checked + .custom-radio:before {
+    content: "";             
+    display: block;          
+    position: absolute;    
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: rgb(172, 26, 26);    
+    border-radius: 4px;
+}
+.order-list button {
+    cursor: pointer;
+    width: 22rem;
+    height: 5rem;
+    box-sizing: border-box;
+    border: 2px solid rgb(172, 26, 26);
+    background-color: rgb(172, 26, 26);
+    outline: none;
+    font-size: 1.8rem;
+    margin-top: 5rem;
+}
+.order-list button:hover {
+    background-color: rgb(255, 242, 239);
+    color: rgb(172, 26, 26);
+}
