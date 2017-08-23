@@ -92,6 +92,61 @@ header, footer, .wrapper {
 .wrapper {
     padding-top: 3rem;
 }
+.left-menu-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.left-menu {
+    width: 36rem;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: grey;
+}
+.left-menu-close {
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    color: rgb(172, 26, 26);
+    font-weight: 900;
+    margin: 1rem;
+}
+.left-menu-close:hover {
+    background-color: rgb(172, 26, 26);
+    color: white;
+}
+.left-menu li {
+    display: block;
+    width: 100%;
+}
+.left-menu a {
+    display: inline-block;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10rem;
+    color: black;
+    background-color: grey;
+    transition: font-size 0.3s;
+    margin: 0.8rem;
+}
+.left-menu a:hover {
+    background-color: white;
+    color: rgb(172, 26, 26);
+
+    font-size: 2.2rem;
+}
+
 nav {
     width: calc(100% - 3rem);
     padding: 1rem 1.5rem 0 1.5rem;
@@ -262,7 +317,7 @@ nav {
     top: 1px;
 }
 .catalog-search button:hover {
-    background-color: rgb(255, 242, 239);;
+    background-color: rgb(255, 242, 239);
     border: 2px solid rgb(172, 26, 26);
     color: rgb(172, 26, 26);
 }
