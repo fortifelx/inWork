@@ -1346,3 +1346,47 @@ footer {
     background-color: rgb(172, 26, 26);
     color: rgb(255, 242, 239);
 }
+
+
+/* ** * * *    H E L P    P A G E     * * * * * */
+
+
+.help-menu {
+    float: left;
+    position: fixed;
+    padding-left: 1.5rem;
+    margin-top: 4rem;
+}
+.help-menu li a {
+    color: black;
+}
+.help-menu li {
+    margin: 2rem 0;
+}
+.help-wrapper {
+    float: right;
+    width: 62rem;
+    padding-right: 1.5rem;
+}
+.help-wrapper h1:first-child {
+    margin-top: 5rem;
+}
+.help-wrapper h1 {
+    width: 100%;
+    display: block;
+    margin: 10rem 0 2rem 0;
+}
+.help-wrapper .contacts-container {
+    padding: 0;
+    margin-right: 0;
+}
+.help-wrapper .contacts-container .contacts-ukraine {
+    margin-left: 0;
+}
+.help-wrapper .contacts-container h1 {
+    width: 100%;
+    display: block;
+}
+.help-wrapper {
+    padding-bottom: 10rem;
+}
