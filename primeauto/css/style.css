@@ -1209,8 +1209,10 @@ footer {
     padding-right: 4rem;
 }
 .order-list {
-    width: 60rem;
+    display: block;
+    width: 82rem;
     margin: 9rem auto;
+    float: right;
 }
 .order-list label,
 .order-list p {
@@ -1255,7 +1257,7 @@ footer {
     background-color: rgb(172, 26, 26);
     outline: none;
     font-size: 1.8rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .order-list button:hover {
     background-color: rgb(255, 242, 239);
@@ -1279,4 +1281,68 @@ footer {
 .order-list input:checked + .custom-radio + p + .delivery-adress {
     opacity: 1;
     height: 5rem;
+}
+.client-data {
+    margin-bottom: 4rem;
+}
+.client-data input {
+    display: block;
+    box-sizing: border-box;
+    width: 32rem;
+    height: 5rem;
+    border: 2px solid rgb(0, 0, 0);
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+.bill-adress {
+    display: block;
+    box-sizing: border-box;
+    width: 32rem;
+    height: 0;
+    opacity: 0;
+    border: 2px solid rgb(0, 0, 0);
+    padding-left: 2rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    -webkit-transition: height 0.6s ease-out 0.3s, opacity 0.5s ease-out 0.4s;
+     -moz-transition: height 0.6s ease-out 0.3s, opacity 0.5s ease-out 0.4s;
+     -o-transition: height 0.6s ease-out 0.3s, opacity 0.5s ease-out 0.4s;
+     transition: height 0.6s ease-out 0.3s, opacity 0.5s ease-out 0.4s;
+}
+.order-list input:checked + .custom-radio + p + .bill-adress {
+    opacity: 1;
+    height: 5rem;
+}
+.pay-type {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+        -webkit-transition: height 0.6s ease-out 0.3s, opacity 0.5s ease-out 0.4s;
+     -moz-transition: height 0.6s ease-out 0.3s, opacity 0.5s ease-out 0.4s;
+     -o-transition: height 0.6s ease-out 0.3s, opacity 0.5s ease-out 0.4s;
+     transition: height 0.6s ease-out 0.3s, opacity 0.5s ease-out 0.4s;
+}
+.pay-type label {
+    display: block;
+    margin: 1rem 0;
+}
+.order-list input:checked + .custom-radio + p + .pay-type {
+    opacity: 1;
+    height: 10rem;
+}
+
+.order-list-check p {
+    display: block;
+}
+.order-list-check p.big {
+    margin: 3rem 0 1.5rem 0;
+}
+.order-list-check .go-back-button {
+    margin: 4rem 2rem;
+    background-color: rgb(255, 242, 239);
+    color: rgb(172, 26, 26);
+}
+.order-list-check .go-back-button:hover {
+    background-color: rgb(172, 26, 26);
+    color: rgb(255, 242, 239);
 }
