@@ -1390,3 +1390,61 @@ footer {
 .help-wrapper {
     padding-bottom: 10rem;
 }
+
+
+
+/*   SERVICE PAGE    */
+
+
+.service-header {
+    margin: 5rem 0;
+    padding-left: 1.5rem;
+    display: block;
+}
+.service-list {
+    width: calc( 100% - 3rem);
+    margin: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    text-align-last: justify;
+    border-bottom: 2px solid rgb(196, 50, 21);
+}
+.service-list p {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    max-width: 23rem;
+    height: 6rem;
+    text-align: left;
+    text-align-last: left;
+    line-height: 2rem;
+}
+.service-list p:first-child {
+    color: rgb(255, 255, 255);
+    background-color: rgb(172, 26, 26);
+}
+
+.service-text {
+    width: calc(100% - 3rem);
+    padding: 1.5rem;
+    position: relative;
+}
+.service-text div {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5rem 0 10rem 0;
+    overflow: hidden;
+}
+.service-text div:nth-child(1) {
+    display: block;
+    position: static;
+}
+.service-text div img {
+    float: left;
+    width: 40rem;
+    margin-right: 6rem;
+}
