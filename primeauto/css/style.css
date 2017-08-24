@@ -1177,6 +1177,10 @@ footer {
     padding:0  0.5rem;
     float: left;
     font-size: 0;
+    position: relative;
+}
+.slider-l-arrow, .slider-r-arrow {
+    display: none;
 }
 .one-product-viewer {
     width: 100%;
