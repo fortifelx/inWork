@@ -587,14 +587,14 @@ footer {
 	display: none;
 }
 .goods-list {
-	overflow: visible;
+	margin-top: -2rem;
 }
 .show-filter {
 	cursor: pointer;
 	display: block;
 	box-sizing: border-box;
     width: 24rem;
-    margin: -2rem auto 3rem auto;
+    margin: 0 auto 3rem auto;
     height: 5rem;
     border: 2px solid rgb(172, 26, 26);
     background-color: rgb(172, 26, 26);
@@ -617,9 +617,6 @@ footer {
 }
 .goods-list-type {
 	display: none;
-}
-.goods-list {
-	overflow: hidden;
 }
 .goods-product {
 	width: 24rem;
@@ -665,7 +662,89 @@ footer {
 	margin: 5rem auto;
 	width: 24rem;
 }
-
+.cart-item {
+	width: 24rem;
+	height: 25rem;
+	position: relative;
+}
+.cart-item table {
+	width: 18rem;
+}
+.cart-item-image {
+	display: none;
+}
+.cart-item td img {
+	float: none;
+}
+.cart-item th:first-child {
+	width: 12rem;
+}
+.cart-item .cart-item-info:first-child {
+	width: 12rem;
+}
+.cart-item .table_num_header {
+	position: absolute;
+	left: 0;
+	bottom: 1rem;
+	padding-left: 1.5rem !important;
+}
+.cart-item .table_sum_header {
+	position: absolute;
+	left: 13rem;
+	bottom: 1rem;
+	padding-left: 0 !important;
+}
+.cart-item .table_num {
+	position: absolute;
+	left: 0;
+	bottom: 1rem;
+	padding-left: 1.5rem !important;
+}
+.cart-item .table_sum {
+	position: absolute;
+	left: 13rem;
+	bottom: 1rem;
+	padding-left: 0 !important;
+}
+.cart-summary {
+	text-align: left;
+	padding-left: 1.5rem;
+}
+.order-list {
+	width: 24rem;
+	float: none;
+	margin: 5rem auto 0 auto;
+}
+.order-list input {
+	width: 24rem;
+}
+.delivery-type  {
+	margin: 2rem 0;
+	height: auto;
+}
+.delivery-type label {
+	margin: 1rem 0;
+	height: auto;
+}
+.pay-type {
+	height: 0;
+	margin: 0;
+}
+.order-list input:checked + .custom-radio + p + .pay-type {
+    opacity: 1;
+    height: 6rem;
+    margin: 0;
+}
+.order-list button {
+	width: 24rem;
+}
+.order-list-check .go-back-button {
+	margin: 2rem 0;
+	box-sizing: border-box;
+}
+.order-list + .other-goods {
+	padding: 5rem 1.5rem 5rem 1.5rem;
+}
 }
 @media handheld and (min-width: 768px), screen and (min-width: 768px) {
 	html {
