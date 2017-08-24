@@ -93,6 +93,7 @@ header, footer, .wrapper {
     padding-top: 3rem;
 }
 .left-menu-wrapper {
+    display: none;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -101,10 +102,14 @@ header, footer, .wrapper {
     top: 0;
     background-color: rgba(0, 0, 0, 0.8);
 }
+.left-menu-wrapper:hover .left-menu a{
+    will-change:font-size, width, height, margin, line-height;
+}
 .left-menu {
     width: 36rem;
     height: 100vh;
     max-height: 100vh;
+    margin-left: -37rem;
     background-color: rgba(192, 192, 192, 0.8);
 }
 .left-menu-close {
@@ -137,14 +142,17 @@ header, footer, .wrapper {
     padding-left: 10rem;
     color: black;
     background-color: rgba(255, 255, 255, 1);
-    transition: font-size 0.3s;
+    transition: font-size 0.3s, width 0.5s, height 0.3s, margin 0.3s, line-height 0.3s;
     margin: 0.8rem;
 }
 .left-menu a:hover {
     background-color: white;
     color: rgb(172, 26, 26);
-
+    width: 105%;
     font-size: 2.2rem;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    margin: 0.5rem 0.8rem 0.5rem 0.8rem;
 }
 
 nav {
@@ -361,12 +369,13 @@ nav {
     width: 17rem;
     overflow: hidden;
     margin: 0;
+    height: 48rem;
 }
 .main-catalog a:nth-child(-n+5) p {
     font-size: 18px;
     font-weight: 900;
     line-height: 24px;
-    height: 48px;
+    height: 48rem;
 }
 .main-catalog a:nth-child(5n+6) {
     margin-left: 0;
@@ -379,18 +388,119 @@ nav {
     width: 14rem;
     overflow: hidden;
     margin: 1.5rem;
+    position: relative;
+    height: 14rem;
 }
 .main-catalog a p {
-    margin-top: 1rem;
+    position: absolute;
+    top: 0;
     line-height: 18px;
-    height: 36px;
+    z-index: 1;
+}
+.main-catalog img {
+    width: 100%;
+    max-height: 42rem;
+}
+.mob-img {
+    display: none;
+}
+.main-catalog a p span {
+    vertical-align: bottom;
+    display: block;
+    width: 100%;
+    padding-top: 11rem
+}
+.main-catalog a:nth-child(-n+5) p span {
+    vertical-align: bottom;
+    display: block;
+    width: 100%;
+    padding-top: 42rem
+}
+.main-catalog p {
+    will-change: transition;
+    display: block;
+    width: 100%;
+    height: 48rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: bottom;
+    background-image:-webkit-linear-gradient(
+        top left,
+        rgba(255, 255, 255, 0.0) 0%,
+        rgba(255, 255, 255, 0.2) 38%,
+        rgba(255, 255, 255, 0.8) 44%,
+        rgba(255, 255, 255, 0.0) 50%
+    ),
+    -webkit-linear-gradient(
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );
+    background-image:-moz-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.0) 0%,
+        rgba(255, 255, 255, 0.2) 13%,
+        rgba(255, 255, 255, 0.8) 20%,
+        rgba(255, 255, 255, 0.0) 30%
+    ),
+    -moz-linear-gradient(
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );    
+    background-image:-o-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.0) 0%,
+        rgba(255, 255, 255, 0.2) 37%,
+        rgba(255, 255, 255, 0.8) 45%,
+        rgba(255, 255, 255, 0.0) 50%
+    ),
+    -o-linear-gradient(
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );
+    background-image:linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.0) 0%,
+        rgba(255, 255, 255, 0.2) 37%,
+        rgba(255, 255, 255, 0.8) 45%,
+        rgba(255, 255, 255, 0.0) 50%
+    ),
+    linear-gradient(
+       rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );
+    background-position: -17rem -66rem, 0 0;
+    -moz-background-size:250% 250%, 100% 100%;
+         background-size:250% 250%, 100% 100%;
+    -webkit-transition:background-position 0s ease;
+       -moz-transition:background-position 0s ease;       
+         -o-transition:background-position 0s ease;
+            transition:background-position 0s ease;
+}
+.main-catalog a:nth-child(-n+5) p:hover,
+.main-catalog a:nth-child(-n+5) p:focus {
+    background-position: 0 0, 0 0;
+    -webkit-transition-duration:0.7s;
+       -moz-transition-duration:0.7s;
+            transition-duration:0.7s;
+}
+.main-catalog p:hover,
+.main-catalog p:focus {
+    background-position:0 0, 0 0;
+    -webkit-transition-duration:1.5s;
+       -moz-transition-duration:1.5s;
+            transition-duration:1.5s;
+}
+.show-catalog {
+    display: none;
+}
+.mob-exterier,
+.mob-interier {
+    display: none;
 }
 .interier-catalog,
 .exterier-catalog {
     width: calc(100% - 3rem);
     padding: 0 1.5rem;
-    text-align: justify;
     margin: 5rem 0 10rem 0;
+    overflow: hidden;
+    cursor: pointer;
 }
 .interier-catalog a,
 .exterier-catalog a {
@@ -399,6 +509,7 @@ nav {
     width: 14rem;
     height: 16rem;
     margin-bottom: 2.4rem;
+
 }
 .interier-catalog a img,
 .exterier-catalog a img{
@@ -408,16 +519,7 @@ nav {
 .interier-catalog a:nth-child(6),
 .exterier-catalog a:nth-child(2),
 .exterier-catalog a:nth-child(6) {
-    margin-left: 2rem;
-}
-.interier-catalog:after,
-.exterier-catalog:after {
-    content: ".";
-    display: inline-block;
-    width: 100%;
-    height: 0;
-    visibility: none;
-    overflow: hidden;
+   /* margin-left: 2rem;*/
 }
 .interier-catalog .interier,
 .exterier-catalog .exterier {
@@ -426,7 +528,17 @@ nav {
     width: 30rem;
     height: 34.5rem;
 }
+.exterier-catalog-wrapper, .interier-catalog-wrapper {
+    width: calc(100% - 32rem);
+    float: right;
+    text-align: justify;
+    text-align-last: justify;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .interier p, .exterier p {
+    display: inline-block;
     position: absolute;
     color: rgb(255,255,255);
     font-weight: 900;
@@ -447,7 +559,7 @@ nav {
 }
 .interier-catalog div p,
 .exterier-catalog div p {
-    line-height: 18px;
+    line-height: 1.8rem;
     margin: 1rem 1rem 1rem 1rem;
 }
 .interier-catalog div p:nth-child(2),

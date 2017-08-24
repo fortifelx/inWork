@@ -1,8 +1,8 @@
-@media handheld and (min-width: 0px), screen and (min-width: 0px) {
+@media screen and (max-width: 768px), handheld and (max-width: 768px) {
 	html {
-		font-size: 6px;
+		font-size: 10px;
 	}
-	b {
+/*	b {
     font-weight: 600;
 	}
 	h1 {
@@ -16,7 +16,298 @@
 	}
 	.big {
 	    font-size: 12px;
+	} */
+	.catalog, .main-menu {
+		display: none;
 	}
+	nav {
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 3rem;
+	}
+	.wrapper, header, footer {
+		width: 27rem;
+	}
+	.burger {
+		float: right;
+		position: static;
+		margin-right: 0;
+	}
+	.logo {
+		float: left;
+		margin-left: 0;
+	}
+	.basket {
+		margin: 0 2rem;
+	}
+	.header-search {
+		position: absolute;
+		top: 1rem;
+		left: -5px;
+		width: 24rem;
+	}
+	.header-search input[type="text"] {
+		display: none;
+		position: absolute;
+		width: 0; /*24rem;*/
+		overflow: hidden;
+		box-sizing: border-box;
+		margin: 0;
+		left: 0;
+		top: -2rem;
+		padding-right: 5px;
+	}
+	.header-search button {
+		top: -1.8rem;  /*-1rem; */
+		right:  9rem; /*1rem; */
+		opacity: 1;
+	}
+	.catalog-search select {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.catalog-search button {
+		margin-top: 3rem;
+		width: 100%;
+	}
+	.catalog-search input[type="text"] {
+		display: none;
+	}
+	.main-catalog {
+		height: 94rem;
+		overflow: hidden;
+	}
+	.main-catalog img {
+		display: none;
+	}
+	.main-catalog .mob-img {
+		display: block;
+		width: 100%;
+		height: 14rem;
+	}
+	.main-catalog a {
+		height: 17rem !important;
+		width: 100% !important;	
+		margin: 1rem 0 !important;
+	}
+	.main-catalog a p {
+		height: 17rem !important;	
+	}
+	.main-catalog a span {
+		padding-top: 14.5rem !important;
+		font-weight: 900;
+		font-size: 16px;
+
+	}
+	.main-catalog p {
+    display: block;
+    width: 100%;
+    height: 48rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: bottom;
+    background-image:-webkit-linear-gradient(
+        top left,
+        rgba(255, 255, 255, 0.0) 10%,
+        rgba(255, 255, 255, 0.2) 38%,
+        rgba(255, 255, 255, 0.8) 44%,
+        rgba(255, 255, 255, 0.0) 50%
+    ),
+    -webkit-linear-gradient(
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );
+    background-image:-moz-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.0) 10%,
+        rgba(255, 255, 255, 0.2) 38%,
+        rgba(255, 255, 255, 0.8) 44%,
+        rgba(255, 255, 255, 0.0) 50%
+    ),
+    -moz-linear-gradient(
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );    
+    background-image:-o-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.0) 10%,
+        rgba(255, 255, 255, 0.2) 38%,
+        rgba(255, 255, 255, 0.8) 44%,
+        rgba(255, 255, 255, 0.0) 50%
+    ),
+    -o-linear-gradient(
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );
+    background-image:linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.0) 10%,
+        rgba(255, 255, 255, 0.2) 38%,
+        rgba(255, 255, 255, 0.8) 44%,
+        rgba(255, 255, 255, 0.0) 50%
+    ),
+    linear-gradient(
+       rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );
+    background-position: -43rem 0rem, 0 0;
+    -moz-background-size:250% 250%, 100% 100%;
+         background-size:250% 250%, 100% 100%;
+    -webkit-transition:background-position 0s ease;
+       -moz-transition:background-position 0s ease;       
+         -o-transition:background-position 0s ease;
+            transition:background-position 0s ease;
+}
+.main-catalog p:hover,
+.main-catalog p:focus {
+    background-position:0 0, 0 0;
+    -webkit-transition-duration:1s !important;
+       -moz-transition-duration:1s !important;
+            transition-duration:1s !important;
+}
+.show-catalog {
+	cursor: pointer;
+	display: block;
+	box-sizing: border-box;
+    width: 24rem;
+    margin: 3rem auto 8rem auto;
+    height: 5rem;
+    border: 2px solid rgb(172, 26, 26);
+    background-color: rgb(172, 26, 26);
+}
+.show-catalog:hover {
+	background-color: rgb(255, 240, 250);
+	color: rgb(172, 26, 26);
+}
+.interier-catalog, .exterier-catalog {
+	margin: 1rem 0;
+	height: 16rem;	
+}
+.interier-catalog .interier, .exterier-catalog .exterier {
+	width: 100%;
+	height: 16rem;
+}
+.interier img, .exterier img {
+	display: none;
+}
+.interier p, .exterier p {
+	font-size: 2rem;
+}
+
+.interier .mob-interier, .exterier .mob-exterier {
+	display: block;
+}
+a.exterier-product, a.interier-product {
+	width: 11rem;
+	height: 14rem;
+}
+a.exterier-product div, a.interier-product div {
+	width: 100%;
+}
+.exterier-catalog-wrapper, .interier-catalog-wrapper {
+    width: 100%;
+    text-align: justify;
+    text-align-last: justify;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.catalog-video-container {
+	margin-top: 8rem;
+}
+.catalog-video-container h1,
+.catalog-photo-container h1,
+.new-product-container h1,
+.main-brand-container h1,
+.contacts-container h1  {
+	font-size: 2rem;
+	padding-bottom: 1rem;
+}
+.catalog-video-container div {
+	display: block;
+	width: 100%;
+	height: 14rem;
+	margin: 1rem 0;
+}
+.catalog-photo-container {
+	height: 38rem;
+	overflow: hidden;
+}
+.catalog-photo-container div {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 17rem;
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+.catalog-photo-container div img {
+	height: auto;
+	width: 100%;
+}
+.catalog-photo-container div p{
+	width: 100%;
+	padding: 1rem 0;
+	position: absolute;
+	bottom: 0;
+	background-color: white;
+}
+.new-product-container {
+	height: 36rem;
+	overflow: hidden;
+}
+.new-product {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+.main-brand-container {
+	height: 8rem;
+}
+.main-brand {
+	width: 24rem;
+}
+.main-l-arrow, .main-r-arrow {
+	top: 4rem;
+}
+.contacts-container input,
+.contacts-container button,
+.contacts-container div {
+	width: 24rem;
+	margin-left: 0;
+	margin-right: 0;
+}
+.contacts-container button {
+	margin-bottom: 8rem;
+}
+.contacts-ukraine {
+	margin-bottom: 2rem;
+}
+.footer-wrapper {
+	height: 12rem;
+}
+footer {
+	position: relative;
+	overflow: hidden;	
+}
+.footer-menu {
+	float: none;
+	width: 24rem;
+	margin-top: 3rem;
+	padding-left: 0;
+}
+.footer-menu a {
+	font-size: 12px;
+	width: auto;
+}
+.footer-search {
+	float: none;
+	position: absolute;
+	top: -1rem;
+	left: 0;
+	width: 24rem;
+}
+.footer-search input {
+	width: 24rem !important;
+	padding-left: 5px !important;
+}
+
 }
 @media handheld and (min-width: 768px), screen and (min-width: 768px) {
 	html {
