@@ -583,6 +583,88 @@ footer {
 .new-product {
 	width: 24rem;
 }
+.goods-slider {
+	display: none;
+}
+.goods-list {
+	overflow: visible;
+}
+.show-filter {
+	cursor: pointer;
+	display: block;
+	box-sizing: border-box;
+    width: 24rem;
+    margin: -2rem auto 3rem auto;
+    height: 5rem;
+    border: 2px solid rgb(172, 26, 26);
+    background-color: rgb(172, 26, 26);
+}
+.show-filter:hover {
+	background-color: rgb(255, 240, 250);
+	color: rgb(172, 26, 26);
+}
+.goods-filter .filter {
+	padding-bottom: 3rem;
+}
+.goods-filter .filter label {
+	margin-bottom: 0;
+}
+.goods {
+	width: 24rem;
+	margin-top: 5rem;
+	overflow: hidden;
+	height: 72rem;
+}
+.goods-list-type {
+	display: none;
+}
+.goods-list {
+	overflow: hidden;
+}
+.goods-product {
+	width: 24rem;
+	height: 33rem;
+}
+.goods-product img {
+	width: 24rem;
+	margin: 0;
+}
+.goods-product-name {
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0;
+}
+.goods-product-brand {
+	margin-top: 4rem;
+}
+.goods-product-price {
+	position: absolute;
+	top: 19rem;
+	font-size: 18px;
+}
+.goods-product .filter-color {
+	width: auto;
+	float: right;
+	margin-top: -3rem;
+}
+.goods-product .filter-color label {
+	margin-right: 1rem;
+
+}
+.goods-product .filter-color .custom-checkbox {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 2px;
+}
+.goods-product button {
+	width: 100%;
+	bottom: 0;
+	right: 0;
+}
+.goods-show-more {
+	margin: 5rem auto;
+	width: 24rem;
+}
 
 }
 @media handheld and (min-width: 768px), screen and (min-width: 768px) {
