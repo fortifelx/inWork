@@ -896,6 +896,9 @@ footer {
     padding: 0 1.5rem;
     overflow: hidden;
 }
+.about-read-more {
+    display: none;
+}
 .intro-block {
     margin-bottom: 4rem;
     margin-top: 4rem;
@@ -951,6 +954,9 @@ footer {
 .partner p, .partner a {
     line-height: 2.2rem;
     color: rgb( 0, 0, 0);
+}
+.partner a {
+    text-decoration: underline;
 }
 
 
