@@ -73,6 +73,24 @@
 	.catalog-search input[type="text"] {
 		display: none;
 	}
+	.looks-via-auto + .catalog,
+	.looks-via-auto + .catalog + .catalog-search {
+		display: none;
+		}
+	.looks-via-auto {
+	cursor: pointer;
+	display: block;
+	box-sizing: border-box;
+    width: 24rem;
+    margin: 3rem auto 0 auto;
+    height: 5rem;
+    border: 2px solid rgb(172, 26, 26);
+    background-color: rgb(172, 26, 26);
+}
+.looks-via-auto:hover {
+	background-color: rgb(255, 240, 250);
+	color: rgb(172, 26, 26);
+}
 	.main-catalog {
 		height: 94rem;
 		overflow: hidden;
@@ -306,6 +324,106 @@ footer {
 .footer-search input {
 	width: 24rem !important;
 	padding-left: 5px !important;
+}
+.service-header {
+	font-size: 2rem;
+	width: 24rem;
+	padding: 0 1.5rem;
+	line-height: 2.2rem;
+	display: inline-block;
+	margin: 0;
+}
+.service-list,
+.service-text {
+	display: none;
+}
+.mob-service {
+	display: block;
+	width: 24rem;
+	padding: 2rem 1.5rem 8rem 1.5rem;
+}
+.mob-service img {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+.mob-service-header {
+	position: relative;
+	margin: 1rem 0;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	box-sizing: border-box;
+	position: relative;
+	width: 24rem;
+	height: 7rem;
+	line-height: 7rem;
+	padding-left: 2rem;
+	border: 2px solid rgb(172, 26, 26);
+	background-color: rgb(172, 26, 26);
+}
+.mob-service-header b {
+	width: 18rem;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	display: inline-block;
+}
+.mob-service-header + p {
+	margin: 2rem 0;
+	line-height: 2.4rem;
+}
+.mob-service-header:after {
+	content: url(../img/white_d_arrow.png);
+	display: block;
+	position: absolute;
+	top: 3rem;
+	right: 1rem;
+	width: 13px;
+	height: 8px;
+}
+.help-menu {
+	display: none;
+}
+.help-wrapper {
+	float: none;
+	width: 24rem;
+	padding: 0 1.5rem;
+	margin-top: -2rem;
+}
+.help-info p {
+	line-height: 2rem;
+	margin: 2rem 0;
+}
+.help-info h1 {
+	cursor: pointer;
+	color: white;
+	font-size: 1.8rem;
+	position: relative;
+	margin: 0 !important;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	position: relative;
+	width: 24rem;
+	height: 5rem;
+	line-height: 7rem;
+	padding-left: 2rem;
+	border: 2px solid rgb(172, 26, 26);
+	background-color: rgb(172, 26, 26);
+}
+.help-info h1 b {
+	margin: 0;
+}
+.help-info h1:after {
+	content: url(../img/white_d_arrow.png);
+	display: block;
+	position: absolute;
+	top: 2rem;
+	right: 1rem;
+	width: 13px;
+	height: 8px;
+}
+.help-wrapper .contacts-container {
+	padding-bottom: 5rem;
 }
 
 }

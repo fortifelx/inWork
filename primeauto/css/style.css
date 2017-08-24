@@ -255,6 +255,9 @@ nav {
     width: 2rem;
     height: 1.5rem;
 }
+.looks-via-auto {
+    display: none;
+}
 .catalog {
     width: calc(100% - 3rem);
     padding: 0 1.5rem;
@@ -1560,13 +1563,16 @@ footer {
 
 
 
-/*   SERVICE PAGE    */
+/*  * * * * * * * * * * * * * *  S E R V I C E     P A G E   * * * * * * * * * * *  */
 
 
 .service-header {
     margin: 5rem 0;
     padding-left: 1.5rem;
     display: block;
+}
+.mob-service {
+    display: none;
 }
 .service-list {
     width: calc( 100% - 3rem);
