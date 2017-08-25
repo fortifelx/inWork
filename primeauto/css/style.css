@@ -97,10 +97,11 @@ header, footer, .wrapper {
     width: 100%;
     height: 100vh;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
 }
 .left-menu-wrapper:hover .left-menu a{
     will-change:font-size, width, height, margin, line-height;
@@ -161,6 +162,7 @@ nav {
     line-height: 5rem;
 }
 .burger {
+    cursor: pointer;
     position: relative;
     display: inline-block;
     margin: 0  1.5rem 0 0;
@@ -209,6 +211,9 @@ nav {
     margin: 1.7rem 2rem;
     position: relative;
     width: 36rem;
+}
+.show-input-search {
+    display: none;
 }
 .header-search img {
     width: 1.6rem;
@@ -259,30 +264,65 @@ nav {
     display: none;
 }
 .catalog {
-    width: calc(100% - 3rem);
+    width: calc(100% - 16rem);
+    height: 3rem;
+    overflow: hidden;
     padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
     text-align: justify;
     margin-bottom: 2rem;
-}
-.catalog:after {
-    content: ".";
-    display: inline-block;
-    width: 100%;
-    height: 0;
-    visibility: none;
-    overflow: hidden;
+    text-align-last: justify;
+    flex-wrap: wrap;
 }
 .catalog li {
+    position: relative;
     display: inline-block;
+    margin: 1rem 2rem 1rem 0;
+    text-align: left !important;
+}
+.catalog li a {
+    display: inline;
+    text-align: left !important;
+}
+.catalog li a:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.8s;
+} 
+.catalog li:hover a:after {
+    width: 100%;
 }
 .catalog-show-more-button {
+    position: relative;
     cursor: pointer;
     display: inline-block;
-    padding-right: 2rem;
-    text-decoration: underline;
+    margin-right: 2rem;
+    margin-top: -4rem;
+    float: right;
+}
+.catalog-show-more-button p {
+    display: inline;
+}
+.catalog-show-more-button p:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 100% !important;
+    bottom: -3px;
+    height: 2px;
+    background-color: rgb(172, 26, 26);
 }
 
 .catalog-search {
+    clear: both;
     width: calc(100% - 3rem);
     padding: 0 1.5rem;
     text-align: justify;
@@ -490,6 +530,90 @@ nav {
        -moz-transition-duration:1.5s;
             transition-duration:1.5s;
 }
+.interier p, 
+.exterier p {
+    will-change: transition;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 34.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: bottom;
+    background-image:-webkit-linear-gradient(
+        top left,
+        rgba(255, 255, 255, 0.0) 0%,
+        rgba(255, 255, 255, 0.2) 38%,
+        rgba(255, 255, 255, 0.8) 44%,
+        rgba(255, 255, 255, 0.0) 50%
+    ),
+    -webkit-linear-gradient(
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );
+    background-image:-moz-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.0) 0%,
+        rgba(255, 255, 255, 0.2) 13%,
+        rgba(255, 255, 255, 0.8) 20%,
+        rgba(255, 255, 255, 0.0) 30%
+    ),
+    -moz-linear-gradient(
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );    
+    background-image:-o-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.0) 0%,
+        rgba(255, 255, 255, 0.2) 37%,
+        rgba(255, 255, 255, 0.8) 45%,
+        rgba(255, 255, 255, 0.0) 50%
+    ),
+    -o-linear-gradient(
+        rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );
+    background-image:linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.0) 0%,
+        rgba(255, 255, 255, 0.2) 37%,
+        rgba(255, 255, 255, 0.8) 45%,
+        rgba(255, 255, 255, 0.0) 50%
+    ),
+    linear-gradient(
+       rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)
+    );
+    background-position: -60rem -20rem, 0 0;
+    -moz-background-size:350% 250%, 100% 100%;
+         background-size:350% 250%, 100% 100%;
+    -webkit-transition:background-position 0s ease;
+       -moz-transition:background-position 0s ease;       
+         -o-transition:background-position 0s ease;
+            transition:background-position 0s ease;
+}
+.interier p:hover,
+.interier p:focus,
+.exterier p:hover,
+.exterier p:focus {
+    background-position:0 0, 0 0;
+    -webkit-transition-duration:1.5s;
+       -moz-transition-duration:1.5s;
+            transition-duration:1.5s;
+}
+.interier,
+.exterier {
+    overflow: hidden;
+    position: relative;
+}
+.interier img,
+.exterier img {
+    height: 100%;
+    width: auto;
+}
+.second-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
 .show-catalog {
     display: none;
 }
@@ -514,8 +638,8 @@ nav {
     margin-bottom: 2.4rem;
 
 }
-.interier-catalog a img,
-.exterier-catalog a img{
+.interier-product img,
+.exterier-product img{
     width: 100%;
 }
 .interier-catalog a:nth-child(2),
@@ -550,8 +674,8 @@ nav {
     bottom: calc(50% - 1.8rem);
     font-size: 3.6rem;
 }
-.interier-catalog a div,
-.exterier-catalog a div {
+.interier-product div,
+.exterier-product div {
     position: absolute;
     width: 14rem;
     height: 8rem;
@@ -559,6 +683,13 @@ nav {
     bottom: 0;
     left: 0;
     right:0;
+    opacity: 1;
+    transition: height 1s, background-color 1s;
+}
+.interier-product:hover div,
+.exterier-product:hover div {
+    height: 16rem;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .interier-catalog div p,
 .exterier-catalog div p {
@@ -615,11 +746,23 @@ nav {
 .catalog-photo {
     width: 29%;
     display: inline-block;
+    cursor: pointer;
 }
 .catalog-photo img {
     width: 100%;
     height: 20rem;
     padding-bottom: 1rem;
+}
+.catalog-photo-wrapper {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;    
+    background-color: rgba(0, 0, 0, 0.35);
+    min-height: 100vh;
+    text-align: center;
 }
 .new-product-container {
     width: calc(100% - 3rem);
@@ -1637,4 +1780,78 @@ footer {
     float: left;
     width: 40rem;
     margin-right: 6rem;
+}
+
+
+
+/*    Jquerry CLASES * */
+
+.display-block {
+    display: block;
+}
+.header-search-show {
+    display: block;
+    opacity: 0;
+    box-sizing: border-box;
+    border: 2px solid black !important;
+    padding: 0 3rem 3rem 1rem;
+}
+.catalog-photo-show {
+    display: block;
+    opacity: 0;
+
+}
+.catalog-photo-wrapper img {
+    height: auto;
+}
+.catalog-photo-slider {
+    display: inline-block;
+    position: relative;
+    width: calc( 100rem - 3rem);
+    padding: 10rem 1.5rem;
+    height: 60vh;
+    text-align: center;
+    margin: 0 auto;
+}
+.photo-l-arrow, .photo-r-arrow {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 60%;
+    height: 3rem;
+    width: 2em;
+    background-repeat: no-repeat; 
+}
+.photo-l-arrow {
+    background-image: url(../img/white_l_arrow.png);
+    left: 5px;
+}
+.photo-r-arrow {
+    background-image: url(../img/white_r_arrow.png);
+    right: 0;
+}
+.photo-wrapper {
+    position: relative;
+    width: 100rem;
+    margin: 0 auto;
+    height: 100%;
+}
+.photo-wrapper p {
+    color: white;
+    margin-top: 2rem;
+}
+.photo-wrapper .photo-close {
+    cursor: pointer;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    color: white;
+}
+.photo-wrapper .photo-close:hover {
+    color: black;
+    background-color: white;
+    border-radius: 2px;
 }

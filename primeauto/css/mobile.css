@@ -28,6 +28,20 @@
 	.wrapper, header, footer {
 		width: 27rem;
 	}
+	.nav-wrapper {
+		position: relative;
+		width: 24rem;
+	}
+	header nav {
+		display: block;
+		position: fixed;
+		top: 0;
+		background-color: rgba(255, 255, 255, 1);
+		z-index: 2;
+	}
+	.catalog-search {
+		margin-top: 8rem;
+	}
 	.burger {
 		float: right;
 		position: static;
@@ -43,24 +57,35 @@
 	.header-search {
 		position: absolute;
 		top: 1rem;
-		left: -5px;
+		left: 0;
 		width: 24rem;
 	}
 	.header-search input[type="text"] {
-		display: none;
 		position: absolute;
 		width: 0; /*24rem;*/
 		overflow: hidden;
 		box-sizing: border-box;
 		margin: 0;
-		left: 0;
+		left: -2rem;
 		top: -2rem;
-		padding-right: 5px;
+		padding: 0;
+		border: 0;
 	}
 	.header-search button {
-		top: -1.8rem;  /*-1rem; */
-		right:  9rem; /*1rem; */
+       display: none;
+	}
+	.show-input-search {
+		position: absolute;
+		cursor: pointer;
+		display: block;
+		top: -2.8rem;  /*-1rem; */
+		right:  11rem; /*1rem; */
 		opacity: 1;
+		width: 16px;
+		height: 16px;
+		padding: 0;
+		background-color: rgba(255, 255, 255, 1);
+		padding-left: 1.1rem;
 	}
 	.catalog-search select {
 		width: 100%;
@@ -744,6 +769,9 @@ footer {
 }
 .order-list + .other-goods {
 	padding: 5rem 1.5rem 5rem 1.5rem;
+}
+.left-menu {
+	width: 28rem;
 }
 }
 @media handheld and (min-width: 768px), screen and (min-width: 768px) {

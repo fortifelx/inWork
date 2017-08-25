@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href='css/reset.css'>
     <link rel="stylesheet" href='css/style.css'>
     <link rel="stylesheet" href='css/mobile.css'>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+<!--	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>   -->
 	</head>
 	<body>
 	<header>
@@ -30,6 +32,7 @@
 	</ul>
 	</div>
 	   <nav>
+	   <div class="nav-wrapper">
 		<div class="burger">
 		  <img src="img/burger.png" alt="дополнительное меню">
 		</div>
@@ -49,8 +52,10 @@
 			 <input type="text" placeholder="Поиск товара по названию или коду">
 			 <button type="submit">
 		  	 <img src="img/search_ico.png" alt="лупа поиска">
-		  </button>
+		     </button>
+		     <img class="show-input-search" src="img/search_ico.png" alt="лупа поиска">
 		</form>
+		</div>
       </nav>
 	   <ul class="catalog">
 	   	<li><a class="black" href="">Коврики</a></li>
@@ -61,8 +66,16 @@
 	   	<li><a class="black" href="">Порожки</a></li>
 	   	<li><a class="black" href="">Брызговики</a></li>
 	   	<li><a class="black" href="">Tech Care</a></li>
-	   	<div class="catalog-show-more-button sub-red">Больше товаров</div>
+	   	<li><a class="black" href="">Коврики</a></li>
+	   	<li><a class="black" href="">Дефлекторы</a></li>
+	   	<li><a class="black" href="">Ролеты</a></li>
+	   	<li><a class="black" href="">Хром пакеты</a></li>
+	   	<li><a class="black" href="">Реленги</a></li>
+	   	<li><a class="black" href="">Порожки</a></li>
+	   	<li><a class="black" href="">Брызговики</a></li>
+	   	<li><a class="black" href="">Tech Care</a></li>
 	   </ul>
+	   	   	<div class="catalog-show-more-button sub-red"><p>Больше товаров</p></div>
 	   <div class="catalog-search">
 	   <form action="">
 	   	<select name="" id="">
@@ -191,7 +204,8 @@
 		<section class="interier-catalog">
 			<a class="interier">
 				<img src="img/mob-interier.jpg" alt="" class="mob-interier">
-				<img src="img/images/main/16.jpg" alt="">
+				<img src="img/first.jpg" alt="" class="first-img">
+				<img src="img/second.jpg" alt="" class="second-img">
 				<p>Интерьер</p>
 			</a>
 			<div class="interier-catalog-wrapper">
@@ -256,7 +270,8 @@
 		<section class="exterier-catalog">
 			<a class="exterier">
 				<img src="img/mob-extarier.jpg" alt="" class="mob-exterier">
-				<img src="img/images/main/25.jpg" alt="">
+				<img src="img/images/main/25.jpg" class="first-img" alt="">
+				<img src="img/ex-first.jpg" alt="" class="second-img">
 				<p>Экстерьер</p>
 			</a>
 			<div class="exterier-catalog-wrapper">
@@ -329,17 +344,77 @@
 		</section>
 		<section class="catalog-photo-container">
 			<h1 class="red"><b>Фотообзоры</b></h1>
-			<div class="catalog-photo">
+			<div class="catalog-photo cpf">
 				<img src="img/images/main/36.jpg" alt="">
 				<p>Дефлекторы для Akura</p>
+				<div class="catalog-photo-wrapper  first-catalog-photo">
+				  <div class="photo-wrapper">
+				   <p class="big"><b>Дефлекторы для Akura</b></p>
+				   <div class="photo-l-arrow"></div>
+				   <div class="photo-r-arrow"></div>
+				   <div class="photo-close first-photo-close ">X</div>
+					<div class="catalog-photo-slider">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+					</div>
+				   </div>
+				</div>
 			</div>
-			<div class="catalog-photo">
+			<div class="catalog-photo cps">
 				<img src="img/images/main/36.jpg" alt="">
 				<p>Дефлекторы для Akura</p>
+				<div class="catalog-photo-wrapper second-catalog-photo">
+					<div class="photo-wrapper">
+				   <p class="big"><b>Дефлекторы для Akura</b></p>
+				   <div class="photo-l-arrow"></div>
+				   <div class="photo-r-arrow"></div>
+				   <div class="photo-close second-photo-close">X</div>
+					<div class="catalog-photo-slider">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+					</div>
+					</div>
+				</div>
 			</div>
-			<div class="catalog-photo">
+			<div class="catalog-photo cpt">
 				<img src="img/images/main/36.jpg" alt="">
 				<p>Дефлекторы для Akura</p>
+				<div class="catalog-photo-wrapper third-catalog-photo">
+					<div class="photo-wrapper">
+				   <p class="big"><b>Дефлекторы для Akura</b></p>
+				   <div class="photo-l-arrow"></div>
+				   <div class="photo-r-arrow"></div>
+				   <div class="photo-close third-photo-close">X</div>
+					<div class="catalog-photo-slider">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+						<img src="img/images/main/36.jpg" alt="">
+					</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<button class="show-catalog sub-white">Показать больше</button>
@@ -528,6 +603,7 @@
 </div>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/velocity.js"></script>
+	<script type="text/javascript" src="css/slick/slick.min.js"></script>
     <script src="js/script.js"></script>	
 	</body>
 </html>
