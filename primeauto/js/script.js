@@ -77,38 +77,15 @@ $(".exterier").mouseout(function(){
 	$('.exterier .second-img').velocity({
 		opacity: 0
 	}, 2000);
-})
+});
 
-$('.catalog-photo-slider').slick({
-  	prevArrow: $('.photo-l-arrow'),
-	nextArrow: $('.photo-r-arrow')
-  });
-
-$('.cpf').click( function() {
-	$('.first-catalog-photo').addClass('catalog-photo-show').velocity({
-		opacity: 1
-	}, 700)
+$(".catalog-photo").click(function(){
+ 	$(this).find(".catalog-photo-wrapper").addClass('catalog-photo-show').velocity({
+ 		opacity: 1
+ 	}, 700);
 });
-$('.cps').click( function() {
-	$('.second-catalog-photo').addClass('catalog-photo-show').velocity({
-		opacity: 1
-	}, 700)
-});
-$('.cpt').click( function() {
-	$('.third-catalog-photo').addClass('catalog-photo-show').velocity({
-		opacity: 1
-	}, 700)
-});
-$(".first-photo-close").click(function(){
-	event.preventDefault();
-	$(".first-catalog-photo").removeClass('catalog-photo-show');
-});
-$(".second-photo-close").click(function(){
-	event.preventDefault();
-	$(".second-catalog-photo").removeClass('catalog-photo-show');
-});
-$(".third-photo-close").click(function(){
-	event.preventDefault();
-	$(".third-catalog-photo").removeClass('catalog-photo-show');
+$(".photo-close").click(function(e){
+ 	$(this).parent().parent().removeClass('catalog-photo-show');
+ 	e.stopPropagation();
 });
 });

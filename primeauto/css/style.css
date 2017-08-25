@@ -754,11 +754,11 @@ nav {
     padding-bottom: 1rem;
 }
 .catalog-photo-wrapper {
-    display: none;
+    display: block;
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100vw;
     z-index: 10;    
     background-color: rgba(0, 0, 0, 0.35);
     min-height: 100vh;
@@ -784,6 +784,7 @@ nav {
     padding-bottom: 5rem;
 }
 .new-product {
+    cursor: pointer;
     position: relative;
     display: inline-block;
     width: 22rem;
@@ -802,6 +803,11 @@ nav {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 1);
+    transition: height 1s, background-color 1s;
+}
+.new-product:hover div {
+    height: 14rem;
+    background-color: rgba(172, 46, 46, 0.6);
 }
 .new-product p {
     display: inline-block;
@@ -828,6 +834,7 @@ nav {
     top: 9.5rem;
     width: 1.5rem;
     height: 2.7rem;
+    z-index: 12;
 }
 .main-r-arrow {
     cursor: pointer;
@@ -837,6 +844,7 @@ nav {
     top: 9.5rem;
     width: 1.5rem;
     height: 2.7rem;
+    z-index: 12;
 }
 .main-r-arrow:hover, .main-l-arrow:hover {
     height: 3.1rem;
@@ -1799,6 +1807,7 @@ footer {
 .catalog-photo-show {
     display: block;
     opacity: 0;
+    left: 0;
 
 }
 .catalog-photo-wrapper img {
@@ -1821,10 +1830,11 @@ footer {
     height: 3rem;
     width: 2em;
     background-repeat: no-repeat; 
+    z-index: 10;
 }
 .photo-l-arrow {
     background-image: url(../img/white_l_arrow.png);
-    left: 5px;
+    left: 15px;
 }
 .photo-r-arrow {
     background-image: url(../img/white_r_arrow.png);
