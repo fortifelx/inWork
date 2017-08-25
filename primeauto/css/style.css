@@ -399,6 +399,13 @@ nav {
     text-align: justify;
     overflow: hidden;
 }
+.main-catalog-height {
+    text-align: justify;
+    text-align-last: justify;
+}
+.main-catalog-height a span {
+    text-align-last: left;
+}
 .main-catalog:after {
     content: ".";
     display: inline-block;
@@ -432,7 +439,7 @@ nav {
     overflow: hidden;
     margin: 1.5rem;
     position: relative;
-    height: 14rem;
+    height: 15rem;
 }
 .main-catalog a p {
     position: absolute;
@@ -724,6 +731,11 @@ nav {
     width: calc(50% - 1rem);
     height: 27rem;
 }
+.catalog-photo-height {
+    height: auto !important; 
+    text-align: justify;
+    text-align-last: justify;
+}
 .catalog-photo-container {
     width: calc(100% - 3rem);
     margin-top: 10rem;
@@ -747,6 +759,19 @@ nav {
     width: 29%;
     display: inline-block;
     cursor: pointer;
+}
+.catalog-photo p {
+    text-align-last: left;
+}
+.new-product-height {
+    text-align: justify;
+    text-align-last: justify;
+}
+.new-product-height h1 {
+    text-align-last: left;
+}
+.new-product p {
+    text-align-last: left;
 }
 .catalog-photo img {
     width: 100%;
@@ -1167,6 +1192,12 @@ footer {
     padding-left: 1.5rem;
     overflow: hidden;
     float: left;
+}
+.goods-filter-wrapper {
+    height: auto;
+}
+.show-filter {
+    display: none;
 }
 .filter, .filter-color {
     width: 100%;

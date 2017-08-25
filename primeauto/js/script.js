@@ -66,7 +66,7 @@ $(".interier").hover(function(){
 $(".interier").mouseout(function(){
 	$('.interier .second-img').velocity({
 		opacity: 0
-	}, 2000);
+	}, 50);
 })
 $(".exterier").hover(function(){
 	$('.exterier .second-img').velocity({
@@ -76,7 +76,7 @@ $(".exterier").hover(function(){
 $(".exterier").mouseout(function(){
 	$('.exterier .second-img').velocity({
 		opacity: 0
-	}, 2000);
+	}, 50);
 });
 
 $(".catalog-photo").click(function(){
@@ -87,5 +87,31 @@ $(".catalog-photo").click(function(){
 $(".photo-close").click(function(e){
  	$(this).parent().parent().removeClass('catalog-photo-show');
  	e.stopPropagation();
+});
+$(".show-catalog").click(function(){
+	var blockHeight = $(this).prev().children().css("height");
+	$(this).prev().velocity({
+		height: blockHeight
+	},
+	500);
+	$(this).hide();
+});
+var filterStatus = false;
+$(".show-filter").click(function(){
+	if(filterStatus === false) {
+	filterStatus = true;	
+	var blockHeight = $(this).next().children().css("height");
+	$(this).next().velocity({
+		height: blockHeight
+	},
+	500); return;
+	}
+	if(filterStatus === true) {
+	filterStatus = false;	
+	$(this).next().velocity({
+		height: 0
+	},
+	500);
+	}
 });
 });

@@ -99,7 +99,7 @@
 		display: none;
 	}
 	.looks-via-auto + .catalog,
-	.looks-via-auto + .catalog + .catalog-search {
+	.looks-via-auto + .catalog + div + .catalog-search {
 		display: none;
 		}
 	.looks-via-auto {
@@ -107,7 +107,7 @@
 	display: block;
 	box-sizing: border-box;
     width: 24rem;
-    margin: 3rem auto 0 auto;
+    margin: 8rem auto 0 auto;
     height: 5rem;
     border: 2px solid rgb(172, 26, 26);
     background-color: rgb(172, 26, 26);
@@ -205,6 +205,9 @@
        -moz-transition-duration:1s !important;
             transition-duration:1s !important;
 }
+.catalog-show-more-button p:after {
+    display: none;
+} 
 .show-catalog {
 	cursor: pointer;
 	display: block;
@@ -627,6 +630,10 @@ footer {
 .show-filter:hover {
 	background-color: rgb(255, 240, 250);
 	color: rgb(172, 26, 26);
+}
+.goods-filter {
+	height: 0;
+	overflow: hidden;
 }
 .goods-filter .filter {
 	padding-bottom: 3rem;
