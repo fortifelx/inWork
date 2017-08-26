@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 $(".help-menu").on("click", "a", function (event) { 
 event.preventDefault();
@@ -7,6 +8,8 @@ $('body,html').animate({
 scrollTop: top
 }, 1000);
 });
+});
+    
 $(".burger").click(function(){
 	event.preventDefault();
 	$('.left-menu-wrapper').addClass('display-block').velocity( { opacity: 1 }, 600);
@@ -20,6 +23,7 @@ $(".left-menu-close").click(function(){
 	};
 	setTimeout( removeDisplay , 600);
 });
+    
 var status;
 $(".show-input-search").click(function(){
 	status=true;
@@ -33,6 +37,7 @@ $(".show-input-search").click(function(){
 		opacity: 1
 	}, 600);
 });
+    
 $(document).on('click', function(e) {
   if (!$(e.target).closest(".show-input-search").length && status===true) {
   	status=false;
@@ -48,6 +53,7 @@ $(document).on('click', function(e) {
   }
   e.stopPropagation();
 });
+    
 $(".catalog-show-more-button").click(function(){
 	$(".catalog-show-more-button").hide();
 	$(".catalog").velocity({
@@ -81,10 +87,12 @@ $(".catalog-photo").click(function(){
  		opacity: 1
  	}, 700);
 });
+    
 $(".photo-close").click(function(e){
  	$(this).parent().parent().removeClass('catalog-photo-show');
  	e.stopPropagation();
 });
+    
 $(".show-catalog").click(function(){
 	var blockHeight = $(this).prev().children().css("height");
 	$(this).prev().velocity({
@@ -93,6 +101,7 @@ $(".show-catalog").click(function(){
 	500);
 	$(this).hide();
 });
+    
 var filterStatus = false;
 $(".show-filter").click(function(){
 	if(filterStatus === false) {
@@ -111,6 +120,7 @@ $(".show-filter").click(function(){
 	500);
 	}
 });
+    
 var servTextWrapper = $(".service-text");
 $('.service-list p').click(function(e){
 		var $targetText = $('.service-text div');
@@ -163,17 +173,59 @@ $(".mob-service-header").click(function(e){
     if (parseInt(wrapperHeight, 10) > parseInt(servHeight, 10)) {
         $wrapper.velocity({
         height : servHeight
-    }, 400);
+    }, 600);
     }
     else {
+    $servMobText.velocity({
+        height : servHeight
+    }, 600);
     $wrapper.velocity({
         height : newHeight
     }, 600);
-    $servMobText.velocity({
-        height : servHeight
+        }
+});
+var $helpMobText = $(".help-info");
+var helpHeight = $helpMobText.css("height");
+var mobStatus;
+function watchDog() {
+    $(window).resize(function(){
+        var wrapper = $(".wrapper").css("width");
+        if(parseInt(wrapper, 10) < 360) {
+            mobStatus = true;
+        }
+        else {
+            $('.help-info').attr('style', '');/* сброс стилей при переходе от мобильной версии  */
+            mobStatus = false;
+            console.log('here');
+        }
+    })
+};
+watchDog();
+$(".help-info h1").click(function(e){
+    console.log(mobStatus);
+    if (mobStatus === false) return;
+    var $header = $(this);
+	var $wrapper = $header.parent();
+    var $target = $header.next();
+    var targetMarginTop = $target.css("margin-top");
+    var targetMarginBottom = $target.css("margin-bottom");
+    var wrapperHeight = $wrapper.css("height");
+    var targetHeight = $target.css("height");
+    var newHeight = parseInt(wrapperHeight, 10) + parseInt(targetHeight, 10) 
+                  + parseInt(targetMarginTop, 10) + parseInt(targetMarginBottom, 10) + "px";
+
+    if (parseInt(wrapperHeight, 10) > parseInt(helpHeight, 10)) {
+        $wrapper.velocity({
+        height : helpHeight
+    }, 600);
+    }
+    else {
+    $helpMobText.velocity({
+        height : helpHeight
+    }, 600);
+    $wrapper.velocity({
+        height : newHeight
     }, 600);
         }
 });
 
-
-});
