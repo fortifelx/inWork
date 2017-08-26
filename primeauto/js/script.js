@@ -187,6 +187,7 @@ $(".mob-service-header").click(function(e){
 });
 var $helpMobText = $(".help-info");
 var helpHeight = $helpMobText.css("height");
+var $targets = $('.help-info-text');
 var mobStatus;
 function watchDog() {
     $(window).resize(function(){
@@ -221,12 +222,25 @@ $(".help-info h1").click(function(e){
     }, 600);
     }
     else {
-    $helpMobText.velocity({
-        height : helpHeight
-    }, 600);
-    $wrapper.velocity({
-        height : newHeight
-    }, 600);
+        $helpMobText.each(function(){
+            console.log('here');
+            var $child = $(this).find(".help-info-text");
+           if ($child[0] === $target[0]) {
+              $(this).velocity({
+              height : newHeight
+              }, 600);
+           } else {
+               $(this).velocity({
+              height : helpHeight
+              }, 600);
+           } 
+        });
+//    $helpMobText.velocity({
+//        height : helpHeight
+//    }, 600);
+//    $wrapper.velocity({
+//        height : newHeight
+//    }, 600);
         }
 });
 (function(){
@@ -262,5 +276,23 @@ $(".help-info h1").click(function(e){
             }
     });
 })();
-
+(function(){
+    $(".describe-header").click(function(){
+        var $wrappers = $(".one-goods-text");
+        var $target = $(this).next();
+        var newHeight = $target.children().css("height");
+        $wrappers.each(function(){
+           if (this === $target[0]) {
+               console.log(this);  
+              $(this).velocity({
+              height : newHeight
+              }, 600);
+           } else {
+               $(this).velocity({
+              height : 0
+              }, 600);
+           }
+        });
+    })
+})();
 

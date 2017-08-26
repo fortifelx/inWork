@@ -1430,6 +1430,9 @@ footer {
     margin-right: 0.8rem;
     margin-left: 1.5rem;
 }
+.one-goods-text {
+    overflow: hidden;
+}
 .one-goods-text:nth-child(4) {
     height: 0;
     overflow: hidden;
