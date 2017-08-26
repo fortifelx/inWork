@@ -370,6 +370,10 @@ footer {
 	width: 24rem;
 	padding: 2rem 1.5rem 8rem 1.5rem;
 }
+.mob-service-container {
+	height: 7rem;
+	overflow: hidden;
+}
 .mob-service img {
 	width: 100%;
 	margin-bottom: 1rem;
@@ -782,6 +786,9 @@ footer {
 }
 .left-menu a {
 	padding-left: 8rem;
+}
+.catalog-show-more-button {
+	display: none;
 }
 }
 @media handheld and (min-width: 768px), screen and (min-width: 768px) {
