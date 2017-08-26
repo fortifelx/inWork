@@ -114,4 +114,42 @@ $(".show-filter").click(function(){
 	500);
 	}
 });
+var servTextWrapper = $(".service-text");
+$('.service-list p').click(function(e){
+		var targetText = $('.service-text div');
+		var targetHeader = $('.service-list p');
+		targetText.css( {"display" : "none","position" : "absolute"});
+		targetHeader.css({"background-color" : "white", "color" : "black"});
+
+	for(var i = 0; i < $('.service-list p').length; i++) {
+		if( this === $('.service-list p')[i]) {
+
+			targetText[i].style.display = "block";
+			targetText[i].style.position = "static";
+
+			var $elTarget =  $(targetText[i]);
+			var $headTarget = $(targetHeader[i]);
+			var elHeight = $elTarget.css("height");
+			var topPadding = $elTarget.css("padding-top");
+			var bottomPadding = $elTarget.css("padding-bottom");
+			var wrapperHeight = parseInt(elHeight, 10) + parseInt(topPadding, 10) + parseInt(bottomPadding, 10) + "px";
+
+			targetText[i].style.height = "0";
+			targetText[i].style.paddingTop = "0";
+			targetText[i].style.paddingBottom = "0";
+
+			servTextWrapper.css("height" , wrapperHeight);
+
+			$elTarget.velocity({
+				height : elHeight,
+				paddingTop : topPadding,
+				paddingBottom : bottomPadding
+			}, 1000, "easy");
+
+			$headTarget.css({"background-color" : "rgb(172, 26, 26)", "color" : "rgb(255, 255, 255)"});
+		}
+	}
+});
+
+
 });
