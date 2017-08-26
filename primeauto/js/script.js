@@ -199,6 +199,7 @@ function watchDog() {
             $('.help-info').attr('style', '');/* сброс стилей при переходе от мобильной версии  */
             $('.about-us-block').attr('style', '');
             $('.our-team').attr('style', '');
+            $('.other-goods').attr('style', '');
             mobStatus = false;
         }
     })

@@ -610,14 +610,16 @@
         right: 1rem;
         top: 1.7rem;
     }
+    .other-goods {
+        height: 40rem;
+        overflow: hidden;
+    }
     .other-goods h1 {
         font-size: 1.8rem;
     }
     .other-goods-wrapper {
         flex-direction: column;
         padding-bottom: 0;
-        overflow: hidden;
-        height: 34rem;
     }	
     .new-product {
         width: 24rem;
