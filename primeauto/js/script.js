@@ -24,9 +24,9 @@ $(".left-menu-close").click(function(){
 	setTimeout( removeDisplay , 600);
 });
     
-var status;
+var searchStatus;
 $(".show-input-search").click(function(){
-	status=true;
+	searchStatus=true;
 	$(".show-input-search").velocity({
 		top: "-1rem",
 		right: "27px",
@@ -39,8 +39,9 @@ $(".show-input-search").click(function(){
 });
     
 $(document).on('click', function(e) {
-  if (!$(e.target).closest(".show-input-search").length && status===true) {
-  	status=false;
+  if (e.target == $('.header-search-show')[0]) return;
+  if (!$(e.target).closest(".show-input-search").length && searchStatus===true) {
+  	searchStatus=false;
     $('.header-search input').velocity({
     	width: 0,
     	opacity: 0
@@ -195,14 +196,14 @@ function watchDog() {
         }
         else {
             $('.help-info').attr('style', '');/* сброс стилей при переходе от мобильной версии  */
+            $('.about-us-block').attr('style', '');
+            $('.our-team').attr('style', '');
             mobStatus = false;
-            console.log('here');
         }
     })
 };
 watchDog();
 $(".help-info h1").click(function(e){
-    console.log(mobStatus);
     if (mobStatus === false) return;
     var $header = $(this);
 	var $wrapper = $header.parent();
@@ -228,4 +229,38 @@ $(".help-info h1").click(function(e){
     }, 600);
         }
 });
+(function(){
+    var $helpMobText = $(".about-us-block");
+    var helpHeight = $helpMobText.css("height");
+    $(".about-read-more").click(function(e){
+        if (mobStatus === false) return;
+        var $header = $(this);
+        var $wrapper = $header.prev();
+        var $target = $wrapper.children();
+        var wrapperHeight = $wrapper.css("height");
+        var newHeight = 0;
+        for (var i = 0; i < $target.length; i++) {
+            var $point = $($target[i]);
+            var targetMarginTop = $point.css("margin-top");
+            var targetMarginBottom = $point.css("margin-bottom");
+            var targetHeight = $point.css("height");
+            newHeight = newHeight + parseInt(targetHeight, 10) 
+                      + parseInt(targetMarginTop, 10) + parseInt(targetMarginBottom, 10);
+        }
+        if (parseInt(wrapperHeight, 10) > parseInt(helpHeight, 10)) {
+            $wrapper.velocity({
+            height : helpHeight
+        }, 600);
+        }
+        else {
+        $helpMobText.velocity({
+            height : helpHeight 
+        }, 600);
+        $wrapper.velocity({
+            height : newHeight + "px"
+        }, 600);
+            }
+    });
+})();
+
 

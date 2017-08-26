@@ -1105,21 +1105,17 @@ footer {
     width: calc(100% - 3rem);
     padding: 0 1.5rem;
     margin-top: 10rem;
-    text-align: justify;
     margin-bottom: 20rem;
 }
-.our-team:after {
-    content: ".";
-    display: inline-block;
-    width: 100%;
-    height: 0;
-    visibility: none;
-    overflow: hidden;
+.our-team-container {
+    text-align: justify;
+    text-align-last: justify;
 }
 .our-team h1 {
     width: 100%;
     text-align: left;
     margin-bottom: 4.5rem;
+    text-align-last: left;
 }
 .partner {
     display: inline-block;
@@ -1134,6 +1130,7 @@ footer {
 .partner p, .partner a {
     line-height: 2.2rem;
     color: rgb( 0, 0, 0);
+    text-align-last: left;
 }
 .partner a {
     text-decoration: underline;
