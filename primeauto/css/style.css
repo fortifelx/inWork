@@ -1614,7 +1614,8 @@ footer {
     background: rgb(172, 26, 26);    
     border-radius: 4px;
 }
-.order-list button {
+.order-list button,
+.order-list .next-button {
     cursor: pointer;
     width: 22rem;
     height: 5rem;
@@ -1625,12 +1626,21 @@ footer {
     font-size: 1.8rem;
     margin-top: 2rem;
 }
+.order-list .next-button {
+    text-align: center;
+    line-height: 5rem;
+}
+.order-list .next-button:hover,
 .order-list button:hover {
-    background-color: rgb(255, 242, 239);
+    background-color: rgb(255, 250, 239);
     color: rgb(172, 26, 26);
 }
 .delivery-type {
     height: 10rem;
+}
+.your-data {
+    height: 0;
+    overflow: hidden;
 }
 .delivery-adress {
     display: block;
@@ -1651,8 +1661,8 @@ footer {
     opacity: 1;
     height: 5rem;
 }
-.client-data {
-    margin-bottom: 4rem;
+.your-data-container {
+    padding-bottom: 4rem;
 }
 .client-data input {
     display: block;

@@ -296,4 +296,88 @@ $(".help-info h1").click(function(e){
         });
     })
 })();
+(function(){
+    $(".delivery-listener").click(function(){
+        var $target = $(this).next();
+        var newHeight = $target.children().css('height');
+        var paddingBottom = $target.children().css('padding-bottom');
+        newHeight = (parseInt(newHeight, 10)) + (parseInt(paddingBottom, 10)) + "px";
+        $target.velocity({
+            height : newHeight
+        }, 600);
+    })
+})();
+(function(){
+    $(".next-button").click(function(){
+        var deliveryStatus = false;
+        var dataStatus = true;
+        var payStatus = false;
+        if ($("#byselfdelivery").prop("checked") === true) {
+            deliveryStatus = true;
+        };
+        if ($("#byselfdelivery").prop("checked") != true && $("#toadressdelivery").prop("checked") != true) {
+            deliveryStatus = false;
+            alert("Выбирите пожалуста способ доставки");
+            return;
+        };
+        if ($("#toadressdelivery").prop("checked") === true) {
+            if($(".delivery-adress").val().length < 4) {
+                alert("Введите пожалуста адрес доставки");
+                return;
+            }
+            if($(".delivery-adress").val().length > 4) {
+                deliveryStatus = true;
+            }
+        }
+        $('.client-data').each(function(){
+             var $inputData = $(this);
+            if ($inputData.val().length < 2) {
+                alert("Введите пожалуста ваши даные");
+                dataStatus = false;
+                return;
+            } else {
+                dataStatus = true;
+            }
+            
+        })
+    })
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

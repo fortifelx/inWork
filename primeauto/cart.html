@@ -8,8 +8,29 @@
     <link rel="stylesheet" href='css/mobile.css'>
 	</head>
 	<body>
-	<header>
+<header>
+		<div class="left-menu-wrapper">
+			<ul class="left-menu">
+			<div class="left-menu-close">X</div>
+				<li><a href="">Коврики</a></li>
+				<li><a href="">Дефлекторы окон</a></li>
+				<li><a href="">Дефлекторы капота</a></li>
+				<li><a href="">Ролеты в кузов</a></li>
+				<li><a href="">Услуги</a></li>
+				<li><a href="">Хром пакеты</a></li>
+				<li><a href="">Реленги</a></li>
+				<li><a href="">Порожки</a></li>
+				<li><a href="">Брызговики</a></li>
+				<li><a href="">Tech Care</a></li>
+				<li><a href="">Расширители арок</a></li>
+				<li><a href="">Реленги</a></li>
+				<li><a href="">Порожки</a></li>
+				<li><a href="">Брызговики</a></li>
+				<li><a href="">Tech Care</a></li>
+			</ul>
+			</div>
 	   <nav>
+	   <div class="nav-wrapper">
 		<div class="burger">
 		  <img src="img/burger.png" alt="дополнительное меню">
 		</div>
@@ -30,7 +51,9 @@
 			 <button type="submit">
 		  	 <img src="img/search_ico.png" alt="лупа поиска">
 		  </button>
+		  <img class="show-input-search" src="img/search_ico.png" alt="лупа поиска">
 		</form>
+		</div>	
       </nav>
       <button class="looks-via-auto sub-white"><b>Поиск по автомобилю</b></button>
 	   <ul class="catalog">
@@ -42,8 +65,16 @@
 	   	<li><a class="black" href="">Порожки</a></li>
 	   	<li><a class="black" href="">Брызговики</a></li>
 	   	<li><a class="black" href="">Tech Care</a></li>
-	   	<div class="catalog-show-more-button sub-red">Больше товаров</div>
-	   </ul>
+	   	<li><a class="black" href="">Коврики</a></li>
+	   	<li><a class="black" href="">Дефлекторы</a></li>
+	   	<li><a class="black" href="">Ролеты</a></li>
+	   	<li><a class="black" href="">Хром пакеты</a></li>
+	   	<li><a class="black" href="">Реленги</a></li>
+	   	<li><a class="black" href="">Порожки</a></li>
+	   	<li><a class="black" href="">Брызговики</a></li>
+	   	<li><a class="black" href="">Tech Care</a></li>
+       </ul>
+	   <div class="catalog-show-more-button sub-red">Больше товаров</div>	
 	   <div class="catalog-search">
 	   <form action="">
 	   	<select name="" id="">
@@ -149,18 +180,22 @@
 	</div>
 	<div class="order-list">
 		<p class="sub-red"><b>Выберите способ доставки</b></p>
-		<div class="delivery-type">
-			<label><input name="delivery" value="Самовывоз" type="radio">
+		<div class="delivery-type delivery-listener">
+			<label><input id="byselfdelivery" name="delivery" value="Самовывоз" type="radio">
 			<span class="custom-radio"></span><p class="small"><b>Самовывоз</b></p></label>
-			<label><input name="delivery" value="Доставка по адресу" type="radio">
+			<label><input id="toadressdelivery"  name="delivery" value="Доставка по адресу" type="radio">
 			<span class="custom-radio"></span><p class="small"><b>Доставка по адресу</b></p>
 			<input class="delivery-adress" type="text" placeholder="введите адрес доставки"></label>
 		</div>
-		<p class="sub-red"><b>Ваши данные</b></p>
-		<div class="client-data">
-			<input placeholder="Имя и фамилия *" type="text">
-			<input placeholder="Номер телефона *" type="text">
-			<input placeholder="E-mail *" type="email">
+		<div class="your-data">
+		<div class="your-data-container">
+            <p class="sub-red"><b>Ваши данные</b></p>
+            <div class="client-data">
+                <input placeholder="Имя и фамилия *" type="text">
+                <input placeholder="Номер телефона *" type="text">
+                <input placeholder="E-mail *" type="email">
+            </div>
+		</div>
 		</div>
 		<p class="sub-red"><b>Выберите способ оплаты</b></p>
 		<div class="delivery-type">
@@ -177,9 +212,9 @@
 			</label>
 			<label><input name="pay" value="Безналичный расчет"  type="radio">
 			<span class="custom-radio"></span><p class="small"><b>Безналичный расчет</b></p>
-			<input class="bill-adress" type="email" placeholder="Введите E-mail для получения счёта"></label>
+			<input class="bill-adress" type="email" placeholder="E-mail для получения счёта"></label>
 		</div>
-		<button class="sub-white">Продолжить</button>
+		<div class="next-button sub-white">Продолжить</div>
 		<div class="order-list-check">
 			<p class="big"><b>Способ доставки</b></p>
 			<p class="small">Доставка по адресу: ул. Патриса Лумумбы 37, Киев</p>

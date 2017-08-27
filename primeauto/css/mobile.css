@@ -762,6 +762,7 @@
     }
     .order-list input {
         width: 24rem;
+        padding-left: 1rem;
     }
     .delivery-type  {
         margin: 2rem 0;
@@ -780,7 +781,10 @@
         height: 6rem;
         margin: 0;
     }
-    .order-list button {
+    .order-list button,
+    .order-list .next-button {
+        width: 24rem;
+    }{
         width: 24rem;
     }
     .order-list-check .go-back-button {
