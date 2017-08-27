@@ -466,21 +466,26 @@ $(".help-info h1").click(function(e){
     function makeSlider(event){
         if(sliderStatus === false) return;
         sliderStatus = false;
+        var el;
+        if(el === undefined) {
+            el = counter+1;
+        };
+        if(el === $rounds.length) {
+            el = 0;
+        }
+        if(event) {
         for (var i = 0; i < $rounds.length; i++) {
            if ($rounds[i] === event.target) {
-               var el = i;
+               el = i;
                $($rounds[i]).css( "background-color" , "rgb(255, 242, 239)");
-            } else {
-               $($rounds[i]).css( "background-color" , "rgba(255, 242, 239, 0)"); 
+            } 
+        };
             }
-        }
-//        if(!el) {
-//            el = counter+1;
-//        }
-//        console.log(el);
-//        console.log(counter);
+        console.log(el);
+        console.log(counter);
         if (el > counter) {
-            console.log('start1');
+            $rounds.css( "background-color" , "rgba(255, 242, 239, 0)");
+            $($rounds[el]).css( "background-color" , "rgb(255, 242, 239)");
             var $slide = $($slides[el]);
             $slide.css("left", slidesWidth);
             var slideLeft = "-" + slidesWidth;
@@ -498,7 +503,8 @@ $(".help-info h1").click(function(e){
             return;
         }
         if (el < counter) {
-            console.log('start2');
+            $rounds.css( "background-color" , "rgba(255, 242, 239, 0)");
+            $($rounds[el]).css( "background-color" , "rgb(255, 242, 239)");
             var $slide = $($slides[el]);
             $slide.css("left", "-" + slidesWidth);
             $slide.velocity({
@@ -518,6 +524,7 @@ $(".help-info h1").click(function(e){
         }
     };
     $rounds.click(makeSlider);
+    setInterval(makeSlider, 6000);
 })();
 
 
