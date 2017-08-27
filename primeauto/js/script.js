@@ -447,6 +447,7 @@ $(".help-info h1").click(function(e){
 })();
 (function(){
     var $wrapper    = $(".goods-slider-wrapper");
+    if($wrapper.length === 0) return;
     var $roundsWrapper = $(".goods-slider-rounds");
     var $slides     = $(".goods-slider-wrapper img");
     var slidesWidth = $slides.css('width');
@@ -481,8 +482,6 @@ $(".help-info h1").click(function(e){
             } 
         };
             }
-        console.log(el);
-        console.log(counter);
         if (el > counter) {
             $rounds.css( "background-color" , "rgba(255, 242, 239, 0)");
             $($rounds[el]).css( "background-color" , "rgb(255, 242, 239)");
@@ -525,6 +524,89 @@ $(".help-info h1").click(function(e){
     };
     $rounds.click(makeSlider);
     setInterval(makeSlider, 6000);
+})();
+(function(){
+    var $slides = $('.one-product-viewer img');
+    $slides.click(function(event){
+        var screenSize = $(".wrapper").css('width');
+        if ((parseInt(screenSize, 10)) < 360) return;
+        $slides = $('.one-product-viewer img');
+        var $target = $(event.target);
+        if( event.target === $slides[0]) return;
+        $target.css("opacity", 0).insertBefore($($slides[0])).velocity({
+            opacity : 1
+        }, 400);
+    });
+    var $mainWrapper = $('.wrapper');
+    var screenSize = (parseInt($mainWrapper.css("width"), 10));
+    var $wrapper = $('.one-product-viewer');
+    var $viewerWidth = (parseInt($(".one-product-slider").css("width"), 10));
+    var position = 0;
+    var slidesLength =  $slides.length;
+    var slidesWidth = (parseInt($slides.css("width"), 10));
+    var wrapperWidth = slidesLength*slidesWidth + "px";
+    $(window).resize(function(){
+        $mainWrapper = $('.wrapper');
+        screenSize = (parseInt($mainWrapper.css("width"), 10));
+        console.log(screenSize);
+        if(screenSize > 360) {
+            $wrapper.css("width" , "100%");
+        }
+        if( screenSize < 360) {
+       $wrapper.css( "width" , wrapperWidth); 
+        }
+        $viewerWidth = (parseInt($(".one-product-slider").css("width"), 10));
+        $wrapper.css("margin-left", 0);
+        position = 0;
+    })
+    if( screenSize < 360) {
+       $wrapper.css( "width" , wrapperWidth); 
+    }
+    
+    $(".slider-r-arrow").click(function(){
+        var $slide = $('.one-product-viewer img');
+        var slideWidth = $slide.css('width');
+        position = position - (parseInt(slideWidth, 10));
+        if(position > $viewerWidth-slidesLength*slidesWidth-30 ) {
+        $wrapper.velocity({
+            marginLeft : position
+        }, 600);
+            return;
+        }
+        if(position < $viewerWidth-slidesLength*slidesWidth-30 ) {
+            var $slides    = $('.one-product-viewer img');
+            var correction = $viewerWidth-slidesLength*slidesWidth;
+            var step       = -correction - (parseInt($slide.css('width'), 10));
+            var lastSlide  = $slides[$slides.length-1];
+            $($slides[0]).insertAfter(lastSlide);
+            $wrapper.css("margin-left", -step );
+            $wrapper.velocity({
+                marginLeft : correction
+            }, 600)
+        }
+    });
+    $(".slider-l-arrow").click(function(){
+        var $slide = $('.one-product-viewer img');
+        var slideWidth = $slide.css('width');
+        if (position != 0) {
+           position = position + (parseInt(slideWidth, 10));
+           $wrapper.velocity({
+           marginLeft : position
+        }, 600);
+            return;
+        }
+        if (position === 0) {
+            var $slides    = $('.one-product-viewer img');
+            var slideWidth = "-" + $slide.css('width');
+            var lastSlide  = $slides[$slides.length-1];
+            $(lastSlide).insertBefore($slides[0]);
+            $wrapper.css("margin-left", slideWidth );
+            $wrapper.velocity({
+                marginLeft : 0
+            }, 600)
+        }
+
+    });
 })();
 
 

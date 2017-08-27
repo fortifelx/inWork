@@ -310,7 +310,7 @@ nav {
 .catalog-show-more-button p {
     display: inline;
 }
-.catalog-show-more-button p:after {
+.catalog-show-more-button:after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -1367,6 +1367,7 @@ footer {
     position: relative;
 }
 .slider-l-arrow, .slider-r-arrow {
+    cursor: pointer;
     display: none;
 }
 .one-product-viewer {
@@ -1377,11 +1378,13 @@ footer {
     width: 14rem;
     height: 10.5rem;
     padding: 1rem;
+    cursor: pointer;
 }
 .one-product-viewer img:first-child {
     width: 46rem;
     height: 36rem;
     padding-bottom: 2rem;
+    cursor: auto;
 }
 .one-product-video {
     padding-left: 1rem;
