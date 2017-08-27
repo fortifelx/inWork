@@ -411,10 +411,10 @@ $(".help-info h1").click(function(e){
             return;
         }
         if(position < $viewerWidth-slidesLength*slidesWidth-30 ) {
-            var $slides = $('.main-brand');
+            var $slides    = $('.main-brand');
             var correction = $viewerWidth-slidesLength*slidesWidth;
-            var step = -correction - (parseInt($slide.css('width'), 10));
-            var lastSlide = $slides[$slides.length-1];
+            var step       = -correction - (parseInt($slide.css('width'), 10));
+            var lastSlide  = $slides[$slides.length-1];
             $($slides[0]).insertAfter(lastSlide);
             $wrapper.css("margin-left", -step );
             $wrapper.velocity({
@@ -433,9 +433,9 @@ $(".help-info h1").click(function(e){
             return;
         }
         if (position === 0) {
-            var $slides = $('.main-brand');
+            var $slides    = $('.main-brand');
             var slideWidth = "-" + $slide.css('width');
-            var lastSlide = $slides[$slides.length-1];
+            var lastSlide  = $slides[$slides.length-1];
             $(lastSlide).insertBefore($slides[0]);
             $wrapper.css("margin-left", slideWidth );
             $wrapper.velocity({
@@ -444,6 +444,80 @@ $(".help-info h1").click(function(e){
         }
 
     });
+})();
+(function(){
+    var $wrapper    = $(".goods-slider-wrapper");
+    var $roundsWrapper = $(".goods-slider-rounds");
+    var $slides     = $(".goods-slider-wrapper img");
+    var slidesWidth = $slides.css('width');
+    var round = "<div></div>";
+    var slidesLength = $slides.length;
+    var slidewidth  = (parseInt(slidesWidth, 10));
+    $slides.css("left" , slidesWidth);
+    $($slides[0]).css("left", 0);
+    for( var i = 0; i < slidesLength; i++) {
+        $roundsWrapper.append(round);
+    }
+    var $rounds = $(".goods-slider-rounds div");
+    var counter = 0;
+    var currentElement = $slides[0];
+    var prevElement =  $slides[0];
+    var sliderStatus = true;
+    function makeSlider(event){
+        if(sliderStatus === false) return;
+        sliderStatus = false;
+        for (var i = 0; i < $rounds.length; i++) {
+           if ($rounds[i] === event.target) {
+               var el = i;
+               $($rounds[i]).css( "background-color" , "rgb(255, 242, 239)");
+            } else {
+               $($rounds[i]).css( "background-color" , "rgba(255, 242, 239, 0)"); 
+            }
+        }
+//        if(!el) {
+//            el = counter+1;
+//        }
+//        console.log(el);
+//        console.log(counter);
+        if (el > counter) {
+            console.log('start1');
+            var $slide = $($slides[el]);
+            $slide.css("left", slidesWidth);
+            var slideLeft = "-" + slidesWidth;
+            $slide.velocity({
+                left : 0
+            }, 600);
+            $(currentElement).velocity({
+                left : slideLeft
+            }, 600);
+            counter = el;    
+            currentElement = $slides[el];
+            setTimeout(function(){
+                sliderStatus = true;
+            }, 600);
+            return;
+        }
+        if (el < counter) {
+            console.log('start2');
+            var $slide = $($slides[el]);
+            $slide.css("left", "-" + slidesWidth);
+            $slide.velocity({
+                left : 0
+            }, 600);
+            $(currentElement).velocity({
+                left : slidesWidth
+            }, 600);
+            counter = el;    
+            currentElement = $slides[el];
+            setTimeout(function(){
+                sliderStatus = true;
+            }, 600);
+            return;
+        } else {
+            return;
+        }
+    };
+    $rounds.click(makeSlider);
 })();
 
 
