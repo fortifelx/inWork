@@ -389,18 +389,21 @@ $(".help-info h1").click(function(e){
 (function(){
     var $wrapper = $('.main-brand-wrapper');
     var $viewerWidth = (parseInt($(".main-brand-viewer").css("width"), 10));
-    console.log($viewerWidth);
     var position = 0;
     var $slides = $('.main-brand');
     var slidesLength =  $slides.length;
     var slidesWidth = (parseInt($slides.css("width"), 10));
     var wrapperWidth = slidesLength*slidesWidth + "px";
+    $(window).resize(function(){
+        $viewerWidth = (parseInt($(".main-brand-viewer").css("width"), 10));
+        $wrapper.css("margin-left", 0);
+        position = 0;
+    })
     $wrapper.css( "width" , wrapperWidth);
     $(".main-r-arrow").click(function(){
         var $slide = $('.main-brand');
         var slideWidth = $slide.css('width');
         position = position - (parseInt(slideWidth, 10));
-        
         if(position > $viewerWidth-slidesLength*slidesWidth-30 ) {
         $wrapper.velocity({
             marginLeft : position
