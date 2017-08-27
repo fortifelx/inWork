@@ -1614,6 +1614,9 @@ footer {
     background: rgb(172, 26, 26);    
     border-radius: 4px;
 }
+.order-list-data {
+    overflow:hidden;
+}
 .order-list button,
 .order-list .next-button {
     cursor: pointer;
@@ -1709,7 +1712,10 @@ footer {
     opacity: 1;
     height: 10rem;
 }
-
+.order-list-check {
+    height: 0;
+    overflow: hidden;
+}
 .order-list-check p {
     display: block;
 }
@@ -1717,9 +1723,21 @@ footer {
     margin: 3rem 0 1.5rem 0;
 }
 .order-list-check .go-back-button {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    cursor: pointer;
+    width: 22rem;
+    height: 5rem;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1.8rem;
     margin: 4rem 2rem;
+    border: 2px solid rgb(172, 26, 26);
     background-color: rgb(255, 250, 250);
     color: rgb(172, 26, 26);
+    text-align: center;
+    line-height: 5rem;
 }
 .order-list-check .go-back-button:hover {
     background-color: rgb(172, 26, 26);

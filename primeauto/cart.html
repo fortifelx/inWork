@@ -179,6 +179,7 @@
 		<p class="cart-summary sub-red"><b>К оплате: 100 000 грн</b></p>
 	</div>
 	<div class="order-list">
+	    <div class="order-list-data">
 		<p class="sub-red"><b>Выберите способ доставки</b></p>
 		<div class="delivery-type delivery-listener">
 			<label><input id="byselfdelivery" name="delivery" value="Самовывоз" type="radio">
@@ -199,23 +200,25 @@
 		</div>
 		<p class="sub-red"><b>Выберите способ оплаты</b></p>
 		<div class="delivery-type">
-			<label><input name="pay" value="Наличные"  type="radio">
+			<label><input class="cash" name="pay" value="Наличные"  type="radio">
 			<span class="custom-radio"></span><p class="small"><b>Наличные</b></p></label>
-			<label><input name="pay" value="Оплата картой"  type="radio">
+			<label><input class="card-pay" name="pay" value="Оплата картой"  type="radio">
 			<span class="custom-radio"></span><p class="small"><b>Оплата картой</b></p>
 			<div class="delivery-type pay-type">
-				<label><input name="delivery" value="Оплата через LiqPay" type="radio">
+				<label><input class="liqpay" name="pay-cart" value="Оплата через LiqPay" type="radio">
 				<span class="custom-radio"></span><p class="small">Оплата через LiqPay</p></label>
-				<label><input name="delivery" value="Оплата через Приват 24" type="radio">
+				<label><input class="privat" name="pay-cart" value="Оплата через Приват 24" type="radio">
 				<span class="custom-radio"></span><p class="small">Оплата через Приват 24</p></label>
 		    </div>
 			</label>
-			<label><input name="pay" value="Безналичный расчет"  type="radio">
+			<label><input class="via-bill" name="pay" value="Безналичный расчет"  type="radio">
 			<span class="custom-radio"></span><p class="small"><b>Безналичный расчет</b></p>
 			<input class="bill-adress" type="email" placeholder="E-mail для получения счёта"></label>
 		</div>
+        </div>
 		<div class="next-button sub-white">Продолжить</div>
 		<div class="order-list-check">
+		  <div class="order-check-data">
 			<p class="big"><b>Способ доставки</b></p>
 			<p class="small">Доставка по адресу: ул. Патриса Лумумбы 37, Киев</p>
 			<p class="big"><b>Мои данные</b></p>
@@ -225,7 +228,8 @@
 			<p class="big"><b>Способ оплаты</b></p>
 			<p class="small">Безналичный расчёт</p>
 			<p class="small">E-mail для получения счета: mikhailS@gmail.com</p>
-			<button type="submit" class="sub-white">Оформить</button><button class="go-back-button">Редактировать</button>
+			<button type="submit" class="sub-white">Оформить</button><div class="go-back-button">Редактировать</div>
+			</div>
 	   </div>
 	   	</form>
 	</div>

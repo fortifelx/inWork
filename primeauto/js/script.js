@@ -308,7 +308,7 @@ $(".help-info h1").click(function(e){
     })
 })();
 (function(){
-    $(".next-button").click(function(){
+    $(".next-button").click(function(e){
         var deliveryStatus = false;
         var dataStatus = true;
         var payStatus = false;
@@ -329,7 +329,7 @@ $(".help-info h1").click(function(e){
                 deliveryStatus = true;
             }
         }
-        $('.client-data').each(function(){
+        $('.client-data input').each(function(){
              var $inputData = $(this);
             if ($inputData.val().length < 2) {
                 alert("Введите пожалуста ваши даные");
@@ -340,7 +340,52 @@ $(".help-info h1").click(function(e){
             }
             
         })
-    })
+        var $cardPay = $('.card-pay');
+        var $viaBill = $('.via-bill');
+        if( $('.cash').prop("checked") === true) {
+            payStatus=true;
+        }
+        if( $('.card-pay').prop("checked") === true) {
+            if($('.liqpay').prop("checked") === true) {
+                payStatus = true;
+                console.log($('.liqpay').prop("checked"));
+            } else if($('.privat').prop("checked") === true) {
+                payStatus = true;
+            } else {
+                alert("Пожалуста выбирите способ оплаты картой");
+                return;
+            }
+        }
+        if( $('.via-bill').prop("checked") === true) {
+            if($(".bill-adress").val().length > 10) {
+                 payStatus = true;
+            } else {
+                alert("Введите E-mail для получения счета");
+                return;
+            }
+        } 
+        var $dataBlock = $(this).prev();
+        var dataHeight = $(this).prev().css('height');
+        var checkHeight = $(this).next().children().css('height');
+        if(payStatus === true && dataStatus === true && deliveryStatus === true) {
+            $(this).prev().velocity({
+                height : 0
+            }, 800);
+            $(this).next().velocity({
+                height : checkHeight
+            }, 800)
+            $(this).hide();
+            $(".go-back-button").click(function(){
+                $(this).parent().parent().velocity({
+                height : 0
+            }, 800);
+                $dataBlock.velocity({
+                height : dataHeight
+            }, 800);
+                $(".next-button").show();
+            })
+        }
+     })
 })();
 
 
