@@ -888,11 +888,11 @@ nav {
 }
 .main-brand {
     display: inline-block;
-    width: 14rem;
+    width: 16rem;
     height: 8rem;
     line-height: 8rem;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0;
 }
 .main-brand img {
     cursor: pointer;

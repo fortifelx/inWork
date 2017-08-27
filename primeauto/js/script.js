@@ -348,7 +348,6 @@ $(".help-info h1").click(function(e){
         if( $('.card-pay').prop("checked") === true) {
             if($('.liqpay').prop("checked") === true) {
                 payStatus = true;
-                console.log($('.liqpay').prop("checked"));
             } else if($('.privat').prop("checked") === true) {
                 payStatus = true;
             } else {
@@ -386,6 +385,68 @@ $(".help-info h1").click(function(e){
             })
         }
      })
+})();
+(function(){
+    var $wrapper = $('.main-brand-wrapper');
+    var $viewerWidth = (parseInt($(".main-brand-viewer").css("width"), 10));
+    console.log($viewerWidth);
+    var position = 0;
+    var $slides = $('.main-brand');
+    var slidesLength =  $slides.length;
+    var slidesWidth = (parseInt($slides.css("width"), 10));
+    var wrapperWidth = slidesLength*slidesWidth + "px";
+    $wrapper.css( "width" , wrapperWidth);
+    $(".main-r-arrow").click(function(){
+        var $slide = $('.main-brand');
+        var slideWidth = $slide.css('width');
+        position = position - (parseInt(slideWidth, 10));
+        
+        if(position > $viewerWidth-slidesLength*slidesWidth+30 ) {
+        $wrapper.velocity({
+            marginLeft : position
+        }, 800);
+            console.log('here');
+            return;
+        }
+        if(position < $viewerWidth-slidesLength*slidesWidth-30 ) {
+            var $slides = $('.main-brand');
+            var correction = $viewerWidth-slidesLength*slidesWidth;
+            console.log("position:" + position);
+            console.log("correction:"  + correction);
+            var step = -correction - (parseInt($slide.css('width'), 10));
+            console.log("step:" + step);
+            var lastSlide = $slides[$slides.length-1];
+            $($slides[0]).insertAfter(lastSlide);
+            $wrapper.css("margin-left", -step );
+            $wrapper.velocity({
+                marginLeft : correction
+            }, 800)
+        }
+    });
+    $(".main-l-arrow").click(function(){
+        var $slide = $('.main-brand');
+        var slideWidth = $slide.css('width');
+        if (position != 0) {
+           position = position + (parseInt(slideWidth, 10));
+           console.log(position);
+           $wrapper.velocity({
+           marginLeft : position
+        }, 800);
+            return;
+        }
+        if (position === 0) {
+            var $slides = $('.main-brand');
+            var slideWidth = "-" + $slide.css('width');
+            var lastSlide = $slides[$slides.length-1];
+            console.log(lastSlide);
+            $(lastSlide).insertBefore($slides[0]);
+            $wrapper.css("margin-left", slideWidth );
+            $wrapper.velocity({
+                marginLeft : 0
+            }, 800)
+        }
+
+    });
 })();
 
 
