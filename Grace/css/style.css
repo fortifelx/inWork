@@ -39,7 +39,7 @@ header, footer, .wrapper {
 .main-img-wrapper {
     display: block;
     background-image: url(../img/bg.jpg);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     left: 0;
@@ -52,6 +52,8 @@ header {
     padding-top: 2rem;
     position: relative;
     z-index: 1;
+    height: 100vh;
+    overflow: hidden;
 }
 .top-menu {
     width: 100%;
@@ -147,6 +149,148 @@ header {
     line-height: 4rem;
     top: 1rem;
     left: 1rem;
+}
+.about {
+    padding-top: 14rem;
+    overflow: hiiden;
+}
+.about-header {
+    float: left;
+    color: rgb(97, 105, 118);
+    font-family: Anglecia;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 50px;
+    word-wrap: normal;
+    width: 41rem;
+    margin-bottom: 2rem;
+    overflow: visible;
+    position: relative;
+    z-index: 3;
+    letter-spacing: 3.7px;
+}
+.about-slider {
+    position: relative;
+    width: 48rem;
+    overflow: hidden;
+    float: right;
+}
+.about-slider-wrapper {
+    width: 1000rem;
+}
+.about-slider:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48rem;
+    height: 36rem;
+    background-color: rgba(255,255,255,0.2);
+    z-index: 2;
+}
+.about-slider:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 40rem;
+    height: 32rem;
+    top: 4rem;
+    left: 4rem;
+    box-shadow: 0 13px 45px rgba(54, 57, 63, 0.45);
+}
+.about-slider-wrapper img {
+    position: relative;
+    width: 48rem;
+    height: 36rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+.about-text {
+    width: 40rem;
+    float: left;
+    padding-top: 3rem;
+    color: rgb(97, 105, 118);
+    font-family: Gothic;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.about-slider-counter {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: rgb(97, 105, 118);
+    font-family: Anglecia;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+.about-counter-text {
+    margin: 0 1rem;
+}
+.about-l-arrow, .about-r-arrow {
+    color: rgb(76, 203, 202);
+    font-family: Anglecia;
+    font-size: 35px;
+    font-weight: 400;
+    cursor: pointer;
+    height: 5rem;
+    display: inline-block;
+    line-height: 5rem;
+    vertical-align: top;
+}
+.grace-is {
+    clear: both;
+    padding-top: 10rem;
+}
+.grace-is-header {
+    text-align: center;
+    width: 100%;
+    color: rgb(97, 105, 118);
+    font-family: Anglecia;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 5.5rem;
+}
+.grace-is-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    text-align-last: justify;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.grace-is-img {
+    width: 16rem;
+    padding-bottom: 3rem;
+}
+.grace-is-punct {
+    width: 41rem;
+    text-align: left;
+    text-align-last: left;
+    margin-bottom: 5.5rem;
+}
+.grace-is-punct-header {
+    width: 100%;
+    color: rgb(97, 105, 118);
+    font-family: Gothic;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+.grace-is-text {
+    width: 100%;
+    color: rgb(97, 105, 118);
+    font-family: Gothic;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
 }
 
 
