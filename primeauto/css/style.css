@@ -798,17 +798,6 @@ nav {
     height: 20rem;
     padding-bottom: 1rem;
 }
-.catalog-photo-wrapper {
-    display: block;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    z-index: 10;    
-    background-color: rgba(0, 0, 0, 0.35);
-    min-height: 100vh;
-    text-align: center;
-}
 .new-product-container {
     width: calc(100% - 3rem);
     padding: 0 1.5rem;
@@ -1891,23 +1880,35 @@ footer {
     border: 2px solid black !important;
     padding: 0 3rem 3rem 1rem;
 }
+.catalog-photo-wrapper {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;    
+    background-color: rgba(0, 0, 0, 0.35);
+    min-height: 100vh;
+    text-align: center;
+}
 .catalog-photo-show {
     display: block;
     opacity: 0;
     left: 0;
-
 }
 .catalog-photo-wrapper img {
-    height: auto;
+    height: 100%;
+    width: auto;
+    display: inline-block;
 }
 .catalog-photo-slider {
-    display: inline-block;
+    display: block;
     position: relative;
-    width: calc( 100rem - 3rem);
-    padding: 10rem 1.5rem;
+    width: 1000rem;
+    padding: 5rem 1.5rem;
     height: 60vh;
-    text-align: center;
-    margin: 0 auto;
+    text-align: left;
+    font-size: 0;
 }
 .photo-l-arrow, .photo-r-arrow {
     display: block;
@@ -1919,6 +1920,10 @@ footer {
     background-repeat: no-repeat; 
     z-index: 10;
 }
+.photo-l-arrow:hover img, .photo-r-arrow:hover img{
+    height: 4rem;
+    width: 2.5em;
+}
 .photo-l-arrow {
     background-image: url(../img/white_l_arrow.png);
     left: 15px;
@@ -1929,7 +1934,7 @@ footer {
 }
 .photo-wrapper {
     position: relative;
-    width: 100rem;
+    width: 100%;
     margin: 0 auto;
     height: 100%;
 }
@@ -1940,12 +1945,13 @@ footer {
 .photo-wrapper .photo-close {
     cursor: pointer;
     font-size: 2rem;
-    width: 2rem;
     height: 2rem;
+    line-height: 2rem;
     position: absolute;
     top: 0;
     right: 2rem;
     color: white;
+    text-align: center;
 }
 .photo-wrapper .photo-close:hover {
     color: black;

@@ -83,11 +83,11 @@ $(".exterier").mouseout(function(){
 	}, 50);
 });
 
-$(".catalog-photo").click(function(){
- 	$(this).find(".catalog-photo-wrapper").addClass('catalog-photo-show').velocity({
- 		opacity: 1
- 	}, 700);
-});
+//$(".catalog-photo").click(function(){
+// 	$(this).find(".catalog-photo-wrapper").addClass('catalog-photo-show').velocity({
+// 		opacity: 1
+// 	}, 700);
+//});
     
 $(".photo-close").click(function(e){
  	$(this).parent().parent().removeClass('catalog-photo-show');
@@ -607,6 +607,11 @@ $(".help-info h1").click(function(e){
         }
 
     });
+})();
+(function(){
+    $(".catalog-photo-wrapper").click(function(){
+        
+    })
 })();
 
 
