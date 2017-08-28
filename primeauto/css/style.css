@@ -354,6 +354,7 @@ nav {
     width: 20rem;
     background-color: rgb(172, 26, 26);
     border: 2px solid rgb(172, 26, 26);
+    padding-left: 1rem;
 }
 .catalog-search option {
     box-sizing: border-box;
@@ -399,6 +400,7 @@ nav {
     padding: 0 0 0 2.5rem;
     border: 2px solid rgb(172, 26, 26);
     margin-left: 4rem;
+    color: rgb(172, 26, 26);
 }
 
 .catalog-search input[type="text"]::-webkit-input-placeholder,
@@ -963,13 +965,13 @@ nav {
     margin-top: 2rem;
     width: 100%;
     height: 5rem;
-    border: 2px solid rgb(196, 50, 21);
-    background-color: rgb(196, 50, 21);
+    border: 2px solid rgb(172, 26, 26);
+    background-color: rgb(172, 26, 26);
     font-size: 1.8rem;
 }
 .contacts-form button:hover {
         background-color: rgb(255, 250, 250);
-        color: rgb(196, 50, 21);
+        color: rgb(172, 26, 26);
 }
 .contacts-ukraine {
     display: inline-block;
@@ -1042,7 +1044,7 @@ footer {
 .footer-search input[type="text"] {
     box-sizing: border-box;
     width: 36rem;
-    border: 2px solid rgb(255, 242, 239);
+    border: 2px solid rgb(255, 250, 245);
     height: 4rem;
     padding: 0 3rem 0 1rem;
     outline: none;
@@ -1299,7 +1301,7 @@ footer {
     font-size: 1.8rem;
 }
 .goods-product button:hover {
-    background-color: rgb(255, 242, 239);
+    background-color: rgb(255, 250, 245);
     color: rgb(172, 26, 26);
 }
 .goods-product-name {
@@ -1824,7 +1826,7 @@ footer {
     justify-content: space-between;
     text-align: justify;
     text-align-last: justify;
-    border-bottom: 2px solid rgb(196, 50, 21);
+    border-bottom: 2px solid rgb(172, 26, 26);
 }
 .service-list p {
     cursor: pointer;
