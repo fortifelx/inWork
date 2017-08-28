@@ -333,6 +333,7 @@ header {
 }
 .our-team-slider {
     overflow: hidden;
+    padding-bottom: 10rem;
 }
 .our-team-slider-text {
     width: 58rem;
@@ -567,6 +568,100 @@ b {
 .teamate-say:before {
     transform: rotate(180deg);
 }
+.service {
+    padding-top: 7rem;
+}
+.service-first-img {
+    position: relative;
+    width: 32rem;
+    height: 40rem;
+    float: left;
+    margin-right: 6rem;
+    padding-bottom: 14rem;
+}
+.service-first-img:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32rem;
+    height: 40rem;
+    background-color: rgba(255,255,255,0.4);
+    z-index: 2;
+}
+.service-first-img:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 26rem;
+    height: 36rem;
+    top: 4rem;
+    left: 3rem;
+    box-shadow: 0 13px 45px rgba(54, 57, 63, 0.45);
+}
+.service-header {
+    margin-bottom: 4rem;
+    color: rgb(97, 105, 118);
+    font-family: Anglecia;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+    text-transform: uppercase;
+}
+.service-text {
+    color: rgb(0, 0, 0);
+    font-family: Gothic;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+.service-type-nav {
+    margin-top: 12rem;
+    clear: both;
+    float: left;
+    width: 26rem;
+    padding-left: 5.2rem;
+    margin-left: 1.5rem;
+    margin-right: 12rem;
+    border-left: 1px solid rgb(76, 203, 202);
+}
+.service-type-nav li{
+    cursor: pointer;
+    position: relative;
+    color: rgb(97, 105, 118);
+    font-family:  Gothic;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-bottom: 7.5rem;
+    text-transform: uppercase;
+}
+.service-type-nav li:last-child {
+    margin-bottom: 0;
+}
+.service-type-nav li:before {
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 0 2px 4px rgba(0, 60, 60, 0.5);
+    border: 1px solid rgb(76, 203, 202);
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    display: block;
+    position: absolute;
+    left: -6.8rem;
+    top: -0.3rem;
+    background-color: white;
+    transition: box-shadow 0.3s;
+}
+.service-type-nav li:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+.service-type-nav li:hover:before {
+    box-shadow: 0 5px 10px rgba(0, 60, 60, 0.35);
+}
+
 
 
 
