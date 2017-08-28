@@ -204,7 +204,6 @@ nav {
 .main-menu li a {
     position: relative;
     padding: 0.5rem;
-    line-height: 16px;
 }
 .main-menu li a:after {
     display: block;
@@ -1792,6 +1791,12 @@ footer {
     width: 100%;
     display: block;
     margin: 10rem 0 2rem 0;
+}
+.help-info-text  span {
+    padding-bottom: 2rem;
+}
+.help-info-text  span:last-child {
+    padding-bottom: 0;
 }
 .help-wrapper .contacts-container {
     padding: 0;
