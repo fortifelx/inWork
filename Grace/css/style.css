@@ -108,6 +108,7 @@ header {
 }
 .top-connect-btn {
     cursor: pointer;
+    box-sizing: border-box;
     width: 16rem;
     height: 5rem;
     margin-top: 5rem;
@@ -122,7 +123,11 @@ header {
     line-height: 5rem;
 }
 .ask-fixed {
+    position: fixed;
+    bottom: 0;
     cursor: pointer;
+    box-sizing: border-box;
+    padding-left: 4.5rem;
     width: 16rem;
     height: 4rem;
     color: rgb(255, 255, 255);
@@ -130,14 +135,18 @@ header {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 4rem;
-    background-color: rgb(97, 105, 118);
+    background-color: rgba(97, 105, 118, 0.7);
     background-image: linear-gradient(45deg, rgba(242, 212, 236, 0.25) 0%, rgba(117, 183, 206, 0.25) 100%);
 }
 .ask-fixed:before {
+    position: absolute;
     display: inline-block;
-    content: url(../img/Quotes.svg);
+    content: url(../img/message_line.svg);
     height: 2.5rem;
     width: 2.5rem;
+    line-height: 4rem;
+    top: 1rem;
+    left: 1rem;
 }
 
 
