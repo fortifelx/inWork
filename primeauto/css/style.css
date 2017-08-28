@@ -1793,6 +1793,7 @@ footer {
     margin: 10rem 0 2rem 0;
 }
 .help-info-text  span {
+    display: block;
     padding-bottom: 2rem;
 }
 .help-info-text  span:last-child {
