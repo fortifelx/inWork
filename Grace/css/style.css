@@ -150,6 +150,9 @@ header {
     top: 1rem;
     left: 1rem;
 }
+.ask-fixed:hover {
+    bottom: 1rem;
+}
 .about {
     padding-top: 14rem;
 }
