@@ -194,6 +194,9 @@ function watchDog() {
         var wrapper = $(".wrapper").css("width");
         if(parseInt(wrapper, 10) < 360) {
             mobStatus = true;
+            $(".goods").removeClass("goods-blocks");
+            $(".plite-type-a").removeClass("list-type-active");
+            $(".list-type-a").addClass("list-type-active");
         }
         else {
             $('.help-info').attr('style', '');/* сброс стилей при переходе от мобильной версии  */
