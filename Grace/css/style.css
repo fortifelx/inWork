@@ -152,7 +152,6 @@ header {
 }
 .about {
     padding-top: 14rem;
-    overflow: hiiden;
 }
 .about-header {
     float: left;
@@ -793,13 +792,397 @@ b {
     height: 2.5rem;
     overflow: hidden;
 }
+.img-decor {
+    float: left;
+    width: 24rem;
+    margin-top: 7.5rem;
+}
+.img-decor img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8rem;
+}
+.img-decor img:last-child {
+    margin-bottom: 0;
+}
+.results {
+    clear: both;
+}
+.results-header {
+    width: 100%;
+    text-align: center;
+    color: rgb(97, 105, 118);
+    font-family: Anglecia;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 2.8rem;
+    padding-top: 7rem;    
+}
+.result-slider {
+    width: 100%;
+    height: 36rem;
+}
+.result-slider-wrapper {
+    width: 1000rem;
+    height: 100%;
+    font-size: 0;
+}
+.result-slide {
+    display: inline-block;
+    width: 94rem;
+    height: 100%;
+    padding-bottom: 4rem;
+}
+.result-slide-img-one,
+.result-slide-img-two {
+    position: relative;
+    width: 46rem;
+    height: 32rem;
+}
+.result-slide-img-one {
+    float: left;
+}
+.result-slide-img-two {
+    float: right;
+}
+.result-slide-img-one img,
+.result-slide-img-two img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.result-slide-img-one:before,
+.result-slide-img-two:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 46rem;
+    height: 32rem;
+    background-color: rgba(255,255,255,0.4);
+    z-index: 2;
+    transition: background-color 0.7s;
+}
+.result-slide-img-one:after,
+.result-slide-img-two:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 42rem;
+    height: 29rem;
+    top: 3rem;
+    left: 2rem;
+    background-color: white;
+    box-shadow: 0 1.3rem 4.5rem rgba(54, 57, 63, 0.45);
+    transition: box-shadow 0.7s, background-color 0.7s;
+}
+.result-slide-img-one:hover:before,
+.result-slide-img-two:hover:before {
+    background-color: rgba(255,255,255,0.8);
+}
+.result-slide-img-one:hover:after,
+.result-slide-img-two:hover:after {
+    box-shadow: 0 25px 55px rgba(54, 57, 63, 0.25);
+    background-color: rgb(247, 247, 247);
+}
+.results-slider-counter {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: rgb(97, 105, 118);
+    font-family: Anglecia;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+.results-counter-text {
+    margin: 0 1rem;
+}
+.results-l-arrow, .results-r-arrow {
+    color: rgb(76, 203, 202);
+    font-family: Anglecia;
+    font-size: 35px;
+    font-weight: 400;
+    cursor: pointer;
+    height: 5rem;
+    display: inline-block;
+    line-height: 5rem;
+    vertical-align: top;
+}
+.clients {
+    width: 100%;
+    clear: both;
+}
+.clients-slider {
+    position: relative;
+    top: -3rem;
+}
+.clients-header {
+    width: 100%;
+    text-align: center;
+    color: rgb(97, 105, 118);
+    font-family: Anglecia;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+    text-transform: uppercase;
+    margin-top: 6rem;
+}
+.client-slide-img {
+    display: inline-block;
+    float: left;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 22rem;
+    position: relative;
+}
+.client-slide-img img {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 22rem;
+    position: relative;
+    z-index: 1;    
+}
+.client-slide-img:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 22rem;
+    background-color: rgba(255,255,255,0.2);
+    z-index: 2;
+    transition: background-color 0.7s;
+}
+.client-slide-img:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 17.5rem;
+    height: 17.5rem;
+    border-radius: 17.5rem;
+    top: 4.5rem;
+    left: 2rem;
+    background-color: white;
+    box-shadow: 0 1.3rem 4.5rem rgba(54, 57, 63, 0.45);
+    transition: box-shadow 0.7s, background-color 0.7s;
+}
+.client-slide-text {
+    display: inline-block;
+    width: 63.5rem;
+    color: rgb(97, 105, 118);
+    font-family: Anglecia;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    margin-left: 8rem;
+    padding-top: 6rem;
+}
+.client-slide-name {
+    float: right;
+    margin-top: 3rem;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-family: Gothic;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+.clients-slider-counter {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: rgb(97, 105, 118);
+    font-family: Anglecia;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+.clients-counter-text {
+    margin: 0 1rem;
+}
+.clients-l-arrow, .clients-r-arrow {
+    color: rgb(76, 203, 202);
+    font-family: Anglecia;
+    font-size: 35px;
+    font-weight: 400;
+    cursor: pointer;
+    height: 5rem;
+    display: inline-block;
+    line-height: 5rem;
+    vertical-align: top;
+}
+.consult {
+    width: 100%;
+    clear: both;
+}
+.consult-form-header {
+    color: rgb(97, 105, 118);
+    font-family: Anglecia;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+    text-transform: uppercase;
+    margin-top: 10rem;
+}
+.consult-form-container {
+    margin-top: 5rem;
+    width: 100%;
+    overflow: hidden;
+}
+.consult-form-text {
+    width: 45rem;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+}
+.consult-text {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: Gothic;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+}
+.consult-required {
+    color: rgb(97, 105, 118);
+    font-family: Gothic;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+    margin-top: 2.2rem;
+    margin-bottom: 5.3rem;
+}
+.contacts {
+    width: 22.5rem;
+    display: inline-block;
+    padding-bottom: 10rem;
+}
+.contacts-header, .adress-header {
+    width: 100%;
+    font-family: Gothic;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+.contacts-info, .adress-info {
+    width: 100%;
+    font-family: Gothic;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: rgb(0, 0, 0);
+}
 
-
-
-
-
-
-
+.contacts-info a {
+    color: rgb(76, 203, 202);
+    font-weight: 700;
+}
+.adress {
+    width: 16.5rem;
+    display: inline-block;
+    margin-left: 2rem;
+    vertical-align: top;
+}
+.consult-form {
+    display: inline-block;
+    width: 30rem;
+    float: right;
+    margin-right: 7.5rem;
+}
+.consult-form input,
+.consult-form textarea {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid rgb(76, 203, 202);
+    overflow: hidden;
+    text-align: left;
+    color: rgb(0, 0, 0, 0.3);
+    font-family: Gothic;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+.consult-form button {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(76, 203, 202);
+    border: 0;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-family: Gothic;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.consult-form button p {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    line-height: 5rem;
+    background-color: rgb(76, 203, 202);
+    color: rgb(255, 255, 255);
+    font-family: Gothic;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.consult-form button:after {
+    z-index: 1;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    width: 28rem;
+    height: 3rem;
+    box-shadow: 0 5px 2.5rem rgba(0, 60, 60, 0.6);
+    background-color: rgb(76, 203, 202);
+    transition: box-shadow 0.7s;
+}
+.consult-form button:hover {
+    background-color: rgb(88, 215, 214);
+}
+.consult-form button:hover:after {
+    box-shadow: 0 1rem 3rem rgba(0, 60, 60, 0.4);
+    background-color: rgb(76, 203, 202);
+}
+.consult-form button:active:after {
+    box-shadow: 0 3px 2rem rgba(0, 60, 60, 0.75);
+}
+.consult-form button:active {
+    background-color: rgb(66, 179, 178);
+}
+.consult-form input::-webkit-input-placeholder,
+.consult-form input::-moz-placeholder, 
+.consult-form input:-moz-placeholder,
+.consult-form input:-ms-input-placeholder,
+.consult-form input::placeholder,
+.consult-form textarea::-webkit-input-placeholder,
+.consult-form textarea::-moz-placeholder, 
+.consult-form textarea:-moz-placeholder,
+.consult-form textarea:-ms-input-placeholder,
+.consult-form textarea::placeholder{
+        opacity: 0.3;
+        color: rgb(0, 0, 0, 1);
+        font-family: Gothic;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}
 
 
 
