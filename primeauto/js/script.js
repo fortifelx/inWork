@@ -613,6 +613,18 @@ $(".help-info h1").click(function(e){
         
     })
 })();
+(function(){
+    $(".plite").click(function(){
+       $(".plite-type-a").addClass("list-type-active");
+       $(".list-type-a").removeClass("list-type-active");
+       $(".goods").addClass("goods-blocks");
+    });
+     $(".list").click(function(){
+       $(".list-type-a").addClass("list-type-active");
+       $(".plite-type-a").removeClass("list-type-active");
+       $(".goods").removeClass("goods-blocks");
+    });
+})();
 
 
 
