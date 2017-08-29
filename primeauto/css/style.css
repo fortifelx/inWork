@@ -1441,7 +1441,24 @@ footer {
 }
 .one-product-info h1 {
     line-height: 4.8rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
+}
+.rating {
+    height: 2rem;
+    margin: 1.5rem 0;
+}
+.rating p {
+    cursor: pointer;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/Icon/star-stroke.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+}
+.rating p.full-star {
+    background-image: url(../img/Icon/star-fill.svg);
 }
 .goods-complects {
     display: block;

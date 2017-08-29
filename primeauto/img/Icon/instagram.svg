@@ -1,1 +1,501 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#ffb900;}.cls-4{fill:#ffb801;}.cls-5{fill:#feb702;}.cls-6{fill:#feb703;}.cls-7{fill:#fdb604;}.cls-8{fill:#fdb505;}.cls-9{fill:#fcb406;}.cls-10{fill:#fcb307;}.cls-11{fill:#fbb308;}.cls-12{fill:#fbb209;}.cls-13{fill:#fab10a;}.cls-14{fill:#fab00b;}.cls-15{fill:#f9b00c;}.cls-16{fill:#f9af0d;}.cls-17{fill:#f8ae0e;}.cls-18{fill:#f8ad0f;}.cls-19{fill:#f7ac10;}.cls-20{fill:#f7ac11;}.cls-21{fill:#f7ab12;}.cls-22{fill:#f6aa13;}.cls-23{fill:#f6a914;}.cls-24{fill:#f5a815;}.cls-25{fill:#f5a816;}.cls-26{fill:#f4a717;}.cls-27{fill:#f4a618;}.cls-28{fill:#f3a519;}.cls-29{fill:#f3a41a;}.cls-30{fill:#f2a41b;}.cls-31{fill:#f2a31c;}.cls-32{fill:#f1a21d;}.cls-33{fill:#f1a11e;}.cls-34{fill:#f0a01f;}.cls-35{fill:#f0a020;}.cls-36{fill:#ef9f21;}.cls-37{fill:#ef9e22;}.cls-38{fill:#ef9d23;}.cls-39{fill:#ee9d24;}.cls-40{fill:#ee9c25;}.cls-41{fill:#ed9b26;}.cls-42{fill:#ed9a27;}.cls-43{fill:#ec9928;}.cls-44{fill:#ec9929;}.cls-45{fill:#eb982a;}.cls-46{fill:#eb972b;}.cls-47{fill:#ea962c;}.cls-48{fill:#ea952d;}.cls-49{fill:#e9952e;}.cls-50{fill:#e9942f;}.cls-51{fill:#e89330;}.cls-52{fill:#e89231;}.cls-53{fill:#e79132;}.cls-54{fill:#e79133;}.cls-55{fill:#e79034;}.cls-56{fill:#e68f35;}.cls-57{fill:#e68e36;}.cls-58{fill:#e58e37;}.cls-59{fill:#e58d38;}.cls-60{fill:#e48c39;}.cls-61{fill:#e48b3a;}.cls-62{fill:#e38a3b;}.cls-63{fill:#e38a3c;}.cls-64{fill:#e2893d;}.cls-65{fill:#e2883e;}.cls-66{fill:#e1873f;}.cls-67{fill:#e18640;}.cls-68{fill:#e08641;}.cls-69{fill:#e08542;}.cls-70{fill:#e08443;}.cls-71{fill:#df8344;}.cls-72{fill:#df8245;}.cls-73{fill:#de8246;}.cls-74{fill:#de8147;}.cls-75{fill:#dd8048;}.cls-76{fill:#dd7f49;}.cls-77{fill:#dc7e4a;}.cls-78{fill:#dc7e4b;}.cls-79{fill:#db7d4c;}.cls-80{fill:#db7c4d;}.cls-81{fill:#da7b4e;}.cls-82{fill:#da7b4f;}.cls-83{fill:#d97a50;}.cls-84{fill:#d97951;}.cls-85{fill:#d87852;}.cls-86{fill:#d87753;}.cls-87{fill:#d87754;}.cls-88{fill:#d77655;}.cls-89{fill:#d77556;}.cls-90{fill:#d67457;}.cls-91{fill:#d67358;}.cls-92{fill:#d57359;}.cls-93{fill:#d5725a;}.cls-94{fill:#d4715b;}.cls-95{fill:#d4705c;}.cls-96{fill:#d36f5d;}.cls-97{fill:#d36f5e;}.cls-98{fill:#d26e5f;}.cls-99{fill:#d26d60;}.cls-100{fill:#d16c61;}.cls-101{fill:#d16c62;}.cls-102{fill:#d06b63;}.cls-103{fill:#d06a64;}.cls-104{fill:#d06965;}.cls-105{fill:#cf6866;}.cls-106{fill:#cf6867;}.cls-107{fill:#ce6768;}.cls-108{fill:#ce6669;}.cls-109{fill:#cd656a;}.cls-110{fill:#cd646b;}.cls-111{fill:#cc646c;}.cls-112{fill:#cc636d;}.cls-113{fill:#cb626e;}.cls-114{fill:#cb616f;}.cls-115{fill:#ca6070;}.cls-116{fill:#ca6071;}.cls-117{fill:#c95f72;}.cls-118{fill:#c95e73;}.cls-119{fill:#c85d74;}.cls-120{fill:#c85d76;}.cls-121{fill:#c85c77;}.cls-122{fill:#c75b78;}.cls-123{fill:#c75a79;}.cls-124{fill:#c6597a;}.cls-125{fill:#c6597b;}.cls-126{fill:#c5587c;}.cls-127{fill:#c5577d;}.cls-128{fill:#c4567e;}.cls-129{fill:#c4557f;}.cls-130{fill:#c35580;}.cls-131{fill:#c35481;}.cls-132{fill:#c25382;}.cls-133{fill:#c25283;}.cls-134{fill:#c15184;}.cls-135{fill:#c15185;}.cls-136{fill:#c05086;}.cls-137{fill:#c04f87;}.cls-138{fill:#c04e88;}.cls-139{fill:#bf4d89;}.cls-140{fill:#bf4d8a;}.cls-141{fill:#be4c8b;}.cls-142{fill:#be4b8c;}.cls-143{fill:#bd4a8d;}.cls-144{fill:#bd4a8e;}.cls-145{fill:#bc498f;}.cls-146{fill:#bc4890;}.cls-147{fill:#bb4791;}.cls-148{fill:#bb4692;}.cls-149{fill:#ba4693;}.cls-150{fill:#ba4594;}.cls-151{fill:#b94495;}.cls-152{fill:#b94396;}.cls-153{fill:#b84297;}.cls-154{fill:#b84298;}.cls-155{fill:#b84199;}.cls-156{fill:#b7409a;}.cls-157{fill:#b73f9b;}.cls-158{fill:#b63e9c;}.cls-159{fill:#b63e9d;}.cls-160{fill:#b53d9e;}.cls-161{fill:#b53c9f;}.cls-162{fill:#b43ba0;}.cls-163{fill:#b43ba1;}.cls-164{fill:#b33aa2;}.cls-165{fill:#b339a3;}.cls-166{fill:#b238a4;}.cls-167{fill:#b237a5;}.cls-168{fill:#b137a6;}.cls-169{fill:#b136a7;}.cls-170{fill:#b035a8;}.cls-171{fill:#b034a9;}.cls-172{fill:#b033aa;}.cls-173{fill:#af33ab;}.cls-174{fill:#af32ac;}.cls-175{fill:#ae31ad;}.cls-176{fill:#ae30ae;}.cls-177{fill:#ad2faf;}.cls-178{fill:#ad2fb0;}.cls-179{fill:#ac2eb1;}.cls-180{fill:#ac2db2;}.cls-181{fill:#ab2cb3;}.cls-182{fill:#ab2bb4;}.cls-183{fill:#aa2bb5;}.cls-184{fill:#aa2ab6;}.cls-185{fill:#a929b7;}.cls-186{fill:#a928b8;}.cls-187{fill:#a928b9;}.cls-188{fill:#a827ba;}.cls-189{fill:#a826bb;}.cls-190{fill:#a725bc;}.cls-191{fill:#a724bd;}.cls-192{fill:#a624be;}.cls-193{fill:#a623bf;}.cls-194{fill:#a522c0;}.cls-195{fill:#a521c1;}.cls-196{fill:#a420c2;}.cls-197{fill:#a420c3;}.cls-198{fill:#a31fc4;}.cls-199{fill:#a31ec5;}.cls-200{fill:#a21dc6;}.cls-201{fill:#a21cc7;}.cls-202{fill:#a11cc8;}.cls-203{fill:#a11bc9;}.cls-204{fill:#a11aca;}.cls-205{fill:#a019cb;}.cls-206{fill:#a019cc;}.cls-207{fill:#9f18cd;}.cls-208{fill:#9f17ce;}.cls-209{fill:#9e16cf;}.cls-210{fill:#9e15d0;}.cls-211{fill:#9d15d1;}.cls-212{fill:#9d14d2;}.cls-213{fill:#9c13d3;}.cls-214{fill:#9c12d4;}.cls-215{fill:#9b11d5;}.cls-216{fill:#9b11d6;}.cls-217{fill:#9a10d7;}.cls-218{fill:#9a0fd8;}.cls-219{fill:#990ed9;}.cls-220{fill:#990dda;}.cls-221{fill:#990ddb;}.cls-222{fill:#980cdc;}.cls-223{fill:#980bdd;}.cls-224{fill:#970ade;}.cls-225{fill:#9709df;}.cls-226{fill:#9609e0;}.cls-227{fill:#9608e1;}.cls-228{fill:#9507e2;}.cls-229{fill:#9506e3;}.cls-230{fill:#9406e4;}.cls-231{fill:#9405e5;}.cls-232{fill:#9304e6;}.cls-233{fill:#9303e7;}.cls-234{fill:#9202e8;}.cls-235{fill:#9202e9;}.cls-236{fill:#9101ea;}.cls-237{fill:#9100eb;}.cls-238{fill:#fff;}</style><clipPath id="clip-path"><path class="cls-1" d="M40,35a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0H35a5,5,0,0,1,5,5Z"/></clipPath></defs><title>instagram</title><g class="cls-2"><polygon class="cls-3" points="0 37.6 3.43 40 0 40 0 37.6"/><polygon class="cls-3" points="0 37.33 3.82 40 3.43 40 0 37.6 0 37.33"/><polygon class="cls-4" points="0 37.06 4.2 40 3.82 40 0 37.33 0 37.06"/><polygon class="cls-5" points="0 36.79 4.59 40 4.2 40 0 37.06 0 36.79"/><polygon class="cls-6" points="0 36.52 4.97 40 4.59 40 0 36.79 0 36.52"/><polygon class="cls-7" points="0 36.25 5.35 40 4.97 40 0 36.52 0 36.25"/><polygon class="cls-8" points="0 35.98 5.74 40 5.35 40 0 36.25 0 35.98"/><polygon class="cls-9" points="0 35.71 6.12 40 5.74 40 0 35.98 0 35.71"/><polygon class="cls-10" points="0 35.45 6.51 40 6.12 40 0 35.71 0 35.45"/><polygon class="cls-11" points="0 35.18 6.89 40 6.51 40 0 35.45 0 35.18"/><polygon class="cls-12" points="0 34.91 7.27 40 6.89 40 0 35.18 0 34.91"/><polygon class="cls-13" points="0 34.64 7.66 40 7.27 40 0 34.91 0 34.64"/><polygon class="cls-14" points="0 34.37 8.04 40 7.66 40 0 34.64 0 34.37"/><polygon class="cls-15" points="0 34.1 8.43 40 8.04 40 0 34.37 0 34.1"/><polygon class="cls-16" points="0 33.83 8.81 40 8.43 40 0 34.1 0 33.83"/><polygon class="cls-17" points="0 33.56 9.2 40 8.81 40 0 33.83 0 33.56"/><polygon class="cls-18" points="0 33.29 9.58 40 9.2 40 0 33.56 0 33.29"/><polygon class="cls-19" points="0 33.02 9.96 40 9.58 40 0 33.29 0 33.02"/><polygon class="cls-20" points="0 32.76 10.35 40 9.96 40 0 33.02 0 32.76"/><polygon class="cls-21" points="0 32.49 10.73 40 10.35 40 0 32.76 0 32.49"/><polygon class="cls-22" points="0 32.22 11.12 40 10.73 40 0 32.49 0 32.22"/><polygon class="cls-23" points="0 31.95 11.5 40 11.12 40 0 32.22 0 31.95"/><polygon class="cls-24" points="0 31.68 11.88 40 11.5 40 0 31.95 0 31.68"/><polygon class="cls-25" points="0 31.41 12.27 40 11.88 40 0 31.68 0 31.41"/><polygon class="cls-26" points="0 31.14 12.65 40 12.27 40 0 31.41 0 31.14"/><polygon class="cls-27" points="0 30.87 13.04 40 12.65 40 0 31.14 0 30.87"/><polygon class="cls-28" points="0 30.6 13.42 40 13.04 40 0 30.87 0 30.6"/><polygon class="cls-29" points="0 30.34 13.8 40 13.42 40 0 30.6 0 30.34"/><polygon class="cls-30" points="0 30.07 14.19 40 13.8 40 0 30.34 0 30.07"/><polygon class="cls-31" points="0 29.8 14.57 40 14.19 40 0 30.07 0 29.8"/><polygon class="cls-32" points="0 29.53 14.96 40 14.57 40 0 29.8 0 29.53"/><polygon class="cls-33" points="0 29.26 15.34 40 14.96 40 0 29.53 0 29.26"/><polygon class="cls-34" points="0 28.99 15.72 40 15.34 40 0 29.26 0 28.99"/><polygon class="cls-35" points="0 28.72 16.11 40 15.72 40 0 28.99 0 28.72"/><polygon class="cls-36" points="0 28.45 16.49 40 16.11 40 0 28.72 0 28.45"/><polygon class="cls-37" points="0 28.18 16.88 40 16.49 40 0 28.45 0 28.18"/><polygon class="cls-38" points="0 27.91 17.26 40 16.88 40 0 28.18 0 27.91"/><polygon class="cls-39" points="0 27.64 17.64 40 17.26 40 0 27.91 0 27.64"/><polygon class="cls-40" points="0 27.38 18.03 40 17.64 40 0 27.64 0 27.38"/><polygon class="cls-41" points="0 27.11 18.41 40 18.03 40 0 27.38 0 27.11"/><polygon class="cls-42" points="0 26.84 18.8 40 18.41 40 0 27.11 0 26.84"/><polygon class="cls-43" points="0 26.57 19.18 40 18.8 40 0 26.84 0 26.57"/><polygon class="cls-44" points="0 26.3 19.57 40 19.18 40 0 26.57 0 26.3"/><polygon class="cls-45" points="0 26.03 19.95 40 19.57 40 0 26.3 0 26.03"/><polygon class="cls-46" points="0 25.76 20.33 40 19.95 40 0 26.03 0 25.76"/><polygon class="cls-47" points="0 25.49 20.72 40 20.33 40 0 25.76 0 25.49"/><polygon class="cls-48" points="0 25.23 21.1 40 20.72 40 0 25.49 0 25.23"/><polygon class="cls-49" points="0 24.96 21.48 40 21.1 40 0 25.23 0 24.96"/><polygon class="cls-50" points="0 24.69 21.87 40 21.48 40 0 24.96 0 24.69"/><polygon class="cls-51" points="0 24.42 22.25 40 21.87 40 0 24.69 0 24.42"/><polygon class="cls-52" points="0 24.15 22.64 40 22.25 40 0 24.42 0 24.15"/><polygon class="cls-53" points="0 23.88 23.02 40 22.64 40 0 24.15 0 23.88"/><polygon class="cls-54" points="0 23.61 23.41 40 23.02 40 0 23.88 0 23.61"/><polygon class="cls-55" points="0 23.34 23.79 40 23.41 40 0 23.61 0 23.34"/><polygon class="cls-56" points="0 23.07 24.17 40 23.79 40 0 23.34 0 23.07"/><polygon class="cls-57" points="0 22.8 24.56 40 24.17 40 0 23.07 0 22.8"/><polygon class="cls-58" points="0 22.54 24.94 40 24.56 40 0 22.8 0 22.54"/><polygon class="cls-59" points="0 22.27 25.33 40 24.94 40 0 22.54 0 22.27"/><polygon class="cls-60" points="0 22 25.71 40 25.33 40 0 22.27 0 22"/><polygon class="cls-61" points="0 21.73 26.09 40 25.71 40 0 22 0 21.73"/><polygon class="cls-62" points="0 21.46 26.48 40 26.09 40 0 21.73 0 21.46"/><polygon class="cls-63" points="0 21.19 26.86 40 26.48 40 0 21.46 0 21.19"/><polygon class="cls-64" points="0 20.92 27.25 40 26.86 40 0 21.19 0 20.92"/><polygon class="cls-65" points="0 20.65 27.63 40 27.25 40 0 20.92 0 20.65"/><polygon class="cls-66" points="0 20.38 28.02 40 27.63 40 0 20.65 0 20.38"/><polygon class="cls-67" points="0 20.11 28.4 40 28.02 40 0 20.38 0 20.11"/><polygon class="cls-68" points="0 19.85 28.78 40 28.4 40 0 20.11 0 19.85"/><polygon class="cls-69" points="0 19.58 29.17 40 28.78 40 0 19.85 0 19.58"/><polygon class="cls-70" points="0 19.31 29.55 40 29.17 40 0 19.58 0 19.31"/><polygon class="cls-71" points="0 19.04 29.93 40 29.55 40 0 19.31 0 19.04"/><polygon class="cls-72" points="0 18.77 30.32 40 29.93 40 0 19.04 0 18.77"/><polygon class="cls-73" points="0 18.5 30.7 40 30.32 40 0 18.77 0 18.5"/><polygon class="cls-74" points="0 18.23 31.09 40 30.7 40 0 18.5 0 18.23"/><polygon class="cls-75" points="0 17.96 31.47 40 31.09 40 0 18.23 0 17.96"/><polygon class="cls-76" points="0 17.7 31.86 40 31.47 40 0 17.96 0 17.7"/><polygon class="cls-77" points="0 17.43 32.24 40 31.86 40 0 17.7 0 17.43"/><polygon class="cls-78" points="0 17.16 32.62 40 32.24 40 0 17.43 0 17.16"/><polygon class="cls-79" points="0 16.89 33.01 40 32.62 40 0 17.16 0 16.89"/><polygon class="cls-80" points="0 16.62 33.39 40 33.01 40 0 16.89 0 16.62"/><polygon class="cls-81" points="0 16.35 33.78 40 33.39 40 0 16.62 0 16.35"/><polygon class="cls-82" points="0 16.08 34.16 40 33.78 40 0 16.35 0 16.08"/><polygon class="cls-83" points="0 15.81 34.54 40 34.16 40 0 16.08 0 15.81"/><polygon class="cls-84" points="0 15.54 34.93 40 34.54 40 0 15.81 0 15.54"/><polygon class="cls-85" points="0 15.27 35.31 40 34.93 40 0 15.54 0 15.27"/><polygon class="cls-86" points="0 15.01 35.7 40 35.31 40 0 15.27 0 15.01"/><polygon class="cls-87" points="0 14.74 36.08 40 35.7 40 0 15.01 0 14.74"/><polygon class="cls-88" points="0 14.47 36.47 40 36.08 40 0 14.74 0 14.47"/><polygon class="cls-89" points="0 14.2 36.85 40 36.47 40 0 14.47 0 14.2"/><polygon class="cls-90" points="0 13.93 37.23 40 36.85 40 0 14.2 0 13.93"/><polygon class="cls-91" points="0 13.66 37.62 40 37.23 40 0 13.93 0 13.66"/><polygon class="cls-92" points="0 13.39 38 40 37.62 40 0 13.66 0 13.39"/><polygon class="cls-93" points="0 13.12 38.38 40 38 40 0 13.39 0 13.12"/><polygon class="cls-94" points="0 12.85 38.77 40 38.38 40 0 13.12 0 12.85"/><polygon class="cls-95" points="0 12.59 39.15 40 38.77 40 0 12.85 0 12.59"/><polygon class="cls-96" points="0 12.32 39.54 40 39.15 40 0 12.59 0 12.32"/><polygon class="cls-97" points="0 12.05 39.92 40 39.54 40 0 12.32 0 12.05"/><polygon class="cls-98" points="0 11.78 40 39.79 40 40 39.92 40 0 12.05 0 11.78"/><polygon class="cls-99" points="0 11.51 40 39.52 40 39.79 0 11.78 0 11.51"/><polygon class="cls-100" points="0 11.24 40 39.25 40 39.52 0 11.51 0 11.24"/><polygon class="cls-101" points="0 10.97 40 38.98 40 39.25 0 11.24 0 10.97"/><polygon class="cls-102" points="0 10.7 40 38.71 40 38.98 0 10.97 0 10.7"/><polygon class="cls-103" points="0 10.43 40 38.44 40 38.71 0 10.7 0 10.43"/><polygon class="cls-104" points="0 10.16 40 38.17 40 38.44 0 10.43 0 10.16"/><polygon class="cls-105" points="0 9.9 40 37.9 40 38.17 0 10.16 0 9.9"/><polygon class="cls-106" points="0 9.63 40 37.63 40 37.9 0 9.9 0 9.63"/><polygon class="cls-107" points="0 9.36 40 37.37 40 37.63 0 9.63 0 9.36"/><polygon class="cls-108" points="0 9.09 40 37.1 40 37.37 0 9.36 0 9.09"/><polygon class="cls-109" points="0 8.82 40 36.83 40 37.1 0 9.09 0 8.82"/><polygon class="cls-110" points="0 8.55 40 36.56 40 36.83 0 8.82 0 8.55"/><polygon class="cls-111" points="0 8.28 40 36.29 40 36.56 0 8.55 0 8.28"/><polygon class="cls-112" points="0 8.01 40 36.02 40 36.29 0 8.28 0 8.01"/><polygon class="cls-113" points="0 7.74 40 35.75 40 36.02 0 8.01 0 7.74"/><polygon class="cls-114" points="0 7.47 40 35.48 40 35.75 0 7.74 0 7.47"/><polygon class="cls-115" points="0 7.21 40 35.21 40 35.48 0 7.47 0 7.21"/><polygon class="cls-116" points="0 6.94 40 34.95 40 35.21 0 7.21 0 6.94"/><polygon class="cls-117" points="0 6.67 40 34.68 40 34.95 0 6.94 0 6.67"/><polygon class="cls-118" points="0 6.4 40 34.41 40 34.68 0 6.67 0 6.4"/><polygon class="cls-119" points="0 6.13 40 34.14 40 34.41 0 6.4 0 6.13"/><polygon class="cls-120" points="0 5.86 40 33.87 40 34.14 0 6.13 0 5.86"/><polygon class="cls-121" points="0 5.59 40 33.6 40 33.87 0 5.86 0 5.59"/><polygon class="cls-122" points="0 5.32 40 33.33 40 33.6 0 5.59 0 5.32"/><polygon class="cls-123" points="0 5.05 40 33.06 40 33.33 0 5.32 0 5.05"/><polygon class="cls-124" points="0 4.79 40 32.79 40 33.06 0 5.05 0 4.79"/><polygon class="cls-125" points="0 4.52 40 32.52 40 32.79 0 4.79 0 4.52"/><polygon class="cls-126" points="0 4.25 40 32.26 40 32.52 0 4.52 0 4.25"/><polygon class="cls-127" points="0 3.98 40 31.99 40 32.26 0 4.25 0 3.98"/><polygon class="cls-128" points="0 3.71 40 31.72 40 31.99 0 3.98 0 3.71"/><polygon class="cls-129" points="0 3.44 40 31.45 40 31.72 0 3.71 0 3.44"/><polygon class="cls-130" points="0 3.17 40 31.18 40 31.45 0 3.44 0 3.17"/><polygon class="cls-131" points="0 2.9 40 30.91 40 31.18 0 3.17 0 2.9"/><polygon class="cls-132" points="0 2.63 40 30.64 40 30.91 0 2.9 0 2.63"/><polygon class="cls-133" points="0 2.37 40 30.37 40 30.64 0 2.63 0 2.37"/><polygon class="cls-134" points="0 2.1 40 30.1 40 30.37 0 2.37 0 2.1"/><polygon class="cls-135" points="0 1.83 40 29.84 40 30.1 0 2.1 0 1.83"/><polygon class="cls-136" points="0 1.56 40 29.57 40 29.84 0 1.83 0 1.56"/><polygon class="cls-137" points="0 1.29 40 29.3 40 29.57 0 1.56 0 1.29"/><polygon class="cls-138" points="0 1.02 40 29.03 40 29.3 0 1.29 0 1.02"/><polygon class="cls-139" points="0 0.75 40 28.76 40 29.03 0 1.02 0 0.75"/><polygon class="cls-140" points="0 0.48 40 28.49 40 28.76 0 0.75 0 0.48"/><polygon class="cls-141" points="0 0.21 40 28.22 40 28.49 0 0.48 0 0.21"/><polygon class="cls-142" points="0.08 0 40 27.95 40 28.22 0 0.21 0 0 0.08 0"/><polygon class="cls-143" points="0.46 0 40 27.68 40 27.95 0.08 0 0.46 0"/><polygon class="cls-144" points="0.85 0 40 27.41 40 27.68 0.46 0 0.85 0"/><polygon class="cls-145" points="1.23 0 40 27.15 40 27.41 0.85 0 1.23 0"/><polygon class="cls-146" points="1.61 0 40 26.88 40 27.15 1.23 0 1.61 0"/><polygon class="cls-147" points="2 0 40 26.61 40 26.88 1.61 0 2 0"/><polygon class="cls-148" points="2.38 0 40 26.34 40 26.61 2 0 2.38 0"/><polygon class="cls-149" points="2.77 0 40 26.07 40 26.34 2.38 0 2.77 0"/><polygon class="cls-150" points="3.15 0 40 25.8 40 26.07 2.77 0 3.15 0"/><polygon class="cls-151" points="3.54 0 40 25.53 40 25.8 3.15 0 3.54 0"/><polygon class="cls-152" points="3.92 0 40 25.26 40 25.53 3.54 0 3.92 0"/><polygon class="cls-153" points="4.3 0 40 24.99 40 25.26 3.92 0 4.3 0"/><polygon class="cls-154" points="4.69 0 40 24.73 40 24.99 4.3 0 4.69 0"/><polygon class="cls-155" points="5.07 0 40 24.46 40 24.73 4.69 0 5.07 0"/><polygon class="cls-156" points="5.46 0 40 24.19 40 24.46 5.07 0 5.46 0"/><polygon class="cls-157" points="5.84 0 40 23.92 40 24.19 5.46 0 5.84 0"/><polygon class="cls-158" points="6.22 0 40 23.65 40 23.92 5.84 0 6.22 0"/><polygon class="cls-159" points="6.61 0 40 23.38 40 23.65 6.22 0 6.61 0"/><polygon class="cls-160" points="6.99 0 40 23.11 40 23.38 6.61 0 6.99 0"/><polygon class="cls-161" points="7.38 0 40 22.84 40 23.11 6.99 0 7.38 0"/><polygon class="cls-162" points="7.76 0 40 22.57 40 22.84 7.38 0 7.76 0"/><polygon class="cls-163" points="8.14 0 40 22.3 40 22.57 7.76 0 8.14 0"/><polygon class="cls-164" points="8.53 0 40 22.04 40 22.3 8.14 0 8.53 0"/><polygon class="cls-165" points="8.91 0 40 21.77 40 22.04 8.53 0 8.91 0"/><polygon class="cls-166" points="9.3 0 40 21.5 40 21.77 8.91 0 9.3 0"/><polygon class="cls-167" points="9.68 0 40 21.23 40 21.5 9.3 0 9.68 0"/><polygon class="cls-168" points="10.06 0 40 20.96 40 21.23 9.68 0 10.06 0"/><polygon class="cls-169" points="10.45 0 40 20.69 40 20.96 10.06 0 10.45 0"/><polygon class="cls-170" points="10.83 0 40 20.42 40 20.69 10.45 0 10.83 0"/><polygon class="cls-171" points="11.22 0 40 20.15 40 20.42 10.83 0 11.22 0"/><polygon class="cls-172" points="11.6 0 40 19.89 40 20.15 11.22 0 11.6 0"/><polygon class="cls-173" points="11.98 0 40 19.62 40 19.89 11.6 0 11.98 0"/><polygon class="cls-174" points="12.37 0 40 19.35 40 19.62 11.98 0 12.37 0"/><polygon class="cls-175" points="12.75 0 40 19.08 40 19.35 12.37 0 12.75 0"/><polygon class="cls-176" points="13.14 0 40 18.81 40 19.08 12.75 0 13.14 0"/><polygon class="cls-177" points="13.52 0 40 18.54 40 18.81 13.14 0 13.52 0"/><polygon class="cls-178" points="13.9 0 40 18.27 40 18.54 13.52 0 13.9 0"/><polygon class="cls-179" points="14.29 0 40 18 40 18.27 13.9 0 14.29 0"/><polygon class="cls-180" points="14.67 0 40 17.73 40 18 14.29 0 14.67 0"/><polygon class="cls-181" points="15.06 0 40 17.46 40 17.73 14.67 0 15.06 0"/><polygon class="cls-182" points="15.44 0 40 17.2 40 17.46 15.06 0 15.44 0"/><polygon class="cls-183" points="15.83 0 40 16.93 40 17.2 15.44 0 15.83 0"/><polygon class="cls-184" points="16.21 0 40 16.66 40 16.93 15.83 0 16.21 0"/><polygon class="cls-185" points="16.59 0 40 16.39 40 16.66 16.21 0 16.59 0"/><polygon class="cls-186" points="16.98 0 40 16.12 40 16.39 16.59 0 16.98 0"/><polygon class="cls-187" points="17.36 0 40 15.85 40 16.12 16.98 0 17.36 0"/><polygon class="cls-188" points="17.75 0 40 15.58 40 15.85 17.36 0 17.75 0"/><polygon class="cls-189" points="18.13 0 40 15.31 40 15.58 17.75 0 18.13 0"/><polygon class="cls-190" points="18.52 0 40 15.04 40 15.31 18.13 0 18.52 0"/><polygon class="cls-191" points="18.9 0 40 14.78 40 15.04 18.52 0 18.9 0"/><polygon class="cls-192" points="19.28 0 40 14.51 40 14.78 18.9 0 19.28 0"/><polygon class="cls-193" points="19.67 0 40 14.24 40 14.51 19.28 0 19.67 0"/><polygon class="cls-194" points="20.05 0 40 13.97 40 14.24 19.67 0 20.05 0"/><polygon class="cls-195" points="20.43 0 40 13.7 40 13.97 20.05 0 20.43 0"/><polygon class="cls-196" points="20.82 0 40 13.43 40 13.7 20.43 0 20.82 0"/><polygon class="cls-197" points="21.2 0 40 13.16 40 13.43 20.82 0 21.2 0"/><polygon class="cls-198" points="21.59 0 40 12.89 40 13.16 21.2 0 21.59 0"/><polygon class="cls-199" points="21.97 0 40 12.62 40 12.89 21.59 0 21.97 0"/><polygon class="cls-200" points="22.36 0 40 12.36 40 12.62 21.97 0 22.36 0"/><polygon class="cls-201" points="22.74 0 40 12.09 40 12.36 22.36 0 22.74 0"/><polygon class="cls-202" points="23.12 0 40 11.82 40 12.09 22.74 0 23.12 0"/><polygon class="cls-203" points="23.51 0 40 11.55 40 11.82 23.12 0 23.51 0"/><polygon class="cls-204" points="23.89 0 40 11.28 40 11.55 23.51 0 23.89 0"/><polygon class="cls-205" points="24.28 0 40 11.01 40 11.28 23.89 0 24.28 0"/><polygon class="cls-206" points="24.66 0 40 10.74 40 11.01 24.28 0 24.66 0"/><polygon class="cls-207" points="25.04 0 40 10.47 40 10.74 24.66 0 25.04 0"/><polygon class="cls-208" points="25.43 0 40 10.2 40 10.47 25.04 0 25.43 0"/><polygon class="cls-209" points="25.81 0 40 9.93 40 10.2 25.43 0 25.81 0"/><polygon class="cls-210" points="26.2 0 40 9.66 40 9.93 25.81 0 26.2 0"/><polygon class="cls-211" points="26.58 0 40 9.4 40 9.66 26.2 0 26.58 0"/><polygon class="cls-212" points="26.96 0 40 9.13 40 9.4 26.58 0 26.96 0"/><polygon class="cls-213" points="27.35 0 40 8.86 40 9.13 26.96 0 27.35 0"/><polygon class="cls-214" points="27.73 0 40 8.59 40 8.86 27.35 0 27.73 0"/><polygon class="cls-215" points="28.12 0 40 8.32 40 8.59 27.73 0 28.12 0"/><polygon class="cls-216" points="28.5 0 40 8.05 40 8.32 28.12 0 28.5 0"/><polygon class="cls-217" points="28.89 0 40 7.78 40 8.05 28.5 0 28.89 0"/><polygon class="cls-218" points="29.27 0 40 7.51 40 7.78 28.89 0 29.27 0"/><polygon class="cls-219" points="29.65 0 40 7.25 40 7.51 29.27 0 29.65 0"/><polygon class="cls-220" points="30.04 0 40 6.98 40 7.25 29.65 0 30.04 0"/><polygon class="cls-221" points="30.42 0 40 6.71 40 6.98 30.04 0 30.42 0"/><polygon class="cls-222" points="30.8 0 40 6.44 40 6.71 30.42 0 30.8 0"/><polygon class="cls-223" points="31.19 0 40 6.17 40 6.44 30.8 0 31.19 0"/><polygon class="cls-224" points="31.57 0 40 5.9 40 6.17 31.19 0 31.57 0"/><polygon class="cls-225" points="31.96 0 40 5.63 40 5.9 31.57 0 31.96 0"/><polygon class="cls-226" points="32.34 0 40 5.36 40 5.63 31.96 0 32.34 0"/><polygon class="cls-227" points="32.73 0 40 5.09 40 5.36 32.34 0 32.73 0"/><polygon class="cls-228" points="33.11 0 40 4.82 40 5.09 32.73 0 33.11 0"/><polygon class="cls-229" points="33.49 0 40 4.55 40 4.82 33.11 0 33.49 0"/><polygon class="cls-230" points="33.88 0 40 4.29 40 4.55 33.49 0 33.88 0"/><polygon class="cls-231" points="34.26 0 40 4.02 40 4.29 33.88 0 34.26 0"/><polygon class="cls-232" points="34.65 0 40 3.75 40 4.02 34.26 0 34.65 0"/><polygon class="cls-233" points="35.03 0 40 3.48 40 3.75 34.65 0 35.03 0"/><polygon class="cls-234" points="35.41 0 40 3.21 40 3.48 35.03 0 35.41 0"/><polygon class="cls-235" points="35.8 0 40 2.94 40 3.21 35.41 0 35.8 0"/><polygon class="cls-236" points="36.18 0 40 2.67 40 2.94 35.8 0 36.18 0"/><polygon class="cls-237" points="36.57 0 40 2.4 40 2.67 36.18 0 36.57 0"/><polygon class="cls-237" points="40 2.4 36.57 0 40 0 40 2.4"/></g><path class="cls-238" d="M26.46,34.77H12.92a8,8,0,0,1-8-8V13.23a8,8,0,0,1,8-8H26.46a8,8,0,0,1,8,8h0V26.77A8,8,0,0,1,26.46,34.77ZM12.92,7.69a5.54,5.54,0,0,0-5.54,5.54V26.77a5.54,5.54,0,0,0,5.54,5.54H26.46A5.54,5.54,0,0,0,32,26.77V13.23a5.54,5.54,0,0,0-5.54-5.54Z"/><path class="cls-238" d="M19.69,27.38A7.38,7.38,0,1,1,27.08,20,7.38,7.38,0,0,1,19.69,27.38Zm0-12.31A4.92,4.92,0,1,0,24.62,20,4.92,4.92,0,0,0,19.69,15.08Z"/><circle class="cls-238" cx="27.54" cy="12.15" r="1.69"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#FFB900;}
+	.st2{fill:#FFB801;}
+	.st3{fill:#FEB702;}
+	.st4{fill:#FEB703;}
+	.st5{fill:#FDB604;}
+	.st6{fill:#FDB505;}
+	.st7{fill:#FCB406;}
+	.st8{fill:#FCB307;}
+	.st9{fill:#FBB308;}
+	.st10{fill:#FBB209;}
+	.st11{fill:#FAB10A;}
+	.st12{fill:#FAB00B;}
+	.st13{fill:#F9B00C;}
+	.st14{fill:#F9AF0D;}
+	.st15{fill:#F8AE0E;}
+	.st16{fill:#F8AD0F;}
+	.st17{fill:#F7AC10;}
+	.st18{fill:#F7AC11;}
+	.st19{fill:#F7AB12;}
+	.st20{fill:#F6AA13;}
+	.st21{fill:#F6A914;}
+	.st22{fill:#F5A815;}
+	.st23{fill:#F5A816;}
+	.st24{fill:#F4A717;}
+	.st25{fill:#F4A618;}
+	.st26{fill:#F3A519;}
+	.st27{fill:#F3A41A;}
+	.st28{fill:#F2A41B;}
+	.st29{fill:#F2A31C;}
+	.st30{fill:#F1A21D;}
+	.st31{fill:#F1A11E;}
+	.st32{fill:#F0A01F;}
+	.st33{fill:#F0A020;}
+	.st34{fill:#EF9F21;}
+	.st35{fill:#EF9E22;}
+	.st36{fill:#EF9D23;}
+	.st37{fill:#EE9D24;}
+	.st38{fill:#EE9C25;}
+	.st39{fill:#ED9B26;}
+	.st40{fill:#ED9A27;}
+	.st41{fill:#EC9928;}
+	.st42{fill:#EC9929;}
+	.st43{fill:#EB982A;}
+	.st44{fill:#EB972B;}
+	.st45{fill:#EA962C;}
+	.st46{fill:#EA952D;}
+	.st47{fill:#E9952E;}
+	.st48{fill:#E9942F;}
+	.st49{fill:#E89330;}
+	.st50{fill:#E89231;}
+	.st51{fill:#E79132;}
+	.st52{fill:#E79133;}
+	.st53{fill:#E79034;}
+	.st54{fill:#E68F35;}
+	.st55{fill:#E68E36;}
+	.st56{fill:#E58E37;}
+	.st57{fill:#E58D38;}
+	.st58{fill:#E48C39;}
+	.st59{fill:#E48B3A;}
+	.st60{fill:#E38A3B;}
+	.st61{fill:#E38A3C;}
+	.st62{fill:#E2893D;}
+	.st63{fill:#E2883E;}
+	.st64{fill:#E1873F;}
+	.st65{fill:#E18640;}
+	.st66{fill:#E08641;}
+	.st67{fill:#E08542;}
+	.st68{fill:#E08443;}
+	.st69{fill:#DF8344;}
+	.st70{fill:#DF8245;}
+	.st71{fill:#DE8246;}
+	.st72{fill:#DE8147;}
+	.st73{fill:#DD8048;}
+	.st74{fill:#DD7F49;}
+	.st75{fill:#DC7E4A;}
+	.st76{fill:#DC7E4B;}
+	.st77{fill:#DB7D4C;}
+	.st78{fill:#DB7C4D;}
+	.st79{fill:#DA7B4E;}
+	.st80{fill:#DA7B4F;}
+	.st81{fill:#D97A50;}
+	.st82{fill:#D97951;}
+	.st83{fill:#D87852;}
+	.st84{fill:#D87753;}
+	.st85{fill:#D87754;}
+	.st86{fill:#D77655;}
+	.st87{fill:#D77556;}
+	.st88{fill:#D67457;}
+	.st89{fill:#D67358;}
+	.st90{fill:#D57359;}
+	.st91{fill:#D5725A;}
+	.st92{fill:#D4715B;}
+	.st93{fill:#D4705C;}
+	.st94{fill:#D36F5D;}
+	.st95{fill:#D36F5E;}
+	.st96{fill:#D26E5F;}
+	.st97{fill:#D26D60;}
+	.st98{fill:#D16C61;}
+	.st99{fill:#D16C62;}
+	.st100{fill:#D06B63;}
+	.st101{fill:#D06A64;}
+	.st102{fill:#D06965;}
+	.st103{fill:#CF6866;}
+	.st104{fill:#CF6867;}
+	.st105{fill:#CE6768;}
+	.st106{fill:#CE6669;}
+	.st107{fill:#CD656A;}
+	.st108{fill:#CD646B;}
+	.st109{fill:#CC646C;}
+	.st110{fill:#CC636D;}
+	.st111{fill:#CB626E;}
+	.st112{fill:#CB616F;}
+	.st113{fill:#CA6070;}
+	.st114{fill:#CA6071;}
+	.st115{fill:#C95F72;}
+	.st116{fill:#C95E73;}
+	.st117{fill:#C85D74;}
+	.st118{fill:#C85D76;}
+	.st119{fill:#C85C77;}
+	.st120{fill:#C75B78;}
+	.st121{fill:#C75A79;}
+	.st122{fill:#C6597A;}
+	.st123{fill:#C6597B;}
+	.st124{fill:#C5587C;}
+	.st125{fill:#C5577D;}
+	.st126{fill:#C4567E;}
+	.st127{fill:#C4557F;}
+	.st128{fill:#C35580;}
+	.st129{fill:#C35481;}
+	.st130{fill:#C25382;}
+	.st131{fill:#C25283;}
+	.st132{fill:#C15184;}
+	.st133{fill:#C15185;}
+	.st134{fill:#C05086;}
+	.st135{fill:#C04F87;}
+	.st136{fill:#C04E88;}
+	.st137{fill:#BF4D89;}
+	.st138{fill:#BF4D8A;}
+	.st139{fill:#BE4C8B;}
+	.st140{fill:#BE4B8C;}
+	.st141{fill:#BD4A8D;}
+	.st142{fill:#BD4A8E;}
+	.st143{fill:#BC498F;}
+	.st144{fill:#BC4890;}
+	.st145{fill:#BB4791;}
+	.st146{fill:#BB4692;}
+	.st147{fill:#BA4693;}
+	.st148{fill:#BA4594;}
+	.st149{fill:#B94495;}
+	.st150{fill:#B94396;}
+	.st151{fill:#B84297;}
+	.st152{fill:#B84298;}
+	.st153{fill:#B84199;}
+	.st154{fill:#B7409A;}
+	.st155{fill:#B73F9B;}
+	.st156{fill:#B63E9C;}
+	.st157{fill:#B63E9D;}
+	.st158{fill:#B53D9E;}
+	.st159{fill:#B53C9F;}
+	.st160{fill:#B43BA0;}
+	.st161{fill:#B43BA1;}
+	.st162{fill:#B33AA2;}
+	.st163{fill:#B339A3;}
+	.st164{fill:#B238A4;}
+	.st165{fill:#B237A5;}
+	.st166{fill:#B137A6;}
+	.st167{fill:#B136A7;}
+	.st168{fill:#B035A8;}
+	.st169{fill:#B034A9;}
+	.st170{fill:#B033AA;}
+	.st171{fill:#AF33AB;}
+	.st172{fill:#AF32AC;}
+	.st173{fill:#AE31AD;}
+	.st174{fill:#AE30AE;}
+	.st175{fill:#AD2FAF;}
+	.st176{fill:#AD2FB0;}
+	.st177{fill:#AC2EB1;}
+	.st178{fill:#AC2DB2;}
+	.st179{fill:#AB2CB3;}
+	.st180{fill:#AB2BB4;}
+	.st181{fill:#AA2BB5;}
+	.st182{fill:#AA2AB6;}
+	.st183{fill:#A929B7;}
+	.st184{fill:#A928B8;}
+	.st185{fill:#A928B9;}
+	.st186{fill:#A827BA;}
+	.st187{fill:#A826BB;}
+	.st188{fill:#A725BC;}
+	.st189{fill:#A724BD;}
+	.st190{fill:#A624BE;}
+	.st191{fill:#A623BF;}
+	.st192{fill:#A522C0;}
+	.st193{fill:#A521C1;}
+	.st194{fill:#A420C2;}
+	.st195{fill:#A420C3;}
+	.st196{fill:#A31FC4;}
+	.st197{fill:#A31EC5;}
+	.st198{fill:#A21DC6;}
+	.st199{fill:#A21CC7;}
+	.st200{fill:#A11CC8;}
+	.st201{fill:#A11BC9;}
+	.st202{fill:#A11ACA;}
+	.st203{fill:#A019CB;}
+	.st204{fill:#A019CC;}
+	.st205{fill:#9F18CD;}
+	.st206{fill:#9F17CE;}
+	.st207{fill:#9E16CF;}
+	.st208{fill:#9E15D0;}
+	.st209{fill:#9D15D1;}
+	.st210{fill:#9D14D2;}
+	.st211{fill:#9C13D3;}
+	.st212{fill:#9C12D4;}
+	.st213{fill:#9B11D5;}
+	.st214{fill:#9B11D6;}
+	.st215{fill:#9A10D7;}
+	.st216{fill:#9A0FD8;}
+	.st217{fill:#990ED9;}
+	.st218{fill:#990DDA;}
+	.st219{fill:#990DDB;}
+	.st220{fill:#980CDC;}
+	.st221{fill:#980BDD;}
+	.st222{fill:#970ADE;}
+	.st223{fill:#9709DF;}
+	.st224{fill:#9609E0;}
+	.st225{fill:#9608E1;}
+	.st226{fill:#9507E2;}
+	.st227{fill:#9506E3;}
+	.st228{fill:#9406E4;}
+	.st229{fill:#9405E5;}
+	.st230{fill:#9304E6;}
+	.st231{fill:#9303E7;}
+	.st232{fill:#9202E8;}
+	.st233{fill:#9202E9;}
+	.st234{fill:#9101EA;}
+	.st235{fill:#9100EB;}
+	.st236{fill:#FFFFFF;}
+</style>
+<title>instagram</title>
+<g>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M40,35c0,2.8-2.2,5-5,5H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h30c2.8,0,5,2.2,5,5V35z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st0">
+			<polygon class="st1" points="0,37.6 3.4,40 0,40 			"/>
+			<polygon class="st1" points="0,37.3 3.8,40 3.4,40 0,37.6 			"/>
+			<polygon class="st2" points="0,37.1 4.2,40 3.8,40 0,37.3 			"/>
+			<polygon class="st3" points="0,36.8 4.6,40 4.2,40 0,37.1 			"/>
+			<polygon class="st4" points="0,36.5 5,40 4.6,40 0,36.8 			"/>
+			<polygon class="st5" points="0,36.3 5.3,40 5,40 0,36.5 			"/>
+			<polygon class="st6" points="0,36 5.7,40 5.3,40 0,36.3 			"/>
+			<polygon class="st7" points="0,35.7 6.1,40 5.7,40 0,36 			"/>
+			<polygon class="st8" points="0,35.5 6.5,40 6.1,40 0,35.7 			"/>
+			<polygon class="st9" points="0,35.2 6.9,40 6.5,40 0,35.5 			"/>
+			<polygon class="st10" points="0,34.9 7.3,40 6.9,40 0,35.2 			"/>
+			<polygon class="st11" points="0,34.6 7.7,40 7.3,40 0,34.9 			"/>
+			<polygon class="st12" points="0,34.4 8,40 7.7,40 0,34.6 			"/>
+			<polygon class="st13" points="0,34.1 8.4,40 8,40 0,34.4 			"/>
+			<polygon class="st14" points="0,33.8 8.8,40 8.4,40 0,34.1 			"/>
+			<polygon class="st15" points="0,33.6 9.2,40 8.8,40 0,33.8 			"/>
+			<polygon class="st16" points="0,33.3 9.6,40 9.2,40 0,33.6 			"/>
+			<polygon class="st17" points="0,33 10,40 9.6,40 0,33.3 			"/>
+			<polygon class="st18" points="0,32.8 10.4,40 10,40 0,33 			"/>
+			<polygon class="st19" points="0,32.5 10.7,40 10.4,40 0,32.8 			"/>
+			<polygon class="st20" points="0,32.2 11.1,40 10.7,40 0,32.5 			"/>
+			<polygon class="st21" points="0,32 11.5,40 11.1,40 0,32.2 			"/>
+			<polygon class="st22" points="0,31.7 11.9,40 11.5,40 0,32 			"/>
+			<polygon class="st23" points="0,31.4 12.3,40 11.9,40 0,31.7 			"/>
+			<polygon class="st24" points="0,31.1 12.6,40 12.3,40 0,31.4 			"/>
+			<polygon class="st25" points="0,30.9 13,40 12.6,40 0,31.1 			"/>
+			<polygon class="st26" points="0,30.6 13.4,40 13,40 0,30.9 			"/>
+			<polygon class="st27" points="0,30.3 13.8,40 13.4,40 0,30.6 			"/>
+			<polygon class="st28" points="0,30.1 14.2,40 13.8,40 0,30.3 			"/>
+			<polygon class="st29" points="0,29.8 14.6,40 14.2,40 0,30.1 			"/>
+			<polygon class="st30" points="0,29.5 15,40 14.6,40 0,29.8 			"/>
+			<polygon class="st31" points="0,29.3 15.3,40 15,40 0,29.5 			"/>
+			<polygon class="st32" points="0,29 15.7,40 15.3,40 0,29.3 			"/>
+			<polygon class="st33" points="0,28.7 16.1,40 15.7,40 0,29 			"/>
+			<polygon class="st34" points="0,28.5 16.5,40 16.1,40 0,28.7 			"/>
+			<polygon class="st35" points="0,28.2 16.9,40 16.5,40 0,28.5 			"/>
+			<polygon class="st36" points="0,27.9 17.3,40 16.9,40 0,28.2 			"/>
+			<polygon class="st37" points="0,27.6 17.6,40 17.3,40 0,27.9 			"/>
+			<polygon class="st38" points="0,27.4 18,40 17.6,40 0,27.6 			"/>
+			<polygon class="st39" points="0,27.1 18.4,40 18,40 0,27.4 			"/>
+			<polygon class="st40" points="0,26.8 18.8,40 18.4,40 0,27.1 			"/>
+			<polygon class="st41" points="0,26.6 19.2,40 18.8,40 0,26.8 			"/>
+			<polygon class="st42" points="0,26.3 19.6,40 19.2,40 0,26.6 			"/>
+			<polygon class="st43" points="0,26 20,40 19.6,40 0,26.3 			"/>
+			<polygon class="st44" points="0,25.8 20.3,40 20,40 0,26 			"/>
+			<polygon class="st45" points="0,25.5 20.7,40 20.3,40 0,25.8 			"/>
+			<polygon class="st46" points="0,25.2 21.1,40 20.7,40 0,25.5 			"/>
+			<polygon class="st47" points="0,25 21.5,40 21.1,40 0,25.2 			"/>
+			<polygon class="st48" points="0,24.7 21.9,40 21.5,40 0,25 			"/>
+			<polygon class="st49" points="0,24.4 22.3,40 21.9,40 0,24.7 			"/>
+			<polygon class="st50" points="0,24.1 22.6,40 22.3,40 0,24.4 			"/>
+			<polygon class="st51" points="0,23.9 23,40 22.6,40 0,24.1 			"/>
+			<polygon class="st52" points="0,23.6 23.4,40 23,40 0,23.9 			"/>
+			<polygon class="st53" points="0,23.3 23.8,40 23.4,40 0,23.6 			"/>
+			<polygon class="st54" points="0,23.1 24.2,40 23.8,40 0,23.3 			"/>
+			<polygon class="st55" points="0,22.8 24.6,40 24.2,40 0,23.1 			"/>
+			<polygon class="st56" points="0,22.5 24.9,40 24.6,40 0,22.8 			"/>
+			<polygon class="st57" points="0,22.3 25.3,40 24.9,40 0,22.5 			"/>
+			<polygon class="st58" points="0,22 25.7,40 25.3,40 0,22.3 			"/>
+			<polygon class="st59" points="0,21.7 26.1,40 25.7,40 0,22 			"/>
+			<polygon class="st60" points="0,21.5 26.5,40 26.1,40 0,21.7 			"/>
+			<polygon class="st61" points="0,21.2 26.9,40 26.5,40 0,21.5 			"/>
+			<polygon class="st62" points="0,20.9 27.3,40 26.9,40 0,21.2 			"/>
+			<polygon class="st63" points="0,20.6 27.6,40 27.3,40 0,20.9 			"/>
+			<polygon class="st64" points="0,20.4 28,40 27.6,40 0,20.6 			"/>
+			<polygon class="st65" points="0,20.1 28.4,40 28,40 0,20.4 			"/>
+			<polygon class="st66" points="0,19.9 28.8,40 28.4,40 0,20.1 			"/>
+			<polygon class="st67" points="0,19.6 29.2,40 28.8,40 0,19.9 			"/>
+			<polygon class="st68" points="0,19.3 29.5,40 29.2,40 0,19.6 			"/>
+			<polygon class="st69" points="0,19 29.9,40 29.5,40 0,19.3 			"/>
+			<polygon class="st70" points="0,18.8 30.3,40 29.9,40 0,19 			"/>
+			<polygon class="st71" points="0,18.5 30.7,40 30.3,40 0,18.8 			"/>
+			<polygon class="st72" points="0,18.2 31.1,40 30.7,40 0,18.5 			"/>
+			<polygon class="st73" points="0,18 31.5,40 31.1,40 0,18.2 			"/>
+			<polygon class="st74" points="0,17.7 31.9,40 31.5,40 0,18 			"/>
+			<polygon class="st75" points="0,17.4 32.2,40 31.9,40 0,17.7 			"/>
+			<polygon class="st76" points="0,17.2 32.6,40 32.2,40 0,17.4 			"/>
+			<polygon class="st77" points="0,16.9 33,40 32.6,40 0,17.2 			"/>
+			<polygon class="st78" points="0,16.6 33.4,40 33,40 0,16.9 			"/>
+			<polygon class="st79" points="0,16.4 33.8,40 33.4,40 0,16.6 			"/>
+			<polygon class="st80" points="0,16.1 34.2,40 33.8,40 0,16.4 			"/>
+			<polygon class="st81" points="0,15.8 34.5,40 34.2,40 0,16.1 			"/>
+			<polygon class="st82" points="0,15.5 34.9,40 34.5,40 0,15.8 			"/>
+			<polygon class="st83" points="0,15.3 35.3,40 34.9,40 0,15.5 			"/>
+			<polygon class="st84" points="0,15 35.7,40 35.3,40 0,15.3 			"/>
+			<polygon class="st85" points="0,14.7 36.1,40 35.7,40 0,15 			"/>
+			<polygon class="st86" points="0,14.5 36.5,40 36.1,40 0,14.7 			"/>
+			<polygon class="st87" points="0,14.2 36.8,40 36.5,40 0,14.5 			"/>
+			<polygon class="st88" points="0,13.9 37.2,40 36.8,40 0,14.2 			"/>
+			<polygon class="st89" points="0,13.7 37.6,40 37.2,40 0,13.9 			"/>
+			<polygon class="st90" points="0,13.4 38,40 37.6,40 0,13.7 			"/>
+			<polygon class="st91" points="0,13.1 38.4,40 38,40 0,13.4 			"/>
+			<polygon class="st92" points="0,12.9 38.8,40 38.4,40 0,13.1 			"/>
+			<polygon class="st93" points="0,12.6 39.2,40 38.8,40 0,12.9 			"/>
+			<polygon class="st94" points="0,12.3 39.5,40 39.2,40 0,12.6 			"/>
+			<polygon class="st95" points="0,12.1 39.9,40 39.5,40 0,12.3 			"/>
+			<polygon class="st96" points="0,11.8 40,39.8 40,40 39.9,40 0,12.1 			"/>
+			<polygon class="st97" points="0,11.5 40,39.5 40,39.8 0,11.8 			"/>
+			<polygon class="st98" points="0,11.2 40,39.3 40,39.5 0,11.5 			"/>
+			<polygon class="st99" points="0,11 40,39 40,39.3 0,11.2 			"/>
+			<polygon class="st100" points="0,10.7 40,38.7 40,39 0,11 			"/>
+			<polygon class="st101" points="0,10.4 40,38.4 40,38.7 0,10.7 			"/>
+			<polygon class="st102" points="0,10.2 40,38.2 40,38.4 0,10.4 			"/>
+			<polygon class="st103" points="0,9.9 40,37.9 40,38.2 0,10.2 			"/>
+			<polygon class="st104" points="0,9.6 40,37.6 40,37.9 0,9.9 			"/>
+			<polygon class="st105" points="0,9.4 40,37.4 40,37.6 0,9.6 			"/>
+			<polygon class="st106" points="0,9.1 40,37.1 40,37.4 0,9.4 			"/>
+			<polygon class="st107" points="0,8.8 40,36.8 40,37.1 0,9.1 			"/>
+			<polygon class="st108" points="0,8.6 40,36.6 40,36.8 0,8.8 			"/>
+			<polygon class="st109" points="0,8.3 40,36.3 40,36.6 0,8.6 			"/>
+			<polygon class="st110" points="0,8 40,36 40,36.3 0,8.3 			"/>
+			<polygon class="st111" points="0,7.7 40,35.8 40,36 0,8 			"/>
+			<polygon class="st112" points="0,7.5 40,35.5 40,35.8 0,7.7 			"/>
+			<polygon class="st113" points="0,7.2 40,35.2 40,35.5 0,7.5 			"/>
+			<polygon class="st114" points="0,6.9 40,35 40,35.2 0,7.2 			"/>
+			<polygon class="st115" points="0,6.7 40,34.7 40,35 0,6.9 			"/>
+			<polygon class="st116" points="0,6.4 40,34.4 40,34.7 0,6.7 			"/>
+			<polygon class="st117" points="0,6.1 40,34.1 40,34.4 0,6.4 			"/>
+			<polygon class="st118" points="0,5.9 40,33.9 40,34.1 0,6.1 			"/>
+			<polygon class="st119" points="0,5.6 40,33.6 40,33.9 0,5.9 			"/>
+			<polygon class="st120" points="0,5.3 40,33.3 40,33.6 0,5.6 			"/>
+			<polygon class="st121" points="0,5.1 40,33.1 40,33.3 0,5.3 			"/>
+			<polygon class="st122" points="0,4.8 40,32.8 40,33.1 0,5.1 			"/>
+			<polygon class="st123" points="0,4.5 40,32.5 40,32.8 0,4.8 			"/>
+			<polygon class="st124" points="0,4.3 40,32.3 40,32.5 0,4.5 			"/>
+			<polygon class="st125" points="0,4 40,32 40,32.3 0,4.3 			"/>
+			<polygon class="st126" points="0,3.7 40,31.7 40,32 0,4 			"/>
+			<polygon class="st127" points="0,3.4 40,31.5 40,31.7 0,3.7 			"/>
+			<polygon class="st128" points="0,3.2 40,31.2 40,31.5 0,3.4 			"/>
+			<polygon class="st129" points="0,2.9 40,30.9 40,31.2 0,3.2 			"/>
+			<polygon class="st130" points="0,2.6 40,30.6 40,30.9 0,2.9 			"/>
+			<polygon class="st131" points="0,2.4 40,30.4 40,30.6 0,2.6 			"/>
+			<polygon class="st132" points="0,2.1 40,30.1 40,30.4 0,2.4 			"/>
+			<polygon class="st133" points="0,1.8 40,29.8 40,30.1 0,2.1 			"/>
+			<polygon class="st134" points="0,1.6 40,29.6 40,29.8 0,1.8 			"/>
+			<polygon class="st135" points="0,1.3 40,29.3 40,29.6 0,1.6 			"/>
+			<polygon class="st136" points="0,1 40,29 40,29.3 0,1.3 			"/>
+			<polygon class="st137" points="0,0.8 40,28.8 40,29 0,1 			"/>
+			<polygon class="st138" points="0,0.5 40,28.5 40,28.8 0,0.8 			"/>
+			<polygon class="st139" points="0,0.2 40,28.2 40,28.5 0,0.5 			"/>
+			<polygon class="st140" points="0.1,0 40,28 40,28.2 0,0.2 0,0 			"/>
+			<polygon class="st141" points="0.5,0 40,27.7 40,28 0.1,0 			"/>
+			<polygon class="st142" points="0.9,0 40,27.4 40,27.7 0.5,0 			"/>
+			<polygon class="st143" points="1.2,0 40,27.1 40,27.4 0.9,0 			"/>
+			<polygon class="st144" points="1.6,0 40,26.9 40,27.1 1.2,0 			"/>
+			<polygon class="st145" points="2,0 40,26.6 40,26.9 1.6,0 			"/>
+			<polygon class="st146" points="2.4,0 40,26.3 40,26.6 2,0 			"/>
+			<polygon class="st147" points="2.8,0 40,26.1 40,26.3 2.4,0 			"/>
+			<polygon class="st148" points="3.2,0 40,25.8 40,26.1 2.8,0 			"/>
+			<polygon class="st149" points="3.5,0 40,25.5 40,25.8 3.2,0 			"/>
+			<polygon class="st150" points="3.9,0 40,25.3 40,25.5 3.5,0 			"/>
+			<polygon class="st151" points="4.3,0 40,25 40,25.3 3.9,0 			"/>
+			<polygon class="st152" points="4.7,0 40,24.7 40,25 4.3,0 			"/>
+			<polygon class="st153" points="5.1,0 40,24.5 40,24.7 4.7,0 			"/>
+			<polygon class="st154" points="5.5,0 40,24.2 40,24.5 5.1,0 			"/>
+			<polygon class="st155" points="5.8,0 40,23.9 40,24.2 5.5,0 			"/>
+			<polygon class="st156" points="6.2,0 40,23.6 40,23.9 5.8,0 			"/>
+			<polygon class="st157" points="6.6,0 40,23.4 40,23.6 6.2,0 			"/>
+			<polygon class="st158" points="7,0 40,23.1 40,23.4 6.6,0 			"/>
+			<polygon class="st159" points="7.4,0 40,22.8 40,23.1 7,0 			"/>
+			<polygon class="st160" points="7.8,0 40,22.6 40,22.8 7.4,0 			"/>
+			<polygon class="st161" points="8.1,0 40,22.3 40,22.6 7.8,0 			"/>
+			<polygon class="st162" points="8.5,0 40,22 40,22.3 8.1,0 			"/>
+			<polygon class="st163" points="8.9,0 40,21.8 40,22 8.5,0 			"/>
+			<polygon class="st164" points="9.3,0 40,21.5 40,21.8 8.9,0 			"/>
+			<polygon class="st165" points="9.7,0 40,21.2 40,21.5 9.3,0 			"/>
+			<polygon class="st166" points="10.1,0 40,21 40,21.2 9.7,0 			"/>
+			<polygon class="st167" points="10.4,0 40,20.7 40,21 10.1,0 			"/>
+			<polygon class="st168" points="10.8,0 40,20.4 40,20.7 10.4,0 			"/>
+			<polygon class="st169" points="11.2,0 40,20.1 40,20.4 10.8,0 			"/>
+			<polygon class="st170" points="11.6,0 40,19.9 40,20.1 11.2,0 			"/>
+			<polygon class="st171" points="12,0 40,19.6 40,19.9 11.6,0 			"/>
+			<polygon class="st172" points="12.4,0 40,19.4 40,19.6 12,0 			"/>
+			<polygon class="st173" points="12.8,0 40,19.1 40,19.4 12.4,0 			"/>
+			<polygon class="st174" points="13.1,0 40,18.8 40,19.1 12.8,0 			"/>
+			<polygon class="st175" points="13.5,0 40,18.5 40,18.8 13.1,0 			"/>
+			<polygon class="st176" points="13.9,0 40,18.3 40,18.5 13.5,0 			"/>
+			<polygon class="st177" points="14.3,0 40,18 40,18.3 13.9,0 			"/>
+			<polygon class="st178" points="14.7,0 40,17.7 40,18 14.3,0 			"/>
+			<polygon class="st179" points="15.1,0 40,17.5 40,17.7 14.7,0 			"/>
+			<polygon class="st180" points="15.4,0 40,17.2 40,17.5 15.1,0 			"/>
+			<polygon class="st181" points="15.8,0 40,16.9 40,17.2 15.4,0 			"/>
+			<polygon class="st182" points="16.2,0 40,16.7 40,16.9 15.8,0 			"/>
+			<polygon class="st183" points="16.6,0 40,16.4 40,16.7 16.2,0 			"/>
+			<polygon class="st184" points="17,0 40,16.1 40,16.4 16.6,0 			"/>
+			<polygon class="st185" points="17.4,0 40,15.9 40,16.1 17,0 			"/>
+			<polygon class="st186" points="17.8,0 40,15.6 40,15.9 17.4,0 			"/>
+			<polygon class="st187" points="18.1,0 40,15.3 40,15.6 17.8,0 			"/>
+			<polygon class="st188" points="18.5,0 40,15 40,15.3 18.1,0 			"/>
+			<polygon class="st189" points="18.9,0 40,14.8 40,15 18.5,0 			"/>
+			<polygon class="st190" points="19.3,0 40,14.5 40,14.8 18.9,0 			"/>
+			<polygon class="st191" points="19.7,0 40,14.2 40,14.5 19.3,0 			"/>
+			<polygon class="st192" points="20,0 40,14 40,14.2 19.7,0 			"/>
+			<polygon class="st193" points="20.4,0 40,13.7 40,14 20,0 			"/>
+			<polygon class="st194" points="20.8,0 40,13.4 40,13.7 20.4,0 			"/>
+			<polygon class="st195" points="21.2,0 40,13.2 40,13.4 20.8,0 			"/>
+			<polygon class="st196" points="21.6,0 40,12.9 40,13.2 21.2,0 			"/>
+			<polygon class="st197" points="22,0 40,12.6 40,12.9 21.6,0 			"/>
+			<polygon class="st198" points="22.4,0 40,12.4 40,12.6 22,0 			"/>
+			<polygon class="st199" points="22.7,0 40,12.1 40,12.4 22.4,0 			"/>
+			<polygon class="st200" points="23.1,0 40,11.8 40,12.1 22.7,0 			"/>
+			<polygon class="st201" points="23.5,0 40,11.6 40,11.8 23.1,0 			"/>
+			<polygon class="st202" points="23.9,0 40,11.3 40,11.6 23.5,0 			"/>
+			<polygon class="st203" points="24.3,0 40,11 40,11.3 23.9,0 			"/>
+			<polygon class="st204" points="24.7,0 40,10.7 40,11 24.3,0 			"/>
+			<polygon class="st205" points="25,0 40,10.5 40,10.7 24.7,0 			"/>
+			<polygon class="st206" points="25.4,0 40,10.2 40,10.5 25,0 			"/>
+			<polygon class="st207" points="25.8,0 40,9.9 40,10.2 25.4,0 			"/>
+			<polygon class="st208" points="26.2,0 40,9.7 40,9.9 25.8,0 			"/>
+			<polygon class="st209" points="26.6,0 40,9.4 40,9.7 26.2,0 			"/>
+			<polygon class="st210" points="27,0 40,9.1 40,9.4 26.6,0 			"/>
+			<polygon class="st211" points="27.4,0 40,8.9 40,9.1 27,0 			"/>
+			<polygon class="st212" points="27.7,0 40,8.6 40,8.9 27.4,0 			"/>
+			<polygon class="st213" points="28.1,0 40,8.3 40,8.6 27.7,0 			"/>
+			<polygon class="st214" points="28.5,0 40,8.1 40,8.3 28.1,0 			"/>
+			<polygon class="st215" points="28.9,0 40,7.8 40,8.1 28.5,0 			"/>
+			<polygon class="st216" points="29.3,0 40,7.5 40,7.8 28.9,0 			"/>
+			<polygon class="st217" points="29.6,0 40,7.3 40,7.5 29.3,0 			"/>
+			<polygon class="st218" points="30,0 40,7 40,7.3 29.6,0 			"/>
+			<polygon class="st219" points="30.4,0 40,6.7 40,7 30,0 			"/>
+			<polygon class="st220" points="30.8,0 40,6.4 40,6.7 30.4,0 			"/>
+			<polygon class="st221" points="31.2,0 40,6.2 40,6.4 30.8,0 			"/>
+			<polygon class="st222" points="31.6,0 40,5.9 40,6.2 31.2,0 			"/>
+			<polygon class="st223" points="32,0 40,5.6 40,5.9 31.6,0 			"/>
+			<polygon class="st224" points="32.3,0 40,5.4 40,5.6 32,0 			"/>
+			<polygon class="st225" points="32.7,0 40,5.1 40,5.4 32.3,0 			"/>
+			<polygon class="st226" points="33.1,0 40,4.8 40,5.1 32.7,0 			"/>
+			<polygon class="st227" points="33.5,0 40,4.6 40,4.8 33.1,0 			"/>
+			<polygon class="st228" points="33.9,0 40,4.3 40,4.6 33.5,0 			"/>
+			<polygon class="st229" points="34.3,0 40,4 40,4.3 33.9,0 			"/>
+			<polygon class="st230" points="34.7,0 40,3.8 40,4 34.3,0 			"/>
+			<polygon class="st231" points="35,0 40,3.5 40,3.8 34.7,0 			"/>
+			<polygon class="st232" points="35.4,0 40,3.2 40,3.5 35,0 			"/>
+			<polygon class="st233" points="35.8,0 40,2.9 40,3.2 35.4,0 			"/>
+			<polygon class="st234" points="36.2,0 40,2.7 40,2.9 35.8,0 			"/>
+			<polygon class="st235" points="36.6,0 40,2.4 40,2.7 36.2,0 			"/>
+			<polygon class="st235" points="40,2.4 36.6,0 40,0 			"/>
+		</g>
+	</g>
+	<path class="st236" d="M26.5,34.8H12.9c-4.4,0-8-3.6-8-8V13.2c0-4.4,3.6-8,8-8h13.5c4.4,0,8,3.6,8,8l0,0v13.5
+		C34.5,31.2,30.9,34.8,26.5,34.8z M12.9,7.7c-3.1,0-5.5,2.5-5.5,5.5v13.5c0,3.1,2.5,5.5,5.5,5.5h0h13.5c3.1,0,5.5-2.5,5.5-5.5v0
+		V13.2c0-3.1-2.5-5.5-5.5-5.5c0,0,0,0,0,0L12.9,7.7z"/>
+	<path class="st236" d="M19.7,27.4c-4.1,0-7.4-3.3-7.4-7.4s3.3-7.4,7.4-7.4c4.1,0,7.4,3.3,7.4,7.4C27.1,24.1,23.8,27.4,19.7,27.4
+		C19.7,27.4,19.7,27.4,19.7,27.4z M19.7,15.1c-2.7,0-4.9,2.2-4.9,4.9c0,2.7,2.2,4.9,4.9,4.9c2.7,0,4.9-2.2,4.9-4.9
+		C24.6,17.3,22.4,15.1,19.7,15.1C19.7,15.1,19.7,15.1,19.7,15.1L19.7,15.1z"/>
+	<circle class="st236" cx="27.5" cy="12.1" r="1.7"/>
+</g>
+</svg>
