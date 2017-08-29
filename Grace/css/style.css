@@ -783,7 +783,11 @@ b {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.3rem;
-    padding-bottom: 2rem;
+}
+.service-type-about {
+    clear: both;
+    height: auto;
+    margin-bottom: 3.5rem;
 }
 .short {
     height: 2.5rem;
