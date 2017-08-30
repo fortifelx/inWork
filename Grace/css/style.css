@@ -190,7 +190,7 @@ header {
     top: 0;
     width: 48rem;
     height: 36rem;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.3);
     z-index: 2;
 }
 .about-slider:after {
@@ -233,6 +233,9 @@ header {
 }
 .about-counter-text {
     margin: 0 1rem;
+    width: 4.7rem;
+    text-align: center;
+    overflow: hidden;
 }
 .about-l-arrow, .about-r-arrow {
     color: rgb(76, 203, 202);
@@ -323,6 +326,9 @@ header {
 }
 .our-team-counter-text {
     margin: 0 1rem;
+    width: 4.7rem;
+    text-align: center;
+    overflow: hidden;
 }
 .our-team-l-arrow, .our-team-r-arrow {
     color: rgb(76, 203, 202);
@@ -509,6 +515,13 @@ b {
     height: 53rem;
     z-index: 3;
 }
+.our-team-slider-img-wrapper {
+    width: 32rem;
+    height: 53rem;
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+}
 
 .our-team-slider-img:after {
     position: absolute;
@@ -527,6 +540,7 @@ b {
     background-color: rgb(247, 247, 247);
     background-image: linear-gradient(45deg, rgba(103, 255, 254, 0.15) 0%, rgba(255, 204, 228, 0.15) 100%);
     z-index: 4;
+    overflow: hidden;
 }
 .teamate-photo {
     position: relative;
@@ -906,6 +920,9 @@ b {
 }
 .results-counter-text {
     margin: 0 1rem;
+        width: 4.7rem;
+    text-align: center;
+    overflow: hidden;
 }
 .results-l-arrow, .results-r-arrow {
     color: rgb(76, 203, 202);
@@ -1012,6 +1029,9 @@ b {
 }
 .clients-counter-text {
     margin: 0 1rem;
+        width: 4.7rem;
+    text-align: center;
+    overflow: hidden;
 }
 .clients-l-arrow, .clients-r-arrow {
     color: rgb(76, 203, 202);
