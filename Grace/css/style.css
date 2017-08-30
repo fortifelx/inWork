@@ -180,6 +180,7 @@ header {
 }
 .about-slider-wrapper {
     width: 1000rem;
+    height: 36rem;
 }
 .about-slider:before {
     display: block;
@@ -203,7 +204,7 @@ header {
     box-shadow: 0 1.3rem 4.5rem rgba(54, 57, 63, 0.45);
 }
 .about-slider-wrapper img {
-    position: relative;
+    position: absolute;
     width: 48rem;
     height: 36rem;
     display: inline-block;
