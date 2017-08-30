@@ -841,18 +841,22 @@ b {
 }
 .result-slider {
     width: 100%;
-    height: 36rem;
+    height: 38rem;
+    overflow: hidden;
 }
 .result-slider-wrapper {
     width: 1000rem;
     height: 100%;
     font-size: 0;
+    position: relative;
 }
 .result-slide {
     display: inline-block;
     width: 94rem;
     height: 100%;
     padding-bottom: 4rem;
+    position: absolute;
+    z-index: 1;
 }
 .result-slide-img-one,
 .result-slide-img-two {
@@ -909,6 +913,8 @@ b {
     background-color: rgb(247, 247, 247);
 }
 .results-slider-counter {
+    position: relative;
+    top: -2rem;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -942,6 +948,8 @@ b {
 .clients-slider {
     position: relative;
     top: -3rem;
+    height: 26rem;
+    overflow: hidden
 }
 .clients-header {
     width: 100%;
@@ -953,6 +961,19 @@ b {
     line-height: 5rem;
     text-transform: uppercase;
     margin-top: 6rem;
+}
+.clients-slider-wrapper {
+    position: relative;
+    height: 26rem;
+    font-size: 0;
+}
+.client-slide {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    height: 26rem;
+    display: inline-block;
+    width: 94rem;
 }
 .client-slide-img {
     display: inline-block;
@@ -995,7 +1016,14 @@ b {
     box-shadow: 0 1.3rem 4.5rem rgba(54, 57, 63, 0.45);
     transition: box-shadow 0.7s, background-color 0.7s;
 }
+.client-slide-img:hover:after {
+    box-shadow: 0 2.6rem 5.5rem rgba(54, 57, 63, 0.30);
+}
+.client-slide-img:active:after {
+    box-shadow: 0 0.6rem 3.5rem rgba(54, 57, 63, 0.5);
+}
 .client-slide-text {
+    float: right;
     display: inline-block;
     width: 63.5rem;
     color: rgb(97, 105, 118);
@@ -1016,6 +1044,8 @@ b {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.5rem;
+    overflow: hidden;
+    white-space: nowrap; 
 }
 .clients-slider-counter {
     display: inline-block;
