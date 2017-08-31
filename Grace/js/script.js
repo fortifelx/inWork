@@ -1,3 +1,48 @@
+$(document).ready(function () {
+$(".top-menu-container").on("click", "a", function (event) { 
+event.preventDefault();
+var id = $(this).attr('href')
+, top = $(id).offset().top;
+$('body,html').animate({
+scrollTop: top
+}, 1000);
+});
+});
+(function(){
+	           	var $menuList = $(".top-menu-container li a");
+            	var punctPosition = [];
+            	var id = $menuList.attr('href');
+            	var i = 0;
+            	$menuList.each(function(){
+            		var  punct = $(this).attr('href');
+            		punctPosition[i] = $(punct).offset().top;
+            		console.log(punctPosition[i]);
+            		i++;
+
+            	});
+	        window.onscroll = function() {
+                var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+                if (punctPosition[0] > scrolled && scrolled < punctPosition[1]) {
+                	console.log("about");
+                };
+                if (punctPosition[1] > scrolled && scrolled > punctPosition[0]) {
+                	console.log("ourTeam");
+                }
+                if (punctPosition[2] > scrolled && scrolled > punctPosition[1]) {
+                	console.log("Service");
+                }
+                if (punctPosition[3] > scrolled && scrolled > punctPosition[2]) {
+                	console.log("Clients");
+                }
+                if (punctPosition[4] > scrolled) {
+                	console.log("Contacts");
+                }
+            // function getCoords(elem) {
+            //     var box = elem.getBoundingClientRect();
+            //     return box.top + pageYOffset;
+            // }
+        };
+})();
 (function(){
     var $wrapper    = $(".about-slider-wrapper");
     if($wrapper.length === 0) return;

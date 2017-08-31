@@ -95,6 +95,11 @@ header {
     width: 0;
     transition: width 0.8s;
 }
+.top-menu-container li a:active,
+.top-menu-container li a:-webkit-any-link
+ {
+    text-decoration: none;
+}
 .top-menu-container li:hover a:after {
     width: 100%;
 }
