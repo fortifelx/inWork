@@ -578,9 +578,9 @@
 	var $someHeader = $(".service-about-header");
 	var zeroHeight = $someHeader.css('height');
 	var activeClass = "about-active";
-	// for(var i = 0; i < $someHeader.length; i+2) {
-	// 	$some
-	// }
+	for(var i = 0; i < $someHeader.length; i=i+2) {
+		$($someHeader[i]).parent().css("height" , zeroHeight);
+	}
 	$($someHeader[0]).parent().css( "height" , zeroHeight);
 
 	$someHeader.click(function(){
