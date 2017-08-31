@@ -904,9 +904,6 @@ b {
     clear: both;
     height: auto;
     margin-bottom: 3.5rem;
-}
-.short {
-    height: 2.5rem;
     overflow: hidden;
 }
 .img-decor {

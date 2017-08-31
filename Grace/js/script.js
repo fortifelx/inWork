@@ -544,30 +544,77 @@
 	var $teamateEdu = $(".teamate-edu-header");
 	var eduHeight = $teamateEdu.css('height');
 	var expHeight = $teamateExp.css('height');
+	var activeClass = "t-active";
 
 	$teamateEdu.click(function(){
+		if ($($teamateEdu[0]).hasClass(activeClass)) return;
 		var stHeight = parseInt($teamateEdu.parent().css("height"), 10);
 		var ntHeight = parseInt($teamateEdu.next().css("height"), 10);
 		var stMargin = parseInt($teamateEdu.next().css("margin-bottom"), 10);
 		var trHeight = stHeight + ntHeight + stMargin + "px";
-		$teamateEdu.addClass("t-active").parent().velocity({
+		$teamateEdu.addClass(activeClass).parent().velocity({
 			height : trHeight
 		}, 900);
-		$teamateExp.removeClass("t-active").parent().velocity({
+		$teamateExp.removeClass(activeClass).parent().velocity({
 			height : expHeight
 		}, 900);
 	});
 	$teamateExp.click(function(){
+		if ($($teamateExp[0]).hasClass(activeClass)) return;
 		var stHeight = parseInt($teamateExp.parent().css("height"), 10);
 		var ntHeight = parseInt($teamateExp.next().css("height"), 10);
 		var stMargin = parseInt($teamateExp.next().css("margin-bottom"), 10);
 		var trHeight = stHeight + ntHeight + stMargin + "px";
 		var trHeight = stHeight + ntHeight + "px";
-		$teamateExp.addClass("t-active").parent().velocity({
+		$teamateExp.addClass(activeClass).parent().velocity({
 			height : trHeight
 		}, 900);
-		$teamateEdu.removeClass("t-active").parent().velocity({
+		$teamateEdu.removeClass(activeClass).parent().velocity({
 			height : expHeight
 		}, 900);
 	});
+})();
+(function(){
+	// var $teamateExp = $(".teamate-expiriance-header");
+	var $someHeader = $(".service-about-header");
+	var zeroHeight = $someHeader.css('height');
+	// var expHeight = $teamateExp.css('height');
+	var activeClass = "about-active";
+	$($someHeader[0]).parent().css( "height" , zeroHeight);
+
+	$someHeader.click(function(){
+		var $itElement = $(this);
+		var itElement = this;
+		if ($itElement.hasClass(activeClass)) return;
+		var stHeight = parseInt($itElement.parent().css("height"), 10);
+		var ntHeight = parseInt($itElement.next().css("height"), 10);
+		var stMargin = parseInt($itElement.next().css("margin-bottom"), 10);
+		var trHeight = stHeight + ntHeight + stMargin + "px";
+		console.log(trHeight);
+		$someHeader.each(function(){
+			if (this === itElement) {
+				$(this).addClass(activeClass).parent().velocity({
+				height : trHeight
+				}, 900);
+			} if (this != itElement) {
+				$(this).removeClass(activeClass).parent().velocity({
+				height : zeroHeight
+				}, 900)
+			}
+		})
+	});
+	// $teamateExp.click(function(){
+	// 	if ($($teamateExp[0]).hasClass(activeClass)) return;
+	// 	var stHeight = parseInt($teamateExp.parent().css("height"), 10);
+	// 	var ntHeight = parseInt($teamateExp.next().css("height"), 10);
+	// 	var stMargin = parseInt($teamateExp.next().css("margin-bottom"), 10);
+	// 	var trHeight = stHeight + ntHeight + stMargin + "px";
+	// 	var trHeight = stHeight + ntHeight + "px";
+	// 	$teamateExp.addClass(activeClass).parent().velocity({
+	// 		height : trHeight
+	// 	}, 900);
+	// 	$teamateEdu.removeClass(activeClass).parent().velocity({
+	// 		height : expHeight
+	// 	}, 900);
+	// });
 })();
