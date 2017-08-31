@@ -575,10 +575,8 @@
 	});
 })();
 (function(){
-	// var $teamateExp = $(".teamate-expiriance-header");
 	var $someHeader = $(".service-about-header");
 	var zeroHeight = $someHeader.css('height');
-	// var expHeight = $teamateExp.css('height');
 	var activeClass = "about-active";
 	$($someHeader[0]).parent().css( "height" , zeroHeight);
 
@@ -603,18 +601,18 @@
 			}
 		})
 	});
-	// $teamateExp.click(function(){
-	// 	if ($($teamateExp[0]).hasClass(activeClass)) return;
-	// 	var stHeight = parseInt($teamateExp.parent().css("height"), 10);
-	// 	var ntHeight = parseInt($teamateExp.next().css("height"), 10);
-	// 	var stMargin = parseInt($teamateExp.next().css("margin-bottom"), 10);
-	// 	var trHeight = stHeight + ntHeight + stMargin + "px";
-	// 	var trHeight = stHeight + ntHeight + "px";
-	// 	$teamateExp.addClass(activeClass).parent().velocity({
-	// 		height : trHeight
-	// 	}, 900);
-	// 	$teamateEdu.removeClass(activeClass).parent().velocity({
-	// 		height : expHeight
-	// 	}, 900);
-	// });
+})();
+(function(){
+	var $trPuncts = $(".service-type-nav li");
+	var activeClass = "nav-active";
+	$trPuncts.click(function(){
+		var itElement = this;
+	$trPuncts.each(function(){
+			if (this === itElement) {
+				$(this).addClass(activeClass);
+			} if (this != itElement) {
+				$(this).removeClass(activeClass);
+			}
+		})
+	});
 })();
