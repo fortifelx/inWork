@@ -525,7 +525,7 @@ header {
 .teamate-expiriance-header {
     cursor: pointer;
     position: relative;
-    color: rgb(58, 129, 128);
+    color: rgb(76, 203, 202);
     font-family: Gothic;
     font-size: 1.5rem;
     font-weight: 700;
@@ -534,13 +534,12 @@ header {
     margin-bottom: 1.5rem;
 }
 .teamate-expiriance-header:after {
-    content: url(../img/arrow_u.png);
+    content: url(../img/arrow_d.png);
     display: inline-block;
     position: absolute;
     width: 1.5rem;
     height: 1rem;
     left: 13rem;
-    top: 0.7rem;
 }
 .teamate-expiriance-list {
     padding-left: 2rem;
@@ -582,7 +581,12 @@ header {
     width: 1.5rem;
     height: 1rem;
     left: 13rem;
-    top: 0.7rem;
+}
+.t-active {
+    color: rgb(58, 129, 128);
+}
+.t-active:after {
+    content: url(../img/arrow_u.png);
 }
 .teamate-edu-text {
     position: relative;
@@ -593,6 +597,9 @@ header {
 }
 .teamate-edu-wrapper {
     height: 2.5rem;
+    overflow: hidden;
+}
+.teamate-expiriance-wrapper {
     overflow: hidden;
 }
 b {

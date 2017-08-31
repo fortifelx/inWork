@@ -1,8 +1,4 @@
 (function(){
-
-})();
-
-(function(){
     var $wrapper    = $(".about-slider-wrapper");
     if($wrapper.length === 0) return;
     var $slides     = $(".about-slider-wrapper img");
@@ -542,4 +538,36 @@
     $lArrow.click(makeSlider);
     $rArrow.click(makeSlider);
     // setInterval(makeSlider, 10000);
+})();
+(function(){
+	var $teamateExp = $(".teamate-expiriance-header");
+	var $teamateEdu = $(".teamate-edu-header");
+	var eduHeight = $teamateEdu.css('height');
+	var expHeight = $teamateExp.css('height');
+
+	$teamateEdu.click(function(){
+		var stHeight = parseInt($teamateEdu.parent().css("height"), 10);
+		var ntHeight = parseInt($teamateEdu.next().css("height"), 10);
+		var stMargin = parseInt($teamateEdu.next().css("margin-bottom"), 10);
+		var trHeight = stHeight + ntHeight + stMargin + "px";
+		$teamateEdu.addClass("t-active").parent().velocity({
+			height : trHeight
+		}, 900);
+		$teamateExp.removeClass("t-active").parent().velocity({
+			height : expHeight
+		}, 900);
+	});
+	$teamateExp.click(function(){
+		var stHeight = parseInt($teamateExp.parent().css("height"), 10);
+		var ntHeight = parseInt($teamateExp.next().css("height"), 10);
+		var stMargin = parseInt($teamateExp.next().css("margin-bottom"), 10);
+		var trHeight = stHeight + ntHeight + stMargin + "px";
+		var trHeight = stHeight + ntHeight + "px";
+		$teamateExp.addClass("t-active").parent().velocity({
+			height : trHeight
+		}, 900);
+		$teamateEdu.removeClass("t-active").parent().velocity({
+			height : expHeight
+		}, 900);
+	});
 })();
