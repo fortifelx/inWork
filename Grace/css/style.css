@@ -800,6 +800,8 @@ b {
     margin-top: 12rem;
     width: 56rem;
     float: right;
+    display: none;
+    opacity: 0;
 }
 .service-type-header {
     width: 100%;

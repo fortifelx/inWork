@@ -578,6 +578,9 @@
 	var $someHeader = $(".service-about-header");
 	var zeroHeight = $someHeader.css('height');
 	var activeClass = "about-active";
+	// for(var i = 0; i < $someHeader.length; i+2) {
+	// 	$some
+	// }
 	$($someHeader[0]).parent().css( "height" , zeroHeight);
 
 	$someHeader.click(function(){
@@ -604,12 +607,25 @@
 })();
 (function(){
 	var $trPuncts = $(".service-type-nav li");
+	var $trTexts = $(".service-type-text");
+	$($trTexts[2]).css({
+		"display" : "block" ,
+		"opacity" : "1"
+	});
 	var activeClass = "nav-active";
 	$trPuncts.click(function(){
 		var itElement = this;
 	$trPuncts.each(function(){
 			if (this === itElement) {
 				$(this).addClass(activeClass);
+				var i = $trPuncts.index(this);
+				$trTexts.css({
+					"display" : "none",
+					"opacity" : 0
+				})
+				$($trTexts[i]).css("display", "block").velocity({
+					opacity : 1
+				}, 750);
 			} if (this != itElement) {
 				$(this).removeClass(activeClass);
 			}
