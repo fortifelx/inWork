@@ -642,7 +642,11 @@ scrollTop: top
 		})
 	});
 })();
-(function(){
+(function(){	var startFix = parseInt($(".main-img-wrapper").css("height"), 10);
+				var $btn = $(".menu-connect-btn");
+				var $menu = $(".top-menu");
+				var menuHeight = "-"+parseInt($menu.css("height"), 10)+"px";
+				var $menuLi = $(".top-menu-container li");
 	           	var $menuList = $(".top-menu-container li a");
             	var punctPosition = [];
             	var punctHeight = [];
@@ -655,22 +659,59 @@ scrollTop: top
              		i++;
 
             	});
+            	var stat = true;
+            	var pos = "top";
 	        window.onscroll = function() {
                 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+                if(scrolled < startFix) stat = true;
+                if(scrolled > startFix) stat = false;
+                if(stat === false && pos === "top") {
+                	$menu.css({
+                		"position" : "fixed",
+                		"top" : menuHeight,
+                		"opacity" : "0",
+                		"background-color" : "rgba(255, 255, 255, 0.9)",
+                		"z-index" : "20"
+                	}).insertAfter($(".consult")).velocity({
+                		opacity : 1,
+                		top : 0
+                	}, 600);
+                	$btn.css("display", "inline-block");
+                	pos = "bottom";
+                	$menuLi = $(".top-menu-container li");
+                }
+                if(stat === true && pos === "bottom") {
+                	$menu.css({
+                		"position" : "relative",
+                		"opacity" : "1",
+                		"background-color" : "rgba(255, 255, 255, 0)"
+                	}).insertBefore($(".top-info-text"));
+                	$btn.css("display", "none");
+                	pos="top";
+                	$menuLi = $(".top-menu-container li");
+                }
+                if(scrolled < punctPosition[0]) {
+                	$(".top-active").removeClass("top-active");
+                }
                 if (punctPosition[0] < scrolled && scrolled < punctPosition[1]) {
-                	console.log("about");
+                	$(".top-active").removeClass("top-active");
+                	$($menuLi[0]).addClass("top-active");
                 };
                 if (punctPosition[1] < scrolled && scrolled < punctPosition[2]) {
-                	console.log("ourTeam");
+                	$(".top-active").removeClass("top-active");
+                	$($menuLi[1]).addClass("top-active");
                 }
                 if (punctPosition[2] < scrolled && scrolled < punctPosition[3]) {
-                	console.log("Service");
+                	$(".top-active").removeClass("top-active");
+                	$($menuLi[2]).addClass("top-active");
                 }
                 if (punctPosition[3] < scrolled && scrolled < punctPosition[4] - 300) {
-                	console.log("Clients");
+                	$(".top-active").removeClass("top-active");
+                	$($menuLi[3]).addClass("top-active");
                 }
                 if (punctPosition[4] - 300 < scrolled) {
-                	console.log("Contacts");
+                	$(".top-active").removeClass("top-active");
+                	$($menuLi[4]).addClass("top-active");
                 }
             function getCoords(elem) {
                 var box = elem.getBoundingClientRect();
