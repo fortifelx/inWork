@@ -719,3 +719,6 @@ scrollTop: top
             }
         };
 })();
+(function(){
+ $('textarea').resizable();
+})();
