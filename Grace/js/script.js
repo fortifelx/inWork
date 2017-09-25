@@ -588,20 +588,21 @@ scrollTop: top
 	var $someHeader = $(".service-about-header");
 	var zeroHeight = $someHeader.css('height');
 	var activeClass = "about-active";
-	for(var i = 0; i < $someHeader.length; i=i+2) {
+	for(var i = 0; i < $someHeader.length; i++) {
 		$($someHeader[i]).parent().css("height" , zeroHeight);
 	}
-	$($someHeader[0]).parent().css( "height" , zeroHeight);
-
+//	$($someHeader[0]).parent().css( "height" , zeroHeight);
 	$someHeader.click(function(){
 		var $itElement = $(this);
 		var itElement = this;
 		if ($itElement.hasClass(activeClass)) return;
 		var stHeight = parseInt($itElement.parent().css("height"), 10);
 		var ntHeight = parseInt($itElement.next().css("height"), 10);
+        console.log(ntHeight);
 		var stMargin = parseInt($itElement.next().css("margin-bottom"), 10);
-		var trHeight = stHeight + ntHeight + stMargin + "px";
-		console.log(trHeight);
+        var ptMargin = parseInt($itElement.parent().css("margin-bottom"), 10);
+		var trHeight = stHeight + ntHeight + stMargin + ptMargin + "px";
+        console.log(trHeight);
 		$someHeader.each(function(){
 			if (this === itElement) {
 				$(this).addClass(activeClass).parent().velocity({
@@ -718,7 +719,4 @@ scrollTop: top
                 return box.top + pageYOffset;
             }
         };
-})();
-(function(){
- $('textarea').resizable();
 })();
