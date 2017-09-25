@@ -619,7 +619,12 @@ scrollTop: top
 (function(){
 	var $trPuncts = $(".service-type-nav li");
 	var $trTexts = $(".service-type-text");
+    var $trImages = $(".service-img-block");
 	$($trTexts[2]).css({
+		"display" : "block" ,
+		"opacity" : "1"
+	});
+    $($trImages[2]).css({
 		"display" : "block" ,
 		"opacity" : "1"
 	});
@@ -634,7 +639,14 @@ scrollTop: top
 					"display" : "none",
 					"opacity" : 0
 				})
-				$($trTexts[i]).css("display", "block").velocity({
+                $trImages.css({
+					"display" : "none",
+					"opacity" : 0
+				})
+ 				$($trTexts[i]).css("display", "block").velocity({
+					opacity : 1
+				}, 750);
+                $($trImages[i]).css("display", "block").velocity({
 					opacity : 1
 				}, 750);
 			} if (this != itElement) {
@@ -698,7 +710,7 @@ scrollTop: top
                 	$(".top-active").removeClass("top-active");
                 	$($menuLi[0]).addClass("top-active");
                 };
-                if (punctPosition[1] < scrolled && scrolled < punctPosition[2]) {
+                if (punctPosition[1] - 200 < scrolled && scrolled < punctPosition[2]) {
                 	$(".top-active").removeClass("top-active");
                 	$($menuLi[1]).addClass("top-active");
                 }
