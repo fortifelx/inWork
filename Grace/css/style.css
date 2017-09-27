@@ -1118,7 +1118,7 @@ b {
 .client-slide-text {
     float: right;
     display: inline-block;
-    width: 63.5rem;
+/*    width: 63.5rem;*/
     color: rgb(97, 105, 118);
     font-family: Anglecia;
     font-size: 1.5rem;
