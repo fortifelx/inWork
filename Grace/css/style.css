@@ -897,6 +897,12 @@ b {
     margin-bottom: 3.5rem;
     overflow: hidden;
 }
+.service-type-about span {
+    margin-bottom: 2rem;
+}
+.service-type-about li {
+    margin-bottom: 2rem;
+}
 .service-img-wrapper {
     float: left;
     width: 28rem;
