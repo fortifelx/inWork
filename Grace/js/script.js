@@ -497,9 +497,9 @@ scrollTop: top
 	            $cText.velocity({
 	            	opacity: "1"
 	            }, 600);
-	            $cName.velocity({
-	            	width : cNameWidth
-	            }, 1200);
+//	            $cName.velocity({
+//	            	width : cNameWidth
+//	            }, 1200);
             }, 600);
             counter = el;    
             currentElement = $slides[el];
