@@ -556,30 +556,40 @@ scrollTop: top
 	var expHeight = $teamateExp.css('height');
 	var activeClass = "t-active";
 
-	$teamateEdu.click(function(){
-		if ($($teamateEdu[0]).hasClass(activeClass)) return;
-		var stHeight = parseInt($teamateEdu.parent().css("height"), 10);
-		var ntHeight = parseInt($teamateEdu.next().css("height"), 10);
-		var stMargin = parseInt($teamateEdu.next().css("margin-bottom"), 10);
+	$teamateEdu.click(function(e){
+        var target = e.target;
+        var $target = $(target);
+		if ($target.hasClass(activeClass)) return;
+        eduHeight = $target.css('height');
+		var stHeight = parseInt($target.parent().css("height"), 10);
+		var ntHeight = parseInt($target.next().css("height"), 10);
+		var stMargin = parseInt($target.next().css("margin-bottom"), 10);
 		var trHeight = stHeight + ntHeight + stMargin + "px";
-		$teamateEdu.addClass(activeClass).parent().velocity({
+		$target.addClass(activeClass).parent().velocity({
 			height : trHeight
 		}, 900);
-		$teamateExp.removeClass(activeClass).parent().velocity({
+        var $sibling = $target.parent().prev();
+        $sibling.find(":first-child").removeClass(activeClass);
+		$sibling.velocity({
 			height : expHeight
 		}, 900);
 	});
-	$teamateExp.click(function(){
-		if ($($teamateExp[0]).hasClass(activeClass)) return;
-		var stHeight = parseInt($teamateExp.parent().css("height"), 10);
-		var ntHeight = parseInt($teamateExp.next().css("height"), 10);
-		var stMargin = parseInt($teamateExp.next().css("margin-bottom"), 10);
+	$teamateExp.click(function(e){
+        var target = e.target;
+        var $target = $(target);
+		if ($target.hasClass(activeClass)) return;
+        expHeight = $target.css('height');
+		var stHeight = parseInt($target.parent().css("height"), 10);
+		var ntHeight = parseInt($target.next().css("height"), 10);
+		var stMargin = parseInt($target.next().css("margin-bottom"), 10);
 		var trHeight = stHeight + ntHeight + stMargin + "px";
 		var trHeight = stHeight + ntHeight + "px";
-		$teamateExp.addClass(activeClass).parent().velocity({
+		$target.addClass(activeClass).parent().velocity({
 			height : trHeight
 		}, 900);
-		$teamateEdu.removeClass(activeClass).parent().velocity({
+        var $sibling = $target.parent().next();
+        $sibling.find(":first-child").removeClass(activeClass);
+		$sibling.velocity({
 			height : expHeight
 		}, 900);
 	});
