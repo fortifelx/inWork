@@ -36,6 +36,9 @@ header, footer, .wrapper {
     padding: 0 1.5rem;
     margin: 0 auto;
 }
+.wrapper, footer {
+    overflow: hidden;
+}
 .video-wrapper {
     text-align: center;
     width: 100%;
@@ -1058,6 +1061,7 @@ b {
     width: 60rem;
     right: -45rem;
     bottom: -30rem;
+    opacity: 0.35;
 }
 .clients-decor img {
     width: 100%;
