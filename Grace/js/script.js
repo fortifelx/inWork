@@ -421,16 +421,16 @@ scrollTop: top
             }, 600);
             var $cText =  $slide.find(".client-slide-text");
                  $cText.css("opacity", "0");
-            var $cName = $slide.find(".client-slide-name");
-	            var cNameWidth = $cName.css("width");
-	            $cName.css("width", "0");
+//            var $cName = $slide.find(".client-slide-name");
+//	            var cNameWidth = $cName.css("width");
+//	            $cName.css("width", "0");
             setTimeout(function(){
 	            $cText.velocity({
 	            	opacity: "1"
 	            }, 600);
-	            $cName.velocity({
-	            	width : cNameWidth
-	            }, 1200);
+//	            $cName.velocity({
+//	            	width : cNameWidth
+//	            }, 1200);
             }, 600);
             counter = slidesLength - 1;    
             currentElement = $slides[el];
@@ -457,16 +457,16 @@ scrollTop: top
             }, 600);
             var $cText =  $slide.find(".client-slide-text");
                  $cText.css("opacity", "0");
-            var $cName = $slide.find(".client-slide-name");
-	            var cNameWidth = $cName.css("width");
-	            $cName.css("width", "0");
+//            var $cName = $slide.find(".client-slide-name");
+//	            var cNameWidth = $cName.css("width");
+//	            $cName.css("width", "0");
             setTimeout(function(){
 	            $cText.velocity({
 	            	opacity: "1"
 	            }, 600);
-	            $cName.velocity({
-	            	width : cNameWidth
-	            }, 1200);
+//	            $cName.velocity({
+//	            	width : cNameWidth
+//	            }, 1200);
             }, 600);
             counter = el;    
             currentElement = $slides[el];
@@ -490,9 +490,9 @@ scrollTop: top
             }, 600);
             var $cText =  $slide.find(".client-slide-text");
                  $cText.css("opacity", "0");
-            var $cName = $slide.find(".client-slide-name");
-	            var cNameWidth = $cName.css("width");
-	            $cName.css("width", "0");
+//            var $cName = $slide.find(".client-slide-name");
+//	            var cNameWidth = $cName.css("width");
+//	            $cName.css("width", "0");
             setTimeout(function(){
 	            $cText.velocity({
 	            	opacity: "1"
@@ -522,9 +522,9 @@ scrollTop: top
             }, 600);
             var $cText =  $slide.find(".client-slide-text");
                  $cText.css("opacity", "0");
-            var $cName = $slide.find(".client-slide-name");
-	            var cNameWidth = $cName.css("width");
-	            $cName.css("width", "0");
+//            var $cName = $slide.find(".client-slide-name");
+//	            var cNameWidth = $cName.css("width");
+//	            $cName.css("width", "0");
             setTimeout(function(){
 	            $cText.velocity({
 	            	opacity: "1"
