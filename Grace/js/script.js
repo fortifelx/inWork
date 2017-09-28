@@ -742,3 +742,35 @@ scrollTop: top
             }
         };
 })();
+(function(){
+    console.log("here");
+    var $showMore = $(".teamate-text-more");
+    var zeroHeight = '9rem';
+    var activeClass = "open-text";
+    $showMore.click(function(e){
+        var $target = $(e.currentTarget);
+        if ($target.hasClass(activeClass)) {
+            var $goal = $target.prev();
+            var $text = $goal.children();
+            var newHeight = $text.css('height');
+            $target.removeClass(activeClass);
+            $target.children().text('Подробнее');
+            $goal.velocity({ 
+            height : zeroHeight 
+            }, 500);
+        } else {
+            console.log("start");
+            var $goal = $target.prev();
+            var $text = $goal.children();
+            var newHeight = $text.css('height');
+            $target.addClass(activeClass);
+            $target.children().text('Скрыть');
+            $goal.velocity({ 
+            height : newHeight 
+            }, 500);
+        };
+    });
+    
+    
+    
+})();
