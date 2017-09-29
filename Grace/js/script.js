@@ -13,8 +13,8 @@ scrollTop: top
     if($wrapper.length === 0) return;
     var $slides     = $(".about-slider-wrapper img");
     var slidesWidth = $slides.css('width');
-    var $lArrow = $(".about-l-arrow");
-    var $rArrow = $(".about-r-arrow");
+    var $lArrow     = $(".about-l-arrow");
+    var $rArrow     = $(".about-r-arrow");
     var slidesLength = $slides.length;
     var slidewidth  = (parseInt(slidesWidth, 10));
     $slides.css("left" , slidesWidth);
@@ -601,7 +601,6 @@ scrollTop: top
 	for(var i = 0; i < $someHeader.length; i++) {
 		$($someHeader[i]).parent().css("height" , zeroHeight);
 	}
-//	$($someHeader[0]).parent().css( "height" , zeroHeight);
 	$someHeader.click(function(){
 		var $itElement = $(this);
 		var itElement = this;
