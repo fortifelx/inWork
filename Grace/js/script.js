@@ -774,8 +774,21 @@ scrollTop: top
     
     var video = document.querySelector('.main-img-wrapper');
     video.addEventListener('canplay', function(e) {
-        this.volume = 0.3;
-    })
-    
+        this.volume = 0.4;
+    });
+    var status = true;
+    var $soundBtn = $('.sound-btn');
+    $soundBtn.click(function(){
+        if(status) {
+            status = false;
+            video.volume = 0;
+            $soundBtn.text("ВКЛЮЧИТЬ ЗВУК");
+        } else {
+            status = true;
+            video.volume = 0.4;
+            $soundBtn.text("ВЫКЛЮЧИТЬ ЗВУК"); 
+        }
+
+    });
     
 })();

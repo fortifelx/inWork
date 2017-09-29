@@ -1590,6 +1590,14 @@ b {
     font-size: 1.6rem;
     line-height: 2.4rem;
 }
+.sound-btn {
+    font-size: 1.6rem;
+    position: absolute;
+    cursor: pointer;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: underline;
+}
 
 
 
