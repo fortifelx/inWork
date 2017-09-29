@@ -36,8 +36,9 @@ header, footer, .wrapper {
     padding: 0 1.5rem;
     margin: 0 auto;
 }
-.wrapper, footer {
+.m-wrapper {
     overflow: hidden;
+    width: 100%;
 }
 .video-wrapper {
     text-align: center;
