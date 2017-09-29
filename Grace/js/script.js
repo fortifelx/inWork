@@ -608,11 +608,9 @@ scrollTop: top
 		if ($itElement.hasClass(activeClass)) return;
 		var stHeight = parseInt($itElement.parent().css("height"), 10);
 		var ntHeight = parseInt($itElement.next().css("height"), 10);
-        console.log(ntHeight);
 		var stMargin = parseInt($itElement.next().css("margin-bottom"), 10);
         var ptMargin = parseInt($itElement.parent().css("margin-bottom"), 10);
 		var trHeight = stHeight + ntHeight + stMargin + ptMargin + "px";
-        console.log(trHeight);
 		$someHeader.each(function(){
 			if (this === itElement) {
 				$(this).addClass(activeClass).parent().velocity({
@@ -743,7 +741,6 @@ scrollTop: top
         };
 })();
 (function(){
-    console.log("here");
     var $showMore = $(".teamate-text-more");
     var zeroHeight = '9rem';
     var activeClass = "open-text";
@@ -759,7 +756,6 @@ scrollTop: top
             height : zeroHeight 
             }, 500);
         } else {
-            console.log("start");
             var $goal = $target.prev();
             var $text = $goal.children();
             var newHeight = $text.css('height');
