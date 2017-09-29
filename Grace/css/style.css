@@ -1,16 +1,4 @@
 @font-face {
-    font-family: Anglecia;
-    src: url(../fonts/AngleciaRegular.otf);
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: Anglecia;
-    src: url(../fonts/AngleciaItalic.otf);
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
     font-family: Gothic;
     src: url(../fonts/GOTHIC.ttf);
     font-weight: 400;
@@ -21,6 +9,18 @@
     src: url(../fonts/GOTHICB.ttf);
     font-weight: 700;
     font-style: normal;
+}
+@font-face {
+    font-family: Anglecia;
+    src: url(../fonts/AngleciaRegular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Anglecia;
+    src: url(../fonts/AngleciaItalic.otf);
+    font-weight: 400;
+    font-style: italic;
 }
 html {
     font-size: 10px;                    /*********   ATTENTION     ************/
@@ -54,7 +54,7 @@ header, footer, .wrapper {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 .main-img-wrapper {
     text-align: center;
@@ -1155,6 +1155,7 @@ b {
     text-transform: uppercase;
     margin-left: 8rem;
     padding-top: 6rem;
+    letter-spacing: 0.15rem;
 }
 .client-slide-name {
     float: right;

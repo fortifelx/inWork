@@ -774,3 +774,13 @@ scrollTop: top
     
     
 })();
+
+(function(){
+    
+    var video = document.querySelector('.main-img-wrapper');
+    video.addEventListener('canplay', function(e) {
+        this.volume = 0.3;
+    })
+    
+    
+})();
