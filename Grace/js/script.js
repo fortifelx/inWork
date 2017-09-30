@@ -778,17 +778,26 @@ scrollTop: top
     });
     var status = true;
     var $soundBtn = $('.sound-btn');
+    var $muteBtn = $('.mute-btn');
     $soundBtn.click(function(){
         if(status) {
             status = false;
             video.volume = 0;
-            $soundBtn.text("ВКЛЮЧИТЬ ЗВУК");
-        } else {
+            $soundBtn.css("display", "none");
+            $muteBtn.css("display", "block");
+            video.addEventListener('playing', function(e) {
+            this.volume = 0;
+    });
+        }
+    });
+    $muteBtn.click(function(){
             status = true;
             video.volume = 0.4;
-            $soundBtn.text("ВЫКЛЮЧИТЬ ЗВУК"); 
-        }
-
+            $soundBtn.css("display", "block");
+            $muteBtn.css("display", "none");
+            video.addEventListener('paying', function(e) {
+            this.volume = 0.4;
+    });
     });
     
 })();
