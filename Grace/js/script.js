@@ -264,121 +264,207 @@ scrollTop: top
     $rArrow.click(makeSlider);
     // setInterval(makeSlider, 10000);
 })();
+//(function(){
+//    var $wrapper    = $(".result-slider-wrapper");
+//    if($wrapper.length === 0) return;
+//    var $slides     = $(".result-slide");
+//    var slidesWidth = $slides.css('width');
+//    var $lArrow = $(".results-l-arrow");
+//    var $rArrow = $(".results-r-arrow");
+//    var slidesLength = $slides.length;
+//    var slidewidth  = (parseInt(slidesWidth, 10));
+//    $slides.css("left" , slidesWidth);
+//    $($slides[0]).css("left", 0);
+//    var counter = 0;
+//    var currentElement = $slides[0];
+//    var prevElement =  $slides[0];
+//    var sliderStatus = true;
+//    var $countText = $(".results-counter-text");
+//    var counterText = counter+1+"/"+slidesLength;
+//    $countText.text(counterText);
+//    function makeSlider(event){
+//        if(sliderStatus === false) return;
+//        sliderStatus = false;
+//        var el;
+//        if(el === undefined) {
+//            el = counter+1;
+//        };
+//        if(event) {
+//        	if(event.target === $lArrow[0]) {
+//        		el=counter-1;
+//        		if(el === -1) {
+//        			el = slidesLength - 1;
+//        	var $slide = $($slides[el]);
+//            $slide.css("left", "-" + slidesWidth);
+//            $slide.velocity({
+//                left : 0
+//            }, 1200);
+//            $(currentElement).velocity({
+//                left : slidesWidth
+//            }, 1200);
+//            counter = slidesLength - 1;    
+//            currentElement = $slides[el];
+//            setTimeout(function(){
+//                sliderStatus = true;
+//            }, 1200);
+//            counterText = counter+1+"/"+slidesLength;
+//            $countText.text(counterText);
+//            return;
+//        		}
+//        	};
+//        	if(event.target === $rArrow[0]) {
+//        		el=counter+1;
+//        		if(el > slidesLength - 1) {
+//        			el = 0;
+//            var $slide = $($slides[el]);
+//            $slide.css("left", slidesWidth);
+//            var slideLeft = "-" + slidesWidth;
+//            $slide.velocity({
+//                left : 0
+//            }, 1200);
+//            $(currentElement).velocity({
+//                left : slideLeft
+//            }, 1200);
+//            counter = el;    
+//            currentElement = $slides[el];
+//            setTimeout(function(){
+//                sliderStatus = true;
+//            }, 1200);
+//            counterText = counter+1+"/"+slidesLength;
+//            $countText.text(counterText);
+//            return;
+//        		}
+//        	};
+//            }
+//        if (el < counter) {
+//            var $slide = $($slides[el]);
+//            $slide.css("left", "-" + slidesWidth);
+//            $slide.velocity({
+//                left : 0
+//            }, 1200);
+//            $(currentElement).velocity({
+//                left : slidesWidth
+//            }, 1200);
+//            counter = el;    
+//            currentElement = $slides[el];
+//            setTimeout(function(){
+//                sliderStatus = true;
+//            }, 1200);
+//            counterText = counter+1+"/"+slidesLength;
+//            $countText.text(counterText);
+//            return;
+//        }
+//         if (el > counter) {
+//            var $slide = $($slides[el]);
+//            $slide.css("left", slidesWidth);
+//            var slideLeft = "-" + slidesWidth;
+//            $slide.velocity({
+//                left : 0
+//            }, 1200);
+//            $(currentElement).velocity({
+//                left : slideLeft
+//            }, 1200);
+//            counter = el;    
+//            currentElement = $slides[el];
+//            setTimeout(function(){
+//                sliderStatus = true;
+//            }, 1200);
+//            counterText = counter+1+"/"+slidesLength;
+//            $countText.text(counterText);
+//            return;
+//        } else {
+//            return;
+//        }
+//    };
+//    $lArrow.click(makeSlider);
+//    $rArrow.click(makeSlider);
+//    // setInterval(makeSlider, 10000);
+//})();
 (function(){
-    var $wrapper    = $(".result-slider-wrapper");
-    if($wrapper.length === 0) return;
-    var $slides     = $(".result-slide");
-    var slidesWidth = $slides.css('width');
-    var $lArrow = $(".results-l-arrow");
-    var $rArrow = $(".results-r-arrow");
-    var slidesLength = $slides.length;
-    var slidewidth  = (parseInt(slidesWidth, 10));
-    $slides.css("left" , slidesWidth);
-    $($slides[0]).css("left", 0);
-    var counter = 0;
-    var currentElement = $slides[0];
-    var prevElement =  $slides[0];
-    var sliderStatus = true;
+    var $wrapper = $('.result-slider-wrapper');
+    var $viewerWidth = (parseInt($(".result-slider").css("width"), 10));
     var $countText = $(".results-counter-text");
+    var counter = 0;
+    var $slides = $('.result-slide');
+    var slidesLength =  $slides.length;
     var counterText = counter+1+"/"+slidesLength;
+    var position = 0;
     $countText.text(counterText);
-    function makeSlider(event){
-        if(sliderStatus === false) return;
-        sliderStatus = false;
-        var el;
-        if(el === undefined) {
-            el = counter+1;
-        };
-        if(event) {
-        	if(event.target === $lArrow[0]) {
-        		el=counter-1;
-        		if(el === -1) {
-        			el = slidesLength - 1;
-        	var $slide = $($slides[el]);
-            $slide.css("left", "-" + slidesWidth);
-            $slide.velocity({
-                left : 0
-            }, 1200);
-            $(currentElement).velocity({
-                left : slidesWidth
-            }, 1200);
-            counter = slidesLength - 1;    
-            currentElement = $slides[el];
-            setTimeout(function(){
-                sliderStatus = true;
-            }, 1200);
-            counterText = counter+1+"/"+slidesLength;
-            $countText.text(counterText);
-            return;
-        		}
-        	};
-        	if(event.target === $rArrow[0]) {
-        		el=counter+1;
-        		if(el > slidesLength - 1) {
-        			el = 0;
-            var $slide = $($slides[el]);
-            $slide.css("left", slidesWidth);
-            var slideLeft = "-" + slidesWidth;
-            $slide.velocity({
-                left : 0
-            }, 1200);
-            $(currentElement).velocity({
-                left : slideLeft
-            }, 1200);
-            counter = el;    
-            currentElement = $slides[el];
-            setTimeout(function(){
-                sliderStatus = true;
-            }, 1200);
-            counterText = counter+1+"/"+slidesLength;
-            $countText.text(counterText);
-            return;
-        		}
-        	};
-            }
-        if (el < counter) {
-            var $slide = $($slides[el]);
-            $slide.css("left", "-" + slidesWidth);
-            $slide.velocity({
-                left : 0
-            }, 1200);
-            $(currentElement).velocity({
-                left : slidesWidth
-            }, 1200);
-            counter = el;    
-            currentElement = $slides[el];
-            setTimeout(function(){
-                sliderStatus = true;
-            }, 1200);
-            counterText = counter+1+"/"+slidesLength;
-            $countText.text(counterText);
+    var slidesWidth = (parseInt($slides.css("width"), 10));
+    var wrapperWidth = slidesLength*slidesWidth + "px";
+    $(window).resize(function(){
+        $viewerWidth = (parseInt($(".main-brand-viewer").css("width"), 10));
+        $wrapper.css("margin-left", 0);
+        position = 0;
+        counter = 0;
+        counterText = counter+1+"/"+slidesLength;
+        $countText.text(counterText);
+    })
+    $wrapper.css( "width" , wrapperWidth);
+    $(".results-r-arrow").click(function(){
+        counter = counter + 1;
+        if (counter > slidesLength-1) {
+            counter = 0;
+            
+        } 
+       counterText = counter+1+"/"+slidesLength;
+       $countText.text(counterText); 
+
+
+        var $slide = $('.result-slide');
+        var slideWidth = $slide.css('width');
+        position = position - (parseInt(slideWidth, 10));
+        if(position > $viewerWidth-slidesLength*slidesWidth-30 ) {
+        $wrapper.velocity({
+            marginLeft : position
+        }, 600);
             return;
         }
-         if (el > counter) {
-            var $slide = $($slides[el]);
-            $slide.css("left", slidesWidth);
-            var slideLeft = "-" + slidesWidth;
-            $slide.velocity({
-                left : 0
-            }, 1200);
-            $(currentElement).velocity({
-                left : slideLeft
-            }, 1200);
-            counter = el;    
-            currentElement = $slides[el];
-            setTimeout(function(){
-                sliderStatus = true;
-            }, 1200);
-            counterText = counter+1+"/"+slidesLength;
-            $countText.text(counterText);
-            return;
-        } else {
+        if(position < $viewerWidth-slidesLength*slidesWidth-30 ) {
+            var $slides    = $('.result-slide');
+            var correction = $viewerWidth-slidesLength*slidesWidth;
+            var step       = -correction - (parseInt($slide.css('width'), 10));
+            var lastSlide  = $slides[$slides.length-1];
+            $($slides[0]).insertAfter(lastSlide);
+            $wrapper.css("margin-left", -step );
+            $wrapper.velocity({
+                marginLeft : correction
+            }, 600)
+            position = correction;
+        }
+    });
+    $(".results-l-arrow").click(function(){
+        
+        counter = counter - 1;
+        if (counter < 0) {
+            counter = slidesLength-1;
+            
+        } 
+       counterText = counter+1+"/"+slidesLength;
+       $countText.text(counterText); 
+        
+        var $slide = $('.result-slide');
+        var slideWidth = $slide.css('width');
+        
+        if (position != 0) {
+           position = position + (parseInt(slideWidth, 10));
+           $wrapper.velocity({
+           marginLeft : position
+        }, 600);
             return;
         }
-    };
-    $lArrow.click(makeSlider);
-    $rArrow.click(makeSlider);
-    // setInterval(makeSlider, 10000);
+        if (position === 0) {
+            var $slides    = $('.result-slide');
+            var slideWidth = "-" + $slide.css('width');
+            var lastSlide  = $slides[$slides.length-1];
+            $(lastSlide).insertBefore($slides[0]);
+            $wrapper.css("margin-left", slideWidth );
+            $wrapper.velocity({
+                marginLeft : 0
+            }, 600)
+        }
+
+    });
 })();
 (function(){
     var $wrapper    = $(".clients-slider-wrapper");
@@ -662,7 +748,7 @@ scrollTop: top
 		})
 	});
 })();
-(function(){	var startFix = parseInt($(".main-img-wrapper").css("height"), 10);
+(function(){	var startFix = parseInt($(".main-white-filter").css("height"), 10);
 				var $btn = $(".menu-connect-btn");
 				var $menu = $(".top-menu");
 				var menuHeight = "-"+parseInt($menu.css("height"), 10)+"px";
