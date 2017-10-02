@@ -1,0 +1,376 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Light.woff2") format("woff2"),
+         url("../fonts/Lato-Light.woff") format("woff");
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+         url("../fonts/Lato-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Medium.woff2") format("woff2"),
+         url("../fonts/Lato-Medium.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Semibold.woff2") format("woff2"),
+         url("../fonts/Lato-Semibold.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.woff2") format("woff2"),
+         url("../fonts/Lato-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Heavy.woff2") format("woff2"),
+         url("../fonts/Lato-Heavy.woff") format("woff");
+    font-style: normal;
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Black.woff2") format("woff2"),
+         url("../fonts/Lato-Black.woff") format("woff");
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-LightItalic.woff2") format("woff2"),
+         url("../fonts/Lato-LightItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Italic.woff2") format("woff2"),
+         url("../fonts/Lato-Italic.woff") format("woff");
+    font-style: italic;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-BoldItalic.woff2") format("woff2"),
+         url("../fonts/Lato-BoldItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-BlackItalic.woff2") format("woff2"),
+         url("../fonts/Lato-BlackItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-BlackItalic.woff2") format("woff2"),
+         url("../fonts/Lato-BlackItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: 900;
+}
+
+/*    L E G E N D   */
+
+
+h4 {
+    color: rgb(64, 113, 183);
+    font-family: Lato;
+    font-size: 3.6rem;
+    font-weight: 200;
+    line-height: 4.8rem;
+}
+.text {
+    color: rgb(93, 155, 213);
+    font-family: Lato;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+.white {
+    color: white;
+}
+.blue {
+    color: rgb(64, 113, 183);
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 5rem;
+    box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    background-color: rgb(64, 113, 183);
+/*    transition: box-shadow 0.5s;*/
+}
+.btn:hover {
+    background-color: rgb(77, 134, 215);
+    box-shadow: 4px 3px 7px 1px rgba(0, 0, 0, 0.3);
+}
+.btn:active {
+    background-color: rgb(60, 105, 169);
+    box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+input {
+    line-height: 5rem;
+    box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    border: 1px solid rgb(64, 113, 183);
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+.page_wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+.wrapper {
+    width: 94rem;
+    margin: 0 auto;
+}
+
+/*   HEADER  */
+
+header {
+    padding-top: 3rem;
+    overflow: hidden;
+}
+.nav_menu_wrapper {
+    width: 100%;
+    display: block;
+    text-align: right;
+}
+.logo {
+    float: left;
+    width: 16rem;
+}
+.logo img {
+    width: 100%;
+}
+.nav_menu_list {
+    display: inline-block;
+}
+.nav_menu_list li {
+    display: inline-block;
+    margin-left: 4rem;
+}
+.nav_menu_list a {
+    position: relative;
+}
+.nav_menu_list a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    background-color: rgb(64, 113, 183);
+    transition: width 0.7s, left 0.7s;
+}
+.nav_menu_list li:hover a:after {
+    width: 100%;
+    left: 0;
+}
+.nav_main_phone {
+    display: inline-block;
+    margin-left: 5rem;
+}
+/* MAIN SECTION*/ 
+
+.main_section_wrapper {
+    width: 100%;
+    display: block;
+    height: 100vh;
+}
+.main_section_header {
+    margin-top: 25vh;
+    display: inline-block;
+    color: rgb(64, 113, 183);
+    font-family: Lato;
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 7.2rem;
+    vertical-align: baseline;
+}
+.main_text_wrapper {
+    margin-top: 4rem;
+}
+.main_text {
+    display: inline-block;
+    margin-right: 5rem;
+}
+.main_section_button {
+    float: left;
+    width: 25rem;
+    text-align: center;
+    margin: 7rem 3rem 0 0;
+}
+.main_section_info {
+    margin-top: 7rem;
+    line-height: 5rem;
+    display: inline-block;
+    position: relative;
+}
+.main_section_info:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(64, 113, 183);
+    left: 0;
+    bottom: 1.6rem;
+}
+.main_section_info:hover {
+    color: rgb(93, 155, 213);
+}
+.info_section_wrapper {
+    width: 100%;
+    display: block;
+}
+.info_section_wrapper h4 {
+    width: 64rem;
+    display: inline-block;
+}
+.info_section_wrapper .text {
+    width: 64rem;
+    display: inline-block;
+    margin-top: 4rem;
+}
+
+.info_section_wrapper article {
+    margin-top: 13rem;
+    display: inline-block;
+    width: 100%;
+}
+.info_section_wrapper article .illustration {
+    display: inline-block;
+    width: 30rem;
+    float: right;
+}
+.info_section_wrapper article:nth-child(2n) .illustration {
+    float: left;
+}
+.info_section_wrapper article:nth-child(2n) .text,
+.info_section_wrapper article:nth-child(2n) h4 {
+    margin-left: 30rem;
+}
+
+.service_section_wrapper {
+    width: 100%;
+    display: block;    
+    padding: 13rem 0;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+}
+.service_section_header {
+    margin-bottom: 4rem;
+}
+.service_section_list {
+    display: inline-block;
+    list-style-type: decimal;
+    width: 40rem;
+    margin-left: 1.8rem;
+    float: left;
+}
+.service_section_list li {
+    line-height: 2.2rem;
+}
+.service_price_wrapper {
+    width: 46rem;
+    display: inline-block;
+    position: absolute;
+    bottom: 13rem;
+    right: 0;
+}
+.service_price_header {
+    margin-bottom: 2rem;
+}
+.service_price_wrapper input {
+    width: 25rem;
+    height: 5rem;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+.service_price_button {
+    width: 19rem;
+    text-align: center;
+    float: right;
+}
+.feedback_section_slider {
+    position: relative;
+}
+.feedback_slide_header {
+    font-style: italic;
+}
+.feedback_slider_wrapper {
+    width: 10000px;
+    font-size: 0;
+}
+.feedback_slider_viewer {
+    width: calc(100% - 16rem);
+    overflow: hidden;
+    margin: 0 auto;
+}
+.feedback_slide {
+    display: inline-block;
+    width: 78rem;
+}
+.feedback_slide_text_wrapper {
+    overflow: hidden;
+    height: 0;
+}
+.feedback_slider_counter {
+    margin: 3rem auto;
+    width: 7rem;
+    text-align: center;
+}
+.feedback_slide_author {
+    margin: 2rem 0 3rem 0;
+}
+.feedback_read_all {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.feedback_read_all:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(64, 113, 183);
+}
+.feedback_l_arrow,
+.feedback_r_arrow {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+}
+.feedback_l_arrow {
+    left: 0;
+}
+.feedback_r_arrow {
+    right: 0;
+}
+
+
+
+
