@@ -370,6 +370,62 @@ header {
 .feedback_r_arrow {
     right: 0;
 }
+.ping_us_network {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+}
+.ping_us_wrapper {
+    margin-top: 10rem;
+}
+.ping_us_header {
+    margin-bottom: 4rem;
+}
+.ping_us_form {
+    width: 38rem;
+    display: inline-block;
+}
+.ping_us_form input {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.ping_us_button {
+    width: 100%;
+    margin-top: 1rem;
+}
+.ping_us_network img {
+    width: 100%;
+}
+.ping_us_contact {
+    margin-left: 8rem;
+    display: inline-block;
+    vertical-align: top;
+}
+.ping_us_adress {
+    width: 21rem;
+    margin-bottom: 3rem;
+}
+.ping_us_phone {
+    margin: 2rem 0;
+    width: 38rem;
+}
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 12rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    display: inline-block;
+}
+.copyright {
+    display: inline-block;
+}
+.desighn_development {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
 
 
 

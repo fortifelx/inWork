@@ -10,6 +10,10 @@
     $countText.text(counterText);
     var slidesWidth = (parseInt($slides.css("width"), 10));
     var wrapperWidth = slidesLength*slidesWidth + "px";
+    
+    var $showBtn = $('.feedback_read_all');
+    var $textWrapper = $('.feedback_slide_text_wrapper');
+    
     $(window).resize(function(){
         $viewerWidth = (parseInt($(".feedback_slider_viewer").css("width"), 10));
         $wrapper.css("margin-left", 0);
@@ -21,11 +25,14 @@
     $wrapper.css( "width" , wrapperWidth);
     
     $(".feedback_r_arrow").click(function(){
+        
+        $showBtn.css('display', 'inline-block');
+        $textWrapper.velocity({height: 0}, 600);
+        
         counter = counter + 1;
         if (counter > slidesLength-1) {
             counter = 0;
-            
-        } 
+       } 
        counterText = counter+1+"/"+slidesLength;
        $countText.text(counterText); 
 
@@ -54,6 +61,9 @@
     });
     $(".feedback_l_arrow").click(function(){
         
+        $showBtn.css('display', 'inline-block');
+        $textWrapper.velocity({height: 0}, 600);
+                
         counter = counter - 1;
         if (counter < 0) {
             counter = slidesLength-1;
@@ -84,4 +94,23 @@
         }
 
     });
+})();
+(function(){
+    
+    var $showBtn = $('.feedback_read_all');
+    var $textWrapper = $('.feedback_slide_text_wrapper');
+    $showBtn.click(function(e){
+        var target = e.target;
+        var $target = $(target);
+        
+        var newHeight = $target.prev().children().css("height");
+        
+        $target.prev().velocity({
+            height : newHeight
+        }, 600);
+        $showBtn.css('display', 'none');
+        
+    })
+    
+    
 })();
