@@ -1,3 +1,23 @@
+$(document).ready(function () {
+$(".main_section_button").click(function (event) { 
+event.preventDefault();
+    console.log('here');
+var id = $(this).attr('href')
+, top = $(id).offset().top;
+$('body,html').animate({
+scrollTop: top
+}, 1000);
+});
+$(".main_section_info").click(function (event) { 
+event.preventDefault();
+    console.log('here');
+var id = $(this).attr('href')
+, top = $(id).offset().top;
+$('body,html').animate({
+scrollTop: top
+}, 1000);
+});
+});
 (function(){
     var $wrapper = $('.feedback_slider_wrapper');
     var $viewerWidth = (parseInt($(".feedback_slider_viewer").css("width"), 10));
@@ -114,44 +134,6 @@
     
     
 })();
-(function(){    
-                var startFix = parseInt($(".main_section_wrapper").css("height"), 10)*0.7;
-                var pos = "top";
-                var $menu = $('header');
-                var menuHeigh = parseInt($menu.css("height"), 10) + 
-                    parseInt($menu.css("paddingTop"), 10) + 
-                    parseInt($menu.css("paddingBottom"), 10);
-                var activeClass = "active_header";
-    	        window.onscroll = function() {
-                var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-                if(scrolled < startFix) stat = true;
-                if(scrolled > startFix) stat = false;
-                if(stat === false && pos === "top") {
-                    $menu.addClass(activeClass);
-                    pos = "bottom";
-                    $menu.css('top', -menuHeigh);
-                    $menu.velocity({
-                        top : 0
-                    }, 600);
-                }
-                if(stat === true && pos === "bottom") {
-                	pos="top";
-//                    $menu.css('top', '0');
-//                    $menu.velocity({
-//                        top : -menuHeigh
-//                    }, 600);
-//                    setTimeout(function(){
-                          $menu.removeClass(activeClass);
-//                        $menu.css('top', '0');
-//                    }, 600);
-                }
-              function getCoords(elem) {
-                var box = elem.getBoundingClientRect();
-                return box.top + pageYOffset;
-            }
-        };
-})();
-
 (function(){
     $(document).ready(function(){
            var timelineLite = $("#timelinelite"),
@@ -179,6 +161,8 @@
 })();
 
 (function(){
+                            
+                var startFix = parseInt($(".main_section_wrapper").css("height"), 10)*0.7;
                 var firstFix = parseInt($(".main_section_wrapper").css("height"), 10)*0.75;
                 var secondFix = parseInt($(".main_section_wrapper").css("height"), 10)*1.4;
                 var thirdFix = secondFix + parseInt($(".pay_article_wrapper").css("height"), 10)*1.4;
@@ -207,10 +191,44 @@
                     wioTop = parseInt(wio.css('top'), 10),
                     witTop = parseInt(wit.css('top'), 10),
                     wihTop = parseInt(wih.css('top'), 10);
+    
+                var pos = "top";
+                var $menu = $('header');
+                var menuHeigh = parseInt($menu.css("height"), 10) + 
+                    parseInt($menu.css("paddingTop"), 10) + 
+                    parseInt($menu.css("paddingBottom"), 10);
+                var activeClass = "active_header";
+    
+    
+    
     	        window.onscroll = function() {
                 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-//                if(scrolled < startFix) stat = true;
-//                if(scrolled > startFix) stat = false;
+                    
+                    
+                if(scrolled < startFix) stat = true;
+                if(scrolled > startFix) stat = false;
+                                    if(stat === false && pos === "top") {
+                    $menu.addClass(activeClass);
+                    pos = "bottom";
+                    console.log('here');
+                    $menu.css('top', -menuHeigh);
+                    $menu.velocity({
+                        top : 0
+                    }, 600);
+                }
+                if(stat === true && pos === "bottom") {
+                	pos="top";
+//                    $menu.css('top', '0');
+//                    $menu.velocity({
+//                        top : -menuHeigh
+//                    }, 600);
+//                    setTimeout(function(){
+                          $menu.removeClass(activeClass);
+//                        $menu.css('top', '0');
+//                    }, 600);
+                }
+                    
+                    
                 if(scrolled > firstFix) {
 //                    piz.velocity({
 //                        top : pizTop*0.6
@@ -226,7 +244,7 @@
                     }, 2000);
                     pay.addClass('text_show');
                 }
-                if(scrolled > secondFix*0.9) {
+                if(scrolled > secondFix*0.8) {
                     mig.addClass('text_show');
                 }
                 if(scrolled > secondFix) {

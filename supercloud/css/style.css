@@ -175,7 +175,7 @@ a {
 }
 .wrapper {
     width: 94rem;
-    margin: 0 auto;
+    margin: 9rem auto 0 auto;
 }
 
 /*   HEADER  */
@@ -196,6 +196,7 @@ header {
 .active_header {
     background-color: rgb(93, 155, 213);
     position: fixed;
+    z-index: 3;
 }
 .active_header a,
 .active_header p {
