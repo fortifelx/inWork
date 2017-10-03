@@ -114,3 +114,50 @@
     
     
 })();
+(function(){    
+                var startFix = parseInt($(".main_section_wrapper").css("height"), 10)*0.7;
+                var pos = "top";
+                var $menu = $('header');
+                var menuHeigh = parseInt($menu.css("height"), 10) + 
+                    parseInt($menu.css("paddingTop"), 10) + 
+                    parseInt($menu.css("paddingBottom"), 10);
+                var activeClass = "active_header";
+    	        window.onscroll = function() {
+                var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+                if(scrolled < startFix) stat = true;
+                if(scrolled > startFix) stat = false;
+                if(stat === false && pos === "top") {
+                    $menu.addClass(activeClass);
+                    pos = "bottom";
+                    $menu.css('top', -menuHeigh);
+                    $menu.velocity({
+                        top : 0
+                    }, 600);
+                }
+                if(stat === true && pos === "bottom") {
+                	pos="top";
+//                    $menu.css('top', '0');
+//                    $menu.velocity({
+//                        top : -menuHeigh
+//                    }, 600);
+//                    setTimeout(function(){
+                          $menu.removeClass(activeClass);
+//                        $menu.css('top', '0');
+//                    }, 600);
+                }
+              function getCoords(elem) {
+                var box = elem.getBoundingClientRect();
+                return box.top + pageYOffset;
+            }
+        };
+})();
+
+(function(){
+var tl = new TimelineMax({onUpdate:updateUI, repeat:2, repeatDelay:1, yoyo:true}); 
+    
+   tl.from(logo, 0.5, {left:'-=60px', ease:Back.easeOut})
+   .staggerFrom(txt, 0.1, {alpha:0}, 0.02, "textEffect")
+   .staggerFrom(txt, 0.8, {rotationY:"-270deg", top:"100px", transformOrigin: "50% 50% -80", ease:Back.easeOut}, 0.02, "textEffect")
+   .staggerTo(txt, 0.6, {rotationX:"+=360deg", transformOrigin:"50% 50% 10", color:"#90e500"}, 0.02);
+    
+})();

@@ -114,6 +114,7 @@ h4 {
     border-radius: 0.8rem;
     background-color: rgb(64, 113, 183);
 /*    transition: box-shadow 0.5s;*/
+    border: none;
 }
 .btn:hover {
     background-color: rgb(77, 134, 215);
@@ -129,7 +130,42 @@ input {
     border-radius: 0.8rem;
     border: 1px solid rgb(64, 113, 183);
     outline: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: Lato;
+    color: rgb(64, 113, 183);
 }
+input::-webkit-input-placeholder {
+    color: rgba(64, 113, 183, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+input::-moz-placeholder {
+    color: rgba(64, 113, 183, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+input:-ms-input-placeholder {
+    color: rgba(64, 113, 183, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+input:-moz-placeholder {
+    color: rgba(64, 113, 183, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+input::placeholder { 
+    color: rgba(64, 113, 183, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+input:placeholder { 
+    color: rgba(64, 113, 183, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
 a {
     text-decoration: none;
 }
@@ -145,19 +181,45 @@ a {
 /*   HEADER  */
 
 header {
-    padding-top: 3rem;
+    padding: 3rem 0;
     overflow: hidden;
+    position: absolute;
+    width: 100%;
+    
 }
 .nav_menu_wrapper {
-    width: 100%;
+    width: 94rem;
     display: block;
     text-align: right;
+    margin: 0 auto;
+}
+.active_header {
+    background-color: rgb(93, 155, 213);
+    position: fixed;
+}
+.active_header a,
+.active_header p {
+    color: white;
 }
 .logo {
     float: left;
     width: 16rem;
 }
 .logo img {
+    width: 100%;
+}
+.active_header .logo2 {
+    display: block;
+}
+.active_header .logo {
+    display: none;
+}
+.logo2 {
+    display: none;
+    float: left;
+    width: 16rem;
+}
+.logo2 img {
     width: 100%;
 }
 .nav_menu_list {
@@ -197,7 +259,7 @@ header {
     height: 100vh;
 }
 .main_section_header {
-    margin-top: 25vh;
+    margin-top: 30vh;
     display: inline-block;
     color: rgb(64, 113, 183);
     font-family: Lato;
@@ -389,6 +451,7 @@ header {
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 1rem;
+    padding-left: 1rem;
 }
 .ping_us_button {
     width: 100%;
@@ -427,6 +490,71 @@ footer {
     right: 0;
 }
 
-
+.get_free_block {
+    width: 86rem;
+    box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: rgb(14, 170, 231);
+    padding: 5rem 4rem;
+    position: relative;
+}
+.get_free_close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.get_free_header {
+}
+.get_free_form {
+    margin-top: 2rem;
+}
+.get_free_form input {
+    box-sizing: border-box;
+    display: inline-block;
+    outline: none;
+    border: 1px solid white;
+    background-color: rgb(14, 170, 231);
+    width: 28rem;
+    margin-right: 0.8rem;
+    height: 5rem;
+    padding-left: 1rem;
+}
+.get_free_button {
+    width: 28rem;
+    float: right;
+    box-sizing: border-box;
+    padding: 0;
+}
+.get_free_block input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.get_free_block input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.get_free_block input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.get_free_block input:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.get_free_block input::placeholder { 
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.get_free_block input:placeholder { 
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
 
 
