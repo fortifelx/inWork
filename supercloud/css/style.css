@@ -327,6 +327,11 @@ header {
     width: 63rem;
     display: inline-block;
     margin-top: 4rem;
+    transform: rotateX(90deg);
+    transition: transform 2s;
+}
+.info_section_wrapper article .text_show {
+    transform: rotateX(0);
 }
 
 .info_section_wrapper article {

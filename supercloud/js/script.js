@@ -183,6 +183,11 @@
                 var secondFix = parseInt($(".main_section_wrapper").css("height"), 10)*1.4;
                 var thirdFix = secondFix + parseInt($(".pay_article_wrapper").css("height"), 10)*1.4;
                 var fourFix = thirdFix + parseInt($(".migrate_article_wrapper").css("height"), 10)*1.8;
+                var pay = $('.pay_article_text'),
+                    mig = $('.migrate_article_text'),
+                    saf = $('.safe_article_text'),
+                    hel = $('.help_article_text'),
+                    wor = $('.work_article_text');
                 var piz = $('.pay_ilu_zero'),
                     pio = $('.pay_ilu_one'),
                     pit = $('.pay_ilu_two'),
@@ -219,13 +224,19 @@
                     pih.velocity({
                         top : pihTop*1.6
                     }, 2000);
+                    pay.addClass('text_show');
+                }
+                if(scrolled > secondFix*0.9) {
+                    mig.addClass('text_show');
                 }
                 if(scrolled > secondFix) {
                     sio.addClass('ilu_rotate');
+                    saf.addClass('text_show');
                 }
                 if(scrolled > thirdFix) {
                     hiz.addClass('hel_ilu_rotate');
                     hio.addClass('small_ilu');
+                    hel.addClass('text_show');
                 }
                 if(scrolled > fourFix) {
                     wiz.velocity({
@@ -236,6 +247,7 @@
                     },7000);
                     wit.addClass('ilu_rotate_forward');
                     wih.addClass('ilu_rotate_back');
+                    wor.addClass('text_show');
                 }
 //                if(stat === true && pos === "bottom") {
 //
