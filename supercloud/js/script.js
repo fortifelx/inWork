@@ -153,11 +153,103 @@
 })();
 
 (function(){
-var tl = new TimelineMax({onUpdate:updateUI, repeat:2, repeatDelay:1, yoyo:true}); 
+    $(document).ready(function(){
+           var timelineLite = $("#timelinelite"),
+    tagline = $("#tagline span"),
+    tl = new TimelineLite();
+            
+    tl.from(timelinelite, 0.7, {width:"0px", alpha:0}, "-=0.2")
+      .staggerFrom(tagline, 0.5, {top:"-=30px", rotation:"-40deg", alpha:0, scale:1.8, ease:Back.easeOut}, 0.2); 
+        
+        
+    var firstMainDecor = $(".main_first_decor");
+    var secondMainDecor = $(".main_second_decor");
+    var fmdRight = parseInt(firstMainDecor.css('right'), 10);
+    var fmdTop = parseInt(firstMainDecor.css('top'), 10); var smdRight = parseInt(secondMainDecor.css('right'), 10);
     
-   tl.from(logo, 0.5, {left:'-=60px', ease:Back.easeOut})
-   .staggerFrom(txt, 0.1, {alpha:0}, 0.02, "textEffect")
-   .staggerFrom(txt, 0.8, {rotationY:"-270deg", top:"100px", transformOrigin: "50% 50% -80", ease:Back.easeOut}, 0.02, "textEffect")
-   .staggerTo(txt, 0.6, {rotationX:"+=360deg", transformOrigin:"50% 50% 10", color:"#90e500"}, 0.02);
+    firstMainDecor.velocity({
+        right : fmdRight*0.75,
+        top : fmdTop*0.8
+    }, 3000);
+    secondMainDecor.velocity({
+        right : fmdRight*0.75
+    }, 4000);
+    });
+   
+})();
+
+(function(){
+                var firstFix = parseInt($(".main_section_wrapper").css("height"), 10)*0.75;
+                var secondFix = parseInt($(".main_section_wrapper").css("height"), 10)*1.4;
+                var thirdFix = secondFix + parseInt($(".pay_article_wrapper").css("height"), 10)*1.4;
+                var fourFix = thirdFix + parseInt($(".migrate_article_wrapper").css("height"), 10)*1.8;
+                var piz = $('.pay_ilu_zero'),
+                    pio = $('.pay_ilu_one'),
+                    pit = $('.pay_ilu_two'),
+                    pih = $('.pay_ilu_three');
+                var pizTop = parseInt(piz.css('top'), 10),
+                    pioTop = parseInt(pio.css('top'), 10),
+                    pitTop = parseInt(pit.css('top'), 10),
+                    pihTop = parseInt(pih.css('top'), 10);
+                var sio = $(".saf_ilu_one");
+                var hiz = $(".hel_ilu_zero"),
+                    hio = $(".hel_ilu_one");
+                var wiz = $('.wor_ilu_zero'),
+                    wio = $('.wor_ilu_one'),
+                    wit = $('.wor_ilu_two'),
+                    wih = $('.wor_ilu_three');
+                var wizRight = parseInt(wiz.css('right'), 10),
+                    wioTop = parseInt(wio.css('top'), 10),
+                    witTop = parseInt(wit.css('top'), 10),
+                    wihTop = parseInt(wih.css('top'), 10);
+    	        window.onscroll = function() {
+                var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+//                if(scrolled < startFix) stat = true;
+//                if(scrolled > startFix) stat = false;
+                if(scrolled > firstFix) {
+//                    piz.velocity({
+//                        top : pizTop*0.6
+//                    }, 2000);
+                    pio.velocity({
+                        top : pioTop*1.6
+                    }, 2000);
+                    pit.velocity({
+                        top : pitTop*0.6
+                    }, 2000);
+                    pih.velocity({
+                        top : pihTop*1.6
+                    }, 2000);
+                }
+                if(scrolled > secondFix) {
+                    sio.addClass('ilu_rotate');
+                }
+                if(scrolled > thirdFix) {
+                    hiz.addClass('hel_ilu_rotate');
+                    hio.addClass('small_ilu');
+                }
+                if(scrolled > fourFix) {
+                    wiz.velocity({
+                        right : 0
+                    },3000);
+                    wio.velocity({
+                        right : 0
+                    },7000);
+                    wit.addClass('ilu_rotate_forward');
+                    wih.addClass('ilu_rotate_back');
+                }
+//                if(stat === true && pos === "bottom") {
+//
+//                }
+              function getCoords(elem) {
+                var box = elem.getBoundingClientRect();
+                return box.top + pageYOffset;
+            }
+        };
+    
+    
+    
+    
     
 })();
+
+

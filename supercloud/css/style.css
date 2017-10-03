@@ -252,8 +252,22 @@ header {
     margin-left: 5rem;
 }
 /* MAIN SECTION*/ 
-
+.main_first_decor {
+    position: absolute;
+    width: 70rem;
+    right: -40rem;
+    opacity: 0.3;
+    top: 30vh;
+}
+.main_second_decor {
+    position: absolute;
+    width: 65rem;
+    right: -50rem;
+    top: 39vh;
+    transform: rotate(180deg);
+}
 .main_section_wrapper {
+    position: relative;
     width: 100%;
     display: block;
     height: 100vh;
@@ -267,6 +281,8 @@ header {
     font-weight: 300;
     line-height: 7.2rem;
     vertical-align: baseline;
+    position: relative;
+    z-index: 1;
 }
 .main_text_wrapper {
     margin-top: 4rem;
@@ -308,7 +324,7 @@ header {
     display: inline-block;
 }
 .info_section_wrapper .text {
-    width: 64rem;
+    width: 63rem;
     display: inline-block;
     margin-top: 4rem;
 }
@@ -317,6 +333,7 @@ header {
     margin-top: 13rem;
     display: inline-block;
     width: 100%;
+    position: relative;
 }
 .info_section_wrapper article .illustration {
     display: inline-block;
@@ -330,6 +347,111 @@ header {
 .info_section_wrapper article:nth-child(2n) h4 {
     margin-left: 30rem;
 }
+.pay_article_text {
+    overflow: hidden;
+}
+.pay_image_wrapper {
+}
+.pay_image_wrapper img {
+    width: 7rem;
+    position: absolute;
+    top: 30%;
+    height: 7rem;
+}
+.pay_image_wrapper img:first-child {
+    width: 30rem;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    height: 2rem;
+}
+.pay_image_wrapper img:nth-child(2) {
+    right: 3rem;
+}
+.pay_image_wrapper img:nth-child(3) {
+    right: 12rem;
+    top: 90%;
+}
+.pay_image_wrapper img:nth-child(4) {
+    right: 21rem;
+}
+.mig_ilu_zero {
+    position: absolute;
+    width: 19rem;
+    left: 6%;
+    top: 15%;
+}
+.saf_ilu_zero {
+    width: 24rem;
+    margin: 0 5rem;
+}
+.saf_ilu_one {
+    width: 3rem;
+    position: absolute;
+    right: 18rem;
+    top: 20rem;
+    transition: transform 90s;
+}
+.ilu_rotate {
+    transform: rotate(10220deg);
+}
+.hel_ilu_zero {
+    width: 18rem;
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    transition: transform 90s;
+}
+.hel_ilu_one {
+    position: absolute;
+    top: -35rem;
+    width: 90rem;
+    left: -30rem;
+    transition: top 4s, left 4s, width 4s, height 4s;
+}
+.small_ilu {
+    top: -5rem;
+    width: 33rem;
+    left: -2rem;
+}
+.hel_ilu_rotate {
+    transform: rotate(1800deg);
+}
+
+.wor_ilu_zero {
+    width: 28rem;
+    position: absolute;
+    top: 12rem;
+    right: -5rem;
+}
+.wor_ilu_one {
+    width: 14rem;
+    position: absolute;
+    top: 13rem;
+    right: 18rem;
+}
+.wor_ilu_two {
+    width: 11rem;
+    position: absolute;
+    top: 21rem;
+    right: 9rem;
+    transition: transform 8s;
+}
+.wor_ilu_three {
+    width: 9rem;
+    position: absolute;
+    top: 21rem;
+    right: 0rem;
+    transition: transform 8s;
+}
+.ilu_rotate_back {
+    transform: rotate(-250deg);
+}
+.ilu_rotate_forward {
+    transform: rotate(350deg);
+}
+
+
 
 .service_section_wrapper {
     width: 100%;
