@@ -17,6 +17,14 @@ $('body,html').animate({
 scrollTop: top
 }, 1000);
 });
+$(".nav_menu_list").on("click", "a", function (event) { 
+event.preventDefault();
+var id = $(this).attr('href')
+, top = $(id).offset().top;
+$('body,html').animate({
+scrollTop: top
+}, 1000);
+});
 });
 (function(){
     var $wrapper = $('.feedback_slider_wrapper');
@@ -210,7 +218,6 @@ scrollTop: top
                                     if(stat === false && pos === "top") {
                     $menu.addClass(activeClass);
                     pos = "bottom";
-                    console.log('here');
                     $menu.css('top', -menuHeigh);
                     $menu.velocity({
                         top : 0
