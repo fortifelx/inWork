@@ -2,6 +2,28 @@
 	html {
 		font-size: 10px;
 	}
+    .wrapper,
+    .nav_menu_wrapper {
+        width: 24rem;
+    }
+    .nav_menu_list,
+    .nav_main_phone,
+    .main_first_decor,
+    .main_text_wrapper,
+    .main_section_info{
+        display: none;
+    }
+    .main_second_decor {
+        left: 10rem;
+        top: 0rem;
+    }
+    .main_section_header {
+        margin-top: 10rem;
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+    
+    
 }
 @media handheld and (min-width: 768px), screen and (min-width: 768px) {
 	html {
