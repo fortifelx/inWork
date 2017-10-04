@@ -286,7 +286,7 @@ scrollTop: top
 })();
 
 (function(){
-
+    var status = false;
     var $close = $(".get_free_close");
     $close.click(function(){
        $target.css("display", "none"); 
@@ -296,10 +296,32 @@ scrollTop: top
     
     function showWindow(event){
         event.preventDefault();
-        alert("TEST!");
         $target.css("display", "block"); 
     };
     window.onbeforeunload = showWindow;
+    var refresh = false;
+    $( document ).mouseleave(function(){
+        if(status) return;
+        else {
+              $target.css("display", "block"); 
+              status = true;
+        }
+
+    });
+//$( window ).on("beforeunload", function( event ) {
+//    var msg = "У нас есть для Вас специальное предложение!";
+//    if ( $( event.target.activeElement ).is("a") || refresh === true )
+//    {
+//        return;
+//    }
+////    document.write('<div class="get_free_wrapper"><div class="get_free_block"><img src="img/close_w.png" class="get_free_close" /><p class="get_free_header white text">Получите бесплатный аудит</p></div></div></div> ');
+//    return msg;
+//});
+//$( window ).keydown(function( event ){
+//    if ( event.keyCode == 116 || ( event.ctrlKey && event.keyCode == 82 ) )
+//        refresh = true;
+//});
+
 
 })();
 
