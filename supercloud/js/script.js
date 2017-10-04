@@ -139,8 +139,28 @@ scrollTop: top
         $showBtn.css('display', 'none');
         
     })
+    var $hideBtn = $('.hide_btn');
     
     
+})();
+(function(){
+    
+    var $showBtn = $('.hide_btn');
+    var $textWrapper = $('.text_wrapper');
+    $showBtn.click(function(e){
+        var target = e.target;
+        var $target = $(target);
+        
+        var textHeight = $target.prev().children().css("height");
+        var correction = $target.prev().children().css("marginTop");
+        var newHeight = (parseInt(correction, 10)) + (parseInt(textHeight, 10));
+        $target.prev().velocity({
+            height : newHeight
+        }, 600);
+        $target.css('display', 'none');
+        
+    })
+
 })();
 (function(){
     $(document).ready(function(){

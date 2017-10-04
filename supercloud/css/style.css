@@ -621,6 +621,20 @@ header {
     margin: 2rem 0;
     width: 38rem;
 }
+.ping_us_email {
+    position: relative;
+    display: inline-block;
+}
+.ping_us_email:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color:rgb(64, 113, 183);
+}
 footer {
     position: relative;
     width: 100%;
@@ -716,5 +730,8 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
+}
+.mob_input {
+    display: none;
 }
 
