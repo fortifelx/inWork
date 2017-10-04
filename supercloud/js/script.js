@@ -154,8 +154,11 @@ scrollTop: top
         
     var firstMainDecor = $(".main_first_decor");
     var secondMainDecor = $(".main_second_decor");
+    var thirdMainDecor = $(".main_third_decor");
     var fmdRight = parseInt(firstMainDecor.css('right'), 10);
-    var fmdTop = parseInt(firstMainDecor.css('top'), 10); var smdRight = parseInt(secondMainDecor.css('right'), 10);
+    var fmdTop = parseInt(firstMainDecor.css('top'), 10); 
+    var smdRight = parseInt(secondMainDecor.css('right'), 10);
+    var tmdLeft = parseInt(thirdMainDecor.css('left'), 10);
     
     firstMainDecor.velocity({
         right : fmdRight*0.75,
@@ -163,6 +166,9 @@ scrollTop: top
     }, 3000);
     secondMainDecor.velocity({
         right : fmdRight*0.75
+    }, 4000);
+    thirdMainDecor.velocity({
+        left : tmdLeft*0.75
     }, 4000);
     });
    
@@ -172,9 +178,9 @@ scrollTop: top
                             
                 var startFix = parseInt($(".main_section_wrapper").css("height"), 10)*0.7;
                 var firstFix = parseInt($(".main_section_wrapper").css("height"), 10)*0.75;
-                var secondFix = parseInt($(".main_section_wrapper").css("height"), 10)*1.4;
-                var thirdFix = secondFix + parseInt($(".pay_article_wrapper").css("height"), 10)*1.4;
-                var fourFix = thirdFix + parseInt($(".migrate_article_wrapper").css("height"), 10)*1.8;
+                var secondFix = parseInt($(".main_section_wrapper").css("height"), 10)*1.2;
+                var thirdFix = secondFix + parseInt($(".pay_article_wrapper").css("height"), 10)*1.3;
+                var fourFix = thirdFix + parseInt($(".migrate_article_wrapper").css("height"), 10)*1.6;
                 var pay = $('.pay_article_text'),
                     mig = $('.migrate_article_text'),
                     saf = $('.safe_article_text'),
@@ -286,28 +292,30 @@ scrollTop: top
 })();
 
 (function(){
-    var status = false;
-    var $close = $(".get_free_close");
-    $close.click(function(){
-       $target.css("display", "none"); 
-    });
+//    var status = false;
+//    var $close = $(".get_free_close");
+//    $close.click(function(){
+//       $target.css("display", "none"); 
+//    });
+//    
+//    var $target = $(".get_free_wrapper");
+//    
+//    function showWindow(event){
+//        event.preventDefault();
+//        $target.css("display", "block"); 
+//    };
+//    window.onbeforeunload = showWindow;
+//    var refresh = false;
+//    $( document ).mouseleave(function(){
+//        if(status) return;
+//        else {
+//              $target.css("display", "block"); 
+//              status = true;
+//        }
+//
+//    });
     
-    var $target = $(".get_free_wrapper");
     
-    function showWindow(event){
-        event.preventDefault();
-        $target.css("display", "block"); 
-    };
-    window.onbeforeunload = showWindow;
-    var refresh = false;
-    $( document ).mouseleave(function(){
-        if(status) return;
-        else {
-              $target.css("display", "block"); 
-              status = true;
-        }
-
-    });
 //$( window ).on("beforeunload", function( event ) {
 //    var msg = "У нас есть для Вас специальное предложение!";
 //    if ( $( event.target.activeElement ).is("a") || refresh === true )

@@ -177,7 +177,18 @@ a {
     width: 94rem;
     margin: 9rem auto 0 auto;
 }
-
+.hide_btn {
+    display: none;
+    color: rgb(64, 113, 183);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 60px;
+    text-decoration: underline;
+}
+.text_wrapper {
+    display: inline-block;
+}
 /*   HEADER  */
 
 header {
@@ -267,6 +278,12 @@ header {
     top: 39vh;
     transform: rotate(180deg);
 }
+.main_third_decor {
+    position: absolute;
+    left: -65rem;
+    top: 52vh;;
+    width: 60rem;
+}
 .main_section_wrapper {
     position: relative;
     width: 100%;
@@ -340,6 +357,9 @@ header {
     display: inline-block;
     width: 100%;
     position: relative;
+}
+.info_section_wrapper .pay_article_wrapper {
+    margin-top: 0;
 }
 .info_section_wrapper article .illustration {
     display: inline-block;

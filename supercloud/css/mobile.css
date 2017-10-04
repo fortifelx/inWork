@@ -10,7 +10,8 @@
     .nav_main_phone,
     .main_first_decor,
     .main_text_wrapper,
-    .main_section_info{
+    .main_section_info,
+    .main_third_decor {
         display: none;
     }
     .main_second_decor {
@@ -22,7 +23,27 @@
         font-size: 3rem;
         line-height: 3.2rem;
     }
-    
+    .pay_article_wrapper {
+        margin-top: 0;
+    }
+    .info_section_wrapper h4 {
+        width: 100%;
+        color: rgb(64, 113, 183);
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .hide_btn {
+        display: block;
+    }
+    .text_wrapper {
+        height: 0;
+        overflow: hidden;
+    }
+    .pay_ilu_zero {
+        top: 0;
+    }
     
 }
 @media handheld and (min-width: 768px), screen and (min-width: 768px) {
