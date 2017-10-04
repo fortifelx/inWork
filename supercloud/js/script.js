@@ -282,11 +282,25 @@ scrollTop: top
                 return box.top + pageYOffset;
             }
         };
+ 
+})();
+
+(function(){
+
+    var $close = $(".get_free_close");
+    $close.click(function(){
+       $target.css("display", "none"); 
+    });
     
+    var $target = $(".get_free_wrapper");
     
-    
-    
-    
+    function showWindow(event){
+        event.preventDefault();
+        alert("TEST!");
+        $target.css("display", "block"); 
+    };
+    window.onbeforeunload = showWindow;
+
 })();
 
 
