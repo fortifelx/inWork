@@ -1,14 +1,20 @@
 @font-face {
     font-family: Gothic;
-    src: url('../fonts/Gothic.ttf');
+    src: url('../fonts/Century Gothic Std Regular.otf');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: Gothic;
-    src: url('../fonts/GothicB.ttf');
+    src: url('../fonts/Century Gothic Std Bold.ttf');
     font-weight: 700;
     font-style: normal;
+}
+@font-face {
+    font-family: Gothic;
+    src: url('../fonts/Century Gothic Std Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
 }
 @font-face {
     font-family: Anglecia;
@@ -891,7 +897,7 @@ b {
     margin-bottom: 2rem;
 }
 .service-about-header:after {
-    content: url(../img/arrow_d.png);
+    content: url(../img/arrow_light.svg);
     display: inline-block;
     width: 1.6rem;
     height: 1rem;
@@ -902,7 +908,7 @@ b {
     color: rgb(58, 129, 128);
 }
 .service-type-about .about-active:after {
-    content: url(../img/arrow_u.png);
+    content: url(../img/arrow_dark.svg);
 }
 .service-about-wrapper {
     display: inline-block;
@@ -1154,7 +1160,7 @@ b {
     display: inline-block;
 /*    width: 63.5rem;*/
     color: rgb(97, 105, 118);
-    font-family: Anglecia;
+    font-family: Gothic;
     font-size: 1.5rem;
     font-style: italic;
     line-height: 2.5rem;
