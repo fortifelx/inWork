@@ -6,13 +6,13 @@
 }
 @font-face {
     font-family: Gothic;
-    src: url('../fonts/Century Gothic Std Bold.ttf');
+    src: url('../fonts/Century Gothic Std Bold.otf');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: Gothic;
-    src: url('../fonts/Century Gothic Std Italic.ttf');
+    src: url('../fonts/Century Gothic Std Italic.otf');
     font-weight: 400;
     font-style: italic;
 }
