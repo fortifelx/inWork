@@ -201,13 +201,20 @@ header {
   height: 100%;
 }
 .top-connect-btn:hover::before {
-  border-top-color: #000;
-  border-right-color: #000;
+      border-top-color: rgb(76, 203, 202);
+  border-right-color: rgb(76, 203, 202);
+/*  border-top-color: #000;
+  border-right-color: #000;*/
   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
+.some {
+    color: rgb(76, 203, 202);
+}
 .top-connect-btn:hover::after {
-  border-bottom-color: #000;
-  border-left-color: #000;
+      border-bottom-color: rgb(76, 203, 202);
+  border-left-color: rgb(76, 203, 202);
+/*  border-bottom-color: #000;
+  border-left-color: #000;*/
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 .ask-fixed {
@@ -320,6 +327,7 @@ header {
     font-size: 4rem;
     font-weight: 400;
     line-height: 5rem;
+    margin-top: 2rem;
 }
 .about-counter-text {
     margin: 0 1rem;
@@ -898,12 +906,13 @@ b {
     margin-bottom: 2rem;
 }
 .service-about-header:after {
+    position: relative;
     content: url(../img/arrow_light.svg);
     display: inline-block;
     width: 1.6rem;
     height: 1rem;
     margin-left: 1.5rem;
-    margin-bottom: 0.5rem;
+    bottom: 2px;
 }
 .service-type-about .about-active {
     color: rgb(58, 129, 128);
@@ -1298,7 +1307,7 @@ b {
     border-bottom: 1px solid rgb(76, 203, 202);
     overflow: hidden;
     text-align: left;
-    color: rgb(0, 0, 0, 0.3);
+    color: rgb(0, 0, 0);
     font-family: Gothic, sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
@@ -1357,26 +1366,113 @@ b {
 .consult-form button:active {
     background-color: rgb(66, 179, 178);
 }
-.consult-form input::-webkit-input-placeholder,
-.consult-form input[placeholder],
-.consult-form input::-moz-placeholder, 
-.consult-form input:-moz-placeholder,
-.consult-form input:-ms-input-placeholder,
-.consult-form input::placeholder,
-.consult-form textarea::-webkit-input-placeholder,
-.consult-form textarea[placeholder],
-.consult-form textarea::-moz-placeholder, 
-.consult-form textarea:-moz-placeholder,
-.consult-form textarea:-ms-input-placeholder,
-.consult-form textarea::placeholder{
-        opacity: 0.3;
-        color: rgb(0, 0, 0, 0.5);
+.consult-form input::-webkit-input-placeholder {
+/*        opacity: 0.5;*/
+        color: rgba(0, 0, 0, 0.5);
         font-family: Gothic, sans-serif;
         font-size: 1.4rem;
         font-weight: 400;
         line-height: 2.4rem;
 }
-
+ 
+/*.consult-form input[placeholder] {
+        opacity: 0.5;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}*/
+ 
+.consult-form input::-moz-placeholder {
+/*        opacity: 0.5;*/
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}
+ .consult-form input:-moz-placeholder {
+/*        opacity: 0.5;*/
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}
+ 
+.consult-form input:-ms-input-placeholder {
+/*        opacity: 0.5;*/
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}
+ 
+.consult-form input::placeholder {
+/*        opacity: 0.5;*/
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}
+ 
+.consult-form textarea::-webkit-input-placeholder {
+/*        opacity: 0.5;*/
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}
+ 
+/*.consult-form textarea[placeholder] {
+        opacity: 0.5;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}*/
+ 
+.consult-form textarea::-moz-placeholder {
+/*        opacity: 0.5;*/
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}
+  
+.consult-form textarea:-moz-placeholder {
+/*        opacity: 0.5;*/
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}
+ 
+.consult-form textarea:-ms-input-placeholder {
+/*        opacity: 0.5;*/
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}
+ 
+.consult-form textarea::placeholder {
+/*        opacity: 0.5;*/
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Gothic, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+}
+ 
 
 
 /*.consult-form .textarea:after {
@@ -1611,7 +1707,7 @@ b {
     height: 3rem;
     position: absolute;
     cursor: pointer;
-    bottom: 5%;
+    bottom: 10%;
     right: 5%;
     text-decoration: underline;
 }
@@ -1619,7 +1715,7 @@ b {
     display: none;
     width: 4.7rem;
     height: 5rem;
-    bottom: calc(5% - 2rem);
+    bottom: calc(10% - 2rem);
     right: calc(5% - 1.3rem);
     
 }
