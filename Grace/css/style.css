@@ -207,6 +207,7 @@ header {
 .ask-fixed {
     position: fixed;
     bottom: 0;
+    right: 0;
     cursor: pointer;
     box-sizing: border-box;
     padding-left: 4.5rem;
@@ -1362,7 +1363,7 @@ b {
 .consult-form textarea:-ms-input-placeholder,
 .consult-form textarea::placeholder{
         opacity: 0.3;
-        color: rgb(0, 0, 0, 1);
+        color: rgb(0, 0, 0, 0.5);
         font-family: Gothic, sans-serif;
         font-size: 1.4rem;
         font-weight: 400;
