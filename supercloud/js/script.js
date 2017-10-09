@@ -201,6 +201,7 @@ scrollTop: top
                 var secondFix = parseInt($(".main_section_wrapper").css("height"), 10)*1.2;
                 var thirdFix = secondFix + parseInt($(".pay_article_wrapper").css("height"), 10)*1.3;
                 var fourFix = thirdFix + parseInt($(".migrate_article_wrapper").css("height"), 10)*1.6;
+                var screenSize = parseInt($(".main_section_wrapper").css("width"), 10);
                 var pay = $('.pay_article_text'),
                     mig = $('.migrate_article_text'),
                     saf = $('.safe_article_text'),
@@ -241,7 +242,7 @@ scrollTop: top
                     
                 if(scrolled < startFix) stat = true;
                 if(scrolled > startFix) stat = false;
-                                    if(stat === false && pos === "top") {
+                if(stat === false && pos === "top" && screenSize > 500 )  {
                     $menu.addClass(activeClass);
                     pos = "bottom";
                     $menu.css('top', -menuHeigh);
@@ -263,7 +264,7 @@ scrollTop: top
                     
                     
                 if(scrolled > firstFix) {
-//                    piz.velocity({
+//                  piz.velocity({
 //                        top : pizTop*0.6
 //                    }, 2000);
                     pio.velocity({

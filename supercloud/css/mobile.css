@@ -19,9 +19,12 @@
         top: 0rem;
     }
     .main_section_header {
-        margin-top: 10rem;
+        margin-top: 15rem;
         font-size: 3rem;
         line-height: 3.2rem;
+    }
+    .main_section_wrapper {
+        height: 80vh;
     }
     .info_section_wrapper article {
         margin-top: 2rem;
@@ -119,6 +122,9 @@
         line-height: 18px;
         margin-left: 0 !important;
     }
+    .service_section_wrapper {
+        overflow: visible;
+    }
     .service_section_header {
         color: rgb(64, 113, 183) !important;
         font-family: Lato;
@@ -128,6 +134,7 @@
     }
     .service_section_list {
         width: 100%;
+        margin-left: 0;
     }
     .service_price_wrapper {
         position: static;
