@@ -690,6 +690,7 @@ header {
     left: -2.8rem;
     top: 0;
 }
+/*
 .ping_us_pdf:after {
     content: "";
     display: block;
@@ -700,6 +701,7 @@ header {
     width: 100%;
     background-color:rgb(64, 113, 183);
 }
+*/
 footer {
     position: relative;
     width: 100%;
