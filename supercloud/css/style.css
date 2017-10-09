@@ -416,17 +416,17 @@ header {
     position: absolute;
     right: 18rem;
     top: 20rem;
-    transition: transform 90s;
+    transition: transform 15s;
 }
 .ilu_rotate {
-    transform: rotate(10220deg);
+    transform: rotate(1220deg);
 }
 .hel_ilu_zero {
     width: 18rem;
     position: absolute;
     top: 3rem;
     left: 5rem;
-    transition: transform 90s;
+    transition: transform 12s;
 }
 .hel_ilu_one {
     position: absolute;
@@ -441,7 +441,7 @@ header {
     left: -2rem;
 }
 .hel_ilu_rotate {
-    transform: rotate(1800deg);
+    transform: rotate(280deg);
 }
 
 .wor_ilu_zero {
@@ -461,20 +461,20 @@ header {
     position: absolute;
     top: 21rem;
     right: 9rem;
-    transition: transform 8s;
+    transition: transform 6s;
 }
 .wor_ilu_three {
     width: 9rem;
     position: absolute;
     top: 21rem;
     right: 0rem;
-    transition: transform 8s;
+    transition: transform 6s;
 }
 .ilu_rotate_back {
-    transform: rotate(-250deg);
+    transform: rotate(-220deg);
 }
 .ilu_rotate_forward {
-    transform: rotate(350deg);
+    transform: rotate(280deg);
 }
 
 
@@ -619,7 +619,7 @@ header {
 }
 .ping_us_phone {
     margin: 2rem 0;
-    width: 38rem;
+    width: auto;
 }
 .ping_us_email {
     position: relative;
@@ -738,7 +738,7 @@ footer {
 .main_second_decor,
 .main_third_decor,
 .illustration img {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 

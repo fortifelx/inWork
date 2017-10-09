@@ -183,13 +183,13 @@ scrollTop: top
     firstMainDecor.velocity({
         right : fmdRight*0.75,
         top : fmdTop*0.8
-    }, 3000);
+    }, 2000);
     secondMainDecor.velocity({
         right : fmdRight*0.75
-    }, 4000);
+    }, 3000);
     thirdMainDecor.velocity({
         left : tmdLeft*0.75
-    }, 4000);
+    }, 3000);
     });
    
 })();
@@ -268,13 +268,13 @@ scrollTop: top
 //                    }, 2000);
                     pio.velocity({
                         top : pioTop*1.6
-                    }, 2000);
+                    }, 1200);
                     pit.velocity({
                         top : pitTop*0.6
-                    }, 2000);
+                    }, 1200);
                     pih.velocity({
                         top : pihTop*1.6
-                    }, 2000);
+                    }, 1200);
                     pay.addClass('text_show');
                 }
                 if(scrolled > secondFix*0.8) {
@@ -292,10 +292,10 @@ scrollTop: top
                 if(scrolled > fourFix) {
                     wiz.velocity({
                         right : 0
-                    },3000);
+                    },2000);
                     wio.velocity({
                         right : 0
-                    },7000);
+                    },5000);
                     wit.addClass('ilu_rotate_forward');
                     wih.addClass('ilu_rotate_back');
                     wor.addClass('text_show');
