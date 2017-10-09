@@ -205,14 +205,17 @@ header {
     margin: 0 auto;
 }
 .active_header {
-    background-color: rgb(93, 155, 213);
+/*    background-color: rgb(93, 155, 213);*/
     position: fixed;
     z-index: 3;
+    background-color: white;
 }
+/*
 .active_header a,
 .active_header p {
     color: white;
 }
+*/
 .logo {
     float: left;
     width: 16rem;
@@ -615,7 +618,29 @@ header {
 }
 .ping_us_adress {
     width: 21rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+}
+.ping_us_map {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.ping_us_map:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color:rgb(64, 113, 183);
+}
+.map_wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(64, 113, 183, 0.3);
 }
 .ping_us_phone {
     margin: 2rem 0;
