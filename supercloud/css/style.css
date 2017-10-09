@@ -637,10 +637,25 @@ header {
     background-color:rgb(64, 113, 183);
 }
 .map_wrapper {
+    display: none;
+    text-align: center;
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(64, 113, 183, 0.3);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.map {
+    width: 94rem;
+    margin-top: 10vh;
+    display: inline-block;
+    vertical-align: middle;
+}
+.map iframe {
+    width: 94rem;
+    height: 80vh;
 }
 .ping_us_phone {
     margin: 2rem 0;

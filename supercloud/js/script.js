@@ -353,5 +353,16 @@ scrollTop: top
 
 
 })();
-
+(function(){
+    
+    $('.ping_us_map').click(function(){
+        $('.map_wrapper').css("display", "block");
+        
+    });
+    $('.map_wrapper').click(function(e){
+        $(this).css("display", "none");
+    });
+    
+    
+})();
 
