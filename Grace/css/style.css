@@ -991,7 +991,7 @@ b {
     z-index: 1;
 }
 .result-slide-text-one {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     display: inline;
     width: 50%;
     overflow: hidden;
@@ -1004,7 +1004,7 @@ b {
     text-align: right;
 }
 .result-slide-text-two {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     display: inline;
     width: 50%;
     overflow: hidden;
@@ -1014,6 +1014,7 @@ b {
     right: 1px;
     color: rgb(97, 105, 118);
     text-align: left;
+    vertical-align: top;
 }
 .result-slide-img-one,
 .result-slide-img-two {
