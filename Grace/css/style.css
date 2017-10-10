@@ -456,13 +456,13 @@ header {
     font-family: Gothic, sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
 }
 .teamate-text {
     width: 100%;
-    height: 9rem;
+    height: 10rem;
     overflow: hidden;
 }
 .teamate-text-wrapper {
