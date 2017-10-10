@@ -470,7 +470,7 @@ header {
     font-family: Gothic, sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 2.3rem;
+    line-height: 2.5rem;
 }
 .teamate-text-wrapper a {
     color: rgb(97, 105, 118);
@@ -562,6 +562,7 @@ header {
     color: rgb(97, 105, 118);
     font-family: Gothic, sans-serif;
     font-size: 1.5rem;
+    line-height: 2.5rem;
     margin-bottom: 1rem;
 }
 .teamate-expiriance-list li:before {
@@ -607,6 +608,7 @@ header {
     color: rgb(97, 105, 118);
     font-family: Gothic, sans-serif;
     font-size: 1.5rem;
+    line-height: 2.5rem;
     margin-bottom: 1rem;
 }
 .teamate-edu-wrapper {
@@ -1003,7 +1005,7 @@ b {
     z-index: 1;
 }
 .result-slide-text-one {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     display: inline;
     width: 50%;
     overflow: hidden;
@@ -1017,7 +1019,7 @@ b {
     font-family: Gothic, sans-serif;
 }
 .result-slide-text-two {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     display: inline;
     width: 50%;
     overflow: hidden;
@@ -1294,7 +1296,7 @@ b {
     font-family: Gothic, sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 2.3rem;
+    line-height: 2.5rem;
 }
 .consult-required {
     color: rgb(97, 105, 118);
@@ -1734,11 +1736,11 @@ b {
   border-left-color: rgb(76, 203, 202);
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
-.wrapper ul.grace-list {
-}
 .grace-list li {
     position: relative;
     margin-left: 1.6rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 .grace-list li:before {
     position: absolute;
@@ -1757,8 +1759,8 @@ b {
     margin: 0 auto;
     margin-bottom: 5rem;
     color: rgb(97, 105, 118);
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
     font-family: Gothic, sans-serif;
 }
 .sound-btn,
