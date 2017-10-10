@@ -968,9 +968,10 @@ b {
     padding-top: 1rem;    
 }
 .result-slider {
-    width: 94rem;
-    height: 38rem;
+    width: 84rem;
+    height: 61rem;
     overflow: hidden;
+    margin: 0 auto;
 }
 .result-slider-wrapper {
     height: 100%;
@@ -982,18 +983,43 @@ b {
     display: inline-block;
     box-sizing: border-box;
     text-align: center;
-    width: 47rem;
+    width: 84rem;
     height: 100%;
     padding: 1.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     position: relative;
     z-index: 1;
+}
+.result-slide-text-one {
+    font-size: 1.8rem;
+    display: inline;
+    width: 50%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    bottom: -5rem;
+    left: 0;
+    padding-right: 0.6rem;
+    color: rgb(97, 105, 118);
+    text-align: right;
+}
+.result-slide-text-two {
+    font-size: 1.8rem;
+    display: inline;
+    width: 50%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    bottom: -5rem;
+    right: 1px;
+    color: rgb(97, 105, 118);
+    text-align: left;
 }
 .result-slide-img-one,
 .result-slide-img-two {
     position: relative;
-    width: 44rem;
-    height: 32rem;
+    width: 81rem;
+/*    height: 54rem;*/
     text-align: center;
 }
 .result-slide-img-one {
@@ -1004,6 +1030,7 @@ b {
 }
 .result-slide-img-one img,
 .result-slide-img-two img {
+    display: inline-block;
     width: 100%;
     height: 100%;
     position: relative;
@@ -1016,10 +1043,10 @@ b {
     position: absolute;
     left: 0;
     top: 0;
-    width: 43rem;
-    height: 30rem;
-    background-color: rgba(255,255,255,0.4);
-    z-index: 2;
+    width: 81rem;
+    height: 100%;
+    background-color: rgba(255,255,255,0.1);
+    z-index: 5;
     transition: background-color 0.7s;
 }
 .result-slide-img-one:after,
@@ -1027,18 +1054,20 @@ b {
     position: absolute;
     display: block;
     content: "";
-    width: 40rem;
-    height: 28rem;
+    width: 76rem;
+    height: 94%;
     top: 3rem;
     left: 2rem;
     background-color: white;
     box-shadow: 0 1.3rem 4.5rem rgba(54, 57, 63, 0.45);
     transition: box-shadow 0.7s, background-color 0.7s;
 }
+/*
 .result-slide-img-one:hover:before,
 .result-slide-img-two:hover:before {
     background-color: rgba(255,255,255,0.8);
 }
+*/
 .result-slide-img-one:hover:after,
 .result-slide-img-two:hover:after {
     box-shadow: 0 25px 55px rgba(54, 57, 63, 0.25);

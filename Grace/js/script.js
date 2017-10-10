@@ -299,6 +299,7 @@ scrollTop: top
         var slideWidth = $slide.css('width');
         position = position - (parseInt(slideWidth, 10));
         if(position > $viewerWidth-slidesLength*slidesWidth-30 ) {
+            console.log(position);
         $wrapper.velocity({
             marginLeft : position
         }, 600);
