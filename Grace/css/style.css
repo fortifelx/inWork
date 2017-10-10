@@ -12,7 +12,7 @@
 }
 @font-face {
     font-family: Gothic;
-    src: url('../fonts/Century Gothic Std Italic.otf');
+    src: url('../fonts/GOTHICI.ttf');
     font-weight: 400;
     font-style: italic;
 }
@@ -1204,7 +1204,7 @@ b {
     font-size: 1.5rem;
     font-style: italic;
     line-height: 2.5rem;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     margin-left: 8rem;
     padding-top: 6rem;
     letter-spacing: 0.15rem;
