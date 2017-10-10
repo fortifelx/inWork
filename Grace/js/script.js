@@ -669,9 +669,6 @@ scrollTop: top
                 		opacity : 1,
                 		top : 0
                 	}, 600);
-                    $menu.css(
-                        "width" , "100%"
-                    );
                 	$btn.css("display", "inline-block");
                 	pos = "bottom";
                 	$menuLi = $(".top-menu-container li");
@@ -681,10 +678,7 @@ scrollTop: top
                 		"position" : "relative",
                 		"opacity" : "1",
                 		"background-color" : "rgba(255, 255, 255, 0)"
-                	}).insertBefore($(".top-info-text"));
-                    $menu.css(
-                        "width" , "94rem"
-                    );
+                	}).insertBefore($("header"));
                 	$btn.css("display", "none");
                 	pos="top";
                 	$menuLi = $(".top-menu-container li");
