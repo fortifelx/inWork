@@ -1200,7 +1200,7 @@ b {
     display: inline-block;
 /*    width: 63.5rem;*/
     color: rgb(97, 105, 118);
-    font-family: Gothic;
+    font-family: Gothic, sans-serif;
     font-size: 1.5rem;
     font-style: italic;
     line-height: 2.5rem;
