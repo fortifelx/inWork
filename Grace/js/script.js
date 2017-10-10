@@ -598,14 +598,14 @@ scrollTop: top
 	var $trPuncts = $(".service-type-nav li");
 	var $trTexts = $(".service-type-text");
     var $trImages = $(".service-img-block");
-	$($trTexts[2]).css({
+	$($trTexts[0]).css({
 		"display" : "block" ,
 		"opacity" : "1"
 	});
-    $($trImages[2]).css({
-		"display" : "block" ,
-		"opacity" : "1"
-	});
+//    $($trImages[0]).css({
+//		"display" : "block" ,
+//		"opacity" : "1"
+//	});
 	var activeClass = "nav-active";
 	$trPuncts.click(function(){
 		var itElement = this;
@@ -617,16 +617,16 @@ scrollTop: top
 					"display" : "none",
 					"opacity" : 0
 				})
-                $trImages.css({
-					"display" : "none",
-					"opacity" : 0
-				})
+//                $trImages.css({
+//					"display" : "none",
+//					"opacity" : 0
+//				})
  				$($trTexts[i]).css("display", "block").velocity({
 					opacity : 1
 				}, 750);
-                $($trImages[i]).css("display", "block").velocity({
-					opacity : 1
-				}, 750);
+//                $($trImages[i]).css("display", "block").velocity({
+//					opacity : 1
+//				}, 750);
 			} if (this != itElement) {
 				$(this).removeClass(activeClass);
 			}
@@ -681,29 +681,29 @@ scrollTop: top
                 	pos="top";
                 	$menuLi = $(".top-menu-container li");
                 }
-                if(scrolled < punctPosition[0]) {
-                	$(".top-active").removeClass("top-active");
-                }
-                if (punctPosition[0] < scrolled && scrolled < punctPosition[1]) {
-                	$(".top-active").removeClass("top-active");
-                	$($menuLi[0]).addClass("top-active");
-                };
-                if (punctPosition[1] - 200 < scrolled && scrolled < punctPosition[2]) {
-                	$(".top-active").removeClass("top-active");
-                	$($menuLi[1]).addClass("top-active");
-                }
-                if (punctPosition[2] < scrolled && scrolled < punctPosition[3]) {
-                	$(".top-active").removeClass("top-active");
-                	$($menuLi[2]).addClass("top-active");
-                }
-                if (punctPosition[3] < scrolled && scrolled < punctPosition[4] - 300) {
-                	$(".top-active").removeClass("top-active");
-                	$($menuLi[3]).addClass("top-active");
-                }
-                if (punctPosition[4] - 300 < scrolled) {
-                	$(".top-active").removeClass("top-active");
-                	$($menuLi[4]).addClass("top-active");
-                }
+//                if(scrolled < punctPosition[0]) {
+//                	$(".top-active").removeClass("top-active");
+//                }
+//                if (punctPosition[0] < scrolled && scrolled < punctPosition[1]) {
+//                	$(".top-active").removeClass("top-active");
+//                	$($menuLi[0]).addClass("top-active");
+//                };
+//                if (punctPosition[1] - 200 < scrolled && scrolled < punctPosition[2]) {
+//                	$(".top-active").removeClass("top-active");
+//                	$($menuLi[1]).addClass("top-active");
+//                }
+//                if (punctPosition[2] < scrolled && scrolled < punctPosition[3]) {
+//                	$(".top-active").removeClass("top-active");
+//                	$($menuLi[2]).addClass("top-active");
+//                }
+//                if (punctPosition[3] < scrolled && scrolled < punctPosition[4] - 300) {
+//                	$(".top-active").removeClass("top-active");
+//                	$($menuLi[3]).addClass("top-active");
+//                }
+//                if (punctPosition[4] - 300 < scrolled) {
+//                	$(".top-active").removeClass("top-active");
+//                	$($menuLi[4]).addClass("top-active");
+//                }
             function getCoords(elem) {
                 var box = elem.getBoundingClientRect();
                 return box.top + pageYOffset;

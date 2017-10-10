@@ -107,7 +107,7 @@ header {
     position: relative;
     color: rgb(97, 105, 118);
     font-family: "Gothic", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.4rem;
     text-transform: uppercase;
@@ -265,7 +265,7 @@ header {
     overflow: visible;
     position: relative;
     z-index: 3;
-    letter-spacing: 3.7px;
+    letter-spacing: -0.01rem;
     text-transform: uppercase;
 }
 .about-slider {
@@ -540,6 +540,7 @@ header {
     line-height: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
+    letter-spacing: -0.01rem;
 }
 .teamate-expiriance-header:after {
     content: url(../img/arrow_d.png);
@@ -581,6 +582,7 @@ header {
     line-height: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
+    letter-spacing: -0.01rem;
 }
 .teamate-edu-header:after {
     content: url(../img/arrow_d.png);
@@ -680,6 +682,7 @@ b {
     line-height: 2.3rem;
     text-transform: uppercase;
     z-index: 6;
+    letter-spacing: -0.01rem;
 }
 .teamate-say:after,
 .teamate-say:before {
@@ -738,6 +741,7 @@ b {
     font-weight: 400;
     line-height: 5rem;
     text-transform: uppercase;
+    letter-spacing: -0.01rem;
 }
 .service-text {
     color: rgb(0, 0, 0);
@@ -838,6 +842,7 @@ b {
     line-height: 3rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
+    letter-spacing: -0.01rem;
 }
 .service-type-info {
     width: 100%;
@@ -904,6 +909,7 @@ b {
     height: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
+    letter-spacing: -0.01rem;
 }
 .service-about-header:after {
     position: relative;
@@ -966,6 +972,7 @@ b {
     text-transform: uppercase;
     margin-bottom: 2.8rem;
     padding-top: 1rem;    
+    letter-spacing: -0.01rem;
 }
 .result-slider {
     width: 84rem;
@@ -1134,6 +1141,7 @@ b {
     line-height: 5rem;
     text-transform: uppercase;
     margin-top: 6rem;
+    letter-spacing: -0.01rem;
 }
 .clients-slider-wrapper {
     position: relative;
@@ -1207,7 +1215,7 @@ b {
 /*    text-transform: uppercase;*/
     margin-left: 8rem;
     padding-top: 6rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: -0.01rem;
 }
 .client-slide-name {
     float: right;
@@ -1260,6 +1268,7 @@ b {
     line-height: 5rem;
     text-transform: uppercase;
     margin-top: 10rem;
+    letter-spacing: 0.01rem;
 }
 .consult-form-container {
     margin-top: 5rem;
@@ -1301,6 +1310,7 @@ b {
     line-height: 2.5rem;
     color: rgb(0, 0, 0);
     font-weight: 700;
+    letter-spacing: 0.01rem;
 }
 .contacts-info, .adress-info {
     width: 100%;
@@ -1728,6 +1738,7 @@ b {
     color: rgb(97, 105, 118);
     font-size: 1.6rem;
     line-height: 2.4rem;
+    font-family: Gothic, sans-serif;
 }
 .sound-btn,
 .mute-btn {
@@ -1735,7 +1746,7 @@ b {
     display: block;
     width: 3rem;
     height: 3rem;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     bottom: 10%;
     right: 5%;
