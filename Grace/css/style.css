@@ -260,12 +260,12 @@ header {
     font-weight: 400;
     line-height: 5rem;
     word-wrap: normal;
-    width: 75rem;
+    width: 78rem;
     margin-bottom: 2rem;
     overflow: visible;
     position: relative;
     z-index: 3;
-    letter-spacing: -0.01rem;
+    letter-spacing: 0.4rem;
     text-transform: uppercase;
 }
 .about-slider {
@@ -360,6 +360,7 @@ header {
     line-height: 5rem;
     text-transform: uppercase;
     margin-bottom: 3.5rem;
+    letter-spacing: 0.4rem;
 }
 .grace-is-container {
     display: flex;
@@ -411,6 +412,7 @@ header {
     line-height: 5rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
+    letter-spacing: 0.4rem;
 }
 .our-team-counter {
     display: inline-block;
@@ -543,12 +545,13 @@ header {
     letter-spacing: -0.01rem;
 }
 .teamate-expiriance-header:after {
-    content: url(../img/arrow_d.png);
+    content: url(../img/arrow_light.svg);
     display: inline-block;
     position: absolute;
     width: 1.5rem;
     height: 1rem;
     left: 13rem;
+    top: 1px;
 }
 .teamate-expiriance-list {
     padding-left: 2rem;
@@ -585,18 +588,19 @@ header {
     letter-spacing: -0.01rem;
 }
 .teamate-edu-header:after {
-    content: url(../img/arrow_d.png);
+    content: url(../img/arrow_light.svg);
     display: inline-block;
     position: absolute;
     width: 1.5rem;
     height: 1rem;
     left: 13rem;
+    top: 1px;
 }
 .t-active {
     color: rgb(58, 129, 128);
 }
 .t-active:after {
-    content: url(../img/arrow_u.png);
+    content: url(../img/arrow_dark.svg);
 }
 .teamate-edu-text {
     position: relative;
@@ -682,7 +686,7 @@ b {
     line-height: 2.3rem;
     text-transform: uppercase;
     z-index: 6;
-    letter-spacing: -0.01rem;
+    letter-spacing: 0.1rem;
 }
 .teamate-say:after,
 .teamate-say:before {
@@ -741,7 +745,7 @@ b {
     font-weight: 400;
     line-height: 5rem;
     text-transform: uppercase;
-    letter-spacing: -0.01rem;
+    letter-spacing: 0.4rem;
 }
 .service-text {
     color: rgb(0, 0, 0);
@@ -781,6 +785,7 @@ b {
     line-height: 2.5rem;
     margin-bottom: 7.5rem;
     text-transform: uppercase;
+    letter-spacing: 0.15rem;
 }
 .service-type-nav li:last-child {
     margin-bottom: 0;
@@ -842,7 +847,7 @@ b {
     line-height: 3rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
-    letter-spacing: -0.01rem;
+    letter-spacing: 0.4rem;
 }
 .service-type-info {
     width: 100%;
@@ -972,7 +977,7 @@ b {
     text-transform: uppercase;
     margin-bottom: 2.8rem;
     padding-top: 1rem;    
-    letter-spacing: -0.01rem;
+    letter-spacing: 0.4rem;
 }
 .result-slider {
     width: 84rem;
@@ -1141,7 +1146,7 @@ b {
     line-height: 5rem;
     text-transform: uppercase;
     margin-top: 6rem;
-    letter-spacing: -0.01rem;
+    letter-spacing: 0.4rem;
 }
 .clients-slider-wrapper {
     position: relative;
@@ -1268,7 +1273,7 @@ b {
     line-height: 5rem;
     text-transform: uppercase;
     margin-top: 10rem;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0.4rem;
 }
 .consult-form-container {
     margin-top: 5rem;
@@ -1529,11 +1534,25 @@ b {
 .wrapper .top-menu {
     width: 94rem;
 }
+.top-menu {
+    max-width: 1280px;
+    display: inline-block;
+}
+.top-menu-wrapper {
+    width: 100%;
+    text-align: center;
+}
 .wrapper .top-menu-container {
-    float: left;
-    margin-left: 10rem;
+
+    margin-right: 10rem;
     overflow: hidden;
     margin-top: 2rem;
+}
+.wrapper .menu-connect-btn {
+    margin-right: 2.5rem;
+}
+.wrapper .logo {
+    margin-left: 2.5rem;
 }
 .menu-connect-btn {
     display: none;

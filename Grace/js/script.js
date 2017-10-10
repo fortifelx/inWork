@@ -636,6 +636,7 @@ scrollTop: top
 (function(){	var startFix = parseInt($(".main-white-filter").css("height"), 10);
 				var $btn = $(".menu-connect-btn");
 				var $menu = $(".top-menu");
+                var $menuWrapper = $(".top-menu-wrapper");
 				var menuHeight = "-"+parseInt($menu.css("height"), 10)+"px";
 				var $menuLi = $(".top-menu-container li");
 	           	var $menuList = $(".top-menu-container li a");
@@ -657,26 +658,33 @@ scrollTop: top
                 if(scrolled < startFix) stat = true;
                 if(scrolled > startFix) stat = false;
                 if(stat === false && pos === "top") {
-                	$menu.css({
+                	$menuWrapper.css({
                 		"position" : "fixed",
                 		"top" : menuHeight,
                 		"opacity" : "0",
                 		"background-color" : "rgba(255, 255, 255, 0.9)",
-                		"z-index" : "20"
+                		"z-index" : "20",
+                        "left" : "0"
                 	}).insertAfter($(".consult")).velocity({
                 		opacity : 1,
                 		top : 0
                 	}, 600);
+                    $menu.css(
+                        "width" , "100%"
+                    );
                 	$btn.css("display", "inline-block");
                 	pos = "bottom";
                 	$menuLi = $(".top-menu-container li");
                 }
                 if(stat === true && pos === "bottom") {
-                	$menu.css({
+                	$menuWrapper.css({
                 		"position" : "relative",
                 		"opacity" : "1",
                 		"background-color" : "rgba(255, 255, 255, 0)"
                 	}).insertBefore($(".top-info-text"));
+                    $menu.css(
+                        "width" , "94rem"
+                    );
                 	$btn.css("display", "none");
                 	pos="top";
                 	$menuLi = $(".top-menu-container li");
