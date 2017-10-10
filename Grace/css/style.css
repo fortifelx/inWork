@@ -1,12 +1,12 @@
 @font-face {
     font-family: Gothic;
-    src: url('../fonts/Century Gothic Std Regular.otf');
+    src: url('../fonts/Gothic.ttf');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: Gothic;
-    src: url('../fonts/Century Gothic Std Bold.otf');
+    src: url('../fonts/GothicB.ttf');
     font-weight: 700;
     font-style: normal;
 }
@@ -1579,13 +1579,13 @@ b {
   height: 100%;
 }
 .menu-connect-btn:hover::before {
-  border-top-color: #000;
-  border-right-color: #000;
+  border-top-color: rgb(76, 203, 202);
+  border-right-color: rgb(76, 203, 202);
   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 .menu-connect-btn:hover::after {
-  border-bottom-color: #000;
-  border-left-color: #000;
+  border-bottom-color: rgb(76, 203, 202);
+  border-left-color: rgb(76, 203, 202);
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 .top-menu-container .top-active {
@@ -1694,13 +1694,13 @@ b {
   height: 100%;
 }
 .serv-connect-btn:hover::before {
-  border-top-color: #000;
-  border-right-color: #000;
+  border-top-color: rgb(76, 203, 202);
+  border-right-color: rgb(76, 203, 202);
   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 .serv-connect-btn:hover::after {
-  border-bottom-color: #000;
-  border-left-color: #000;
+  border-bottom-color: rgb(76, 203, 202);
+  border-left-color: rgb(76, 203, 202);
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 .wrapper ul.grace-list {
