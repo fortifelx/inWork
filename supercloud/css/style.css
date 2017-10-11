@@ -279,8 +279,64 @@ header {
     width: 65rem;
     right: -50rem;
     top: 39vh;
-    transform: rotate(180deg);
 }
+.main_subdecor_one,
+.main_subdecor_two,
+.main_subdecor_three {
+    position: absolute;
+    width: 5rem;
+    transition: transform 5s;
+}
+.main_subdecor_three {
+    transition: transform 7s;
+}
+.subdecor_rotate {
+    transform: rotate(-760deg);
+}
+.subdecor_rotate_two {
+    transform: rotate(-560deg);
+}
+.main_subdecor_one {
+    top: 60vh;
+    right: 14rem;
+}
+.main_subdecor_two {
+    top: 75vh;
+    right: -5rem;
+}
+.main_subdecor_three {
+    top: 90vh;
+    right: 7rem;
+}
+.main_subdecor_four,
+.main_subdecor_five,
+.main_subdecor_six,
+.main_subdecor_seven {
+    width: 55rem;
+    position: absolute;
+}
+.main_subdecor_four {
+    right: -50rem;
+}
+.main_subdecor_five {
+    right: -50rem;
+    top: 57vh;
+    width: 40rem;
+}
+.main_subdecor_six {
+    width: 50rem;
+    right: -45rem;
+    top: 82vh;
+}
+.main_subdecor_seven {
+    width: 40rem;
+    right: -45rem;
+    top: 97vh;
+}
+
+
+
+
 .main_third_decor {
     position: absolute;
     left: -65rem;

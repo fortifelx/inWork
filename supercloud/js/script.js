@@ -179,6 +179,7 @@ scrollTop: top
     var fmdTop = parseInt(firstMainDecor.css('top'), 10); 
     var smdRight = parseInt(secondMainDecor.css('right'), 10);
     var tmdLeft = parseInt(thirdMainDecor.css('left'), 10);
+        
     
     firstMainDecor.velocity({
         right : fmdRight*0.75,
@@ -190,7 +191,41 @@ scrollTop: top
     thirdMainDecor.velocity({
         left : tmdLeft*0.75
     }, 3000);
+        
+        var $mso = $('.main_subdecor_one'),
+            $mst = $('.main_subdecor_two'),
+            $msh = $('.main_subdecor_three'),
+            $msf = $('.main_subdecor_four'),
+            $msv = $('.main_subdecor_five'),
+            $mss = $('.main_subdecor_six'),
+            $msn = $('.main_subdecor_seven');
+        
+        var $msfRight = parseInt($msf.css('right'), 10),
+            $msvRight = parseInt($msv.css('right'), 10),
+            $mssRight = parseInt($mss.css('right'), 10),
+            $msnRight = parseInt($msn.css('right'), 10);
+        
+    $mso.addClass('subdecor_rotate');
+    $mst.addClass('subdecor_rotate_two');
+    $msh.addClass('subdecor_rotate');
+        
+        
+    $msf.velocity({
+        right : $msfRight*0.4
+    }, 3800);
+    $msv.velocity({
+        right : $msvRight*0.6
+    }, 4200);
+    $mss.velocity({
+        right : $mssRight*0.4
+    }, 3000);
+    $msn.velocity({
+        right : $msnRight*0.4
+    }, 5000);
+        
+        
     });
+    
    
 })();
 

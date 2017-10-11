@@ -14,6 +14,15 @@
     .main_third_decor {
         display: none;
     }
+    .main_subdecor_one,
+    .main_subdecor_two,
+    .main_subdecor_three,
+    .main_subdecor_four,
+    .main_subdecor_five,
+    .main_subdecor_six,
+    .main_subdecor_seven {
+        display: none;
+}
     .main_second_decor {
         left: 10rem;
         top: 0rem;
