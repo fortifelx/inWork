@@ -506,8 +506,22 @@ header {
     margin: 3.5rem 5rem 4.5rem 0;
 }
 .teamate-years-img {
-    height: 3rem;
-    margin-bottom: 1.5rem;
+    height: 4.2rem;
+    margin-bottom: 1rem;
+}
+.teamate-operation-img,
+.teamate-years-img {
+    display: inline-block;
+    font-size: 3.6rem;
+    font-weight: 600;
+    background: linear-gradient(20deg, rgb(70,130,180) 10%, rgb(255,192,203));
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    color: rgb(76, 203, 202);
 }
 .teamate-years-text {
     width: 19rem;
@@ -521,8 +535,8 @@ header {
     display: inline-block;
 }
 .teamate-operation-img {
-    height: 3rem;
-    margin-bottom: 1.5rem;
+    height: 4.2rem;
+    margin-bottom: 1rem;
 }
 .teamate-operation-text {
     width: 19rem;
