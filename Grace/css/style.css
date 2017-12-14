@@ -1574,6 +1574,7 @@ b {
 }
 .menu-connect-btn {
     display: none;
+    text-decoration: none;
     cursor: pointer;
     position: relative;
     box-sizing: border-box;
@@ -1593,6 +1594,9 @@ b {
     transition: color 0.7s;
     padding: 1px 2px;
 
+}
+.menu-connect-btn:active {
+    text-decoration: none;
 }
 .menu-connect-btn::before, .menu-connect-btn::after {
   box-sizing: inherit;
