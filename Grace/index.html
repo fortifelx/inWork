@@ -12,8 +12,11 @@
 	<body>
 	<div class="m-wrapper">
 	<div class="video-wrapper">
-	<video autoplay="autoplay" loop="loop" preload="auto" class="main-img-wrapper">
-	    <source src="img/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    <div id="video-img">
+       <img src="img/icon_flow.svg" alt="">
+    </div>
+	<video autoplay="autoplay" loop="loop" preload="auto" class="main-img-wrapper" id="video" data-video="img/video.mp4">
+<!-- 	    <source src="img/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> -->
 	</video>
 	</div>
 	<div class="main-white-filter"></div>
@@ -24,7 +27,7 @@
            <a href="" class="logo">
                <img src="img/Grace_logo.svg" alt="Grace logo">
            </a>
-           <a href="#contacts" class="menu-connect-btn">
+           <a href="#contacts" class="menu-connect-btn des-hidden">
            Связаться
            </a>
            <ul class="top-menu-container">
@@ -42,18 +45,21 @@
       
 <!--       /TOP MENU -->
       
-       <p class="top-info-text">
+       <p class="top-info-text mob-hidden des-hidden">
            Центр эстетической 
             и&nbsp;реконструктивной 
             хирургии GRACE
        </p>
+       <p class="top-info-text mob-hidden mob-show">
+           Пластика лица в центре хирургии Grace
+       </p>
        <div class="top-connect-btn">
            Связаться
        </div>
-       <div class="sound-btn">
+       <div class="sound-btn des-hidden">
            <img src="img/sound/sound.svg" alt="">
        </div>
-       <div class="mute-btn">
+       <div class="mute-btn des-hidden">
            <img src="img/sound/mute.svg" alt="">
        </div>
     </header>
@@ -104,19 +110,20 @@
 <!--    К А К   П Р О Х О Д И Т   О П Е Р А Ц И Я -->
    
     <div class="grace-is">
-        <p class="grace-is-header">Как проходит операция в GRACE</p>
+        <p class="grace-is-header">Как проходит операция в GRACE<span class="mob-hidden-inline">?</span></p>
         <div class="grace-is-container">
             <div class="grace-is-punct">
-                <p class="grace-is-text">Пациенты GRACE в обязательном порядке проходят <b>полное и максимально детальное обследование</b> перед операцией по пластике лица и шеи.</p>
+                <p class="grace-is-text">
+                  <img src="img/Icon3.svg" alt="">Пациенты GRACE в обязательном порядке проходят <b>полное и максимально детальное обследование</b> перед операцией по пластике лица и шеи.</p>
             </div>
             <div class="grace-is-punct">
-                <p class="grace-is-text">Операции на лице и шее проводятся с помощью <b>высокотехнологичного медицинского оборудования</b> немецкого качества, а также современного и высококачественного шовного материала.</p>
+                <p class="grace-is-text"><img src="img/eye-close.svg" alt="">Операции на лице и шее проводятся с помощью <b>высокотехнологичного медицинского оборудования</b> немецкого качества, а также современного и высококачественного шовного материала.</p>
             </div>
             <div class="grace-is-punct">
-                <p class="grace-is-text"><b>Наркоз проводит один из&nbsp;лучших анестезиологов-реаниматологов Украины</b> с&nbsp;более чем 35-летним опытом, который использует самые качественные и&nbsp;наимение токсичные препараты.</p>
+                <p class="grace-is-text"><img src="img/triangle.svg" alt=""><b>Наркоз проводит один из&nbsp;лучших анестезиологов-реаниматологов Украины</b> с&nbsp;более чем 35-летним опытом, который использует самые качественные и&nbsp;наимение токсичные препараты.</p>
             </div>
             <div class="grace-is-punct">
-                <p class="grace-is-text"><b>Интраоперационное second opinion</b> обеспечивается тем, что ассистентом оперируюшего хирурга во время операции на лице и шее выступает квалифицированый врач, а не стажер или медсестра.</p>
+                <p class="grace-is-text"><img src="img/two-triangle.svg" alt=""><b>Интраоперационное second opinion</b> обеспечивается тем, что ассистентом оперируюшего хирурга во время операции на лице и шее выступает квалифицированый врач, а не стажер или медсестра.</p>
             </div>
         </div>
         </div>
@@ -138,7 +145,7 @@
 <!--               С П И С О К   У С Л У Г       -->
                
                 <div class="service-type">
-                    <ul class="service-type-nav">
+                    <ul class="service-type-nav des-hidden">
                         <li  class="nav-active">Подтяжка лица (фейслифтинг)</li>
                         <li>Пластика век (БЛЕФАРОПЛАСТИКА)</li>
                         <li>Коррекция ушных раковин (отопластика)</li>
@@ -146,8 +153,19 @@
                         <li>Пластика скул (малярпластика)</li>
                         <li>Пластика подпоробка (ментопластика)</li>
                     </ul>
+
+<!--            ПОДТЯЖКА ЛИЦА   -->
+
+<section class="service-slider">
+  
+
                     <div class="service-type-text">
                         <p class="service-type-header">Подтяжка лица <br>(фейслифтинг)</p>
+<div class="service-slider-counter mob-hidden">
+   <span class="service-l-arrow">←</span>
+       <span class="service-counter-text">3/5</span>
+   <span class="service-r-arrow">→</span>
+</div>
                         <p class="service-type-info">
 Подтяжка лица является одной из самых распространенных пластических операций в мире. Если некоторые недостатки фигуры можно спрятать, удачно подобрав наряд, то с возрастными дефектами лица справится только пластика. В ассортименте пластических операций есть фейслифтинг – хирургическая подтяжка лица, которая способна не только удалить самые глубокие морщины, но и вернуть потерянные черты и форму.
                        <span>
@@ -258,6 +276,11 @@
                         <div class="service-type-text">
                         <p class="service-type-header">Платиска век <br>
                         (Блефаропластика)</p>
+                        <div class="service-slider-counter mob-hidden">
+   <span class="service-l-arrow">←</span>
+       <span class="service-counter-text">3/5</span>
+   <span class="service-r-arrow">→</span>
+</div>
                         <p class="service-type-info">
 Выразительный взгляд считается самой эффектной чертой лица. Но мягкие ткани вокруг глаз со временем испытывают большие изменения, что сопровождается появлением морщин, потерей эластичности кожи. Блефаропластика – это коррекция верхних и нижних век. Удаление недостатков зоны глаз способствуют улучшению эстетики Вашего лица, возвращают молодость и естественную красоту. С помощью современных технологий, пластические хирурги центра GRACE выполняют коррекцию дефектов, качественно устраняют «мешки» под глазами, морщины и растяжки.
                         </p>
@@ -359,6 +382,11 @@
                         <div class="service-type-text">
                         <p class="service-type-header">Коррекция ушных раковин <br>
                         (отопластика)</p>
+                        <div class="service-slider-counter mob-hidden">
+   <span class="service-l-arrow">←</span>
+       <span class="service-counter-text">3/5</span>
+   <span class="service-r-arrow">→</span>
+</div>
                         <div class="service-type-info">
                         <span>
                             Отопластика – это хирургический способ устранения врожденных и приобретенных дефектов ушных раковин. Проводится в случае чрезмерно больших/маленьких ушных раковин, лопоухости, некрасивой форме, а также при частичном или полном отсутствии наружной части слухового органа. Коррекция выполняется в двух направлениях: эстетической (в основном с целью исправления недостатков) и реконструктивной (восстановление ушной раковины).
@@ -500,6 +528,11 @@
                     <div class="service-type-text">
                         <p class="service-type-header">Подтяжка шеи <br>
                         (платизмопластика)</p>
+                        <div class="service-slider-counter mob-hidden">
+   <span class="service-l-arrow">←</span>
+       <span class="service-counter-text">3/5</span>
+   <span class="service-r-arrow">→</span>
+</div>
                         <p class="service-type-info">
                             <span>
                                 В погоне за вечной молодостью, женщины зачастую забывают о возрастных изменениях шеи, которые могут выдать её настоящий возраст. Эстетическая медицина нашла эффективное решение проблемы обвисшей кожи и мягких тканей в зоне подбородка и шеи. Платизмопластика – направление пластической хирургии, которое занимается коррекцией проблем в данной области. Устранение дряблости кожи и мышц, разглаживание морщин, удаление двойного подбородка, коррекция угла наклона нижней части лица, возвращение упругости и естественной красоты является конечным результатом успешной подтяжки шеи. В Центре GRACE после предварительной консультации у ведущих пластических хирургов, специализирующихся сугубо на пластике области лица и шеи, Вы сможете усовершенствовать свою внешность.
@@ -640,6 +673,11 @@
                     <div class="service-type-text">
                         <p class="service-type-header">пластика скул <br>
                         (малярпластика)</p>
+                        <div class="service-slider-counter mob-hidden">
+   <span class="service-l-arrow">←</span>
+       <span class="service-counter-text">3/5</span>
+   <span class="service-r-arrow">→</span>
+</div>
                         <p class="service-type-info">
                             <span>
                                 Отточенные скулы являются ключевым элементом в создании эффектного образа. Эта черта придает лицу большей рельефности, привлекательности. Сегодня каждый желающий может усовершенствовать свой внешний вид, и сделать себе выразительные скулы, используя возможности пластической хирургии. Изменение размеров и формы скуловой кости и области Биша не составляет проблем для узкоспециализированных хирургов Центра GRACE
@@ -728,6 +766,11 @@
                     
                     <div class="service-type-text">
                         <p class="service-type-header">Пластика подбородка <br>(ментопластика)</p>
+                        <div class="service-slider-counter mob-hidden">
+   <span class="service-l-arrow">←</span>
+       <span class="service-counter-text">3/5</span>
+   <span class="service-r-arrow">→</span>
+</div>
                         <p class="service-type-info">
                        <span>
                            Пластика подбородка (ментопластика) – направление пластической хирургии, целью которой является устранение дефектов нижней части лица. Операция выполняется в случаях: асимметрического подбородка, посттравматических и врожденных дефектов или при желании пациента изменить размеры и форму. Даже коррекция угла наклона нижней части лица существенно влияет на его общий вид, не говоря уже про красивую и гармоничную форму. Использование имплантов для увеличения подбородка и коррекции его формы существенно упростило задачу для хирургов и пациентов.
@@ -809,6 +852,7 @@
                            Записатся на консультацию
                         </div>                       
                     </div>
+  </section>
 <!--                          Изображения к описаниям услуг в аналогичном порядке   -->
 <!--
                     <div class="service-img-wrapper">       
@@ -889,7 +933,7 @@
                <div class="our-team-slide-container">
                <!--              ПЕРВЫЙ СЛАЙД -->
                 <div class="our-team-slider-text">
-                    <p class="teamate-name">
+                    <p class="teamate-name  des-hidden">
                         ЕВГЕНИЙ ГЕОРГИЕВИЧ ДОНЕЦ
                     </p>
                     <div class="teamate-text">
@@ -934,7 +978,7 @@
 <!--                   ВТОРОЙ СЛАЙД -->
                    
                    <div class="our-team-slider-text">
-                    <p class="teamate-name">
+                    <p class="teamate-name des-hidden">
                         ВАДИМ ФЕДОРОВИЧ СИМОНОВ
                     </p>
                     <div class="teamate-text">
@@ -989,7 +1033,7 @@
 <!--                   ТРЕТИЙ СЛАЙД -->
                    
                     <div class="our-team-slider-text">
-                    <p class="teamate-name">
+                    <p class="teamate-name des-hidden">
                         АНАТОЛИЙ ИВАНОВИЧ КОЖАН
                     </p>
                     <div class="teamate-text">
@@ -1037,16 +1081,25 @@
                   <div class="our-team-slider-img-wrapper">
                     <div class="team-img-slide">
                         <img src="img/1.jpg" alt="" class="teamate-photo">
-                        <p class="teamate-say">Основа доверия и взаимопонимания врача и пациента — честное 
+                        <p class="mob-teamate-name mob-hidden">
+                          Евгений Георгиевич Донец
+                        </p>
+                        <p class="teamate-say des-hidden">Основа доверия и взаимопонимания врача и пациента — честное 
                         и добросовестное отношение. Только в этом случае будет хороший результат.</p>
                     </div>
                     <div class="team-img-slide">
                         <img src="img/2.jpg" alt="" class="teamate-photo">
-                        <p class="teamate-say">Мелочей в хирургии нет! Все должно быть учтено для гарантированного результата!</p>
+                        <p class="mob-teamate-name mob-hidden">
+                          Вадим Федорович Симонов
+                        </p>
+                        <p class="teamate-say des-hidden">Мелочей в хирургии нет! Все должно быть учтено для гарантированного результата!</p>
                     </div>
                     <div class="team-img-slide">
                         <img src="img/3.jpg" alt="" class="teamate-photo">
-                        <p class="teamate-say">Эффективная и безопасная анестезия – важные составляющие успешной операции.</p>
+                        <p class="mob-teamate-name mob-hidden">
+                          Анатолий Иванович Кожан
+                        </p>
+                        <p class="teamate-say des-hidden">Эффективная и безопасная анестезия – важные составляющие успешной операции.</p>
                     </div>
                     </div>
                 </div>
@@ -1280,7 +1333,7 @@
                 </div>
             </div>
             </div>
-       <div class="ask-fixed">
+       <div class="ask-fixed des-hidden">
            Задать вопрос
        </div>
 	</div>

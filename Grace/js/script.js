@@ -723,6 +723,9 @@ scrollTop: top
 (function(){
     var $showMore = $(".teamate-text-more");
     var zeroHeight = '9rem';
+    if(window.innerWidth <= 768) {
+        zeroHeight = '12rem';
+    }
     var activeClass = "open-text";
     $showMore.click(function(e){
         var $target = $(e.currentTarget);
@@ -781,4 +784,131 @@ scrollTop: top
     });
     });
     
+})();
+(function(){
+        var $video = $("#video");
+        window.onload = function(){
+        if(window.innerWidth >= 768) {
+
+            $source = $video.attr('data-video');
+            $image = $video.attr('data-image');
+            var $text = "<source id='first_source' src='' type='video/mp4'>";
+            document.getElementById('video').innerHTML = $text;
+            $("#first_source").attr('src' , $source);
+            $("#video_img").css("display", "none");
+    var video = $('#video')[0];
+    if(video) {
+        video.addEventListener('canplay', function(e) {
+            this.volume = 0.4;
+            video.play();
+        });
+    }
+}
+}
+})();
+(function(){
+    
+
+(function( $ ) {
+  $.fn.fortySlider = function(time, lArrow, rArrow, counter, seperator, method) {
+
+    var $slides = this.children();
+      if($slides.length === 1) {
+          $(counter).parent().css("display" , "none");
+          return;
+      };
+    var viewWidth = parseInt(this.css('width'), 10) ;
+    $slides.css({
+        "position" : "absolute",
+        "left"     : -viewWidth,
+        "visibility"  : "hidden",
+        "opacity"     : "0",
+        "display" : "block"
+    });
+    $($slides[0]).css({
+        "position" : "relative",
+        "left"     : "0",
+        "visibility"  : "visible",
+        "opacity"     : "1"
+    });
+    $($slides[$slides.length-1]).css({
+        "left"     : viewWidth,
+    });
+
+    var $lArrow = $(lArrow);
+    var $rArrow = $(rArrow);
+    var $seperator = seperator ? seperator : "/";
+
+    var i = 0;
+    var $count = (i+1) + $seperator + $slides.length;
+    var $counter = $(counter).html($count);
+    var $current;
+    var $next;
+
+    function showSlide() {
+        $current = $($slides[i]);
+        if(this == $lArrow[i]) {
+            $current.velocity({
+                "opacity" : 0
+            }, time);
+            setTimeout(function(){
+                $current.css({
+                    "position" : "absolute",
+                    "left" : viewWidth,
+                    "visibility" : "hidden"
+                })
+            }, time);
+            --i;
+            if(i === -1) i = $slides.length - 1;
+            $next = $($slides[i]);
+            setTimeout(function(){
+            $next.css({
+                    "position" : "relative",
+                    "left" : 0,
+                    "visibility" : "visible"
+                }).velocity({
+                opacity : 1,
+            }, time);
+                }, time);
+        }
+        if(this == $rArrow[i]) {
+            $current.velocity({
+                "opacity" : 0
+            }, time);
+            setTimeout(function(){
+                $current.css({
+                    "position" : "absolute",
+                    "left" : -viewWidth,
+                    "visibility" : "hidden"
+                })
+            }, time);
+            ++i;
+            if(i === $slides.length) i = 0;
+            $next = $($slides[i]);
+            setTimeout(function(){
+            $next.css({
+                    "position" : "relative",
+                    "left" : 0,
+                    "visibility" : "visible"
+                }).velocity({
+                opacity : 1,
+            }, time);
+                }, time);
+        }
+        $count = (i+1) + $seperator + $slides.length;
+        $counter = $(counter).html($count);
+    }
+    $lArrow.click(showSlide);
+    $rArrow.click(showSlide);
+
+      return this.each(function() {
+            var $this  = $(this);
+        });
+
+  };
+})(jQuery);
+if(window.innerWidth <= 768) {
+
+$(".service-slider").fortySlider(400, '.service-l-arrow', '.service-r-arrow', '.service-counter-text');
+}
 })();
