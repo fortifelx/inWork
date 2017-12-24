@@ -915,3 +915,36 @@ if(window.innerWidth <= 768) {
 $(".service-slider").fortySlider(400, '.service-l-arrow', '.service-r-arrow', '.service-counter-text');
 }
 })();
+(function(){
+    function showMenu(){
+           var closeClass = 'active-close';
+    var menuClass = 'active-menu';
+    var status = false;
+
+    $(".menu-close").click(function(){
+        if(status) {
+            $(".top-menu-container").removeClass(menuClass);
+            $(".menu-close").removeClass(closeClass);
+            status = false;
+        } else {
+            $(".top-menu-container").addClass(menuClass);
+            $(".menu-close").addClass(closeClass);
+            status = true;
+        }
+    });
+    $('.top-menu-container li').click(function(){
+        $(".top-menu-container").removeClass(menuClass);
+            $(".menu-close").removeClass(closeClass);
+            status = false;
+        });
+
+    
+
+
+
+
+    }
+
+showMenu();
+
+})();
