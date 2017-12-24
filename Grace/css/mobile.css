@@ -16,6 +16,9 @@
 	.des-hidden {
     display: none;
 }
+.mob-hidden-dis-inl {
+display: inline-block;
+	}
 	.top-menu-wrapper {
 /*		position: absolute;*/
 		padding-top: 2rem;
@@ -304,6 +307,139 @@ display: inline-block !important;
 	}
 	.teamate-text-wrapper {
 		line-height: 2.4rem;
+	}
+	.results-header {
+		font-size: 2.6rem;
+		letter-spacing: 2.6px;
+		line-height: 3.6rem;
+		text-align: left;
+	}
+	.atention {
+		width: 100%;
+		text-align: left;
+	}
+	.result-slider {
+		width: 28rem;
+		height: 27rem;
+	}
+	.result-slide {
+		width: 28rem;
+		padding: 0 0 6rem 0;
+	}
+	.result-slide-img-one {
+		width: 28rem;
+	}
+	.result-slide-img-one:before {
+		width: 28rem;
+	}
+	.result-slide-img-one:after {
+		width: 18rem;
+		height: 16rem;
+		top: 1rem;
+		left: 4rem;
+	}
+	.result-slide-text-one {
+		width: 100%;
+	}
+	.result-slide-text-two {
+		bottom: -7.5rem;
+	}
+	.result-slide-text-one,
+	.result-slide-text-two {
+		width: 100%;
+		text-align: left;
+	}
+	.result-slide-text-one span,
+	.result-slide-text-two span {
+		display: none;
+	}
+	.results-slider-counter {
+		font-size: 2.6rem;
+	}
+	.results-counter-text {
+		margin: 0 7rem;
+	}
+	.results-l-arrow,
+	.results-r-arrow {
+		font-size: 5rem;
+		line-height: 4.5rem;
+	}
+	.clients-header {
+		font-size: 2.6rem;
+		letter-spacing: 2.6px;
+		line-height: 3.6rem;
+		text-align: left;
+	}
+	.clients-slider {
+		width: 28rem;
+		height: auto;
+	}
+	.client-slide {
+		width: 28rem;
+		height: auto;
+	}
+	.client-slide-text {
+		margin-left: 0;
+	}
+	.clients-slider-counter {
+		font-size: 2.6rem;
+	}
+	.clients-counter-text {
+		margin: 0 7rem;
+	}
+	.clients-l-arrow,
+	.clients-r-arrow {
+		font-size: 5rem;
+		line-height: 4.5rem;
+		z-index: 6;
+		position: relative;
+	}
+	.consult-form-header {
+		font-size: 2.6rem;
+		letter-spacing: 2.6px;
+		line-height: 3.6rem;
+		text-align: left;
+		margin-top: 6rem;
+	}
+	.clients-decor {
+		display: none;
+	}
+	.consult-form {
+		width: 28rem;
+		float: none;
+		margin: 0;
+		position: absolute;
+		top: 12rem;
+		left: calc(50% - 14rem);
+	}
+	.consult-form-container {
+		margin-top: 2rem;
+				position: relative;
+	}
+	.consult-form-text {
+		width: 100%;
+
+		float: none;
+	}
+	.contacts {
+		padding-bottom: 2rem;
+	}
+	.adress {
+		margin-left: 0;
+		width: 100%;
+	}
+	.consult-required {
+		margin-top: 27rem;
+	}
+	.consult-form button:after {
+		width: 22rem;
+		left: 3rem;
+	}
+	.about-text {
+		width: 100%;
+	}
+	.wrapper .top-menu-container {
+		margin: 3rem 2rem 0 0;
 	}
 }
 @media handheld and (min-width: 768px), screen and (min-width: 768px) {

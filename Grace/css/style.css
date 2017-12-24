@@ -45,9 +45,7 @@ header, footer, .wrapper {
 .mob-show {
     display: block;
 }
-.mob-hidden {
-    display: none;
-}
+
 .m-wrapper {
     overflow: hidden;
     width: 100%;
@@ -1854,8 +1852,12 @@ b {
 .mute-btn img {
     width: 100%;
 }
-
-
+.mob-hidden {
+    display: none;
+}
+.mob-hidden-dis-inl {
+    display: none;
+}
 
 
 

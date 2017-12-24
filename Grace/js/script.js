@@ -691,6 +691,9 @@ scrollTop: top
                 	pos="top";
                 	$menuLi = $(".top-menu-container li");
                 }
+                if(window.innerWidth <= 768) {
+        $btn.css("display", "none");
+                }
 //                if(scrolled < punctPosition[0]) {
 //                	$(".top-active").removeClass("top-active");
 //                }
@@ -832,7 +835,7 @@ scrollTop: top
         "opacity"     : "1"
     });
     $($slides[$slides.length-1]).css({
-        "left"     : viewWidth,
+        "left"     : -viewWidth,
     });
 
     var $lArrow = $(lArrow);
@@ -854,7 +857,7 @@ scrollTop: top
             setTimeout(function(){
                 $current.css({
                     "position" : "absolute",
-                    "left" : viewWidth,
+                    "left" : -viewWidth,
                     "visibility" : "hidden"
                 })
             }, time);
