@@ -26,34 +26,7 @@ display: inline-block;
 	.top-menu-container	{
 		position: relative;
 		z-index: 3;
-		width: 2rem;
-		height: 1.5rem;
-		margin-right: 2rem;
-		overflow: hidden;
-		box-sizing: border-box;
-		padding-left: 2rem;
-		border-bottom: 1px solid #4ccbca;
-		margin-top: 3rem;
-	}
-	.top-menu-container:after {
-		content: "";
-		display: block;
-		position: absolute;
-		background-color: #4ccbca;
-		width: 2rem;
-		height: 1px;
-		top: 7px;
-		left: 0;
-	}
-	.top-menu-container:before {
-		content: "";
-		display: block;
-		position: absolute;
-		background-color: #4ccbca;
-		width: 2rem;
-		height: 1px;
-		top: 0px;
-		left: 0;
+		display: none;
 	}
 	.logo {
 		margin-left: calc(50% - 70px);
@@ -440,6 +413,73 @@ display: inline-block !important;
 	}
 	.wrapper .top-menu-container {
 		margin: 3rem 2rem 0 0;
+	}
+	.active-menu {
+		display: flex;
+		padding-top: 20vh;
+		padding-bottom: 20vh;
+		position: fixed;
+		width: 100%;
+		height: calc(100vh + 2.1rem);
+		background-color: white;
+		margin: 0;
+		top: -2rem;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.active-menu li {
+		width: auto;
+		display: block;
+		text-align: center;
+	}
+	.active-menu li a {
+		display: inline-block;
+	}
+	.menu-close	{
+		float: right;
+		display: block;
+		position: relative;
+		z-index: 5;
+		width: 2rem;
+		height: 1.5rem;
+		margin-right: 4rem;
+		overflow: hidden;
+		box-sizing: border-box;
+		padding-left: 2rem;
+		border-bottom: 1px solid #4ccbca;
+		margin-top: 3rem;
+	}
+	.menu-close:after {
+		content: "";
+		display: block;
+		position: absolute;
+		background-color: #4ccbca;
+		width: 2rem;
+		height: 1px;
+		top: 7px;
+		left: 0;
+	}
+	.menu-close:before {
+		content: "";
+		display: block;
+		position: absolute;
+		background-color: #4ccbca;
+		width: 2rem;
+		height: 1px;
+		top: 0px;
+		left: 0;
+	}
+	.active-close {
+		border: none;
+	}
+	.active-close:after {
+		transform: rotate(45deg);
+		top: 7px;
+	}
+	.active-close:before {
+		transform: rotate(-45deg);
+		top: 7px;
 	}
 }
 @media handheld and (min-width: 768px), screen and (min-width: 768px) {
