@@ -144,7 +144,8 @@
     position: relative;
     vertical-align: middle;
     margin-right: 50%;
-    z-index: 2; }
+    z-index: 2;
+    cursor: pointer; }
     .nav_menu_button:before {
       content: "";
       width: 100%;
@@ -157,12 +158,107 @@
     .nav_menu_button:after {
       content: "";
       display: block;
-      width: 80%;
+      width: 21px;
       height: 1px;
       background-color: white;
       position: absolute;
       right: 0;
-      bottom: 0; }
+      bottom: 0;
+      transition: 0.6s width; }
+    .nav_menu_button:hover:after {
+      width: 30px; }
+
+.nav_cities_wrapper {
+  display: none; }
+
+.nav_slide {
+  width: 201px;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  z-index: 2;
+  height: calc(100vh - 80px); }
+  .nav_slide li {
+    width: 100%;
+    height: calc(100% / 6);
+    display: block;
+    border-bottom: 1px solid rgba(250, 250, 244, 0.15);
+    border-left: 1px solid rgba(250, 250, 244, 0.15);
+    color: white;
+    text-align: center;
+    padding-top: 12%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative; }
+    .nav_slide li img {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      filter: url(#blur);
+      opacity: 0.9; }
+    .nav_slide li:hover img {
+      filter: none; }
+    .nav_slide li:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.45); }
+  .nav_slide_title {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    height: 19px;
+    font-weight: 400;
+    font-family: Pragmatica;
+    margin-bottom: 10%;
+    opacity: 1;
+    transition: 0.7s opacity; }
+  .nav_slide_days {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: inline-block;
+    font-size: 14px;
+    opacity: 0.65;
+    line-height: 18px;
+    height: 19px;
+    font-family: Pragmatica;
+    color: white;
+    transition: 0.7s opacity; }
+  .nav_slide_month {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    opacity: 0.65;
+    font-family: Pragmatica;
+    line-height: 18px;
+    height: 19px;
+    color: white;
+    transition: 0.7s opacity; }
+  .nav_slide_year {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    font-family: Pragmatica;
+    opacity: 0.65;
+    height: 19px;
+    line-height: 18px;
+    color: white;
+    transition: 0.7s opacity; }
 
 .cities_slider {
   width: 100vw;
