@@ -36,11 +36,14 @@
 @font-face {
   font-family: "Pragmatica";
   src: url("../fonts/pragmatica_[allfont.ru].ttf"); }
+body {
+  background-color: black; }
+
 .btn {
   border: 1px solid white;
   display: block;
   height: 35px;
-  line-height: 35px;
+  line-height: 33px;
   font-family: Pragmatica;
   font-size: 18px;
   font-weight: 400;
@@ -313,5 +316,60 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 35px; }
+
+.case_wrapper {
+  padding-top: 140px;
+  width: calc(100vw - 400px);
+  margin: 0 auto;
+  height: 100vh;
+  display: block; }
+
+.case_header {
+  color: white;
+  font-family: Pragmatica;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 80px; }
+
+.case {
+  width: 60vw;
+  overflow: hidden; }
+  .case_viewer {
+    width: 1000vw; }
+  .case_slide {
+    width: 17vw;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 3vw; }
+    .case_slide_img {
+      width: 90%;
+      height: auto;
+      position: relative;
+      z-index: 1; }
+    .case_slide_text {
+      position: relative;
+      width: 90%;
+      float: right;
+      margin-top: -60%;
+      padding-top: 60%;
+      padding-left: 20px;
+      border: 1px solid #554e4e;
+      color: white; }
+    .case_slide_name {
+      font-size: 18px;
+      line-height: 36px;
+      font-family: Pragmatica;
+      font-weight: 400; }
+    .case_slide_date {
+      opacity: 0.5;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: Pragmatica;
+      margin-bottom: 10px; }
+    .case_slide_arrow {
+      position: absolute;
+      right: 11%;
+      bottom: 33px; }
 
 /*# sourceMappingURL=style.css.map */
