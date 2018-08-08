@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.ttf");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.ttf");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.ttf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Pragmatica";
+  src: url("../fonts/pragmatica_[allfont.ru].ttf"); }
+.btn {
+  border: 1px solid white;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  font-family: Pragmatica;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-align: center; }
+
+.container {
+  max-width: calc(100vw - 400px); }
+
+.nav {
+  height: 80px;
+  width: 100%; }
+  .nav_wrapper {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 80px;
+    border-bottom: 1px solid rgba(250, 250, 244, 0.15); }
+  .nav_slider_cities {
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 170px; }
+  .nav_calendar {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid rgba(250, 250, 244, 0.15);
+    border-right: 1px solid rgba(250, 250, 244, 0.15); }
+  .nav_logo {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    cursor: pointer; }
+    .nav_logo img {
+      vertical-align: middle;
+      display: inline; }
+  .nav_lang {
+    width: 100%;
+    height: 80px;
+    line-height: 80px; }
+    .nav_lang li {
+      display: inline-block;
+      color: white;
+      width: 35px;
+      height: 35px;
+      font-family: Montserrat;
+      font-weight: 400;
+      vertical-align: middle;
+      line-height: 32px;
+      font-size: 12px;
+      text-align: center; }
+      .nav_lang li:nth-child(3) {
+        border: 1px solid white;
+        border-radius: 34px; }
+  .nav_calendar {
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    display: block;
+    text-align: center; }
+    .nav_calendar a {
+      color: white;
+      font-size: 12px;
+      font-family: Pragmatica;
+      vertical-align: middle;
+      position: relative;
+      display: inline-block;
+      width: 70%;
+      border-bottom: 1px solid white;
+      height: 38px;
+      line-height: 38px;
+      text-decoration: none;
+      font-weight: 200; }
+
+.nav_menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px; }
+  .nav_menu_wrapper {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center; }
+  .nav_menu_exit {
+    display: inline-block;
+    line-height: 80px; }
+    .nav_menu_exit img {
+      display: inline-block;
+      vertical-align: middle; }
+  .nav_menu_button {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    border-top: 1px solid white;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 50%;
+    z-index: 2; }
+    .nav_menu_button:before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      position: absolute;
+      top: 9px;
+      left: 0;
+      display: block; }
+    .nav_menu_button:after {
+      content: "";
+      display: block;
+      width: 80%;
+      height: 1px;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+
+.cities_slider {
+  width: 100vw;
+  height: 100vh; }
+
+.city_slide {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+.city_slide_image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+.city_slide_info {
+  display: block;
+  position: relative;
+  padding-top: 35vh;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  z-index: 1;
+  background-color: rgba(33, 33, 33, 0.5); }
+.city_slide h3 {
+  display: block;
+  color: white;
+  font-family: Montserrat;
+  font-size: 172px;
+  font-weight: 400;
+  margin-bottom: 90px; }
+.city_slide_date {
+  display: block;
+  color: white;
+  font-family: Pragmatica;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px; }
+.city_slide_description {
+  display: block;
+  color: white;
+  font-family: Pragmatica;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px; }
+.city_slide_name {
+  display: block;
+  color: white;
+  font-family: Pragmatica;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 35px; }
+
+/*# sourceMappingURL=style.css.map */
