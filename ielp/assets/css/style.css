@@ -52,7 +52,7 @@ body {
   text-align: center; }
 
 .container {
-  max-width: calc(100vw - 400px); }
+  max-width: calc(100vw - 413px); }
 
 .nav {
   height: 80px;
@@ -175,7 +175,7 @@ body {
   display: none; }
 
 .nav_slide {
-  width: 201px;
+  width: 200px;
   position: fixed;
   top: 80px;
   right: 0;
@@ -333,7 +333,8 @@ body {
 
 .case {
   width: 60vw;
-  overflow: hidden; }
+  overflow: hidden;
+  display: inline-block; }
   .case_viewer {
     width: 1000vw; }
   .case_slide {
@@ -371,5 +372,51 @@ body {
       position: absolute;
       right: 11%;
       bottom: 33px; }
+
+.case_arrows {
+  width: auto;
+  display: inline-block; }
+  .case_arrows .case_arrow {
+    width: 20px;
+    display: block;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    cursor: pointer; }
+
+.case_nav {
+  width: 60vw;
+  overflow: hidden; }
+  .case_nav_dots {
+    width: auto;
+    height: auto;
+    float: right;
+    margin-top: 40px; }
+    .case_nav_dots span {
+      width: 70px;
+      display: inline-block;
+      margin-right: 10px;
+      height: 10px;
+      border-bottom: 1px solid #333333;
+      cursor: pointer; }
+  .case_nav .active_dot {
+    border-bottom: 1px solid white; }
+  .case_nav_numbers {
+    float: right;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-right: 3vw;
+    color: white;
+    font-family: Pragmatica;
+    font-size: 18px;
+    font-weight: 400; }
+    .case_nav_numbers span {
+      font-size: 10px; }
+
+.case_view_btn {
+  width: 150px;
+  margin-top: 50px;
+  float: right;
+  clear: both;
+  margin-right: 3vw; }
 
 /*# sourceMappingURL=style.css.map */
