@@ -198,7 +198,8 @@ body {
     position: absolute;
     top: 0;
     right: -20px;
-    width: 100vw;
+    min-width: 100vw;
+    min-height: 100vh;
     filter: url(#blur); }
   .nav_slide li {
     width: 100%;
@@ -291,7 +292,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100vw; }
+  min-width: 100vw;
+  min-height: 100vh; }
 .city_slide_info {
   display: block;
   position: absolute;
