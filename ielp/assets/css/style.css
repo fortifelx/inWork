@@ -36,7 +36,7 @@
 @font-face {
   font-family: "Pragmatica";
   src: url("../fonts/pragmatica_[allfont.ru].ttf"); }
-.btn, .nav_calendar a, .nav_slide li, .nav_slide_title, .nav_slide_days, .nav_slide_month, .nav_slide_year, .city_slide_description, .city_slide_name, .case_header, .case_slide_text, .case_slide_name, .case_slide_date, .case_nav_numbers, .feedback_video_text, .feedback_video_name, .feedback_video_place, .feedback_header, .footer_address_header, .footer_address_text, .footer_phones_header, .footer_phones_text, .footer_mails_header, .footer_mails_mail, .footer_subscribes_header, .footer_subscribes_text, .footer_subscribes_input, .footer_subscribes_button, .footer_follow_icons {
+.btn, .nav_calendar a, .nav_slide li, .nav_slide_title, .nav_slide_days, .nav_slide_month, .nav_slide_year, .city_slide_description, .city_slide_name, .case_header, .case_slide_text, .case_slide_name, .case_slide_date, .case_nav_numbers, .feedback_video_text, .feedback_video_name, .feedback_video_place, .feedback_header, .footer_address_header, .footer_address_text, .footer_phones_header, .footer_phones_text, .footer_mails_header, .footer_mails_mail, .footer_subscribes_header, .footer_subscribes_text, .footer_subscribes_input, .footer_subscribes_button, .footer_follow_icons, .copyright {
   font-weight: 400;
   color: white;
   font-family: Pragmatica; }
@@ -613,5 +613,13 @@ body {
       display: inline-block;
       margin-right: 20px;
       text-decoration: none; }
+
+.copyright {
+  position: relative;
+  z-index: 10;
+  background-color: black;
+  width: 100%;
+  font-size: 14px;
+  line-height: 44px; }
 
 /*# sourceMappingURL=style.css.map */
