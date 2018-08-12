@@ -3,6 +3,11 @@
 $main-color: #343434
 $font-color: hsl(0, 0%, 100%)
 $border-color: hsla(69, 41%, 97%, 0.15)
+
+%text-font
+  font-weight: 400
+  color: $font-color
+  font-family: Pragmatica
 body
   background-color: black
 .btn
@@ -10,10 +15,8 @@ body
   display: block
   height: 35px
   line-height: 33px
-  font-family: Pragmatica
+  @extend %text-font
   font-size: 18px
-  font-weight: 400
-  color: $font-color
   text-decoration: none
   text-align: center
 .container
@@ -73,9 +76,8 @@ body
     display: block
     text-align: center
     a
-      color: $font-color
+      @extend %text-font
       font-size: 12px
-      font-family: Pragmatica
       vertical-align: middle
       position: relative
       display: inline-block
@@ -84,7 +86,6 @@ body
       height: 38px
       line-height: 38px
       text-decoration: none
-      font-weight: 200
 .nav_menu
   display: block
   position: fixed
@@ -163,7 +164,7 @@ body
     display: block
     border-bottom: 1px solid $border-color
     border-left: 1px solid $border-color
-    color: $font-color
+    @extend %text-font
     text-align: center
     padding-top: 10%
     cursor: pointer
@@ -189,8 +190,7 @@ body
     width: 100%
     font-size: 18px
     height: 19px
-    font-weight: 400
-    font-family: Pragmatica
+    @extend %text-font
     margin-bottom: 6%
     opacity: 1
     transition: 0.7s opacity
@@ -203,8 +203,7 @@ body
     opacity: 0.65
     line-height: 18px
     height: 19px
-    font-family: Pragmatica
-    color: $font-color
+    @extend %text-font
     transition: 0.7s opacity
   &_month
     position: relative
@@ -213,10 +212,9 @@ body
     width: 100%
     font-size: 14px
     opacity: 0.65
-    font-family: Pragmatica
+    @extend %text-font
     line-height: 18px
     height: 19px
-    color: $font-color
     transition: 0.7s opacity
   &_year
     position: relative
@@ -224,11 +222,10 @@ body
     display: inline-block
     width: 100%
     font-size: 14px
-    font-family: Pragmatica
+    @extend %text-font
     opacity: 0.65
     height: 19px
     line-height: 18px
-    color: $font-color
     transition: 0.7s opacity
 
 
@@ -273,17 +270,13 @@ body
     margin-bottom: 40px
   &_slide_description
     display: block
-    color: hsl(0, 0%, 100%)
-    font-family: Pragmatica
+    @extend %text-font
     font-size: 16px
-    font-weight: 400
     margin-bottom: 20px
   &_slide_name
     display: block
-    color: hsl(0, 0%, 100%)
-    font-family: Pragmatica
+    @extend %text-font
     font-size: 18px
-    font-weight: 400
     text-transform: uppercase
     margin-bottom: 35px
 
@@ -295,10 +288,8 @@ body
   display: block
   overflow: hidden
 .case_header
-  color: $font-color
-  font-family: Pragmatica
+  @extend %text-font
   font-size: 36px
-  font-weight: 400
   margin-bottom: 80px
 .case
   width: 60vw
@@ -325,17 +316,15 @@ body
       padding-top: 60%
       padding-left: 20px
       border: 1px solid hsl(0, 4%, 32%)
-      color: $font-color
+      @extend %text-font
     &_name
       font-size: 18px
       line-height: 36px
-      font-family: Pragmatica
-      font-weight: 400
+      @extend %text-font
     &_date
       opacity: 0.5
       font-size: 14px
-      font-weight: 400
-      font-family: Pragmatica
+      @extend %text-font
       margin-bottom: 10px
     &_arrow
       position: absolute
@@ -373,9 +362,8 @@ body
     margin-top: 40px
     margin-right: 3vw
     color: $font-color
-    font-family: Pragmatica
+    @extend %text-font
     font-size: 18px
-    font-weight: 400
     span
       font-size: 10px
 .case_view_btn
@@ -415,23 +403,20 @@ body
       margin-top: -60%
       padding-top: 60%
       border: 1px solid hsl(0, 4%, 32%)
-      color: $font-color
+      @extend %text-font
       text-align: center
       padding-bottom: 20px
     &_name
       font-size: 24px
       line-height: 68px
-      font-family: Pragmatica
-      font-weight: 400
+      @extend %text-font
     &_place
       display: block
       position: relative
       font-size: 16px
       line-height: 28px
-      font-weight: 400
-      font-family: Pragmatica
+      @extend %text-font
       margin-bottom: 10px
-      color: $font-color
       padding-top: 5px
       &:before
         content: ''
@@ -513,8 +498,118 @@ body
         height: auto
 
 .feedback_header
-  color: $font-color
-  font-family: Pragmatica
+  @extend %text-font
   font-size: 36px
-  font-weight: 400
   margin-bottom: 80px
+
+.row_fix
+  width: 115%
+.footer
+  clear: both
+  width: 100%
+  background-color: hsl(0, 0%, 20%)
+  padding: 30px
+  position: relative
+  z-index: 10
+  &_contacts
+    width: 100%
+    height: 100%
+    border-right: 1px solid $border-color
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &_address
+    width: 100%
+    &_header
+      font-size: 18px
+      @extend %text-font
+      padding-bottom: 10px
+    &_text
+      font-size: 14px
+      line-height: 24px
+      padding-right: 50px
+      @extend %text-font
+  &_phones
+    width: 100%
+    padding-bottom: 15px
+    &_header
+      font-size: 18px
+      @extend %text-font
+      padding-bottom: 10px
+    &_text
+      font-size: 14px
+      @extend %text-font
+  &_mails
+    width: 100%
+    height: 100%
+    border-right: 1px solid $border-color
+    padding-bottom: 15px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &_wrapper
+      width: 100%
+      padding-bottom: 15px
+    &_header
+      font-size: 14px
+      @extend %text-font
+      padding-bottom: 10px
+    &_mail
+      font-size: 18px
+      @extend %text-font
+  &_subscribes
+    width: 100%
+    height: 100%
+    padding-bottom: 15px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    //&_wrapper
+    //  width: 100%
+    //  padding-bottom: 15px
+    &_header
+      font-size: 18px
+      @extend %text-font
+      padding-bottom: 25px
+    &_text
+      font-size: 14px
+      padding-bottom: 20px
+      line-height: 24px
+      @extend %text-font
+    &_form
+      width: 100%
+      font-size: 0
+      letter-spacing: 0
+      padding-bottom: 30px
+      form
+        width: 100%
+    &_input
+      width: 75%
+      height: 40px
+      line-height: 40px
+      display: inline-block
+      border: 1px solid $font-color
+      font-size: 16px
+      letter-spacing: 1px
+      @extend %text-font
+      background-color: hsl(0, 0%, 20%)
+      text-indent: 15px
+    &_button
+      width: 25%
+      display: inline-block
+      height: 40px
+      line-height: 40px
+      @extend %text-font
+      background-color: $font-color
+      color: black
+      border: 1px solid $font-color
+  &_follow
+    width: 100%
+    padding-bottom: 15px
+    &_icons
+      display: inline-block
+      @extend %text-font
+      margin-right: 20px
+      text-decoration: none
+
+
