@@ -41,6 +41,10 @@
   color: white;
   font-family: Pragmatica; }
 
+.main_wrapper {
+  width: 100%;
+  overflow: hidden; }
+
 body {
   background-color: black; }
 

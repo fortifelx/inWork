@@ -1,7 +1,14 @@
+var scrollPosition = 0;
+var body = document.body,
+    html = document.documentElement;
 
 var caseSlides = $('.case_slide');
 var slideHeight = caseSlides.css('height');
+
+
+
 $('.case_arrows').css('height', slideHeight);
+
 addDots();
 makeMainSlider('.city_slide',
     '.nav_slide_img',
@@ -12,6 +19,8 @@ makeMainSlider('.city_slide',
     '.nav_slide_img_wrapper',
     '.nav_slide_img_viewer',
     600);
+
+makeScroll('.scroll_element', 1200);
 
 // F U N C T I O N S
 
@@ -31,14 +40,12 @@ function addDots(){
     $('.case_nav_numbers').text('1/').append(length);
 };
 function makeMainSlider(slides, navImage, navItems, images, imagesViewer, texts, navImgWrapper, navImgViewer, time){
-    console.log('start slider');
     var slides = $(slides);
     var navImage = $(navImage);
     var navImgWrapper = $(navImgWrapper);
     var navImgViewer = $(navImgViewer);
     var images = $(images);
     var imagesViewer = $(imagesViewer);
-    console.log(imagesViewer);
     var texts = $(texts);
     var menuItems = document.querySelectorAll(navItems);
     var items = [];
@@ -85,3 +92,66 @@ function makeMainSlider(slides, navImage, navItems, images, imagesViewer, texts,
 
 
 };
+function makeScroll(elements, time) {
+
+    var nl = $(elements);
+    var mainSlide = $('.nav_slide li');
+    var positions = [];
+    for (var i = nl.length; i--; positions.unshift($(nl[i]).offset().top)) ;
+    var i = 0;
+    var body = $("html, body");
+    var status = true;
+    var previousScrollPosition = $(window).scrollTop();
+    console.log(previousScrollPosition);
+
+    $(window).scroll(function (e) {
+        e.preventDefault();
+        var currentScrollPosition = $(window).scrollTop() + $(window).height();
+
+        if (currentScrollPosition > previousScrollPosition + 1 && status) {
+            if (i === positions.length - 1) return;
+            status = false;
+            i++;
+            if (i > 0) {
+                hideSlide(mainSlide, $(window).height(), time / 2);
+            }
+            if (i === 0) {
+                showSlide(mainSlide, $(window).height(), time / 2);
+            }
+            body.animate({
+                scrollTop: positions[i],
+            }, time);
+            setTimeout(function () {
+                status = true;
+            }, time);
+
+        } else if (currentScrollPosition < previousScrollPosition && status) {
+            if (i === 0) {
+                showSlide(mainSlide, $(window).height(), time / 2);
+                return;
+            }
+            status = false;
+            i--;
+            body.animate({
+                scrollTop: positions[i],
+            }, time);
+            setTimeout(function () {
+                status = true;
+            }, time);
+        }
+        previousScrollPosition = currentScrollPosition;
+
+    });
+};
+function hideSlide(target, size, time) {
+    target.velocity({
+        'background-color' : 'rgba(33, 33, 33, 1)'
+    }, time);
+    return;
+};
+function showSlide(target, size, time) {
+    target.velocity({
+        'background-color' : 'rgba(33, 33, 33, 0.5)'
+    }, time);
+    return;
+}
