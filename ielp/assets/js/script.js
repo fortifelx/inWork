@@ -101,9 +101,10 @@ function makeScroll(elements, time) {
     var i = 0;
     var body = $("html, body");
     var status = true;
-    var previousScrollPosition = $(window).scrollTop();
-    console.log(previousScrollPosition);
-
+    var previousScrollPosition = $(window).scrollTop() + $(window).height();
+    body.animate({
+        scrollTop: positions[i],
+    }, time);
     $(window).scroll(function (e) {
         e.preventDefault();
         var currentScrollPosition = $(window).scrollTop() + $(window).height();
