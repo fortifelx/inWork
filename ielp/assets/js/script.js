@@ -104,7 +104,7 @@ function makeScroll(elements, time) {
     var status = true;
     var previousScrollPosition = $(window).scrollTop() + $(window).height();
     body.animate({
-        scrollTop: $(window).scrollTop(),
+        scrollTop: 0,
     }, time);
     $(window).scroll(function (e) {
         e.preventDefault();
