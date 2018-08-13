@@ -96,6 +96,7 @@ function makeScroll(elements, time) {
 
     var nl = $(elements);
     var mainSlide = $('.nav_slide li');
+    var navMenu = $('.nav_wrapper');
     var positions = [];
     for (var i = nl.length; i--; positions.unshift($(nl[i]).offset().top)) ;
     var i = 0;
@@ -103,7 +104,7 @@ function makeScroll(elements, time) {
     var status = true;
     var previousScrollPosition = $(window).scrollTop() + $(window).height();
     body.animate({
-        scrollTop: positions[i],
+        scrollTop: $(window).scrollTop(),
     }, time);
     $(window).scroll(function (e) {
         e.preventDefault();
@@ -113,11 +114,11 @@ function makeScroll(elements, time) {
             if (i === positions.length - 1) return;
             status = false;
             i++;
-            if (i > 0) {
-                hideSlide(mainSlide, $(window).height(), time / 2);
-            }
             if (i === 0) {
-                showSlide(mainSlide, $(window).height(), time / 2);
+                showSlide(mainSlide, navMenu, $(window).height(), time*2);
+            }
+            if (i > 0) {
+                hideSlide(mainSlide, navMenu, $(window).height(), time / 2);
             }
             body.animate({
                 scrollTop: positions[i],
@@ -128,11 +129,14 @@ function makeScroll(elements, time) {
 
         } else if (currentScrollPosition < previousScrollPosition && status) {
             if (i === 0) {
-                showSlide(mainSlide, $(window).height(), time / 2);
+                // showSlide(mainSlide, navMenu, $(window).height(), time*2);
                 return;
             }
             status = false;
             i--;
+            if (i === 0) {
+                showSlide(mainSlide, navMenu, $(window).height(), time*2);
+            }
             body.animate({
                 scrollTop: positions[i],
             }, time);
@@ -141,18 +145,26 @@ function makeScroll(elements, time) {
             }, time);
         }
         previousScrollPosition = currentScrollPosition;
-
+        // if(i === positions.length - 1) {
+        //     previousScrollPosition = $(window).scrollTop() + $('.footer').height();
+        //     console.log($('.footer').height());
+        // }
     });
 };
-function hideSlide(target, size, time) {
+function hideSlide(target, menu, size, time) {
     target.velocity({
-        'background-color' : 'rgba(33, 33, 33, 1)'
+        backgroundColor : 'rgba(33, 33, 33, 1)'
     }, time);
+    menu.velocity({
+        backgroundColor : 'rgba(33, 33, 33, 1)'
+    }, time)
     return;
 };
-function showSlide(target, size, time) {
+function showSlide(target, menu, size, time) {
     target.velocity({
-        'background-color' : 'rgba(33, 33, 33, 0.5)'
+        backgroundColor : 'rgba(33, 33, 33, 0.5)'
     }, time);
-    return;
+    menu.velocity({
+        backgroundColor : 'rgba(33, 33, 33, 0)'
+    }, time)
 }

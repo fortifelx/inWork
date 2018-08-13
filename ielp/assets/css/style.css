@@ -46,7 +46,7 @@
   overflow: hidden; }
 
 body {
-  background-color: black; }
+  background-color: #212121; }
 
 .btn {
   border: 1px solid white;
@@ -70,7 +70,8 @@ body {
     top: 0;
     left: 0;
     height: 80px;
-    border-bottom: 1px solid rgba(250, 250, 244, 0.15); }
+    border-bottom: 1px solid rgba(250, 250, 244, 0.15);
+    background-color: rgba(33, 33, 33, 0); }
   .nav_slider_cities {
     z-index: 100;
     position: fixed;
@@ -482,9 +483,9 @@ body {
   position: relative;
   line-height: 0;
   font-size: 0;
-  -webkit-box-shadow: inset 0px 0px 36px 20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset 0px 0px 36px 20px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 0px 0px 36px 20px rgba(33, 33, 33, 0.75);
+  -moz-box-shadow: inset 0px 0px 36px 20px rgba(33, 33, 33, 0.75);
+  box-shadow: inset 0px 0px 20px 10px rgba(33, 33, 33, 0.75);
   padding-right: 30px; }
   .feedback_videos_wrapper {
     position: relative;
