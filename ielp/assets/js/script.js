@@ -22,6 +22,7 @@ makeMainSlider('.city_slide',
 
 makeScroll('.scroll_element', 1200);
 
+longSlider( '.case_slide','.case_viewer', '.case_arrow_l', '.case_arrow_r', '.case_nav_numbers', '.case_nav_dots', 3, 600)
 // F U N C T I O N S
 
 function addDots(){
@@ -167,4 +168,24 @@ function showSlide(target, menu, size, time) {
     menu.velocity({
         backgroundColor : 'rgba(33, 33, 33, 0)'
     }, time)
+};
+function longSlider(slides, viewer, lArrow, rArrow, countBlock, dots, step, time){
+    var slides = $(slides);
+    var widthFix = parseInt(slides.css('margin-right'), 10);
+    var width =  parseInt(slides.css('width'), 10);
+    var viewer = $(viewer);
+    var lArrow = $(lArrow);
+    var rArrow = $(rArrow);
+    var countBlock = $(countBlock);
+    var count = 0;
+    var dots = $(dots);
+    var dotCount = Math.ceil(slides.length/3);
+    var position = 0;
+    rArrow.click(function(){
+        viewer.velocity({
+            marginLeft : (position-width-widthFix)*step
+        }, time)
+        position = position-width-widthFix;
+        count++;
+    });
 }
