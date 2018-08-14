@@ -20,9 +20,10 @@ makeMainSlider('.city_slide',
     '.nav_slide_img_viewer',
     600);
 
-makeScroll('.scroll_element', 1200);
+ makeScroll('.scroll_element', 1200);
 
-longSlider( '.case_slide','.case_viewer', '.case_arrow_l', '.case_arrow_r', '.case_nav_numbers', '.case_nav_dots', 3, 600)
+longSlider( '.case_slide','.case_viewer', '.case_arrow_l', '.case_arrow_r', '.case_nav_numbers', '.case_nav_dots span', 3, 600)
+
 // F U N C T I O N S
 
 function addDots(){
@@ -73,7 +74,7 @@ function makeMainSlider(slides, navImage, navItems, images, imagesViewer, texts,
             $(slides[index]).css({ top: 0, bottom: 'auto' }).velocity({
                 height: '100vh'
             }, time);
-            navImgWrapper.css({ top: '-80px', bottom: 'auto' }).velocity({
+            navImgWrapper.css({ top: 0, bottom: 'auto' }).velocity({
                 height: '100vh'
             }, time);
 
@@ -169,23 +170,100 @@ function showSlide(target, menu, size, time) {
         backgroundColor : 'rgba(33, 33, 33, 0)'
     }, time)
 };
-function longSlider(slides, viewer, lArrow, rArrow, countBlock, dots, step, time){
-    var slides = $(slides);
+function longSlider(slide, viewerBlock, lArrow, rArrow, countBlock, dots, step, time){
+    var slides = $(slide);
     var widthFix = parseInt(slides.css('margin-right'), 10);
     var width =  parseInt(slides.css('width'), 10);
-    var viewer = $(viewer);
+    var viewer = $(viewerBlock);
     var lArrow = $(lArrow);
     var rArrow = $(rArrow);
     var countBlock = $(countBlock);
+    var number = 0;
     var count = 0;
+    var rClicks = 0;
     var dots = $(dots);
+    var status = false;
     var dotCount = Math.ceil(slides.length/3);
-    var position = 0;
+    var fixSlides = step - slides.length%3
+    for(var i = 0; i < fixSlides; i++){
+        viewer.append($(slides[i]).clone());
+    }
+    slides = $(slide);
+    var scrollSize = (0-width-widthFix)*step;
     rArrow.click(function(){
-        viewer.velocity({
-            marginLeft : (position-width-widthFix)*step
-        }, time)
-        position = position-width-widthFix;
+        if(status) return;
+        status = true;
+        number++;
+        if(number === dotCount) number = 0;
+        $('.active_dot').removeClass('active_dot');
+        $(dots[number]).addClass('active_dot');
+        var elem = $('<span></span>').text(dotCount);
+        $('.case_nav_numbers').text( number+1 + '/').append(elem);
+        if(count + 1 === dotCount){
+            var block = document.querySelector(viewerBlock);
+            for(var i =0; i < step; i++) {
+                slides[i].remove();
+                block.appendChild(slides[i]);
+            }
+            slides = $(slide);
+            count = count - 1;
+            viewer.css({
+                marginLeft : scrollSize*count
+            });
+            count++;
+            viewer.animate({
+                marginLeft : scrollSize*count,
+            }, time);
+            setTimeout(function(){
+                status = false;
+            }, time);
+            return;
+        }
         count++;
+        number = count;
+        console.log(number);
+        viewer.velocity({
+            marginLeft : scrollSize*count,
+        }, time);
+        setTimeout(function(){
+            status = false;
+        }, time);
+    });
+    lArrow.click(function(){
+        if(status) return;
+        status = true;
+        number--;
+        if(number === -1) number = dotCount-1;
+        $('.active_dot').removeClass('active_dot');
+        $(dots[number]).addClass('active_dot');
+        var elem = $('<span></span>').text(dotCount);
+        $('.case_nav_numbers').text( number+1 + '/').append(elem);
+        if(count  === 0){
+            console.log('edge');
+            var length = slides.length-1;
+            var block = document.querySelector(viewerBlock);
+            for(var i =0; i < step; i++) {
+                slides[length-i].remove();
+                block.insertBefore(slides[length - i], block.childNodes[0]);
+            }
+            slides = $(slide);
+            viewer.css({
+                marginLeft : scrollSize
+            });
+            viewer.animate({
+                marginLeft : 0,
+            }, time);
+            setTimeout(function(){
+                status = false;
+            }, time);
+            return;
+        }
+        count--;
+        viewer.velocity({
+            marginLeft : scrollSize*count,
+        }, time);
+        setTimeout(function(){
+            status = false;
+        }, time);
     });
 }
