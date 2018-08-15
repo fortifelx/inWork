@@ -475,3 +475,37 @@ function enableScroll() {
     window.ontouchmove = null;
     document.onkeydown = null;
 }
+var menuStatus = false;
+function showMenu(target, button, time){
+    $(target).toggleClass('nav_cities_wrapper_active');
+    $(button).toggleClass('nav_menu_button_active');
+    $('.nav_wrapper').toggleClass('nav_wrapper_active');
+    if(!menuStatus){
+        setTimeout(function(){
+            $('.nav_cities_background').velocity({
+                opacity: 1
+            }, time);
+            $('.nav_cities_list').animate({
+                paddingTop: 0
+            }, time*2);
+            $('.nav_cities_viewer a').velocity({
+                opacity: 1
+            }, time*2)
+        }, time/1.5);
+        menuStatus = true;
+    } else {
+        $('.nav_cities_background').velocity({
+            opacity: 0
+        }, time/5);
+        $('.nav_cities_list').animate({
+            paddingTop: '25px'
+        }, time/2);
+        $('.nav_cities_viewer a').velocity({
+            opacity: 0
+        }, time/5)
+        menuStatus = false;
+    }
+}
+$('.nav_menu_button').click(function(){
+   showMenu('.nav_cities_wrapper', this, 1200);
+});
