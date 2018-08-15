@@ -29,7 +29,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -39,19 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="481" column="53" lean-forward="false" selection-start-line="481" selection-start-column="53" selection-end-line="481" selection-end-column="53" />
+            <state relative-caret-position="572">
+              <caret line="523" column="52" lean-forward="false" selection-start-line="523" selection-start-column="52" selection-end-line="523" selection-end-column="52" />
               <folding>
                 <element signature="e#180#2850#0" expanded="false" />
                 <element signature="n#!!block;n#addDots#0" expanded="false" />
-                <element signature="n#!!block;n#makeMainSlider#0" expanded="false" />
+                <element signature="n#!!block;n#makeScroll#0" expanded="false" />
                 <element signature="n#!!block;n#hideSlide#0" expanded="false" />
                 <element signature="n#!!block;n#showSlide#0" expanded="false" />
                 <element signature="n#!!block;n#longSlider#0" expanded="false" />
-                <marker date="1534338718331" expanded="true" signature="8872:9121" ph="..." />
+                <element signature="n#!!block;n#preventDefault#0" expanded="false" />
+                <element signature="n#!!block;n#preventDefaultForScrollKeys#0" expanded="false" />
+                <element signature="n#!!block;n#disableScroll#0" expanded="false" />
+                <element signature="n#!!block;n#enableScroll#0" expanded="false" />
+                <marker date="1534341213460" expanded="true" signature="8964:9213" ph="..." />
               </folding>
             </state>
           </provider>
@@ -86,8 +90,8 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/assets/img/icon/mouse_down.svg" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/assets/js/script.js" />
         <option value="$PROJECT_DIR$/assets/css/style.sass" />
+        <option value="$PROJECT_DIR$/assets/js/script.js" />
       </list>
     </option>
   </component>
@@ -98,7 +102,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1069" />
     <option name="width" value="839" />
     <option name="height" value="1047" />
@@ -209,15 +213,15 @@
       <workItem from="1534147638095" duration="18132000" />
       <workItem from="1534227485994" duration="603000" />
       <workItem from="1534235639268" duration="9478000" />
-      <workItem from="1534311323734" duration="25515000" />
+      <workItem from="1534311323734" duration="27667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130506000" />
+    <option name="totallyTimeSpent" value="132658000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -495,22 +499,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="481" column="53" lean-forward="false" selection-start-line="481" selection-start-column="53" selection-end-line="481" selection-end-column="53" />
-          <folding>
-            <element signature="e#180#2850#0" expanded="false" />
-            <element signature="n#!!block;n#addDots#0" expanded="false" />
-            <element signature="n#!!block;n#makeMainSlider#0" expanded="false" />
-            <element signature="n#!!block;n#hideSlide#0" expanded="false" />
-            <element signature="n#!!block;n#showSlide#0" expanded="false" />
-            <element signature="n#!!block;n#longSlider#0" expanded="false" />
-            <marker date="1534338718331" expanded="true" signature="8872:9121" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -532,6 +520,26 @@
         <state relative-caret-position="330">
           <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="523" column="52" lean-forward="false" selection-start-line="523" selection-start-column="52" selection-end-line="523" selection-end-column="52" />
+          <folding>
+            <element signature="e#180#2850#0" expanded="false" />
+            <element signature="n#!!block;n#addDots#0" expanded="false" />
+            <element signature="n#!!block;n#makeScroll#0" expanded="false" />
+            <element signature="n#!!block;n#hideSlide#0" expanded="false" />
+            <element signature="n#!!block;n#showSlide#0" expanded="false" />
+            <element signature="n#!!block;n#longSlider#0" expanded="false" />
+            <element signature="n#!!block;n#preventDefault#0" expanded="false" />
+            <element signature="n#!!block;n#preventDefaultForScrollKeys#0" expanded="false" />
+            <element signature="n#!!block;n#disableScroll#0" expanded="false" />
+            <element signature="n#!!block;n#enableScroll#0" expanded="false" />
+            <marker date="1534341213460" expanded="true" signature="8964:9213" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

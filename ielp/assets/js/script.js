@@ -230,6 +230,7 @@ function makeMainSlider(slides, navImage, navItems, images, imagesViewer, texts,
             $(texts[index]).css({ top: 0, bottom: 'auto' }); // текст слайдов
             navImgWrapper.css({ top: 0, bottom: 'auto' }); // изображение навки
             navImage[0].src = $(imagesViewer[index]).find('img')[0].src;
+            $('.nav_cities_background')[0].src = $(imagesViewer[index]).find('img')[0].src;
 
             $(slides[index]).css({ top: 0, bottom: 'auto' }).velocity({
                 height: '100vh'
@@ -508,4 +509,23 @@ function showMenu(target, button, time){
 }
 $('.nav_menu_button').click(function(){
    showMenu('.nav_cities_wrapper', this, 1200);
+});
+var navCitiesStatus = true;
+$('.nav_cities_list a').mouseover(function(){
+    navCitiesStatus = false;
+    var list = $('.nav_cities_list a');
+    var i = list.index(this);
+    var target = $('.nav_cities_background');
+    target.animate({
+        opacity: 0
+    }, 600);
+    if(navCitiesStatus) return;
+    setTimeout(function(){
+        target[0].src = $('.city_slide img')[i].src;
+        if(navCitiesStatus) return;
+         target.animate({
+            opacity: 1
+        }, 600);
+        navCitiesStatus = true;
+    }, 600)
 });
