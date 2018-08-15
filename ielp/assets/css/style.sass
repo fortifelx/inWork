@@ -25,6 +25,17 @@ body
   text-align: center
 .container
   max-width: calc(100vw - 413px)
+@keyframes mouse
+  50%
+    bottom: 30px
+.mouse_down
+  width: 30px
+  position: absolute
+  bottom: 45px
+  display: block
+  margin-left: calc(50% - 15px)
+  z-index: 3
+  animation: mouse  2s infinite ease-in-out
 .nav
   height: 80px
   width: 100%
@@ -37,7 +48,7 @@ body
     height: 80px
     border-bottom: 1px solid $border-color
     background-color: rgba(33, 33, 33, 0)
-
+    overflow: hidden
   &_slider_cities
     z-index: 100
     position: fixed
@@ -141,9 +152,52 @@ body
     &:hover
       &:after
         width: 30px
+.nav_cities
+  &_wrapper
+    position: fixed
+    left: 0
+    top: 80px
+    width: 100%
+    height: 0
+    overflow: hidden
+    background-color: #212121
+    &_active
+      height: 0
+  &_background
+    min-width: 100%
+    min-height: 100vh
+    position: absolute
+    left: 0
+    top: 0
+  &_viewer
+    display: block
+    width: 40%
+    margin-left: 60%
+    background-color: black
+    padding-left: 7%
+    padding-bottom: 20px
+    position: relative
+  &_list
+    width: 100%
+    height: auto
+    padding-bottom: 20px
+    li
+      color: $font-color
+      font-size: 42px
+      padding: 20px
+  &_punct
+    color: $font-color
+    font-size: 14px
+    display: block
+    margin-bottom: 15px
+    text-decoration: none
+    padding-left: 20px
+  &_network
+    width: 40px
+    margin-top: 15px
+    display: inline-block
+    margin-left: 20px
 
-.nav_cities_wrapper
-  display: none
 
 .nav_slide
   width: 200px
@@ -316,6 +370,7 @@ body
   height: 100vh
   display: block
   overflow: hidden
+  position: relative
 .case_header
   @extend %text-font
   font-size: 36px
@@ -409,6 +464,7 @@ body
   height: 100vh
   display: block
   overflow: hidden
+  position: relative
 
 .feedback
   width: 60vw
