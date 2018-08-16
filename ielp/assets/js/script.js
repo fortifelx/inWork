@@ -147,8 +147,8 @@ function showSlide(target, menu, size, time) {
 };
 function longSlider(slide, viewerBlock, lArrow, rArrow, countBlock, dots, step, time){
     var slides = $(slide);
-    var widthFix = parseInt(slides.css('margin-right'), 10);
-    var width =  parseInt(slides.css('width'), 10);
+    var widthFix = parseFloat(slides.css('margin-right'), 10);
+    var width =  parseFloat(slides.css('width'), 10);
     var viewer = $(viewerBlock);
     var lArrow = $(lArrow);
     var rArrow = $(rArrow);
@@ -165,6 +165,7 @@ function longSlider(slide, viewerBlock, lArrow, rArrow, countBlock, dots, step, 
     }
     slides = $(slide);
     var scrollSize = (0-width-widthFix)*step;
+    console.log(width + ' + ' + widthFix);
     rArrow.click(function(){
         if(status) return;
         status = true;
@@ -196,7 +197,6 @@ function longSlider(slide, viewerBlock, lArrow, rArrow, countBlock, dots, step, 
         }
         count++;
         number = count;
-        console.log(number);
         viewer.velocity({
             marginLeft : scrollSize*count,
         }, time);

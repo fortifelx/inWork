@@ -546,7 +546,9 @@ body {
   overflow: hidden;
   display: inline-block; }
   .case_viewer {
-    width: 1000vw; }
+    width: 1000vw;
+    font-size: 0;
+    letter-spacing: 0; }
   .case_slide {
     width: 18vw;
     position: relative;
