@@ -4,171 +4,48 @@ var body = document.body,
 
 var caseSlides = $('.case_slide');
 var slideHeight = caseSlides.css('height');
-(function($) {
-
-    "use strict";
-
-    var instance, proto;
-
-    function UserScrollDisabler($container, options) {
-        // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-        // left: 37, up: 38, right: 39, down: 40
-        this.opts = $.extend({
-            handleKeys : true,
-            scrollEventKeys : [32, 33, 34, 35, 36, 37, 38, 39, 40]
-        }, options);
-
-        this.$container = $container;
-        this.$document = $(document);
-        this.lockToScrollPos = [0, 0];
-
-        this.disable();
-    }
-
-    proto = UserScrollDisabler.prototype;
-
-    proto.disable = function() {
-        var t = this;
-
-        t.lockToScrollPos = [
-            t.$container.scrollLeft(),
-            t.$container.scrollTop()
-        ];
-
-        t.$container.on(
-            "mousewheel.disablescroll DOMMouseScroll.disablescroll touchmove.disablescroll",
-            t._handleWheel
-        );
-
-        t.$container.on("scroll.disablescroll", function() {
-            t._handleScrollbar.call(t);
-        });
-
-        if(t.opts.handleKeys) {
-            t.$document.on("keydown.disablescroll", function(event) {
-                t._handleKeydown.call(t, event);
-            });
-        }
-    };
-
-    proto.undo = function() {
-        var t = this;
-        t.$container.off(".disablescroll");
-        if(t.opts.handleKeys) {
-            t.$document.off(".disablescroll");
-        }
-    };
-
-    proto._handleWheel = function(event) {
-        event.preventDefault();
-    };
-
-    proto._handleScrollbar = function() {
-        this.$container.scrollLeft(this.lockToScrollPos[0]);
-        this.$container.scrollTop(this.lockToScrollPos[1]);
-    };
-
-    proto._handleKeydown = function(event) {
-        for (var i = 0; i < this.opts.scrollEventKeys.length; i++) {
-            if (event.keyCode === this.opts.scrollEventKeys[i]) {
-                event.preventDefault();
-                return;
-            }
-        }
-    };
-
-
-    // Plugin wrapper for object
-    $.fn.disablescroll = function(method) {
-
-        // If calling for the first time, instantiate the object and save
-        // reference. The plugin can therefore only be instantiated once per
-        // page. You can pass options object in through the method parameter.
-        if( ! instance && (typeof method === "object" || ! method)) {
-            instance = new UserScrollDisabler(this, method);
-        }
-
-        // Instance already created, and a method is being explicitly called,
-        // e.g. .disablescroll('undo');
-        else if(instance && instance[method]) {
-            instance[method].call(instance);
-        }
-
-    };
-
-    // Global access
-    window.UserScrollDisabler = UserScrollDisabler;
-
-})(jQuery);
+var menuStatus = false;
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 makeScroll('.scroll_element', 1200);
 var x = 0;
+
 // var oldPos = $(window).scrollTop();
 var oldPos = $(window).scrollTop();
 var scrollStatus = false;
 // if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 // window.onmousewheel = document.onmousewheel = wheel;
+var navCitiesStatus = true;
 
-function wheel(event) {
-    var delta = 0;
-    if (event.wheelDelta) delta = event.wheelDelta / 120;
-    else if (event.detail) delta = -event.detail / 3;
-
-    handle(delta);
-    if (event.preventDefault) event.preventDefault();
-    event.returnValue = false;
-}
-
-function handle(delta) {
-    if(scrollStatus) return;
-    scrollStatus = true;
-    var time = 1000;
-    var positions = [];
-    var windowHeight = $(window).height();
-    var scrollPos = $(window).scrollTop();
-    var nl = $('.scroll_element');
-    // console.log(scrollPos);
-    var distance;
-    // console.log('new ' + scrollPos + '/' + 'old ' + oldPos);
-    for (var i = nl.length; i--; positions.unshift($(nl[i]).offset().top)) ;
-    // if(scrollPos < oldPos) {
-    //     console.log('up');
-    //     x--;
-    //     distance = scrollPos - positions[x] + windowHeight;
-    // }else
-    //     if(scrollPos > oldPos) {
-        console.log('down');
-        distance = scrollPos - positions[x] - windowHeight;
-        oldPos = scrollPos - distance;
-        console.log('new ' + distance + '/' + 'old ' + oldPos);
-        if(oldPos < distance) x--;
-        if(oldPos === distance) x++;
-        // if(distance < oldPos) x++;
-        console.log(x);
-        // if(oldPos){
-        //
-        // };
-        // oldPos = scrollPos - distance;
-    // }else if(scrollPos === oldPos){
-    //     console.log('down');
-    //     x++;
-    //     distance = scrollPos - positions[x-1] + windowHeight;
-    // };
-    // console.log(scrollPos - (distance * delta));
-   // distance = scrollPos - positions[x-1] + $(window).height();
-    $('html, body').stop().animate({
-        scrollTop: scrollPos - (distance * delta)
-    }, time );
-    // console.log('new ' + scrollPos + '/' + 'old ' + oldPos);
-    setTimeout(function(){
-        scrollStatus = false;
-    }, time);
-}
 
 
 
 
 $('.case_arrows').css('height', slideHeight);
+$('.nav_menu_button').click(function(){
+    showMenu('.nav_cities_wrapper', this, 900);
+});
 
+$('.nav_cities_list a').mouseover(function(){
+    navCitiesStatus = false;
+    var list = $('.nav_cities_list a');
+    var i = list.index(this);
+    var target = $('.nav_cities_background');
+    target.animate({
+        opacity: 0
+    }, 600);
+    if(navCitiesStatus) return;
+    setTimeout(function(){
+        target[0].src = $('.city_slide img')[i].src;
+        if(navCitiesStatus) return;
+        target.animate({
+            opacity: 1
+        }, 600);
+        navCitiesStatus = true;
+    }, 600)
+});
+changeCitiesSize('.nav_cities_list a');
 addDots();
 makeMainSlider('.city_slide',
     '.nav_slide_img',
@@ -180,7 +57,13 @@ makeMainSlider('.city_slide',
     '.nav_slide_img_viewer',
     600);
 
-longSlider( '.case_slide','.case_viewer', '.case_arrow_l', '.case_arrow_r', '.case_nav_numbers', '.case_nav_dots span', 3, 600)
+longSlider( '.case_slide',
+    '.case_viewer',
+    '.case_arrow_l',
+    '.case_arrow_r',
+    '.case_nav_numbers',
+    '.case_nav_dots span',
+    3, 600)
 
 
 
@@ -441,24 +324,18 @@ function longSlider(slide, viewerBlock, lArrow, rArrow, countBlock, dots, step, 
         }, time);
     });
 };
-// left: 37, up: 38, right: 39, down: 40,
-// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
 function preventDefault(e) {
     e = e || window.event;
     if (e.preventDefault)
         e.preventDefault();
     e.returnValue = false;
 }
-
 function preventDefaultForScrollKeys(e) {
     if (keys[e.keyCode]) {
         preventDefault(e);
         return false;
     }
 }
-
 function disableScroll() {
     if (window.addEventListener) // older FF
         window.addEventListener('DOMMouseScroll', preventDefault, false);
@@ -467,7 +344,6 @@ function disableScroll() {
     window.ontouchmove  = preventDefault; // mobile
     document.onkeydown  = preventDefaultForScrollKeys;
 }
-
 function enableScroll() {
     if (window.removeEventListener)
         window.removeEventListener('DOMMouseScroll', preventDefault, false);
@@ -476,7 +352,6 @@ function enableScroll() {
     window.ontouchmove = null;
     document.onkeydown = null;
 }
-var menuStatus = false;
 function showMenu(target, button, time){
     $(target).toggleClass('nav_cities_wrapper_active');
     $(button).toggleClass('nav_menu_button_active');
@@ -507,25 +382,159 @@ function showMenu(target, button, time){
         menuStatus = false;
     }
 }
-$('.nav_menu_button').click(function(){
-   showMenu('.nav_cities_wrapper', this, 1200);
-});
-var navCitiesStatus = true;
-$('.nav_cities_list a').mouseover(function(){
-    navCitiesStatus = false;
-    var list = $('.nav_cities_list a');
-    var i = list.index(this);
-    var target = $('.nav_cities_background');
-    target.animate({
-        opacity: 0
-    }, 600);
-    if(navCitiesStatus) return;
+function wheel(event) {
+    var delta = 0;
+    if (event.wheelDelta) delta = event.wheelDelta / 120;
+    else if (event.detail) delta = -event.detail / 3;
+
+    handle(delta);
+    if (event.preventDefault) event.preventDefault();
+    event.returnValue = false;
+}
+function handle(delta) {
+    if(scrollStatus) return;
+    scrollStatus = true;
+    var time = 1000;
+    var positions = [];
+    var windowHeight = $(window).height();
+    var scrollPos = $(window).scrollTop();
+    var nl = $('.scroll_element');
+    // console.log(scrollPos);
+    var distance;
+    // console.log('new ' + scrollPos + '/' + 'old ' + oldPos);
+    for (var i = nl.length; i--; positions.unshift($(nl[i]).offset().top)) ;
+    // if(scrollPos < oldPos) {
+    //     console.log('up');
+    //     x--;
+    //     distance = scrollPos - positions[x] + windowHeight;
+    // }else
+    //     if(scrollPos > oldPos) {
+    console.log('down');
+    distance = scrollPos - positions[x] - windowHeight;
+    oldPos = scrollPos - distance;
+    console.log('new ' + distance + '/' + 'old ' + oldPos);
+    if(oldPos < distance) x--;
+    if(oldPos === distance) x++;
+    // if(distance < oldPos) x++;
+    console.log(x);
+    // if(oldPos){
+    //
+    // };
+    // oldPos = scrollPos - distance;
+    // }else if(scrollPos === oldPos){
+    //     console.log('down');
+    //     x++;
+    //     distance = scrollPos - positions[x-1] + windowHeight;
+    // };
+    // console.log(scrollPos - (distance * delta));
+    // distance = scrollPos - positions[x-1] + $(window).height();
+    $('html, body').stop().animate({
+        scrollTop: scrollPos - (distance * delta)
+    }, time );
+    // console.log('new ' + scrollPos + '/' + 'old ' + oldPos);
     setTimeout(function(){
-        target[0].src = $('.city_slide img')[i].src;
-        if(navCitiesStatus) return;
-         target.animate({
-            opacity: 1
-        }, 600);
-        navCitiesStatus = true;
-    }, 600)
-});
+        scrollStatus = false;
+    }, time);
+}
+function changeCitiesSize(cities){
+    result = ($(window).height() - 100)/$(cities).length/2;
+    $(cities).css({
+        fontSize : result
+    })
+}
+(function($) {
+
+    "use strict";
+
+    var instance, proto;
+
+    function UserScrollDisabler($container, options) {
+        // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+        // left: 37, up: 38, right: 39, down: 40
+        this.opts = $.extend({
+            handleKeys : true,
+            scrollEventKeys : [32, 33, 34, 35, 36, 37, 38, 39, 40]
+        }, options);
+
+        this.$container = $container;
+        this.$document = $(document);
+        this.lockToScrollPos = [0, 0];
+
+        this.disable();
+    }
+
+    proto = UserScrollDisabler.prototype;
+
+    proto.disable = function() {
+        var t = this;
+
+        t.lockToScrollPos = [
+            t.$container.scrollLeft(),
+            t.$container.scrollTop()
+        ];
+
+        t.$container.on(
+            "mousewheel.disablescroll DOMMouseScroll.disablescroll touchmove.disablescroll",
+            t._handleWheel
+        );
+
+        t.$container.on("scroll.disablescroll", function() {
+            t._handleScrollbar.call(t);
+        });
+
+        if(t.opts.handleKeys) {
+            t.$document.on("keydown.disablescroll", function(event) {
+                t._handleKeydown.call(t, event);
+            });
+        }
+    };
+
+    proto.undo = function() {
+        var t = this;
+        t.$container.off(".disablescroll");
+        if(t.opts.handleKeys) {
+            t.$document.off(".disablescroll");
+        }
+    };
+
+    proto._handleWheel = function(event) {
+        event.preventDefault();
+    };
+
+    proto._handleScrollbar = function() {
+        this.$container.scrollLeft(this.lockToScrollPos[0]);
+        this.$container.scrollTop(this.lockToScrollPos[1]);
+    };
+
+    proto._handleKeydown = function(event) {
+        for (var i = 0; i < this.opts.scrollEventKeys.length; i++) {
+            if (event.keyCode === this.opts.scrollEventKeys[i]) {
+                event.preventDefault();
+                return;
+            }
+        }
+    };
+
+
+    // Plugin wrapper for object
+    $.fn.disablescroll = function(method) {
+
+        // If calling for the first time, instantiate the object and save
+        // reference. The plugin can therefore only be instantiated once per
+        // page. You can pass options object in through the method parameter.
+        if( ! instance && (typeof method === "object" || ! method)) {
+            instance = new UserScrollDisabler(this, method);
+        }
+
+        // Instance already created, and a method is being explicitly called,
+        // e.g. .disablescroll('undo');
+        else if(instance && instance[method]) {
+            instance[method].call(instance);
+        }
+
+    };
+
+    // Global access
+    window.UserScrollDisabler = UserScrollDisabler;
+
+})(jQuery);
