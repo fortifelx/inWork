@@ -93,6 +93,7 @@ body
     height: 80px
     line-height: 80px
     transition: 0.6s opacity
+    text-align: right
     li
       display: inline-block
       color: $font-color
@@ -298,15 +299,20 @@ body
     min-width: 100vw
     min-height: 100vh
     filter: url(#blur)
+  &_block
+    height: auto
   li
     width: 100%
     height: calc(100% / 6)
-    display: block
+    display: flex
+    justify-content: center
+    align-items: center
     border-bottom: 1px solid $border-color
     border-left: 1px solid $border-color
     @extend %text-font
     text-align: center
-    padding-top: 10%
+    padding-top: 5%
+    padding-bottom: 5%
     cursor: pointer
     overflow: hidden
     position: relative
@@ -697,6 +703,7 @@ body
 
 .row_fix
   width: 115%
+  max-width: 1400px
 .footer
   clear: both
   width: 100%
