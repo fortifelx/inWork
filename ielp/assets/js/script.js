@@ -273,7 +273,7 @@ function showMenu(target, button, time){
     }
 }
 function changeCitiesSize(cities){
-    result = ($(window).height() - 100)/$(cities).length/2;
+    result = ($(window).height() - 100)/$(cities).length/2.1;
     $(cities).css({
         fontSize : result
     })
