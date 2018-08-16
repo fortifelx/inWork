@@ -57,10 +57,9 @@ body {
   font-size: 18px;
   text-decoration: none;
   text-align: center;
-  transition: 0.6s border, 0.6s font-size; }
+  transition: 0.6s border; }
   .btn:hover {
-    border: 1px solid transparent;
-    font-size: 20px; }
+    border: 1px solid transparent; }
     .btn:hover img {
       opacity: 1;
       animation: moveCaseArrow infinite 1.5s; }
@@ -599,7 +598,8 @@ body {
 
 .case_arrows {
   width: auto;
-  display: inline-block; }
+  display: inline-block;
+  min-height: 16vw; }
   .case_arrows .case_arrow {
     width: 20px;
     display: block;
@@ -783,10 +783,6 @@ body {
   font-size: 36px;
   margin-bottom: 80px; }
 
-.row_fix {
-  width: 115%;
-  max-width: 1400px; }
-
 .footer {
   clear: both;
   width: 100%;
@@ -852,10 +848,10 @@ body {
     justify-content: space-between; }
     .footer_subscribes_header {
       font-size: 18px;
-      padding-bottom: 25px; }
+      padding-bottom: 20px; }
     .footer_subscribes_text {
       font-size: 14px;
-      padding-bottom: 20px;
+      padding-bottom: 40px;
       line-height: 24px; }
     .footer_subscribes_form {
       width: 100%;

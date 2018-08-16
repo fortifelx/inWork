@@ -25,10 +25,9 @@ body
   font-size: 18px
   text-decoration: none
   text-align: center
-  transition: 0.6s border, 0.6s font-size
+  transition: 0.6s border
   &:hover
     border: 1px solid transparent
-    font-size: 20px
     img
       opacity: 1
       animation: moveCaseArrow infinite 1.5s
@@ -588,6 +587,7 @@ body
 .case_arrows
   width: auto
   display: inline-block
+  min-height: 16vw
   .case_arrow
     width: 20px
     display: block
@@ -777,9 +777,9 @@ body
   font-size: 36px
   margin-bottom: 80px
 
-.row_fix
-  width: 115%
-  max-width: 1400px
+//.row_fix
+//  width: 115%
+//  max-width: 1500px
 .footer
   clear: both
   width: 100%
@@ -856,10 +856,10 @@ body
     &_header
       font-size: 18px
       @extend %text-font
-      padding-bottom: 25px
+      padding-bottom: 20px
     &_text
       font-size: 14px
-      padding-bottom: 20px
+      padding-bottom: 40px
       line-height: 24px
       @extend %text-font
     &_form
