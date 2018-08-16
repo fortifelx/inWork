@@ -5,6 +5,7 @@ var caseSlides = $('.case_slide');
 var slideHeight = caseSlides.css('height');
 var menuStatus = false;
 var navCitiesStatus = true;
+var langStatus = false;
 
 
 
@@ -52,7 +53,7 @@ longSlider( '.case_slide',
     '.case_nav_numbers',
     '.case_nav_dots span',
     3, 600)
-
+showLang('.nav_lang', 800);
 
 
 // F U N C T I O N S
@@ -276,4 +277,37 @@ function changeCitiesSize(cities){
     $(cities).css({
         fontSize : result
     })
+}
+function showLang(lang, time){
+    var lang = $(lang);
+    lang.mouseenter(function(){
+        if(langStatus) return;
+        langStatus = true;
+        console.log('start');
+       lang.find('li').velocity({
+           right: 0,
+           opacity: 1
+       }, time);
+        setTimeout(function(){
+            langStatus = false;
+        },time);
+    });
+    lang.mouseleave(function(){
+        if(langStatus) return;
+        langStatus = true;
+        console.log('start');
+        var li = lang.find('li');
+       $(li[0]).velocity({
+           right: -76,
+           opacity: 0
+       }, time);
+       $(li[1]).velocity({
+           right: -38,
+           opacity: 0
+       }, time);
+        setTimeout(function(){
+            langStatus = false;
+        },time);
+    });
+
 }

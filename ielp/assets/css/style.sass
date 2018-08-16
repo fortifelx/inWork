@@ -88,8 +88,13 @@ body
     img
       vertical-align: middle
       display: inline
+  @keyframes showLang
+    100%
+      right: 0
   &_lang
-    width: 100%
+    display: inline-block
+    width: auto
+    float: right
     height: 80px
     line-height: 80px
     transition: 0.6s opacity
@@ -105,9 +110,24 @@ body
       line-height: 32px
       font-size: 12px
       text-align: center
+      cursor: pointer
+      opacity: 0
+      border-radius: 34px
+      border: 1px solid transparent
+      transition: 1s border
+      &:nth-child(1)
+        position: relative
+        right: -76px
+      &:nth-child(2)
+        position: relative
+        right: -38px
       &:nth-child(3)
+        position: relative
+        z-index: 1
         border: 1px solid $font-color
-        border-radius: 34px
+        opacity: 1
+      &:hover
+        border: 1px solid $font-color
   &_calendar
     height: 80px
     width: 100%
@@ -731,12 +751,14 @@ body
   &_phones
     width: 100%
     padding-bottom: 15px
+    line-height: 18px
     &_header
       font-size: 18px
       @extend %text-font
       padding-bottom: 10px
     &_text
       font-size: 14px
+      line-height: 20px
       @extend %text-font
   &_mails
     width: 100%
@@ -746,10 +768,17 @@ body
     padding-bottom: 15px
     display: flex
     flex-direction: column
-    justify-content: space-between
-    text-align: center
+    //justify-content: space-between
+    align-items: center
+    &_block
+      display: inline-flex
+      width: auto
+      height: 100%
+      flex-direction: column
+      justify-content: space-between
     &_wrapper
-      width: 100%
+      display: block
+      width: auto
       padding-bottom: 15px
     &_header
       font-size: 14px
