@@ -24,9 +24,13 @@ function makeScroll(elements, time) {
     var i = 0;
     var body = $("html, body");
     var status = true;
-    //  body.animate({
-    //     scrollTop: 0,
-    // }, time);
+     body.animate({
+        scrollTop: 0,
+    }, time);
+    setTimeout(function () {
+        status = true;
+        previousScrollPosition = $(window).scrollTop() + $(window).height();
+    }, time);
     navSlide.click(function(){
         status = false;
         $("html, body").animate({
@@ -34,7 +38,7 @@ function makeScroll(elements, time) {
         }, 600);
         setTimeout(function () {
             status = true;
-            previousScrollPosition = 0;
+            previousScrollPosition = $(window).scrollTop() + $(window).height();
         }, time);
         i = 0;
         console.log('click');
