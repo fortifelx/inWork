@@ -337,6 +337,12 @@ body {
     opacity: 0.5; }
   100% {
     opacity: 1; } }
+@keyframes showDate {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.65;
+    bottom: -5px; } }
 .nav_cities_wrapper {
   position: fixed;
   left: 0;
@@ -378,7 +384,9 @@ body {
       display: block;
       font-size: 16px;
       opacity: 0;
-      transition: 0.5s opacity; }
+      position: relative;
+      bottom: 5px;
+      font-family: Pragmatica; }
     .nav_cities_list li a {
       text-decoration: none;
       display: inline-block;
@@ -399,8 +407,7 @@ body {
         width: 100%;
         transition: width 0.6s ease-out; }
       .nav_cities_list li a:hover + span {
-        transition: 1s opacity;
-        opacity: 0.65; }
+        animation: showDate 1.2s 0.6s forwards; }
 .nav_cities_punct {
   color: white;
   font-size: 16px;
