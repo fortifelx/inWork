@@ -17,6 +17,27 @@ $short-animation-time: 0.6s
   overflow: hidden
 body
   background-color: #212121
+@keyframes showHidden
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+@keyframes show-text
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+    padding-top: 0
+.main_animation_text
+  animation: show-text 1s 4s forwards
+.main_animation_header svg text
+  animation: stroke-offset 2s 2s ease-out forwards
+.main_animation_menu
+  animation: showHidden 1s 4s ease-out forwards
+.main_animation_image
+  animation: showHidden 2s 1s ease-out forwards
+.main_animation_mouse
+  animation: mouse 2s infinite ease-in-out, show-text 1s 4s forwards
 .btn
   border: 1px solid $font-color
   display: block
@@ -52,12 +73,8 @@ body
   margin-left: calc(50% - 15px)
   z-index: 3
   opacity: 0
-  animation: mouse  2s infinite ease-in-out, show-text 1s 3s forwards
-@keyframes showHidden
-  0%
-    opacity: 0
-  100%
-    opacity: 1
+  //animation: mouse 2s infinite ease-in-out
+  //, show-text 1s 3s forwards
 .city_slide_info svg text
   fill: $font-color
   stroke: $font-color
@@ -65,7 +82,7 @@ body
   stroke-width: 0
   stroke-dasharray: 100% 0
   //animation-delay: 2s
-  animation: stroke-offset 2s 1s ease-out forwards
+  //animation: stroke-offset 2s 1s ease-out forwards
   //font-family: Ubuntu
 
 @keyframes stroke-offset
@@ -101,8 +118,7 @@ body
     background-color: rgba(33, 33, 33, 0)
     overflow: hidden
     transition: 0.6s background-color
-    animation: showHidden 1s 3s ease-out forwards
-
+    //animation: showHidden 1s 3s ease-out forwards
     &_active
       background-color: rgba(33, 33, 33, 1)
       .nav_lang
@@ -373,6 +389,7 @@ body
         position: relative
         color: $font-color
         opacity: 0
+        font-family: Montserrat
         &:after
           content: ''
           width: 0
@@ -413,7 +430,7 @@ body
   top: 80px
   right: 0
   opacity: 0
-  animation: showHidden 1s 3s ease-out forwards
+  //animation: showHidden 1s 3s ease-out forwards
   z-index: 2
   height: calc(100vh - 80px)
   overflow: hidden
@@ -423,7 +440,7 @@ body
     bottom: 0
     right: 0
     opacity: 0
-    animation: showHidden 1s 3s ease-out forwards
+    //animation: showHidden 1s 3s ease-out forwards
     width: 200px
     height: 100vh
   &_img_viewer
@@ -511,12 +528,6 @@ body
   overflow: hidden
   position: relative
   background-color: hsl(0, 0%, 20%)
-@keyframes show-text
-  0%
-    opacity: 0
-  100%
-    opacity: 1
-    padding-top: 0
 .city
   &_slide
     position: absolute
@@ -537,8 +548,8 @@ body
     right: 0
     width: 100%
     height: 100vh
-    opacity: 1
-    animation: showHidden 2s 0s ease-out forwards
+    opacity: 0
+    //animation: showHidden 2s 0s ease-out forwards
 
   &_slide_image_viewer
     position: absolute
@@ -580,14 +591,14 @@ body
     margin-bottom: 40px
     padding-top: 10px
     opacity: 0
-    animation: show-text 1s 3s forwards
+    //animation: show-text 1s 3s forwards
   &_slide_description
     display: block
     @extend %text-font
     font-size: 16px
     margin-bottom: 20px
     opacity: 0
-    animation: show-text 1s 3s forwards
+    //animation: show-text 1s 3s forwards
   &_slide_name
     display: block
     @extend %text-font
@@ -595,7 +606,7 @@ body
     text-transform: uppercase
     margin-bottom: 35px
     opacity: 0
-    animation: show-text 1s 3s forwards
+    //animation: show-text 1s 3s forwards
 
 .case_wrapper
   padding-top: 140px
@@ -1004,4 +1015,171 @@ body
   cursor: pointer
   margin-right: 15px
   opacity: 0
-  animation: show-text 1s 3s forwards
+  //animation: show-text 1s 3s forwards
+
+@keyframes fade-out
+  from
+    opacity: 1
+
+  to
+    opacity: 0
+
+
+.animated
+  animation-duration: 1s
+  animation-fill-mode: both
+
+.fade-out
+  animation-name: fade-out
+
+/* Flex helpers
+
+.flex
+  display: flex
+  &.vac
+    align-items: center
+  &.cac
+    justify-content: center
+  &.flex-wrap-wrap
+    flex-wrap: wrap
+  .row, .full-width
+    width: 100%
+  &.justify-content-end
+    justify-content: flex-end
+  &.flex-column
+    flex-direction: column
+  &.justify-space-around
+    justify-content: space-around
+  &.justify-space-between
+    justify-content: space-between
+
+@keyframes fade-in
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+
+
+.fade-in
+  animation-name: fade-in
+
+//body
+//  //background: #1c1a19
+//  //color: #fff
+//  //height: 100vh
+//  //width: 100%
+.deactivate
+  opacity: 0
+.overlay
+  position: fixed
+  top: 0px
+  left: 0px
+  right: 0px
+  bottom: 0px
+  z-index: 100000000
+  background: #212121
+  //opacity: 1
+  //transition: 0.6s opacity
+  .preloader
+    svg
+      animation-name: preloader-in
+      animation-duration: 0.8s
+      animation-fill-mode: forwards
+      animation-timing-function: ease-in-out
+    &.out svg
+      animation-name: preloader-out
+    &.animate .outer
+      animation-name: show100
+      animation-duration: 2.3s
+      animation-delay: 1s
+      animation-timing-function: linear
+      opacity: 1
+    .logo
+      opacity: 0
+      animation-delay: 0.5s
+      display: block
+      width: 90%
+      color: $font-color
+      margin: 0px auto
+      text-align: center
+      //background: transparent url(https://d3jzqcajkfp32y.cloudfront.net/2017/v3/icons/staak-logo-2017-copy.svg) no-repeat center center
+      background: transparent url('../img/logo.png') no-repeat center center
+      background-size: contain
+      text-indent: -99999px
+      padding: 25px
+      position: relative
+      top: -5px
+      &.fade-out
+        animation-delay: 0.2s
+        animation-duration: 0.2s
+
+@keyframes preloader-in
+  0%
+    opacity: 0
+    transform: scale(0.5)
+
+  25%
+    opacity: 1
+    transform: scale(1.4)
+
+  60%
+    opacity: 1
+    transform: scale(1)
+
+
+@keyframes preloader-out
+  0%
+    opacity: 1
+    transform: scale(1)
+
+  25%
+    opacity: 1
+    transform: scale(1.4)
+
+  60%
+    opacity: 0
+    transform: scale(0.5)
+
+  100%
+    opacity: 0
+    transform: scale(0.5)
+
+
+.loader
+  position: relative
+  height: 200px
+  width: 200px
+  svg
+    position: absolute
+    top: 0%
+
+.outer
+  fill: transparent
+  stroke: #fff
+  stroke-width: 2
+  stroke-dasharray: 99
+  /* transition: stroke-dashoffset 1s;
+  stroke-dashoffset: 0
+  opacity: 0
+
+.preloader .outer
+  stroke-dasharray: 502
+
+.outer.loading
+  transition: stroke-dashoffset 0.8s ease
+
+.background
+  opacity: 0.5
+  stroke: #fff
+  stroke-width: 2
+  fill: transparent
+
+.animate .outer
+  animation-name: show100
+  animation-duration: 5s
+  opacity: 1
+  animation-timing-function: linear
+
+.loader.animate
+  transform: rotate(-90deg)
