@@ -100,7 +100,7 @@ function init() {
         preloaderOuter.style.strokeDashoffset = newLength;
         addClass(preloaderOuter, 'loading');
         loadImages();
-    }, 500);
+    }, 400);
 }
 
 init();
@@ -118,7 +118,7 @@ function load() {
     if (loaded == total) {
         setTimeout(function () {
             onDone();
-        }, 1000);
+        }, 800);
     } else {
         setTimeout(function () {
             load();
@@ -140,7 +140,7 @@ function onDone() {
         removeClass(preloaderOuter, 'loading');
 
         init();
-    }, 1000);
+    }, 800);
 }
 // document.addEventListener("DOMContentLoaded", function(event) {
 //     var preloader = document.querySelector('.overlay');

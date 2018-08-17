@@ -37,7 +37,7 @@
 @font-face {
   font-family: "Pragmatica";
   src: url("../fonts/pragmaticalightc.otf"); }
-.btn, .nav_calendar a, .nav_slide li, .nav_slide_title, .nav_slide_days, .nav_slide_month, .nav_slide_year, .city_slide_description, .city_slide_name, .case_header, .case_slide_text, .case_slide_name, .case_slide_date, .case_nav_numbers, .case_view_btn, .feedback_video_text, .feedback_video_name, .feedback_video_place, .feedback_header, .footer_address_header, .footer_address_text, .footer_phones_header, .footer_phones_text, .footer_mails_header, .footer_mails_mail, .footer_subscribes_header, .footer_subscribes_text, .footer_subscribes_input, .footer_subscribes_button, .footer_follow_icons, .copyright, .view_btn, .check_in_btn {
+.btn, .nav_calendar a, .nav_cities_punct, .nav_slide li, .nav_slide_title, .nav_slide_days, .nav_slide_month, .nav_slide_year, .city_slide_description, .city_slide_name, .case_header, .case_slide_text, .case_slide_name, .case_slide_date, .case_nav_numbers, .case_view_btn, .feedback_video_text, .feedback_video_name, .feedback_video_place, .feedback_header, .footer_address_header, .footer_address_text, .footer_phones_header, .footer_phones_text, .footer_mails_header, .footer_mails_mail, .footer_subscribes_header, .footer_subscribes_text, .footer_subscribes_input, .footer_subscribes_button, .footer_follow_icons, .copyright, .view_btn, .check_in_btn {
   font-weight: 400;
   color: white;
   font-family: Pragmatica;
@@ -48,7 +48,8 @@
   overflow: hidden; }
 
 body {
-  background-color: #212121; }
+  background-color: #212121;
+  font-family: Pragmatica; }
 
 @keyframes showHidden {
   0% {
@@ -499,6 +500,7 @@ body {
     width: 100%;
     font-size: 18px;
     height: 19px;
+    font-family: Montserrat;
     margin-bottom: 6%;
     opacity: 1;
     transition: 0.7s opacity; }

@@ -17,6 +17,7 @@ $short-animation-time: 0.6s
   overflow: hidden
 body
   background-color: #212121
+  font-family: Pragmatica
 @keyframes showHidden
   0%
     opacity: 0
@@ -414,6 +415,7 @@ body
     text-decoration: none
     padding-left: 20px
     opacity: 0
+    @extend %text-font
   &_network
     width: 40px
     margin-top: 15px
@@ -483,6 +485,7 @@ body
     width: 100%
     font-size: 18px
     height: 19px
+    font-family: Montserrat
     @extend %text-font
     margin-bottom: 6%
     opacity: 1
