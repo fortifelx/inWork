@@ -132,7 +132,6 @@ function onDone() {
     addClass(logo, 'fade-out');
 
     setTimeout(function () {
-        console.log('load');
         loaded = 0;
         removeClass(preloader, 'out');
         addClass(logo, 'fade-in');
