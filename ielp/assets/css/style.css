@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf");
@@ -84,8 +85,36 @@ body {
   display: block;
   margin-left: calc(50% - 15px);
   z-index: 3;
-  animation: mouse 2s infinite ease-in-out; }
+  opacity: 0;
+  animation: mouse 2s infinite ease-in-out, show-text 1s 3s forwards; }
 
+@keyframes showHidden {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.city_slide_info svg text {
+  fill: white;
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 2s 1s ease-out forwards; }
+
+@keyframes stroke-offset {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 0;
+    stroke-dasharray: 0% 100%; }
+  25% {
+    stroke-width: 3px; }
+  50% {
+    fill-opacity: 0; }
+  75% {
+    stroke-width: 3px; }
+  100% {
+    stroke-width: 0;
+    fill-opacity: 1; } }
 .nav {
   height: 80px;
   width: 100%; }
@@ -95,11 +124,13 @@ body {
     z-index: 100;
     top: 0;
     left: 0;
+    opacity: 0;
     height: 80px;
     border-bottom: 1px solid rgba(250, 250, 244, 0.15);
     background-color: rgba(33, 33, 33, 0);
     overflow: hidden;
-    transition: 0.6s background-color; }
+    transition: 0.6s background-color;
+    animation: showHidden 1s 3s ease-out forwards; }
     .nav_wrapper_active {
       background-color: #212121; }
       .nav_wrapper_active .nav_lang {
@@ -211,16 +242,16 @@ body {
   .nav_calendar_btn:before {
     right: 0;
     top: 0;
-    transition: all 0.1s ease; }
+    transition: all 0.4s ease; }
   .nav_calendar_btn:after {
     left: 0;
     bottom: 0;
-    transition: all 0.1s 0.2s ease; }
+    transition: all 0.4s 0.8s ease; }
   .nav_calendar_btn:hover:before {
-    transition: all 0.1s 0.2s ease;
+    transition: all 0.4s 0.8s ease;
     height: 100%; }
   .nav_calendar_btn:hover:after {
-    transition: all 0.1s ease;
+    transition: all 0.4s ease;
     height: 100%; }
   .nav_calendar_btn span:before, .nav_calendar_btn span:after {
     position: absolute;
@@ -231,7 +262,7 @@ body {
     top: 0;
     width: 0;
     height: 1px;
-    transition: all 0.1s 0.1s ease; }
+    transition: all 0.4s 0.4s ease; }
   .nav_calendar_btn span:after {
     left: 0;
     bottom: 0;
@@ -392,6 +423,8 @@ body {
   position: fixed;
   top: 80px;
   right: 0;
+  opacity: 0;
+  animation: showHidden 1s 3s ease-out forwards;
   z-index: 2;
   height: calc(100vh - 80px);
   overflow: hidden; }
@@ -400,6 +433,8 @@ body {
     overflow: hidden;
     bottom: 0;
     right: 0;
+    opacity: 0;
+    animation: showHidden 1s 3s ease-out forwards;
     width: 200px;
     height: 100vh; }
   .nav_slide_img_viewer {
@@ -481,6 +516,12 @@ body {
   position: relative;
   background-color: #333333; }
 
+@keyframes show-text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    padding-top: 0; } }
 .city_slide {
   position: absolute;
   bottom: 0;
@@ -499,7 +540,9 @@ body {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  opacity: 1;
+  animation: showHidden 2s 0s ease-out forwards; }
 .city_slide_image_viewer {
   position: absolute;
   bottom: 0;
@@ -522,11 +565,13 @@ body {
   text-align: left;
   z-index: 1;
   background-color: rgba(33, 33, 33, 0.5); }
-.city_slide h3 {
+.city_slide svg {
   display: block;
   color: white;
   font-family: Montserrat;
   font-size: 172px;
+  height: 160px;
+  width: 100%;
   font-weight: 400;
   margin-bottom: 90px; }
 .city_slide_date {
@@ -535,16 +580,23 @@ body {
   font-family: Pragmatica;
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding-top: 10px;
+  opacity: 0;
+  animation: show-text 1s 3s forwards; }
 .city_slide_description {
   display: block;
   font-size: 16px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: show-text 1s 3s forwards; }
 .city_slide_name {
   display: block;
   font-size: 18px;
   text-transform: uppercase;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  opacity: 0;
+  animation: show-text 1s 3s forwards; }
 
 .case_wrapper {
   padding-top: 140px;
@@ -923,6 +975,8 @@ body {
   height: 38px;
   font-size: 18px;
   cursor: pointer;
-  margin-right: 15px; }
+  margin-right: 15px;
+  opacity: 0;
+  animation: show-text 1s 3s forwards; }
 
 /*# sourceMappingURL=style.css.map */

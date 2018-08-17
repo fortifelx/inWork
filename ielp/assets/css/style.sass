@@ -1,4 +1,5 @@
 @import "fonts.sass"
+@import url(https://fonts.googleapis.com/css?family=Ubuntu)
 
 $main-color: #343434
 $font-color: hsl(0, 0%, 100%)
@@ -50,7 +51,41 @@ body
   display: block
   margin-left: calc(50% - 15px)
   z-index: 3
-  animation: mouse  2s infinite ease-in-out
+  opacity: 0
+  animation: mouse  2s infinite ease-in-out, show-text 1s 3s forwards
+@keyframes showHidden
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+.city_slide_info svg text
+  fill: $font-color
+  stroke: $font-color
+  fill-opacity: 0
+  stroke-width: 0
+  stroke-dasharray: 100% 0
+  //animation-delay: 2s
+  animation: stroke-offset 2s 1s ease-out forwards
+  //font-family: Ubuntu
+
+@keyframes stroke-offset
+  0%
+    fill-opacity: 0
+    stroke-width: 0
+    stroke-dasharray: 0% 100%
+
+  25%
+    stroke-width: 3px
+
+  50%
+    fill-opacity: 0
+
+  75%
+    stroke-width: 3px
+
+  100%
+    stroke-width: 0
+    fill-opacity: 1
 .nav
   height: 80px
   width: 100%
@@ -60,11 +95,14 @@ body
     z-index: 100
     top: 0
     left: 0
+    opacity: 0
     height: 80px
     border-bottom: 1px solid $border-color
     background-color: rgba(33, 33, 33, 0)
     overflow: hidden
     transition: 0.6s background-color
+    animation: showHidden 1s 3s ease-out forwards
+
     &_active
       background-color: rgba(33, 33, 33, 1)
       .nav_lang
@@ -178,17 +216,17 @@ body
   &:before
     right: 0
     top: 0
-    transition: all 0.1s ease
+    transition: all 0.4s ease
   &:after
     left: 0
     bottom: 0
-    transition: all 0.1s 0.2s ease
+    transition: all 0.4s 0.8s ease
   &:hover
     &:before
-      transition: all 0.1s 0.2s ease
+      transition: all 0.4s 0.8s ease
       height: 100%
     &:after
-      transition: all 0.1s ease
+      transition: all 0.4s ease
       height: 100%
   span
     &:before, &:after
@@ -200,7 +238,7 @@ body
       top: 0
       width: 0
       height: 1px
-      transition: all 0.1s 0.1s ease
+      transition: all 0.4s 0.4s ease
     &:after
       left: 0
       bottom: 0
@@ -367,6 +405,8 @@ body
   position: fixed
   top: 80px
   right: 0
+  opacity: 0
+  animation: showHidden 1s 3s ease-out forwards
   z-index: 2
   height: calc(100vh - 80px)
   overflow: hidden
@@ -375,6 +415,8 @@ body
     overflow: hidden
     bottom: 0
     right: 0
+    opacity: 0
+    animation: showHidden 1s 3s ease-out forwards
     width: 200px
     height: 100vh
   &_img_viewer
@@ -462,7 +504,12 @@ body
   overflow: hidden
   position: relative
   background-color: hsl(0, 0%, 20%)
-
+@keyframes show-text
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+    padding-top: 0
 .city
   &_slide
     position: absolute
@@ -483,6 +530,9 @@ body
     right: 0
     width: 100%
     height: 100vh
+    opacity: 1
+    animation: showHidden 2s 0s ease-out forwards
+
   &_slide_image_viewer
     position: absolute
     bottom: 0
@@ -505,11 +555,13 @@ body
     text-align: left
     z-index: 1
     background-color: hsla(0, 0%, 13%, 0.5)
-  &_slide h3
+  &_slide svg
     display: block
     color: $font-color
     font-family: Montserrat
     font-size: 172px
+    height: 160px
+    width: 100%
     font-weight: 400
     margin-bottom: 90px
   &_slide_date
@@ -519,17 +571,24 @@ body
     font-size: 24px
     font-weight: 400
     margin-bottom: 40px
+    padding-top: 10px
+    opacity: 0
+    animation: show-text 1s 3s forwards
   &_slide_description
     display: block
     @extend %text-font
     font-size: 16px
     margin-bottom: 20px
+    opacity: 0
+    animation: show-text 1s 3s forwards
   &_slide_name
     display: block
     @extend %text-font
     font-size: 18px
     text-transform: uppercase
     margin-bottom: 35px
+    opacity: 0
+    animation: show-text 1s 3s forwards
 
 .case_wrapper
   padding-top: 140px
@@ -937,3 +996,5 @@ body
   font-size: 18px
   cursor: pointer
   margin-right: 15px
+  opacity: 0
+  animation: show-text 1s 3s forwards
