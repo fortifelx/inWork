@@ -670,7 +670,8 @@ body {
     .case_slide_arrow {
       position: absolute;
       right: 11%;
-      bottom: 33px; }
+      bottom: 35px;
+      width: 35px; }
 
 .case_arrows {
   width: auto;
