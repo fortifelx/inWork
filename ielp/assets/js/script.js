@@ -282,31 +282,31 @@ function showLang(lang, time){
     var lang = $(lang);
     lang.mouseenter(function(){
         if(langStatus) return;
-        langStatus = true;
+        // langStatus = true;
         console.log('start');
-       lang.find('li').velocity({
+       lang.find('li').animate({
            right: 0,
            opacity: 1
        }, time);
         setTimeout(function(){
-            langStatus = false;
+            // langStatus = false;
         },time);
     });
     lang.mouseleave(function(){
-        if(langStatus) return;
-        langStatus = true;
+        // if(langStatus) return;
+        // langStatus = true;
         console.log('start');
         var li = lang.find('li');
-       $(li[0]).velocity({
+       $(li[0]).animate({
            right: -76,
            opacity: 0
        }, time);
-       $(li[1]).velocity({
+       $(li[1]).animate({
            right: -38,
            opacity: 0
        }, time);
         setTimeout(function(){
-            langStatus = false;
+            // langStatus = false;
         },time);
     });
 
