@@ -261,16 +261,16 @@ body {
   .nav_calendar_btn:before {
     right: 0;
     top: 0;
-    transition: all 0.4s ease; }
+    transition: all 0.3s ease; }
   .nav_calendar_btn:after {
     left: 0;
     bottom: 0;
-    transition: all 0.4s 0.8s ease; }
+    transition: all 0.3s 0.6s ease; }
   .nav_calendar_btn:hover:before {
-    transition: all 0.4s 0.8s ease;
+    transition: all 0.3s 0.6s ease;
     height: 100%; }
   .nav_calendar_btn:hover:after {
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     height: 100%; }
   .nav_calendar_btn span:before, .nav_calendar_btn span:after {
     position: absolute;
@@ -281,7 +281,7 @@ body {
     top: 0;
     width: 0;
     height: 1px;
-    transition: all 0.4s 0.4s ease; }
+    transition: all 0.3s 0.3s ease; }
   .nav_calendar_btn span:after {
     left: 0;
     bottom: 0;
