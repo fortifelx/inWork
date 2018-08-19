@@ -1,7 +1,3 @@
-// left: 37, up: 38, right: 39, down: 40,
-// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-// var oldPos = $(window).scrollTop();
-var scrollPosition = 0;
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 var x = 0;
 var oldPos = $(window).scrollTop();
@@ -18,7 +14,6 @@ function makeScroll(elements, time) {
 
     var nl = $(elements);
     var navSlide = $('.nav_slide li');
-    // var navMenu = $('.nav_wrapper');
     var positions = [];
     for (var i = nl.length; i--; positions.unshift($(nl[i]).offset().top)) ;
     var i = 0;
@@ -54,13 +49,6 @@ function makeScroll(elements, time) {
             if (i === positions.length - 1) return;
             status = false;
             i++;
-            // disableScroll();
-            // if (i === 0) {
-            //     showSlide(mainSlide, navMenu, $(window).height(), time*2);
-            // }
-            // if (i > 0) {
-            //     hideSlide(mainSlide, navMenu, $(window).height(), time / 2);
-            // }
             body.stop().animate({
                 scrollTop: positions[i],
             }, time);
@@ -72,14 +60,10 @@ function makeScroll(elements, time) {
         if(currentScrollPosition < previousScrollPosition && status)
         {
             if (i === 0) {
-                // showSlide(mainSlide, navMenu, $(window).height(), time*2);
                 return;
             }
             status = false;
             i--;
-            // if (i === 0) {
-            //     showSlide(mainSlide, navMenu, $(window).height(), time*2);
-            // }
             body.stop().animate({
                 scrollTop: positions[i],
             }, time);

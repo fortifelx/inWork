@@ -51,6 +51,11 @@ body {
   background-color: #212121;
   font-family: Pragmatica; }
 
+.body_scroll_stop {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll; }
+
 @keyframes showHidden {
   0% {
     opacity: 0; }
@@ -438,13 +443,35 @@ body {
   padding-left: 20px;
   opacity: 0; }
 .nav_cities_network {
-  width: 40px;
+  width: 42px;
+  height: 42px;
   margin-top: 15px;
   display: inline-block;
   margin-left: 20px;
-  opacity: 0; }
+  opacity: 0;
+  border: 1px solid white;
+  background-color: #212121;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 38px; }
   .nav_cities_network:hover {
-    filter: grayscale(100%); }
+    border: 1px solid #212121;
+    background-color: white; }
+    .nav_cities_network:hover img:nth-child(1) {
+      display: none; }
+    .nav_cities_network:hover img:nth-child(2) {
+      display: inline-block; }
+  .nav_cities_network img {
+    height: 40%;
+    display: inline-block;
+    vertical-align: middle; }
+    .nav_cities_network img:nth-child(2) {
+      display: none; }
+  .nav_cities_network:nth-child(6) img {
+    margin-left: 2px; }
+  .nav_cities_network:nth-child(7) img {
+    margin-left: 1px;
+    margin-bottom: 3px; }
 
 .nav_slide {
   width: 200px;
@@ -975,7 +1002,31 @@ body {
     .footer_follow_icons {
       display: inline-block;
       margin-right: 20px;
-      text-decoration: none; }
+      text-decoration: none;
+      border: 1px solid white;
+      border-radius: 40px;
+      line-height: 38px;
+      height: 42px;
+      width: 42px;
+      text-align: center; }
+      .footer_follow_icons:hover {
+        border: 1px solid #212121;
+        background-color: white; }
+        .footer_follow_icons:hover img:nth-child(1) {
+          display: none; }
+        .footer_follow_icons:hover img:nth-child(2) {
+          display: inline-block; }
+      .footer_follow_icons img {
+        height: 40%;
+        display: inline-block;
+        vertical-align: middle; }
+        .footer_follow_icons img:nth-child(2) {
+          display: none; }
+      .footer_follow_icons:nth-child(2) img {
+        margin-left: 2px; }
+      .footer_follow_icons:nth-child(3) img {
+        margin-left: 1px;
+        margin-bottom: 3px; }
 
 .copyright {
   position: relative;

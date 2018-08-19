@@ -19,6 +19,7 @@ $('.nav_cities_list a').mouseover(function(){
     var list = $('.nav_cities_list a');
     var i = list.index(this);
     var target = $('.nav_cities_background');
+    if(navCityPrev == target[i]) return;
     target.css({
         zIndex : -1,
         display: 'none'
@@ -33,7 +34,7 @@ $('.nav_cities_list a').mouseover(function(){
         opacity: 0
     }).animate({
         opacity: 1
-    }, 600);
+    }, 800);
     navCityPrev = target[i];
 
 });
@@ -285,20 +286,14 @@ function showLang(lang, time){
     var lang = $(lang);
     lang.mouseenter(function(){
         if(langStatus) return;
-        // langStatus = true;
-        console.log('start');
        lang.find('li').animate({
            right: 0,
            opacity: 1
        }, time);
         setTimeout(function(){
-            // langStatus = false;
         },time);
     });
     lang.mouseleave(function(){
-        // if(langStatus) return;
-        // langStatus = true;
-        console.log('start');
         var li = lang.find('li');
        $(li[0]).animate({
            right: -76,
@@ -309,7 +304,6 @@ function showLang(lang, time){
            opacity: 0
        }, time);
         setTimeout(function(){
-            // langStatus = false;
         },time);
     });
 

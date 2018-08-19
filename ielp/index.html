@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 </head>
-<body>
+<body class="body_scroll_stop">
 
-<!--<div class="overlay flex cac vac ">-->
-    <!--<div>-->
-        <!--<div class="loader preloader flex vac">-->
-            <!--<svg width="200" height="200" >-->
-                <!--<circle class="background" cx="90" cy="90" r="80" transform="rotate(-90, 100, 90)"/>-->
-                <!--<circle class="outer" cx="90" cy="90" r="80" transform="rotate(-90, 100, 90)"/>-->
-            <!--</svg>-->
-            <!--<span class="circle-background"></span>-->
-            <!--<span class="logo animated fade-in">-->
-                <!--IELP-->
-            <!--</span>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+<div class="overlay flex cac vac ">
+    <div>
+        <div class="loader preloader flex vac">
+            <svg width="200" height="200" >
+                <circle class="background" cx="90" cy="90" r="80" transform="rotate(-90, 100, 90)"/>
+                <circle class="outer" cx="90" cy="90" r="80" transform="rotate(-90, 100, 90)"/>
+            </svg>
+            <span class="circle-background"></span>
+            <span class="logo animated fade-in">
+                IELP
+            </span>
+        </div>
+    </div>
+</div>
 <script src="assets/js/preloader.js"></script>
 
 
@@ -93,13 +93,16 @@
                     <a href="" class="nav_cities_punct">About</a>
 
                     <a href="" class="nav_cities_network">
-                        <img src="assets/img/icon/facebook.svg" alt="">
+                        <img src="assets/img/svg/fb%20white.svg" alt="">
+                        <img src="assets/img/svg/fb%20gray.svg" alt="">
                     </a>
                     <a href="" class="nav_cities_network">
-                        <img src="assets/img/icon/youtube.svg" alt="">
+                        <img src="assets/img/svg/yout%20white.svg" alt="">
+                        <img src="assets/img/svg/yout%20gray.svg" alt="">
                     </a>
                     <a href="" class="nav_cities_network">
-                        <img src="assets/img/icon/linkedin.svg" alt="">
+                        <img src="assets/img/svg/in%20white.svg" alt="">
+                        <img src="assets/img/svg/in%20gray.svg" alt="">
                     </a>
                     </div>
                 </div>
@@ -483,13 +486,16 @@
                     </div>
                     <div class="footer_follow">
                         <a href="https://faceboook.com" class="footer_follow_icons">
-                            <img src="assets/img/icon/facebook.svg" alt="">
+                            <img src="assets/img/svg/fb%20white.svg" alt="">
+                            <img src="assets/img/svg/fb%20gray.svg" alt="">
                         </a>
                         <a href="https://youtube.com" class="footer_follow_icons">
-                            <img src="assets/img/icon/youtube.svg" alt="">
+                            <img src="assets/img/svg/yout%20white.svg" alt="">
+                            <img src="assets/img/svg/yout%20gray.svg" alt="">
                         </a>
                         <a href="https://linkedin.com" class="footer_follow_icons">
-                            <img src="assets/img/icon/linkedin.svg" alt="">
+                            <img src="assets/img/svg/in%20white.svg" alt="">
+                            <img src="assets/img/svg/in%20gray.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -515,15 +521,11 @@
 <script type="text/javascript" src="assets/js/velocity.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 <script type="text/javascript" src="assets/js/scroll.js"></script>
-<!--<script>-->
-    <!--// var caseSlides = $('.case_slide');-->
-    <!--// var slideHeight = caseSlides.css('height');-->
-    <!--// $('.case_arrows').css('height', slideHeight);-->
-<!--</script>-->
 <script type="text/javascript">
     $(window).on('load', function () {
     var $preloader = $('.overlay');
     var time = 900;
+
 
     $preloader.delay(time).fadeOut('slow');
     setTimeout(function(){
@@ -532,6 +534,9 @@
         $('.anim_image').addClass('main_animation_image');
         $('.anim_menu').addClass('main_animation_menu');
         $('.mouse_down').addClass('main_animation_mouse');
+        setTimeout(function () {
+            $(body).removeClass('body_scroll_stop');
+        }, 4500);
     }, time)
 });</script>
 
