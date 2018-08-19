@@ -378,9 +378,10 @@ body {
   min-width: 100%;
   min-height: 100vh;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: -1; }
 .nav_cities_viewer {
   display: block;
   width: 50%;

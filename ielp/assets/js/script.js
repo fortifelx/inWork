@@ -3,7 +3,8 @@ var body = document.body,
 
 
 var menuStatus = false;
-var navCitiesStatus = false;
+var navCities = $('.nav_cities_background');
+var navCityPrev = navCities[0];
 var langStatus = false;
 var caseSlides = $('.case_slide');
 
@@ -18,21 +19,23 @@ $('.nav_cities_list a').mouseover(function(){
     var list = $('.nav_cities_list a');
     var i = list.index(this);
     var target = $('.nav_cities_background');
-    target.animate({
-        opacity: 0
-    }, 600);
-    setTimeout(function(){
+    target.css({
+        zIndex : -1,
+        display: 'none'
+    });
+    $(navCityPrev).css({
+       display: 'block'
+    });
 
-        target[0].src = $('.city_slide_image')[i].src;
-        if(navCitiesStatus) return;
-        console.log('test');
-        navCitiesStatus = true;
-        // navCitiesStatus = false;
-        setTimeout(function () { navCitiesStatus = false; console.log('open')  }, 600);
-        target.animate({
-            opacity: 1
-        }, 600);
-    }, 600)
+    $(target[i]).css({
+        display: 'block',
+        zIndex: 0,
+        opacity: 0
+    }).animate({
+        opacity: 1
+    }, 600);
+    navCityPrev = target[i];
+
 });
 changeCitiesSize('.nav_cities_list a');
 addDots();
@@ -103,7 +106,7 @@ function makeMainSlider(slides, navImage, navItems, images, imagesViewer, texts,
             $(texts[index]).css({ top: 0, bottom: 'auto' }); // текст слайдов
             navImgWrapper.css({ top: 0, bottom: 'auto' }); // изображение навки
             navImage[0].src = $(imagesViewer[index]).find('.city_slide_image')[0].src;
-            $('.nav_cities_background')[0].src = $(imagesViewer[index]).find('.city_slide_image')[0].src;
+            // $('.nav_cities_background')[0].src = $(imagesViewer[index]).find('.city_slide_image')[0].src;
 
             $(slides[index]).css({ top: 0, bottom: 'auto' }).velocity({
                 height: '100vh'
