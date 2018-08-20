@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="406" column="34" lean-forward="true" selection-start-line="406" selection-start-column="34" selection-end-line="406" selection-end-column="34" />
+            <state relative-caret-position="203">
+              <caret line="551" column="107" lean-forward="false" selection-start-line="551" selection-start-column="107" selection-end-line="551" selection-end-column="107" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -66,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="330" column="16" lean-forward="false" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
+            <state relative-caret-position="173">
+              <caret line="319" column="23" lean-forward="false" selection-start-line="319" selection-start-column="23" selection-end-line="319" selection-end-column="23" />
               <folding>
                 <element signature="e#267#318#0" expanded="false" />
                 <element signature="e#366#820#0" expanded="false" />
@@ -157,9 +157,9 @@
         <option value="$PROJECT_DIR$/assets/js/preloader.js" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/assets/js/scroll.js" />
-        <option value="$PROJECT_DIR$/assets/js/script.js" />
         <option value="$PROJECT_DIR$/assets/css/style.sass" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/script.js" />
       </list>
     </option>
   </component>
@@ -281,12 +281,12 @@
       <workItem from="1534402765379" duration="20121000" />
       <workItem from="1534487170129" duration="17912000" />
       <workItem from="1534663500542" duration="7500000" />
-      <workItem from="1534748534239" duration="11332000" />
+      <workItem from="1534748534239" duration="11559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189676000" />
+    <option name="totallyTimeSpent" value="189903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -584,24 +584,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="330" column="16" lean-forward="false" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
-          <folding>
-            <element signature="e#267#318#0" expanded="false" />
-            <element signature="e#366#820#0" expanded="false" />
-            <element signature="n#!!block;n#addDots#0" expanded="false" />
-            <element signature="n#!!block;n#makeMainSlider#0" expanded="false" />
-            <element signature="n#!!block;n#hideSlide#0" expanded="false" />
-            <element signature="n#!!block;n#showSlide#0" expanded="false" />
-            <element signature="n#!!block;n#longSlider#0" expanded="false" />
-            <element signature="n#!!block;n#showMenu#0" expanded="false" />
-            <element signature="n#!!block;n#changeCitiesSize#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -614,12 +596,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="406" column="34" lean-forward="true" selection-start-line="406" selection-start-column="34" selection-end-line="406" selection-end-column="34" />
+        <state relative-caret-position="203">
+          <caret line="551" column="107" lean-forward="false" selection-start-line="551" selection-start-column="107" selection-end-line="551" selection-end-column="107" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="319" column="23" lean-forward="false" selection-start-line="319" selection-start-column="23" selection-end-line="319" selection-end-column="23" />
+          <folding>
+            <element signature="e#267#318#0" expanded="false" />
+            <element signature="e#366#820#0" expanded="false" />
+            <element signature="n#!!block;n#addDots#0" expanded="false" />
+            <element signature="n#!!block;n#makeMainSlider#0" expanded="false" />
+            <element signature="n#!!block;n#hideSlide#0" expanded="false" />
+            <element signature="n#!!block;n#showSlide#0" expanded="false" />
+            <element signature="n#!!block;n#longSlider#0" expanded="false" />
+            <element signature="n#!!block;n#showMenu#0" expanded="false" />
+            <element signature="n#!!block;n#changeCitiesSize#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -317,8 +317,8 @@ $('.play_video').click(function(){
     });
     var src = $(this).parent().find('iframe')[0].src;
     target.toggleClass('video_player_active');
+    frame[0].src = src;
     if(videoStatus) {
-        frame[0].src = src;
         console.log('change');
         setTimeout(function(){
             frame.animate({
