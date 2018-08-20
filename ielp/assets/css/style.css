@@ -779,6 +779,8 @@ body {
       position: relative;
       z-index: 1;
       overflow: hidden; }
+      .feedback_video_viewer .feedback_videos_block {
+        margin-top: -15vh; }
     .feedback_video_text {
       position: relative;
       width: 90%;
@@ -894,7 +896,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -45%;
+    margin-top: -7vh;
     margin-left: -50%;
     position: relative; }
     .feedback_videos_block .play_video {
