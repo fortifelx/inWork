@@ -308,3 +308,28 @@ function showLang(lang, time){
     });
 
 }
+var videoStatus = true;
+$('.play_video').click(function(){
+    var target = $('.video_player');
+    var frame = target.find('iframe');
+    frame.css({
+        opacity: 0
+    });
+    var src = $(this).parent().find('iframe')[0].src;
+    target.toggleClass('video_player_active');
+    if(videoStatus) {
+        frame[0].src = src;
+        console.log('change');
+        setTimeout(function(){
+            frame.animate({
+                opacity: 1
+            }, 600);
+        },1000);
+    } else {
+        frame.animate({
+            opacity: 0
+        }, 300);
+    }
+    videoStatus = !videoStatus;
+    console.log(src);
+});
