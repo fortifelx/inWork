@@ -388,7 +388,9 @@ body {
   top: 0;
   z-index: -1; }
 .nav_cities_viewer {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   margin-left: 50%;
   height: 100%;
@@ -469,9 +471,9 @@ body {
     vertical-align: middle; }
     .nav_cities_network img:nth-child(2) {
       display: none; }
-  .nav_cities_network:nth-child(6) img {
+  .nav_cities_network:nth-child(2) img {
     margin-left: 2px; }
-  .nav_cities_network:nth-child(7) img {
+  .nav_cities_network:nth-child(3) img {
     margin-left: 1px;
     margin-bottom: 3px; }
 

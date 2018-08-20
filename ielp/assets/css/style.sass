@@ -365,7 +365,9 @@ body
     top: 0
     z-index: -1
   &_viewer
-    display: block
+    display: flex
+    flex-direction: column
+    justify-content: center
     width: 50%
     margin-left: 50%
     height: 100%
@@ -449,14 +451,13 @@ body
       vertical-align: middle
       &:nth-child(2)
         display: none
-    &:nth-child(6)
+    &:nth-child(2)
       img
         margin-left: 2px
-    &:nth-child(7)
+    &:nth-child(3)
       img
         margin-left: 1px
         margin-bottom: 3px
-
 .nav_slide
   width: 200px
   position: fixed
