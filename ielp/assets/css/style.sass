@@ -381,7 +381,9 @@ body
     li
       color: $font-color
       font-size: 42px
-      padding: 20px
+      padding: 10px 20px 10px 10px
+      &:first-child
+        padding-top: 20px
       span
         display: block
         font-size: 16px
@@ -610,10 +612,10 @@ body
     color: $font-color
     font-family: Montserrat
     font-size: 172px
-    height: 160px
+    height: 180px
     width: 100%
     font-weight: 400
-    margin-bottom: 90px
+    margin-bottom: 80px
   &_slide_date
     display: block
     color: hsl(0, 0%, 100%)
@@ -787,8 +789,8 @@ body
       position: relative
       width: 90%
       float: right
-      margin-top: -60%
-      padding-top: 60%
+      margin-top: calc( 25px - 30vh)
+      padding-top: 30vh
       border: 1px solid hsl(0, 4%, 32%)
       @extend %text-font
       text-align: center
@@ -797,6 +799,7 @@ body
       font-size: 24px
       line-height: 68px
       @extend %text-font
+      //padding-bottom: 20px
     &_place
       display: block
       position: relative

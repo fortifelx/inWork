@@ -404,7 +404,9 @@ body {
   .nav_cities_list li {
     color: white;
     font-size: 42px;
-    padding: 20px; }
+    padding: 10px 20px 10px 10px; }
+    .nav_cities_list li:first-child {
+      padding-top: 20px; }
     .nav_cities_list li span {
       display: block;
       font-size: 16px;
@@ -617,10 +619,10 @@ body {
   color: white;
   font-family: Montserrat;
   font-size: 172px;
-  height: 160px;
+  height: 180px;
   width: 100%;
   font-weight: 400;
-  margin-bottom: 90px; }
+  margin-bottom: 80px; }
 .city_slide_date {
   display: block;
   color: white;
@@ -785,8 +787,8 @@ body {
       position: relative;
       width: 90%;
       float: right;
-      margin-top: -60%;
-      padding-top: 60%;
+      margin-top: calc( 25px - 30vh);
+      padding-top: 30vh;
       border: 1px solid #554e4e;
       text-align: center;
       padding-bottom: 20px; }
