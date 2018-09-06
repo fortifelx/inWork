@@ -36,7 +36,7 @@
   .main_menu_logo {
     display: block;
     width: auto;
-    height: 100%; }
+    height: 70px; }
     .main_menu_logo img {
       width: auto;
       height: 100%; }
@@ -50,38 +50,72 @@
     display: block;
     color: #000000;
     font-size: 16px;
-    font-weight: 400; }
+    font-weight: 400;
+    text-decoration: none; }
+    .main_menu_link:hover {
+      text-decoration: underline; }
   .main_menu_langs {
     width: 100%;
     text-align: right; }
   .main_menu_lang {
     display: inline-block;
     position: relative;
-    line-height: 70px;
+    line-height: 24px;
     text-transform: uppercase;
     font-size: 16px;
-    color: #000000; }
+    color: #000000;
+    text-decoration: none; }
+    .main_menu_lang:hover {
+      text-decoration: underline; }
     .main_menu_lang:nth-child(1) {
-      content: "";
-      display: block;
-      width: 1px;
-      height: 18px;
-      background-color: #000000;
-      position: absolute;
-      right: 0;
-      bottom: 0; }
+      margin-right: 5px; }
+      .main_menu_lang:nth-child(1):after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 16px;
+        background-color: #000000;
+        position: absolute;
+        right: -6px;
+        top: 6px; }
   .main_menu_connects {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    align-content: center; }
+    align-content: center;
+    align-items: center;
+    position: relative;
+    height: 70px; }
   .main_menu_connect {
     display: block;
     width: 36px;
     height: 36px;
     line-height: 36px;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
+    .main_menu_connect:hover .main_menu_svg .st0 {
+      stroke: red;
+      fill: #000; }
+    .main_menu_connect svg {
+      width: 100%;
+      height: 100%;
+      cursor: pointer; }
+  .main_menu_svg {
+    cursor: pointer;
+    pointer-events: none; }
   .main_menu_numbers {
-    display: block; }
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+    height: auto;
+    padding: 14px 20px;
+    position: absolute;
+    bottom: -100%;
+    right: -20%; }
+    .main_menu_numbers p {
+      display: block;
+      line-height: 18px;
+      height: 18px;
+      margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */

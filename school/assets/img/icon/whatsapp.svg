@@ -4,8 +4,9 @@
 	 viewBox="0 0 470 470" style="enable-background:new 0 0 470 470;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
+    .st0:hover {stroke:#909090}
 </style>
-<g>
+<g class="icon">
 	<g>
 		<g>
 			<path d="M235,86c-78.7,0-142.7,64-142.7,142.7c0,36.4,13.6,70.9,38.4,97.4l-22,49c-1,2.2-0.6,4.8,0.9,6.6c1.2,1.5,3,2.3,4.9,2.3
