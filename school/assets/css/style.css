@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+.main_wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: 400; }
+
+.main_menu {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  position: absolute; }
+  .main_menu_logo {
+    display: block;
+    width: auto;
+    height: 100%; }
+    .main_menu_logo img {
+      width: auto;
+      height: 100%; }
+  .main_menu_nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center; }
+  .main_menu_link {
+    display: block;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400; }
+  .main_menu_langs {
+    width: 100%;
+    text-align: right; }
+  .main_menu_lang {
+    display: inline-block;
+    position: relative;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #000000; }
+    .main_menu_lang:nth-child(1) {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 18px;
+      background-color: #000000;
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+  .main_menu_connects {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center; }
+  .main_menu_connect {
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center; }
+  .main_menu_numbers {
+    display: block; }
+
+/*# sourceMappingURL=style.css.map */
