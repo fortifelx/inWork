@@ -519,7 +519,7 @@ body
     height: 19px
     font-family: Montserrat
     @extend %text-font
-    margin-bottom: 6%
+    margin-bottom: 1vh
     opacity: 1
     transition: 0.7s opacity
   &_days
@@ -646,7 +646,7 @@ body
     //animation: show-text 1s 3s forwards
 
 .case_wrapper
-  padding-top: 140px
+  padding-top: 16vh
   width: calc(100vw - 400px)
   margin: 0 auto
   height: 100vh
@@ -660,7 +660,7 @@ body
 .case_header
   @extend %text-font
   font-size: 36px
-  margin-bottom: 80px
+  margin-bottom: 8vh
 .case
   width: 63vw
   overflow: hidden
@@ -787,7 +787,10 @@ body
       z-index: 1
       overflow: hidden
       .feedback_videos_block
-        margin-top: -15vh
+        width: 200%
+        height: 200%
+        margin-top: -14vh
+        margin-left: -50%
     &_text
       position: relative
       width: 90%
@@ -903,13 +906,13 @@ body
         overflow: hidden
         box-sizing: content-box
       &_block
-        width: 200%
-        height: 200%
+        width: 120%
+        height: 170%
         display: flex
         justify-content: center
         align-items: center
-        margin-top: -7vh
-        margin-left: -50%
+        margin-top: -5vh
+        margin-left: -10%
         position: relative
         .play_video
           content: ''

@@ -533,7 +533,7 @@ body {
     font-size: 18px;
     height: 19px;
     font-family: Montserrat;
-    margin-bottom: 6%;
+    margin-bottom: 1vh;
     opacity: 1;
     transition: 0.7s opacity; }
   .nav_slide_days {
@@ -648,7 +648,7 @@ body {
   opacity: 0; }
 
 .case_wrapper {
-  padding-top: 140px;
+  padding-top: 16vh;
   width: calc(100vw - 400px);
   margin: 0 auto;
   height: 100vh;
@@ -661,7 +661,7 @@ body {
     right: 7%; } }
 .case_header {
   font-size: 36px;
-  margin-bottom: 80px; }
+  margin-bottom: 8vh; }
 
 .case {
   width: 63vw;
@@ -785,7 +785,10 @@ body {
       z-index: 1;
       overflow: hidden; }
       .feedback_video_viewer .feedback_videos_block {
-        margin-top: -15vh; }
+        width: 200%;
+        height: 200%;
+        margin-top: -14vh;
+        margin-left: -50%; }
     .feedback_video_text {
       position: relative;
       width: 90%;
@@ -896,13 +899,13 @@ body {
     overflow: hidden;
     box-sizing: content-box; }
   .feedback_videos_block {
-    width: 200%;
-    height: 200%;
+    width: 120%;
+    height: 170%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -7vh;
-    margin-left: -50%;
+    margin-top: -5vh;
+    margin-left: -10%;
     position: relative; }
     .feedback_videos_block .play_video {
       content: "";
