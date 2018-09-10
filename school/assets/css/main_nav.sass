@@ -3,6 +3,7 @@
   height: 70px
   line-height: 70px
   position: absolute
+  z-index: 100
   &_logo
     display: block
     width: auto
@@ -63,18 +64,17 @@
     line-height: 36px
     text-align: center
     cursor: pointer
+    border-radius: 36px
+    border: 1px solid black
     &:hover
-      .main_menu_svg
-        .st0
-          stroke: red
-          fill: #000
-    svg
-      width: 100%
-      height: 100%
-      cursor: pointer
-  &_svg
-    cursor: pointer
-    pointer-events: none
+      border: 1px solid #739cd2
+  //  svg
+  //    width: 100%
+  //    height: 100%
+  //    cursor: pointer
+  //&_svg
+  //  cursor: pointer
+  //  pointer-events: none
   &_numbers
     display: block
     background-color: white
@@ -89,4 +89,82 @@
       line-height: 18px
       height: 18px
       margin-bottom: 5px
-
+.main_screen
+  position: relative
+  width: 100%
+  height: 100vh
+  background-color: #f9faf3
+  &_img
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    right: 0
+    //-webkit-box-shadow: inset 0px -38px 56px 96px rgba(255,255,255,1)
+    //-moz-box-shadow: inset 0px -38px 56px 96px rgba(255,255,255,1)
+    //box-shadow: inset 0px -38px 56px 96px rgba(255,255,255,1)
+    &:before
+      content: ''
+      display: block
+      background-color: white
+      width: 25vw
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+    img
+      height: 100%
+      width: auto
+      position: absolute
+      right: 0
+      top: 0
+    .square_illustration
+      width: 60%
+      height: 70%
+      top: 15%
+      left: 30%
+      transform: rotate(20deg)
+      //z-index: -2
+  &_content
+    width: 100%
+    height: 100%
+    position: relative
+    z-index: 1
+    display: flex
+    align-items: center
+    align-content: center
+  &_header
+    padding-bottom: 10vh
+    font-size: 48px
+    font-family: ProximaNova
+    font-weight: 400
+    line-height: 60px
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 1)
+    //text-shadow: 0px 0px 3px $blue-color
+  &_btn
+    display: block
+    width: 100%
+    height: 57px
+    background-color: $blue-color
+    border-radius: 20px
+    border: 1px solid $blue-color
+    font-size: 18px
+    color: white
+    text-align: center
+    vertical-align: middle
+    line-height: 56px
+    cursor: pointer
+    font-weight: 400
+    text-transform: uppercase
+    transition: all 0.4s
+    &:hover
+      background-color: transparent
+      color: $blue-color
+  &_illustration
+    position: absolute
+    bottom: 0
+    margin-left: 3vw
+    width: 14vw
+    img
+      width: 100%
+      height: auto
