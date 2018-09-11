@@ -135,22 +135,16 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #f9faf3; }
+  background-color: #fafafa;
+  -webkit-box-shadow: inset 0px -38px 86px 16px white;
+  -moz-box-shadow: inset 0px -38px 86px 16px white;
+  box-shadow: inset 0px -38px 86px 16px white; }
   .main_screen_img {
-    height: 100%;
+    height: 95%;
     width: 100%;
     position: absolute;
     top: 0;
     right: 0; }
-    .main_screen_img:before {
-      content: "";
-      display: block;
-      background-color: white;
-      width: 25vw;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0; }
     .main_screen_img img {
       height: 100%;
       width: auto;
@@ -199,10 +193,138 @@
       color: #739cd2; }
   .main_screen_illustration {
     position: absolute;
-    bottom: 0;
+    bottom: -1vw;
     margin-left: 3vw;
     width: 14vw; }
     .main_screen_illustration img {
+      width: 100%;
+      height: auto; }
+
+.study {
+  width: 100%;
+  padding-top: 80px;
+  position: relative; }
+  .study .square_illustration {
+    transform: rotate(45deg);
+    width: 52%;
+    height: 52%;
+    top: calc(7% + 80px);
+    left: 12%;
+    right: auto;
+    bottom: auto; }
+    .study .square_illustration:after {
+      border-color: #f1f1f1; }
+  .study_header {
+    display: block;
+    margin: 0 auto;
+    font-family: ProximaNova;
+    font-size: 36px;
+    line-height: 60px;
+    color: #212121;
+    text-align: center; }
+  .study_container {
+    width: 100%;
+    font-size: 0;
+    padding: 50px 0;
+    overflow: hidden; }
+  .study_block {
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 30px;
+    height: 35vh;
+    min-height: 300px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: ProximaNova;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 30px 20px; }
+    .study_block_header {
+      font-size: 23px;
+      margin-bottom: 20px; }
+    .study_block_img {
+      position: absolute; }
+      .study_block_img img {
+        min-height: 100%; }
+    .study_block_content {
+      height: 35vh;
+      position: relative; }
+      .study_block_content p {
+        margin-bottom: 25px; }
+    .study_block_btn {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 60px;
+      color: #739cd2;
+      font-weight: 400;
+      bottom: 45px;
+      position: absolute;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .study_block_btn:after {
+        content: url("../img/r_blue_arrow.png");
+        display: block;
+        position: absolute;
+        height: 15px;
+        width: auto;
+        right: -23px;
+        top: 2px; }
+    .study_block:nth-child(1) {
+      width: calc(66.6% - 30px);
+      margin-left: 15px; }
+      .study_block:nth-child(1) .study_block_img {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: auto; }
+      .study_block:nth-child(1) .study_block_content {
+        width: 45%;
+        float: right; }
+    .study_block:nth-child(2) {
+      width: calc(33.3% - 30px);
+      height: calc(70vh + 30px);
+      min-height: 630px;
+      margin-right: 15px;
+      float: right; }
+      .study_block:nth-child(2) .study_block_img {
+        bottom: 0;
+        width: 100%;
+        left: 0; }
+      .study_block:nth-child(2) .study_block_btn {
+        bottom: 0; }
+    .study_block:nth-child(3) {
+      width: calc(33.3% - 30px);
+      margin-right: 30px;
+      margin-left: 15px;
+      background-color: transparent; }
+      .study_block:nth-child(3) .study_block_img {
+        display: none; }
+    .study_block:nth-child(4) {
+      width: calc(33.3% - 30px);
+      background-color: transparent; }
+      .study_block:nth-child(4) .study_block_img {
+        display: none; }
+    .study_block:nth-child(5) {
+      width: calc(66.6% - 30px);
+      float: right;
+      margin-right: 15px; }
+      .study_block:nth-child(5) .study_block_img {
+        right: 0;
+        top: 0;
+        height: 100%; }
+      .study_block:nth-child(5) .study_block_content {
+        width: 45%; }
+  .study_img {
+    width: calc(33.3% - 30px);
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    height: 35vh; }
+    .study_img img {
       width: 100%;
       height: auto; }
 
