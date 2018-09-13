@@ -38,7 +38,7 @@
   font-family: "Pragmatica";
   src: url("../fonts/pragmaticalightc.otf"); }
 .btn, .nav_calendar a, .nav_cities_punct, .nav_slide li, .nav_slide_title, .nav_slide_days, .nav_slide_month, .nav_slide_year, .city_slide_description, .city_slide_name, .case_header, .case_slide_text, .case_slide_name, .case_slide_date, .case_nav_numbers, .case_view_btn, .feedback_video_text, .feedback_video_name, .feedback_video_place, .feedback_header, .footer_address_header, .footer_address_text, .footer_phones_header, .footer_phones_text, .footer_mails_header, .footer_mails_mail, .footer_subscribes_header, .footer_subscribes_text, .footer_subscribes_input, .footer_subscribes_button, .footer_follow_icons, .copyright, .view_btn, .check_in_btn {
-  font-weight: 400;
+  font-weight: 300;
   color: white;
   font-family: Roboto;
   letter-spacing: 1.5px; }
@@ -415,7 +415,8 @@ body {
       opacity: 0;
       position: relative;
       bottom: 5px;
-      font-family: Roboto; }
+      font-family: Roboto;
+      font-weight: 300; }
     .nav_cities_list li a {
       text-decoration: none;
       display: inline-block;
@@ -661,6 +662,7 @@ body {
   50% {
     right: 7%; } }
 .case_header {
+  font-weight: 400;
   font-size: 36px;
   margin-bottom: 8vh; }
 
@@ -923,6 +925,7 @@ body {
 
 .feedback_header {
   font-size: 36px;
+  font-weight: 400;
   margin-bottom: 80px; }
 
 .footer {
@@ -942,6 +945,7 @@ body {
     width: 100%; }
     .footer_address_header {
       font-size: 18px;
+      font-weight: 400;
       padding-bottom: 10px; }
     .footer_address_text {
       font-size: 14px;
@@ -953,6 +957,7 @@ body {
     line-height: 18px; }
     .footer_phones_header {
       font-size: 18px;
+      font-weight: 400;
       padding-bottom: 10px; }
     .footer_phones_text {
       font-size: 14px;
@@ -978,6 +983,7 @@ body {
       padding-bottom: 15px; }
     .footer_mails_header {
       font-size: 14px;
+      font-weight: 400;
       padding-bottom: 10px; }
     .footer_mails_mail {
       font-size: 18px; }
@@ -990,6 +996,7 @@ body {
     justify-content: space-between; }
     .footer_subscribes_header {
       font-size: 18px;
+      font-weight: 400;
       padding-bottom: 20px; }
     .footer_subscribes_text {
       font-size: 14px;
