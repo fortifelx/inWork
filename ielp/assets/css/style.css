@@ -206,7 +206,7 @@ body {
       color: white;
       width: 35px;
       height: 35px;
-      font-family: Montserrat;
+      font-family: Roboto;
       font-weight: 400;
       vertical-align: middle;
       line-height: 32px;
@@ -422,7 +422,7 @@ body {
       position: relative;
       color: white;
       opacity: 0;
-      font-family: Montserrat; }
+      font-family: Roboto; }
       .nav_cities_list li a:after {
         content: "";
         width: 0;
@@ -532,7 +532,7 @@ body {
     width: 100%;
     font-size: 18px;
     height: 19px;
-    font-family: Montserrat;
+    font-family: Roboto;
     margin-bottom: 1vh;
     opacity: 1;
     transition: 0.7s opacity; }
@@ -620,7 +620,7 @@ body {
 .city_slide svg {
   display: block;
   color: white;
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 152px;
   height: 240px;
   width: 100%;
