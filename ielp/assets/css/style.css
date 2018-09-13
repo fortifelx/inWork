@@ -40,7 +40,7 @@
 .btn, .nav_calendar a, .nav_cities_punct, .nav_slide li, .nav_slide_title, .nav_slide_days, .nav_slide_month, .nav_slide_year, .city_slide_description, .city_slide_name, .case_header, .case_slide_text, .case_slide_name, .case_slide_date, .case_nav_numbers, .case_view_btn, .feedback_video_text, .feedback_video_name, .feedback_video_place, .feedback_header, .footer_address_header, .footer_address_text, .footer_phones_header, .footer_phones_text, .footer_mails_header, .footer_mails_mail, .footer_subscribes_header, .footer_subscribes_text, .footer_subscribes_input, .footer_subscribes_button, .footer_follow_icons, .copyright, .view_btn, .check_in_btn {
   font-weight: 400;
   color: white;
-  font-family: Pragmatica;
+  font-family: Roboto;
   letter-spacing: 1.5px; }
 
 .main_wrapper {
@@ -49,7 +49,7 @@
 
 body {
   background-color: #212121;
-  font-family: Pragmatica; }
+  font-family: Roboto; }
 
 .body_scroll_stop {
   position: fixed;
@@ -415,7 +415,7 @@ body {
       opacity: 0;
       position: relative;
       bottom: 5px;
-      font-family: Pragmatica; }
+      font-family: Roboto; }
     .nav_cities_list li a {
       text-decoration: none;
       display: inline-block;
@@ -630,7 +630,7 @@ body {
 .city_slide_date {
   display: block;
   color: white;
-  font-family: Pragmatica;
+  font-family: Roboto;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 40px;
