@@ -1,0 +1,135 @@
+.about
+  position: relative
+  display: block
+  width: 140%
+  height: 70vh
+  min-height: 620px
+  left: -20%
+  margin-top: 120px
+  padding-bottom: 60px
+  background-color: #f2f3ea
+  -webkit-box-shadow: inset 0px 0px 180px 92px rgba(255,255,255,1)
+  -moz-box-shadow: inset 0px 0px 180px 92px rgba(255,255,255,1)
+  box-shadow: inset 0px 0px 180px 92px rgba(255,255,255,1)
+  &_header
+    width: 100%
+    text-align: center
+    font-family: ProximaNova
+    font-size: 36px
+    font-weight: 400
+    color: $font-color
+    text-align: center
+    display: block
+  &_block
+    display: block
+    width: 100%
+    height: 70vh
+    min-height: 620px
+    padding-top: 15%
+    text-align: center
+    position: relative
+    //.square_illustration
+    //  width: 65%
+    //  height: 53%
+    //  transform: rotate(38deg)
+    //  opacity: 1
+    //  top: 4%
+    //  left: 8%
+    //  right: auto
+    //  bottom: auto
+    .square_illustration
+      width: 80%
+      height: 105%
+      transform: rotate(128deg)
+      opacity: 1
+      top: -1%
+      left: 1.5%
+      bottom: auto
+      right: auto
+      z-index: -2
+      &:after
+        border: 30px solid white
+        border-radius: 4px
+        opacity: 1
+      //&:before
+      //  content: ''
+      //  display: block
+      //  width: 80%
+      //  height: 100%
+      //  border: 30px solid white
+      //  border-radius: 6px
+      //  opacity: 1
+      //  position: relative
+      //  z-index: 10
+  &_img
+    display: inline-block
+    width: 90%
+    position: relative
+    z-index: 1
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      border-bottom: 30px solid white
+      width: 50%
+      height: 30px
+      top: 71%
+      right: 7%
+      opacity: 1
+      transform: rotate(128deg)
+      z-index: 2
+    img
+      width: 100%
+      position: relative
+      z-index: 0
+  &_ilu
+    position: absolute
+    width: 80%
+    bottom: 12%
+    left: -12%
+    z-index: 1
+    img
+      width: 100%
+  &_text
+    width: 100%
+    height: auto
+    padding-top: 30px
+    p
+      font-family: ProximaNova
+      font-size: 16px
+      line-height: 20px
+      color: $font-color
+      margin: 20px 0
+    b
+      font-weight: 600
+    q
+      font-size: 24px
+      line-height: 30px
+      color: $blue-color
+      position: relative
+      padding: 25px 0
+      display: block
+      z-index: 1
+      &:after
+        content: url("../img/icon/r_quote.png")
+        width: 84px
+        height: 69px
+        position: absolute
+        bottom: 5px
+        right: 20px
+        left: auto
+        z-index: -1
+      &:before
+        content: url("../img/icon/l_quote.png")
+        width: 84px
+        height: 69px
+        position: absolute
+        top: 0
+        left: -25px
+        z-index: -1
+      span
+        font-size: 16px
+        color: $font-color
+        font-style: italic
+  &_btn
+    margin: -140px auto 0 auto
