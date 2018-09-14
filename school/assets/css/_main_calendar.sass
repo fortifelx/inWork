@@ -1,0 +1,77 @@
+
+.calendar
+  width: 100%
+  height: auto
+  &_header
+    padding-top: 70px
+    padding-bottom: 50px
+    font-family: ProximaNova
+    font-size: 36px
+    line-height: 60px
+    display: block
+    width: 100%
+    text-align: center
+    font-weight: 400
+    color: $font-color
+  &_block
+    width: calc(100% + 30px)
+    height: auto
+    img
+      width: 100%
+      height: auto
+  &_content
+    padding-top: 35px
+    height: 100%
+    width: 100%
+    padding-left: 30px
+    position: relative
+    &_ilu
+      position: absolute
+      width: 50%
+      height: auto
+      right: -25%
+      bottom: 80px
+      img
+        width: 100%
+        height: auto
+    &_header
+      font-family: ProximaNova
+      font-size: 24px
+      font-weight: 400
+      margin-bottom: 27px
+      color: $font-color
+  &_date
+    font-family: ProximaNova
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 35px
+    color: $font-color
+  &_text
+    width: 95%
+    b
+      font-weight: 600
+    p
+      display: block
+      font-family: ProximaNova
+      font-size: 16px
+      font-weight: 400
+      line-height: 20px
+      color: $font-color
+  &_btn
+    display: inline-block
+    font-size: 18px
+    line-height: 60px
+    color: $blue-color
+    font-weight: 400
+    bottom: 20px
+    position: absolute
+    text-transform: uppercase
+    cursor: pointer
+    &:after
+      content: url("../img/r_blue_arrow.png")
+      display: block
+      position: absolute
+      height: 15px
+      width: auto
+      right: -23px
+      top: 2px
