@@ -10,6 +10,16 @@
   font-style: normal; }
 @font-face {
   font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: "ProximaNova";
   src: url("../fonts/ProximaNova-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
@@ -45,6 +55,25 @@
     opacity: 0.27;
     width: 100%;
     height: 100%; }
+
+.btn {
+  width: 255px;
+  height: 57px;
+  line-height: 57px;
+  text-align: center;
+  border: 1px solid #739cd2;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: ProximaNova;
+  color: #739cd2;
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s; }
+  .btn:hover {
+    background-color: #739cd2;
+    color: white; }
 
 .main_menu {
   width: 100%;
@@ -327,5 +356,121 @@
     .study_img img {
       width: 100%;
       height: auto; }
+  .study_btn {
+    margin: 0 auto; }
+
+.advantage {
+  position: relative;
+  display: block;
+  width: 140%;
+  left: -20%;
+  height: auto;
+  margin-top: 120px;
+  padding-bottom: 60px;
+  background-color: #f2f3ea;
+  -webkit-box-shadow: inset 0px 0px 180px 92px white;
+  -moz-box-shadow: inset 0px 0px 180px 92px white;
+  box-shadow: inset 0px 0px 180px 92px white; }
+  .advantage_header {
+    font-family: ProximaNova;
+    font-size: 36px;
+    font-weight: 400;
+    color: #212121;
+    text-align: center;
+    display: block; }
+  .advantage_wrapper {
+    width: 100%;
+    overflow: hidden; }
+  .advantage_viewer {
+    width: 86%;
+    margin: 0 auto;
+    position: relative;
+    height: 50vh;
+    min-height: 400px; }
+  .advantage_slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    min-height: 400px;
+    padding-top: 60px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .advantage_slide_block {
+      width: 40%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: flex-start; }
+    .advantage_slide_ilu {
+      width: 60px; }
+      .advantage_slide_ilu img {
+        width: 100%;
+        height: auto; }
+    .advantage_slide_img {
+      width: 100%;
+      height: 70%;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      text-align: center; }
+      .advantage_slide_img img {
+        width: auto;
+        height: 100%; }
+    .advantage_slide_text {
+      font-family: ProximaNova;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      width: calc(100% - 100px); }
+    .advantage_slide_num {
+      font-size: 172px;
+      line-height: 24px;
+      font-weight: 900;
+      opacity: 0.17;
+      color: #739cd2;
+      position: absolute;
+      left: 60px;
+      top: 0; }
+  .advantage_nav {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    height: 32px;
+    line-height: 32px;
+    box-sizing: content-box; }
+    .advantage_nav div {
+      display: inline-block; }
+  .advantage_count {
+    margin: 5px 30px;
+    color: #739cd2;
+    font-family: ProximaNova;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    vertical-align: super; }
+    .advantage_count span {
+      font-size: 30px;
+      font-weight: 500; }
+  .advantage_left_arrow {
+    cursor: pointer;
+    height: 100%;
+    width: auto; }
+    .advantage_left_arrow img {
+      height: 100%;
+      width: auto; }
+  .advantage_right_arrow {
+    cursor: pointer;
+    height: 100%;
+    width: auto; }
+    .advantage_right_arrow img {
+      height: 100%;
+      width: auto; }
 
 /*# sourceMappingURL=style.css.map */
