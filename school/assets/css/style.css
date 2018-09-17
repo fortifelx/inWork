@@ -865,4 +865,27 @@
       .main_footer_developer a:hover {
         color: #739cd2; }
 
+.anons {
+  width: 100%;
+  height: auto;
+  margin-top: 160px;
+  padding-bottom: 120px; }
+
+.menu_shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  height: 110px;
+  line-height: 110px; }
+  .menu_shadow .main_menu_logo {
+    display: inline-block;
+    vertical-align: middle; }
+  .menu_shadow .main_menu_number {
+    font-family: ProximaNova;
+    font-size: 18px;
+    text-align: right; }
+  .menu_shadow .main_menu_langs {
+    text-align: left; }
+
+.footer_shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); }
+
 /*# sourceMappingURL=style.css.map */
