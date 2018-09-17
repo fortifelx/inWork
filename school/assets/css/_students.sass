@@ -1,0 +1,131 @@
+.students
+  width: 100%
+  height: auto
+  margin-top: 160px
+  padding-bottom: 120px
+  &_header
+    font-family: ProximaNova
+    font-weight: 400
+    font-size: 36px
+    line-height: 60px
+    color: $font-color
+    margin-bottom: 30px
+  &_search
+    margin-bottom: 30px
+    width: 350px
+    max-width: 100%
+    position: relative
+    input
+      width: 100%
+      border: 1px solid $blue-color
+      border-radius: 20px
+      box-sizing: border-box
+      line-height: 55px
+      height: 55px
+      text-indent: 30px
+      font-size: 18px
+      color: $font-color
+      outline: none
+      &::placeholder
+        opacity: 0.49
+    button
+      position: absolute
+      right: 24px
+      top: 10px
+      width: 30px
+      height: 31px
+      border: none
+      outline: none
+      background-color: transparent
+      padding: 0
+
+  &_block
+    width: 100%
+    height: auto
+    overflow: hidden
+    border-radius: 5px
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2)
+    margin-bottom: 30px
+    position: relative
+    &_img
+      width: 100%
+      height: 100%
+      position: relative
+    &_viewer
+      width: 200%
+      height: 200%
+      display: flex
+      align-items: center
+      align-content: center
+      justify-content: center
+      position: absolute
+      top: -50%
+      left: -50%
+      img
+        min-width: 50%
+        min-height: 50%
+        max-width: 100%
+    &_name
+      width: 100%
+      margin-top: 35px
+      display: inline-block
+      font-family: ProximaNova
+      font-size: 18px
+      line-height: 36px
+      text-transform: uppercase
+      color: $font-color
+      p:nth-child(1)
+        display: inline-block
+        position: relative
+        &:after
+          content: ''
+          height: 1px
+          background-color: #cfcfd2
+          width: 40%
+          position: absolute
+          display: block
+          bottom: 0
+          left: 0
+      p:nth-child(2)
+        font-size: 14px
+        line-height: 24px
+    &_table
+      width: 100%
+      padding: 50px 0 95px 0
+      font-family: ProximaNova
+      font-size: 16px
+      line-height: 24px
+      font-weight: 300
+      color: $font-color
+    &_head
+      text-transform: uppercase
+      font-weight: 400
+      margin-bottom: 25px
+    &_row
+      font-weight: 300
+      margin-bottom: 9px
+    &_facebook
+      position: absolute
+      bottom: 15px
+      left: 15px
+      line-height: 55px
+      text-align: center
+      font-family: ProximaNova
+      font-size: 16px
+      color: $blue-color
+      cursor: pointer
+      text-decoration: none
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        height: 1px
+        width: 75%
+        background-color: #cfcfd2
+  &_btn
+    display: block
+    margin: 20px auto 0 auto
+    color: $font-color
+    cursor: pointer
