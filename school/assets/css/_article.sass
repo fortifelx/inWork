@@ -1,0 +1,150 @@
+.article
+  width: 100%
+  height: auto
+  margin-top: 160px
+  padding-bottom: 120px
+  &_img
+    margin-bottom: 30px
+    width: 100%
+    height: auto
+    border-radius: 5px
+    overflow: hidden
+    img
+      width: 100%
+      height: auto
+  &_date
+    width: 10%
+    margin-right: 3%
+    display: inline-block
+    font-family: ProximaNova
+    font-size: 36px
+    line-height: 46px
+    color: $font-color
+    p:nth-child(1)
+      display: inline-block
+      position: relative
+      &:after
+        content: ''
+        height: 1px
+        background-color: #cfcfd2
+        width: 60%
+        position: absolute
+        display: block
+        bottom: 0
+        left: 0
+    p:nth-child(2)
+      font-size: 14px
+      line-height: 24px
+  &_header
+    display: inline-block
+    width: 85%
+    font-family: ProximaNova
+    font-size: 36px
+    line-height: 46px
+    vertical-align: top
+    color: $font-color
+  &_text
+    width: 100%
+    font-family: ProximaNova
+    font-size: 18px
+    line-height: 24px
+    font-weight: 300
+    color: $font-color
+    p
+      margin-top: 30px
+  &_btn
+    background-color: $blue-color
+    color: white
+    margin: 50px auto 120px auto
+    &:hover
+      background-color: white
+      color: $blue-color
+  &_block
+    width: 100%
+    height: auto
+    overflow: hidden
+    border-radius: 5px
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2)
+    margin: 30px 0
+    position: relative
+    padding-bottom: 55px
+    &_img
+      width: 100%
+      height: 25vh
+      min-height: 200px
+      position: relative
+      margin-bottom: 10px
+    &_viewer
+      width: 200%
+      height: 200%
+      display: flex
+      align-items: center
+      align-content: center
+      justify-content: center
+      position: absolute
+      top: -50%
+      left: -50%
+      img
+        width: auto
+        height: 50%
+    &_date
+      width: 20%
+      padding-left: 30px
+      margin-right: 8%
+      display: inline-block
+      font-family: ProximaNova
+      font-size: 36px
+      line-height: 36px
+      color: $font-color
+      p:nth-child(1)
+        display: inline-block
+        position: relative
+        &:after
+          content: ''
+          width: 1px
+          height: 63px
+          background-color: #cfcfd2
+          position: absolute
+          display: block
+          top: 3px
+          right: -38%
+      p:nth-child(2)
+        font-size: 14px
+        line-height: 24px
+    &_header
+      width: 70%
+      display: inline-block
+      padding-right: 30px
+      float: right
+      font-family: ProximaNova
+      font-size: 18px
+      line-height: 24px
+      color: $font-color
+    &_text
+      padding: 20px 30px 0 30px
+      p
+        margin-bottom: 20px
+        font-family: ProximaNova
+        font-size: 16px
+        line-height: 18px
+        color: $font-color
+    &_btn
+      border: 1px solid $blue-color
+      border-radius: 0 0 5px 5px
+      background-color: $blue-color
+      color: white
+      text-align: center
+      width: 100%
+      height: 55px
+      line-height: 55px
+      position: absolute
+      bottom: 0
+      left: 0
+      cursor: pointer
+      transition: all 0.3s
+      font-family: ProximaNova
+      font-size: 24px
+      font-weight: 300
+      &:hover
+        color: $blue-color
+        background-color: white
