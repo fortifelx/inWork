@@ -1,0 +1,115 @@
+.border-radius
+  border-radius: 5px
+  overflow: hidden
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5)
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5)
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5)
+  font-size: 0
+.start_active_header
+  &:after
+    transform: rotate(270deg)
+  &:before
+    transform: rotate(360deg)
+.start
+  width: 100%
+  height: auto
+  margin-top: 160px
+  padding-bottom: 120px
+  &_header
+    font-family: ProximaNova
+    font-weight: 400
+    font-size: 36px
+    line-height: 60px
+    color: $font-color
+    margin-bottom: 30px
+  &_img
+    width: 100%
+    height: auto
+    overflow: hidden
+    img
+      width: 100%
+      height: auto
+  &_block
+    margin-top: -6vh
+    background-color: white
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5)
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5)
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5)
+    border-radius: 5px
+    overflow: hidden
+    &_header
+      cursor: pointer
+      padding-left: 75px
+      position: relative
+      margin: 50px 0 30px 0
+      font-family: ProximaNova
+      font-size: 24px
+      color: $font-color
+      font-weight: 400
+      transition: all 0.3s
+      &:before
+        content: ''
+        width: 20px
+        height: 2px
+        background-color: #4d4d4d
+        border-radius: 1px
+        display: block
+        position: absolute
+        left: 45px
+        top: 10px
+        transition: all 1s
+      &:after
+        content: ''
+        width: 20px
+        height: 2px
+        background-color: #4d4d4d
+        border-radius: 1px
+        display: block
+        position: absolute
+        left: 45px
+        top: 10px
+        transition: all 1s
+    &_wrapper
+      width: 100%
+      padding: 0 45px 0 45px
+      margin-top: 50px
+    &_viewer
+      width: 100%
+      display: flex
+      flex-direction: column
+      height: 525px
+      padding-bottom: 105px
+      justify-content: space-between
+      flex-wrap: wrap
+      position: relative
+    &_text
+      width: 45%
+      font-family: ProximaNova
+      font-size: 18px
+      line-height: 24px
+      color: $font-color
+      font-weight: 400
+      p
+        margin-bottom: 15px
+    &_btn
+      background-color: $blue-color
+      color: white
+      position: absolute
+      bottom: 0
+      left: 0
+      transition: all 0.3s
+      &:hover
+        background-color: white
+        color: $blue-color
+.course_block_btn
+  display: block
+  background-color: $blue-color
+  color: white
+  margin: 50px auto 0 auto
+  transition: all 0.3s
+  &:hover
+    background-color: white
+    color: $blue-color
+.course_block_viewer
+  padding-bottom: 0
+  height: 420px
