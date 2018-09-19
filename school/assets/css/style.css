@@ -182,7 +182,6 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #fafafa;
   background-color: #f2f3ea;
   -webkit-box-shadow: inset 0px -38px 86px 16px white;
   -moz-box-shadow: inset 0px -38px 86px 16px white;
@@ -1150,6 +1149,7 @@
 .students {
   width: 100%;
   height: auto;
+  min-height: 90vh;
   margin-top: 160px;
   padding-bottom: 120px; }
   .students_header {
@@ -1883,6 +1883,8 @@
     font-family: ProximaNova;
     font-size: 18px;
     text-align: right; }
+  .menu_shadow .main_menu_numbers {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.03); }
   .menu_shadow .main_menu_langs {
     text-align: left; }
   .menu_shadow .main_menu_connects {
