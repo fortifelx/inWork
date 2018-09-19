@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="main_wrapper">
+    <nav class="main_menu menu_shadow">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <a href="#" class="main_menu_logo">
+                        <img src="assets/img/logo/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-7">
+                    <ul class="main_menu_nav">
+                        <li><a href="" class="main_menu_link">О школе</a></li>
+                        <li><a href="" class="main_menu_link">Обучение </a></li>
+                        <li><a href="" class="main_menu_link">Блог</a></li>
+                        <li><a href="" class="main_menu_link">Анонсы</a></li>
+                        <li><a href="" class="main_menu_link">Ученики</a></li>
+                        <li><a href="" class="main_menu_link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-1">
+                    <div class="main_menu_langs">
+                        <a href="" class="main_menu_lang">EN</a>
+                        <a href="" class="main_menu_lang">UA</a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <!--<ul class="main_menu_connects">-->
+                        <!--<li><a href="" class="main_menu_connect"><img src="assets/img/icon/whatsapp.svg" alt=""></a></li>-->
+                        <!--<li><a href="" class="main_menu_connect"><img src="assets/img/icon/telegram.svg" alt=""></a></li>-->
+                        <!--<li><a href="" class="main_menu_connect"><img src="assets/img/icon/002-viber.svg" alt=""></a></li>-->
+                        <!--<li>-->
+                            <!--<a href="https://google.com" class="main_menu_connect">-->
+                                <!--<img src="assets/img/icon/skype.svg" alt="">-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li><a href="" class="main_menu_connect"><img src="assets/img/icon/call.svg" alt=""></a></li>-->
+                        <!--<div class="main_menu_numbers">-->
+                            <!--<p>+380 (67) 449-06-41</p>-->
+                            <!--<p>+380 (99) 721-53-94</p>-->
+                        <!--</div>-->
+                    <!--</ul>-->
+                    <div class="main_menu_number">
+                        +380 (67) 449-06-41
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="address">
+        <div class="address_map" id="map"></div>
+        <div class="container">
+            <div class="address_info">
+                <div class="address_info_wrapper">
+                    <div class="address_info_header">
+                        Адрес
+                    </div>
+                    <div class="address_info_adress">
+                        г. Киев, ул. Тургеневская, 82;
+                        оф.7
+                    </div>
+                    <div class="address_info_numbers">
+                        <p>+380 (67) 449-06-41</p>
+                        <p>+380 (99) 721-53-94</p>
+                    </div>
+                    <div class="address_info_networks">
+                        <a href="">
+                            <img src="assets/img/icon/contacts_facebook.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="assets/img/icon/contacts_instagram.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="assets/img/icon/contacts_twitter.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <div class="address_form">
+                        <div class="address_form_header">
+                            Свяжитесь с нами
+                        </div>
+                        <form action="">
+                            <div class="row">
+                            <div class="col-6">
+                            <input type="text" class="address_from_input" placeholder="ФИО">
+                            <input type="text" class="address_from_input" placeholder="Телефон">
+                            <input type="text" class="address_from_input" placeholder="Емейл">
+                            </div>
+                            <div class="col-6">
+                                <textarea  placeholder="Ваш вопрос" name="" id="" class="address_form_textarea"></textarea>
+                                <button type="submit" class="address_form_btn btn">
+                                    Отправить
+                                </button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwANEa-0hBV9u4Emamay5ttBcQHkFGn2M&callback=initMap"
+                async defer></script>
+        <script src="assets/js/map.js"></script>
+    </div>
+    <footer class="main_footer footer_shadow">
+        <div class="container">
+            <div class="row">
+                <div class="main_footer_wrapper">
+                    <div class="main_footer_block">
+                        <ul class="main_footer_menu">
+                            <li><a href="#">О школе</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Анонсы</a></li>
+                            <li><a href="#">Ученики</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="copyright">
+                            <div class="main_footer_date">©2018 Inmaster</div>
+                            <div class="main_footer_developer">Design&Development by <a href="#">IS.Agency</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
