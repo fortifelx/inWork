@@ -1127,11 +1127,15 @@
       color: white;
       background-color: #739cd2;
       cursor: pointer; }
+      .blog_block_btn:hover {
+        background-color: white;
+        color: #739cd2; }
   .blog_btn {
     display: block;
     margin: 20px auto 0 auto;
     color: #212121;
-    cursor: pointer; }
+    cursor: pointer;
+    line-height: 59px; }
 
 .students {
   width: 100%;
@@ -1321,7 +1325,8 @@
   .article_btn {
     background-color: #739cd2;
     color: white;
-    margin: 50px auto 120px auto; }
+    margin: 50px auto 120px auto;
+    line-height: 59px; }
     .article_btn:hover {
       background-color: white;
       color: #739cd2; }
@@ -1520,7 +1525,8 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      line-height: 55px; }
       .start_block_btn:hover {
         background-color: white;
         color: #739cd2; }
@@ -1657,7 +1663,8 @@
       color: white;
       width: 100%;
       transition: all 0.3s;
-      cursor: pointer; }
+      cursor: pointer;
+      line-height: 55px; }
       .address_form_btn:hover {
         background-color: white;
         color: #739cd2; }
