@@ -1,5 +1,6 @@
 (function(){
-$('.show_call img').click(function(){
+$('.show_call').click(function(){
+    console.log('here');
     if($('.show_numbers')[0] == undefined) {
         $('.main_menu_numbers').addClass('show_numbers').fadeIn(400);
     } else {
