@@ -28,6 +28,8 @@ $('.show_call').click(function(){
       if(i === -1) i = length - 1;
       $('.advantage_slide').removeClass('advantage_slide_active');
       $($('.advantage_slide')[i]).addClass('advantage_slide_active');
+       var x = i + 1;
+       count.innerHTML = '<span>' + x +'/</span>' + length;
    });
 })();
 (function(){

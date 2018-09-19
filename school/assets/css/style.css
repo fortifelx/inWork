@@ -183,6 +183,7 @@
   width: 100%;
   height: 100vh;
   background-color: #fafafa;
+  background-color: #f2f3ea;
   -webkit-box-shadow: inset 0px -38px 86px 16px white;
   -moz-box-shadow: inset 0px -38px 86px 16px white;
   box-shadow: inset 0px -38px 86px 16px white; }
@@ -589,7 +590,8 @@
     bottom: 20px;
     position: absolute;
     text-transform: uppercase;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
     .calendar_btn:after {
       content: url("../img/r_blue_arrow.png");
       display: block;
@@ -748,7 +750,7 @@
     color: #212121;
     text-align: center;
     display: block;
-    margin-bottom: 100px; }
+    margin-bottom: 50px; }
   .main_blog_article {
     display: block;
     width: 100%;
@@ -815,7 +817,8 @@
       bottom: 0;
       right: 55px;
       text-transform: uppercase;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
       .main_blog_article_btn:after {
         content: url("../img/r_blue_arrow.png");
         display: block;
@@ -1028,7 +1031,8 @@
       font-size: 16px;
       color: white;
       background-color: #739cd2;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
       .anons_block_btn:hover {
         background-color: white;
         color: #739cd2; }
@@ -1131,7 +1135,8 @@
       font-size: 16px;
       color: white;
       background-color: #739cd2;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
       .blog_block_btn:hover {
         background-color: white;
         color: #739cd2; }
@@ -1428,9 +1433,9 @@
 .border-radius {
   border-radius: 5px;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
   font-size: 0; }
 
 .start_active_header:after {
@@ -1461,9 +1466,9 @@
   .start_block {
     margin-top: -6vh;
     background-color: white;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     overflow: hidden;
     padding-bottom: 20px; }
