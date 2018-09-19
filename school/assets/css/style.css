@@ -77,8 +77,8 @@
   text-decoration: none;
   transition: all 0.3s; }
   .btn:hover {
-    background-color: #739cd2;
-    color: white; }
+    border: 2px solid #739cd2;
+    color: #739cd2; }
 
 .main_menu {
   width: 100%;
@@ -139,6 +139,18 @@
     align-items: center;
     position: relative;
     height: 70px; }
+    .main_menu_connects li:nth-child(5) {
+      position: relative; }
+      .main_menu_connects li:nth-child(5):after {
+        content: "";
+        background-image: url("../img/d_arrow.png");
+        background-size: cover;
+        display: block;
+        position: absolute;
+        right: -30px;
+        height: 10px;
+        width: 17px;
+        top: 15px; }
   .main_menu_connect {
     display: block;
     width: 36px;
@@ -151,7 +163,7 @@
     .main_menu_connect:hover {
       border: 1px solid #739cd2; }
   .main_menu_numbers {
-    display: block;
+    display: none;
     background-color: white;
     border-radius: 5px;
     height: auto;
@@ -306,6 +318,18 @@
         width: auto;
         right: -23px;
         top: 2px; }
+      .study_block_btn:before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 0;
+        background-color: #739cd2;
+        bottom: 10px;
+        left: 0;
+        transition: width 0.4s; }
+      .study_block_btn:hover:before {
+        width: 100%; }
     .study_block:nth-child(1) {
       width: calc(66.6% - 30px);
       margin-left: 15px; }
@@ -385,14 +409,16 @@
     display: block; }
   .advantage_wrapper {
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 50vh; }
   .advantage_viewer {
     width: 86%;
     margin: 0 auto;
     position: relative;
-    height: 50vh;
+    height: 100%;
     min-height: 400px; }
   .advantage_slide {
+    transform: scale(0);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -403,7 +429,8 @@
     padding-top: 60px;
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+    transition: all 0.6s; }
     .advantage_slide_block {
       width: 40%;
       height: auto;
@@ -443,6 +470,8 @@
       position: absolute;
       left: 60px;
       top: 0; }
+  .advantage_slide_active {
+    transform: scale(1); }
   .advantage_nav {
     width: 100%;
     text-align: center;
@@ -454,6 +483,7 @@
       display: inline-block; }
   .advantage_count {
     margin: 5px 30px;
+    width: 40px;
     color: #739cd2;
     font-family: ProximaNova;
     font-size: 18px;
@@ -554,6 +584,18 @@
       width: auto;
       right: -23px;
       top: 2px; }
+    .calendar_btn:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 1px;
+      width: 0;
+      background-color: #739cd2;
+      bottom: 10px;
+      left: 0;
+      transition: width 0.4s; }
+    .calendar_btn:hover:before {
+      width: 100%; }
 
 .about {
   position: relative;
@@ -671,7 +713,9 @@
         color: #212121;
         font-style: italic; }
   .about_btn {
-    margin: -140px auto 0 auto; }
+    margin: -140px auto 0 auto;
+    box-sizing: border-box;
+    line-height: 55px; }
 
 .main_blog {
   position: relative;
@@ -766,6 +810,18 @@
         width: auto;
         right: -23px;
         top: 2px; }
+      .main_blog_article_btn:before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 0;
+        background-color: #739cd2;
+        bottom: 15px;
+        left: 0;
+        transition: width 0.4s; }
+      .main_blog_article_btn:hover:before {
+        width: 100%; }
 
 .contacts {
   width: 100%;

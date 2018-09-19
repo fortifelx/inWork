@@ -57,6 +57,18 @@
     align-items: center
     position: relative
     height: 70px
+    li:nth-child(5)
+      position: relative
+      &:after
+        content: ''
+        background-image: url("../img/d_arrow.png")
+        background-size: cover
+        display: block
+        position: absolute
+        right: -30px
+        height: 10px
+        width: 17px
+        top: 15px
   &_connect
     display: block
     width: 36px
@@ -76,7 +88,7 @@
   //  cursor: pointer
   //  pointer-events: none
   &_numbers
-    display: block
+    display: none
     background-color: white
     border-radius: 5px
     height: auto

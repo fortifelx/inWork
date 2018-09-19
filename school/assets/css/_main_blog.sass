@@ -91,3 +91,16 @@
         width: auto
         right: -23px
         top: 2px
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        height: 1px
+        width: 0
+        background-color: $blue-color
+        bottom: 15px
+        left: 0
+        transition: width 0.4s
+      &:hover
+        &:before
+          width: 100%
