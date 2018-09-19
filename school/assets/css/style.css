@@ -85,7 +85,8 @@
   height: 70px;
   line-height: 70px;
   position: absolute;
-  z-index: 100; }
+  z-index: 100;
+  padding-top: 10px; }
   .main_menu_logo {
     display: block;
     width: auto;
@@ -1028,11 +1029,15 @@
       color: white;
       background-color: #739cd2;
       cursor: pointer; }
+      .anons_block_btn:hover {
+        background-color: white;
+        color: #739cd2; }
   .anons_btn {
     display: block;
     margin: 20px auto 0 auto;
-    color: #212121;
-    cursor: pointer; }
+    cursor: pointer;
+    line-height: 55px;
+    color: #739cd2; }
 
 .blog {
   width: 100%;
@@ -1864,7 +1869,8 @@
 .menu_shadow {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   height: 110px;
-  line-height: 110px; }
+  line-height: 110px;
+  padding-top: 0; }
   .menu_shadow .main_menu_logo {
     display: inline-block;
     vertical-align: middle; }
