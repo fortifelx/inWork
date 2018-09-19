@@ -15,6 +15,7 @@
   height: auto
   margin-top: 160px
   padding-bottom: 120px
+  min-height: 100vh
   &_header
     font-family: ProximaNova
     font-weight: 400
@@ -37,6 +38,7 @@
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5)
     border-radius: 5px
     overflow: hidden
+    padding-bottom: 20px
     &_header
       cursor: pointer
       padding-left: 75px
@@ -73,6 +75,9 @@
       width: 100%
       padding: 0 45px 0 45px
       margin-top: 50px
+      height: 525px
+      overflow: hidden
+      transition: all 1s
     &_viewer
       width: 100%
       display: flex
@@ -111,5 +116,13 @@
     background-color: white
     color: $blue-color
 .course_block_viewer
+  height: 425px
   padding-bottom: 0
-  height: 420px
+  .start_block_viewer
+    padding-bottom: 0
+.hover_course_wrapper
+  height: 0
+  margin-top: 0
+.course_block_height
+  height: 425px
+

@@ -388,6 +388,11 @@
   .study_btn {
     margin: 0 auto; }
 
+@keyframes show_numbers {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.17; } }
 .advantage {
   position: relative;
   display: block;
@@ -462,16 +467,24 @@
       line-height: 24px;
       width: calc(100% - 100px); }
     .advantage_slide_num {
+      opacity: 0;
       font-size: 172px;
       line-height: 24px;
       font-weight: 900;
-      opacity: 0.17;
       color: #739cd2;
       position: absolute;
       left: 60px;
       top: 0; }
   .advantage_slide_active {
     transform: scale(1); }
+    .advantage_slide_active .advantage_slide_block:nth-child(2) .advantage_slide_num {
+      animation: show_numbers 0.5s 0.7s forwards; }
+    .advantage_slide_active .advantage_slide_block:nth-child(3) .advantage_slide_num {
+      animation: show_numbers 0.5s 1.2s forwards; }
+    .advantage_slide_active .advantage_slide_block:nth-child(4) .advantage_slide_num {
+      animation: show_numbers 0.5s 1.6s forwards; }
+    .advantage_slide_active .advantage_slide_block:nth-child(5) .advantage_slide_num {
+      animation: show_numbers 0.5s 2.2s forwards; }
   .advantage_nav {
     width: 100%;
     text-align: center;
@@ -482,7 +495,7 @@
     .advantage_nav div {
       display: inline-block; }
   .advantage_count {
-    margin: 5px 30px;
+    margin: 5px 25px;
     width: 40px;
     color: #739cd2;
     font-family: ProximaNova;
@@ -1419,7 +1432,8 @@
   width: 100%;
   height: auto;
   margin-top: 160px;
-  padding-bottom: 120px; }
+  padding-bottom: 120px;
+  min-height: 100vh; }
   .start_header {
     font-family: ProximaNova;
     font-weight: 400;
@@ -1441,7 +1455,8 @@
     -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-bottom: 20px; }
     .start_block_header {
       cursor: pointer;
       padding-left: 75px;
@@ -1477,7 +1492,10 @@
     .start_block_wrapper {
       width: 100%;
       padding: 0 45px 0 45px;
-      margin-top: 50px; }
+      margin-top: 50px;
+      height: 525px;
+      overflow: hidden;
+      transition: all 1s; }
     .start_block_viewer {
       width: 100%;
       display: flex;
@@ -1518,8 +1536,17 @@
     color: #739cd2; }
 
 .course_block_viewer {
-  padding-bottom: 0;
-  height: 420px; }
+  height: 425px;
+  padding-bottom: 0; }
+  .course_block_viewer .start_block_viewer {
+    padding-bottom: 0; }
+
+.hover_course_wrapper {
+  height: 0;
+  margin-top: 0; }
+
+.course_block_height {
+  height: 425px; }
 
 .address {
   width: 100%;
