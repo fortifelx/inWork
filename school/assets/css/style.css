@@ -419,7 +419,8 @@
   .advantage_wrapper {
     width: 100%;
     overflow: hidden;
-    height: 50vh; }
+    height: 50vh;
+    min-height: 450px; }
   .advantage_viewer {
     width: 86%;
     margin: 0 auto;
