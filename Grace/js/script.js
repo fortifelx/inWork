@@ -948,3 +948,8 @@ $(".service-slider").fortySlider(400, '.service-l-arrow', '.service-r-arrow', '.
 showMenu();
 
 })();
+ // $(".path")
+ // .velocity({ "stroke-dashoffset": "400" }, 0)
+ // .velocity({ "stroke-dashoffset": "0" }, { duration: 1650, delay: 100 });
+
+            var hi = new Vivus('test', {type: 'scenario-sync', duration: 20, start: 'autostart', forceRender: false, dashGap: 20 });

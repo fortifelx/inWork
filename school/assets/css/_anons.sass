@@ -85,7 +85,7 @@
       height: 55px
       bottom: 0
       left: 0
-      line-height: 55px
+      line-height: 54px
       text-align: center
       text-transform: uppercase
       font-family: ProximaNova
@@ -95,11 +95,14 @@
       cursor: pointer
       text-decoration: none
       transition: all 0.3s
+      box-sizing: border-box
+      border: 1px solid $blue-color
       &:hover
         color: $blue-color
         background-color: white
         border: none
         border-top: 1px solid $blue-color
+        border-bottom: 1px solid white
   &_btn
     display: block
     margin: 20px auto 0 auto
