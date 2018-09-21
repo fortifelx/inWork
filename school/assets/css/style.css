@@ -1034,10 +1034,11 @@
       color: white;
       background-color: #739cd2;
       cursor: pointer;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: all 0.3s; }
       .anons_block_btn:hover {
         color: #739cd2;
-        background-color: #f1f1f1;
+        background-color: white;
         border: none;
         border-top: 1px solid #739cd2; }
   .anons_btn {
@@ -1045,6 +1046,7 @@
     margin: 20px auto 0 auto;
     cursor: pointer;
     line-height: 55px;
+    text-decoration: none;
     color: #739cd2; }
 
 .blog {
@@ -1433,10 +1435,12 @@
       transition: all 0.3s;
       font-family: ProximaNova;
       font-size: 24px;
-      font-weight: 300; }
+      font-weight: 300;
+      text-decoration: none;
+      transition: all 0.3s; }
       .article_block_btn:hover {
         color: #739cd2;
-        background-color: #f1f1f1;
+        background-color: white;
         border: none;
         border-top: 1px solid #739cd2; }
 
