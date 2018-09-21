@@ -33,6 +33,9 @@
   src: url("../fonts/ProximaNova-LightIt.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
+.square_wrapper {
+  position: relative; }
+
 .main_wrapper {
   display: block;
   width: 100%;
@@ -1893,6 +1896,74 @@
     .studies_column_btn:hover {
       color: #739cd2;
       background-color: white; }
+
+.info {
+  width: 100%;
+  height: auto;
+  margin-top: 160px;
+  padding-bottom: 120px; }
+  .info_header {
+    position: relative;
+    z-index: 1;
+    font-family: ProximaNova;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 60px;
+    color: #212121;
+    margin-bottom: 30px;
+    margin-top: 80px; }
+  .info_img {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    border-radius: 5px; }
+    .info_img_viewer {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto; }
+      .info_img_viewer img {
+        width: 100%;
+        height: auto; }
+  .info_text {
+    position: relative;
+    z-index: 1;
+    font-family: ProximaNova;
+    font-size: 18px;
+    color: #212121;
+    line-height: 24px;
+    margin-bottom: 60px; }
+    .info_text p {
+      margin-bottom: 20px; }
+    .info_text_ilu {
+      position: absolute;
+      bottom: -120px;
+      right: -3%;
+      width: 16%; }
+      .info_text_ilu img {
+        width: 100%;
+        height: auto; }
+  .info_illustration {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .info_illustration img {
+      position: absolute;
+      width: 300%;
+      left: -100%;
+      bottom: -5%; }
+  .info .square_illustration {
+    width: 61%;
+    height: 135%;
+    transform: rotate(16deg);
+    top: -13%;
+    left: 11%; }
+    .info .square_illustration:after {
+      border: 50px solid #fafafa;
+      opacity: 1; }
 
 .menu_shadow {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
