@@ -1036,8 +1036,10 @@
       cursor: pointer;
       text-decoration: none; }
       .anons_block_btn:hover {
-        background-color: white;
-        color: #739cd2; }
+        color: #739cd2;
+        background-color: #f1f1f1;
+        border: none;
+        border-top: 1px solid #739cd2; }
   .anons_btn {
     display: block;
     margin: 20px auto 0 auto;
