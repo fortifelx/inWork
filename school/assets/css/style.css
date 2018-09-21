@@ -299,6 +299,7 @@
         min-height: 100%; }
     .study_block_content {
       height: 35vh;
+      min-height: 300px;
       position: relative; }
       .study_block_content p {
         margin-bottom: 25px; }
@@ -385,7 +386,8 @@
     position: absolute;
     left: 0;
     bottom: 25px;
-    height: 35vh; }
+    height: 35vh;
+    min-height: 300px; }
     .study_img img {
       width: 100%;
       height: auto; }
@@ -1761,7 +1763,8 @@
         min-height: 100%; }
     .studies_block_content {
       height: 35vh;
-      position: relative; }
+      position: relative;
+      min-height: 310px; }
       .studies_block_content p {
         margin-bottom: 25px; }
     .studies_block_btn {
