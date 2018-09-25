@@ -11,7 +11,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="product.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="470">
@@ -58,12 +58,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="1446" column="15" lean-forward="false" selection-start-line="1446" selection-start-column="15" selection-end-line="1446" selection-end-column="15" />
+            <state relative-caret-position="271">
+              <caret line="2389" column="27" lean-forward="false" selection-start-line="2389" selection-start-column="27" selection-end-line="2389" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listing-page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/listing-page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="1294" column="0" lean-forward="false" selection-start-line="1294" selection-start-column="0" selection-end-line="1317" selection-end-column="0" />
+              <folding>
+                <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#li#0;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#li#1;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#li#2;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#li#4;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#li#6;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,9 +94,11 @@
       <find>menu-top-ite</find>
       <find>&lt;ul class=&quot;footer-menu footer-menu1&quot;&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Поликарбонат&quot;&gt;Поликарбонат&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Модульные системы&quot;&gt;Модульные системы&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Комплектующие изделия&quot;&gt;Комплектующие изделия&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Рассеиватели&quot;&gt;Рассеиватели&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Конструкции&quot;&gt;Конструкции&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Остекление&quot;&gt;Остекление&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Готовые изделия&quot;&gt;Готовые изделия&lt;/a&gt;				&lt;/li&gt;            &lt;/ul&gt;</find>
       <find>.footer-menu .menu</find>
+      <find>Продукция для рекламы</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;ul class=&quot;footer-menu footer-menu1&quot;&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Поликарбонат&quot;&gt;Поликарбонат&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Архитектурные системы&quot;&gt;Архитектурные системы&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Комплектующие изделия&quot;&gt;Комплектующие изделия&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Светорассеиватели&quot;&gt;Светорассеиватели&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Готовые решения&quot;&gt;Готовые решения&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Остекление&quot;&gt;Остекление&lt;/a&gt;				&lt;/li&gt;				&lt;li class=&quot;menu-item&quot;&gt;					&lt;a href=&quot;goods.html&quot; title=&quot;Продукция для рекламы&quot;&gt;Продукция для рекламы&lt;/a&gt;				&lt;/li&gt;            &lt;/ul&gt;</replace>
+      <replace>Рекламная продукция</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\JB\aironplast</dir>
@@ -105,8 +125,8 @@
         <option value="$PROJECT_DIR$/sale-page.html" />
         <option value="$PROJECT_DIR$/services.html" />
         <option value="$PROJECT_DIR$/thanks.html" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/product.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -192,12 +212,12 @@
       <updated>1537799641700</updated>
       <workItem from="1537799643086" duration="1832000" />
       <workItem from="1537869791569" duration="2982000" />
-      <workItem from="1537883879431" duration="2003000" />
+      <workItem from="1537883879431" duration="3600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6817000" />
+    <option name="totallyTimeSpent" value="8414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -388,22 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/listing-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="1294" column="0" lean-forward="false" selection-start-line="1294" selection-start-column="0" selection-end-line="1317" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#li#4;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#li#6;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -535,14 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="1446" column="15" lean-forward="false" selection-start-line="1446" selection-start-column="15" selection-end-line="1446" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8762">
@@ -583,6 +579,30 @@
             <element signature="n#style#0;n#a#0;n#p#2;n#div#1;n#div#5;n#div#2;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#ul#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listing-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="1294" column="0" lean-forward="false" selection-start-line="1294" selection-start-column="0" selection-end-line="1317" selection-end-column="0" />
+          <folding>
+            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#li#0;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#li#1;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#li#2;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#li#4;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#li#6;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="2389" column="27" lean-forward="false" selection-start-line="2389" selection-start-column="27" selection-end-line="2389" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
