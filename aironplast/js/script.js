@@ -674,3 +674,12 @@ function animateCatalog() {
     });
 
 };
+(function(){
+    console.log('here');
+    var slider = $('.banner_slider');
+    var banner_height = parseInt($('.product').css('height'), 10) *2 + 91;
+    console.log($('.product').css('height'));
+    slider.css({
+        'height' : banner_height
+    });
+})();
