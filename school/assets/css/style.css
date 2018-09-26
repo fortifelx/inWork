@@ -1458,9 +1458,9 @@
 .border-radius {
   border-radius: 5px;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
   font-size: 0; }
 
 .start_active_header:after {
@@ -1491,9 +1491,9 @@
   .start_block {
     margin-top: -6vh;
     background-color: white;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     overflow: hidden;
     padding-bottom: 20px; }
