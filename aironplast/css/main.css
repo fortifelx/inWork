@@ -257,6 +257,7 @@ strong {
   background: #010023;
   padding: 25px 40px;
   position: relative;
+    z-index: 10;
 }
 
 .l-home h1, .l-home .reviews-title {
@@ -481,14 +482,48 @@ strong {
 }
 
 .logo {
-  width: 165px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
+  position: relative;
 }
-
+.logo_wrapper {
+    display: inline-block;
+}
+.logo_img {
+    display: inline-block;
+    margin-top: -5px;
+}
+.search_wrapper {
+    right: 80px;
+    position: absolute;
+    width: 260px;
+    height: 40px;
+    top: 0;
+}
+.search_input {
+    text-indent: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    background-color: #010023;
+}
+.search_btn {
+    position: absolute;
+    right: 5px;
+    width: 35px;
+    top: 7px;
+}
+.search_btn img {
+    width: 100%;
+}
 .header-icon {
   position: absolute;
-  top: 25px;
+  top: 3px;
   z-index: 10;
 }
 
@@ -537,7 +572,7 @@ strong {
   background-position: -25px -116px;
   width: 25px;
   height: 15px;
-  left: 12.5%;
+  left: 0;
   margin: 3px 0;
 }
 
@@ -626,7 +661,7 @@ strong {
   background-position: 0px -116px;
   width: 25px;
   height: 24px;
-  right: 12.5%;
+  right: 0;
 }
 
 .feedback {
@@ -2234,7 +2269,11 @@ strong {
 .color-black:before {
   background: black;
 }
-
+.menu-number {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+}
 @media (min-width: 1920px) {
   .gallery-photos-nav {
     height: 760px;
@@ -2313,10 +2352,10 @@ strong {
     float: left;
   }
   .header-icon {
-    top: 17px;
+    top: 3px;
   }
   .menu-toggle {
-    left: 7.17423%;
+    left: 0;
   }
   .menu-top {
     display: block;
@@ -2325,7 +2364,7 @@ strong {
     width: 100%;
     position: fixed;
     float: left;
-    top: 63px;
+    top: 70px;
     left: 0;
     padding: 0;
     text-align: center;
@@ -2443,7 +2482,7 @@ strong {
     padding: 0 6% 0 0;
   }
   .cart-button {
-    right: 7.17423%;
+    right: 0;
   }
   .cart-image {
     width: 14.16667%;
@@ -3449,7 +3488,7 @@ strong {
     margin-left: 1px;
   }
   .header-icon {
-    top: 22px;
+    top: 3px;
   }
   .tab-hide {
     display: none;
@@ -3483,10 +3522,10 @@ strong {
     max-width: 265px;
   }
   .menu-toggle {
-    left: 3.125%;
+    left: 0;
   }
   .cart-button {
-    right: 3.125%;
+    right: 0;
   }
   .checkout-form {
     width: 46.77734%;
