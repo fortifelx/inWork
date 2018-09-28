@@ -1933,7 +1933,8 @@
     width: 100%;
     overflow: hidden;
     height: auto;
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin-bottom: 30px; }
     .info_img_viewer {
       display: flex;
       align-content: center;
