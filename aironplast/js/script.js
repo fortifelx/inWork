@@ -678,8 +678,25 @@ function animateCatalog() {
     console.log('here');
     var slider = $('.banner_slider');
     var banner_height = parseInt($('.product').css('height'), 10) + 30;
-    console.log($('.product').css('height'));
     slider.css({
         'height' : banner_height
+    });
+    var slides = $('.banner_img');
+    var dotsCount = $('.banner_img').length;
+    var dotsWrapper = $('.banner_slider_dots');
+    for(var i = 0; i < dotsCount; i++) {
+        dotsWrapper.append('<span></span>');
+    };
+    var dots = $('.banner_slider_dots span');
+    dots.click(function(){
+       slides.fadeOut(450);
+       dots.css({
+           'background-color': 'white'
+       });
+       $(this).css({
+           'background-color' : '#0a0f41'
+       });
+       var x = dots.index(this);
+       $(slides[x]).fadeIn(450);
     });
 })();

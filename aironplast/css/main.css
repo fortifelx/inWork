@@ -2275,14 +2275,37 @@ strong {
     line-height: 24px;
 }
 .banner_slider {
-    width: 28.88889%;
-    margin: 30px 0 0 4.44444%;
+    width: 30%;
+    margin: 30px 0 0 3.33333%;
     float: right;
     overflow: hidden;
+    position: relative;
     height: auto;
     border: 1px solid #0a0f41;
     font-size: 0;
     box-sizing: border-box;
+}
+.banner_slider_dots {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 15px;
+    left: 0;
+    bottom: 10px;
+    z-index: 2;
+}
+.banner_slider_dots span {
+    box-sizing: border-box;
+    border: 3px solid #0a0f41;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin: 0 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.banner_slider_dots span:nth-child(1) {
+    background-color: #0a0f41;
 }
 .banner_viewer {
     position: relative;
@@ -2303,7 +2326,40 @@ strong {
     width: 100%;
     height: auto;
 }
-
+.f-container {
+  padding: 0 12.5%;
+  width: 75%;
+}
+.f-container .breadcrumbs-wrap {
+    padding: 30px 0;
+}
+.f-container .page-title {
+    float: right;
+    margin-top: 15px;
+}
+.f-main .l-container {
+    margin: 0;
+    padding-top: 0;
+}
+.f-main .product {
+    position: relative;
+}
+.f-main .product-image {
+    padding-top: 75%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.f-main .product-image img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+.f-main .products .product {
+    margin-bottom: 29px;
+}
 
 
 @media (min-width: 1920px) {
@@ -2318,7 +2374,10 @@ strong {
     padding-top: 67px;
     position: relative;
   }
-  
+  .f-container {
+        padding: 0 7.17423%;
+        width: 85.65154%;
+    }
   h1,
   .reviews-title {
     font-size: 2.25rem;
@@ -2396,13 +2455,14 @@ strong {
     width: 100%;
     position: fixed;
     float: left;
-    top: 70px;
+    top: 80px;
     left: 0;
     padding: 0;
     text-align: center;
     transition: all 0.5s ease-out 0s;
     visibility: visible;
     opacity: 1;
+      z-index: 1;
   }
   .menu-top:hover {
     z-index: 1002;
@@ -2470,7 +2530,7 @@ strong {
   }
   .menu-top.is-active {
     position: fixed;
-    top: 63px;
+    top: 70px;
     z-index: 1001;
   }
   .menu-top.is-hidden {
